@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0b1/dtd/docbook.dtd"
+
+  [
+    <!ENTITY % entities SYSTEM "entities.xml">
+    %entities;
+  ]
+>
+<!--
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "docbook.dtd">
+-->
+
+<book lang="ru">
+
+<title>Интернет-магазин osCommerce: Установка и настройка</title>
+
+<info>
+
+    <keywordset>
+      <keyword>Интернет-магазин osCommerce</keyword>
+      <keyword>Установка</keyword>
+      <keyword>Настройка</keyword>
+    </keywordset>
+        
+<copyright>
+<year>
+2006, 2007
+</year>
+<holder>
+Александр Меновщиков
+</holder>
+</copyright>
+
+  <legalnotice>
+  <para>
+  Распространение, изменение, издание данного руководства в любом виде без разрешения автора запрещено.
+  </para>
+<para>
+<ulink url="http://forum.oscommerce.ru/index.php?showtopic=3142">Что такое osCommerce VaM Edition?</ulink>
+</para>
+<para>
+Загрузить руководство пользователя в архиве: <ulink url="http://oscommerce.su/manual/html.zip">html.zip</ulink> (8Mb), <ulink url="http://oscommerce.su/manual/html-print.zip">html-print.zip</ulink> (8Mb), <ulink url="http://oscommerce.su/manual/osc-vam.pdf">osc-vam.pdf</ulink> (7Mb), <ulink url="http://oscommerce.su/manual/html-noimages.zip">html-noimages.zip</ulink> (0.2Mb), <ulink url="http://oscommerce.su/manual/html-print-noimages.zip">html-print-noimages.zip</ulink> (0.2Mb), <ulink url="http://oscommerce.su/manual/xml-noimages.zip">xml-noimages</ulink> (0.2Mb).
+</para>
+  </legalnotice>
+
+  <author><personname>
+
+    <firstname>Александр</firstname>
+    <surname>Меновщиков</surname>
+
+  </personname></author>
+    <abstract>
+
+<para>
+Данная книга написана, в первую очередь, для людей, которые хотят создать интернет-магазин, используя открытые и свободные программные продукты, в данной книге мы рассмотрим все аспекты создания интернет-магазина на основе открытой системы osCommerce.
+</para>
+<para>
+Все рассматриваемые вопросы описываются подробнейшим образом, сопровождаются простыми примерами, все рассматриваемые вопросы сопровождаются большим количеством скриншотов.
+</para>
+      
+    </abstract>
+</info>
+
+
+
+<!-- Предисловие -->
+&preface;
+<!-- /Предисловие -->
+
+<!-- Введение -->
+&intro;
+<!-- /Введение -->
+
+<!-- Установка интернет-магазина -->
+&install;
+<!-- /Установка интернет-магазина -->
+
+<!-- Раздел Первые шаги после установки интернет-магазина -->
+&firststeps;
+<!-- /Раздел Первые шаги после установки интернет-магазина -->
+
+<!-- Раздел Работа с номенклатурным справочником -->
+&catalog;
+<!-- /Раздел Работа с номенклатурным справочником -->
+
+<!-- Раздел Скидки -->
+&discount;
+<!-- /Раздел Скидки -->
+
+<!-- Раздел Виртуальные товары -->
+&virtualproduct;
+<!-- /Раздел Виртуальные товары -->
+
+<!-- Раздел Подарочные сертификаты и купоны -->
+&gvcoupons;
+<!-- /Раздел Подарочные сертификаты и купоны -->
+
+<!-- Раздел Партнёрская программа -->
+&affiliate;
+<!-- /Раздел Партнёрская программа -->
+
+<!-- Раздел Статистика по товарам и покупателям -->
+&statistics;
+<!-- /Раздел Статистика по товарам и покупателям -->
+
+<!-- Раздел Управление отношениями с клиентом (CRM) -->
+&crm;
+<!-- /Раздел Управление отношениями с клиентом (CRM) -->
+
+<!-- Раздел Дополнительные функции интернет-магазина -->
+&other;
+<!-- /Раздел Дополнительные функции интернет-магазина -->
+
+<!-- Раздел Шаблоны (Simple Template System) -->
+&templates-sts;
+<!-- /Раздел Шаблоны (Simple Template System) -->
+
+<!-- Установщик модулей -->
+&contrib-installer;
+<!-- /Установщик модулей -->
+
+<!-- osCommerce VaM для разработчика -->
+&developers;
+<!-- /osCommerce VaM для разработчика -->
+
+<!-- Приложение -->
+<!-- &appendix; -->
+<!-- /Приложение -->
+
+</book>

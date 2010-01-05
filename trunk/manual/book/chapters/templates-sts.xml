@@ -1,0 +1,2054 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Раздел Шаблоны (Simple Template System) -->
+<chapter>
+
+<title>
+Шаблоны
+</title>
+
+<para>
+В данном разделе мы рассмотрим шаблоны STS, что это такое, как с ними работать.
+</para>
+
+<para>
+Сразу же хочу отметить, я специально не буду приводить html-код шаблонов, т.к. все примеры уже есть в двух STS шаблонах, которые идут со сборкой osCommerce VaM Edition STS, я лишь постараюсь объяснить принципы работы STS шаблонов, самый лучший вариант понимания принципов работы STS - это, прежде всего, изучение шаблонов, идущих со сборкой и прочтение данного раздела. На самом деле всё очень просто и Вы очень быстро поймёте принцип действия STS шаблонов и сможете сами создавать свои шаблоны на базе STS.
+</para>
+
+<!-- Информация о шаблонах STS -->
+<sect1>
+<title>
+Информация о шаблонах STS
+</title>
+
+<para>
+Общие сведения о шаблонах STS.
+</para>
+
+<!-- Что такое STS шаблоны? -->
+<sect2>
+<title>
+Что такое STS шаблоны?
+</title>
+
+<para>
+В данном разделе дана общая информация о шаблонах STS (модуль Simple Template System 4.1).
+</para>
+
+<para>
+STS - это простая в установке и использовании шаблонная система для osCommerce VaM Edition STS. Внешний вид магазина можно менять используя лишь обычные html-редакторы, такие как Dreamweaver или Frontpage.
+</para>
+
+<para>
+По умолчанию в сборке osCommerce VaM Edition STS установлено всего два STS шаблона: full (рис. 1) и mobile (рис. 2).
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Не относитесь к данным двум шаблонам как к законченным решениям, основная цель данных шаблонов - научить пользователя обращению с STS шаблонами и показать возможности STS. Надеюсь, читая данное руководство и изучая эти два шаблона, Вы довольно быстро научитесь создавать свои STS шаблоны, более интересные и качественные. 
+</para>
+
+</sect2>
+<!-- /Что такое STS шаблоны? -->
+
+<!-- Как работают STS шаблоны? -->
+<sect2>
+<title>
+Как работают STS шаблоны?
+</title>
+
+<para>
+Принцип действия STS шаблонов очень прост.
+</para>
+
+<para>
+Вместо вывода в браузер результата работы скрипта, STS "захватывает" результат работы скрипта и назначает сгенерированные данные в переменные. Такие переменные называются метками (например метка $banner), затем уже эти метки вставляются в html-код, т.е. собственно в сам шаблон. При открытии магазина в браузере, магазин отрисовывается STS шаблонами и вместо указанных Вами в шаблоне меток выводится сгенерированный php код. Это значит, что для изменения дизайна интернет-магазина Вам не нужно править php скрипты, Вам лишь нужно править html шаблоны, т.е. Вам не нужно разбираться в программировании чтобы изменить дизайн интернет-магазина.
+</para>
+
+<para>
+В простейшем примере, только один шаблон используется для всех страниц интернет-магазина. Также у Вас есть возможность создавать шаблоны для отдельных страниц, отдельных категорий, отдельных производителей, отдельных товаров, отдельных статей, отдельных faq, отдельных новостей, кроме того, у Вас также есть возможность создавать html-шаблоны для боксов, как общий шаблон для всех боксов, так и отдельные шаблоны для отдельных боксов.
+</para>
+
+</sect2>
+<!-- /Как работают STS шаблоны? -->
+
+</sect1>
+<!-- /Информация о шаблонах STS -->
+
+<!-- Изменение дизайна магазина STS шаблонами -->
+<sect1>
+<title>
+Изменение дизайна магазина STS шаблонами
+</title>
+
+<para>
+Описание работы STS шаблонов.
+</para>
+
+<!-- Основные сведения -->
+<sect2>
+<title>
+Основные сведения
+</title>
+
+<para>
+Основные сведения о STS шаблонах
+</para>
+
+<para>
+Для активации STS шаблонов Вам как минимум нужно установить модуль Default в Админке - Модули - STS (рис. 3), тем самым Вы активируете систему шаблонов, а лучше установить все модули, которые есть в разделе Админка - Модули - STS, тогда будут доступны все возможности STS шаблонов.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+По умолчанию установлен шаблон full.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Чтобы изменить шаблон Вы можете просто отредактировать модуль Default (рис. 4) и указать шаблон по умолчанию (рис. 5), укажите вместо full например mobile. Теперь шаблон по умолчанию mobile, зайдя в магазин Вы увидите, что магазин теперь отрисован шаблонов mobile.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы можете выбирать шаблон и через браузер, просто открыв магазин следующим образом http://ваш-магазин.ру/index.php?sts_template=mobile
+</para>
+
+<para>
+Вы тем самым указываете, что страница index.php будет отрисована с использованием шаблона mobile.
+</para>
+
+<para>
+Также есть режим отладки, чтобы войти в режим отладки, откройте магазин следующим образом: http://ваш-магазин.ру/index.php?sts_debug=debug
+</para>
+
+<para>
+Вы увидите, что на открывшейся странице будет выведена отладочная информация (версия STS, используемый шаблон, используемые модули, используемые файлы и метки).
+</para>
+
+</sect2>
+<!-- /Основные сведения -->
+
+<!-- Активация STS шаблонов -->
+<sect2>
+<title>
+Активация STS шаблонов
+</title>
+
+<para>
+Активация STS модулей
+</para>
+
+<para>
+Сами шаблоны STS и модули STS для отдельных страниц включаются/отключаются в Админке - Модули - STS. Точно также как и модули оплаты, доставки. Как минимум, обязательно должен быть включён модуль Default, это основной модуль STS, без него шаблоны работать не будут.
+</para>
+
+<para>
+В сборке osCommerce VaM Edition STS присутствуют следующие STS модули:
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>Default</para>
+	  <para>Основной модуль STS, активирующий систему шаблонов, в данном модуле есть также настройка использовать или нет шаблоны для боксов. Если Вы хотите использовать STS шаблоны, данные модуль должен быть установлен обязательно - рис. 6.</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+	  </listitem>
+	  <listitem>
+	  <para>Article Info</para>
+	  <para>STS модуль для содержимого страниц со статьями (html-шаблон для страниц article_info.php), т.е. Вы можете легко модифицировать внешний вид статей, используя html-шаблон - рис. 7.</para>
+	  
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+	  <listitem>
+	  <para>Faqdesk Info</para>
+	  <para>STS модуль для содержимого страниц с faq (html-шаблон для страниц faqdesk_info.php), т.е. Вы можете легко модифицировать внешний вид faq, используя html-шаблон - рис. 8.</para>
+	  
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+	  <listitem>
+	  <para>Newsdesk Info</para>
+	  <para>STS модуль для содержимого страниц с новостями (html-шаблон для страниц newsdesk_info.php), т.е. Вы можете легко модифицировать внешний вид новостей, используя html-шаблон - рис. 9.</para>
+	  
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+	  <listitem>
+	  <para>Product Info</para>
+	  <para>STS модуль для содержимого страниц с описанием товаров (html-шаблон для страниц product_info.php), т.е. Вы можете легко модифицировать отображения либо всех товаров сразу, либо товаров в определённой категории, либо отдельноых товаров, используя html-шаблон - рис. 10.</para>
+	  
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+	  <listitem>
+	  <para>Index</para>
+	  <para>STS модуль для главной страницы интернет-магазина (html-шаблон для страниц index.php), т.е. Вы можете создавать отдельный html-шаблон либо для всего списка товаров, для для отдельных категорий товаров, либо для отдельных производителей - рис. 11.</para>
+	  
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts15.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+
+	  <listitem>
+	  <para>Featured Products Module Listing</para>
+	  <para>STS модуль для блока рекомендуемые товары по центру, т.е. Вы можете создавать отдельный html-шаблон для товаров в блоке рекомендуемые по центру на главной странице и в подкатегориях - рис. 12.</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts20.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+
+	  <listitem>
+	  <para>New Products Module Listing</para>
+	  <para>STS модуль для блока новинки по центру, т.е. Вы можете создавать отдельный html-шаблон для товаров в блоке новинки по центру на главной странице и в подкатегориях - рис. 13.</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts21.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+
+	  <listitem>
+	  <para>Product Listing Module</para>
+	  <para>STS модуль для списка товаров в категориях, т.е. Вы можете создавать отдельный html-шаблон для товаров в категориях - рис. 14.</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts22.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 14.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 14.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+	  
+	  </listitem>
+
+
+</itemizedlist>
+
+<para>
+Советую установить Вам сразу все STS модули, далее мы рассмотрим как создавать html-шаблоны для страниц интернет-магазина, для боксов.
+</para>
+
+</sect2>
+<!-- /Активация STS шаблонов -->
+
+<!-- Структура STS шаблона -->
+<sect2>
+<title>
+Структура STS шаблона
+</title>
+
+<para>
+Структура STS шаблона, т.е. где должен находиться шаблон, как он должен выглядеть.
+</para>
+
+<para>
+Все шаблоны должны находиться в своих папках внутри /includes/sts_templates
+</para>
+
+<para>
+Вы можете создавать любое количество папок (т.е. шаблонов) внутри /includes/sts_templates/. Шаблон по умолчанию выбирается в Админке - Модули - STS, при редактироватии модуля Default. По умолчанию установлен шаблон full.
+</para>
+
+<para>
+Название папки с шаблоном должно быть на анлийском языке, все буквы в названии папки должны быть строчные (например full или mobile).
+</para>
+
+<para>
+В сборке osCommerce VaM Edition STS присутствует два STS шаблона: full и mobile, соответственно это папки /includes/sts_templates/full и /includes/sts_templates/mobile
+</para>
+
+<para>
+Структура папки с шаблоном должна быть следующая (на примере шаблона full):
+</para>
+
+<para>
+/includes/sts_templates/full - Папка с шаблоном full
+</para>
+
+<para>
+Содержимое папки с шаблоном:
+</para>
+
+<para>
+Файл sts_template.html - Это основной файл шаблона, он должен быть в обязательном порядке, т.е. любой STS шаблон должен состоять как минимум из одного файла - sts_template.html
+</para>
+
+<note>
+<para>
+Надо также отметить, что не обязательно основной файл должен называться sts_template.html, имя основного файла Вы можете настраивать сами в Админке - Модули - STS, изменив настройки модуля Default
+</para>
+</note>
+
+<para>
+Содержимое файл sts_template.html - Это стандартный html-код в метками внутри, ниже я расскажу, какие можно использовать метки внутри шаблона - рис. 13.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts17.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Внутри папки с шаблоном Вы можете создавать отдельные html-шаблоны для отдельных страниц.
+</para>
+
+<para>
+Например, если Вы хотите создать шаблон для страницы products_new.php (Новинки) Вы просто должны создать файл /includes/sts_templates/ВАШ ШАБЛОН/products_new.php.html
+</para>
+
+<para>
+В папке content должны находиться шаблоны для содержания страниц, т.е. основной шаблон как бы представляет из себя оболочку, он меняет общий внешний вид страниц, но не меняет её содержимое, чтобы например менять содержимое внутри страниц product_info.php, например изменить расположение описания товара и т.д., Вам нужно создавать так называемые контент шаблоны, они как раз и должны находиться в папке /includes/sts_templates/ВАШ ШАБЛОН/content. Подробнее о контент шаблонах читайте ниже.
+</para>
+
+<para>
+В папке boxes находятся шаблоны боксов, об этом подробнее в следующем разделе.
+</para>
+
+</sect2>
+<!-- /Структура STS шаблона -->
+
+</sect1>
+<!-- /Изменение дизайна магазина STS шаблонами -->
+
+<!-- Шаблоны для отдельных страниц -->
+<sect1>
+<title>
+Шаблоны для отдельных страниц
+</title>
+
+<!-- Шаблон для отдельной страницы -->
+<sect2>
+Шаблон для отдельной страницы
+<title>
+Создаём шаблон для отдельной страницы
+</title>
+
+<para>
+Вы можете создавать отдельные шаблоны для отдельных страниц интернет-магазина.
+</para>
+
+<para>
+Для этого просто нужно создать файл в папке шаблона, т.е. в папке /includes/sts_templates/шаблон, файл должен называться scriptname.php.html
+</para>
+
+<para>
+Где scriptname.php - адрес страницы, для которой Вы хотите создать шаблон, например, если Вы хотите создать шаблон для страницы create_account.php, Вам нужно просто создать файл /includes/sts_templates/шаблон/create_account.php.html
+</para>
+
+<para>
+Для отрисовки всех остальных страниц интернет-магазина, т.е. для страниц, у которых нет своего шаблона, будет использоваться шаблона по умолчанию, т.е. файл /includes/sts_templates/шаблон/sts_template.html
+</para>
+
+</sect2>
+<!-- /Шаблон для отдельной страницы -->
+
+<!-- Шаблон для отдельной категории -->
+<sect2>
+Шаблон для отдельной категории
+<title>
+Создаём шаблон для отдельной категории
+</title>
+
+<para>
+Вы можете создавать свой шаблон для любой категории, если шаблон для категории не найден, модуль будет искать шаблон для более высокой категории.
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Index в Админке - Модули - STS, иначе такой возможности у Вас не будет.
+</para>
+
+<para>
+Чтобы создать шаблон, Вам просто нужно создать файл в папке шаблона, т.е. в папке /includes/sts_templates/шаблон, файл должен называться index.php_28.html
+</para>
+
+<para>
+Где 28 - id код категории.
+</para>
+
+<para>
+Для подкатегорий шаблон будет выглядеть примерно так: /includes/sts_templates/шаблон/index.php_28_32.html
+</para>
+
+<para>
+Для лучшего понимания механизма работы шаблонов для отдельных категорий, обратите внимание на блок-схему, показанную на рис. 14.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 14.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 14.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+</sect2>
+<!-- /Шаблон для отдельной категории -->
+
+<!-- Шаблон для отдельного производителя -->
+<sect2>
+Шаблон для отдельного производителя
+<title>
+Создаём шаблон для отдельного производителя
+</title>
+
+<para>
+Вы можете создавать отдельные шаблоны для отдельных производителей.
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Index в Админке - Модули - STS, иначе такой возможности у Вас не будет.
+</para>
+
+<para>
+Чтобы создать шаблон, Вам просто нужно создать файл в папке шаблона, т.е. в папке /includes/sts_templates/шаблон, файл должен называться index.php_mfr_4.html
+</para>
+
+<para>
+Где 4 - id код производителя.
+</para>
+
+<para>
+Для лучшего понимания механизма работы шаблонов для отдельных производителей, обратите внимание на блок-схему, показанную на рис. 15.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 15.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 15.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+</sect2>
+<!-- /Шаблон для отдельного производителя -->
+
+<!-- Шаблон для товара -->
+<sect2>
+Шаблон для товара
+<title>
+Создаём шаблон для товара
+</title>
+
+<para>
+Вы можете создавать отдельные шаблоны для отдельных товаров.
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Product Info в Админке - Модули - STS, иначе такой возможности у Вас не будет.
+</para>
+
+<para>
+Чтобы создать шаблон, Вам просто нужно создать файл в папке шаблона, т.е. в папке /includes/sts_templates/шаблон, файл должен называться product_info.php_1.html
+</para>
+
+<para>
+Где 1 - id код товара.
+</para>
+
+<para>
+Можно также создавать шаблонов для всех товаров определённой категории, в это случае файл шаблона должен называться так: /includes/sts_templates/шаблон/product_info.php_c28.html
+</para>
+
+<para>
+Где 28 - id код категории.
+</para>
+
+<para>
+Для лучшего понимания механизма работы шаблонов для отдельных товаров, обратите внимание на блок-схему, показанную на рис. 16.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 16.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 16.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+</sect2>
+<!-- /Шаблон для товара -->
+
+<!-- Шаблон для боксов -->
+<sect2>
+Шаблон для боксов
+<title>
+Создаём шаблон для боксов
+</title>
+
+<para>
+Чтобы работали шаблоны боксов, в Админке - Модули - STS, модуль Default обязательно должен быть установлен и в настройках модуля Default должна быть включена (установлена в true) опция Use template for infoboxes.
+</para>
+
+<para>
+Шаблон бокса должен находиться в файле /includes/sts_templates/шаблон/boxes/infobox.php.html.
+</para>
+
+<para>
+Шаблон бокса - чистый html файл, в котором можно использовать 3 метки:
+</para>
+
+<para>
+$headertext - название бокса.
+</para>
+<para>
+$right_arrow - стрелка справа от названия, если есть.
+</para>
+
+<para>
+$content - содержимое бокса.
+</para>
+
+<para>
+Вы можете создавать любой html-код для бокса, просто вставляя в него эти три метки.
+</para>
+
+<para>
+Создали код и всё, все боксы будут отображаться Вашим шаблоном.
+</para>
+
+<para>
+Можно также делать индивидуальные шаблоны для индивидуальных боксов.
+</para>
+
+<para>
+Например, Вы хотите что б бокс Информация отличался от других по внешнему виду, очень просто, создаёте просто шаблон именно для этого бокса, т.е. создаёте новый файл:
+</para>
+
+<para>
+/includes/sts_templates/шаблон/boxes/infobox_information.php.html
+</para>
+
+<para>
+Проще говоря, чтобы создать отдельный шаблон для отдельного бокса нужно в названии шаблона использовать название файла бокса (файлы всех боксов находятся в папке /includes/boxes).
+</para>
+
+<para>
+Всё, теперь бокс Информация будет отрисовываться именно своим шаблоном.
+</para>
+
+</sect2>
+<!-- /Шаблон для боксов -->
+
+</sect1>
+<!-- /Шаблоны для отдельных страниц -->
+
+<!-- Контент шаблоны -->
+<sect1>
+<title>
+Контент шаблоны
+</title>
+
+<para>
+Во всех шаблонах, о которых было сказано выше, Вы могли изменять как бы оболочку, т.е. расположение боксов, шапку и т.д., но не могли менять собственно содержимое самой страницы, оно просто выводилось через метку $content в шаблоне.
+</para>
+
+<para>
+Для изменения содержимого страницы (т.е. тех данных, которые выводятся меткой $content) существуют контент шаблоны, которые как раз не затрагивают оболочку страницы, а меняют содержимое страницы, такие шаблоны называются контент шаблонами.
+</para>
+
+<note>
+<para>
+Контент шаблоны обязательно должны находиться в папке /includes/sts_templates/content
+</para>
+</note>
+
+<para>
+В данном разделе речь пойдёт как раз о контент шаблонах.
+</para>
+
+<para>
+На данный момент контент шаблоны есть только для следующих страниц:
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>product_info.php</para>
+	  <para>С помощью данного контент шаблона можно изменять содержимое страницы карточки товара.</para>
+	  </listitem>
+	  <listitem>
+	  <para>article_info.php</para>
+	  <para>С помощью данного контент шаблона можно изменять содержимое страницы статей.</para>
+	  </listitem>
+	  <listitem>
+	  <para>faqdesk_info.php</para>
+	  <para>С помощью данного контент шаблона можно изменять содержимое страницы faq.</para>
+	  </listitem>
+	  <listitem>
+	  <para>newsdesk_info.php</para>
+	  <para>С помощью данного контент шаблона можно изменять содержимое страницы новостей.</para>
+	  </listitem>
+</itemizedlist>
+
+<para>
+Для остальных страниц контент шаблонов нет, т.е. например если Вы захотите изменить внешний вид формы регистрации покупателя, т.е. страницу create_account.php, Вам придётся радактировать уже не шаблон, а сам скрипт /create_account.php.
+</para>
+
+<para>
+В этом и есть на данный момент единственное неудобство при работе с STS шаблонами, т.е. контент модули STS есть только для ограниченного количества страниц, но, тем не менее, во многих случаях достаточно и 4 указанных контент шаблонов.
+</para>
+
+<para>
+Переходим в рассмотрению всех 4 контент шаблонов по отдельности:
+</para>
+
+<!-- Контент шаблон для товаров -->
+<sect2>
+Контент шаблон для товаров
+<title>
+Описание контент шаблона для товара.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению расположение элементов страницы карточки товара (product_info.php).
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Product Info в Админке - Модули - STS, иначе контент шаблон для товара работать не будет.
+</para>
+
+<para>
+Чтобы создать контент шаблон, Вам просто нужно создать файл в папке контент шаблонов, т.е. в папке /includes/sts_templates/шаблон/content, файл должен называться product_info.php_3.html
+</para>
+
+<para>
+Где 3 - id код товара.
+</para>
+
+<para>
+В данном примере содержимое товара с id = 3 будет выводиться именно шаблоном /includes/sts_templates/шаблон/content/product_info.php_3.html, остальные товары будут выводиться обычным способом.
+</para>
+
+<para>
+Можно также создавать контент шаблоны для всех товаров определённой категории, в это случае файл шаблона должен называться так: /includes/sts_templates/шаблон/content/product_info.php_c28.html
+</para>
+
+<para>
+Где 28 - id код категории.
+</para>
+
+<para>
+Для лучшего понимания механизма работы контент шаблонов для отдельных товаров, обратите внимание на блок-схему, показанную на рис. 19.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/templates-sts4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 19.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 19.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне товара Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для товаров -->
+
+<!-- Контент шаблон для статей -->
+<sect2>
+Контент шаблон для статей
+<title>
+Описание контент шаблона для статей.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению расположение элементов страницы статьи (article_info.php).
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Article Info в Админке - Модули - STS, иначе контент шаблон для статей работать не будет.
+</para>
+
+<para>
+Чтобы создать контент шаблон, Вам просто нужно создать файл в папке контент шаблонов, т.е. в папке /includes/sts_templates/шаблон/content, файл должен называться article_info.php_3.html
+</para>
+
+<para>
+Где 3 - id код статьи.
+</para>
+
+<para>
+В данном примере содержимое статьи с id = 3 будет выводиться именно шаблоном /includes/sts_templates/шаблон/content/article_info.php_3.html, остальные статьи будут выводиться обычным способом.
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне статей Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для статей -->
+
+<!-- Контент шаблон для faq -->
+<sect2>
+Контент шаблон для faq
+<title>
+Описание контент шаблона для faq.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению расположение элементов страницы faq (faqdesk_info.php).
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Faqdesk Info в Админке - Модули - STS, иначе контент шаблон для faq работать не будет.
+</para>
+
+<para>
+Чтобы создать контент шаблон, Вам просто нужно создать файл в папке контент шаблонов, т.е. в папке /includes/sts_templates/шаблон/content, файл должен называться faqdesk_info.php_3.html
+</para>
+
+<para>
+Где 3 - id код faq.
+</para>
+
+<para>
+В данном примере содержимое faq с id = 3 будет выводиться именно шаблоном /includes/sts_templates/шаблон/content/faqdesk_info.php_3.html, остальные faq будут выводиться обычным способом.
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне faq Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для faq -->
+
+<!-- Контент шаблон для новостей -->
+<sect2>
+Контент шаблон для новостей
+<title>
+Описание контент шаблона для новостей.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению расположение элементов страницы новостей (newsdesk_info.php).
+</para>
+
+<para>
+Для этого обязательно нужно установить модуль Newsdesk Info в Админке - Модули - STS, иначе контент шаблон для новостей работать не будет.
+</para>
+
+<para>
+Чтобы создать контент шаблон, Вам просто нужно создать файл в папке контент шаблонов, т.е. в папке /includes/sts_templates/шаблон/content, файл должен называться newsdesk_info.php_3.html
+</para>
+
+<para>
+Где 3 - id код новости.
+</para>
+
+<para>
+В данном примере содержимое новости с id = 3 будет выводиться именно шаблоном /includes/sts_templates/шаблон/content/newsdesk_info.php_3.html, остальные новости будут выводиться обычным способом.
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне новостей Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для новостей -->
+
+<!-- Контент шаблон для списка товаров -->
+<sect2>
+Контент шаблон для списка товаров
+<title>
+Описание контент шаблона для списка товаров.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению дизайн списка товаров, при просмотре товаров в категории.
+</para>
+
+<para>
+Чтобы изменять дизайн списка товаров с помощью HTML шаблона Вам нужно, прежде всего, установить модуль Product Listing в Админке - Модули - STS, иначе контент шаблон для списка товаров работать не будет.
+</para>
+
+<para>
+Второе, что нужно учитывать, шаблон для списка товаров работает только в режиме columns, т.е. обязательно поставьте columns в Админке - Настройки - Вывод товара - Формат вывода товара.
+</para>
+
+<para>
+Также не забывайте про настройку в Админке - Настройки - Вывод товара - Количество товара в одной строке, с помощью неё Вы можете регулировать, сколько товаров показывать в одной строке в списке товара.
+</para>
+
+<para>
+Модуль STS для списка товаров установили, вывод товара переключили в columns.
+</para>
+
+<para>
+Всё, теперь нужно всего лишь создать свой шаблон для списка товара.
+Шаблон должен находиться в файле /includes/sts_templates/шаблон/content/product_listing_item.html
+</para>
+
+<para>
+Я сделал простейший шаблон, можете посмотреть в качестве примера, но не судите строго, это всего лишь пример.
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне списка товаров Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для списка товаров -->
+
+<!-- Контент шаблон для товаров в блоке новинки -->
+<sect2>
+Контент шаблон для товаров в блоке новинки
+<title>
+Описание контент шаблона для товаров в блоке новинки.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению дизайн списка товаров, отображаемых в блоке новинки, который находится на главной странице по центру и при просмотре подкатегорий.
+</para>
+
+<para>
+Чтобы изменять дизайн списка товаров в блоке новинки по центру с помощью HTML шаблона Вам нужно, прежде всего, установить модуль New Products Module Listing в Админке - Модули - STS.
+</para>
+
+<para>
+Модуль New Products Module Listing установили, теперь нужно всего лишь создать свой шаблон для вывода товара в блоке новинки.
+</para>
+
+<para>
+Шаблон должен находиться в файле /includes/sts_templates/шаблон/content/new_products_module_item.html
+</para>
+
+<para>
+Я сделал простейший шаблон, можете посмотреть в качестве примера, но не судите строго, это всего лишь пример.
+</para>
+
+<para>
+Таким образом, Вы можете рисовать любой html-код в файле /includes/sts_templates/шаблон/content/new_products_module_item.html, используя разрешённые метки в шаблоне. 
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне для товаров в блоке новинки Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для товаров в блоке новинки -->
+
+<!-- Контент шаблон для товаров в блоке рекомендуемые -->
+<sect2>
+Контент шаблон для товаров в блоке рекомендуемые
+<title>
+Описание контент шаблона для товаров в блоке рекомендуемые.
+</title>
+
+<para>
+С помощью данного контент шаблона Вы можете изменять по Вашему усмотрению дизайн списка товаров, отображаемых в блоке рекомендуемые, который находится на главной странице по центру и при просмотре подкатегорий.
+</para>
+
+<para>
+Чтобы изменять дизайн списка товаров в блоке рекомендуемые по центру с помощью HTML шаблона Вам нужно, прежде всего, установить модуль Featured Products Module Listing в Админке - Модули - STS.
+</para>
+
+<para>
+Модуль Featured Products Module Listing установили, теперь нужно всего лишь создать свой шаблон для вывода товара в блоке рекомендуемые.
+</para>
+
+<para>
+Шаблон должен находиться в файле /includes/sts_templates/шаблон/content/featured_products_module_item.html
+</para>
+
+<para>
+Я сделал простейший шаблон, можете посмотреть в качестве примера, но не судите строго, это всего лишь пример.
+</para>
+
+<para>
+Таким образом, Вы можете рисовать любой html-код в файле /includes/sts_templates/шаблон/content/featured_products_module_item.html, используя разрешённые метки в шаблоне. 
+</para>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне для товаров в блоке рекомендуемые Вы можете прочитать ниже, в разделе Список разрешённых меток.
+</para>
+
+</sect2>
+<!-- /Контент шаблон для товаров в блоке рекомендуемые -->
+
+</sect1>
+<!-- /Контент шаблоны -->
+
+<!-- Список разрешённых меток -->
+<sect1>
+<title>
+Список разрешённых меток
+</title>
+
+<para>
+Список разрешённых меток для использования в шаблонах.
+</para>
+
+<!-- Общие метки -->
+<sect2>
+<title>
+Общие метки
+</title>
+
+<para>
+Основные метки, используемые в шаблонах.
+</para>
+
+<para>
+Метки, которые Вы можете использовать в своих STS шаблонах.
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$date</para>
+	  <para>Текущая дата</para>
+	  </listitem>
+	  <listitem>
+	  <para>$sid</para>
+	  <para>Строка текущей сессии пользователя вида "SessionIdVarName=WhateverTheSessionIdIs"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$cataloglogo</para>
+	  <para>Логотип и ссылка osCommerce</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlcataloglogo</para>
+	  <para>URL логотипа</para>
+	  </listitem>
+	  <listitem>
+	  <para>$myaccountlogo</para>
+	  <para>Картинка и ссылка Мои данные</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlmyaccountlogo</para>
+	  <para>Ссылка на станицу Мои данные</para>
+	  </listitem>
+	  <listitem>
+	  <para>$cartlogo</para>
+	  <para>Картинка и ссылка Корзина</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlcartlogo</para>
+	  <para>Ссылка на станицу Корзина</para>
+	  </listitem>
+	  <listitem>
+	  <para>$checkoutlogo</para>
+	  <para>Картинка и ссылка Оформить заказ</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlcheckoutlogo</para>
+	  <para>Ссылка на станицу Оформить заказ</para>
+	  </listitem>
+	  <listitem>
+	  <para>$breadcrumbs</para>
+	  <para>Навигация вида "Главная » Каталог » Рога"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$myaccount</para>
+	  <para>Текстовая ссылка Мои данные</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlmyaccount</para>
+	  <para>URL страницы Мои данные</para>
+	  </listitem>
+	  <listitem>
+	  <para>$logoff</para>
+	  <para>Текстовая ссылка Выход</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urllogoff</para>
+	  <para>URL страницы Выход</para>
+	  </listitem>
+	  <listitem>
+	  <para>$myaccountlogoff</para>
+	  <para>Выводит "Мои данные | Выход" если покупатель вошёл в магазин или "Мои данные" если покупатель не вошёл в магазин</para>
+	  </listitem>
+	  <listitem>
+	  <para>$cartcontents</para>
+	  <para>Текстовая версия функции "Содержимое корзины"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlcartcontents</para>
+	  <para>Ссылка, используемая функцией "Мои данные"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$checkout</para>
+	  <para>Ссылка, используемая функцией "Оформить заказ"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$urlcheckout</para>
+	  <para>URL функции "Оформить заказ"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$templatepath, $templatedir</para>
+	  <para>Обе метки выводят путь к папке шаблона, без слэша в конце</para>
+	  </listitem>
+	  <listitem>
+	  <para>$headertags</para>
+	  <para>Мета тэги title.../title, рекомендуется использовать метку $headcontent, т.к. метка $headertags является частью метки $headcontent</para>
+	  </listitem>
+</itemizedlist>
+
+<para>
+Вы также можете создавать новые метки, для этого нужно редактировать файл /includes/modules/sts_inc/general.php
+</para>
+
+</sect2>
+<!-- /Общие метки -->
+
+<!-- Метки боксов -->
+<sect2>
+<title>
+Метки боксов
+</title>
+
+<para>
+Список разрешённых меток для вставки боксов в шаблон.
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$categorybox</para>
+	  <para>Бокс Разделы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$manufacturerbox</para>
+	  <para>Бокс Производители</para>
+	  </listitem>
+	  <listitem>
+	  <para>$manufacturerbox</para>
+	  <para>Бокс Производители</para>
+	  </listitem>
+	  <listitem>
+	  <para>$filterbox</para>
+	  <para>Бокс Фильтры</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_latestbox</para>
+	  <para>Бокс Последние новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$specialbox</para>
+	  <para>Бокс Скидки</para>
+	  </listitem>
+	  <listitem>
+	  <para>$searchbox</para>
+	  <para>Бокс Поиск</para>
+	  </listitem>
+	  <listitem>
+	  <para>$featuredbox</para>
+	  <para>Бокс Рекомендуемые</para>
+	  </listitem>
+	  <listitem>
+	  <para>$shop_by_pricebox</para>
+	  <para>Бокс Сортировка по цене</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articlesbox</para>
+	  <para>Бокс Статьи</para>
+	  </listitem>
+	  <listitem>
+	  <para>$authorsbox</para>
+	  <para>Бокс Авторы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$linksbox</para>
+	  <para>Бокс Ссылки</para>
+	  </listitem>
+	  <listitem>
+	  <para>$informationbox</para>
+	  <para>Бокс Информация</para>
+	  </listitem>
+	  <listitem>
+	  <para>$cartbox</para>
+	  <para>Бокс Корзина</para>
+	  </listitem>
+	  <listitem>
+	  <para>$download_filesbox</para>
+	  <para>Бокс Мои загрузки</para>
+	  </listitem>
+	  <listitem>
+	  <para>$helpbox</para>
+	  <para>Бокс Консультант</para>
+	  </listitem>
+	  <listitem>
+	  <para>$accountbox</para>
+	  <para>Бокс Вход/Мои данные</para>
+	  </listitem>
+	  <listitem>
+	  <para>$wishlistbox</para>
+	  <para>Бокс Отложенные товары</para>
+	  </listitem>
+	  <listitem>
+	  <para>$affiliatebox</para>
+	  <para>Бокс Партнёрская программа</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_latestbox</para>
+	  <para>Бокс Последние вопросы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$pollsbox</para>
+	  <para>Бокс Опросы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$maninfobox</para>
+	  <para>Бокс Информация о производителе</para>
+	  </listitem>
+	  <listitem>
+	  <para>$orderhistorybox</para>
+	  <para>Бокс История заказов</para>
+	  </listitem>
+	  <listitem>
+	  <para>$bestsellersbox</para>
+	  <para>Бокс Лучшие товары</para>
+	  </listitem>
+	  <listitem>
+	  <para>$notificationbox</para>
+	  <para>Бокс Уведомления</para>
+	  </listitem>
+<!--
+	  <listitem>
+	  <para>$specialfriendbox</para>
+	  <para>Бокс Рассказать другу</para>
+	  </listitem>
+-->	  
+	  <listitem>
+	  <para>$reviewsbox</para>
+	  <para>Бокс Отзывы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$tellafriendbox</para>
+	  <para>Бокс Рассказать другу</para>
+	  </listitem>
+	  <listitem>
+	  <para>$languagebox</para>
+	  <para>Бокс Языки</para>
+	  </listitem>
+	  <listitem>
+	  <para>$currenciesbox</para>
+	  <para>Бокс Валюты</para>
+	  </listitem>
+</itemizedlist>
+
+<para>
+Вы также можете создавать новые метки, для этого нужно редактировать файл /includes/modules/sts_inc/column_left.php
+</para>
+
+<para>
+Если бокс не выводится (например бокс Мои загрузки), значит просто у покупателя нет доступа к загрузкам и бокс не выводится, когда будут доступны загрузки, бокс будет показан.
+</para>
+
+</sect2>
+<!-- /Метки боксов -->
+
+<!-- Метка для основного содержимого страницы -->
+<sect2>
+<title>
+Метка для основного содержимого страницы
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$content</para>
+	  <para>Содержимое страницы выводится данной меткой</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метка для основного содержимого страницы -->
+
+<!-- Метки для шапки шаблона -->
+<sect2>
+<title>
+Метки для шапки шаблона
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$htmlparams</para>
+	  <para>HTML параметры, метка должна вставляться следующим образом: &lt;html $htmlparams&gt;</para>
+	  </listitem>
+	  <listitem>
+	  <para>&lt;!--$headcontent--&gt;</para>
+	  <para>Данная метка должна вставлять внутрь тэга &lt;head&gt;, данная метка включает в себя кодировку страницы, мето тэги, java скрипты и т.д.</para>
+	  </listitem>
+	  <listitem>
+	  <para>&lt;!--$extracss--&gt;</para>
+	  <para>Данная метка вставляет ссылку на файл сталей css</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для шапки шаблона -->
+
+<!-- Метки для низа шаблона -->
+<sect2>
+<title>
+Метки для низа шаблона
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$numrequests</para>
+	  <para>Счётчик типа "1127 человек посетили магазин c 26 Ноября 2003 г."</para>
+	  </listitem>
+	  <listitem>
+	  <para>$footer_text</para>
+	  <para>Выводится текст из константы FOOTER_TEXT_BODY</para>
+	  </listitem>
+	  <listitem>
+	  <para>$banner_only</para>
+	  <para>Менеджер баннеров, без html таблицы</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для низа шаблона -->
+
+<!-- Другие метки -->
+<sect2>
+<title>
+Другие метки
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$catmenu</para>
+	  <para>Выпадающее меню со списком категорий</para>
+	  </listitem>
+	  <listitem>
+	  <para>$footer</para>
+	  <para>Выводит весь низ в виде таблицы, т.е. данная метка выводит текущую дату и счётчик в виде одной html таблицы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$banner</para>
+	  <para>Менеджер баннеров, с html таблицей</para>
+	  </listitem>
+	  <listitem>
+	  <para>$cat_НазваниеКатегории, $urlcat_НазваниеКатегории</para>
+	  <para>Ссылка на категорию</para>
+	  </listitem>
+	  <listitem>
+	  <para>$cat_IDКатегории, $urlcat_IDКатегории</para>
+	  <para>Ссылка на категорию, используя id код категории</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Другие метки -->
+
+<!-- Метки для контент шаблона product_info -->
+<sect2>
+<title>
+Метки для контент шаблона product_info
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$product_id</para>
+	  <para>ID код товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$startform</para>
+	  <para>Выводит форму для заказа, данная метка обязательно должна быть в контент шаблоне в самом верху, иначе возможна неправильная работа добавления товара в корзину</para>
+	  </listitem>
+	  <listitem>
+	  <para>$endform</para>
+	  <para>Закрывает форму, должна быть внизу контент шаблона</para>
+	  </listitem>
+	  <listitem>
+	  <para>$regularprice</para>
+	  <para>Стоимость товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$specialprice</para>
+	  <para>Спец. цена, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$productname</para>
+	  <para>Название товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$productmodel</para>
+	  <para>Код товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$productdesc</para>
+	  <para>Описание товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$imagesmall</para>
+	  <para>Картинка товара с указанными размерами в Админке - Настройки - Картинки</para>
+	  </listitem>
+	  <listitem>
+	  <para>$imagelarge</para>
+	  <para>Такая же картинка оригинального размера</para>
+	  </listitem>
+	  <listitem>
+	  <para>$product_popup</para>
+	  <para>Картинска с кнопкой Увеличить</para>
+	  </listitem>
+	  <listitem>
+	  <para>$optionheader</para>
+	  <para>Заголовок Атрибуты</para>
+	  </listitem>
+	  <listitem>
+	  <para>$optionnames</para>
+	  <para>Название атрибутов, разделённые br, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$optionchoices</para>
+	  <para>Значение атрибутов, разделённые br, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$moreinfolabel</para>
+	  <para>Текст с ссылкой на внешний источник, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$moreinfourl</para>
+	  <para>URL внешнего источника, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$productdatelabel</para>
+	  <para>Текст с датой создания товара или датой доступности товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$productdate</para>
+	  <para>Дата создания товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$reviews</para>
+	  <para>Текст с количеством отзывов</para>
+	  </listitem>
+	  <listitem>
+	  <para>$reviewsbutton</para>
+	  <para>Кнопка Отзывы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$reviewsurl</para>
+	  <para>URL ссылка страницы с отзывами</para>
+	  </listitem>
+	  <listitem>
+	  <para>$addtocartbutton</para>
+	  <para>Кнопка Добавить в корзину</para>
+	  </listitem>
+	  <listitem>
+	  <para>$alsopurchased</para>
+	  <para>Модуль "С этим товаром также заказывают"</para>
+	  </listitem>
+	  <listitem>
+	  <para>$next_previous_module</para>
+	  <para>Навигация по товарам</para>
+	  </listitem>
+	  <listitem>
+	  <para>$ultrapics_module</para>
+	  <para>Дополнительные картинки товара, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$xsell_module</para>
+	  <para>Сопутствующие товары</para>
+	  </listitem>
+	  <listitem>
+	  <para>$wishlist</para>
+	  <para>Кнопка Отложить</para>
+	  </listitem>
+	  <listitem>
+	  <para>$product_properties_header</para>
+	  <para>Заголовок Технические параметры товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$properties_name</para>
+	  <para>Название параметра, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$properties_value</para>
+	  <para>Значение параметра, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$product_extra_fields_header</para>
+	  <para>Заголовок дополнительных полей товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$properties_extra_fields_name</para>
+	  <para>Название поля, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$properties_extra_fields_value</para>
+	  <para>Значение поля, если есть</para>
+	  </listitem>
+</itemizedlist>
+
+<para>
+Вы также можете создавать новые метки, для этого нужно редактировать файл /includes/modules/sts_inc/product_info.php
+</para>
+
+</sect2>
+<!-- /Метки для контент шаблона product_info -->
+
+<!-- Метки для контент шаблона article_info -->
+<sect2>
+<title>
+Метки для контент шаблона article_info
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$articles_id</para>
+	  <para>Id код статьи</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_name</para>
+	  <para>Название статьи</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_authors_id</para>
+	  <para>Id код автора статьи</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_author</para>
+	  <para>Автор статьи</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_description</para>
+	  <para>Сама статья</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_date_label</para>
+	  <para>Текст даты добавления статьи</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_date</para>
+	  <para>Сама дата добавления</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_reviews</para>
+	  <para>Отзывы</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_more_info_label</para>
+	  <para>Текст с внешней ссылкой статьи, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_more_info_url</para>
+	  <para>Сама ссылка, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_reviews_url</para>
+	  <para>Url адрес страницы отзывов к статье</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_reviews_write_url</para>
+	  <para>Url адрес страницы написать отзыв к статье</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_reviews_button</para>
+	  <para>Кнопка отзывов к статье</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_reviews_write_button</para>
+	  <para>Кнопка написать отзыв к статье</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_also_purchased</para>
+	  <para>Сопутствующие товары к статье</para>
+	  </listitem>
+	  <listitem>
+	  <para>$articles_search</para>
+	  <para>Форма поиска по статьям</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для контент шаблона article_info -->
+
+<!-- Метки для контент шаблона faqdesk_info -->
+<sect2>
+<title>
+Метки для контент шаблона faqdesk_info
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$faqdesk_id</para>
+	  <para>Id код вопроса</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_image</para>
+	  <para>Первая картинка вопроса, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_image_two</para>
+	  <para>Вторая картинка вопроса, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_image_three</para>
+	  <para>Третья картинка вопроса, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_question</para>
+	  <para>Сам вопрос</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_answer_short</para>
+	  <para>Краткий ответ</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_answer_long</para>
+	  <para>Расширенный ответ</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_extra_viewed</para>
+	  <para>Количество просмотров вопроса</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_date_added</para>
+	  <para>Дата создания вопроса</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_search</para>
+	  <para>Форма поиска по вопросам</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_reviews</para>
+	  <para>Количество отзывов</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_more_info_label</para>
+	  <para>Текст с внешней ссылкой вопроса, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_more_info_url</para>
+	  <para>Сама ссылка, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_reviews_url</para>
+	  <para>Url адрес страницы отзывов к вопросу</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_reviews_write_url</para>
+	  <para>Url адрес страницы написать отзыв к вопросу</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_reviews_button</para>
+	  <para>Кнопка отзывов к вопросу</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_reviews_write_button</para>
+	  <para>Кнопка написать отзыв к вопросу</para>
+	  </listitem>
+	  <listitem>
+	  <para>$faqdesk_reviews_block</para>
+	  <para>Блок с отзывами к вопросу</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для контент шаблона faqdesk_info -->
+
+<!-- Метки для контент шаблона newsdesk_info -->
+<sect2>
+<title>
+Метки для контент шаблона newsdesk_info
+</title>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$newsdesk_id</para>
+	  <para>Id код новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_image</para>
+	  <para>Первая картинка новости, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_image_two</para>
+	  <para>Вторая картинка новости, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_image_three</para>
+	  <para>Третья картинка новости, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_article_name</para>
+	  <para>Заголовок новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_article_shorttext</para>
+	  <para>Новость кратко</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_article_description</para>
+	  <para>Новость подробно</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_article_viewed</para>
+	  <para>Количество просмотров новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_date_added</para>
+	  <para>Дата создания новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_search</para>
+	  <para>Форма поиска по новостям</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_reviews</para>
+	  <para>Количество отзывов</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_more_info_label</para>
+	  <para>Текст с внешней ссылкой новости, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_more_info_url</para>
+	  <para>Сама ссылка, если есть</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_reviews_url</para>
+	  <para>Url адрес страницы отзывов к новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_reviews_write_url</para>
+	  <para>Url адрес страницы написать отзыв к новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_reviews_button</para>
+	  <para>Кнопка отзывов к новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_reviews_write_button</para>
+	  <para>Кнопка написать отзыв к новости</para>
+	  </listitem>
+	  <listitem>
+	  <para>$newsdesk_reviews_block</para>
+	  <para>Блок с отзывами к новости</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для контент шаблона newsdesk_info -->
+
+<!-- Метки для контент шаблона списка товаров -->
+<sect2>
+<title>
+Метки для контент шаблона списка товаров
+</title>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне списка товаров /includes/sts_templates/шаблон/content/product_listing_item.html
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$url</para>
+	  <para>URL адрес карточки товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$pid</para>
+	  <para>ID код товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$description</para>
+	  <para>Краткое описание товара, если указано</para>
+	  </listitem>
+	  <listitem>
+	  <para>$manufacturer</para>
+	  <para>Производитель товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$model</para>
+	  <para>Код товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$quantity</para>
+	  <para>Количество на складе</para>
+	  </listitem>
+	  <listitem>
+	  <para>$weight</para>
+	  <para>Вес товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$name</para>
+	  <para>Название товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$image</para>
+	  <para>Картинка товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$price</para>
+	  <para>Стоимость товара</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для контент шаблона списка товаров -->
+
+<!-- Метки для контент шаблона товаров в блоке новинки -->
+<sect2>
+<title>
+Метки для контент шаблона товаров в блоке новинки
+</title>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне товаров в блоке новинки /includes/sts_templates/шаблон/content/new_products_module_item.html
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$url</para>
+	  <para>URL адрес карточки товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$pid</para>
+	  <para>ID код товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$description</para>
+	  <para>Краткое описание товара, если указано</para>
+	  </listitem>
+	  <listitem>
+	  <para>$manufacturer</para>
+	  <para>Производитель товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$model</para>
+	  <para>Код товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$quantity</para>
+	  <para>Количество на складе</para>
+	  </listitem>
+	  <listitem>
+	  <para>$weight</para>
+	  <para>Вес товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$name</para>
+	  <para>Название товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$image</para>
+	  <para>Картинка товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$price</para>
+	  <para>Стоимость товара</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для контент шаблона товаров в блоке новинки -->
+
+<!-- Метки для контент шаблона товаров в блоке рекомендуемые -->
+<sect2>
+<title>
+Метки для контент шаблона товаров в блоке рекомендуемые
+</title>
+
+<para>
+Список меток, которые можно использовать в контент шаблоне товаров в блоке рекомендуемые /includes/sts_templates/шаблон/content/featured_products_module_item.html
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$url</para>
+	  <para>URL адрес карточки товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$pid</para>
+	  <para>ID код товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$description</para>
+	  <para>Краткое описание товара, если указано</para>
+	  </listitem>
+	  <listitem>
+	  <para>$manufacturer</para>
+	  <para>Производитель товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$model</para>
+	  <para>Код товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$quantity</para>
+	  <para>Количество на складе</para>
+	  </listitem>
+	  <listitem>
+	  <para>$weight</para>
+	  <para>Вес товара, если указан</para>
+	  </listitem>
+	  <listitem>
+	  <para>$name</para>
+	  <para>Название товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$image</para>
+	  <para>Картинка товара</para>
+	  </listitem>
+	  <listitem>
+	  <para>$price</para>
+	  <para>Стоимость товара</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для контент шаблона товаров в блоке рекомендуемые -->
+
+<!-- Метки для шаблона боксов -->
+<sect2>
+<title>
+Метки для шаблона боксов
+</title>
+
+<para>
+Метки для шапки шаблона бокса:
+</para>
+
+<para>
+Список меток, которые можно использовать в шаблоне боксов /includes/sts_templates/шаблон/boxes/infobox.php.html
+</para>
+
+<itemizedlist>
+	  <listitem>
+	  <para>$headertext</para>
+	  <para>Название бокса.</para>
+	  </listitem>
+	  <listitem>
+	  <para>$right_arrow</para>
+	  <para>Стрелка справа от названия, если есть.</para>
+	  </listitem>
+	  <listitem>
+	  <para>$content</para>
+	  <para>Содержимое бокса.</para>
+	  </listitem>
+</itemizedlist>
+
+</sect2>
+<!-- /Метки для шаблона боксов -->
+
+</sect1>
+<!-- /Список разрешённых меток -->
+
+
+</chapter>
+<!-- /Раздел Шаблоны (Simple Template System) -->

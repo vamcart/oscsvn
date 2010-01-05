@@ -1,0 +1,2687 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Раздел Первые шаги после установки интернет-магазина -->
+<chapter>
+
+<title>
+Первые шаги после установки интернет-магазина
+</title>
+
+<para>
+В данном разделе мы рассмотрим первые шаги, которые Вы должны будете обязательно сделать после установки интернет-магазина. Как минимум, сразу после установки Вам необходимо нужно будет сделать следующие шаги.
+</para>
+
+
+<!-- Смена e-mail адреса и пароля для входа в администраторскую -->
+<sect1>
+<title>
+Смена e-mail адреса и пароля для входа в администраторскую
+</title>
+
+<para>
+Чтобы попасть в администраторскую часть, необходимо открыть в браузере адрес <emphasis>http://адрес магазина/admin</emphasis> и указать <emphasis>e-mail</emphasis> и <emphasis>пароль</emphasis> для доступа.
+</para>
+
+<para>
+По умолчанию, для входа в администраторскую установлены следующие данные:
+</para>
+
+<para>
+<emphasis>Email:</emphasis> admin@localhost.com
+</para>
+
+<para>
+<emphasis>Пароль:</emphasis> admin
+</para>
+
+<para>
+После входа в администраторскую, Вы всегда можете поменять e-mail адрес и пароль, установленные по умолчанию на свои e-mail адрес и пароль. После установки магазина обязательно поменяйте <emphasis>e-mail адрес (admin@localhost.com)</emphasis> и <emphasis>пароль (admin)</emphasis>, установленные по умолчанию, на свои, чтобы никто, кроме Вас, не мог попасть в администраторскую.
+</para>
+
+<para>
+Чтобы изменить e-mail адрес и пароль входа в администраторскую, Вам, прежде всего, необходимо войти в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin) - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addmanufacturer1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Введя e-mail адрес и пароль для доступа, установленные по умолчанию (<emphasis>e-mail адрес: admin@localhost.com и пароль: admin</emphasis>). Зайдя в администраторскую, Вы видите перед собой главное меню (рис. 2), куда вошли наиболее используемые инструменты администрирования магазина. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addmanufacturer2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для того чтобы изменить e-mail адрес и пароль входа в администраторскую, Вам необходимо перейти в раздел <emphasis>Каталог - Содержание</emphasis>, для этого нажмите на ссылку <emphasis>Содержание</emphasis> - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Перейдя на страницу управления каталогом товаров Вашего интернет-магазина - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Далее выбирайте слева раздел <emphasis>Администраторы</emphasis> - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Перейдя в раздел Администраторы выбирайте пункт <emphasis>Обновить информацию о себе</emphasis> - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Чтобы поменять e-mail адрес и пароль, нажимайте кнопку <emphasis>Изменить</emphasis> - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажав кнопку Изменить, Вы перейдёте на страницу, где Вы должны будете ввести пароль по умолчанию - admin и нажать кнопку Подтвердить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+После нажатия кнопки Подтвердить Вы должны перейти на страницу, где Вы увидите свои текущие данные - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы можете изменить любое поле данной формы, в полях E-Mail Адрес, Пароль и Подтвердить пароль Вы можете указать новые данные для входа в администраторскую, после внесения необходимых изменений нажимайте кнопку Сохранить - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажав кнопку Сохранить, страница будет обновлена и Вы увидите, что данные были изменены - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Чтобы войти в администраторскую с новым e-mail адресом и паролем Вам нужно выйти из админки, нажав справа вверху ссылку Выход - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Start14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выйдя из администраторской, Вы можете снова заходить в администраторскую, но уже с тем e-mail адресом и паролем, который Вы установили.
+</para>
+
+</sect1>
+<!-- /Смена e-mail адреса и пароля для входа в администраторскую -->
+
+<!-- Указание первоначальных сведений о магазине -->
+<sect1>
+<title>
+Указание первоначальных сведений о магазине
+</title>
+
+<para>
+Сразу после успешной установки интернет-магазина, Вам необходимо указать первоначальные сведения о магазине. Заходите в Администраторский раздел магазина, далее в раздел Настройки - Магазин (рис. 1).
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Admin.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для начала Вам необходимо изменить следующие переменные:
+
+<itemizedlist>
+  <listitem>
+    <para>Название магазина - Укажите здесь название Вашего интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>Владелец магазина - Укажите здесь Имя владельца магазина.</para>
+  </listitem>
+  <listitem>
+    <para>E-Mail Адрес - Укажите здесь E-Mail адрес владельца магазина.</para>
+  </listitem>
+  <listitem>
+    <para>ICQ номер - Укажите здесь номер ICQ консультанта. Указанный здесь ICQ номер будет выведен в боксе Консультант в магазине. Если у Вас нет ICQ номера, можете не указывать, но в этом случае не забудьте отключить бокс Консультант в Админке - Шаблоны - Управление боксами.</para>
+  </listitem>
+  <listitem>
+    <para>E-Mail От - Укажите здесь E-Mail адрес. Все письма, отправляемые из интернет-магазина будут иметь обратный адрес, который Вы укажите в данной переменной.</para>
+  </listitem>
+  <listitem>
+    <para>Страна - Укажите страну Вашего интернет-магазина. Указанная страна будет выбрана на странице регистрации покупателей.</para>
+  </listitem>
+  <listitem>
+    <para>Регион - Укажите регион Вашего интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>Отправка копий писем с заказом - Если Вы хотите получать копии писем с заказами, укажите здесь один или несколько E-Mail адресов, на которые будут приходить копии писем с заказами. Если Вы не хотите получать на E-mail копии всех сделанных в Вашем интернет-магазине заказов, просто оставьте данное поле пустым. Обратите внимание, что нужно указывать E-mail адрес в определённом формате: Имя &lt;e-mail@адрес&gt;. Указывать адреса нужно именно в таком формате и никак иначе. Если Вы указываете больше одного получателя копий писем с заказами, разделяйте одного получателя от другого с помощью запятой. Например: Имя &lt;e-mail@адрес&gt;, Имя1 &lt;e-mail@адрес1&gt;</para>
+  </listitem>
+  <listitem>
+    <para>Адрес и телефон магазина - Укажите здесь адрес и телефон Вашего интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>Получатели писем, отправленных со страницы Свяжитесь с нами - Укажите здесь получателей писем, отправляемых со страницы Свяжитесь с нами. В данном поле должен быть указан по меньшей мере один получатель, иначе все письма, отправляемые со страницы Свяжитесь с нами до Вас не дойдут. Обратите внимание, что нужно указывать E-mail адрес в определённом формате: Получатель &lt;e-mail@адрес&gt;. Указывать адреса нужно именно в таком формате и никак иначе. Если Вы указываете больше одного получателя, разделяйте одного получателя от другого с помощью запятой. Например: Получатель &lt;e-mail@адрес&gt;, Получатель1 &lt;e-mail@адрес1&gt;</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+</sect1>
+<!-- /Указание первоначальных сведений о магазине -->
+
+<!-- Настройка способов оплаты -->
+<sect1>
+<title>
+Настройка способов оплаты
+</title>
+
+<para>
+Теперь Вам необходимо настроить способы оплаты, которые Вы хотите видеть у себя в интернет-магазине, а точнее установленные Вами способы оплаты (модули оплаты) будут доступны покупателю при оформлении заказа в интернет-магазине. Для этого переходите в Администраторский раздел, далее в раздел Модули - Оплата (рис. 1). 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Payment.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выбирайте необходимые Вам модули и нажимайте справа кнопку Установить (если данный модуль не был установлен ранее, если он уже установлен, Вам лишь надо его настроить, либо удалить, если в нём нет необходимости) - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Payment4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Модуль будет установлен и далее Вам необходимо будет настроить его. Нажимайте кнопку Изменить и настраивайте модуль так как Вам нужно - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Payment1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Внимательно читайте описание каждого поля формы при настройке, в большинстве случаев в таких подсказках и написана вся информацию, т.е. как именно необходимо настраивать модуль. К примеру, в модуле оплаты WebMoney Вам нужно будет указать свой идентификационный номер в системе WebMoney (WM ID) и номера кошельков, на которые покупатели будут производить оплату при оформлении заказа - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Payment3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы также можете удалять модули. Если Вам какой-либо модуль показался лишним, просто выделите его и справа нажмите кнопку Удалить - рис. 5. Выбранный модуль будет удален и не будет доступен покупателям при оформлении заказа в интернет-магазине. Учитывайте также, что все настройки, которые Вы сделали в модулях оплаты также будут удалены при удалении самого модуля.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Payment2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Если Вы не нашли модули, которые Вы хотите видеть у себя в интернет-магазине, заходите на сайт <ulink url="http://oscommerce.com/community/contributions">http://oscommerce.com/community/contributions</ulink> и ищите модуль, который Вам необходим. На данный момент модулей оплаты огромное количество, нужно только поискать необходимый Вам.
+</para>
+
+</sect1>
+<!-- /Настройка способов оплаты -->
+
+<!-- Настройка способов доставки -->
+<sect1>
+<title>
+Настройка способов доставки
+</title>
+
+<para>
+Теперь Вам необходимо настроить способы доставки, которые Вы хотите видеть у себя в интернет-магазине, а точнее установленные Вами способы доставки (модули доставки) будут доступны покупателю при оформлении заказа в интернет-магазине. Для этого переходите в Администраторский раздел, далее в раздел Модули - Доставка - рис. 1. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Shipping.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выбирайте необходимые Вам модули и нажимайте справа кнопку Установить (если данный модуль не был установлен ранее, если он уже установлен, Вам лишь надо его настроить, либо удалить, если в нём нет необходимости) - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Shipping1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Модуль будет установлен и далее Вам необходимо будет настроить его. Нажимайте кнопку Изменить и настраивайте модуль так как Вам нужно - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Shipping2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Внимательно читайте описание каждого поля формы при настройке, в большинстве случаев в таких подсказках и написана вся информацию, т.е. как именно необходимо настраивать модуль - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Shipping4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы также можете удалять модули. Если Вам какой-либо модуль показался лишним, просто выделите его и справа нажмите кнопку Удалить - рис. 5. Выбранный модуль будет удален и не будет доступен покупателям при оформлении заказа в интернет-магазине. Учитывайте также, что все настройки, которые Вы сделали в модулях доставки, также будут удалены при удалении самого модуля.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Shipping3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Если Вы не нашли модули, которые Вы хотите видеть у себя в интернет-магазине, заходите на сайт <ulink url="http://oscommerce.com/community/contributions">http://oscommerce.com/community/contributions</ulink> и ищите модуль, который Вам необходим. На данный момент модулей доставки огромное количество, нужно только поискать необходимый Вам.
+</para>
+
+</sect1>
+<!-- /Настройка способов доставки -->
+
+<!-- Настройка мета тэгов основных страниц магазина -->
+<sect1>
+<title>
+Настройка мета тэгов основных страниц магазина
+</title>
+
+<para>
+Теперь Вам необходимо настроить мета тэги для основных страниц интернет-магазина. Мета-тэги для категорий товаров, для производителей, для товаров Вы можете устанавливать в Администраторском разделе при добавлении категорий, производителей, товаров соответственно. В данном случае, мета тэги для основных страниц устанавливаются вручную, в файле /includes/languages/russian/header_tags.php. Если у Вас русский язык в магазине основной. Для других языков нужно редактировать соответствующий данному языку файл, к примеру, для английского языка редактируйте файл /includes/languages/english/header_tags.php и т.д.
+</para>
+
+<para>
+Не спрашивайте, что такое мета тэги и как правильно их заполнять. Данный вопрос рассмотрен в мельчайших подробностях во многих статьях, которые Вы легко можете найти в интернете. Если Вы не знаете, что такое мета тэги, лучше оставьте данный файл как есть, без изменения.
+</para>
+
+<para>
+Открывайте файл <emphasis>/includes/languages/russian/header_tags.php</emphasis> в любом текстовом редакторе, например в Homesite, Bluefish, либо просто в блокноте - рис. 1. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Meta-tags.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь я расскажу про каждую настройку в данном файле, для чего она нужна и как заполнять данные константы.
+</para>
+
+<para>
+<emphasis>define('HEAD_REPLY_TAG_ALL','ваш@e-mail');</emphasis>
+</para>
+
+<para>
+Здесь Вы должны указать свой e-mail адрес. Просто замените строку <emphasis>ваш@e-mail</emphasis> на свой e-mail адрес, т.е. указывайте свой адрес между кавычками ' и '. 
+</para>
+
+<para>
+Должно получиться примерно так: <emphasis>define('HEAD_REPLY_TAG_ALL','vam@test.com');</emphasis> 
+</para>
+
+<para>
+Все остальные переменные изменяются точно также.
+</para>
+
+<para>
+Мета тэги для всех страниц:
+<itemizedlist>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_ALL','Интернет-магазин ');</para>
+    <para>Здесь Вы указываете тэг meta title для всех страниц своего интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_ALL','описание');</para>
+    <para>Здесь Вы указываете тэг meta description для всех страниц своего интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_ALL','ключевые слова');</para>
+    <para>Здесь Вы указываете тэг meta keywords для всех страниц своего интернет-магазина.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги главной страницы
+</para>
+<para>
+Данный блок отвечает за мета тэги только главной страницы интернет-магазина:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_DEFAULT_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_TITLE_TAG_ALL на главной странице, т.е. показывать ли на главной странице тэг meta title для всех страниц интернет-магазина + meta title только для главной страницы или показывать meta title только для главной страницы. Если Вы хотите meta title для всех страниц + meta title для главной, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на главной странице показывать только meta title главной страницы, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_DEFAULT_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_KEY_TAG_ALL на главной странице, т.е. показывать ли на главной странице тэг meta keywords для всех страниц интернет-магазина + meta keywords только для главной страницы или показывать meta keywords только для главной страницы. Если Вы хотите meta keywords для всех страниц + meta keywords для главной, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на главной странице показывать только meta keywords главной страницы, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_DEFAULT_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_DESC_TAG_ALL на главной странице, т.е. показывать ли на главной странице тэг meta description для всех страниц интернет-магазина + meta description только для главной страницы или показывать meta description только для главной страницы. Если Вы хотите meta description для всех страниц + meta description для главной, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на главной странице показывать только meta description главной страницы, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_DEFAULT', 'Заголовок главной страницы');</para>
+    <para>Здесь Вы указываете тэг meta title для главной страницы интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_DEFAULT','описание главной страницы');</para>
+    <para>Здесь Вы указываете тэг meta keywords для главной страницы интернет-магазина.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_DEFAULT','ключевые слова главной страницы');</para>
+    <para>Здесь Вы указываете тэг meta description для главной страницы интернет-магазина.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги карточки товара
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы карточки товара:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_PRODUCT_INFO_ON','1');</para>
+    <para>Если 1, то на странице карточки товара в meta title выводится полная строка, т.е. Название товара (либо meta title товара, если он был указан при добавлении товара) - Категория - Название интернет-магазина. Если 0, то на странице карточки товара в meta title выводится только название товара т.е. Названия товара (либо meta title товара, если он был указан при добавлении товара).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_PRODUCT_INFO_ON','1');</para>
+    <para>Если 1, то на странице карточки товара в meta keywords выводится полная строка, т.е. meta keywords товара (если он был указан при добавлении товара) или переменная HEAD_KEY_TAG_PRODUCT_INFO, если она была указана ниже. Если 0, то на странице карточки товара в meta keywords выводится только meta keywords товара.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_PRODUCT_INFO_ON','1');</para>
+    <para>Если 1, то на странице карточки товара в meta description выводится полная строка, т.е. meta description товара (если он был указан при добавлении товара) или переменная HEAD_DESC_TAG_PRODUCT_INFO, если она была указана ниже. Если 0, то на странице карточки товара в meta descrioption выводится только meta description товара.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_PRODUCT_INFO',);</para>
+    <para>Здесь Вы указываете тэг meta title для страницы карточки товара.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_PRODUCT_INFO',);</para>
+    <para>Здесь Вы указываете тэг meta description для страницы карточки товара.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_PRODUCT_INFO',);</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы карточки товара.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы новинки
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы новинки:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_WHATS_NEW_ON','1');</para>
+    <para>Если 1, то на странице новинки в meta title выводится полная строка, т.е. Новинки (или то, что Вы укажите в переменной HEAD_TITLE_TAG_WHATS_NEW) - Название интернет-магазина. Если 0, то на странице новинки в meta title выводится только название страницы, т.е. Новинки (или то, что Вы укажите в переменной HEAD_TITLE_TAG_WHATS_NEW).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_WHATS_NEW_ON','1');</para>
+    <para>Если 1, то на странице новинки в meta keywords выводится полная строка, т.е. meta keywords для всех страниц сайта + новинки (т.е. то, что Вы укажите в переменной HEAD_KEY_TAG_WHATS_NEW). Если 0, то на странице новинки в meta keywords выводится только новинки (или то, что Вы укажите в переменной HEAD_KEY_TAG_WHATS_NEW).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_WHATS_NEW_ON','1');</para>
+    <para>Если 1, то на странице новинки в meta description выводится полная строка, т.е. meta description для всех страниц сайта + новинки (т.е. то, что Вы укажите в переменной HEAD_DESC_TAG_WHATS_NEW). Если 0, то на странице новинки в meta description выводится только новинки (или то, что Вы укажите в переменной HEAD_DESC_TAG_WHATS_NEW).</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_WHATS_NEW','Новинки');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы новинки.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_WHATS_NEW','новинки');</para>
+    <para>Здесь Вы указываете тэг meta description для страницы новинки.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_WHATS_NEW','новинки');</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы новинки.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы скидки
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы скидки:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_SPECIALS_ON','1');</para>
+    <para>Если 1, то на странице скидки в meta title выводится полная строка, т.е. Скидки (или то, что Вы укажите в переменной HEAD_TITLE_TAG_SPECIALS) - Название интернет-магазина. Если 0, то на странице скидки в meta title выводится только название страницы, т.е. Скидки (или то, что Вы укажите в переменной HEAD_TITLE_TAG_SPECIALS).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_SPECIALS_ON','1');</para>
+    <para>Если 1, то на странице скидки в meta keywords выводится полная строка, т.е. meta keywords для всех страниц сайта + скидки (т.е. то, что Вы укажите в переменной HEAD_KEY_TAG_SPECIALS). Если 0, то на странице скидки в meta keywords выводится только скидки (или то, что Вы укажите в переменной HEAD_KEY_TAG_SPECIALS).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_SPECIALS_ON','1');</para>
+    <para>Если 1, то на странице скидки в meta description выводится полная строка, т.е. meta description для всех страниц сайта + скидки (т.е. то, что Вы укажите в переменной HEAD_DESC_TAG_SPECIALS). Если 0, то на странице скидки в meta description выводится только скидки (или то, что Вы укажите в переменной HEAD_DESC_TAG_SPECIALS).</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_SPECIALS','Скидки');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы скидки.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_SPECIALS','Скидки');</para>
+    <para>Здесь Вы указываете тэг meta description для страницы скидки.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_SPECIALS','скидки');</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы скидки.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы отзывы
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы отзывы:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_PRODUCT_REVIEWS_INFO_ON','1');</para>
+    <para>Если 1, то на странице отзывы в meta title выводится полная строка, т.е. Отзыв о товаре (или то, что Вы укажите в переменной HEAD_TITLE_TAG_PRODUCT_REVIEWS_INFO) - Название интернет-магазина. Если 0, то на странице отзывы в meta title выводится только название страницы, т.е. Отзыв о товаре (или то, что Вы укажите в переменной HEAD_TITLE_TAG_PRODUCT_REVIEWS_INFO).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_PRODUCT_REVIEWS_INFO_ON','1');</para>
+    <para>Если 1, то на странице отзывы в meta keywords выводится полная строка, т.е. meta keywords для всех страниц сайта + отзывы (т.е. то, что Вы укажите в переменной HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO). Если 0, то на странице отзывы в meta keywords выводится только отзывы (или то, что Вы укажите в переменной HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO).</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_PRODUCT_REVIEWS_INFO_ON','1');</para>
+    <para>Если 1, то на странице отзывы в meta description выводится полная строка, т.е. meta description для всех страниц сайта + отзывы (т.е. то, что Вы укажите в переменной HEAD_DESC_TAG_PRODUCT_REVIEWS_INFO). Если 0, то на странице отзывы в meta description выводится только отзывы (или то, что Вы укажите в переменной HEAD_DESC_TAG_PRODUCT_REVIEWS_INFO).</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_PRODUCT_REVIEWS_INFO','Отзыв о товаре');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы отзывы.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_PRODUCT_REVIEWS_INFO','отзывы');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы отзывы.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO','отзывы');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы отзывы.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги всех страниц модуля статьи
+</para>
+<para>
+Данный блок отвечает за мета тэги всех страниц модуля статьи:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HEAD_TITLE_ARTICLE_TAG_ALL','Интернет-магазин');</para>
+    <para>Здесь Вы указываете тэг meta title для всех страниц модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_ARTICLE_TAG_ALL','статьи');</para>
+    <para>Здесь Вы указываете тэг meta description для всех страниц модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_ARTICLE_TAG_ALL','статьи');</para>
+    <para>Здесь Вы указываете тэг meta keywords для всех страниц модуля статьи.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы articles.php модуля статьи
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы articles.php модуля статьи:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_ARTICLES_ON','1'); // Include HEAD_TITLE_TAG_ALL in Title</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_TITLE_ARTICLE_TAG_ALL на странице articles.php, т.е. показывать ли на странице articles.php тэг meta title для всех страниц модуля статьи + meta title только для страницы articles.php или же показывать meta title только для страницы articles.php. Если Вы хотите meta title для всех страниц модуля статьи + meta title для страницы articles.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице articles.php показывать только meta title страницы articles.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_ARTICLES_ON','1'); // Include HEAD_KEY_TAG_ALL in Keywords</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_KEY_ARTICLE_TAG_ALL на странице articles.php, т.е. показывать ли на странице articles.php тэг meta keywords для всех страниц модуля статьи + meta keywords только для страницы articles.php или же показывать meta keywords только для страницы articles.php. Если Вы хотите meta keywords для всех страниц модуля статьи + meta keywords для страницы articles.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице articles.php показывать только meta keywords страницы articles.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_ARTICLES_ON','1'); // Include HEAD_DESC_TAG_ALL in Description</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_DESC_ARTICLE_TAG_ALL на странице articles.php, т.е. показывать ли на странице articles.php тэг meta description для всех страниц модуля статьи + meta description только для страницы articles.php или же показывать meta description только для страницы articles.php. Если Вы хотите meta description для всех страниц модуля статьи + meta description для страницы articles.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице articles.php показывать только meta description страницы articles.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_ARTICLES','Статьи');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы articles.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_ARTICLES','статьи');</para>
+    <para>Здесь Вы указываете тэг meta description для страницы articles.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_ARTICLES','статьи');</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы articles.php модуля статьи.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы article_info.php модуля статьи
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы article_info.php модуля статьи:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_ARTICLE_INFO_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_TITLE_ARTICLE_TAG_ALL на странице article_info.php, т.е. показывать ли на странице article_info.php тэг meta title для всех страниц модуля статьи + meta title только для страницы article_info.php или же показывать meta title только для страницы article_info.php. Если Вы хотите meta title для всех страниц модуля статьи + meta title для страницы article_info.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице article_info.php показывать только meta title страницы article_info.php, то ставьте в данной переменной 0.
+    </para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_ARTICLE_INFO_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_KEY_ARTICLE_TAG_ALL на странице article_info.php, т.е. показывать ли на странице article_info.php тэг meta keywords для всех страниц модуля статьи + meta keywords только для страницы article_info.php или же показывать meta keywords только для страницы article_info.php. Если Вы хотите meta keywords для всех страниц модуля статьи + meta keywords для страницы article_info.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице article_info.php показывать только meta keywords страницы article_info.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_ARTICLE_INFO_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_DESC_ARTICLE_TAG_ALL на странице article_info.php, т.е. показывать ли на странице article_info.php тэг meta description для всех страниц модуля статьи + meta description только для страницы article_info.php или же показывать meta description только для страницы article_info.php. Если Вы хотите meta description для всех страниц модуля статьи + meta description для страницы article_info.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице article_info.php показывать только meta description страницы article_info.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_ARTICLE_INFO','Статьи');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы article_info.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_ARTICLE_INFO','статьи');</para>
+    <para>Здесь Вы указываете тэг meta description для страницы article_info.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_ARTICLE_INFO','статьи');</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы article_info.php модуля статьи.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы articles_new.php модуля статьи
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы articles_new.php модуля статьи:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_ARTICLES_NEW_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_TITLE_ARTICLE_TAG_ALL на странице articles_new.php, т.е. показывать ли на странице articles_new.php тэг meta title для всех страниц модуля статьи + meta title только для страницы articles_new.php или же показывать meta title только для страницы articles_new.php. Если Вы хотите meta title для всех страниц модуля статьи + meta title для страницы articles_new.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице articles_new.php показывать только meta title страницы articles_new.php, то ставьте в данной переменной 0.
+    </para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_ARTICLES_NEW_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_KEY_ARTICLE_TAG_ALL на странице articles_new.php, т.е. показывать ли на странице articles_new.php тэг meta keywords для всех страниц модуля статьи + meta keywords только для страницы articles_new.php или же показывать meta keywords только для страницы articles_new.php. Если Вы хотите meta keywords для всех страниц модуля статьи + meta keywords для страницы articles_new.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице articles_new.php показывать только meta keywords страницы articles_new.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_ARTICLES_NEW_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_DESC_ARTICLE_TAG_ALL на странице articles_new.php, т.е. показывать ли на странице articles_new.php тэг meta description для всех страниц модуля статьи + meta description только для страницы articles_new.php или же показывать meta description только для страницы articles_new.php. Если Вы хотите meta description для всех страниц модуля статьи + meta description для страницы articles_new.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице articles_new.php показывать только meta description страницы articles_new.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_ARTICLES_NEW','Новые статьи');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы articles_new.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_ARTICLES_NEW','новые статьи');</para>
+    <para>Здесь Вы указываете тэг meta description для страницы articles_new.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_ARTICLES_NEW','новые статьи');</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы articles_new.php модуля статьи.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+<para>
+Мета тэги страницы article_reviews_info.php модуля статьи
+</para>
+<para>
+Данный блок отвечает за мета тэги страницы article_reviews_info.php модуля статьи:
+</para>
+<itemizedlist>
+  <listitem>
+    <para>define('HTTA_ARTICLE_REVIEWS_INFO_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_TITLE_ARTICLE_TAG_ALL на странице article_reviews_info.php, т.е. показывать ли на странице article_reviews_info.php тэг meta title для всех страниц модуля статьи + meta title только для страницы article_reviews_info.php или же показывать meta title только для страницы article_reviews_info.php. Если Вы хотите meta title для всех страниц модуля статьи + meta title для страницы article_reviews_info.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице article_reviews_info.php показывать только meta title страницы article_reviews_info.php, то ставьте в данной переменной 0.
+    </para>
+  </listitem>
+  <listitem>
+    <para>define('HTKA_ARTICLE_REVIEWS_INFO_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_KEY_ARTICLE_TAG_ALL на странице article_reviews_info.php, т.е. показывать ли на странице article_reviews_info.php тэг meta keywords для всех страниц модуля статьи + meta keywords только для страницы article_reviews_info.php или же показывать meta keywords только для страницы article_reviews_info.php. Если Вы хотите meta keywords для всех страниц модуля статьи + meta keywords для страницы article_reviews_info.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице article_reviews_info.php показывать только meta keywords страницы article_reviews_info.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HTDA_ARTICLE_REVIEWS_INFO_ON','1');</para>
+    <para>В данной опции Вы можете выбрать, показывать ли переменную HEAD_DESC_ARTICLE_TAG_ALL на странице article_reviews_info.php, т.е. показывать ли на странице article_reviews_info.php тэг meta description для всех страниц модуля статьи + meta description только для страницы article_reviews_info.php или же показывать meta description только для страницы article_reviews_info.php. Если Вы хотите meta description для всех страниц модуля статьи + meta description для страницы article_reviews_info.php, оставляйте как есть данную переменную, т.е. 1, если же Вы хотите на странице article_reviews_info.php показывать только meta description страницы article_reviews_info.php, то ставьте в данной переменной 0.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_TITLE_TAG_ARTICLE_REVIEWS_INFO','Отзывы статьи');</para>
+    <para>Здесь Вы указываете тэг meta title для страницы article_reviews_info.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_DESC_TAG_ARTICLE_REVIEWS_INFO','отзывы статьи');</para>
+    <para>Здесь Вы указываете тэг meta description для страницы article_reviews_info.php модуля статьи.</para>
+  </listitem>
+  <listitem>
+    <para>define('HEAD_KEY_TAG_ARTICLE_REVIEWS_INFO','отзывы статьи');</para>
+    <para>Здесь Вы указываете тэг meta keywords для страницы article_reviews_info.php модуля статьи.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+</sect1>
+<!-- /Настройка мета тэгов основных страниц магазина -->
+
+<!-- Установка счётчиков -->
+<sect1>
+<title>
+Установка счётчиков
+</title>
+
+<para>
+Удаление копирайта
+</para>
+
+<para>
+Если Вы хотите удалить информацию в нижней части страницы, Вы можете это сделать открыв файл /includes/languages/russian.php для русского языка. Для других языков нужно открывать соответствующий данному языку файл, например для английского языка открывайте файл /includes/languages/english.php.
+</para>
+
+<para>
+Текст, находящийся внизу страницы, примерно такой:
+</para>
+
+<para>
+Powered by osCommerce 2.2 MS2 VaM Edition 1.64
+Перевод и доработка Александр Меновщиков
+Авторы и разработчики интернет-магазина
+</para>
+
+<para>
+Данный текст находится в переменной FOOTER_TEXT_BODY файла /includes/languages/russian.php - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Russian.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Если Вам вообще нужно вырезать нижний текст с сайта, тогда Вам необходимо редактировать файл /templates/Helius/main_page.tpl.php
+</para>
+</note>
+
+<para>
+Установка счётчиков
+</para>
+
+<para>
+Если Вам нужно установить счётчики, для этого внизу страницы есть специальное место под счётчики. Чтобы вставить туда коды счётчиков, открывайте файл /templates/Helius/counters.txt и вставляйте в данный файл коды своих счётчиков. Сохраняйте и вставленные счётчики появятся в магазине, внизу.
+</para>
+
+<note>
+<para>
+Если у Вас по умолчанию установлен шаблон, отличный от Helius, открывайте файл, соответствующий Вашему шаблону, т.е. файл /templates/НАЗВАНИЕ ШАБЛОНА/counters.txt 
+</para>
+</note>
+
+</sect1>
+<!-- /Установка счётчиков -->
+
+<!-- Описание меню администраторской части -->
+<sect1>
+<title>
+Описание меню администраторской части
+</title>
+
+<para>
+Прежде всего, необходимо войти в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin) - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addmanufacturer1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Введя e-mail адрес и пароль для доступа. Зайдя в администраторскую, Вы видите перед собой главное меню (рис. 2), куда вошли наиболее используемые инструменты администрирования магазина, далее находится описание всех пунктов меню администраторской.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addmanufacturer2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Описание:
+</para>
+
+
+<para>
+<para>
+Администраторы - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для управления администраторами магазина. Вы можете добавлять, удалять, разграничивать доступ для администраторов магазина. Вы, являясь владельцем магазина, имеете полный доступ к своему магазину, с помощью данного раздела Вы можете, к примеру, создать администратора, у которого будет доступ только в раздел Каталог, т.е. он сможет только добавлять, редактировать, удалять товар,в другие разделы администраторской у него доступа не будет, можете добавить администратора, который будет иметь доступ только в раздел Клиенты, т.е. он может работать с заказами и клиентами, но не будет иметь доступ к другим функциям магазина. Вы можете управлять разграничением доступа вплоть до каждой страницы администраторской.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Группы пользователей
+</para>
+
+<para>
+Зайдя в данный раздел, Вы можете увидеть текущий список администраторов магазина, добавить нового администратора, добавить новую группу. В данном разделе осуществляется управление администраторами и группами, также в данном разделе Вы можете разграничивать доступ для определённых категорий администраторов.
+</para>
+  </listitem>
+  <listitem>
+
+<para>
+Обновить информацию о себе
+</para>
+
+<para>
+В данном разделе администратор может изменить свои данные, т.е. E-Mail адрес для входа, имя, фамилию, а также пароль.
+</para>
+  </listitem>
+  <listitem>
+<para>
+Доступ к файлам
+</para>
+
+<para>
+В данном разделе Вы можете управлять боксами администраторской. Вы можете отключать боксы, т.е. они не будут видны в администраторской, включать боксы, добавлять в боксы(разделы) новые пункты(файлы), удалять боксы, удалять файлы в боксах.
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Настройки - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся все основные настройки интернет-магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Мой магазин
+</para>
+
+<para>
+Здесь находятся общие настройки магазина: название магазина, адрес, телефон, e-mail адрес магазина и т.д.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Минимальные значения
+</para>
+
+<para>
+Здесь Вы можете указать минимальное количество символов в полях форм регистрации, адресной книги и т.д. Также можете указать минимальную сумму заказа, который можно оформить в интернет-магазине.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Максимальные значения
+</para>
+
+<para>
+Здесь указывается, какое количество товара будет выводиться на одной странице интернет-магазина, на одной странице новинок, какое количество товара будет выводиться в боксы новинок, скидок и т.д.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Картинки
+</para>
+
+<para>
+Здесь находятся все настройки, связанные с картинками, выводимыми в интернет-магазине.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Данные покупателя
+</para>
+
+<para>
+Здесь настраивается форма регистрации клиента в интернет-магазине. Можно отключить/включить вывод некоторых полей формы при регистрации клиента.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Доставка/Упаковка
+</para>
+
+<para>
+Здесь находятся общие настройки. В данном разделе нет модулей доставки и настроек модулей доставки, здесь только общие настройки доставки и упаковки товара.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Вывод товара
+</para>
+
+<para>
+Настройка формата вывода товара в интернет-магазине. Вы можете настроить формат вывода товара по своему желанию.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Склад
+</para>
+
+<para>
+Настройка склада интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Логи
+</para>
+
+<para>
+Настройка логов, файлов, куда будет записываться служебная информация.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Кэш
+</para>
+
+<para>
+Кэширование страниц интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка E-Mail
+</para>
+
+<para>
+E-Mail настройки магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Скачивание
+</para>
+
+<para>
+Настройки для скачиваемых товаров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+GZip Компрессия
+</para>
+
+<para>
+Настройка сжатия, компрессии страниц интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Сессии
+</para>
+
+<para>
+Настройка сессий в интернет-магазине.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+HTML Редактор
+</para>
+
+<para>
+Настройка HTML редактора, используемого при составлении описания товара, новостей, рассылок и т.д.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Партнёрская программа
+</para>
+
+<para>
+Все настройки, связанные с модулем партнёрской программы находятся в данном разделе.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Тех. обслуживание
+</para>
+
+<para>
+Настройка режима технического обслуживания, при котором магазин временно закрывается для проведения каких-либо работ.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Кэш страниц
+</para>
+
+<para>
+Настройки модуля Page Cache. Кэширование страниц, ускоряет загрузку страниц, снижает нагрузку на MySQL сервер.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Быстрое оформление
+</para>
+
+<para>
+Разрешить в интернет-магазине быстрое оформление заказа или нет.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Ссылки
+</para>
+
+<para>
+Настройки модуля ссылки.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Яндекс-Маркет
+</para>
+
+<para>
+Настройки модуля Яндекс-маркет.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Обновление прайса
+</para>
+
+<para>
+Настройки модуля быстрого обновления прайса. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Каталог - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел администраторской предназначен для управления каталогом товаров Вашего интернет-магазина. Всё, что связано, с управлением каталогом, т.е. добавление, удаление, редактирование товара и категорий, работа с производителями, excel импорт/экспорт товаров и т.д., всё находится в данном разделе.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Категории/Товары
+</para>
+
+<para>
+В данном разделе Вы можете управлять каталогом товаров. Добавлять, удалять, редактировать товар, категории.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Атрибуты - Настройка
+</para>
+
+<para>
+Настройка атрибутов (опций) товаров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Атрибуты - Установка
+</para>
+
+<para>
+Установка товарам атрибутов (опций).
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Производители
+</para>
+
+<para>
+Производители товаров. Добавление, удаление, редактирование производителей.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Отзывы
+</para>
+
+<para>
+Управление отзывами. Проверка добавленных отзывов, редактирование, удаление отзывов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Скидки
+</para>
+
+<para>
+Здесь Вы можете указать скидки на определённые товары Вашего интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Сопутствующие товары
+</para>
+
+<para>
+Здесь Вы можете ассоциировать определённый товар Вашего интернет-магазина с любым другим товаром из Вашего магазина. Сопутствующий товар будет показан ниже описания товара в боксе Рекомендуем.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Excel импорт/экспорт
+</para>
+
+<para>
+Данный модуль позволяет добавлять, редактировать товары, категории и производителей с помощью Excel. Данный модуль удобен для магазинов с большим ассортиментом, т.к. позволяет быстро обновлять цены, описания, добавлять новые товары, управлять опциями товаров и т.д. Описание работы с данным модулем находится в следующем разделе руководства.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Изменить главную страницу
+</para>
+
+<para>
+Здесь Вы можете изменить содержимое главной страницы, между приветствием и блоком Новинки.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Массовые скидки
+</para>
+
+<para>
+В отличие от раздела скидки, где Вы можете указывать скидки на отдельные товары, здесь Вы можете указать скидки сразу на весь ассортимент магазина, либо на отдельные категории товаров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Рекомендуемые товары
+</para>
+
+<para>
+Здесь Вы указываете товар, который будет показан на главной странице интернет-магазина в боксе Рекомендуемые товары.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Обновление прайса
+</para>
+
+<para>
+Модуль быстрого обновления прайса. Позволяет быстро изменять названия, цены, количество на складе существующих товаров. Вы можете, к примеру, увеличить все цены в магазине на 10%, либо снизить на 10%, либо увеличить на 10$, либо уменьшить на 10$ и всё это делается одним кликом.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Наценки
+</para>
+
+<para>
+Модуль наценки. Позволяет быстро увеличивать цены на определённые товары, группы товаров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Ожидаемые товары
+</para>
+
+<para>
+Товары, которые должны поступить на склад в скором будущем. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Статьи - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для управлениями статьями в Вашем интернет-магазине.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Статьи/Разделы
+</para>
+
+<para>
+Здесь Вы можете добавлять статьи в Ваш интернет-магазин. Внимание: Прежде чем добавить статью, необходимо создать хотя бы одну категорию и только потом уже добавлять статью в данную категорию.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка
+</para>
+
+<para>
+Все настройки модуля Статьи находятся в данном разделе.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Авторы
+</para>
+
+<para>
+Авторы статей, управление авторами статей Вашего интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Отзывы
+</para>
+
+<para>
+Здесь Вы можете видеть отзывы, оставленные посетителями, прочитавшими статьи, проверять оставленные отзывы, редактировать, удалять.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Товары-Статьи
+</para>
+
+<para>
+Здесь Вы можете ассоциировать с каждой статьей определённый товар, данный товар будет показан сразу после статьи в интернет-магазине. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Информационные страницы - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для управления страницами бокса Информация. Создавать новые страницы в боксе Информация, удалять и редактировать созданные страницы.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Страницы
+</para>
+
+<para>
+Позволяет добавлять новые страницы в бокс Информация Вашего интернет-магазина. Не забудьте сделать активной добавленную страницу, иначе она не будет видна в боксе Информация. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Новости - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для управления новостями Вашего интернет-магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Новости
+</para>
+
+<para>
+Здесь Вы можете добавлять новости в Ваш интернет-магазин. Внимание: Прежде чем добавить новость, необходимо создать хотя бы одну категорию и только потом уже добавлять новость в данную категорию.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Комментарии
+</para>
+
+<para>
+Здесь Вы можете видеть комментарии, оставленные посетителями, прочитавшими новость, проверять оставленные комментарии, редактировать, удалять.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка вывода
+</para>
+
+<para>
+Настройки вывода новостей.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Общие настройки
+</para>
+
+<para>
+Общие настройки модуля.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка отзывов
+</para>
+
+<para>
+Настройки вывода отзывов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка "горячих" новостей
+</para>
+
+<para>
+Настройки вывода "горячих" новостей. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+FAQ - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для управления FAQ (ЧаВо - Часто задаваемые вопросы) Вашего интернет-магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+FAQ
+</para>
+
+<para>
+Здесь Вы можете добавлять faq в Ваш интернет-магазин. Внимание: Прежде чем добавить faq, необходимо создать хотя бы одну категорию и только потом уже добавлять faq в данную категорию.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Комментарии
+</para>
+
+<para>
+Здесь Вы можете видеть комментарии, оставленные посетителями, прочитавшими faq, проверять оставленные комментарии, редактировать, удалять.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка вывода
+</para>
+
+<para>
+Настройки вывода faq.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Общие настройки
+</para>
+
+<para>
+Общие настройки модуля.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка отзывов
+</para>
+
+<para>
+Настройки вывода отзывов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Настройка "горячих" вопросов
+</para>
+
+<para>
+Настройки вывода "горячих" вопросов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Другие настройки
+</para>
+
+<para>
+Разрешить описание для категорий faq. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Модули - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся модули доставки, оплаты, модули скидок и т.д. Здесь Вы можете устанавливать новые модули, удалять существующие модули, настраивать способы оплаты и доставки заказов интернет-магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Оплата
+</para>
+
+<para>
+Здесь находятся все установленные в магазине модули оплаты. Вы можете активировать модули, деактивировать, изменять настройки существующих модулей оплаты.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Доставка
+</para>
+
+<para>
+Здесь находятся все установленные в магазине модули доставки. Вы можете активировать модули, деактивировать, изменять настройки существующих модулей доставки.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Заказ итого
+</para>
+
+<para>
+Здесь находятся все установленные в магазине модули итого, выводимые на этапе подтверждения заказа, это могут быть модули скидок, купонов, сертификатов и т.д. Вы можете активировать модули, деактивировать, изменять настройки существующих модулей. 
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Доставка-Оплата
+</para>
+
+<para>
+В данном разделе Вы можете настраивать какие модули оплаты будут доступны покупателю в зависимости от выбранного модуля оплаты. Например, если покупатель выбрал доставка курьером, то можно настроить, что б оплата была доступна только наличными, к примеру.
+</para>
+  </listitem>
+
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Подарочные сертификаты и купоны - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся все настройки и инструменты для работы с подарочными сертификатами и купонами. Как добавлять в магазин подарочные сертификаты будет рассказано в в следующих главах данного руководства. В данном разделе Вы можете создавать купоны, следить за купленными сертификатами, их балансом и т.д.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Купоны
+</para>
+
+<para>
+Здесь Вы можете создавать купоны, которые могут использоваться покупателями при оформлении заказа в интернет-магазине для получения скидки. Купоны могут быть определённого номинала, т.е. покупатели, воспользовавшиеся таким купоном, смогут получить скидку (вычет) номинала купона, который он использовал при оформлении заказа, либо покупатель получит процентную скидку от стоимости заказы, если был создан купон на процентный вычет от стоимости заказа.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Сертификаты
+</para>
+
+<para>
+Здесь Вы можете видеть купленные клиентами интернет-магазина подарочные сертификаты, сумму сертификата.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Отправить сертификат
+</para>
+
+<para>
+Здесь Вы можете отправить подарочный сертификат любому зарегистрированному клиенту Вашего интернет-магазина, либо всем зарегистрированным клиентам сразу.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Отправленные сертификаты
+</para>
+
+<para>
+В данном разделе Вы можете видеть отправленные подарочные сертификаты. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Клиенты - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе осуществляется управление оформленными заказами, управление зарегистрированными клиентами.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Клиенты
+</para>
+
+<para>
+Здесь Вы можете видеть список зарегистрированных покупателей Вашего интернет-магазина. Вы можете удалять, изменять данные зарегистрированных клиентов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Заказы
+</para>
+
+<para>
+В данном разделе находятся все заказы, оформленные в Вашем интернет-магазине. Вы можете удалять заказы, изменять статусы заказов. Покупатель получает уведомление на свой E-Mail об изменении статуса его заказа.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Группы
+</para>
+
+<para>
+В данном разделе Вы можете указать группы покупателей. Каждая группа может иметь свои цены, свои скидки. По умолчанию, после регистрации в магазине, покупатель добавляется в группу Покупатели. После регистрации, Вы можете назначить покупателя в любую другую группу.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Регистрация клиента
+</para>
+
+<para>
+В данном разделе администратор магазина может сам регистрировать клиентов. Например, если необходимо регистрировать заказы, поступающие по телефону, администратор сначала регистрирует клиента в данном разделе, потом создаёт заказ в разделе Создать заказ.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Создать заказ
+</para>
+
+<para>
+Создание заказа. Например, если необходимо регистрировать заказы, поступающие по телефону, администратор сначала регистрирует в разделе Регистрация клиента, потом создаёт заказ в данном разделе. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Опросы - рис. 13.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для управления модулем Опросов.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Настройки
+</para>
+
+<para>
+Настройка модуля Опросы.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Опросы
+</para>
+
+<para>
+Управление Опросами, проводимыми в интернет-магазине. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Партнёры - рис. 15.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 15.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 15.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе Вы можете управлять партнёрской программой Вашего интернет-магазина. Смотреть статистику партнёрской программы, выписывать счета к оплате для партнёров, добавлять баннеры и ссылки для партнёрской программы, связываться с партнёрами, т.е. данный раздел предназначен для управления партнёрской программой интернет-магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Общая статистика
+</para>
+
+<para>
+Общая статистика работы партнёрской программы.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Партнёры
+</para>
+
+<para>
+Список зарегистрированных партнёров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Выплаты
+</para>
+
+<para>
+В данном разделе Вы можете выписывать счета для оплаты партнёрам, т.е. следить, сколько партнёры заработали и сколько Вы должны выплачивать партнёрских комиссий
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Продажи
+</para>
+
+<para>
+Статистика продаж, т.е. статистика заказов, оформленных через партнёров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Клики
+</para>
+
+<para>
+Статистика кликов, т.е. статистика переходов с партнёрских сайтов в Ваш интернет-магазин.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Баннеры
+</para>
+
+<para>
+Баннеры и ссылки партнёрской программы.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Обратная связь
+</para>
+
+<para>
+В данном разделе Вы можете связаться с любым зарегистрированным партнёром. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Места / Налоги - рис. 16.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 16.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 16.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находится список стран, регионов, доступных при регистрации покупателя в интернет-магазине. Кроме того, в данном разделе Вы можете добавлять налоги, налоговые зоны, налоговые ставки.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Страны
+</para>
+
+<para>
+Список стран, в которые осуществляется доставка товара в Вашем интернет-магазине. Данный список будет выведен при регистрации покупателя в интернет-магазине.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Регионы
+</para>
+
+<para>
+Список регионов (краёв и областей), в которые осуществляется доставка заказов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Налоговые зоны
+</para>
+
+<para>
+Список налоговых зон Вашего интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Типы налогов
+</para>
+
+<para>
+Типы налогов. К цене товара можно добавлять налоги.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Ставки налогов
+</para>
+
+<para>
+Ставки налогов. К цене товара можно добавлять налоги. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Локализация - рис. 17.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription15.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 17.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 17.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся всё, что связано с переводом магазина на другие языки, здесь же добавляются, удаляются, изменяются курсы валют в интернет-магазине, здесь же Вы можете добавлять, редактировать, удалять статусы заказов. Добавлять новые языки интерфейса магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Валюты
+</para>
+
+<para>
+Валюты, существующие в интернет-магазине.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Языки
+</para>
+
+<para>
+Языки, существующие в интернет-магазине.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Статусы заказов
+</para>
+
+<para>
+Статусы заказов, существующие в интернет-магазине. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Шаблоны - рис. 18.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription16.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 18.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 18.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся настройки шаблонов интернет-магазина, а так же инструменты управления боксами Вашего интернет-магазина. Здесь же Вы можете добавлять новые шаблоны, боксы, изменять существующие боксы.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Настройка шаблонов
+</para>
+
+<para>
+Список существующих шаблонов, настройка существующих шаблонов, добавление новых шаблонов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Управление боксами
+</para>
+
+<para>
+Управление боксами интернет-магазина, активация/деактивация боксов, создание новых боксов, изменение существующих. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Ссылки - рис. 19.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription17.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 19.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 19.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данный раздел предназначен для организации обмена ссылками с другими сайтами с проверкой размещения Вашей ссылки на сайте, с кем Вы хотите обменяться.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Ссылки
+</para>
+
+<para>
+Список существующих ссылок.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Категории
+</para>
+
+<para>
+Список категорий для ссылок.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Обратная связь
+</para>
+
+<para>
+Связь с людьми, разместившими ссылку на Ваш интернет-магазин. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Отчёты - рис. 21.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription19.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 21.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 21.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся статистические отчёты о работе Вашего интернет-магазина.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Просмотренные товары
+</para>
+
+<para>
+Список просмотренных посетителями магазина товаров. Самые просматриваемые товары выводятся первыми.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Заказанные товары
+</para>
+
+<para>
+Список заказанных товаров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Лучшие клиенты
+</para>
+
+<para>
+Список лучших клиентов, по общей сумме оформленных заказов.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Статистика продаж
+</para>
+
+<para>
+Общая статистика продаж интернет-магазина за месяц, за год. 
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Статистика продаж 2
+</para>
+
+<para>
+Статистика продаж интернет-магазина. 
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Статистика продаж 3
+</para>
+
+<para>
+Статистика продаж интернет-магазина. 
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Статистика клиентов
+</para>
+
+<para>
+Статистика продаж интернет-магазина. 
+</para>
+  </listitem>
+
+</orderedlist>
+
+
+</para>
+
+<para>
+<para>
+Инструменты - рис. 22.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Menudescription20.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 22.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 22.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе находятся важные инструменты для работы интернет-магазина. Такие как резервное копирование базы данных, незавершённые заказы, поисковые запросы и т.д.
+</para>
+
+<orderedlist>
+  <listitem>
+<para>
+Резервное копирование БД
+</para>
+
+<para>
+Вы можете делать резервные копии базы данных магазина, т.е. вся информация (все данные магазина: товар, клиенты, заказы, новости, статьи, faq и всё остальное, кроме картинок товаров) Вашего интернет-магазина записывается из MySQL базы данных в отдельный файл. Делайте резервные копии базы данных магазина хотя бы раз в месяц, потому как в случае возникновения проблем в работе магазина, Вы всегда сможете восстановить работоспособность магазина с помощью сделанной Вами резервной копии.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Менеджер баннеров
+</para>
+
+<para>
+Управление баннерами. Вы можете сделать внутреннюю баннерную сеть, в которой будут показываться баннеры, добавленные с помощью менеджера баннеров.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Контроль кэша
+</para>
+
+<para>
+Контроль кэшируемых файлов. Необходимо только если у Вас включена опция кэширования страниц интернет-магазина.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Отправить Email
+</para>
+
+<para>
+С помощью данного раздела Вы можете отправить письмо любому зарегистрированному в Вашем интернет-магазине покупателю, либо всем зарегистрированным покупателям сразу.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Менеджер почтовых рассылок
+</para>
+
+<para>
+Управление почтовыми рассылками.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Незавершённые заказы
+</para>
+
+<para>
+Очень важный инструмент, позволяет удерживать клиентов в интернет-магазине, если они по каким-то причинам не смогли оформить до конца заказ. Данный модуль выводит список покупателей, которые начинали оформлять заказ в интернет-магазине, но по каким-то причинам до конца заказ не оформили и, соответственно, данный заказ не был зарегистрирован в магазине. Вам будет выведен список покупателей, которые до конца не оформили заказ, Вы может отправить им письмо, выделив тех покупателей, которым Вы хотите отправить письмо и нажав кнопку Отправить E-mail. Покупатели получат письмо, в котором им будет задан вопрос о том, что они начали оформлять заказ и так его и не оформили до конца и будет предложено задать вопросы администратору магазина в ответном письме. Кроме того, можно указать сообщение в поле Дополнительное сообщение, в этом случае, в отправленном письме будет и сообщение, которое Вы укажите в поле Дополнительно сообщение.
+</para>
+  </listitem>
+
+  <listitem>
+<para>
+Поисковые запросы
+</para>
+
+<para>
+Статистика поисковых запросов. В данном разделе, нажав кнопку Обновить, Вы можете увидеть, что посетители Вашего интернет-магазина пытались искать в интернет-магазине с помощью Поиска. Это хороший аналитический инструмент, позволяет выяснить реальные потребности покупателей в определённом товаре. 
+</para>
+  </listitem>
+</orderedlist>
+
+
+</para>
+
+</sect1>
+<!-- /Описание меню администраторской части -->
+
+</chapter>
+<!-- /Раздел Первые шаги после установки интернет-магазина-->

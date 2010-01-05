@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Функция FAQ (Вопрос-Ответ) -->
+<sect1>
+<title>
+Функция FAQ (Вопрос-Ответ)
+</title>
+
+<para>
+В интернет-магазине osCommercee VaM Edition есть предустановленный модуль Вопрос-Ответ.
+</para>
+
+<para>
+В данном разделе будет рассмотрен именно этот модуль, как правильно работать с модулем Вопрос-Ответ.
+</para>
+
+<!-- Настройка модуля FAQ -->
+<sect2>
+<title>
+Настройка модуля FAQ
+</title>
+
+<para>
+В данном разделе мы просто рассмотрим все возможные настройки модуля FAQ, подробно описывать их нет смысла, потому как в администраторской все настройки довольно подробно уже описаны, для чего каждая из них предназначена и как их изменять.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел FAQ, для этого нажмите на ссылку FAQ - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем FAQ - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Бокс FAQ состоит из следующих ссылок:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>FAQ</para>
+    <para>В данном разделе собственно происходит добавление, изменение, удаление faq, категорий faq. Но об этом чуть позже, нас в данный момент интересуют настройки модуля Faq, переходим дальше.</para>
+  </listitem>
+
+  <listitem>
+    <para>Комментарии</para>
+    <para>Каждый посетитель интернет-магазина может оставить свой комментарий к любому faq. В данном разделе Вы можете видеть все оставленные посетителями комментарии, прежде чем комментарий будет активен и виден всем посетителям интернет-магазина, администратор должен проверить и одобрить комментарий, только после этого он будет виден всем посетителям интернет-магазина. Нас в данный момент интересуют настройки модуля Faq, переходим дальше.</para>
+  </listitem>
+
+  <listitem>
+    <para>Настройки вывода</para>
+    <para>Вот теперь пошли настройки. В данном разделе находятся настройки отображения faq в интернет-магазине. Подробнее об этих настройках читайте ниже.</para>
+  </listitem>
+
+  <listitem>
+    <para>Общие настройки</para>
+    <para>В данном разделе находятся общие настройки модуля Faq. Подробнее об этих настройках читайте ниже.</para>
+  </listitem>
+
+  <listitem>
+    <para>Настройка отзывов</para>
+    <para>В данном разделе находятся настройки отзывов к faq интернет-магазина. Подробнее об этих настройках читайте ниже.</para>
+  </listitem>
+
+  <listitem>
+    <para>Настройка горячих вопросов</para>
+    <para>В данном разделе находятся настройки отображения горячих вопросов в интернет-магазине. Подробнее об этих настройках читайте ниже.</para>
+  </listitem>
+
+  <listitem>
+    <para>Другие настройки</para>
+    <para>В данном разделе различные настройки модуля FAQ, не вошедшие в предыдущие разделы.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Нас интересует сейчас последние пять пунктов:
+</para>
+
+<para>
+<orderedlist>
+  <listitem>
+    <para>Настройки вывода</para>
+  </listitem>
+
+  <listitem>
+    <para>Общие настройки</para>
+  </listitem>
+
+  <listitem>
+    <para>Настройка отзывов</para>
+  </listitem>
+
+  <listitem>
+    <para>Настройка горячих вопросов</para>
+  </listitem>
+
+  <listitem>
+    <para>Другие настройки</para>
+  </listitem>
+
+</orderedlist>
+</para>
+
+<para>
+Начнём по порядку:
+</para>
+
+<para>
+<emphasis>
+Настройки вывода
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Настройки вывода - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Настройки вывода - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой настройки вывода faq в интернет-магазине.
+</para>
+
+<para>
+Рассмотрим подробнее, для чего нужна каждая переменная на этой странице:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Вопросов на одной странице 
+    </para>
+    <para>
+Сколько вопросов показывать на одной странице?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Ссылок на страницы 
+    </para>
+    <para>
+Количество ссылок на другие страницы.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать вопрос
+    </para>
+    <para>
+Показывать вопрос при просмотре faq? (0=не показывать; 1-4=порядок вывода данного поля).
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать краткий ответ
+    </para>
+    <para>
+Показывать краткий ответ при просмотре faq? (0=не показывать; 1-4=порядок вывода данного поля).
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать расширенный ответ
+    </para>
+    <para>
+Показывать расширенный ответ при просмотре faq? (0=не показывать; 1-4=порядок вывода данного поля).
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать дату
+    </para>
+    <para>
+Показывать дату при просмотре faq? (0=не показывать; 1-4=порядок вывода данного поля).
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Расположение навигации Следующая/Предыдущая страница 
+    </para>
+    <para>
+Расположение навигации Следующая/Предыдущая страница:
+    </para>
+    <para>
+1 - верх.
+    </para>
+    <para>
+2 - низ.
+    </para>
+    <para>
+3 - (верх+низ).
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Настраивайте вывод faq как Вам нужно, переходим к следующей странице настроек.
+</para>
+
+<para>
+<emphasis>
+Общие настройки
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Общие настройки - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Общие настройки - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Вы видите перед собой следующие настройки.
+</para>
+
+<para>
+Рассмотрим подробнее, для чего нужна каждая переменная на этой странице:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Вопросов на главной странице
+    </para>
+    <para>
+Сколько вопросов показывать на главной странице?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Вопросов в боксе свежие вопросы в FAQ
+    </para>
+    <para>
+Сколько вопросов показывать в боксе свежие вопросы в FAQ?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать бокс свежие вопросы в FAQ
+    </para>
+    <para>
+Показывать бокс свежие вопросы в FAQ? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать бокс FAQ
+    </para>
+    <para>
+Показывать бокс FAQ? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать счётчик просмотров
+    </para>
+    <para>
+Показывать счётчик количества просмотров faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать ссылку подробнее
+    </para>
+    <para>
+Показывать ссылку подробнее? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать короткий ответ
+    </para>
+    <para>
+Показывать короткий ответ на вопрос? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать вопрос
+    </para>
+    <para>
+Показывать вопрос? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать дату 
+    </para>
+    <para>
+Показывать дату добавления faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку 1
+    </para>
+    <para>
+Показывать картинку 1 вопроса? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку 2
+    </para>
+    <para>
+Показывать картинку 2 вопроса? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку 3
+    </para>
+    <para>
+Показывать картинку 3 вопроса? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Переходим к следующей странице настроек.
+</para>
+
+<para>
+<emphasis>
+Настройка отзывов
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Настройки отзывов - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Настройки отзывов - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Вы видите перед собой следующие настройки:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Показывать отзывы
+    </para>
+    <para>
+Показывать отзывы? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Максимальное количество новых отзывов 
+    </para>
+    <para>
+Максимальное количество выводимых новых отзывов.
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Переходим к следующей странице настроек.
+</para>
+
+<para>
+<emphasis>
+Настройка горячих вопросов
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Настройка горячих вопросов - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Настройка горячих вопросов - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Вы видите перед собой следующие настройки:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Показывать вопрос
+    </para>
+    <para>
+Показывать вопрос? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать краткий ответ
+    </para>
+    <para>
+Показывать краткий ответ? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать расширенный ответ
+    </para>
+    <para>
+Показывать расширенный ответ? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать счётчик просмотров
+    </para>
+    <para>
+Показывать счётчик количества просмотров faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать ссылку подробнее
+    </para>
+    <para>
+Показывать ссылку подробнее? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать дату
+    </para>
+    <para>
+Показывать дату при просмотре faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать URL ссылку
+    </para>
+    <para>
+Показывать URL ссылку при просмотре faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку 1
+    </para>
+    <para>
+Показывать картинку 1 при просмотре faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку 2
+    </para>
+    <para>
+Показывать картинку 2 при просмотре faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку 3
+    </para>
+    <para>
+Показывать картинку 3 при просмотре faq? (0=не показывать; 1=показывать)
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Переходим к следующей странице настроек.
+</para>
+
+<para>
+<emphasis>
+Другие настройки
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Другие настройки - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Другие настройки - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Вы видите перед собой следующие настройки:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Разрешить описания категорий
+    </para>
+    <para>
+Разрешить добавление описаний для категорий? (true=запретить; false=разрешить)
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+
+<para>
+На этом всё. В данном разделе я просто описал все возможные настройки модуля FAQ.
+</para>
+
+<para>
+Читайте следующую страницу Создание FAQ.
+</para>
+
+
+</sect2>
+<!-- /Настройка модуля FAQ -->
+
+<!-- Создание FAQ -->
+<sect2>
+<title>
+Создание FAQ
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно создавать faq.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел FAQ, для этого нажмите на ссылку FAQ - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем FAQ - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Сразу скажу одно условие, которое нужно соблюдать.
+</para>
+
+<note>
+<para>
+Любой вопрос (faq) должен находиться в категории. Т.е. сначала создайте как минимум одну категорию для вопросов (faq) и только потом добавляйте вопрос (faq) в созданную категорию. Не нужно добавлять вопрос (faq) прямо в корневой раздел.
+</para>
+</note>
+
+<para>
+Для примера, создадим тестовый вопрос (faq) в интернет-магазине.
+</para>
+
+<para>
+Создаём faq в два этапа:
+</para>
+
+<para>
+<orderedlist>
+  <listitem>
+    <para>Создание категории faq</para>
+  </listitem>
+
+  <listitem>
+    <para>Создание faq</para>
+  </listitem>
+
+</orderedlist>
+</para>
+
+<para>
+Создание категории faq
+</para>
+
+<para>
+Как я сказал выше, сначала нужно создать категорию.
+</para>
+
+<para>
+Для этого нажимаем кнопку Новая категория - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания категории - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания новой категории faq - рис. 4.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания категории faq содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название категории</para>
+    <para>Здесь Вы указываете название создаваемой категории. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание категории</para>
+    <para>Здесь Вы указываете описание создаваемой категории. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Картинка категории</para>
+    <para>Здесь Вы можете указать картинку для создаваемой категории faq. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Порядок сортировки</para>
+    <para>Здесь Вы можете указывать порядок сортировки создаваемой категории, т.е. на какой позиции будет показана категория в списке остальных категорий. С помощью данной опции можно сортировать вывод категорий faq. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус</para>
+    <para>Здесь Вы указываете статус категории, активна (1) или неактивна (2). Если категория активна, то эта категория и все faq внутри данной категории видны всем посетителям интернет-магазина, если неактивна, то данная категория и все faq внутри данной категории посетителям интернет-магазина не видны. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новую категорию faq, заполняя соответствующие поля формы - рис. 5:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название категории - FAQ.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание категории - Можно пропустить данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Картинка категории - Можно пропустить поле. Не будем добавлять картинку, здесь достаточно очевидно всё, нажимаете просто кнопку Обзор и выбираете картинку для категории. В нашем примере картинку добавлять не будем.</para>
+  </listitem>
+
+  <listitem>
+    <para>Порядок сортировки - Можно пропустить данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус - Указываем цифру 1, т.е. создаваемая категория будет активна.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполняйте форму и нажимайте кнопку Сохранить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка категорий faq и увидите, что новая категория FAQ была создана - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Создание faq
+</para>
+
+<para>
+В предыдущем разделе мы создали категорию FAQ.
+</para>
+
+<para>
+Теперь добавим faq в данный раздел.
+</para>
+
+<para>
+Выделяем раздел FAQ, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория FAQ не выделена - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория FAQ не выделена - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию FAQ нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию FAQ - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно создать вопрос (faq) в категории.
+</para>
+
+<para>
+Чтобы создать новый вопрос (faq) нажимаем кнопку Новый вопрос - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания вопроса (faq) - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания нового вопроса - рис. 12.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания вопроса содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Вопрос</para>
+    <para>Здесь Вы указываете вопрос. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Краткий ответ</para>
+    <para>Здесь Вы можете указать краткий ответ на вопрос. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Расширенный ответ</para>
+    <para>Здесь Вы указываете расширенный ответ на вопрос. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус</para>
+    <para>Здесь Вы указываете статус вопроса, активен или неактивен. Если вопрос активен, то вопрос виден всем посетителям интернет-магазина, если неактивен, то данный вопрос посетителям интернет-магазина не виден. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Горячий вопрос</para>
+    <para>Здесь Вы можете указать, что вопрос горячий, т.е. просто у данного вопроса будет сделана отметка горячий при показе вопроса в интернет-магазине. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Формат даты: (YYYY-MM-DD)</para>
+    <para>Здесь Вы можете указать дату создания вопроса, обычно ничего в данном поле делать не нужно, дата уже выбрана.</para>
+  </listitem>
+
+  <listitem>
+    <para>URL адрес: (без http://)</para>
+    <para>Здесь Вы можете указать URL адрес источника вопроса, если есть. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Картинки</para>
+    <para>Здесь Вы можете указывать до трёх картинок вопроса. Указывать картинки вопроса необязательно, можно пропустить данное поле. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новый вопрос, заполняя соответствующие поля формы - рис. 13:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Заголовок - Вопрос.</para>
+  </listitem>
+  <listitem>
+    <para>Краткий ответ - Краткий ответ.</para>
+  </listitem>
+  <listitem>
+    <para>Расширенный ответ - Расширенный ответ.</para>
+  </listitem>
+  <listitem>
+    <para>Статус - Уже выбран статус Активный, пропускаем данное поле.</para>
+  </listitem>
+  <listitem>
+    <para>Горячий вопрос - Пропускаем, выбрано Нет.</para>
+  </listitem>
+  <listitem>
+    <para>Формат даты: (YYYY-MM-DD) - Пропускаем, уже выбрана текущая дата.</para>
+  </listitem>
+  <listitem>
+    <para>URL адрес: (без http://) - Пропускаем.</para>
+  </listitem>
+  <listitem>
+    <para>Картинки - Пропускаем. Не будем добавлять картинки, здесь достаточно очевидно всё, нажимаете просто кнопку Обзор и выбираете картинку для вопроса. В нашем примере картинку добавлять не будем. А вообще, к каждому вопросу можно добавлять до трёх картинок.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd15.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполняйте форму и нажимайте кнопку Предпросмотр - рис. 14.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd16.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 14.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 14.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Убедившись, что нет ошибок нажимаем кнопку Добавить - рис. 15.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd17.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 15.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 15.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка вопросов категории FAQ и увидите, что вопрос Вопрос был создан - рис. 16.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd18.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 16.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 16.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данный вопрос Вы можете видеть в интернет-магазине в боксе Свежие вопросы FAQ - рис. 17.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd19.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 17.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 17.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Корректировка FAQ.
+</para>
+
+
+</sect2>
+<!-- /Создание FAQ -->
+
+<!-- Корректировка FAQ -->
+<sect2>
+<title>
+Корректировка FAQ
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно изменять (корректировать) уже созданный вопрос.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел FAQ, для этого нажмите на ссылку FAQ - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем FAQ - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, изменим созданный на прошлой странице вопрос Вопрос, который мы добавили в раздел FAQ.
+</para>
+
+<para>
+Переходим в раздел FAQ.
+</para>
+
+<para>
+Выделяем раздел FAQ, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория FAQ не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория FAQ выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию FAQ нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию FAQ - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно изменить вопрос Вопрос.
+</para>
+
+<para>
+Для этого выделяем этот вопрос и нажимаем cправа кнопку Изменить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу редактирования вопроса - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подробно мы все поля формы рассмотрели на прошлой странице, при добавлении вопроса.
+</para>
+
+<para>
+Ещё раз рассматривать не будем.
+</para>
+
+<para>
+Я лишь скажу, что при изменении вопроса, можно менять любое поле формы.
+</para>
+
+<para>
+К примеру, поменяем поля Вопрос и поле Краткий ответ.
+</para>
+
+<para>
+В поле Вопрос пишем - Супер вопрос
+</para>
+
+<para>
+В поле Краткий ответ пишем - Новый краткий ответ
+</para>
+
+<para>
+Затем нажимаем кнопку Предпросмотр - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Убеждаемся, что вопрос изменён правильно и нажимаем кнопку Обновить - рис. 9. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка вопросов категории FAQ и увидите, что вопрос был изменён - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данный изменённый вопрос Вы можете видеть в интернет-магазине в боксе Свежие вопросы в FAQ - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Копирование FAQ.
+</para>
+
+
+</sect2>
+<!-- /Корректировка FAQ -->
+
+<!-- Копирование FAQ -->
+<sect2>
+<title>
+Копирование FAQ
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно копировать уже созданный вопрос в другие категории.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел FAQ, для этого нажмите на ссылку FAQ - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем FAQ - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, скопируем изменённый на прошлой странице вопрос Супер вопрос в раздел Тест.
+</para>
+
+<para>
+Переходим в раздел FAQ.
+</para>
+
+<para>
+Выделяем раздел FAQ, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория FAQ не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория FAQ выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию FAQ нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию FAQ - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно скопировать вопрос Супер вопрос.
+</para>
+
+<para>
+Для этого выделяем этот вопрос и нажимаем cправа кнопку Копировать в - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskcopy8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу копирования вопроса - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskcopy9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+К примеру, скопируем вопрос в раздел Тест.
+</para>
+
+<para>
+В поле Категории выбираем раздел, в который мы хотим скопировать вопрос, в нашем примере выбираем Тест - рис. 8.
+</para>
+
+<para>
+В поле Способ копирования выбираем способ, которым мы хотим скопировать вопрос. Выбираем Дублировать вопрос - рис. 8.
+</para>
+
+<para>
+Затем нажимаем кнопку Копировать - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskcopy10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём в раздел Тест и видим, что вопрос Супер вопрос скопирован в раздел Тест - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskcopy11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Перемещение FAQ.
+</para>
+
+
+</sect2>
+<!-- /Копирование FAQ -->
+
+<!-- Перемещение FAQ -->
+<sect2>
+<title>
+Перемещение FAQ
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно перемещать уже созданный вопрос в другие категории.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел FAQ, для этого нажмите на ссылку FAQ - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем FAQ - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, переместим изменённый на прошлой странице вопрос Супер вопрос в раздел Тест.
+</para>
+
+<para>
+Переходим в раздел FAQ.
+</para>
+
+<para>
+Выделяем раздел FAQ, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория FAQ не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория FAQ выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию FAQ нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию FAQ - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно переместить вопрос Супер вопрос.
+</para>
+
+<para>
+Для этого выделяем этот вопрос и нажимаем cправа кнопку Переместить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskmove8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу перемещения вопроса - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskmove9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+К примеру, переместим вопрос в раздел Тест.
+</para>
+
+<para>
+В поле Переместить Супер вопрос в выбираем раздел, в который мы хотим переместить вопрос, в нашем примере выбираем Тест - рис. 8.
+</para>
+
+<para>
+Затем нажимаем кнопку Переместить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskmove10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём в раздел Тест и увидим, что вопрос Супер вопрос перемещён в раздел Тест - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskmove11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Т.е. в разделе FAQ теперь пусто - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskmove12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Удаление FAQ.
+</para>
+
+
+</sect2>
+<!-- /Перемещение FAQ -->
+
+<!-- Удаление FAQ -->
+<sect2>
+<title>
+Удаление FAQ
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно удалять вопросы.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел FAQ, для этого нажмите на ссылку FAQ - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем FAQ - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdesk4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, удалим перемещённый на прошлой странице вопрос Супер вопрос в разделе Тест.
+</para>
+
+<para>
+Переходим в раздел Тест.
+</para>
+
+<para>
+Выделяем раздел Тест, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Тест не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Тест выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Тест нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию тест - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно удалить вопрос Супер вопрос.
+</para>
+
+<para>
+Для этого выделяем этот вопрос и нажимаем cправа кнопку Удалить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу удаления вопроса - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем нажимаем кнопку Удалить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём в раздел Тест и увидим, что вопрос Супер вопрос удалён из категории Тест - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Faqdeskdelete11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+
+</sect2>
+<!-- /Удаление FAQ -->
+
+</sect1>
+<!-- /Функция FAQ (Вопрос-Ответ) -->

@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Установщик модулей -->
+<chapter>
+<title>
+Установщик модулей
+</title>
+
+<para>
+Описание системы.
+</para>
+
+<!-- Введение -->
+<sect1>
+<title>
+Введение
+</title>
+
+<para>
+Установщик модулей предназначен для лёгкой установки/удаления модулей (дополнительных функций) в osCommerce VaM Edition, установки обновлений, для добавления/изменения/удаления записей в базу данных и т.д. 
+</para>
+
+</sect1>
+<!-- /Введение -->
+
+<!-- CIP пакеты -->
+<sect1>
+<title>
+CIP пакеты
+</title>
+
+<para>
+Установщик работает с так называемыми CIP (Contrib Installer Package) пакетами, CIP пакет - это обычный zip архив, содержащий в себе файлы нового модуля и инструкции для установщика, которые он должен выполнить для установки/удаления модуля.
+</para>
+
+</sect1>
+<!-- /CIP пакеты -->
+
+<!-- Структура CIP пакета -->
+<sect1>
+<title>
+Структура CIP пакета
+</title>
+
+<para>
+CIP_name/
+</para>
+<para>
+CIP_name/install.xml
+</para>
+<para>
+CIP_name/catalog/
+</para>
+<para>
+CIP_name/catalog/*.*
+</para>
+<para>
+CIP_name/catalog/admin/*.*
+</para>
+
+<para>
+Файлы для каталога должны обязателньо находиться в папке catalog
+</para>
+<para>
+Файлы для админки должны обязательно находиться в папке catalog/admin
+</para>
+
+<para>
+Файл архива должен называться как CIP_name.zip
+</para>
+
+<para>
+Например, если Вы создали архив mymodule.zip, то внутри архива должна быть папка mymodule и только внутри этой папки install.xml файл и все остальные файлы модуля. Соблюдайте всегда данные правила при создании модулей.
+</para>
+
+<para>
+Любой CIP пакет в обязательном порядке должен содержать файл install.xml, в котором содержатся директивы для установщика.
+</para>
+
+</sect1>
+<!-- Структура CIP пакета -->
+
+<!-- Формат XML файла -->
+<sect1>
+<title>
+Формат XML файла
+</title>
+
+<para>
+Нужно соблюдать всего 2 условия при создании install.xml:
+</para>
+
+<para>
+<orderedlist>
+  <listitem>
+  <para>
+   install.xml должен содержать правильный (валидный) XML код, соответствующий спецификации XML 1.0.
+   </para>
+  </listitem>
+  <listitem>
+  <para>
+   Каждый install.xml файл должен начинаться со следующей строки:
+   </para>
+   <para>
+<programlisting><![CDATA[
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+]]></programlisting>
+   </para>
+  </listitem>
+</orderedlist>
+</para>
+
+</sect1>
+<!-- Формат XML файла -->
+
+<!-- Описание доступных XML тэгов -->
+<sect1>
+<title>
+Описание доступных XML тэгов
+</title>
+
+<para>
+В install.xml Вы можете использовать следующие тэги:
+</para>
+
+<!-- Depend -->
+<sect2>
+<title>
+Depend
+</title>
+
+<para>
+Depend - позволяет устанавливать зависимости между CIP пакетами.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Устанавливает зависимости между CIP пакетами. 
+</para>
+
+<para>
+Синтаксис
+</para>
+<programlisting><![CDATA[
+<depend>
+	<cip [version="1.0"]>CIP</cip>
+	<active>
+
+          тэги, которые будут выполнены, если указанный CIP уже установлен или будет установлен в будущем.
+
+	</active>
+	<inactive>
+
+          тэги, которые будут выполнены, если указанный CIP не установлен или будет удалён в будущем.
+
+	</inactive>
+</depend>
+]]></programlisting>
+<para>
+Описание
+</para>
+
+<para>
+У Вас есть два CIP'a: CIP1 и CIP2. CIP1 зависит от CIP2.
+</para>
+
+<para>
+Файл install.xml в CIP1 содержит следующий код:
+</para>
+<programlisting><![CDATA[
+<depend>
+	<cip>CIP2</cip>
+	<active>
+...
+	</active>
+	<inactive>
+...
+	</inactive>
+</depend>
+]]></programlisting>
+
+<para>
+CIP2 не установлен. Когда Вы установите CIP1, будет выполнена только часть depend тэга.
+</para>
+
+<para>
+Затем Вы установите CIP2. Когда CIP2 будет установлен, установщик прочитает все install.xml файлы всех установленных CIP'ов и посмотрит на блок depend установленного CIP2.
+</para>
+
+<para>
+Если в системе уже установлен модуль, который зависит от CIP2, тогда будет выполнена active часть блока depend данного CIP'a.
+</para>
+
+<para>
+Если установлен CIP1, а затем устанавливается CIP2, то выполняется active тэг. Если Вы удаляете CIP2, выполяется inactive тэг.
+</para>
+
+<para>
+<note>
+Используйте тэг depend только если оба CIP'a изменяют разные участки кода.
+Используйте тэг require если Вам нужно изменить один и тот же участок кода двумя разными CIP'ами.
+</note>
+</para>
+
+<para>
+Типичный пример, когда depend не работает - когда Вы добавляете новую колонку в select запросе. Первый cip добавляет одну колонку и второй cip добавляет вторую колонку.
+</para>
+
+<para>
+Пример:
+</para>
+<programlisting><![CDATA[
+	<depend>
+		<cip>BTS</cip>
+		<active>
+			<findreplace>
+				<file name="templates/fallback/index_default.php" />
+				<findlinenumbers start="27" end="29" />
+				<find>
+					<tr>
+            <td><?php 
+                   include(DIR_FS_MODULES . FILENAME_NEW_PRODUCTS); ?>
+            </td>
+          </tr>
+				</find>
+				<replace type="html">
+					<tr>
+            <td><?php 
+               include(DIR_FS_MODULES . FILENAME_FEATURED); ?>
+            </td>
+          </tr>
+				</replace>
+			</findreplace>
+		</active>
+		<inactive>
+			<findreplace>
+				<file name="index.php" />
+				<findlinenumbers start="299" end="301" />
+				<find>
+					<tr>
+            <td><?php 
+              include(DIR_FS_MODULES . FILENAME_NEW_PRODUCTS); ?>
+            </td>
+          </tr>
+				</find>
+				<replace type="html">
+					<tr>
+            <td><?php 
+              include(DIR_FS_MODULES . FILENAME_FEATURED); ?>
+            </td>
+          </tr>
+				</replace>
+			</findreplace>
+		</inactive>
+	</depend>
+]]></programlisting>
+</sect2>
+<!-- Depend -->
+
+<!-- AddLangDef -->
+<sect2>
+<title>
+AddLangDef
+</title>
+
+<para>
+AddLangDef - Добавляет константы в языковые файлы.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Используйте данный тэг если Вам нужно добавить новые константы в любые языковые файлы.
+</para>
+
+<para>
+Синтаксис
+</para>
+<programlisting><![CDATA[
+  <addlangdef>
+	<lang type="admin" lng="russian" name="MY_MODULE_TEXT">Мой текст</lang>
+        ...
+	<lang type="admin" lng="russian" name="MY_MODULE_TEXT1">Ещё текст</lang>
+  </addlangdef>
+]]></programlisting>
+и:
+<programlisting><![CDATA[
+  <addlangdef>
+	<lang type="admin" lng="russian" name="MY_MODULE_TEXT">Мой текст</lang>
+	<lang type="admin" lng="english" name="MY_MODULE_TEXT">My text</lang>
+  </addlangdef>
+]]></programlisting>
+
+<para>
+Если язык в магазине не установлен, установщик ничего не делает. Это значит, что если Вы сначала установили установили модуль, затем добавили новый язык в магазин, то строки для нового языка установщик не добавит, т.к. на момент установки модуля язык был только один. Удалите модуль (CIP) и установите снова.
+</para>
+
+<para>
+Чтобы избежать подобных проблем, создавайте отдельные CIP для каждого языка.
+</para>
+
+<para>
+Описание
+</para>
+
+<para>
+addlangdef добавляет новый перевод, changelangdef вносит изменения в существующий перевод.
+Данные тэги конвертируются в кодировку магазина, которая устанавливается в Админке - Языки/Валюты - Языки, в настройках языка опция кодировка.
+</para>
+
+<para>
+Новые языковые константы добавляются вниз файла.
+</para>
+
+</sect2>
+<!-- /AddLangDef -->
+
+<!-- AddCode -->
+<sect2>
+<title>
+AddCode
+</title>
+
+<para>
+AddCode - Добавляет произвольный код в файл.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Ищет указанный код в файле и добавляет после новый код.
+</para>
+
+<para>
+Синтаксис
+</para>
+<programlisting><![CDATA[
+        <addcode>
+            <file name="index.php" />
+            <findlinenumbers type="continued"/>
+            <find>echo "world";</find>
+            <add type="php">echo "Hello";</add>
+        </addcode>';
+]]></programlisting>
+<para>
+или:
+</para>
+<programlisting><![CDATA[
+        <addcode>
+            <file name="index.php" />
+            <findlinenumbers start="12" end="12"/>
+            <find>echo "world";</find>
+            <add type="php">echo "Hello";</add>
+        </addcode>';
+
+]]></programlisting>
+
+<para>
+Описание
+</para>
+<programlisting><![CDATA[
+<find>echo "world";</find>
+]]></programlisting>
+
+<para>
+Используется для указания установщику, после какого существующего кода следует добавить новый код:
+</para>
+
+<programlisting><![CDATA[
+<add type="php">echo "Hello";</add>
+]]></programlisting>
+
+<para>
+Код будет заключён в комментарий в зависимости от указанного типа в атрибуте type. Разрешённые значения атрибута type: php, html, bash.
+</para>
+
+<para>
+Стиль комментариев в зависимости от указаннного типа:
+</para>
+<programlisting><![CDATA[
+"php" - //comment (default so you could not write it)
+"html" - <!-- comment-->
+"bash" - #comment
+]]></programlisting>
+
+<para>
+Имя файла:
+</para>
+<programlisting><![CDATA[
+<file name="index.php" />
+]]></programlisting>
+
+<para>
+Используется для указания файла, в который следует добавить новый код.
+</para>
+
+<para>
+Для файла в каталоге нужно записывать так:
+</para>
+<programlisting><![CDATA[
+<file name=""catalog/includes/application_top.php"" />
+]]></programlisting>
+<para>
+Для файла в админке нужно записывать так:
+</para>
+<programlisting><![CDATA[
+<file name=""catalog/admin/index.php"" />
+]]></programlisting>
+
+<para>
+Не беспокойтесь о путях, установщик сам определит, где расположена админка, а где каталог. С помощью catalog и admin Вы просто указывается установщику, что это файл в каталоге, либо это файл в админке.
+</para>
+
+<para>
+Вы можете использовать:
+</para>
+<programlisting><![CDATA[
+<findlinenumbers type="continued"/>
+]]></programlisting>
+<para>
+Если хотите добавить новый код после каждого встречающегося куска кода, например если один и тот же код встречается в файле несколько раз.
+</para>
+
+<para>
+Либо используйте:
+</para>
+<programlisting><![CDATA[
+<findlinenumbers start="12" end="12"/>
+]]></programlisting>
+
+<note>
+<para>
+Не обязательно в атрибутах start и end указывать точные номера строк, на данный момент установщик не проверяет указанные строки в атрибутах start и end, а просто ищет в файле код, указанный в тэге find.../find, достаточно просто писать любые числа (кроме 0), например так:
+<programlisting><![CDATA[
+<findlinenumbers start="1" end="1"/>
+]]></programlisting>
+</para>
+</note>
+
+</sect2>
+<!-- /AddCode -->
+
+<!-- Add2End -->
+<sect2>
+<title>
+Add2End
+</title>
+
+<para>
+Add2End - Добавляет произвольный код в конец файла.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Добавляет новый код в конец указанного файла.
+</para>
+
+<para>
+Синтаксис
+</para>
+<programlisting><![CDATA[
+    <add2end>
+        <file name="admin/includes/column_left.php" />
+        <add type="php">require(DIR_WS_BOXES . 'contrib_installer.php');</add>
+    </add2end>
+]]></programlisting>
+<para>
+Описание
+</para>
+
+<para>
+Имя файла:
+</para>
+<programlisting><![CDATA[
+<file name="admin/includes/column_left.php" />
+]]></programlisting>
+
+<para>
+Используется для указания файла, в который следует добавить новый код.
+</para>
+
+<para>
+Для файла в каталоге нужно записывать так:
+</para>
+<programlisting><![CDATA[
+<file name=""catalog/includes/application_top.php"" />
+]]></programlisting>
+<para>
+Для файла в админке нужно записывать так:
+</para>
+<programlisting><![CDATA[
+<file name="admin/includes/column_left.php" />
+]]></programlisting>
+
+<para>
+Не беспокойтесь о путях, установщик сам определит, где расположена админка, а где каталог. С помощью catalog и admin Вы просто указывается установщику, что это файл в каталоге, либо это файл в админке.
+</para>
+
+<programlisting><![CDATA[
+<add type="php">require(DIR_WS_BOXES . 'contrib_installer.php');</add>
+]]></programlisting>
+
+<para>
+Код будет заключён в комментарий в зависимости от указанного типа в атрибуте type. Разрешённые значения атрибута type: php, html, bash.
+</para>
+
+<para>
+Стиль комментариев в зависимости от указаннного типа:
+</para>
+<programlisting><![CDATA[
+"php" - //comment (default so you could not write it)
+"html" - <!-- comment-->
+"bash" - #comment
+]]></programlisting>
+
+</sect2>
+<!-- /Add2End -->
+
+<!-- AddFile -->
+<sect2>
+<title>
+AddFile
+</title>
+
+<para>
+AddFile - добавляет новый файл в магазин.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Добавляет новый файл в магазин из CIP архива.
+</para>
+
+<para>
+Синтаксис
+</para>
+<programlisting><![CDATA[
+   <addfile> 
+     <file name="admin/images/blank_galina.gif" /> 
+     <file name="templates/fallback/content/post_blank.php" /> 
+     <file name="post_blank.php" /> 
+   </addfile>
+]]></programlisting>
+<para>
+или:
+</para>
+<programlisting><![CDATA[
+   <addfile>
+     <file name="images/blank_galina.gif" />
+   </addfile>
+   <addfile>
+     <file name="templates/fallback/content/post_blank.tpl.php" />
+   </addfile>
+   <addfile>
+     <file name="post_blank.php" />
+   </addfile>
+]]></programlisting>
+
+<para>
+Описание
+</para>
+
+<para>
+При установке модуля Установщик добавляет в магазин новые файлы, но мы не хотим терять сделаные уже изменения, поэтому есть некоторые проверки.
+</para>
+
+<para>
+В CIP архиве должен быть файл, который Вы хотите добавить в магазин. Если файла нет, то при установке модуля будет ошибка.
+</para>
+
+<para>
+Если указанный файл уже существует в магазине, установщик проверяет, изменялся ли раньше указанный файл установщиком. Для этой проверки используется папка с резеврными копиями установщика.
+</para>
+
+<para>
+Если на сущствующий файл установлены неправильные права доступа, установщик остановится и выведет ошибку.
+</para>
+
+<para>
+Если права доступа верные, файл будет перезаписан.
+</para>
+
+<para>
+Установщик создаёт резервные копии файлов если:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+  <para>
+   - файл существует и не был изменён установщиком
+   </para>
+  </listitem>
+  <listitem>
+  <para>
+   - файл изменён и установлены права доступа на запись 
+   </para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+При удалении модуля
+</para>
+
+<para>
+При удалении модуля, содержащего тэг addfile, также проверяется, был ли изменён тот файл, что был добавлен при установке через addfile.
+</para>
+
+<para>
+Установщик сравнивает файл, которые находится в магазине с файлом, который находится в архиве модуля. Если файл был изменён после установки модуля и не установлены права доступа на запись в этот файл, Вы получите ошибку.
+</para>
+
+<para>
+Файл будет восстановлен из резервной копии если:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+  <para>
+   - файл не был изменён
+   </para>
+  </listitem>
+  <listitem>
+  <para>
+   - файл был изменён, но установлены права доступа на запись в файл
+   </para>
+  </listitem>
+</itemizedlist>
+</para>
+
+
+<para>
+Таким образом, установщик восстановит файл, который был в магазине до установления модуля, если:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+  <para>
+   - файл найден в магазине,
+   </para>
+  </listitem>
+  <listitem>
+  <para>
+   - файл, добавленный модулем, не был изменён после установки модуля,
+   </para>
+  </listitem>
+  <listitem>
+  <para>
+   - файл был изменён, но есть права доступа на запись в этот файл.
+   </para>
+  </listitem>
+</itemizedlist>
+</para>
+
+</sect2>
+<!-- /AddFile -->
+
+<!-- SQL -->
+<sect2>
+<title>
+SQL
+</title>
+
+<para>
+SQL- вносит изменения в базу данных.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Выполняет SQL запросы.
+</para>
+
+<para>
+Синтаксис
+</para>
+
+<para>
+Вы можете использовать SQL инструкции в одном тэге, в качестве разделителя используйте ;
+</para>
+
+<para>
+Например:
+</para>
+<programlisting><![CDATA[
+<sql>
+    <query>
+        INSERT INTO configuration_group 
+            VALUES (NULL, 'Contrib Installer', 
+             'Configuration for the Contrib Installer', NULL, 1);
+        UPDATE configuration_group SET
+            sort_order=LAST_INSERT_ID() 
+            WHERE configuration_group_id=LAST_INSERT_ID();
+    </query>
+    <remove_query>
+        DELETE FROM configuration_group 
+          WHERE configuration_group_title = 'Contrib Installer';
+    </remove_query>
+</sql>
+]]></programlisting>
+<para>
+Вы также можете использовать другой синтаксис:
+</para>
+<programlisting><![CDATA[
+<sql>
+    <query>
+        INSERT INTO configuration_group
+                VALUES (NULL, 'Contrib Installer', 
+                'Configuration for the Contrib Installer', NULL, 1);
+    </query>
+    <query>
+        UPDATE configuration_group
+                SET sort_order=LAST_INSERT_ID()
+                WHERE configuration_group_id=LAST_INSERT_ID();
+    </query>
+    <remove_query>
+        DELETE FROM configuration_group 
+          WHERE configuration_group_title = 'Contrib Installer';
+    </remove_query>
+</sql>
+]]></programlisting>
+
+<para>
+Описание
+</para>
+
+<para>
+Добавляем записи - INSERT запросы.
+</para>
+
+<para>
+Выполняются запросы для изменения базы данных.
+</para>
+
+<para>
+Выполняются в том порядке, в котором они указаны в файле install.xml.
+</para>
+
+<para>
+Пример:
+</para>
+<programlisting><![CDATA[
+<sql>
+    <query>
+        INSERT INTO configuration_group
+                VALUES (NULL, 'Contrib Installer', 
+                'Configuration for the Contrib Installer', NULL, 1);
+    </query>
+</sql>    
+]]></programlisting>
+
+<para>
+Удаляем записи - DELETE запросы.
+</para>
+
+<para>
+Пример:
+</para>
+<programlisting><![CDATA[
+<sql>
+    <remove_query>
+        DELETE FROM configuration_group 
+          WHERE configuration_group_title = 'Contrib Installer';
+    </remove_query>
+</sql>
+]]></programlisting>
+
+<para>
+Если при удалении CIP'а Вы не хотите удалять из базы данных изменения, сделанные CIP'ом при установке, используется в remove тэге “SELECT 1;”.
+</para>
+
+<para>
+Например:
+</para>
+<programlisting><![CDATA[
+<remove_query>SELECT 1;</remove_query>
+]]></programlisting>
+
+<para>
+Также следите затем чтобы при удалении CIP'a из базы данных удалялись только записи данного модуля и не затрагивались другие данные магазина.
+</para>
+
+<para>
+Создаём новую таблицу
+</para>
+
+<para>
+Вы можете создавать новые таблицы.
+</para>
+
+<para>
+Пример:
+</para>
+<programlisting><![CDATA[
+<sql>
+  <createtable>
+    <table name="cip_depend">
+(
+            `cip_ident` varchar(255) NOT NULL,
+            `cip_ident_req` varchar(255) NOT NULL,
+            `cip_req_type` int(2) NOT NULL,
+            PRIMARY KEY  (`cip_ident`(100),`cip_ident_req`(100),`cip_req_type`)
+        );</table>
+  </createtable>
+</sql>
+]]></programlisting>
+
+<para>
+Изменяем таблицу
+</para>
+
+<para>
+Вы можете добавлять новые колонки в существующие таблицы.
+</para>
+
+<para>
+Пример:
+</para>
+<programlisting><![CDATA[
+<sql>
+  <modifytable>
+  	<table name="configuration_group"/>
+  	<column name="configuration_group_key" 
+           action="addcol">VARCHAR(64) NOT NULL</column>
+  </modifytable>
+</sql>
+]]></programlisting>
+
+<para>
+Изменяем/добавляем записи в таблицу configuration_group:
+</para>
+
+<programlisting><![CDATA[
+<config_group>
+	<key>CG_CIP_MANAGER</key>
+	<title>Contrib Installer</title>
+	<descr>Configuration for the Contrib Installer</descr>
+	<visible>1</visible>
+</config_group>
+]]></programlisting>
+
+<para>
+Изменяем/добавляем записи в таблицу configuration:
+</para>
+
+<programlisting><![CDATA[
+<config>
+	<group_key>CG_CIP_MANAGER</group_key>
+	<key>ALLOW_FILES_BACKUP</key>
+	<title>Backup Files Before Install Each CIP</title>
+	<value>true</value>
+	<descr>Choose TRUE and files will be backuped.<br>Backup 
+                 contain only files which CIP will modify.</descr>
+	<sort_order>15</sort_order>
+	<set_function>tep_cfg_select_option(array(\'true\', 
+            \'false\'), </set_function>
+</config>
+]]></programlisting>
+
+</sect2>
+<!-- /SQL -->
+
+<!-- make_dir -->
+<sect2>
+<title>
+make_dir
+</title>
+
+<para>
+make_dir - Создаёт новую папку в магазине.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Создаёт указанную папку.
+</para>
+
+<para>
+Синтаксис
+</para>
+
+<programlisting><![CDATA[
+    <make_dir>
+        <parent_dir name="" />
+        <dir name="temp" />
+    </make_dir>
+]]></programlisting>
+
+<para>
+Описание
+</para>
+
+<para>
+Создаёт новую папку, если установлены верные права доступа.
+</para>
+
+</sect2>
+<!-- /make_dir -->
+
+<!-- findreplace -->
+<sect2>
+<title>
+findreplace
+</title>
+
+<para>
+findreplace - Поиск и замена кода в файле.
+</para>
+
+<para>
+Действие
+</para>
+
+<para>
+Ищет и меняет код в файле.
+</para>
+
+<para>
+Синтаксис
+</para>
+
+<programlisting><![CDATA[
+    <findreplace>
+        <file name="admin/index.php" />
+        <originallinenumbers start="56" end="56" />
+        <find>array('title' => TOOLS_FILES, 'link' => 
+tep_href_link(FILENAME_FILE_MANAGER, 'selected_box=tools')))));
+</find>
+        <replace type="php">
+                                         array('title' => TOOLS_FILES, 'link' => 
+
+tep_href_link(FILENAME_FILE_MANAGER, 'selected_box=tools')))),
+               array(
+                   'title' =>BOX_HEADING_CONTRIB_INSTALLER,
+                   'image' => 'contrib_installer.png',
+                   'href' => tep_href_link(FILENAME_CIP_MANAGER, 
+'selected_box=contrib_installer'),
+                    'children' =>
+                        array(
+                             array('title' =>BOX_CONTRIB_INSTALLER_CIP_MANAGER,
+                                     'link' => tep_href_link(FILENAME_CIP_MANAGER, 
+                                     'selected_box=contrib_installer')
+                             ),
+                            array('title' =>BOX_CONTRIB_INSTALLER_UPLOAD_CIP,
+                                     'link' =>tep_href_link(FILENAME_CIP_MANAGER, 
+                                      'action=upload&goto='.DIR_FS_CIP)
+                             ),
+                             array('title' =>'CIP.NET.UA', 
+                                      'link' =>tep_href_link('http://cip.net.ua/'))
+                        )
+                )
+);
+</replace>
+    </findreplace>
+]]></programlisting>
+
+<para>
+Описание
+</para>
+
+<programlisting><![CDATA[
+<find>array('title' => TOOLS_FILES, 'link' => 
+tep_href_link(FILENAME_FILE_MANAGER, 'selected_box=tools')))));
+</find>
+]]></programlisting>
+
+<para>
+Используется для указания установщику, какой код искать в файле. Код должен существовать в файле, указанном в тэге file.
+</para>
+
+<programlisting><![CDATA[
+        <replace type="php">
+                                         array('title' => TOOLS_FILES, 'link' => 
+
+tep_href_link(FILENAME_FILE_MANAGER, 'selected_box=tools')))),
+               array(
+                   'title' =>BOX_HEADING_CONTRIB_INSTALLER,
+                   'image' => 'contrib_installer.png',
+                   'href' => tep_href_link(FILENAME_CIP_MANAGER, 
+'selected_box=contrib_installer'),
+                    'children' =>
+                        array(
+                             array('title' =>BOX_CONTRIB_INSTALLER_CIP_MANAGER,
+                                     'link' => tep_href_link(FILENAME_CIP_MANAGER, 
+                                     'selected_box=contrib_installer')
+                             ),
+                            array('title' =>BOX_CONTRIB_INSTALLER_UPLOAD_CIP,
+                                     'link' =>tep_href_link(FILENAME_CIP_MANAGER, 
+                                      'action=upload&goto='.DIR_FS_CIP)
+                             ),
+                             array('title' =>'CIP.NET.UA', 
+                                      'link' =>tep_href_link('http://cip.net.ua/'))
+                        )
+                )
+);
+</replace>
+]]></programlisting>
+
+<para>
+Код для замены найденного в тэге find.
+</para>
+
+<para>
+Код будет заключён в комментарий в зависимости от указанного типа в атрибуте type.
+</para>
+
+<para>
+Разрешённые значения атрибута type: php, html, bash.
+</para>
+
+<para>
+Стиль комментариев в зависимости от указаннного типа:
+</para>
+
+<programlisting><![CDATA[
+"php" - //comment (default so you could not write it)
+"html" - <!-- comment-->
+"bash" - #comment
+]]></programlisting>
+
+<para>
+Имя файла:
+</para>
+<programlisting><![CDATA[
+<file name="admin/index.php" />
+]]></programlisting>
+
+<para>
+Используется для указания файла, в котором будет произведена поиск и замена.
+</para>
+
+<para>
+Для файла в каталоге нужно записывать так:
+</para>
+
+<programlisting><![CDATA[
+<file name=""catalog/includes/application_top.php"" />
+]]></programlisting>
+Для файла в админке нужно записывать так:
+<programlisting><![CDATA[
+<file name=""catalog/admin/index.php"" />
+]]></programlisting>
+
+<para>
+Не беспокойтесь о путях, установщик сам определит, где расположена админка, а где каталог.
+</para>
+
+<para>
+С помощью catalog и admin Вы просто указывается установщику, что это файл в каталоге, либо это файл в админке.
+</para>
+
+<programlisting><![CDATA[
+<originallinenumbers start="56" end="56" />
+]]></programlisting>
+
+<para>
+Используется для указания строк, в которых находится код, который указан в тэге find.
+</para>
+
+<note>
+<para>
+Не обязательно в атрибутах start и end указывать точные номера строк, на данный момент установщик не проверяет указанные строки в атрибутах start и end, а просто ищет в файле код, указанный в тэге find.../find, достаточно просто писать любые числа (кроме 0), например так:
+<programlisting><![CDATA[
+<originallinenumbers start="1" end="1" />
+]]></programlisting>
+</para>
+</note>
+
+<para>
+Можно также использовать такой вариант для поиска нужного кода в файле.
+</para>
+
+<programlisting><![CDATA[
+<originallinenumbers type="continued"/>
+]]></programlisting>
+
+</sect2>
+<!-- findreplace -->
+
+</sect1>
+<!-- /Описание доступных XML тэгов -->
+
+</chapter>
+<!-- /Установщик модулей: описание системы -->

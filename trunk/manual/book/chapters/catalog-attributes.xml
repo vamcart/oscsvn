@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Работа с атрибутами номенклатурной единицы -->
+<sect1>
+<title>
+Работа с атрибутами номенклатурной единицы
+</title>
+
+<para>
+Допустим, у нас есть товар Носки и есть разные цвета данного товара: носки чёрные, носки белые, носки синие.
+</para>
+
+<para>
+Вот чтобы не добавлять три отдельных товара (ведь по сути это один товар, просто разных цветов) и есть атрибуты товара. Мы просто к товару Носки добавим три атрибута Чёрные, Белые, Синие.
+</para>
+
+<para>
+Рассмотрим подробнее, как это делать.
+</para>
+
+<!-- Создание новых атрибутов номенклатурной единицы -->
+<sect2>
+<title>
+Создание новых атрибутов номенклатурной единицы
+</title>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь переходим в раздел Атрибуты - Настройка - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 4. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addvirtual4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Атрибут товара состоит из двух частей: Название атрибута и Значение атрибута. Зная, что в нашем примере нам нужно создать атрибут цвета, создаём атрибут Цвет.
+</para>
+
+<para>
+Для этого в верхней части в разделе Атрибуты товаров в текстовом поле вводим Цвет и нажимаем кнопку Добавить - рис. 5. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажав кнопку Добавить мы можем видеть, что атрибут Цвет был добавлен в список - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь добавим значения для вновь созданного атрибута Цвет.
+</para>
+
+<para>
+Я уже выше писал, что будем создавать цвета Чёрный, Белый и Синий.
+</para>
+
+<para>
+Создаём эти значения.
+</para>
+
+<para>
+Для этого в разделе Значения атрибутов в выпадающем списке выбираем атрибут Цвет, в текстовом поле вводим Чёрный и нажимаем кнопку Добавить - рис. 7. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажав кнопку Добавить мы можем видеть, что значение атрибута Чёрный был добавлен в список - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Таким же образом создаём значения Белый и Синий.
+</para>
+
+<para>
+Итак, мы создали все три значения - рис. 9. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Всё, с созданием атрибутов мы закончили.
+</para>
+
+<para>
+Прежде всего добавим товар Носки в любую категорию.
+</para>
+
+<para>
+Подробно рассматривать процедуру добавления товара не будем, мы этот вопрос уже рассматривали в разделе Создание новой номенклатурной единицы.
+</para>
+
+<para>
+Просто создаём товар Носки в любой категории и опускаемся вниз страницы добавления товара - рис. 12.
+</para>
+
+<para>
+Настраиваем атрибуты создаваемого товара Носки прямо на странице создания товара, что очень удобно, всё в одном месте.
+</para>
+
+<para>
+Настройка атрибутов находится в самом низу страницы добавления товара - рис. 10. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, вспоминаем, что мы создали атрибут Цвет и его значения Чёрный, Белый и Синий.
+</para>
+
+<para>
+Теперь Вы можете видеть данный атрибут и его значения на странице добавления товаров - рис. 10.
+</para>
+
+<para>
+Настраиваем данный атрибут.
+</para>
+
+<para>
+Отмечаем значения атрибута Цвет - рис. 11, это значит что мы активировали эти значения и привязали их к товару. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, указываем стоимость данных цветов. Допустим 1,2,3 соответственно.
+</para>
+
+<para>
+Выбираем в поле Префикс плюс (+) и указываем стоимость данного цвета.
+</para>
+
+<para>
+Если выбрали +, то значит общая стоимость товара будет равна стоимость товара + стоимость атрибута.
+</para>
+
+<para>
+Если выбрали -, то значит общая стоимость товара будет равна стоимость товара - стоимость атрибута.
+</para>
+
+<para>
+Заполняем таким образом все три цвета - рис. 12. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Всё, атрибуты настроены.
+</para>
+
+<para>
+Сохраняйте товар, нажав кнопку Предпросмотр - рис. 13.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup15.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем Добавить - рис. 14. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup16.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 14.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 14.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Товар Носки с атрибутами был добавлен - рис. 15.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup17.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 15.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 15.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь Вы можете видеть данный товар с выбором атрибутов в интернет-магазине - рис. 16.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup18.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 16.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 16.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Надеюсь, что общий принцип работы атрибутов понятен. 
+</para>
+
+</sect2>
+<!-- /Создание новых атрибутов номенклатурной единицы -->
+
+<!-- Корректировка атрибутов номенклатурной единицы -->
+<sect2>
+<title>
+Корректировка атрибутов номенклатурной единицы
+</title>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь переходим в раздел Атрибуты - Настройка - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 4. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesedit6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Например, изменим значение Белый на Серый.
+</para>
+
+<para>
+Сразу скажу, что принцип изменения как атрибутов, так и значения атрибутов один и тот же.
+</para>
+
+<para>
+Мы рассмотрим только изменение значения атрибута.
+</para>
+
+<para>
+Напротив значения Белый нажимаем кнопку Изменить - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу изменения значения атрибута - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesedit8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вместо белый указываем Серый и нажимаем кнопку Обновить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesedit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы вернёмся к списку атрибутов и увидим, что значение атрибута успешно изменилось - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesedit10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+</sect2>
+<!-- /Корректировка атрибутов номенклатурной единицы -->
+
+<!-- Удаление атрибутов номенклатурной единицы -->
+<sect2>
+<title>
+Удаление атрибутов номенклатурной единицы
+</title>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь переходим в раздел Атрибуты - Настройка - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 4. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesedit6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Например, удалим значение Серый.
+</para>
+
+<para>
+Сразу скажу, что принцип удаления как атрибутов, так и значения атрибутов один и тот же.
+</para>
+
+<para>
+Стоит также сказать, что можно удалять атрибуты и значения атрибутов, которые никак не связаны ни с одним товаром интернет-магазина, удалить атрибут или значение, который связан с товаром не получится, Вы получите предупреждающее сообщение - рис. 5. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesdelete7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нужно отключить данный атрибут от всех товаров (в нашем примере это товар Носки), либо просто удалить товар (товары) с указанными атрибутами.
+</para>
+
+<para>
+Для примера, удалим товар Носки, иначе у нас не получится удалить значение Серый.
+</para>
+
+<para>
+Как правильно удалять товар мы не будем, т.к. данный вопрос подробно рассмотрен в разделе Удаление номенклатурной единицы.
+</para>
+
+<para>
+Итак, мы удалили товар Носки, теперь удаляем значение атрибута Серый.
+</para>
+
+<para>
+Напротив значения Серый нажимаем кнопку Удалить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesdelete8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу подтверждения удаления - рис. 7. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesdelete9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На странице подтверждения удаления ещё раз нажимаем кнопку Удалить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesdelete10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы вернёмся к списку атрибутов и увидим, что значение атрибута успешно удалилось - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributesdelete11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+</sect2>
+<!-- /Удаление атрибутов номенклатурной единицы -->
+
+<!-- Типы атрибутов номенклатурной единицы -->
+<sect2>
+<title>
+Типы атрибутов номенклатурной единицы
+</title>
+
+<para>
+Атрибут может иметь свой тип. По умолчанию, все атрибуты имеют тип select, т.е. на странице карточки товара, в каталоге, атрибуты выглядят в виде select меню - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup18.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Кроме типа select, атрибуты могут иметь следующие типы:
+</para>
+
+<para>
+Тип radio, даный тип выглядит на странице карточки товара вот так (рис. 2):
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestyperadio10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Тип checkbox, даный тип выглядит на странице карточки товара вот так (рис. 3):
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypecheckbox10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Тип text, даный тип выглядит на странице карточки товара вот так (рис. 4):
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Тип textarea, даный тип выглядит на странице карточки товара вот так (рис. 5):
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetextarea13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе мы рассмотрим, как правильно создавать атрибуты разных типов.
+</para>
+
+<!-- Тип атрибута select -->
+<sect3>
+<title>
+Тип атрибута select
+</title>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь переходим в раздел Атрибуты - Настройка - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 4. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addvirtual4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы не будем подробно рассматривать вопрос создания атрибутов товара ещё раз, данный вопрос был уже рассмотрен подробно чуть выше, я просто покажу, как устанавливать атрибуту тип select и как это будет выглядеть в каталоге, процедура установки атрибутов типа select ничем не отличается от стандартной процедуры, которая также была подробно описана в предыдущих разделах.
+</para>
+
+<para>
+Итак, смотрим, что у нас в данном примере уже создан атрибут Размер и его значения Большие, Средние, Маленькие.
+</para>
+
+<para>
+Редактируем атрибут Размер, нажав кнопку Изменить - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибуту в колонке Тип атрибута значение Select и нажимаем Обновить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Поля Длина поля и Комментарий в данном случае можно пропустить, данные поля используются при создании атрибутов типа text и textarea, как использовать эти поля и для чего они нужны, об этом чуть ниже.
+</para>
+</note>
+
+<para>
+Надо сказать, что значение Select выбрано по умолчанию и если Вы при создании атрибута пропускали выбор типа атрибута, а я советовал именно пропустить эту колонку, то атрибут будет создан с типом Select.
+</para>
+
+<para>
+Изменив, атрибут, Вы увидите, что теперь Размер имеет тип Select в списке атрибутов - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Как устанавливать атрибуты товару мы уже рассматривали, ещё раз останавливаться на этом не будем, так же как мы не будем останавливаться на подробном описании процедуры создания атрибута и значений, это также было рассмотено.
+</para>
+
+<para>
+Установка типа атрибута это всего лишь изменение значения колонки Тип атрибута при редактировании уже созданных атрибутов, либо при создании новых атрибутов.
+</para>
+
+<para>
+Всё, настройка типа атрибута закончена.
+</para>
+
+<para>
+Вот таким вот образом устанавливаются типы атрибутов, теперь в каталоге, на странице карточки товара Вы можете видеть Select меню - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup18.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Читайте следующую страницу - Тип атрибута radio.
+</para>
+
+</sect3>
+<!-- /Тип атрибута select -->
+
+<!-- Тип атрибута radio -->
+<sect3>
+<title>
+Тип атрибута radio
+</title>
+
+<para>
+В данном разделе я просто покажу уже знакомую процедуру установки типа атрибута, только в данном случае установим тип Radio атрибуту Размер.
+</para>
+
+<para>
+Переходим в раздел Атрибуты - Настройка - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 2. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addvirtual4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы не будем подробно рассматривать вопрос создания атрибутов товара ещё раз, данный вопрос был уже рассмотрен подробно чуть выше, я просто покажу, как устанавливать атрибуту тип radio и как это будет выглядеть в каталоге, процедура установки атрибутов типа radio ничем не отличается от стандартной процедуры, которая также была подробно описана в предыдущих разделах.
+</para>
+
+<para>
+Итак, смотрим, что у нас в данном примере уже создан атрибут Размер и его значения Большие, Средние, Маленькие.
+</para>
+
+<para>
+Редактируем атрибут Размер, нажав кнопку Изменить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибуту в колонке Тип атрибута значение Radio и нажимаем Обновить - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype8-1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Поля Длина поля и Комментарий в данном случае можно пропустить, данные поля используются при создании атрибутов типа text и textarea, как использовать эти поля и для чего они нужны, об этом чуть ниже.
+</para>
+</note>
+
+<para>
+Изменив, атрибут, Вы увидите, что теперь Размер имеет тип Radio в списке атрибутов - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype9-1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Как устанавливать атрибуты товару мы уже рассматривали, ещё раз останавливаться на этом не будем, так же как мы не будем останавливаться на подробном описании процедуры создания атрибута и значений, это также было рассмотено.
+</para>
+
+<para>
+Установка типа атрибута это всего лишь изменение значения колонки Тип атрибута при редактировании уже созданных атрибутов, либо при создании новый атрибутов.
+</para>
+
+<para>
+Всё, настройка типа атрибута закончена.
+</para>
+
+<para>
+Вот таким вот образом устанавливаются типы атрибутов, теперь в каталоге, на странице карточки товара Вы можете видеть атрибут в виде Radio меню - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestyperadio10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Читайте следующую страницу - Тип атрибута checkbox.
+</para>
+
+</sect3>
+<!-- /Тип атрибута radio -->
+
+<!-- Тип атрибута checkbox -->
+<sect3>
+<title>
+Тип атрибута checkbox
+</title>
+
+<para>
+В данном разделе я просто покажу уже знакомую процедуру установки типа атрибута, только в данном случае установим тип Checkbox атрибуту Размер.
+</para>
+
+<para>
+Переходим в раздел Атрибуты - Настройка - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 2. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addvirtual4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы не будем подробно рассматривать вопрос создания атрибутов товара ещё раз, данный вопрос был уже рассмотрен подробно чуть выше, я просто покажу, как устанавливать атрибуту тип checkbox и как это будет выглядеть в каталоге, процедура установки атрибутов типа checkbox ничем не отличается от стандартной процедуры, которая также была подробно описана в предыдущих разделах.
+</para>
+
+<para>
+Итак, смотрим, что у нас в данном примере уже создан атрибут Размер и его значения Большие, Средние, Маленькие.
+</para>
+
+<para>
+Редактируем атрибут Размер, нажав кнопку Изменить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибуту в колонке Тип атрибута значение Checkbox и нажимаем Обновить - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype8-2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Поля Длина поля и Комментарий в данном случае можно пропустить, данные поля используются при создании атрибутов типа text и textarea, как использовать эти поля и для чего они нужны, об этом чуть ниже.
+</para>
+</note>
+
+<para>
+Изменив, атрибут, Вы увидите, что теперь Размер имеет тип Checkbox в списке атрибутов - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype9-2.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Как устанавливать атрибуты товару мы уже рассматривали, ещё раз останавливаться на этом не будем, так же как мы не будем останавливаться на подробном описании процедуры создания атрибута и значений, это также было рассмотено.
+</para>
+
+<para>
+Установка типа атрибута это всего лишь изменение значения колонки Тип атрибута при редактировании уже созданных атрибутов, либо при создании новый атрибутов.
+</para>
+
+<para>
+Всё, настройка типа атрибута закончена.
+</para>
+
+<para>
+Вот таким вот образом устанавливаются типы атрибутов, теперь в каталоге, на странице карточки товара Вы можете видеть атрибут - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypecheckbox10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Стоит сразу сказать об особенности типа Checkbox, как Вы могли заменить, если атрибут (в нашем примере Размер) имеет тип Checkbox, то значения атрибута (в нашем примере Большие, Средние, Маленькие) на странице карточки товара не показываются, а показывается только сам атрибут и, собственно, поле типа checkbox. Это особенность типа атрибута Checkbox, сделано специально для того, что б была возможность создавать множество checkbox'ов.
+</para>
+</note>
+
+<para>
+Если Вы хотите создавать атрибут типа checkbox, то достаточно создать сам атрибут с типом checkbox и не создавать значения для такого типа атрибутов.
+</para>
+
+<para>
+Читайте следующую страницу - Тип атрибута text.
+</para>
+
+</sect3>
+<!-- /Тип атрибута checkbox -->
+
+<!-- Тип атрибута text -->
+<sect3>
+<title>
+Тип атрибута text
+</title>
+
+<para>
+В данном разделе я просто покажу уже знакомую процедуру установки типа атрибута, только в данном случае установим тип Text атрибуту Размер.
+</para>
+
+<para>
+Атрибуты типа Text полезно использовать, когда посетитель интернет-магазина сам должен указать какую-либо информацию о покупаемом товаре, например, покупатель заказывает открытку и хочет чтобы в этой открытке был напечатан его текст, вот с помощью данного типа атрибута покупатель сможет указывать свой текст.
+</para>
+
+<para>
+Атрибут типа Text выглядит в виде текстового поля и информация, указанная покупателем при заказе товара с таким типом атрибута так же сохраняется с остальной информацией о заказе, т.е. текст, введённый покупателем также отправляется в письме с информацией о заказе и также этот текст сохраняется в Админке - Клиенты - Заказы, при просмотре такого заказа.
+</para>
+
+<para>
+Переходим в раздел Атрибуты - Настройка - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 2. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addvirtual4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы не будем подробно рассматривать вопрос создания атрибутов товара ещё раз, данный вопрос был уже рассмотрен подробно чуть выше, я просто покажу, как устанавливать атрибуту тип text и как это будет выглядеть в каталоге, процедура установки атрибутов типа text ничем не отличается от стандартной процедуры, которая также была подробно описана в предыдущих разделах.
+</para>
+
+<para>
+Но есть одна особенность указания значения для атрибута типов Text и Textarea, об этой особенности чути ниже.
+</para>
+
+<para>
+Итак, смотрим, что у нас в данном примере уже создан атрибут Размер и его значения Большие, Средние, Маленькие.
+</para>
+
+<para>
+Редактируем атрибут Размер, нажав кнопку Изменить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибуту в колонке Тип атрибута значение Text и нажимаем Обновить - рис. 4.
+</para>
+
+<note>
+<para>
+Поле Длина поля должно быть заполнено обязательно, в данном поле мы указываем максимальную длину для ввода при просмотре атрибута в каталоге, указывается просто 32, к примеру.
+</para>
+</note>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype8-3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Изменив атрибут, Вы увидите, что теперь Размер имеет тип Text в списке атрибутов - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype9-3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нужно установить атрибут Размер нужного товару, в нашем примере установим атрибут Размер (имеющий тип text) товару Рога лося.
+</para>
+
+<para>
+Атрибуты типа text и textarea устанавливать товару нужно только на странице Админка - Каталог - Атрибуты - настройка, т.к. здесь есть небольшая особенность.
+</para>
+
+<para>
+Установка атрибутов товара осуществляется в нижней части страницы, в разделе Атрибуты товара - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибут Размер (с типом text) товару Рога лося.
+</para>
+
+<para>
+В колонке Название товара выбираем - Рога лося.
+</para>
+
+<para>
+В колонке Название атрибута выбираем - Размер.
+</para>
+
+<para>
+В колонке Значение атрибута выбираем - TEXT.
+</para>
+
+<note>
+<para>
+В колонке Значение атрибута для типов text и textarea обязательно нужно выбирать TEXT и никак иначе.
+</para>
+</note>
+
+<para>
+Затем нажимаем кнопку Добавить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Убеждаемся, что товару Рога лося установлен атрибут Размер со значением TEXT - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Всё, настройка типа атрибута закончена.
+</para>
+
+<para>
+Теперь в каталоге, на странице карточки товара Рога лося, Вы можете видеть текстовое поле, куда покупатель может вписывать свой текст - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Читайте следующую страницу - Тип атрибута textarea.
+</para>
+
+</sect3>
+<!-- /Тип атрибута text -->
+
+<!-- Тип атрибута textarea -->
+<sect3>
+<title>
+Тип атрибута textarea
+</title>
+
+<para>
+В данном разделе я просто покажу уже знакомую процедуру установки типа атрибута, только в данном случае установим тип Textarea атрибуту Размер.
+</para>
+
+<para>
+Атрибуты типа Textarea полезно использовать, когда посетитель интернет-магазина сам должен указать какую-либо информацию о покупаемом товаре, например, покупатель заказывает открытку и хочет чтобы в этой открытке был напечатан его текст, вот с помощью данного типа атрибута покупатель сможет указывать свой текст.
+</para>
+
+<para>
+Отличие от типа Text только в том, что тип Textarea предоставляет возможность указывать посетителю больший объём текста, чем в типе Text.
+</para>
+
+<para>
+Атрибут типа Textarea выглядит в виде текстового блока и информация, указанная покупателем при заказе товара с таким типом атрибута, так же сохраняется вместе с остальной информацией о заказе, т.е. текст, указанный покупателем также отправляется в письме с информацией о заказе и этот текст виден в Админке - Клиенты - Заказы, при просмотре такого заказа.
+</para>
+
+<para>
+Переходим в раздел Атрибуты - Настройка - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Attributessetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу настройки атрибутов товара - рис. 2. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Addvirtual4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы не будем подробно рассматривать вопрос создания атрибутов товара ещё раз, данный вопрос был уже рассмотрен подробно чуть выше, я просто покажу, как устанавливать атрибуту тип textarea и как это будет выглядеть в каталоге, процедура установки атрибутов типа textarea ничем не отличается от стандартной процедуры, которая также была подробно описана в предыдущих разделах.
+</para>
+
+<para>
+Но есть одна особенность указания значения для атрибута типов Text и Textarea, об этой особенности чути ниже.
+</para>
+
+<para>
+Итак, смотрим, что у нас в данном примере уже создан атрибут Размер и его значения Большие, Средние, Маленькие.
+</para>
+
+<para>
+Редактируем атрибут Размер, нажав кнопку Изменить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибуту в колонке Тип атрибута значение Textarea и нажимаем Обновить - рис. 4.
+</para>
+
+<note>
+<para>
+В данном случае поле Длина поля можно пропустить, а вот поле Комментарий лучше заполнить, введённый в данном поле текст будет выведен на странице карточки товара, в скобках, смотрите ниже рис. 9.
+</para>
+</note>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype8-4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Изменив, атрибут, Вы увидите, что теперь Размер имеет тип Textarea в списке атрибутов - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestype9-4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нужно установить атрибут Размер нужному товару, в нашем примере установим атрибут Размер (имеющий тип textarea) товару Рога лося.
+</para>
+
+<para>
+Атрибуты типа text и textarea устанавливать товару нужно только на странице Админка - Каталог - Атрибуты - настройка, т.к. здесь есть небольшая особенность.
+</para>
+
+<para>
+Установка атрибутов товара осуществляется в нижней части страницы, в разделе Атрибуты товара - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Устанавливаем атрибут Размер (с типом textarea) товару Рога лося.
+</para>
+
+<para>
+В колонке Название товара выбираем - Рога лося.
+</para>
+
+<para>
+В колонке Название атрибута выбираем - Размер.
+</para>
+
+<para>
+В колонке Значение атрибута выбираем - TEXT.
+</para>
+
+<note>
+<para>
+В колонке Значение атрибута для типов text и textarea обязательно нужно выбирать TEXT и никак иначе.
+</para>
+</note>
+
+<para>
+Затем нажимаем кнопку Добавить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Убеждаемся, что товару Рога лося установлен атрибут Размер со значением TEXT - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetext12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+
+<para>
+Всё, настройка типа атрибута закончена.
+</para>
+
+<para>
+Вот таким вот образом устанавливаются типы атрибутов.
+</para>
+
+<para>
+Теперь в каталоге, на странице карточки товара Рога лося, Вы можете видеть текстовый блок, куда покупатель может вписывать свой текст - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/attributestypetextarea13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+</sect3>
+<!-- /Тип атрибута textarea -->
+
+
+</sect2>
+<!-- /Типы атрибутов номенклатурной единицы -->
+
+
+</sect1>
+<!-- /Работа с атрибутами номенклатурной единицы -->
