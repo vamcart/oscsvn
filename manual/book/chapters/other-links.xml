@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Функция Ссылки -->
+<sect1>
+<title>
+Функция Ссылки
+</title>
+
+<para>
+В интернет-магазине osCommerce VaM Edition есть предустановленный модуль обмена ссылками (Ссылки).
+</para>
+
+<para>
+В данном разделе будет рассмотрен именно этот модуль, как правильно работать с модулем Ссылки.
+</para>
+
+<!-- Настройка модуля ссылки -->
+<sect2>
+<title>
+Настройка модуля ссылки
+</title>
+
+<para>
+В данном разделе мы рассмотрим все возможные настройки модуля Ссылки, подробно описывать их нет смысла, потому как в администраторской все настройки довольно подробно уже описаны, для чего каждая из них предназначена и как их изменять.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Настройки - Магазин (рис. 1).
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Admin.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем в раздел Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkssetup4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы в разделе Ссылки - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkssetup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой настройки модуля опросы.
+</para>
+
+<para>
+Рассмотрим подробнее, для чего нужна каждая переменная на этой странице:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Счётчик переходов
+    </para>
+    <para>
+Показывать количество переходов по ссылке.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Использовать короткие URL адреса
+    </para>
+    <para>
+Использовать короткие URL адреса.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Ширина картинки
+    </para>
+    <para>
+Ширина картинки ссылки.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Высота картинки
+    </para>
+    <para>
+Высота картинки ссылки.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать картинку
+    </para>
+    <para>
+Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать URL
+    </para>
+    <para>
+Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать название ссылки
+    </para>
+    <para>
+Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать описание ссылки
+    </para>
+    <para>
+Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать количество переходов
+    </para>
+    <para>
+Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Минимальное количество символов поля Название сайта
+    </para>
+    <para>
+Минимальное количество символов.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Минимальное количество символов поля URL Адрес
+    </para>
+    <para>
+Минимальное количество символов.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Минимальное количество символов поля Описание
+    </para>
+    <para>
+Минимальное количество символов.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Минимальное количество символов поля Ваше имя
+    </para>
+    <para>
+Минимальное количество символов.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Текст для проверки
+    </para>
+    <para>
+Текст (обычно адрес магазина), который будет искаться при проверке ссылки. Необходимо для того, чтобы убедиться, что на сайте, добавленном в каталог ссылок, установлена ссылка на Ваш магазин.
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Настраивайте модуль Ссылки как Вам нужно.
+</para>
+
+<para>
+На этом всё. В данном разделе я просто описал все возможные настройки модуля Ссылки.
+</para>
+
+<para>
+Читайте следующую страницу Создание категории ссылок.
+</para>
+
+
+</sect2>
+<!-- /Настройка модуля ссылки -->
+
+<!-- Создание категории ссылок -->
+<sect2>
+<title>
+Создание категории ссылок
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно создавать категории ссылок.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно перейти на страницу Категории.
+</para>
+
+<para>
+Нажимаем в боксе ссылку Категории - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу управления категориями ссылок - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Сразу скажу одно условие, которое нужно соблюдать.
+</para>
+
+<note>
+<para>
+Любая ссылка должна находиться в категории. Т.е. сначала создайте как минимум одну категорию для ссылок и только потом добавляйте ссылку в созданную категорию. Не нужно добавлять ссылку прямо в корневой раздел.
+</para>
+</note>
+
+<para>
+Для примера, создадим тестовую категорию ссылок в интернет-магазине.
+</para>
+
+<para>
+Создаём категории ссылок
+</para>
+
+<para>
+Для этого нажимаем кнопку Новая категория - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatadd7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания категории - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatadd8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания новой категории ссылок - рис. 6.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания категории ссылок содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название категории</para>
+    <para>Здесь Вы указываете название создаваемой категории. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание категории</para>
+    <para>Здесь Вы указываете описание создаваемой категории. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Картинка категории</para>
+    <para>Здесь Вы можете указать картинку для создаваемой категории ссылок. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Порядок сортировки</para>
+    <para>Здесь Вы можете указывать порядок сортировки создаваемой категории, т.е. на какой позиции будет показана категория в списке остальных категорий. С помощью данной опции можно сортировать вывод категорий ссылок. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус</para>
+    <para>Здесь Вы указываете статус категории, Активна или Неактивна. Если категория активна, то эта категория и все ссылки внутри данной категории видны всем посетителям интернет-магазина, если неактивна, то данная категория и все ссылки внутри данной категории посетителям интернет-магазина не видны. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новую категорию ссылок, заполняя соответствующие поля формы - рис. 7:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название категории - Ссылки.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание категории - Можно пропустить данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Картинка категории - Можно пропустить поле. Не будем добавлять картинку, здесь достаточно очевидно всё, нажимаете просто кнопку Обзор и выбираете картинку для категории. В нашем примере картинку добавлять не будем.</para>
+  </listitem>
+
+  <listitem>
+    <para>Порядок сортировки - Можно пропустить данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус - Указываем цифру 1, т.е. создаваемая категория будет активна.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatadd9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполнив форму и нажимаем кнопку Сохранить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка категорий ссылок и увидите, что новая категория Ссылки была создана - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Корректировка категории ссылок. 
+</para>
+
+
+</sect2>
+<!-- /Создание категории ссылок -->
+
+<!-- Корректировка категории ссылок -->
+<sect2>
+<title>
+Корректировка категории ссылок
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно изменять (корректировать) категории ссылок.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно перейти на страницу Категории.
+</para>
+
+<para>
+Нажимаем в боксе ссылку Категории - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу управления категориями ссылок - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, изменим созданную на прошлой странице категорию Ссылки.
+</para>
+
+<para>
+Выделяем категорию Ссылки, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Ссылки не выделена - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Ссылки выделена - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Ссылки нажимаем справа кнопку Изменить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу редактирования категории - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подробно мы все поля формы рассмотрели на прошлой странице, при добавлении категории.
+</para>
+
+<para>
+Ещё раз рассматривать не будем.
+</para>
+
+<para>
+Я лишь скажу, что при изменении категории, можно менять любое поле формы.
+</para>
+
+<para>
+К примеру, поменяем поле Название раздела.
+</para>
+
+<para>
+В поле Название раздела пишем - Новые ссылки - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем нажимаем кнопку Сохранить - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка категории ссылок и увидите, что категория была изменена - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Данную изменённую категорию Вы можете видеть в интернет-магазине в боксе Обмен ссылками - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatedit14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Удаление категории ссылок.
+</para>
+
+
+</sect2>
+<!-- /Корректировка категории ссылок -->
+
+<!-- Удаление категории ссылок -->
+<sect2>
+<title>
+Удаление категории ссылок
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно удалять категории ссылок.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно перейти на страницу Категории.
+</para>
+
+<para>
+Нажимаем в боксе ссылку Категории - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу управления категориями ссылок - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, удалим категорию Новые ссылки.
+</para>
+
+<para>
+Выделяем категорию Новые ссылки, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Новые ссылки не выделена - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Новые ссылки выделена - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Новые ссылки нажимаем справа кнопку Удалить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу удаления категории - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подтверждаем удаление категории Новые ссылки, нажав ещё раз кнопку Удалить - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка категории ссылок и увидите, что категория была изменена - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscatdelete12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Добавление ссылки.
+</para>
+
+
+</sect2>
+<!-- /Удаление категории ссылок -->
+
+<!-- Добавление ссылки -->
+<sect2>
+<title>
+Добавление ссылки
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно добавлять ссылку. 
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, создадим ссылку Ссылка.
+</para>
+
+<para>
+Для создания новой ссылки нажимаем кнопку Новая ссылка - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksadd5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу добавления ссылки - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksadd6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания новой ссылки - рис. 4.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания ссылки содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название сайта</para>
+    <para>Здесь Вы указываете название создаваемой ссылки. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>URL адрес</para>
+    <para>Здесь Вы указываете URL адрес ссылки. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Раздел</para>
+    <para>Здесь Вы указываете раздел, в который добавляется ссылка. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание</para>
+    <para>Здесь Вы можете указать описание создаваемой ссылки. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>URL баннера</para>
+    <para>Здесь Вы можете указать URL адрес баннера или кнопки создаваемой ссылки, если есть. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Имя</para>
+    <para>Здесь Вы указываете имя. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>E-mail адрес</para>
+    <para>Здесь Вы указываете e-mail адрес. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Адрес страницы, где размещена ссылка на наш магазин</para>
+    <para>Здесь Вы адрес страницы, где размещена обратная ссылка на Ваш интернет-магазин. Это нужно для автоматической проверки обратной ссылки, речь о данной функции пойдёт в разделе Проверка наличия обратной ссылки. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус</para>
+    <para>Здесь Вы указываете статус создаваемой ссылки, либо Ожидает проверки, либо Проверена, либо Неактивна. Если статус Ожидает проверки, то данная ссылка не будет видна посетителям интернет-магазина, данная ссылка ожидает проверки администратором, если статус Проверена, то создаваемая ссылка будет видна всем посетителям интернет-магазина, если статус Неактивна, то данная ссылка не будет видна посетителям интернет-магазина.</para>
+  </listitem>
+
+  <listitem>
+    <para>Рейтинг</para>
+    <para>Здесь Вы можете указать рейтинг создаваемой ссылки. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новую ссылку, заполняя соответствующие поля формы - рис. 5:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название сайта - Пример ссылки</para>
+  </listitem>
+
+  <listitem>
+    <para>#  URL адрес - http://sborka.loc</para>
+  </listitem>
+
+  <listitem>
+    <para>Раздел - Выбираем Новые ссылки.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание - Описание ссылки.</para>
+  </listitem>
+
+  <listitem>
+    <para>URL баннера - Пропускаем.</para>
+  </listitem>
+
+  <listitem>
+    <para>Имя - Вася Пупкин</para>
+  </listitem>
+
+  <listitem>
+    <para>E-mail адрес - vam@test.com</para>
+  </listitem>
+
+  <listitem>
+    <para>Адрес страницы, где размещена ссылка на наш магазин - http://sborka.loc/links.html</para>
+  </listitem>
+
+  <listitem>
+    <para>Статус - Выбираем Проверена. В разделе Проверка наличия обратной ссылки мы проверим наличие обратной ссылки.</para>
+  </listitem>
+
+  <listitem>
+    <para>Рейтинг - Пропускаем, т.е. остаётся 0.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksadd7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполнив форму и нажимаем кнопку Добавить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksadd8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка ссылок и увидите, что ссылка Пример ссылки была создана - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksadd9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данную ссылку Вы можете видеть в интернет-магазине, в боксе Обмен ссылками, в разделе Новые ссылки - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Корректировка ссылки.
+</para>
+
+
+</sect2>
+<!-- /Добавление ссылки -->
+
+<!-- Корректировка ссылки -->
+<sect2>
+<title>
+Корректировка ссылки
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно изменять (корректировать) уже созданную ссылку.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, изменим созданную на прошлой странице ссылку Пример ссылки.
+</para>
+
+<para>
+Для этого выделяем эту ссылку и нажимаем cправа кнопку Изменить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksedit5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу редактирования ссылки - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksedit6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подробно мы все поля формы рассмотрели на прошлой странице, при добавлении ссылки.
+</para>
+
+<para>
+Ещё раз рассматривать не будем.
+</para>
+
+<para>
+Я лишь скажу, что при изменении ссылки, можно менять любое поле формы.
+</para>
+
+<para>
+К примеру, поменяем поля URL адрес и поле Описание.
+</para>
+
+<para>
+В поле URL адрес пишем - http://kypi.loc (рис. 5).
+</para>
+
+<para>
+В поле Описание пишем - Новое описание (рис. 5).
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем нажимаем кнопку Обновить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksedit8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка ссылок и увидите, что ссылка была изменена - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksedit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данную изменённую ссылку Вы можете видеть в интернет-магазине, в боксе Обмен ссылками, в разделе Новые ссылки - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksedit10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Удаление ссылки.
+</para>
+
+
+</sect2>
+<!-- /Корректировка ссылки -->
+
+<!-- Удаление ссылки -->
+<sect2>
+<title>
+Удаление ссылки
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно удалять ссылки.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, удалим ссылку Форум osCommercee по-русски.
+</para>
+
+<para>
+Для этого выделяем эту ссылку и нажимаем cправа кнопку Удалить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksdelete5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы перейдёте на страницу подтверждения удаления ссылки Форум osCommercee по-русски - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksdelete6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Чтобы подтвердить удаление ссылки нажимаем кнопку Удалить - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksdelete7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём к списку ссылок и увидим, что ссылка Форум osCommercee по-русски была удалена - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linksdelete8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Проверка наличия обратной ссылки.
+</para>
+
+
+</sect2>
+<!-- /Удаление ссылки -->
+
+<!-- Проверка наличия обратной ссылки -->
+<sect2>
+<title>
+Проверка наличия обратной ссылки
+</title>
+
+<para>
+В данном разделе мы рассмотрим как можно проверять наличие обратной ссылки.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Ссылки, для этого нажмите на ссылку Ссылки - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Ссылки - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscat4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, проверим наличие обратной ссылки у добавленной нами ссылки Новая ссылка.
+</para>
+
+<para>
+Как Вы помните, при добавлении ссылки Новая ссылка в поле Адрес страницы, где размещена ссылка на наш магазин мы указали адрес http://sborka.loc/links.html
+</para>
+
+<para>
+Также мы помним, что в настройках модуля Ссылки в Админке - Настройки - Ссылки есть переменная Текст для проверки, я уже писал, что именно указанный в данной переменной текст будет искаться при проверке обратной ссылки.
+</para>
+
+<para>
+Т.е. при проверке обратной ссылки на странице http://sborka.loc/links.html будет искаться текст kypi.ru
+</para>
+
+<para>
+Допустим, мы поставили ссылку на kypi.ru по адресу http://sborka.loc/links.html.
+</para>
+
+<para>
+Проще говоря, мы разметили на этой странице HTML-код, содержащий строку kypi.ru, например разместим следующий код:
+</para>
+
+<para>
+&lt;a href="http://kypi.ru" target="_blank"&gt;Интернет-магазин Kypi.Ru&lt;/a&gt;
+</para>
+
+<para>
+Теперь проверяем наличие обратной ссылки у ссылки Новая ссылка
+</para>
+
+<para>
+Для этого выделяем эту ссылку и нажимаем cправа кнопку Проверить ссылку - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscheck5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+После нажатия кнопки Проверить ссылку Вы перейдёте на страницу с результатами проверки обратной ссылки.
+</para>
+
+<para>
+Результата может быть два:
+</para>
+
+<para>
+Либо ссылка верная, т.е. обратная ссылка по указанному адресу найдена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscheck6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Либо ссылка отсутствует, т.е. обратная ссылка по указанному адресу не найдена - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Linkscheck7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Как Вы знаете, после добавления ссылки посетителем интернет-магазина (ссылки могут добавлять посетители интернет-магазина при просмотре ссылок (бокс Обмен ссылками), либо ссылки может добавлять Администратор интернет-магазина в админке), ссылка имеет статус Ожидает проверки, т.е. не видна в интернет-магазина.
+</para>
+
+<para>
+Так вот, если Вы проверили наличие обратной ссылки и она была найдена, просто меняете статус такой ссылки на Проверена, что б ссылка была активна и видна посетителям интернет-магазина.
+</para>
+
+<para>
+Нужно сказать, что это лишь одна из возможностей.
+</para>
+
+<para>
+Вы сами решаете, стоит ли Вам пользоваться автоматической проверкой обратной ссылки или нет.
+</para>
+
+<para>
+Я лишь показал как работает данная функция.
+</para>
+
+<para>
+На этом всё.
+</para>
+
+
+</sect2>
+<!-- /Проверка наличия обратной ссылки -->
+
+</sect1>
+<!-- /Функция Ссылки -->

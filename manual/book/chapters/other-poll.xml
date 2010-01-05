@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Функция Опросы -->
+<sect1>
+<title>
+Функция Опросы
+</title>
+
+<para>
+В интернет-магазине osCommerce VaM Edition есть предустановленный модуль Опросы.
+</para>
+
+<para>
+В данном разделе будет рассмотрен именно этот модуль, как правильно работать с модулем Опросы.
+</para>
+
+<!-- Настройка модуля опросы -->
+<sect2>
+<title>
+Настройка модуля опросы
+</title>
+
+<para>
+В данном разделе мы рассмотрим все возможные настройки модуля Опросы, подробно описывать их нет смысла, потому как в администраторской все настройки довольно подробно уже описаны, для чего каждая из них предназначена и как их изменять.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Опросы, для этого нажмите на ссылку Опросы - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Опросы - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Бокс Опросы состоит из следующих ссылок:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Настройки</para>
+    <para>В данном разделе находятся настройки модуля опросы. Подробнее об этих настройках читайте ниже.</para>
+  </listitem>
+
+  <listitem>
+    <para>Опросы</para>
+    <para>В данном разделе собственно происходит добавление, изменение, удаление опросов. Но об этом чуть позже, нас в данный момент интересуют настройки модуля Опросы.</para>
+  </listitem>
+</itemizedlist>
+</para>
+
+<para>
+Нас интересует сейчас пункт Настройки:
+</para>
+
+<para>
+<orderedlist>
+  <listitem>
+    <para>Настройки</para>
+  </listitem>
+
+</orderedlist>
+</para>
+
+<para>
+<emphasis>
+Настройки
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Настройки - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Настройки - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой настройки модуля опросы.
+</para>
+
+<para>
+Рассмотрим подробнее, для чего нужна каждая переменная на этой странице:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Какой опрос показывать
+    </para>
+    <para>
+Какие опросы показывать в боксе. 0 = Случайный 1 = Самый последний 2 = Самый популярный 3 = Указанный ниже опрос в поле ID Опроса
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная ID Опроса
+    </para>
+    <para>
+Если Вы в переменной Показывать опрос указали 3, то здесь необходимо указать ID код опроса, который будет показан.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Разрешить отзывы
+    </para>
+    <para>
+Разрешить оставлять отзывы к опросу? 0 = Запретить 1 = Разрешить
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать бокс опросов даже если нет опросов
+    </para>
+    <para>
+Показывать бокс опросов, даже если ни одного опроса на данный момент не проводится. 0 = Не показывать 1 = Показывать
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Разрешить голосовать несколько раз
+    </para>
+    <para>
+Разрешить голосовать одному человеку несколько раз в одном и том же опросе. 0 = Не разрешать (рекомендуется) 1 = разрешить
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Количество отзывов на странице
+    </para>
+    <para>
+Максимальное количество отзывов на странице.
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Настраивайте модуль Опросы как Вам нужно.
+</para>
+
+<para>
+На этом всё. В данном разделе я просто описал все возможные настройки модуля Опросы.
+</para>
+
+<para>
+Читайте следующую страницу Создание нового опроса.
+</para>
+
+
+</sect2>
+<!-- /Настройка модуля опросы -->
+
+<!-- Создание нового опроса -->
+<sect2>
+<title>
+Создание нового опроса
+</title>
+
+
+<para>
+В данном разделе мы рассмотрим как правильно создавать опросы.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Опросы, для этого нажмите на ссылку Опросы - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Опросы - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы можете видеть перед собой список уже созданных опросов.
+</para>
+
+<para>
+Для примера, создадим новый опрос в интернет-магазине.
+</para>
+
+<para>
+Но для начала в Админке - Опросы - Настройки - Какой опрос показывать укажите 1, т.е. что б в боксе опросы в интернет-магазине показывался самый последний созданный опрос.
+</para>
+
+<para>
+Создание опроса
+</para>
+
+<para>
+Чтобы создать новый опрос нажимаем кнопку Добавить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polladd5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания опроса - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polladd6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания нового опроса - рис. 4.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания опроса содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Выберите категорию</para>
+    <para>Здесь Вы можете выбрать, будет ли опрос показываться на всём сайте, либо только в указанной категории.</para>
+  </listitem>
+
+  <listitem>
+    <para>Название опроса</para>
+    <para>Здесь Вы указываете название создаваемого опроса. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Вариант ответа 1</para>
+    <para>Здесь Вы указываете варианты ответа создаваемого опроса. Вариантов ответа в одном опросе может быть до 15, указывайте столько вариантов, сколько Вам нужно.</para>
+  </listitem>
+
+  <listitem>
+    <para>Вариант ответа 15</para>
+    <para>Здесь Вы указываете варианты ответа создаваемого опроса. Вариантов ответа в одном опросе может быть до 15, указывайте столько вариантов, сколько Вам нужно.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новый опрос, заполняя соответствующие поля формы - рис. 5:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Выберите категорию - Уже выбрано Все категории, пропускаем данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Название опроса - Где я?</para>
+  </listitem>
+
+  <listitem>
+    <para>Вариант ответа 1 - Здесь</para>
+  </listitem>
+
+  <listitem>
+    <para>Вариант ответа 2 - Там</para>
+  </listitem>
+
+  <listitem>
+    <para>Вариант ответа 3 - Не знаю</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polladd7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполнив форму и нажимаем кнопку Обновить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polladd8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка опросов и увидите, что опрос Где я? был создан - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polladd9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данный опрос Вы можете видеть в интернет-магазине, в боксе Опросы - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polladd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Корректировка опроса.
+</para>
+
+
+</sect2>
+<!-- /Создание нового опроса -->
+
+<!-- Корректировка опроса -->
+<sect2>
+<title>
+Корректировка опроса
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно изменять (корректировать) уже созданный опрос.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Опросы, для этого нажмите на ссылку Опросы - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Опросы - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, изменим созданный на прошлой странице опрос Где я?.
+</para>
+
+<para>
+Для этого выделяем этот опрос и нажимаем cправа кнопку Изменить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polledit5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу редактирования опроса - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polledit6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подробно мы все поля формы рассмотрели на прошлой странице, при добавлении опроса.
+</para>
+
+<para>
+Ещё раз рассматривать не будем.
+</para>
+
+<para>
+Я лишь скажу, что при изменении опроса, можно менять любое поле формы.
+</para>
+
+<para>
+К примеру, поменяем поля Название опроса и поля Вариант ответа 1, Вариант ответа 2.
+</para>
+
+<para>
+В поле Название опроса пишем - Кто я?
+</para>
+
+<para>
+В поле Вариант ответа 1 пишем - Я
+</para>
+
+<para>
+В поле Вариант ответа 2 пишем - Он
+</para>
+
+<para>
+После изменения формы нажимаем кнопку Обновить - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polledit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка опросов и увидите, что опрос была изменён - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polledit8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данный изменённый опрос Вы можете видеть в интернет-магазине, в боксе Опросы - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polledit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Просмотр результатов опроса.
+</para>
+
+
+</sect2>
+<!-- /Корректировка опроса -->
+
+<!-- Просмотр результатов опроса -->
+<sect2>
+<title>
+Просмотр результатов опроса
+</title>
+
+<para>
+В админке можно просматривать результаты проводимых опросов. Данный вопрос мы будет рассматривать в данном разделе.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Опросы, для этого нажмите на ссылку Опросы - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Опросы - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, посмотрим результаты опроса Кто я?.
+</para>
+
+<para>
+Для этого выделяем этот опрос и нажимаем cправа кнопку Предпросмотр - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Pollview5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы перейдёте на страницу результатов опроса Кто я? - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Pollview6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На данной странице будут показаны результаты голосования по данному опросу.
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Удаление опроса.
+</para>
+
+
+</sect2>
+<!-- /Просмотр результатов опроса -->
+
+<!-- Удаление опроса -->
+<sect2>
+<title>
+Удаление опроса
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно удалять опросы.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Опросы, для этого нажмите на ссылку Опросы - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Опросы - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, удалим опрос Кто я?.
+</para>
+
+<para>
+Для этого выделяем этот опрос и нажимаем cправа кнопку Удалить - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polldelete5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы перейдёте на страницу подтверждения удаления опроса Кто я? - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polldelete6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Чтобы подтвердить удаление опроса нажимаем кнопку Удалить - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Polldelete7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём к списку опросов и увидим, что опрос Кто я? был удалён - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Poll4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+
+</sect2>
+<!-- /Удаление опроса -->
+
+</sect1>
+<!-- /Функция Опросы -->

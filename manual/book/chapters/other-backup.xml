@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Резервное копирование -->
+<sect1>
+<title>
+Резервное копирование
+</title>
+
+<para>
+В данном разделе мы подробнее рассмотрим функцию резервное копирование. Как правильно делать резервное копирование и как восстанавливать данные из резервной копии.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Инструменты - Резервное копирование, для этого нажмите на ссылку Резервное копирование - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перешли на страницу резервного копирования - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Создав резервную копию, мы тем самым сохраняем в файл все данные интернет-магазина из базы данных, который записывается в папку /admin/backups.
+</para>
+
+<para>
+В этот файл записываются абсолютно все данные интернет-магазина: все настройки, клиенты, заказы, база товаров и т.д.
+</para>
+
+<para>
+Не записываются картинки, т.к. все картинки товаров находятся в папке images, а через резервное копирование записываются только те данные, которые находятся в базе данных интернет-магазина.
+</para>
+
+<para>
+Итак, для примера, создадим резервную копию и потом восстановим данные из резервной копии.
+</para>
+
+<!-- Создание резервной копии -->
+<sect2>
+<title>
+Создание резервной копии
+</title>
+
+<para>
+Прежде чем создать резервную копию, убедитесь что папка /admin/backups имеет права на запись.
+</para>
+
+<para>
+Иначе резервную копию сделать будет нельзя и сверху будет выведено сообщение об ошибке - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Если с правами доступа всё нормально, никакой ошибки Вы не увидите и будут видны кнопки Сделать backup и Восстановить.
+</para>
+
+<para>
+Чтобы сделать резервную копию всех данных нажимаем кнопку Сделать backup - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания резервной копии - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На странице создания резервной копии Вы можете выбрать, архивировать (Использовать GZIP) создаваемую копию или нет (Без сжатия).
+</para>
+
+<para>
+Если на Вашем сервере не настроен архиватор GZIP, у Вас будет доступна только одна опция - Без сжатия.
+</para>
+
+<para>
+Это не страшно, просто создаваемый файл резервной копии будет большего размера.
+</para>
+
+<para>
+Пункт Только загрузка Вы можете отметить, если не хотите создавать на сервере файл в папке /admin/backups, а просто хотите загрузить резервную копию всех данных интернет-магазина к себе на компьютер.
+</para>
+
+<para>
+Выбираем Без сжатия и нажимаем кнопку Сделать backup - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы перейдёте на главную страницу резервного копирования и увидите, что была создана резервная копия - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Резервная копия создана.
+</para>
+
+</sect2>
+<!-- /Создание резервной копии -->
+
+<!-- Восстановление резервной копии -->
+<sect2>
+<title>
+Восстановление резервной копии
+</title>
+
+<para>
+Чтобы восстановить данные из резервной копии, к примеру, случился какой-то сбой на сервере и были потеряны все данные, в этом случае Вам поможет восстановление данных из резервной копии, для этого выбирайте необходимый файл резервной копии и нажимайте справа кнопку Восстановить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы перейдёте на страницу подтверждения восстановления - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для восстановления из выбранной резервной копии нажимайте кнопку Восстановить - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Чем больше размер файла резервной копии, тем дольше будут восстанавливаться данные из этого файла.
+</para>
+
+<para>
+Вы перейдёте на главную страницу резервного копирования и увидите сообщение, что данные из резервной копии были восстановлены - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Backup13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+</sect2>
+<!-- /Восстановление резервной копии -->
+
+
+</sect1>
+<!-- /Резервное копирование -->

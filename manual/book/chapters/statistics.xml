@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Раздел Статистика по товарам и покупателям -->
+<chapter>
+
+<title>
+Статистика по товарам и покупателям
+</title>
+
+<para>
+В интернет-магазине osCommerce собирается различного рода статистика работы интернет-магазина, в данном разделе мы рассмотрим, какая статистика собирается и где её можно просмотреть.
+</para>
+
+
+<!-- Виды собираемой статистики -->
+<sect1>
+<title>
+Виды собираемой статистики
+</title>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Отчёты, для этого нажмите на ссылку Отчёты - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу отчётов - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Раздел отчёты состоит из следующих пунктов:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Просмотренные товары</para>
+    <para>В данном разделе Вы можете видеть статистику просмотров товаров. Самые популярные товары находятся вверху, менее популярные товары располагаются ниже. Список товаров сортируется по полю Просмотрено.</para>
+  </listitem>
+
+  <listitem>
+    <para>Заказанные товары</para>
+    <para>В данном разделе Вы можете видеть товары, которые заказываются чаще всего, т.е. самые популярные товары интернет-магазина. Самые популярные товары находятся вверху, менее популярные товары располагаются ниже. Список товаров сортируется по полю Куплено.</para>
+  </listitem>
+
+  <listitem>
+    <para>Лучшие клиенты</para>
+    <para>В данном разделе Вы можете видеть клиентов, которые оформляют заказы в интернет-магазине чаще всего. Клиенты сортируются по общей сумме покупок.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статистика продаж</para>
+    <para>В данном разделе Вы можете видеть краткую статистику продаж интернет-магазина с возможностью сортировки по статусам заказов.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статистика продаж 2</para>
+    <para>В данном разделе Вы можете видеть статистику продаж интернет-магазина. Более подробная статистика с расширенными возможностями сортировки данных, возможностью экспорта полученной статистики в текстовый файл.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статистика продаж 3</para>
+    <para>В данном разделе Вы можете видеть статистику продаж интернет-магазина. Более подробная статистика с графиками. Возможность выбора периода статистики: часовая, дневная, недельная, месячная и годовая.</para>
+  </listitem>
+
+  <listitem>
+    <para>Статистика клиентов</para>
+    <para>Также довольно подробная статистики с возможностью сортировки.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Пункты Статистика продаж, Статистика продаж 2, Статистика продаж 3, Статистика клиентов довольно похожи между собой, но всё-таки у каждого есть свои отличительные особенности, которые будут полезны каждому администратору интернет-магазина.
+</para>
+
+<para>
+Более подробно о каждом пункте читайте на следующей странице - Использование.
+</para>
+
+</sect1>
+<!-- /Виды собираемой статистики -->
+
+<!-- Использование -->
+<sect1>
+<title>
+Использование
+</title>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Отчёты, для этого нажмите на ссылку Отчёты - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу отчётов - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь рассмотрим каждый пункт бокса Отчёты немного подробнее:
+</para>
+
+<para>
+Просмотренные товары - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Как я уже говорил, в данном разделе Вы можете видеть список самых просматриваемых товаров интернет-магазина.
+</para>
+
+<para>
+Заказанные товары - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+В данном разделе Вы можете видеть список самых покупаемых, можно сказать, самых популярных товаров интернет-магазина.
+</para>
+
+<para>
+Лучшие клиенты - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Список лучших клиентов по сумме общих покупок.
+</para>
+
+<para>
+Статистика продаж - рис. 6. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Краткая статистика общих продаж за всё время работы интернет-магазина.
+</para>
+
+<para>
+Статистика продаж 2 - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Более расширенная статистика продаж с возможностью выбора периода времени и с возможностью экспорта выводимой статистики в текстовый файл.
+</para>
+
+<para>
+Статистика продаж 3 - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Простая статистика продаж с рисованием графиков, просто выбираете период, за который Вы хотите увидеть статистику и получаете результат.
+</para>
+
+<para>
+Статистика клиентов - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Reports11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Статистика продаж. Выбираете период времени, какие заказы показывать или наоборот, какие не показывать и получаете статистики за выбранный период. Показывается средняя стоимость корзины за выбранный период, количество новых клиентов, общее число заказов за выбранный период и т.д.
+</para>
+
+<para>
+На этом всё. Собственно говоря, рассказывать особо нечего, всё очевидно из названий и представленных скриншотов.
+</para>
+
+
+</sect1>
+<!-- /Использование -->
+
+</chapter>
+<!-- /Раздел Статистика по товарам и покупателям -->

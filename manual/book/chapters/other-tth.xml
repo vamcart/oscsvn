@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Функция Технические параметры товаров -->
+<sect1>
+<title>
+Функция Технические параметры товаров
+</title>
+
+<para>
+В интернет-магазине osCommerce VaM Edition eсть предустановленный модуль технических параметров, он предназначен для указания товару характеристик, например, если товар - компьютер, то с помощью модуля технических параметров можно составить таблицу характеристик данного компьютера, т.е. указать количество оперативной памяти, размер винчестера и т.д..
+</para>
+
+<para>
+В данном разделе будет рассмотрен именно этот модуль, как правильно работать с модулем технических параметров.
+</para>
+
+<para>
+Создание технических параметров делится на два основых этапа, это создание технических параметров и значений этих параметров и второй этап - установка созданных параметров и значений конкретному товару.
+</para>
+
+<para>
+Переходим к рассмотрению первого этапа - создание технических параметров.
+</para>
+
+<!-- Создание технических параметров -->
+<sect2>
+<title>
+Создание технических параметров
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно создавать технические параметры и значения параметров.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нужно перейти в любую категорию, например, перейдём в категорию Рога, сначала выделим категорию левой кнопкой мыши и затем нажимаем ещё раз на названии категории, мы тем самым перейдём в категорию Рога.
+</para>
+
+<para>
+Рис. 3 - категория Рога не выделена.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Рис. 4 - категория Рога выделена. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Зайдя в категорию Рога, Вы справа можете видеть кнопку Тех. параметры - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажимаем кнопку Тех. параметры. Откроется pop-up окно - управление техническими параметрами - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Каждый параметр состоит из двух частей, из названия параметра и значения параметра.
+</para>
+
+<para>
+Страница создания параметров разделена на две части: в верхней части создаются параметры, в нижней части указываются значения для созданных параметров.
+</para>
+
+<para>
+Для примера, создим параметр Ветвистость и значения Высокая, Средняя, Низкая.
+</para>
+
+<para>
+Затем мы установим эти параметры товару Рога оленя, но установка параметров товарам будет рассмотрена в следующем разделе.
+</para>
+
+<para>
+Итак, сначала создаём параметр Ветвистость, указываем в поле Ветвистость и затем нажимаем кнопку Добавить в верхней части - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу управления техническими параметрами и увидите, что параметр Ветвистость был успешно создан - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Параметр Ветвистость создан, теперь нам нужно создать значения для параметра Ветвистость, а именно создать значения Высокая, Средняя, Низкая.
+</para>
+
+<para>
+Значения для параметров создаются в нижней части страницы управления техническими параметрами.
+</para>
+
+<para>
+Выбираем в списке параметров Ветвистость, в поле вводим Высокая и нажимаем справа кнопку Добавить - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу управления техническими параметрами и увидите, что значение Высокая для параметра Ветвистость было успешно создано - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Аналогичным образом создаём значения Средняя и Низкая, в итоге получается три значения параметра Ветвистость - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Всё, параметры и значения созданы, теперь нам нужно связать эти параметры с конкретным товаром, в нашем примере, с товаром Рога оленя.
+</para>
+
+<para>
+Читайте следующую страницу - Установка технических параметров товару.
+</para>
+
+</sect2>
+<!-- /Создание технических параметров -->
+
+
+<!-- Установка технических параметров товару -->
+<sect2>
+<title>
+Установка технических параметров товару
+</title>
+
+<para>
+В прошлом разделе мы создали параметры и значения параметров, теперь нам нужно связать эти созданные параметры и значения с конкретным товаром, в нашем примере с товаром Рога оленя.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нужно перейти в категорию, где расположен тот товар, которому мы хотим установить технические параметры, в нашем случае это товар Рога оленя и он находится в категории Рога, переходим в категорию Рога.
+</para>
+
+<para>
+Зайдя в категорию Рога, Вы видите список товаров категории - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Напротив каждого товара есть картинка с карандашом, она как раз и предназначена для установки технических параметров товару.
+</para>
+
+<para>
+Нажимаем на картинку установления технических параметров напротив товара Рога оленя - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+После нажатия картинки откроется pop-up окно установки технических параметров товару Рога оленя - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Установим товару Рога оленя параметр Ветвистость и значение Средняя.
+</para>
+
+<para>
+Это очен просто. Для этого выбираем в колонке Параметр - Ветвистость, а в колонке Значение выбираем Средняя и нажимаем кнопку Добавить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Если Вы хотите сортировать вывод параметров, т.е. какой-то параметр должен быть выше другого (в нашем примере мы для товара создали только один параметр и необходимости в сортировки нет), тогда используйте колонку Порядок сортировки, чем выше число, тем выше параметр будет в списке остальных параметров в каталоге.
+</para>
+</note>
+
+<note>
+<para>
+Количество параметров и значений для каждого товара неограничено, т.е. каждому товару Вы можете указывать сколько угодно параметров и значений, в данном примере мы указали лишь один параметр и одно значение товару Рога оленя.
+</para>
+</note>
+
+<para>
+Нажав кнопку Добавить, Вы снова перейдёте на страницу настройки технических параметров товару и увидите, что параметр Втвистость со значением Средняя был установлен товару Рога оленя - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Всё, параметры установлены, можете закрыть pop-up окно.
+</para>
+
+<para>
+Обновите страницу со списком товара кнопкой Обновить в браузере.
+</para>
+
+<para>
+Теперь Вы можете заметить, что товары, у которых установлены технические параметры (в нашем примере это Рога оленя) имеют картинку с зелёным карандашом - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Тогда как товары, у которых нет технических параметров (в нашем примере это Рога лося) имеют картинку с красным карандашом - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Установленные параметры товару Рога оленя можно увидеть в каталоге, на странице карточки товара - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Корректировка технических параметров.
+</para>
+
+
+</sect2>
+<!-- /Установка технических параметров товару -->
+
+
+<!-- Корректировка технических параметров -->
+<sect2>
+<title>
+Корректировка технических параметров
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно изменять (корректировать) технические параметры.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нужно перейти в любую категорию, например перейдём в категорию Рога, для этого выделяем категорию левой кнопкой мыши и затем нажимаем ещё раз на названии категории, мы тем самым перейдём в категорию Рога.
+</para>
+
+<para>
+Рис. 3 - категория Рога не выделена.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Рис. 4 - категория Рога выделена. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Зайдя в категорию Рога, Вы справа можете видеть кнопку Тех. параметры - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажимаем кнопку Тех. параметры и откроется pop-up окно - управление техническими параметрами - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Каждый параметр состоит из двух частей, из названия параметра и значения параметра.
+</para>
+
+<para>
+Можно корректировать как названия параметров, так и значения параметров.
+</para>
+
+<para>
+Для примера, изменим параметр Ветвистость на Вес и значение Средняя на Средний.
+</para>
+
+<para>
+Итак, сначала изменим параметр Ветвистость, напротив параметра нажимаем кнопку Изменить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Указываем новое название параметра Вес и нажимаем Обновить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу управления параметрами и увидите, что параметр был изменён на Вес - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Аналогичным образом изменяем значение Средняя на Средний, т.е. нажимаем напротив значения кнопку Обновить - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Указываем новое название Средний и нажимаем кнопку Обновить - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу управления параметрами и увидите, что значение было изменено на Средний - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Также в каталоге у товара Рога оленя были изменены параметры, т.е. Ветвистость на Вес и Средняя на Средний - рис. 13.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit15.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Аналогичным образом можно изменять уже установленные товару технические параметры.
+</para>
+
+<para>
+Читайте следующую страницу - Удаление технических параметров.
+</para>
+
+
+</sect2>
+<!-- /Корректировка технических параметров -->
+
+<!-- Удаление технических параметров -->
+<sect2>
+<title>
+Удаление технических параметров
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно удалять технические параметры.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Каталог - Содержание, для этого нажмите на ссылку Содержание - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы попадёте на страницу управления каталогом товаров Вашего интернет-магазина - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нужно перейти в любую категорию, например перейдём в категорию Рога, сначала выделим категорию левой кнопкой мыши и затем ещё раз нажмём на названии категории, мы тем самым перейдём в категорию Рога.
+</para>
+
+<para>
+Рис. 3 - категория Рога не выделена.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Рис. 4 - категория Рога выделена. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Editcategory5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Зайдя в категорию Рога, Вы справа можете видеть кнопку Тех. параметры - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tth7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Нажимаем кнопку Тех. параметры и откроется pop-up окно - управление техническими параметрами - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthedit14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Каждый параметр состоит из двух частей, из названия параметра и значения параметра.
+</para>
+
+<para>
+Можно удалять как названия параметров, так и значения параметров.
+</para>
+
+<para>
+Для примера, удалим параметр Вес.
+</para>
+
+<para>
+Для этого напротив параметры Вес нажимаем кнопку Удалить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<note>
+<para>
+Удалять можно только те параметры, которые не связаны (не установлены) ни с одним товаром.
+</para>
+</note>
+
+<para>
+Если удаляемый параметр установлен какому-либо товару, то удалить его не получится - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Параметры, установленные товару удалюятся таким же образом, с помощью кнопки Удалить.
+</para>
+
+<para>
+Удалим установленные параметры товару Рога оленя, иначе у нас не получится удалить полностью параметр Вес, потому как он установлен товару Рога оленя, а затем вернёмся к полному удалению параметра Вес.
+</para>
+
+<para>
+Открываем технические параметры товара Рога оленя, нажав на картинку с карандашом - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На странице управления техническими параметрами товара Рога оленя удаляем установленный данному товару параметр Вес, нажав кнопку Удалить напротив данного параметра - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подтверждаем удаление, нажав кнопку Подтвердить - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы снова переходим на страницу управления техническими параметрами товара Рога оленя и убеждаемся, что параметр Вес был удалён - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Всё, мы удалили с товара Рога оленя технических параметры, т.е. теперь никакие параметры не связаны ни с одним товаром, теперь мы можем удалить полностью из системы параметр Вес.
+</para>
+
+<para>
+Возвращаемся к удалению параметра вес.
+</para>
+
+<para>
+Для этого напротив параметра Вес нажимаем кнопку Удалить - рис. 13.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Как Вы можете заметить, теперь не выводится ошибка о том, что данный параметр связан с товаром - рис. 14.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete16.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 14.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 14.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подтверждаем удалением, нажав ещё раз кнопку Удалить - рис. 15.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete17.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 15.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 15.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу управления параметрами и увидите, что параметр Вес был удалён - рис. 16.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete18.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 16.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 16.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Также в каталоге у товара Рога оленя были удалены параметры - рис. 17.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthdelete19.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 17.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 17.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Читайте следующую страницу - Просмотр технических параметров  в каталоге.
+</para>
+
+
+</sect2>
+<!-- /Удаление технических параметров -->
+
+<!-- Просмотр технических параметров  в каталоге -->
+<sect2>
+<title>
+Просмотр технических параметров  в каталоге
+</title>
+
+<para>
+Установленные технических параметры доступны на странице карточки товара, в каталоге.
+</para>
+
+<para>
+Например, мы устанавливали технические параметры товару Рога оленя, вот так выглядят эти установленные параметры в каталоге - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/tthadd12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё, надеюсь, Вам понятен смысл модуля технические параметры.
+</para>
+
+
+</sect2>
+<!-- /Просмотр технических параметров  в каталоге -->
+
+</sect1>
+<!-- /Функция Технические параметры товаров -->

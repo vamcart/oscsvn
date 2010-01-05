@@ -1,0 +1,1989 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- Функция Статьи -->
+<sect1>
+<title>
+Функция Статьи
+</title>
+
+<para>
+В интернет-магазине osCommerce VaM Edition есть предустановленный модуль Статьи.
+</para>
+
+<para>
+В данном разделе будет рассмотрен именно этот модуль, как правильно работать с модулем Статьи.
+</para>
+
+<!-- Настройка модуля статьи -->
+<sect2>
+<title>
+Настройка модуля статьи
+</title>
+
+<para>
+В данном разделе мы просто рассмотрим все возможные настройки модуля Статьи, подробно описывать их нет смысла, потому как в администраторской все настройки довольно подробно уже описаны, для чего каждая из них предназначена и как их изменять.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Статьи, для этого нажмите на ссылку Статьи - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Статьи - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Бокс Статьи состоит из следующих ссылок:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Статьи/Разделы</para>
+    <para>В данном разделе собственно происходит добавление, изменение, удаление статей, категорий статей. Но об этом чуть позже, нас в данный момент интересуют настройки модуля Статьи, переходим дальше.</para>
+  </listitem>
+
+  <listitem>
+    <para>Настройка</para>
+    <para>В данном разделе находятся настройки модуля статьи. Подробнее об этих настройках читайте ниже.</para>
+  </listitem>
+
+  <listitem>
+    <para>Авторы</para>
+    <para>В данном разделе добавляются, изменяются, удаляются авторы статей.</para>
+  </listitem>
+
+  <listitem>
+    <para>Отзывы</para>
+    <para>Каждый посетитель интернет-магазина может оставить свой отзыв к любой статье. В данном разделе Вы можете видеть все оставленные посетителями отзывы, прежде чем отзыв будет активен и виден всем посетителям интернет-магазина, администратор должен проверить и одобрить отзыв, только после этого он будет виден всем посетителям интернет-магазина. Нас в данный момент интересуют настройки модуля Статьи, переходим дальше.</para>
+  </listitem>
+
+  <listitem>
+    <para>Товары-Статьи</para>
+    <para>В данном разделе Вы можете к статьям привязывать определённые товары интернет-магазина. Например, если Вы в статье рассказываете о каком-либо товаре, с помощью данного разделы Вы можете привязать данный товар к статье, которая описывает данный товар.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Нас интересует сейчас пункт Настройка:
+</para>
+
+<para>
+<orderedlist>
+  <listitem>
+    <para>Настройка</para>
+  </listitem>
+
+</orderedlist>
+</para>
+
+<para>
+<emphasis>
+Настройка
+</emphasis>
+</para>
+
+<para>
+Переходим на страницу Настройка - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы на странице Настройка - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой настройки модуля статьи.
+</para>
+
+<para>
+Рассмотрим подробнее, для чего нужна каждая переменная на этой странице:
+</para>
+
+<para>
+<itemizedlist>
+
+  <listitem>
+    <para>
+Переменная Показывать ссылку новые статьи 
+    </para>
+    <para>
+Показывать ссылку новые статьи в боксе статьи?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Количество дней, в течение которых статья считается новой
+    </para>
+    <para>
+Какое количество дней после добавления, статья считается новой и отображаться на странице новые статьи.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Количество статей на одной странице новых статей
+    </para>
+    <para>
+Максимальное количество статей, выводимых на одной странице новых статей.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать ссылку все статьи
+    </para>
+    <para>
+Показывать ссылку все статьи в боксе статьи?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Количество статей на одной странице
+    </para>
+    <para>
+Максимальное количество статей, выводимых на одной странице.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Максимальное количество готовящихся к публикации статей
+    </para>
+    <para>
+Максимальное количество статей, выводимых в блоке готовятся к публикации.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Разрешить отзывы к статьям
+    </para>
+    <para>
+Разрешить посетителям оставлять свои отзывы о статьях.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Разрешить функцию рассказать знакомому
+    </para>
+    <para>
+Разрешить посетителям использовать функцию Рассказать знакомому.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Минимальное количество товара, выводимого в боксе связанные товары
+    </para>
+    <para>
+Минимальное количество товара, выводимого в боксе связанные товары.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Максимальное количество товара, выводимого в боксе связанные товары
+    </para>
+    <para>
+Максимальное количество товара, выводимого в боксе связанные товары.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать счётчик статей
+    </para>
+    <para>
+Показывать количество статей в каждой разделе.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Максимальная длина поля автор
+    </para>
+    <para>
+Максимальная количество символов, выводимых в боксе авторы.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Формат вывода списка авторов
+    </para>
+    <para>
+Если число авторов меньше указанной цифры, тогда в боксе авторы выводится простой список, если число авторов больше указанной цифры, тогда выводится drop-down список авторов.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Авторы в виде развёрнутого меню
+    </para>
+    <para>
+Данная опция используется для настройки бокса авторы, если указана цифра 1, то список авторов выводится в виде стандартного drop-down списка. Если указана любая другая цифра, то выводится только X производителей в виде развёрнутого меню.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать автора в списке статей
+    </para>
+    <para>
+Показывать автора в списке статей?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать раздел в списке статей
+    </para>
+    <para>
+Показывать раздел в списке статей?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать Meta Description в списке статей
+    </para>
+    <para>
+Показывать Meta Description в списке статей?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать дату добавления в списке статей
+    </para>
+    <para>
+Показывать дату добавления в списке статей?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+ Переменная Максимальная длина поля Meta Description
+    </para>
+    <para>
+Максимальное количество символов поля Meta Description.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Показывать фильтр Раздел/Авторы
+    </para>
+    <para>
+Показывать фильтр Раздел/Авторы?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Расположение навигации Следующая/Предыдущая страница
+    </para>
+    <para>
+Расположение навигации Следующая/Предыдущая страница:
+    </para>
+    <para>
+top - верх.
+    </para>
+    <para>
+bottom - низ.
+    </para>
+    <para>
+both - (верх+низ).
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Использовать HTML редактор для написания статей?
+    </para>
+    <para>
+Использовать HTML редактор для написания статей?
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Возможности HTML редактора
+    </para>
+    <para>
+Basic - Простой HTML редактор с минимальным количеством возможностей. Advanced - Расширенный HTML редактор, максимальное количество возможностей.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Ширина HTML редактора
+    </para>
+    <para>
+Ширина HTML редактора в пикселах (по умолчанию: 605)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Высота HTML редактора
+    </para>
+    <para>
+Высота HTML редактора в пикселах (по умолчанию: 300)
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Шрифт, используемый в интерфейсе HTML редактора
+    </para>
+    <para>
+Шрифт интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Размер шрифта, используемого в интерфейсе HTML редактора
+    </para>
+    <para>
+Размер шрифта интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Цвет шрифта, используемого в интерфейсе HTML редактора
+    </para>
+    <para>
+Цвет шрифта интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора. Вы можете указать либо код цвета, например #FFFFFF, либо название цвета, например black.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная  Переменная Цвет фона в интерфейсе HTML редактора
+    </para>
+    <para>
+Цвет фона интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора. Вы можете указать либо код цвета, например #FFFFFF, либо название цвета, например black.
+    </para>
+  </listitem>
+
+  <listitem>
+    <para>
+Переменная Разрешить режим отладки?
+    </para>
+    <para>
+Следить за генерируемым HTML-кодом, т.е. Вы можете видеть, какой HTML-код создаётся при использовании HTML редактора.
+    </para>
+
+    <para>
+0 - Отключить.
+    </para>
+    <para>
+1 - Включить.
+    </para>
+    <para>
+По умолчанию стоит 0.
+    </para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Настраивайте модуль Статьи как Вам нужно.
+</para>
+
+<para>
+На этом всё. В данном разделе я просто описал все возможные настройки модуля Статьи.
+</para>
+
+<para>
+Читайте следующую страницу Создание статьи.
+</para>
+
+
+</sect2>
+<!-- /Настройка модуля статьи -->
+
+<!-- Создание статьи -->
+<sect2>
+<title>
+Создание статьи
+</title>
+
+<para>
+В данном разделе мы рассмотрим как правильно создавать статьи.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Статьи, для этого нажмите на ссылку Статьи - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Статьи - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Сразу скажу одно условие, которое нужно соблюдать.
+</para>
+
+<note>
+<para>
+Любая статья должна находиться в категории, т.е. сначала создайте как минимум одну категорию для статей и только потом добавляйте статью в созданную категорию. Не нужно добавлять статью прямо в корневой раздел.
+</para>
+</note>
+
+<para>
+Для примера, создадим тестовую статью в интернет-магазине.
+</para>
+
+<para>
+Создаём статью в два этапа:
+</para>
+
+<para>
+<orderedlist>
+  <listitem>
+    <para>Создание категории статей</para>
+  </listitem>
+
+  <listitem>
+    <para>Создание статьи</para>
+  </listitem>
+
+</orderedlist>
+</para>
+
+<para>
+Создание категории статей
+</para>
+
+<para>
+Как я сказал выше, сначала нужно создать категорию.
+</para>
+
+<para>
+Для этого нажимаем кнопку Новый раздел - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания категории - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания новой категории статей - рис. 4.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания категории статей содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название раздела</para>
+    <para>Здесь Вы указываете название создаваемой категории. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Название раздела подробно</para>
+    <para>Здесь Вы можете указать подробное название создаваемой категории. Данное поле необязательно для заполнения. Просто можете указать более расширенное название категории.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание раздела</para>
+    <para>Здесь Вы можете указать описание создаваемой категории статей. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Порядок сортировки</para>
+    <para>Здесь Вы можете указывать порядок сортировки создаваемой категории, т.е. на какой позиции будет показана категория в списке остальных категорий. С помощью данной опции можно сортировать вывод категорий статей. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новую категорию статей, заполняя соответствующие поля формы - рис. 5:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Название раздела - Статьи.</para>
+  </listitem>
+
+  <listitem>
+    <para>Название раздела подробно - Можно пропустить данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Описание раздела - Можно пропустить данное поле.</para>
+  </listitem>
+
+  <listitem>
+    <para>Порядок сортировки - Можно пропустить данное поле.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполнив форму и нажимаем кнопку Предпросмотр - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем нажимайте кнопку Добавить - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка категорий статей и увидите, что новая категория Статьи была создана - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Создание статьи
+</para>
+
+<para>
+В предыдущем разделе мы создали категорию Статьи.
+</para>
+
+<para>
+Теперь добавим статью в данный раздел.
+</para>
+
+<para>
+Выделяем раздел Статьи, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Статьи не выделена - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Статьи выделена - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Статьи нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию Статьи - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно создать статью в категории.
+</para>
+
+<para>
+Чтобы создать новую статью нажимаем кнопку Новая статья - рис. 12.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd14.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 12.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 12.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу создания статьи - рис. 13.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd15.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 13.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 13.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы видите перед собой форму создания новой статьи - рис. 13.
+</para>
+
+<para>
+Но прежде чем заполнять форму, сначала я расскажу про каждое поле формы.
+</para>
+
+<para>
+Форма создания статьи содержит следующие поля:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Статус</para>
+    <para>Здесь Вы указываете статус создаваемой статьи, либо Не активна, либо Активна. Если статус Активна, то данная статья будем видна всем посетителям интернет-магазина, если статус Не активна, то создаваемая статья посетителям интернет-магазина видна не будет.</para>
+  </listitem>
+
+  <listitem>
+    <para>Доступна с</para>
+    <para>Здесь Вы можете указать дату публикации статьи, когда она станет доступна для просмотра, до этого дня статья не будет доступна для просмотра, будет лишь отметка и заголовок статьи, что данная статья готовится к публикации. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Автор</para>
+    <para>Здесь Вы можете указать автора создаваемой статьи. Авторы создаются на странице Админка - Статьи - Авторы. Данное поле необязательно для выбора.</para>
+  </listitem>
+
+  <listitem>
+    <para>Название статьи</para>
+    <para>Здесь Вы указываете название создаваемой статьи. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Meta Title</para>
+    <para>Здесь Вы можете указать meta title заголовок для создаваемой статьи. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Meta Description</para>
+    <para>Здесь Вы можете указать meta description для создаваемой статьи. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Meta Keywords</para>
+    <para>Здесь Вы можете указать meta keywords для создаваемой статьи. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>Текст статьи</para>
+    <para>Здесь Вы указываете текст создаваемой статьи. Данное поле обязательно для заполнения.</para>
+  </listitem>
+
+  <listitem>
+    <para>URL адрес: (без http://)</para>
+    <para>Здесь Вы можете указать URL адрес источника статьи, если есть. Данное поле необязательно для заполнения.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+Создаём новую статью, заполняя соответствующие поля формы - рис. 14:
+</para>
+
+<para>
+<itemizedlist>
+  <listitem>
+    <para>Статус - Уже выбран статус Активна, пропускаем данное поле.</para>
+  </listitem>
+  <listitem>
+    <para>Доступна с - Пропускаем.</para>
+  </listitem>
+  <listitem>
+    <para>Автор - Пропускаем.</para>
+  </listitem>
+  <listitem>
+    <para>Название статьи - Просто статья.</para>
+  </listitem>
+  <listitem>
+    <para>Meta Title - Пропускаем.</para>
+  </listitem>
+  <listitem>
+    <para>Meta Description - Пропускаем.</para>
+  </listitem>
+  <listitem>
+    <para>Meta Keywords - Пропускаем.</para>
+  </listitem>
+  <listitem>
+    <para>Текст статьи - Текст нашей статьи.</para>
+  </listitem>
+  <listitem>
+    <para>URL адрес (без http://) - Пропускаем.</para>
+  </listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd16.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 14.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 14.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Заполнив форму и нажимаем кнопку Предпросмотр - рис. 15.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd17.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 15.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 15.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И, убедившись, что нет ошибок нажимаем кнопку Добавить - рис. 16.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd18.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 16.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 16.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка статей категории Статьи и увидите, что статья Просто статья была создана - рис. 17.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd19.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 17.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 17.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данную статью Вы можете видеть в интернет-магазине, в боксе Статьи - рис. 18.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd20.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 18.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 18.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Корректировка статьи.
+</para>
+
+
+</sect2>
+<!-- /Создание статьи -->
+
+<!-- Корректировка статьи -->
+<sect2>
+<title>
+Корректировка статьи
+</title>
+
+
+<para>
+В данном разделе мы рассмотрим как правильно изменять (корректировать) уже созданную статью.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Статьи, для этого нажмите на ссылку Статьи - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Статьи - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, изменим созданную на прошлой странице статью Просто статья, которую мы добавили в раздел Статьи.
+</para>
+
+<para>
+Переходим в раздел Статьи.
+</para>
+
+<para>
+Выделяем раздел Статьи, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Статьи не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Статьи выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Статьи нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию Статьи - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно изменить статью Просто статья.
+</para>
+
+<para>
+Для этого выделяем эту статью и нажимаем cправа кнопку Изменить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Переходим на страницу редактирования статьи - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Подробно мы все поля формы рассмотрели на прошлой странице, при добавлении статьи.
+</para>
+
+<para>
+Ещё раз рассматривать не будем.
+</para>
+
+<para>
+Я лишь скажу, что при изменении статьи, можно менять любое поле формы.
+</para>
+
+<para>
+К примеру, поменяем поля Название статьи и поле Текст статьи.
+</para>
+
+<para>
+В поле Название статьи пишем - Новая статья
+</para>
+
+<para>
+В поле Текст статьи пишем - Новый текст статьи
+</para>
+
+<para>
+Затем нажимаем кнопку Предпросмотр - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Убеждаемся, что статья изменена правильно и нажимаем кнопку Обновить - рис. 9. 
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Вы снова перейдёте на страницу списка статей категории Статьи и увидите, что статья была изменена - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь данную изменённую статью Вы можете видеть в интернет-магазине, на странице раздела Статьи - рис. 11.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit13.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 11.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 11.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Копирование статьи.
+</para>
+
+
+</sect2>
+<!-- /Корректировка статьи -->
+
+<!-- Копирование статьи -->
+<sect2>
+<title>
+Копирование статьи
+</title>
+
+
+<para>
+В данном разделе мы рассмотрим как правильно копировать уже созданную статью в другие категории.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Статьи, для этого нажмите на ссылку Статьи - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Статьи - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, скопируем изменённую на прошлой странице статью Новая статья в раздел Тест.
+</para>
+
+<para>
+Переходим в раздел Статьи.
+</para>
+
+<para>
+Выделяем раздел Статьи, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Статьи не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Статьи выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Статьи нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию Статьи - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно скопировать статью Новая статья.
+</para>
+
+<para>
+Для этого выделяем эту статью и нажимаем cправа кнопку Копировать в - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlecopy8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу копирования статьи - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlecopy9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+К примеру, скопируем статью в раздел Тест.
+</para>
+
+<para>
+В поле Раздел выбираем раздел, в который мы хотим скопировать статью, в нашем примере выбираем Тест - рис. 8.
+</para>
+
+<para>
+В поле Способ копирования выбираем способ, которым мы хотим скопировать статью. Выбираем Копирование - рис. 8.
+</para>
+
+<para>
+Затем нажимаем кнопку Копировать - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlecopy10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём в раздел Тест и видим, что статья Новая статья скопирована в раздел Тест - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlecopy11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Перемещение статьи.
+</para>
+
+
+</sect2>
+<!-- /Копирование статьи -->
+
+<!-- Перемещение статьи -->
+<sect2>
+<title>
+Перемещение статьи
+</title>
+
+
+<para>
+В данном разделе мы рассмотрим как правильно перемещать уже созданную статью в другие категории.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Статьи, для этого нажмите на ссылку Статьи - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Статьи - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, переместим изменённую на прошлой странице статью Новая статья в раздел Тест.
+</para>
+
+<para>
+Переходим в раздел Статьи.
+</para>
+
+<para>
+Выделяем раздел Статьи, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Статьи не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Статьи выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleadd11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Статьи нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию Статьи - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articleedit7.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно переместить статью Новая статья.
+</para>
+
+<para>
+Для этого выделяем эту статью и нажимаем cправа кнопку Переместить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlemove8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу перемещения статьи - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlemove9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+К примеру, переместим статью в раздел Тест.
+</para>
+
+<para>
+В поле Переместить Новая статья в выбираем раздел, в который мы хотим переместить статью, в нашем примере выбираем Тест - рис. 8.
+</para>
+
+<para>
+Затем нажимаем кнопку Переместить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlemove10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём в раздел Тест и увидим, что статья Новая статья перемещена в раздел Тест - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlemove11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Т.е. в разделе Статьи теперь пусто - рис. 10.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articlemove12.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 10.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 10.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+<para>
+Читайте следующую страницу - Удаление статьи.
+</para>
+
+
+</sect2>
+<!-- /Перемещение статьи -->
+
+<!-- Удаление статьи -->
+<sect2>
+<title>
+Удаление статьи
+</title>
+
+
+<para>
+В данном разделе мы рассмотрим как правильно удалять статьи.
+</para>
+
+<para>
+Заходим в Администраторскую интернет-магазина (обычно http://адрес-вашего-магазина/admin), затем переходим в раздел Статьи, для этого нажмите на ссылку Статьи - рис. 1.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article3.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 1.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 1.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Итак, Вы зашли на страницу управления модулем Статьи - рис. 2.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Article4.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 2.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 2.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Для примера, удалим перемещённую на прошлой странице статью Новая статья в разделе Тест.
+</para>
+
+<para>
+Переходим в раздел Тест.
+</para>
+
+<para>
+Выделяем раздел Тест, нажав на названии категории левой кнопкой мыши.
+</para>
+
+<para>
+Категория Тест не выделена - рис. 3.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete5.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 3.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 3.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Категория Тест выделена - рис. 4.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete6.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 4.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 4.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Выделив категорию Тест нажимаем ещё раз левой кнопкой мыши на названии категории, мы тем самым перейдём в категорию тест - рис. 5.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete7-1.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 5.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 5.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Теперь нам нужно удалить статью Новая статья.
+</para>
+
+<para>
+Для этого выделяем эту статью и нажимаем cправа кнопку Удалить - рис. 6.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete8.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 6.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 6.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+И переходим на страницу удаления статьи - рис. 7.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete9.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 7.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 7.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Затем нажимаем кнопку Удалить - рис. 8.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete10.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 8.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 8.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+Мы перейдём в раздел Тест и увидим, что статья Новая статья удалена из категории Тест - рис. 9.
+</para>
+
+<para>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="images/Articledelete11.jpg" format="JPG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Рис. 9.</phrase>
+  </textobject>
+  <caption>
+   <para>Рис. 9.
+</para>
+  </caption>
+</mediaobject> 
+</para>
+
+<para>
+На этом всё.
+</para>
+
+
+</sect2>
+<!-- /Удаление статьи -->
+
+</sect1>
+<!-- /Функция Статьи -->
