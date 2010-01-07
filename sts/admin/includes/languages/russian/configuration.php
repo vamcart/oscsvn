@@ -368,6 +368,7 @@ define('YML_AUTH_PW_TITLE' , 'Пароль');
 define('YML_REFERER_TITLE' , 'Ссылка');
 define('YML_STRIP_TAGS_TITLE' , 'Теги');
 define('YML_UTF8_TITLE' , 'Перекодировка в UTF-8');
+define('YML_SALES_NOTES_TITLE' , 'Тэг sales_notes');
 
 // Описание полей
 
@@ -721,6 +722,7 @@ define('YML_AUTH_PW_DESC' , 'Пароль для доступа к YML');
 define('YML_REFERER_DESC' , 'Добавить в адрес товара параметр с ссылкой на User agent или ip?');
 define('YML_STRIP_TAGS_DESC' , 'Убирать html-теги в строках?');
 define('YML_UTF8_DESC' , 'Перекодировать в UTF-8?');
+define('YML_SALES_NOTES_DESC' , 'Текст для тэга sales_notes');
 
 // Список категорий на главной странице
 

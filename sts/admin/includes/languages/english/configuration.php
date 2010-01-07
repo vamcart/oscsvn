@@ -368,6 +368,7 @@ define('YML_AUTH_PW_TITLE' , 'Password');
 define('YML_REFERER_TITLE' , 'Referer');
 define('YML_STRIP_TAGS_TITLE' , 'Strip tags');
 define('YML_UTF8_TITLE' , 'Encode to UTF-8');
+define('YML_SALES_NOTES_TITLE' , 'sales_notes tag');
 
 // Описание полей
 
@@ -719,6 +720,7 @@ define('YML_AUTH_PW_DESC' , 'Password for YML');
 define('YML_REFERER_DESC' , 'Add referer to product link (ip or user agent)?');
 define('YML_STRIP_TAGS_DESC' , 'Strip html tags?');
 define('YML_UTF8_DESC' , 'Encode to UTF-8?');
+define('YML_SALES_NOTES_DESC' , 'sales_notes tag value');
 
 // Список категорий на главной странице
 
