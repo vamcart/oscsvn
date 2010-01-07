@@ -3055,7 +3055,7 @@ echo '              <tr class="dataTableRow" onmouseover="rowOverEffect(this)" o
 
       }
 ?>
-                   <td></td><td class="dataTableContent"><?php if (strstr($admin_right_access,"PDELETE")) { ?><input title="<?php echo $products[products_id]." ddd ".$products[categories_id]; ?>"  name="prod_id[<?php echo $products[products_id]; ?>]" type="checkbox"  value="<?php echo $products[categories_id];  ?>" />&nbsp;<?php } echo '<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id'] . '&action=new_product') . '">' . tep_image(DIR_WS_ICONS . 'preview.gif', ICON_PREVIEW) . '</a>&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id']) . '">' . $products['products_name'];  ?></a> </td>
+                   <td></td><td class="dataTableContent"><?php if (strstr($admin_right_access,"PDELETE") or $login_id = 1) { ?><input title="<?php echo $products[products_id]." ddd ".$products[categories_id]; ?>"  name="prod_id[<?php echo $products[products_id]; ?>]" type="checkbox"  value="<?php echo $products[categories_id];  ?>" />&nbsp;<?php } echo '<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id'] . '&action=new_product') . '">' . tep_image(DIR_WS_ICONS . 'preview.gif', ICON_PREVIEW) . '</a>&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id']) . '">' . $products['products_name'];  ?></a> </td>
                 <td class="dataTableContent" align="center">
 
 <?php
