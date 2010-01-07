@@ -996,6 +996,8 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES('Высота картинки атрибута', 'OPTIONS_IMAGES_HEIGHT', '25', 'Выберите высоту', 735, 4, '2003-08-20 12:55:22', '0000-00-00 00:00:00', NULL, NULL);
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES('Увеличение кликом', 'OPTIONS_IMAGES_CLICK_ENLARGE', 'true', 'Активировать функцию увеличения картинки кликом мышки?', 735, 5, '2003-08-21 12:59:58', '0000-00-00 00:00:00', NULL, 'tep_cfg_select_option(array(''true'', ''false''),');
 
+insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Тэг sales_notes', 'YML_SALES_NOTES', '', 'Текст для тэга sales_notes', '26230', '2', NULL, '2006-01-04 13:42:04', NULL, NULL);
+
 drop table if exists configuration_group;
 create table configuration_group (
   configuration_group_id int(11) not null auto_increment,
