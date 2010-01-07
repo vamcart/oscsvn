@@ -197,6 +197,9 @@ for ($iproducts = 0, $nproducts = tep_db_num_rows($products_query); $iproducts <
 			} elseif (tep_not_null($prev_prod['products_description'])) {
 				echo "  <description>" . _clear_string($prev_prod['products_description']) . "</description>\n";
 			}
+			if (YML_SALES_NOTES != '') {
+				echo "  <sales_notes>" . YML_SALES_NOTES . "</sales_notes>\n";
+			}
 			echo "</offer>\n\n";
 		}
 		$prev_prod = $products;
