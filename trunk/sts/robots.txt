@@ -39,3 +39,4 @@ Disallow: /shipping_help.php
 Disallow: /shopping_cart.php
 Disallow: /ssl_check.php
 Disallow: /tell_a_friend.php
+Disallow: /products_filter.php
