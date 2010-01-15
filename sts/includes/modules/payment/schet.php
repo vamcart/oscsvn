@@ -162,13 +162,6 @@
                                tep_draw_hidden_field('director', $this->director) .
                                tep_draw_hidden_field('accountant', $this->accountant);
 
-  $order_query = tep_db_query("select MAX(orders_id) AS orders_id FROM " . TABLE_ORDERS_TOTAL);
-  $order_id = tep_db_fetch_array($order_query);
-  $order_num = $order_id['orders_id'] + 1;
-
-      global $insert_id, $name, $inn, $kpp, $ogrn, $okpo, $rs, $bank_name, $bik, $ks, $address, $yur_address, $fakt_address, $telephone, $fax, $email, $director, $accountant, $checkout_form_action, $checkout_form_submit;
-      tep_db_query("INSERT INTO ".TABLE_COMPANIES." (orders_id, name, inn, kpp, ogrn, okpo, rs, bank_name, bik, ks, address, yur_address, fakt_address, telephone, fax, email, director, accountant) VALUES ('" . tep_db_input($order_num) . "', '" . tep_db_input($this->name) . "', '" . tep_db_input($this->inn) . "', '" . tep_db_input($this->kpp) . "', '" . tep_db_input($this->ogrn) ."', '" . tep_db_input($this->okpo) ."', '" . tep_db_input($this->rs) ."', '" . tep_db_input($this->bank_name) ."', '" . tep_db_input($this->bik) ."', '" . tep_db_input($this->ks) ."', '" . tep_db_input($this->address) ."', '" . tep_db_input($this->yur_address) ."', '" . tep_db_input($this->fakt_address) ."', '" . tep_db_input($this->telephone) ."', '" . tep_db_input($this->fax) ."', '" . tep_db_input($this->email) ."', '" . tep_db_input($this->director) ."', '" . tep_db_input($this->accountant) ."')");
-
       return $process_button_string;
 
 	}
@@ -181,6 +174,9 @@
 	}
 
 	function after_process() {
+
+      global $insert_id, $name, $inn, $kpp, $ogrn, $okpo, $rs, $bank_name, $bik, $ks, $address, $yur_address, $fakt_address, $telephone, $fax, $email, $director, $accountant, $checkout_form_action, $checkout_form_submit;
+      tep_db_query("INSERT INTO ".TABLE_COMPANIES." (orders_id, name, inn, kpp, ogrn, okpo, rs, bank_name, bik, ks, address, yur_address, fakt_address, telephone, fax, email, director, accountant) VALUES ('" . tep_db_input($insert_id) . "', '" . tep_db_input($_POST['name']) . "', '" . tep_db_input($_POST['inn']) . "', '" . tep_db_input($_POST['kpp']) . "', '" . tep_db_input($_POST['ogrn']) ."', '" . tep_db_input($_POST['okpo']) ."', '" . tep_db_input($_POST['rs']) ."', '" . tep_db_input($_POST['bank_name']) ."', '" . tep_db_input($_POST['bik']) ."', '" . tep_db_input($_POST['ks']) ."', '" . tep_db_input($_POST['address']) ."', '" . tep_db_input($_POST['yur_address']) ."', '" . tep_db_input($_POST['fakt_address']) ."', '" . tep_db_input($_POST['telephone']) ."', '" . tep_db_input($_POST['fax']) ."', '" . tep_db_input($_POST['email']) ."', '" . tep_db_input($_POST['director']) ."', '" . tep_db_input($_POST['accountant']) ."')");
 
 	}
 
