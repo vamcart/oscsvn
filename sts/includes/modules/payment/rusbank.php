@@ -101,13 +101,6 @@
       $process_button_string = tep_draw_hidden_field('kvit_name', $this->name) .
                                tep_draw_hidden_field('kvit_address', $this->address);
 
-  $order_query = tep_db_query("select MAX(orders_id) AS orders_id FROM " . TABLE_ORDERS_TOTAL);
-  $order_id = tep_db_fetch_array($order_query);
-  $order_num = $order_id['orders_id'] + 1;
-
-      global $insert_id, $name, $address, $checkout_form_action, $checkout_form_submit;
-      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_input($order_num) . "', '" . tep_db_input($this->name) . "', '" . tep_db_input($this->address) ."')");
-
       return $process_button_string;
 
 	}
@@ -120,6 +113,9 @@
 	}
 
 	function after_process() {
+
+      global $insert_id, $name, $address, $checkout_form_action, $checkout_form_submit;
+      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_input($insert_id) . "', '" . tep_db_input($_POST['kvit_name']) . "', '" . tep_db_input($_POST['kvit_address']) ."')");
 
 	}
 
