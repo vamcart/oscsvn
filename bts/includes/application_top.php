@@ -572,8 +572,8 @@ if (isset($_POST['add_recommended'])) {
   }
 
 // include the who's online functions
-//  require(DIR_WS_FUNCTIONS . 'whos_online.php');
-//  tep_update_whos_online();
+  require(DIR_WS_FUNCTIONS . 'whos_online.php');
+  tep_update_whos_online();
 
 // include the password crypto functions
   require_once(DIR_WS_FUNCTIONS . 'password_funcs.php');

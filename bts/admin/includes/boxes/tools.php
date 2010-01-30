@@ -41,8 +41,8 @@
                                    tep_admin_files_boxes(FILENAME_RECOVER_CART_SALES, BOX_REPORTS_RECOVER_CART_SALES) .
                                    tep_admin_files_boxes(FILENAME_EXTRA_FIELDS, BOX_TOOLS_EXTRA_FIELDS_MANAGER) .                                   
                                    tep_admin_files_boxes(FILENAME_PRODUCTS_EXTRA_FIELDS, BOX_CATALOG_PRODUCTS_EXTRA_FIELDS) .
-                                   tep_admin_files_boxes(FILENAME_KEYWORDS, BOX_TOOLS_KEYWORDS));
-//                                   tep_admin_files_boxes(FILENAME_WHOS_ONLINE, BOX_TOOLS_WHOS_ONLINE));
+                                   tep_admin_files_boxes(FILENAME_KEYWORDS, BOX_TOOLS_KEYWORDS) . 
+                                   tep_admin_files_boxes(FILENAME_WHOS_ONLINE, BOX_TOOLS_WHOS_ONLINE));
 
 //Admin end
   }
