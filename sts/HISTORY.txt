@@ -1,9 +1,39 @@
-25 января 2009 года - Обновление дистрибутива - Патч 210
+30 января 2009 года - Обновление дистрибутива - Патч 210
 
 1. Новый модуль - Canonical URL, изменённые файлы:
 /includes/application_top.php
 /includes/header_tags.php
-2. 
+2. Не выводился чекбос напротив товаров в Админке - Каталог, изменённые файлы:
+/admin/categories.php
+3. Добавлена настройка sales_notes тэга в Админку - Настройки - Яндекс-маркет, изменённые файлы:
+/market.php
+/admin/includes/languages/english/configuration.php
+/admin/includes/languages/russian/configuration.php
+4. Корректировка robots.txt файла, изменённые файлы:
+/robots.txt
+5. Корректирока модуля оплаты по счёту, исправлена ошибка с дублированием данных в таблице companies, изменённые файлы:
+/includes/modules/payment/schet.php
+6. Корректирока модуля оплаты квитанция, исправлена ошибка с дублированием данных в таблице companies, изменённые файлы:
+/includes/modules/payment/rusbank.php
+7. Добавлен новый скрипт Fancybox дя открытия картинок на странице карточки товара, изменённые файлы:
+BTS: /templates/content/product_info.php
+STS: /product_info.php
+STS: /includes/modules/sts_inc/product_info.php
+новые файлы:
+/jscript/jquery/plugins/fancybox/
+8. Стандартный класс для отправки почты заменён на PHPMailer, изменённые файлы:
+/admin/includes/classes/email.php
+/includes/classes/email.php
+новые файлы:
+/admin/includes/classes/class.phpmailer.php
+/admin/includes/classes/class.smtp.php
+/includes/classes/class.phpmailer.php
+/includes/classes/class.smtp.php
+9. STS: Исправлена ошибка в вёрстке страницы фильтров, подробнее об ошибке http://bugs.kypi.ru/view.php?id=653 , изменённые файлы:
+/products_filter.php
+10. Добавлен alt атрибут к картинку при сортировке товара по производителю, подробнее об ошибке http://bugs.kypi.ru/view.php?id=652 , изменённые файлы:
+BTS: /templates/content/index_products.tpl.php
+STS: /index.php
 ________________________________________________________________________
 25 декабря 2009 года - Обновление дистрибутива - Патч 209
 
