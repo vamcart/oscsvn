@@ -265,27 +265,24 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <!-- header //-->
 <?php require(DIR_WS_INCLUDES . 'header.php'); ?>
 <!-- header_eof //-->
+
 <!-- body //-->
-<table border=0 width="100%" cellspacing=3 cellpadding=3><tbody>
+<table border="0" width="100%" cellspacing="3" cellpadding="3">
   <tr>
-    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2"><tbody>
+    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- left_navigation //-->
-<?php require_once (DIR_WS_INCLUDES . 'column_left.php'); ?>
+<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
 <!-- left_navigation_eof //-->
-    </tbody></table></td>
+    </table></td>
 <!-- body_text //-->
-    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0"><tbody>
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
       <tr>
-    <!--  Start the table containing the product list  -->
-        <td valign=top><table border=0 width="100%" cellspacing="0" cellpadding="0"><tbody>
-          <tr>
-    <!--  Start the table containing the category name, description, and image  -->
-        <td><table border=0 width="100%" cellspacing="0" cellpadding="0"><tbody>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
             <td class="pageHeading"><?php echo HEADING_TITLE; ?></td>
-            <td align="right"><?php echo tep_image (DIR_WS_IMAGES . $image, HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
+            <td class="pageHeading" align="right"><?php echo tep_image(DIR_WS_IMAGES . 'table_background_specials.gif', HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
           </tr>
-        </tbody></table></td>
+        </table></td>
       </tr>
 <?php
   // Show the Filters module here if set in Admin
@@ -307,10 +304,14 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '20'); ?></td>
       </tr>
-      <tr valign=top>
-        <td valign=top><?php include(DIR_WS_MODULES . FILENAME_PRODUCT_LISTING_COL); ?></td>
+      <tr>
+        <td><br><table border="0" width="100%" cellspacing="0" cellpadding="2">
+          <tr>
+            <td class="main"><?php include(DIR_WS_MODULES . FILENAME_PRODUCT_LISTING_COL); ?></td>
+          </tr>
+        </table></td>
       </tr>
-    </tbody></table></td>
+    </table></td>
 <!-- body_text_eof //-->
     <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- right_navigation //-->
@@ -319,9 +320,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
     </table></td>
   </tr>
 </table>
-    </td>
-  </tr><!-- body_eof //-->
-</table>
+<!-- body_eof //-->
 
 <!-- footer //-->
 <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
