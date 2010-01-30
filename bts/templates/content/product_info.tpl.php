@@ -148,12 +148,15 @@ table_image_border_top(false, false, $header_text);
           $new_image = $product_info['products_image'];
           $image_width = SMALL_IMAGE_WIDTH;
           $image_height = SMALL_IMAGE_HEIGHT;}?>
-<script language="javascript"><!--
-      document.write('<?php echo '<a href="javascript:popupWindow(\\\'' . tep_href_link(FILENAME_POPUP_IMAGE, 'pID=' . $product_info['products_id'] . '&image=0') . '\\\')">' . tep_image(DIR_WS_IMAGES . $new_image, addslashes($product_info['products_name']), $image_width, $image_height, 'hspace="5" vspace="5"') . '<br>' . tep_template_image_button('image_enlarge.gif', TEXT_CLICK_TO_ENLARGE) . '</a>'; ?>');
-//--></script>
-<noscript>
-      <?php echo '<a href="' . tep_href_link(DIR_WS_IMAGES . $new_image) . '">' . tep_image(DIR_WS_IMAGES . $new_image, '', addslashes($product_info['products_name']), $image_width, $image_height, 'hspace="5" vspace="5"') . '<br>' . tep_template_image_button('image_enlarge.gif', TEXT_CLICK_TO_ENLARGE) . '</a>'; ?>
-</noscript>
+<script type="text/javascript" src="jscript/jquery/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="jscript/jquery/plugins/fancybox/jquery.fancybox-1.2.5.css" media="screen" />
+<script type="text/javascript" src="jscript/jquery/plugins/fancybox/jquery.fancybox-1.2.5.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a.zoom").fancybox();
+	});
+</script>
+      <?php echo '<a class="zoom" rel="group" href="' . tep_href_link(DIR_WS_IMAGES . $new_image) . '">' . tep_image(DIR_WS_IMAGES . $new_image, '', addslashes($product_info['products_name']), $image_width, $image_height, 'hspace="5" vspace="5"') . '<br>' . tep_template_image_button('image_enlarge.gif', TEXT_CLICK_TO_ENLARGE) . '</a>'; ?>
 <!-- // EOF MaxiDVD: Modified For Ultimate Images Pack! //-->
 
               </td>
