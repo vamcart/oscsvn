@@ -63,6 +63,7 @@ $heading_text_box = $manufactures['manufacturers_name'];
 // BOF manufacturers descriptions
 if(tep_not_null($manufactures['manufacturers_description']))
 $category['categories_description'] = $manufactures['manufacturers_description'];
+$category['categories_name'] = $manufactures['manufacturers_name'];
 // EOF manufacturers descriptions
       
     } elseif ($current_category_id) {
