@@ -156,7 +156,7 @@ table_image_border_top(false, false, $header_text);
 		$("a.zoom").fancybox();
 	});
 </script>
-      <?php echo '<a class="zoom" rel="group" href="' . tep_href_link(DIR_WS_IMAGES . $new_image) . '">' . tep_image(DIR_WS_IMAGES . $new_image, '', addslashes($product_info['products_name']), $image_width, $image_height, 'hspace="5" vspace="5"') . '<br>' . tep_template_image_button('image_enlarge.gif', TEXT_CLICK_TO_ENLARGE) . '</a>'; ?>
+      <?php echo '<a class="zoom" rel="group" href="' . tep_href_link(DIR_WS_IMAGES . $new_image) . '">' . tep_image(DIR_WS_IMAGES . $new_image, addslashes($product_info['products_name']), $image_width, $image_height, 'hspace="5" vspace="5"') . '<br>' . tep_template_image_button('image_enlarge.gif', TEXT_CLICK_TO_ENLARGE) . '</a>'; ?>
 <!-- // EOF MaxiDVD: Modified For Ultimate Images Pack! //-->
 
               </td>
