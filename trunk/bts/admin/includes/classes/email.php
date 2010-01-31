@@ -516,39 +516,10 @@ function send($to_name, $to_addr, $from_name, $from_addr, $subject = '', $header
     $xtra_headers = array();
   }
 
-require_once(DIR_WS_CLASSES . "class.phpmailer.php");
-
-$pMail = new PHPMailer();
-	
-$pMail->CharSet = CHARSET;
-		
-$pMail->From = $from_addr;
-$pMail->FromName = $from_name;
-
   if (EMAIL_TRANSPORT == 'smtp') {
-//return mail($to_addr, $subject, $this->output, 'From: ' . $from . $this->lf . 'To: ' . $to . $this->lf . implode($this->lf, $this->headers) . $this->lf . implode($this->lf, $xtra_headers));
-
-
-$pMail->IsSMTP();
-$pMail->Host     = "mail.yourdomain.com";	// replace with your smtp server
-$pMail->Username = "store@yourdomain.com";	// replace with your smtp username (if SMTPAuth is true)
-$pMail->Password = "yourpassword";		// replace with your smtp password (if SMTPAuth is true)
-$pMail->SMTPAuth = true;			// true/false - turn on/off smtp authentication
-		
+    return mail($to_addr, $subject, $this->output, 'From: ' . $from . $this->lf . 'To: ' . $to . $this->lf . implode($this->lf, $this->headers) . $this->lf . implode($this->lf, $xtra_headers));
   } else {
-
-$pMail->IsMail();
-
-$pMail->Subject = $subject;
-$pMail->Body    = $this->output;
-$pMail->AddAddress($to_addr, $to_name);
-$pMail->IsHTML(false);
-		
-return $pMail->Send();
-
-$pMail->ClearAddresses();
-$pMail->ClearAttachments();	
-
+    return mail($to, $subject, $this->output, 'From: '.$from.$this->lf.implode($this->lf, $this->headers).$this->lf.implode($this->lf, $xtra_headers));
   }
 }
 

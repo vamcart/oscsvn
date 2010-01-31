@@ -268,4 +268,11 @@ include('includes/application_top_faqdesk.php');
 
     require('includes/local_modules.php');
 
+  define('SMTP_MAIL_SERVER', EMAIL_SMTP_SERVER);
+  define('SMTP_MAIL_USERNAME', EMAIL_SMTP_USERNAME);
+  define('SMTP_MAIL_PASSWORD', EMAIL_SMTP_PASSWORD);
+  define('SMTP_PORT_NUMBER', EMAIL_SMTP_PORT);
+  define('SMTP_SENDMAIL_FROM', STORE_OWNER_EMAIL_ADDRESS);
+  define('SMTP_FROMEMAIL_NAME', STORE_NAME);
+
 ?>
