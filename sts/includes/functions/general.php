@@ -1116,22 +1116,64 @@ function tep_get_prid($uprid) {
 
   function tep_mail($to_name, $to_email_address, $email_subject, $email_text, $from_email_name, $from_email_address) {
     if (SEND_EMAILS != 'true') return false;
-
+ 
     // Instantiate a new mail object
-    $message = new email(array('X-Mailer: osCommerce Mailer'));
+    $message = new PHPMailer();
 
+    $message->CharSet = CHARSET;
+           
+            if (EMAIL_TRANSPORT == 'smtp'){
+                        $message->IsSMTP(); // telling the class to use SMTP
+                        $message->Host = SMTP_MAIL_SERVER; // SMTP server
+            }else{
+                        $message->IsMail(); // telling the class to use SMTP
+            }
+           
+            // Config
+           
+            if( !tep_not_null($from_email_address) ) {
+                        $from_email_address = SMTP_SENDMAIL_FROM;
+            }
+           
+            $message->From = $from_email_address;
+           
+            if( !tep_not_null($from_email_name) ) {
+                        $from_email_name = SMTP_FROMEMAIL_NAME;
+            }
+           
+            $message->FromName = $from_email_name;
+           
+            if( !tep_not_null($to_name) ) {
+                        $to_name = '';
+            }
+             
+            if( !tep_not_null($to_email_address) ) {
+                        return false;
+            }
+           
+            $message->AddAddress($to_email_address, $to_name);
+ 
+            $message->Subject = $email_subject;
+ 
     // Build the text version
     $text = strip_tags($email_text);
     if (EMAIL_USE_HTML == 'true') {
-      $message->add_html($email_text, $text);
+              $message->Body = tep_convert_linefeeds(array("\r\n", "\n", "\r"), '<br>', $email_text);
+              $message->AltBody = $text;
+              $message->IsHTML(true);
     } else {
-      $message->add_text($text);
+              $message->Body = $text;
+              $message->IsHTML(false);
     }
 
-    // Send message
-    $message->build_message();
-    $message->send($to_name, $to_email_address, $from_email_name, $from_email_address, $email_subject);
+ 
 
+    // Send message
+    if(!$message->Send()){
+               /*echo 'Email was not sent.';
+               echo 'Mailer error: ' . $message->ErrorInfo;*/
+               return false;
+            }
   }
 
 ////

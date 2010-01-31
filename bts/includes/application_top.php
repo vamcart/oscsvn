@@ -330,9 +330,10 @@ if (!$table) {header("Last-Modified: ".gmdate( "D, d M Y G:i:s T" ));}
   $currencies = new currencies();
 
 // include the mail classes
-  require(DIR_WS_CLASSES . 'mime.php');
-  require(DIR_WS_CLASSES . 'email.php');
-
+//  require(DIR_WS_CLASSES . 'mime.php');
+//  require(DIR_WS_CLASSES . 'email.php');
+  require(DIR_WS_CLASSES . 'class.phpmailer.php');
+  
 // set the language
   if (!tep_session_is_registered('language') || isset($_GET['language'])) {
     if (!tep_session_is_registered('language')) {
@@ -819,4 +820,11 @@ echo $domain . preg_replace( $search, $replace, $string ); // merges the variabl
 }
 // eof - canonical tag
 
+  define('SMTP_MAIL_SERVER', EMAIL_SMTP_SERVER);
+  define('SMTP_MAIL_USERNAME', EMAIL_SMTP_USERNAME);
+  define('SMTP_MAIL_PASSWORD', EMAIL_SMTP_PASSWORD);
+  define('SMTP_PORT_NUMBER', EMAIL_SMTP_PORT);
+  define('SMTP_SENDMAIL_FROM', STORE_OWNER_EMAIL_ADDRESS);
+  define('SMTP_FROMEMAIL_NAME', STORE_NAME);
+  
 ?>
