@@ -59,8 +59,15 @@ STS v4.1 by Rigadin (rigadin@osc-help.net)
          } else {
           $new_image = $product_info['products_image'];
           $image_width = SMALL_IMAGE_WIDTH;
-          $image_height = SMALL_IMAGE_HEIGHT;}
-
+          $image_height = SMALL_IMAGE_HEIGHT;
+          }
+ if ($product_info['products_image_lrg']!='') {
+          $popup_image = $product_info['products_image_lrg'];
+         } elseif ($product_info['products_image_med']!='') {
+          $popup_image = $product_info['products_image_med'];
+          } else {
+          $popup_image = $product_info['products_image'];
+          }
 
 if (tep_not_null($product_info['products_image'])) {
   $template_pinfo['imagesmall'] = tep_image(DIR_WS_IMAGES . $new_image, addslashes($product_info['products_name']), $image_width, $image_height, 'hspace="5" vspace="5"');
@@ -70,10 +77,15 @@ if (tep_not_null($product_info['products_image'])) {
 <script type="text/javascript" src="jscript/jquery/plugins/fancybox/jquery.fancybox-1.2.5.pack.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$("a.zoom").fancybox();
+		$("a.zoom").fancybox({
+		"zoomOpacity"			: true,
+		"overlayShow"			: false,
+		"zoomSpeedIn"			: 500,
+		"zoomSpeedOut"			: 500
+	});
 	});
 </script>'."\n".
-								   '<a class="zoom" rel="group" href="' . tep_href_link(DIR_WS_IMAGES . $new_image) . '" target="_blank">'.$template_pinfo['imagesmall'] . '<br>' . TEXT_CLICK_TO_ENLARGE .'</a>'."\n";
+								   '<a class="zoom" rel="group" href="' . tep_href_link(DIR_WS_IMAGES . $popup_image) . '" target="_blank">'.$template_pinfo['imagesmall'] . '<br>' . TEXT_CLICK_TO_ENLARGE .'</a>'."\n";
 } else {
   $template_pinfo['imagesmall'] ='';
   $template_pinfo['imagelarge'] ='';
