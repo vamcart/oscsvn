@@ -29,12 +29,15 @@
       $message .= sprintf(TEXT_REDEEM_COUPON_MESSAGE_AMOUNT, $currencies->format($gv_amount));
       $message .= TEXT_REDEEM_COUPON_MESSAGE_BODY;
       $message .= TEXT_REDEEM_COUPON_MESSAGE_FOOTER;
-      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
+//      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
       // add the message to the object
-      $mimemessage->add_text($message);
-      $mimemessage->build_message();
+//      $mimemessage->add_text($message);
+//      $mimemessage->build_message();
     
-      $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', EMAIL_FROM, TEXT_REDEEM_COUPON_SUBJECT );
+//      $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', EMAIL_FROM, TEXT_REDEEM_COUPON_SUBJECT );
+
+      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], TEXT_REDEEM_COUPON_SUBJECT, $message, STORE_OWNER, EMAIL_FROM);
+
       $gv_amount=$gv_resulta['amount'];
       $gv_query=tep_db_query("select amount from " . TABLE_COUPON_GV_CUSTOMER . " where customer_id='".$gv_resulta['customer_id']."'");
       $customer_gv=false;

@@ -200,7 +200,7 @@ function selectAll(FormName, SelectBox) {
         }
       }
 
-      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
+//      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
 
 // MaxiDVD Added Line For WYSIWYG HTML Area: BOF (Send TEXT Product Notifications v1.7 when WYSIWYG Disabled)
       if (HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER == 'Disable') {
@@ -210,11 +210,12 @@ function selectAll(FormName, SelectBox) {
 // MaxiDVD Added Line For WYSIWYG HTML Area: EOF (Send TEXT Product Notifications v1.7 when WYSIWYG Enabled)
       }
       
-      $mimemessage->build_message();
+//      $mimemessage->build_message();
 
       reset($audience);
       while (list($key, $value) = each ($audience)) {
-        $mimemessage->send($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], '', EMAIL_FROM, $this->title);
+//        $mimemessage->send($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], '', EMAIL_FROM, $this->title);
+      tep_mail($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], $this->title, STORE_OWNER, EMAIL_FROM);
       }
 
       $newsletter_id = tep_db_prepare_input($newsletter_id);

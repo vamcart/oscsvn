@@ -52,12 +52,14 @@
       $message .= TEXT_OR_VISIT . HTTP_SERVER  . DIR_WS_CATALOG . TEXT_ENTER_CODE;
 
       //Let's build a message object using the email class
-      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
+//      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
       // add the message to the object
-      $mimemessage->add_text($message);
-      $mimemessage->build_message();
+//      $mimemessage->add_text($message);
+//      $mimemessage->build_message();
     
-      $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', $from, $subject);
+//      $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', $from, $subject);
+      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $subject, $message, STORE_OWNER, $from);
+
       // Now create the coupon main and email entry
       $insert_query = tep_db_query("insert into " . TABLE_COUPONS . " (coupon_code, coupon_type, coupon_amount, date_created) values ('" . $id1 . "', 'G', '" . $_POST['amount'] . "', now())");
       $insert_id = tep_db_insert_id();
@@ -73,11 +75,14 @@
       $message .= TEXT_OR_VISIT . HTTP_SERVER  . DIR_WS_CATALOG  . TEXT_ENTER_CODE;
      
       //Let's build a message object using the email class
-      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
+//      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
       // add the message to the object
-      $mimemessage->add_text($message);
-      $mimemessage->build_message();
-      $mimemessage->send('Friend', $_POST['email_to'], '', $from, $subject);
+//      $mimemessage->add_text($message);
+//      $mimemessage->build_message();
+//      $mimemessage->send('Friend', $_POST['email_to'], '', $from, $subject);
+
+      tep_mail('Friend', $_POST['email_to'], $subject, $message, STORE_OWNER, $from);
+
       // Now create the coupon email entry
       $insert_query = tep_db_query("insert into " . TABLE_COUPONS . " (coupon_code, coupon_type, coupon_amount, date_created) values ('" . $id1 . "', 'G', '" . $_POST['amount'] . "', now())");
       $insert_id = tep_db_insert_id();
