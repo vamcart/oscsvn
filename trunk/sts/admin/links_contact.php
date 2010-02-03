@@ -33,12 +33,13 @@
     $message = tep_db_prepare_input($_POST['message']);
 
     //Let's build a message object using the email class
-    $mimemessage = new email(array('X-Mailer: osCommerce'));
+//    $mimemessage = new email(array('X-Mailer: osCommerce'));
     // add the message to the object
-    $mimemessage->add_text($message);
-    $mimemessage->build_message();
+//    $mimemessage->add_text($message);
+//    $mimemessage->build_message();
     while ($mail = tep_db_fetch_array($mail_query)) {
-      $mimemessage->send($mail['links_contact_name'], $mail['links_contact_email'], '', $from, $subject);
+//      $mimemessage->send($mail['links_contact_name'], $mail['links_contact_email'], '', $from, $subject);
+      tep_mail($mail['links_contact_name'], $mail['links_contact_email'], $subject, $message, STORE_OWNER, $from);
     }
 
     tep_redirect(tep_href_link(FILENAME_LINKS_CONTACT, 'mail_sent_to=' . urlencode($mail_sent_to)));

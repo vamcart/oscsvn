@@ -36,18 +36,25 @@
     $subject = tep_db_prepare_input($_POST['subject']);
     $message = tep_db_prepare_input($_POST['message']);
 
+/*
+            Nay -- Edited
+                        -- Email Using PHP Mailer
+             Old Code:
     //Let's build a message object using the email class
-   $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
-
-      if (HTML_AREA_WYSIWYG_BASIC_EMAIL == 'Disable') {
-      $mimemessage->add_text($message);
-      } else {
-      $mimemessage->add_html($message);
-      }
-      $mimemessage->build_message();
+    $mimemessage = new email(array('X-Mailer: osCommerce'));
+    // add the message to the object
+    $mimemessage->add_text($message);
+    $mimemessage->build_message();
     while ($mail = tep_db_fetch_array($mail_query)) {
       $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', $from, $subject);
     }
+ 
+*/
+            while ($mail = tep_db_fetch_array($mail_query)) {
+      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $subject, $message, STORE_OWNER, $from);
+    }
+ 
+/* End Nay */ 
 
     tep_redirect(tep_href_link(FILENAME_MAIL, 'mail_sent_to=' . urlencode($mail_sent_to)));
   }

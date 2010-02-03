@@ -49,11 +49,12 @@
       $message .= TEXT_VISIT . "\n\n";
 
       //Let's build a message object using the email class
-      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
+//      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
       // add the message to the object
-      $mimemessage->add_text($message);
-      $mimemessage->build_message();
-      $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', $from, $subject);
+//      $mimemessage->add_text($message);
+//      $mimemessage->build_message();
+//      $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', $from, $subject);
+      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $subject, $message, STORE_OWNER, $from);
     }
 
     tep_redirect(tep_href_link(FILENAME_COUPON_ADMIN, 'mail_sent_to=' . urlencode($mail_sent_to)));

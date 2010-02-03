@@ -39,20 +39,21 @@
     $message = tep_db_prepare_input($_POST['message']);
 
     // Instantiate a new mail object
-    $mimemessage = new email(array('X-Mailer: osC mailer'));
+//    $mimemessage = new email(array('X-Mailer: osC mailer'));
 
     // Build the text version
-    $text = strip_tags($text);
-    if (EMAIL_USE_HTML == 'true') {
-      $mimemessage->add_html($message);
-    } else {
-      $mimemessage->add_text($message);
-    }
+//    $text = strip_tags($text);
+//    if (EMAIL_USE_HTML == 'true') {
+//      $mimemessage->add_html($message);
+//    } else {
+//      $mimemessage->add_text($message);
+//    }
 
     // Send message
-    $mimemessage->build_message();
+//    $mimemessage->build_message();
     while ($mail = tep_db_fetch_array($mail_query)) {
-      $mimemessage->send($mail['affiliate_firstname'] . ' ' . $mail['affiliate_lastname'], $mail['affiliate_email_address'], '', $from, $subject);
+//      $mimemessage->send($mail['affiliate_firstname'] . ' ' . $mail['affiliate_lastname'], $mail['affiliate_email_address'], '', $from, $subject);
+      tep_mail($mail['affiliate_firstname'] . ' ' . $mail['affiliate_lastname'], $mail['affiliate_email_address'], $subject, $message, STORE_OWNER, $from);
     }
 
     tep_redirect(tep_href_link(FILENAME_AFFILIATE_CONTACT, 'mail_sent_to=' . urlencode($mail_sent_to)));
