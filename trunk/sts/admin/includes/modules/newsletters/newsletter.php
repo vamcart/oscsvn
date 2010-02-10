@@ -62,17 +62,17 @@
 //      $mimemessage = new email(array('X-Mailer: osCommerce bulk mailer'));
 
 // MaxiDVD Added Line For WYSIWYG HTML Area: EOF (Send TEXT Newsletter v1.7 when WYSIWYG Disabled)
-      if (HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER == 'Disable') {
-      $mimemessage->add_text($this->content);
-      } else {
-      $mimemessage->add_html($this->content);
+//      if (HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER == 'Disable') {
+//      $mimemessage->add_text($this->content);
+//      } else {
+//      $mimemessage->add_html($this->content);
 // MaxiDVD Added Line For WYSIWYG HTML Area: EOF (Send HTML Newsletter v1.7 when WYSIWYG Enabled)
-      }
+//      }
       
 //      $mimemessage->build_message();
       while ($mail = tep_db_fetch_array($mail_query)) {
 //        $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', EMAIL_FROM, $this->title);
-      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $this->title, $message, STORE_OWNER, $from);
+      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $this->title, $this->content, STORE_OWNER, $from);
       }
 
       $newsletter_id = tep_db_prepare_input($newsletter_id);
