@@ -16,6 +16,11 @@
 
 // Search enhancement mod start
 
+if (preg_match('/href|http|favicon/i', $_GET['keywords'])) {
+//echo "robot";
+break;
+}
+
 if(isset($_GET['keywords']) && $_GET['keywords'] != ''){
 	if(!isset($_GET['s'])){
   	    $pwstr_check = strtolower(substr($_GET['keywords'], strlen($_GET['keywords'])-1, strlen($_GET['keywords'])));
