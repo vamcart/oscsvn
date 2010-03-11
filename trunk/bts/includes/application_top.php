@@ -630,7 +630,7 @@ if (isset($_POST['add_recommended'])) {
       $categories_query = tep_db_query("select categories_name from " . TABLE_CATEGORIES_DESCRIPTION . " where categories_id = '" . (int)$cPath_array[$i] . "' and language_id = '" . (int)$languages_id . "'");
       if (tep_db_num_rows($categories_query) > 0) {
         $categories = tep_db_fetch_array($categories_query);
-        $breadcrumb->add($categories['categories_name'], tep_href_link(FILENAME_DEFAULT, 'cPath=' . implode('_', array_slice($cPath_array, 0, ($i+1)))));
+        $breadcrumb->add($categories['categories_name']);
       } else {
         break;
       }
@@ -642,7 +642,7 @@ if (isset($_POST['add_recommended'])) {
 // EOF manufacturers descriptions
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
-      $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $_GET['manufacturers_id']));
+      $breadcrumb->add($manufacturers['manufacturers_name']);
     }
   }
 
@@ -654,8 +654,7 @@ $model_query = tep_db_query("select pd.products_name from " . TABLE_PRODUCTS . "
 (int)$_GET['products_id'] . "' and p.products_status = '1' and pd.language_id = '" . (int)$languages_id . "'");
 if (tep_db_num_rows($model_query)) {
 $model = tep_db_fetch_array($model_query);
-$breadcrumb->add($model['products_name'], tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' .
-$_GET['products_id']));
+$breadcrumb->add($model['products_name']);
 }
 }
 
@@ -687,7 +686,7 @@ $_GET['products_id']));
       $topics_query = tep_db_query("select topics_name from " . TABLE_TOPICS_DESCRIPTION . " where topics_id = '" . (int)$tPath_array[$i] . "' and language_id = '" . (int)$languages_id . "'");
       if (tep_db_num_rows($topics_query) > 0) {
         $topics = tep_db_fetch_array($topics_query);
-        $breadcrumb->add($topics['topics_name'], tep_href_link(FILENAME_ARTICLES, 'tPath=' . implode('_', array_slice($tPath_array, 0, ($i+1)))));
+        $breadcrumb->add($topics['topics_name']);
       } else {
         break;
       }
@@ -696,7 +695,7 @@ $_GET['products_id']));
     $authors_query = tep_db_query("select authors_name from " . TABLE_AUTHORS . " where authors_id = '" . (int)$_GET['authors_id'] . "'");
     if (tep_db_num_rows($authors_query)) {
       $authors = tep_db_fetch_array($authors_query);
-      $breadcrumb->add('Articles by ' . $authors['authors_name'], tep_href_link(FILENAME_ARTICLES, 'authors_id=' . $_GET['authors_id']));
+      $breadcrumb->add('Articles by ' . $authors['authors_name']);
     }
   }
 
