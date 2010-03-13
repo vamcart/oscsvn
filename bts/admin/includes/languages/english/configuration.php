@@ -1011,4 +1011,13 @@ define('SPECIFICATIONS_FILTER_IMAGE_HEIGHT_DESC', 'Set the height of the images 
 define('SET_BOX_FILTERS_TITLE', 'Filters');
 define('SET_BOX_FILTERS_DESC', 'Enable/Disable box.');
 
+define('EMAIL_SMTP_SERVER_TITLE' , 'SMTP server');
+define('EMAIL_SMTP_SERVER_DESC' , 'Defines the smtp server.');
+define('EMAIL_SMTP_PORT_TITLE' , 'SMTP server: Port');
+define('EMAIL_SMTP_PORT_DESC' , 'Defines the smtp server port.');
+define('EMAIL_SMTP_USERNAME_TITLE' , 'SMTP server: Username');
+define('EMAIL_SMTP_USERNAME_DESC' , 'Defines the smtp server username.');
+define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP server: Password');
+define('EMAIL_SMTP_PASSWORD_DESC' , 'Defines the smtp server password.');
+
 ?>
