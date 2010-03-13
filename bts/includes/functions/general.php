@@ -1122,8 +1122,13 @@ function tep_get_prid($uprid) {
     $message->CharSet = CHARSET;
            
             if (EMAIL_TRANSPORT == 'smtp'){
-                        $message->IsSMTP(); // telling the class to use SMTP
-                        $message->Host = SMTP_MAIL_SERVER; // SMTP server
+                        $message->IsSMTP();
+                        $message->SMTPKeepAlive = true;
+                        $message->SMTPAuth = EMAIL_SMTP_AUTH;
+                        $message->Username = EMAIL_SMTP_USERNAME;
+                        $message->Password = EMAIL_SMTP_PASSWORD;
+                        $message->Host = EMAIL_SMTP_SERVER; // SMTP server
+                        $message->Port = EMAIL_SMTP_PORT;
             }else{
                         $message->IsMail(); // telling the class to use SMTP
             }
