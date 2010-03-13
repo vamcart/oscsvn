@@ -1017,6 +1017,8 @@ define('EMAIL_SMTP_SERVER_TITLE' , 'SMTP сервер');
 define('EMAIL_SMTP_SERVER_DESC' , 'Укажите smtp сервер, если Вы включили отправку почты через smtp.');
 define('EMAIL_SMTP_PORT_TITLE' , 'SMTP сервер: Порт');
 define('EMAIL_SMTP_PORT_DESC' , 'Установите порт smtp сервера.');
+define('EMAIL_SMTP_AUTH_TITLE' , 'SMTP авторизация');
+define('EMAIL_SMTP_AUTH_DESC' , 'SMTP авторизация.');
 define('EMAIL_SMTP_USERNAME_TITLE' , 'SMTP сервер: Имя пользователя');
 define('EMAIL_SMTP_USERNAME_DESC' , 'Установите имя пользователя для подключения к серверу.');
 define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP сервер: Пароль');

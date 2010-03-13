@@ -1015,6 +1015,8 @@ define('EMAIL_SMTP_SERVER_TITLE' , 'SMTP server');
 define('EMAIL_SMTP_SERVER_DESC' , 'Defines the smtp server.');
 define('EMAIL_SMTP_PORT_TITLE' , 'SMTP server: Port');
 define('EMAIL_SMTP_PORT_DESC' , 'Defines the smtp server port.');
+define('EMAIL_SMTP_AUTH_TITLE' , 'SMTP Authorization');
+define('EMAIL_SMTP_AUTH_DESC' , 'SMTP Authorization.');
 define('EMAIL_SMTP_USERNAME_TITLE' , 'SMTP server: Username');
 define('EMAIL_SMTP_USERNAME_DESC' , 'Defines the smtp server username.');
 define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP server: Password');
