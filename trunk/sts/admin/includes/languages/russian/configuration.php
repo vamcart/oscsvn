@@ -1013,4 +1013,13 @@ define('SPECIFICATIONS_FILTER_IMAGE_HEIGHT_DESC', 'Установите высоту картинки, о
 define('SET_BOX_FILTERS_TITLE', 'Фильтры');
 define('SET_BOX_FILTERS_DESC', 'Включить/выключить бокс.');
 
+define('EMAIL_SMTP_SERVER_TITLE' , 'SMTP сервер');
+define('EMAIL_SMTP_SERVER_DESC' , 'Укажите smtp сервер, если Вы включили отправку почты через smtp.');
+define('EMAIL_SMTP_PORT_TITLE' , 'SMTP сервер: Порт');
+define('EMAIL_SMTP_PORT_DESC' , 'Установите порт smtp сервера.');
+define('EMAIL_SMTP_USERNAME_TITLE' , 'SMTP сервер: Имя пользователя');
+define('EMAIL_SMTP_USERNAME_DESC' , 'Установите имя пользователя для подключения к серверу.');
+define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP сервер: Пароль');
+define('EMAIL_SMTP_PASSWORD_DESC' , 'Установите пароль для подключения к серверу.');
+
 ?>
