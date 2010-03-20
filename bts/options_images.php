@@ -136,7 +136,7 @@
 
           case PRODUCTS_OPTIONS_TYPE_CHECKBOX:
 // otf 1.71 Add logic for checkboxes
-            $products_attribs_query = tep_db_query("select pov.products_options_values_id, pov.products_options_values_thumbnail, pov.products_options_values_name, pa.options_values_price, pa.price_prefix from " . TABLE_PRODUCTS_ATTRIBUTES . " pa, " . TABLE_PRODUCTS_OPTIONS_VALUES . " pov where pa.products_id = '" . (int)$_GET['products_id'] . "' and pa.options_id = '" . $products_options_name['products_options_id'] . "' and pa.options_values_id = pov.products_options_values_id and pov.language_id = '" . $languages_id . "' order by pa.products_options_sort_order");
+            $products_attribs_query = tep_db_query("select distinct pov.products_options_values_id, pov.products_options_values_thumbnail, pov.products_options_values_name, pa.options_values_price, pa.options_values_id, pa.price_prefix from " . TABLE_PRODUCTS_ATTRIBUTES . " pa, " . TABLE_PRODUCTS_OPTIONS_VALUES . " pov where pa.products_id = '" . (int)$_GET['products_id'] . "' and pa.options_id = '" . $products_options_name['products_options_id'] . "' and pa.options_values_id = pov.products_options_values_id and pov.language_id = '" . $languages_id . "' order by pa.products_options_sort_order");
             $products_attribs_array = tep_db_fetch_array($products_attribs_query);
                   if ($products_attribs_array['products_options_values_thumbnail'] != '') { 
                   if (OPTIONS_IMAGES_CLICK_ENLARGE == 'true'){ 
