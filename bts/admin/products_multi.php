@@ -87,9 +87,9 @@ THE CHANGES ARE FOLLOWED BY: "With no Manufacturers" text.
                       "','".tep_db_input($array['price_prefix'])."')");
                   }
 // EOF: Attributes Copy
-                  $description_query=tep_db_query("select language_id, products_name, products_description, products_url from ".TABLE_PRODUCTS_DESCRIPTION." where products_id='".$products_id."'");
+                  $description_query=tep_db_query("select language_id, products_name, products_description, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info, products_url from ".TABLE_PRODUCTS_DESCRIPTION." where products_id='".$products_id."'");
                   while ($description = tep_db_fetch_array($description_query)) {
-                      tep_db_query("insert into ".TABLE_PRODUCTS_DESCRIPTION." (products_id, language_id, products_name, products_description, products_url, products_viewed) values ('".$dup_products_id."', '".$description['language_id'] . "', '" . tep_db_input($description['products_name']) . "', '" . tep_db_input($description['products_description']) . "', '" . tep_db_input($description['products_url']) . "', '0')");
+                      tep_db_query("insert into ".TABLE_PRODUCTS_DESCRIPTION." (products_id, language_id, products_name, products_description, products_url, products_viewed, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info) values ('".$dup_products_id."', '".$description['language_id'] . "', '" . tep_db_input($description['products_name']) . "', '" . tep_db_input($description['products_description']) . "', '" . tep_db_input($description['products_url']) . "', '0', '" . tep_db_input($description['products_head_title_tag']) . "', '" . tep_db_input($description['products_head_desc_tag']) . "', '" . tep_db_input($description['products_head_keywords_tag']) . "', '" . tep_db_input($description['products_info']) . "')");
                   }
                   tep_db_query("insert into ".TABLE_PRODUCTS_TO_CATEGORIES." (products_id, categories_id) values ('". $dup_products_id."', '".$categories_id."')" );
                    if (USE_CACHE == 'true') {tep_reset_cache_block('categories'); tep_reset_cache_block('also_purchased');}
