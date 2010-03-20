@@ -136,9 +136,18 @@
 
           case PRODUCTS_OPTIONS_TYPE_CHECKBOX:
 // otf 1.71 Add logic for checkboxes
-            $products_attribs_query = tep_db_query("select distinct pa.options_values_id, pa.options_values_price, pa.price_prefix from " . TABLE_PRODUCTS_ATTRIBUTES . " pa where pa.products_id='" . (int)$_GET['products_id'] . "' and pa.options_id = '" . $products_options_name['products_options_id'] . "' order by pa.products_options_sort_order");
+            $products_attribs_query = tep_db_query("select pov.products_options_values_id, pov.products_options_values_thumbnail, pov.products_options_values_name, pa.options_values_price, pa.price_prefix from " . TABLE_PRODUCTS_ATTRIBUTES . " pa, " . TABLE_PRODUCTS_OPTIONS_VALUES . " pov where pa.products_id = '" . (int)$_GET['products_id'] . "' and pa.options_id = '" . $products_options_name['products_options_id'] . "' and pa.options_values_id = pov.products_options_values_id and pov.language_id = '" . $languages_id . "' order by pa.products_options_sort_order");
             $products_attribs_array = tep_db_fetch_array($products_attribs_query);
-            echo '<tr><!--td class="main">' . $products_options_name['products_options_name'] . ': </td--><td class="main">';
+                  if ($products_attribs_array['products_options_values_thumbnail'] != '') { 
+                  if (OPTIONS_IMAGES_CLICK_ENLARGE == 'true'){ 
+                   $tmp_image = '<a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_OPTIONS_IMAGES_POPUP, 'oID=' . $products_attribs_array['products_options_values_id']) .'\')">' . tep_image(DIR_WS_IMAGES . 'options/' . $products_attribs_array['products_options_values_thumbnail'], $products_attribs_array['products_options_values_name'], OPTIONS_IMAGES_WIDTH, OPTIONS_IMAGES_HEIGHT) . '</a>';
+                  }else{
+                    $tmp_image = '' . tep_image(DIR_WS_IMAGES . 'options/' . $opti_array['thumbnail'], $opti_array['text'], OPTIONS_IMAGES_WIDTH, OPTIONS_IMAGES_HEIGHT) . '';
+                  }
+                  } else {
+                    $tmp_image = '';
+                  }
+            echo '<tr><!--td class="main">' . $products_options_name['products_options_name'] . ': </td--><td class="main">'.$tmp_image;
             echo tep_draw_checkbox_field('id[' . $products_options_name['products_options_id'] . ']', $products_attribs_array['options_values_id']);
             echo $products_options_name['products_options_comment'] ;
             if ($products_attribs_array['options_values_price'] != '0') {
