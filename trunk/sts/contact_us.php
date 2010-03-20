@@ -31,15 +31,15 @@ $_POST['name'] = $_POST['name'] = preg_replace( $sanita, " ", $_POST['name'] );
 	if (CONTACT_US_LIST !=''){
 		$send_to_array=explode("," ,CONTACT_US_LIST);
 
-for ( $send_to = 0; $send_to < count($send_to_array); $send_to++) {
-                
-		preg_match('/\<[^>]+\>/', $send_to_array[$send_to], $send_email_array);
+//for ( $send_to = 0; $send_to < count($send_to_array); $send_to++) {
+
+		preg_match('/\<[^>]+\>/', $send_to_array[$_POST['send_to']], $send_email_array);
 		$send_to_email= preg_replace ("/>/", "", $send_email_array[0]);
 		$send_to_email= preg_replace ("/</", "", $send_to_email);
 
-		tep_mail(preg_replace('/\<[^*]*/', '', $send_to_array[$send_to]), $send_to_email, EMAIL_SUBJECT, $enquiry, $name, $email_address);
+		tep_mail(preg_replace('/\<[^*]*/', '', $send_to_array[$_POST['send_to']]), $send_to_email, EMAIL_SUBJECT, $enquiry, $name, $email_address);
 
-}
+//}
 
 	}else{
       		tep_mail(STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, EMAIL_SUBJECT, $enquiry, $name, $email_address);
