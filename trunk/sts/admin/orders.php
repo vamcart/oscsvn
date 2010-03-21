@@ -481,6 +481,91 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 </table>
       
 </div>
+
+<?php if (ENABLE_MAP_TAB == 'true') { ?>
+
+        <div class="tabbertab" id="getmap">
+        <h3><?php echo TEXT_ORDER_MAP; ?></h3>
+        
+			<div id="map">
+			
+    			<?php
+    			
+    			$street_address = (!isset($order->delivery["street_address"])) ? null : $order->delivery["street_address"];
+    			$city = (!isset($order->delivery["city"])) ? null : $order->delivery["city"] . ', ';
+    			$postcode = (!isset($order->delivery["postcode"])) ? null : $order->delivery["postcode"] . ', ';
+    			$state = (!isset($order->delivery["state"])) ? null : $order->delivery["state"] . ', ';
+    			$country = (!isset($order->delivery["country"])) ? null : $order->delivery["country"] . ', ';
+    			$ship_address = $postcode . $country . $state. $city . $street_address;
+    			
+    			?>
+
+    <script type="text/javascript">
+
+        // Флаг, обозачающий произошла ли ошибка при загрузке API
+        var flagApiFault = 0;
+			
+        // Функция для обработки ошибок при загрузке API
+        function apifault (err) {
+            // Создание обработчика для события window.onLoad
+            // Отображаем сообщение об ошибке в контейнере над картой
+            window.onload = function () {
+                var errorContainer = document.getElementById("error");
+                errorContainer.innerHTML = "<?php echo MAP_API_KEY_ERROR; ?> \"" + err + "\"";
+                errorContainer.style.display = "";
+            }
+            flagApiFault = 1;
+        }
+        
+    </script>
+    <script src="http://api-maps.yandex.ru/1.1/index.xml?key=<?php echo MAP_API_KEY; ?>&onerror=apifault" type="text/javascript"></script>
+    <script type="text/javascript">
+
+	$(document).ready(function(){
+			$("#getmap").click(function() {
+			
+			
+        if (!flagApiFault) {
+        // Создает обработчик события window.onLoad
+        YMaps.jQuery(function () {
+            // Создает экземпляр карты и привязывает его к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+                    map.addControl(new YMaps.TypeControl());
+                    map.addControl(new YMaps.ToolBar());
+                    map.addControl(new YMaps.Zoom());
+                    map.addControl(new YMaps.ScaleLine());
+                    
+            var geocoder = new YMaps.Geocoder("<?php echo $ship_address; ?>");
+            
+            map.addOverlay(geocoder);
+				
+            // По завершению геокодирования инициализируем карту первым результатом
+            YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+                if (geocoder.length()) {
+                    map.setBounds(geocoder.get(0).getBounds());
+                }
+            });
+
+
+            
+        })
+        }
+        		})
+        		
+        	});
+    </script>
+
+    <div id="error" style="display:none"></div>
+    <div id="YMapsID" style="width:100%;height:350px"></div>
+    			
+			</div>
+
+
+</div>
+
+<?php } ?>
+
         <div class="tabbertab">
         <h3><?php echo TEXT_ORDER_STATUS; ?></h3>
       
