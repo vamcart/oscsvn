@@ -57,9 +57,10 @@
       return false;
     }
 
-      if (tep_not_null($this->icon)) $icon = tep_image($this->icon, $this->title);
-      
     function selection() {
+
+      if (tep_not_null($this->icon)) $icon = tep_image($this->icon, $this->title);
+
       return array('id' => $this->code,
       				'icon' => $icon,
                    'module' => $this->title);
