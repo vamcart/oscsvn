@@ -1024,4 +1024,9 @@ define('EMAIL_SMTP_USERNAME_DESC' , 'Установите имя пользователя для подключения
 define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP сервер: Пароль');
 define('EMAIL_SMTP_PASSWORD_DESC' , 'Установите пароль для подключения к серверу.');
 
+define('ENABLE_MAP_TAB_TITLE','Показывать закладку карта на странице заказа');
+define('ENABLE_MAP_TAB_DESC','Включить/Отключить закладку карта на странице заказа.');
+define('MAP_API_KEY_TITLE','Яндекс карты API-Ключ');
+define('MAP_API_KEY_DESC','Укажите Ваш API ключ.');
+
 ?>

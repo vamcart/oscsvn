@@ -122,4 +122,7 @@ define('BUS_DELETE_SUCCESS','Deleted!');
 define('BUS_DELETE_WARNING','Not deleted!');
 define('BUS_DELETE_ORDERS','Delete selected orders');
 
+define('TEXT_ORDER_MAP','Map');
+define('MAP_API_KEY_ERROR','Get your API KEY at <a href=\"http://api.yandex.ru/maps/form.xml\" target=\"_blank\">http://api.yandex.ru/maps/form.xml</a> and set your key in Admin - Configuration - My Store - Yandex Maps API Key. <br /> Error:');
+
 ?>
