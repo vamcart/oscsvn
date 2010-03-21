@@ -106,7 +106,7 @@ table_image_border_top(false, false, TABLE_HEADING_PAYMENT_METHOD);
     }
 ?>
                     <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
-                    <td class="main" colspan="3"><?php echo $selection[$i]['icon']; ?><b><?php echo $selection[$i]['module']; ?></b></td>
+                    <td class="main" colspan="3"><?php echo $selection[$i]['icon']; ?> <b><?php echo $selection[$i]['module']; ?></b></td>
                     <td class="main" align="right">
 <?php
     if (sizeof($selection) > 1) {
