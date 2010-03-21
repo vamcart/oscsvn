@@ -1022,4 +1022,9 @@ define('EMAIL_SMTP_USERNAME_DESC' , 'Defines the smtp server username.');
 define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP server: Password');
 define('EMAIL_SMTP_PASSWORD_DESC' , 'Defines the smtp server password.');
 
+define('ENABLE_MAP_TAB_TITLE','Show map tab at order info page');
+define('ENABLE_MAP_TAB_DESC','');
+define('MAP_API_KEY_TITLE','Yandex Maps API Key');
+define('MAP_API_KEY_DESC','Your API Key.');
+
 ?>
