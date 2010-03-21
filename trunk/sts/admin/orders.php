@@ -522,6 +522,8 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     <script type="text/javascript">
 
 	$(document).ready(function(){
+			//$("#getmap").click(function() {
+			
 			
         if (!flagApiFault) {
         // Создает обработчик события window.onLoad
@@ -549,7 +551,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
             
         })
         }
-        		})
+        		//})
         		
         	});
     </script>
