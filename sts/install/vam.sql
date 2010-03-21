@@ -1059,7 +1059,7 @@ insert into configuration (configuration_title, configuration_key, configuration
 
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Тэг sales_notes', 'YML_SALES_NOTES', '', 'Текст для тэга sales_notes', '26230', '2', NULL, '2006-01-04 13:42:04', NULL, NULL);
 
-insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Показывать закладку карта на странице заказа', 'ENABLE_MAP_TAB', 'true', 'Включить/Отключить закладку карта на странице заказа.', '1', '116', '2009-04-24 15:29:10', '2008-07-17 10:29:22', NULL, 'tep_cfg_select_option(array(\'true\', \'false\'),');
+insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Показывать закладку карта на странице заказа', 'ENABLE_MAP_TAB', 'false', 'Включить/Отключить закладку карта на странице заказа.', '1', '116', '2009-04-24 15:29:10', '2008-07-17 10:29:22', NULL, 'tep_cfg_select_option(array(\'true\', \'false\'),');
 
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Яндекс карты API-Ключ', 'MAP_API_KEY', '', 'Укажите Ваш API ключ.', '1', '117', NULL, '2006-01-04 13:42:04', NULL, NULL);
 
