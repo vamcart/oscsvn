@@ -549,6 +549,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
             
         })
         }
+        		})
         		
         	});
     </script>
