@@ -19,6 +19,7 @@
       $this->title = MODULE_PAYMENT_RUS_BANK_TEXT_TITLE;
       $this->description = MODULE_PAYMENT_RUS_BANK_TEXT_DESCRIPTION;
       $this->sort_order = MODULE_PAYMENT_RUS_BANK_SORT_ORDER;
+      $this->icon = DIR_WS_ICONS . 'kvitancia.png';
       $this->email_footer = MODULE_PAYMENT_RUS_BANK_TEXT_EMAIL_FOOTER;
       $this->enabled = ((MODULE_PAYMENT_RUS_BANK_STATUS == 'True') ? true : false);
 
@@ -70,8 +71,11 @@
 
 }
 
+      if (tep_not_null($this->icon)) $icon = tep_image($this->icon, $this->title);
+      
       $selection = array('id' => $this->code,
-                         'module' => $this->title,
+      				'icon' => $icon,
+                   'module' => $this->title,
                          'description'=>$this->info,
       	                 'fields' => array(array('title' => MODULE_PAYMENT_KVITANCIA_NAME_TITLE,
       	                                         'field' => MODULE_PAYMENT_KVITANCIA_NAME_DESC),
