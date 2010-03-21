@@ -21,6 +21,7 @@
       $this->title = MODULE_PAYMENT_Z_PAYMENT_TEXT_TITLE;
       $this->public_title = MODULE_PAYMENT_Z_PAYMENT_TEXT_PUBLIC_TITLE;
       $this->description = MODULE_PAYMENT_Z_PAYMENT_TEXT_DESCRIPTION;
+      $this->icon = DIR_WS_ICONS . 'zpayment.png';
       $this->sort_order = MODULE_PAYMENT_Z_PAYMENT_SORT_ORDER;
       $this->enabled = ((MODULE_PAYMENT_Z_PAYMENT_STATUS == 'True') ? true : false);
 
@@ -80,7 +81,10 @@
         }
       }
 
+      if (tep_not_null($this->icon)) $icon = tep_image($this->icon, $this->title);
+      
       return array('id' => $this->code,
+      				'icon' => $icon,
                    'module' => $this->public_title);
 
     }

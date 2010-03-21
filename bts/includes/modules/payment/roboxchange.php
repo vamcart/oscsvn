@@ -14,6 +14,7 @@
       $this->code = 'roboxchange';
       $this->title = MODULE_PAYMENT_ROBOXCHANGE_TEXT_TITLE;
       $this->description = MODULE_PAYMENT_ROBOXCHANGE_TEXT_DESCRIPTION;
+      $this->icon = DIR_WS_ICONS . 'robokassa.png';
       $this->sort_order = MODULE_PAYMENT_ROBOXCHANGE_SORT_ORDER;
       $this->enabled = ((MODULE_PAYMENT_ROBOXCHANGE_STATUS == 'True') ? true : false);
 
@@ -29,8 +30,11 @@
       return false;
     }
 
+      if (tep_not_null($this->icon)) $icon = tep_image($this->icon, $this->title);
+      
     function selection() {
       return array('id' => $this->code,
+      				'icon' => $icon,
                    'module' => $this->title);
     }
 
