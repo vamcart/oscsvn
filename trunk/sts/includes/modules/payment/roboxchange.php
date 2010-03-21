@@ -83,8 +83,8 @@
       $crc = md5(MODULE_PAYMENT_ROBOXCHANGE_LOGIN.':'.$out_summ.':'.$inv_id.':'.MODULE_PAYMENT_ROBOXCHANGE_PASSWORD1);
 
       $cart->reset(true);
-//      tep_session_unregister('sendto');
-//      tep_session_unregister('billto');
+      tep_session_unregister('sendto');
+      tep_session_unregister('billto');
       tep_session_unregister('shipping');
       tep_session_unregister('payment');
       tep_session_unregister('comments');
