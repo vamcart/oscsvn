@@ -347,7 +347,8 @@ if (!$table) {header("Last-Modified: ".gmdate( "D, d M Y G:i:s T" ));}
     if (isset($_GET['language']) && tep_not_null($_GET['language'])) {
       $lng->set_language($_GET['language']);
     } else {
-      $lng->get_browser_language();
+      $lng->set_language(DEFAULT_LANGUAGE);
+      //$lng->get_browser_language();
     }
 
     $language = $lng->language['directory'];
