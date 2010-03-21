@@ -838,7 +838,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_SHOPPING_CART);
                 <td colspan="2"><table border="0" width="100%" cellspacing="0" cellpadding="2">
                   <tr>
                     <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
-                    <td class="main" colspan="3"><b><?php echo $quotes[$i]['module']; ?></b>&nbsp;<?php if (isset($quotes[$i]['icon']) && tep_not_null($quotes[$i]['icon'])) { echo $quotes[$i]['icon']; } ?></td>
+                    <td class="main" colspan="3"><?php echo $selection[$i]['icon']; ?><b><?php echo $quotes[$i]['module']; ?></b>&nbsp;<?php if (isset($quotes[$i]['icon']) && tep_not_null($quotes[$i]['icon'])) { echo $quotes[$i]['icon']; } ?></td>
                     <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                   </tr>
 <?php
