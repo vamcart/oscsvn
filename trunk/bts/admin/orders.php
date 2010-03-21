@@ -484,11 +484,12 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 <?php if (ENABLE_MAP_TAB == 'true') { ?>
 
-        <div class="tabbertab" id="getmap">
+        <div class="tabbertab">
         <h3><?php echo TEXT_ORDER_MAP; ?></h3>
         
 			<div id="map">
-			
+			<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+
     			<?php
     			
     			$street_address = (!isset($order->delivery["street_address"])) ? null : $order->delivery["street_address"];
@@ -499,7 +500,6 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     			$ship_address = $postcode . $country . $state. $city . $street_address;
     			
     			?>
-
     <script type="text/javascript">
 
         // Флаг, обозачающий произошла ли ошибка при загрузке API
@@ -522,8 +522,6 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     <script type="text/javascript">
 
 	$(document).ready(function(){
-			$("#getmap").click(function() {
-			
 			
         if (!flagApiFault) {
         // Создает обработчик события window.onLoad
@@ -551,7 +549,6 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
             
         })
         }
-        		})
         		
         	});
     </script>
@@ -565,7 +562,6 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 </div>
 
 <?php } ?>
-
 
         <div class="tabbertab">
         <h3><?php echo TEXT_ORDER_STATUS; ?></h3>
