@@ -259,9 +259,14 @@ $the_customers_fax= $the_extra['customers_fax'];
 <?php
   if (ENABLE_TABS == 'true') { 
 ?>
-<script type="text/javascript" src="includes/javascript/tabber.js"></script>
-<link rel="stylesheet" href="includes/javascript/tabber.css" TYPE="text/css" MEDIA="screen">
-<link rel="stylesheet" href="includes/javascript/tabber-print.css" TYPE="text/css" MEDIA="print">
+		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs();
+			});
+		</script>
 <?php } ?>
 <script language="javascript"><!--
 function popupWindow(url) {
@@ -316,8 +321,8 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
       <tr>
         <td>
 
-<div class="tabber">
-        <div class="tabbertab">
+<div id="tabs">
+        <div id="tabbertab">
         <h3><?php echo TEXT_ORDER_SUMMARY; ?></h3>
 
           <table border="0">        
@@ -379,7 +384,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 </div>
 
-        <div class="tabbertab">
+        <div id="tabbertab">
         <h3><?php echo TEXT_ORDER_PAYMENT; ?></h3>
 
           <table border="0">
@@ -429,7 +434,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 </div>
 
-        <div class="tabbertab">
+        <div id="tabbertab">
         <h3><?php echo TEXT_ORDER_PRODUCTS; ?></h3>
 
           <table border="0" width="100%">
@@ -484,7 +489,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 <?php if (ENABLE_MAP_TAB == 'true') { ?>
 
-        <div class="tabbertab">
+        <div id="tabbertab">
         <h3><?php echo TEXT_ORDER_MAP; ?></h3>
         
 			<div id="map">
@@ -522,7 +527,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     <script type="text/javascript">
 
 	$(document).ready(function(){
-			//$("#getmap").click(function() {
+			$("#getmap").click(function() {
 			
 			
         if (!flagApiFault) {
@@ -551,7 +556,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
             
         })
         }
-        		//})
+        		})
         		
         	});
     </script>
@@ -566,7 +571,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 <?php } ?>
 
-        <div class="tabbertab">
+        <div id="tabbertab">
         <h3><?php echo TEXT_ORDER_STATUS; ?></h3>
       
           <table border="0">
