@@ -139,4 +139,6 @@
   define('TABLE_SPECIFICATIONS_VALUES_DESCRIPTION', 'specification_values_description');
 // End Products Specifications
 
+define('TABLE_EMAIL_BATCH', 'email_batch');      // the email queue
+
 ?>

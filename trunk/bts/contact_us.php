@@ -37,12 +37,20 @@ $_POST['name'] = $_POST['name'] = preg_replace( $sanita, " ", $_POST['name'] );
 		$send_to_email= preg_replace ("/>/", "", $send_email_array[0]);
 		$send_to_email= preg_replace ("/</", "", $send_to_email);
 
+  if (USE_EMAIL_QUEUE == 'true') {
+		tep_store_mail(preg_replace('/\<[^*]*/', '', $send_to_array[$_POST['send_to']]), $send_to_email, EMAIL_SUBJECT, $enquiry, $name, $email_address);
+  } else {
 		tep_mail(preg_replace('/\<[^*]*/', '', $send_to_array[$_POST['send_to']]), $send_to_email, EMAIL_SUBJECT, $enquiry, $name, $email_address);
+  }
 
 //}
 
 	}else{
+  if (USE_EMAIL_QUEUE == 'true') {
+      		tep_store_mail(STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, EMAIL_SUBJECT, $enquiry, $name, $email_address);
+  } else {
       		tep_mail(STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, EMAIL_SUBJECT, $enquiry, $name, $email_address);
+  }
 	}
 
 

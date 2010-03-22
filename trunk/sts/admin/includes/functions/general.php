@@ -2118,4 +2118,25 @@ function tep_iconv_utf($text) {
   }
 // End products specifications
 
+function tep_store_mail($to_name, $to_email_address, $email_subject, $email_text, $from_email_name, $from_email_address, $hold = '') {
+
+  if (SEND_EMAILS != 'true') return false;
+
+  $browser_ip = tep_get_ip_address();
+  $this_moment = date("Ymd") . ' ' . date("H:i:s");
+  $sql_data_array = array('to_name'      => $to_name,
+                          'charset'      => CHARSET,
+                          'to_address'   => $to_email_address,
+                          'subject'      => $email_subject,
+                          'text'         => $email_text,
+                          'from_name'    => $from_email_name,
+                          'from_address' => $from_email_address,
+                          'last_updated' => $this_moment,
+                          'created'      => $this_moment,
+                          'hold'         => $hold,
+                          'ip'           => $browser_ip);
+
+  tep_db_perform(TABLE_EMAIL_BATCH, $sql_data_array);
+}
+
 ?>

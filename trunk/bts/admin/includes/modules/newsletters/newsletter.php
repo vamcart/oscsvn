@@ -72,7 +72,11 @@
 //      $mimemessage->build_message();
       while ($mail = tep_db_fetch_array($mail_query)) {
 //        $mimemessage->send($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], '', EMAIL_FROM, $this->title);
+  if (USE_EMAIL_QUEUE == 'true') {
+      tep_store_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $this->title, $this->content, STORE_OWNER, $from);
+  } else {
       tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $this->title, $this->content, STORE_OWNER, $from);
+  }
       }
 
       $newsletter_id = tep_db_prepare_input($newsletter_id);
