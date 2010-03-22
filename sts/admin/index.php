@@ -114,31 +114,31 @@
 			</ul>
 
 <div id="orders">
-<table border="0" width="100%">
+<table border="0" width="93%">
 <?php include(DIR_WS_MODULES . 'summary/orders.php'); ?>
 </table>
 </div>
 
 <div id="customers">
-<table border="0" width="100%">
+<table border="0" width="93%">
 <?php include(DIR_WS_MODULES . 'summary/customers.php'); ?>
 </table>
 </div>
 
 <div id="products">
-<table border="0" width="100%">
+<table border="0" width="93%">
 <?php include(DIR_WS_MODULES . 'summary/products.php'); ?>
 </table>
 </div>
 
 <div id="stat">
-<table border="0" width="100%">
+<table border="0" width="93%">
 <?php include(DIR_WS_MODULES . 'summary/statistics.php'); ?>
 </table>
 </div>
 
 <div id="help">
-<table border="0" width="100%">
+<table border="0" width="93%">
 <?php include(DIR_WS_MODULES . 'summary/help.php'); ?>
 </table>
 </div>
