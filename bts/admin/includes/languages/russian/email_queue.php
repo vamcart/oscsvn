@@ -35,7 +35,7 @@ define('TEXT_INFO_EMAIL_FROM_NAME', 'От кого: ');
 define('TEXT_INFO_EMAIL_FROM_ADDRESS', 'От кого (email): ');
 define('TEXT_INFO_EMAIL_SUBJECT', 'Тема: ');
 define('TEXT_INFO_EMAIL_TEXT', '');
-define('TEXT_INFO_EMAIL_SEND', '<b>Отправить</b>');
+define('TEXT_INFO_EMAIL_SEND', '<b>Отправлен</b>');
 define('TEXT_INFO_EMAIL_NOT_SEND', '<b>Поставлен в очередь на отправку</b>');
 define('TEXT_INFO_EMAIL_CREATED', 'Дата создания: ');
 define('TEXT_INFO_EMAIL_LAST_UPDATED', 'Дата изменения: ');
