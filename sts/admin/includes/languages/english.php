@@ -568,5 +568,7 @@ define('BOX_CATALOG_CATEGORIES_PRODUCTS_MULTI', 'Multiple Products Manager');
          
 // Products Specifications
 define('BOX_CATALOG_PRODUCTS_SPECIFICATIONS', 'Products Specifications');
+
+define('BOX_EMAIL_QUEUE', 'Email Queue');
          
 ?>

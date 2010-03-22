@@ -349,12 +349,22 @@ $order_total_modules->apply_credit();//ICW ADDED FOR CREDIT CLASS SYSTEM
       $email_order .= $payment_class->email_footer . "\n\n";
     }
   }
+
+  if (USE_EMAIL_QUEUE == 'true') {
+    tep_store_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' ¹' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+  } else {
     tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' ¹' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
+  }
 
 // send emails to other people
   if (SEND_EXTRA_ORDER_EMAILS_TO != '') {
+    if (USE_EMAIL_QUEUE) {
+      tep_store_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' ¹' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+    } else {
     tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' ¹' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
+    }
   }
+
 
   // Include OSC-AFFILIATE 
   require(DIR_WS_INCLUDES . 'affiliate_checkout_process.php');

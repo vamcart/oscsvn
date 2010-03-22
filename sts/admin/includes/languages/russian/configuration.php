@@ -1029,4 +1029,9 @@ define('ENABLE_MAP_TAB_DESC','¬ключить/ќтключить закладку карта на странице зака
 define('MAP_API_KEY_TITLE','яндекс карты API- люч');
 define('MAP_API_KEY_DESC','”кажите ¬аш API ключ.');
 
+define('USE_EMAIL_QUEUE_TITLE','¬ключить email очередь');
+define('USE_EMAIL_QUEUE_DESC','ќтправл€ть почту через модуль email очередь');
+define('HOLD_EMAIL_QUEUE_TITLE','Ѕлокировать email очередь');
+define('HOLD_EMAIL_QUEUE_DESC','Ѕлокировать все email на отправку');
+
 ?>

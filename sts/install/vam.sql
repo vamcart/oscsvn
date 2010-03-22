@@ -215,6 +215,8 @@ insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes,
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('184', 'select_featured.php', '0', '3', '1');
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('185', 'select_special.php', '0', '3', '1');
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('186', 'products_specifications.php', '0', '3', '1');
+insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('187', 'email_queue.php', '0', '9', '1');
+insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('188', 'email_batch_send.php', '0', '9', '1');
 
 drop table if exists admin_groups;
 create table admin_groups (
@@ -3206,3 +3208,49 @@ INSERT INTO `configuration` (`configuration_title`, `configuration_key`, `config
 ('Filter Show Breadcrumb', 'SPECIFICATIONS_FILTER_BREADCRUMB', 'True', 'Show currently applied filters in the Breadcrumb trail with option to remove', 1610, 120, '2009-07-15 19:15:07', '2009-07-15 19:15:14', NULL, 'tep_cfg_select_option(array(''True'', ''False''), '),
 ('Filter Image Width', 'SPECIFICATIONS_FILTER_IMAGE_WIDTH', '20', 'Set the width of the images displayed as filters in the filter box.', 1610, 125, '2009-07-15 18:46:21', '2009-07-15 18:46:30', NULL, NULL),
 ('Filter Image Height', 'SPECIFICATIONS_FILTER_IMAGE_HEIGHT', '20', 'Set the height of the images displayed as filters in the filter box.', 1610, 130, '2009-07-15 18:46:37', '2009-07-15 18:46:45', NULL, NULL);
+
+DROP TABLE IF EXISTS email_batch;
+CREATE TABLE email_batch (
+  id int(5) unsigned NOT NULL auto_increment,
+  charset varchar(20) default NULL,
+  send char(2) default NULL,
+  to_name varchar(50) NOT NULL default '',
+  to_address varchar(255) NOT NULL default '',
+  subject varchar(100) NOT NULL default '',
+  text text NOT NULL,
+  from_name varchar(50) default NULL,
+  from_address varchar(50) default NULL,
+  last_updated datetime default NULL,
+  created datetime default NULL,
+  hold char(2) default NULL,
+  ip varchar(15) default NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY email_id (id),
+  KEY email_id_2 (id),
+  KEY send (send),
+  KEY hold (hold)
+);
+
+DROP TABLE IF EXISTS email_batch_a;
+CREATE TABLE email_batch_a (
+  id int(5) unsigned NOT NULL default '0',
+  charset varchar(20) default NULL,
+  send char(2) default NULL,
+  to_name varchar(50) NOT NULL default '',
+  to_address varchar(255) NOT NULL default '',
+  subject varchar(100) NOT NULL default '',
+  text text NOT NULL,
+  from_name varchar(50) default NULL,
+  from_address varchar(50) default NULL,
+  last_updated datetime default NULL,
+  created datetime default NULL,
+  hold char(2) default NULL,
+  ip varchar(15) default NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY email_id (id),
+  KEY email_id_2 (id)
+);
+
+insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Use Email Queue', 'USE_EMAIL_QUEUE', 'false', 'Process the emails via the Email Queue', '12', '11', '2009-04-24 15:29:10', '2008-07-17 10:29:22', NULL, 'tep_cfg_select_option(array(\'true\', \'false\'),');
+
+insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Hold Email Queue', 'HOLD_EMAIL_QUEUE', 'false', 'Hold all emails in the Email Queue', '12', '12', '2009-04-24 15:29:10', '2008-07-17 10:29:22', NULL, 'tep_cfg_select_option(array(\'true\', \'false\'),');

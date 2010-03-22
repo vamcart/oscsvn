@@ -215,7 +215,12 @@ function selectAll(FormName, SelectBox) {
       reset($audience);
       while (list($key, $value) = each ($audience)) {
 //        $mimemessage->send($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], '', EMAIL_FROM, $this->title);
+  if (USE_EMAIL_QUEUE == 'true') {
+      tep_store_mail($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], $this->title, $this->content, STORE_OWNER, EMAIL_FROM);
+  } else {
       tep_mail($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], $this->title, $this->content, STORE_OWNER, EMAIL_FROM);
+  }
+
       }
 
       $newsletter_id = tep_db_prepare_input($newsletter_id);

@@ -1027,4 +1027,9 @@ define('ENABLE_MAP_TAB_DESC','');
 define('MAP_API_KEY_TITLE','Yandex Maps API Key');
 define('MAP_API_KEY_DESC','Your API Key.');
 
+define('USE_EMAIL_QUEUE_TITLE','Use Email Queue');
+define('USE_EMAIL_QUEUE_DESC','Process the emails via the Email Queue');
+define('HOLD_EMAIL_QUEUE_TITLE','Hold Email Queue');
+define('HOLD_EMAIL_QUEUE_DESC','Hold all emails in the Email Queue');
+
 ?>

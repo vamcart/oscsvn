@@ -572,4 +572,6 @@ define('BOX_CATALOG_CATEGORIES_PRODUCTS_MULTI', 'Массовое удаление/копирование/п
 // Products Specifications
 define('BOX_CATALOG_PRODUCTS_SPECIFICATIONS', 'Спецификации товаров');
 
+define('BOX_EMAIL_QUEUE', 'Очередь Email');
+         
 ?>

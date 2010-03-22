@@ -169,4 +169,6 @@ define('FILENAME_SELECT_SPECIAL','select_special.php');
   define('FILENAME_PRODUCTS_TABS', 'products_tabs.php');
 // End Product Specifications
 
+define('FILENAME_EMAIL_QUEUE','email_queue.php');
+
 ?>

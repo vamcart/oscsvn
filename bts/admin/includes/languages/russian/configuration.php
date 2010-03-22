@@ -1029,4 +1029,9 @@ define('ENABLE_MAP_TAB_DESC','Включить/Отключить закладку карта на странице зака
 define('MAP_API_KEY_TITLE','Яндекс карты API-Ключ');
 define('MAP_API_KEY_DESC','Укажите Ваш API ключ.');
 
+define('USE_EMAIL_QUEUE_TITLE','Use Email Queue');
+define('USE_EMAIL_QUEUE_DESC','Process the emails via the Email Queue');
+define('HOLD_EMAIL_QUEUE_TITLE','Hold Email Queue');
+define('HOLD_EMAIL_QUEUE_DESC','Hold all emails in the Email Queue');
+
 ?>
