@@ -592,7 +592,7 @@ var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "fa
 			</ul>
 
         <div id="data">
-          <table border="0" width="100%">
+          <table border="0" width="93%">
 
 <tr>
 <td>
@@ -657,7 +657,7 @@ var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "fa
 
         <div id="language_<?php echo $languages[$i]['id']; ?>">
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<table border="0" width="93%" cellspacing="0" cellpadding="0">
 	<tr>
 		<td class="main" valign="top">
 
@@ -736,7 +736,7 @@ echo faqdesk_draw_textarea_field('faqdesk_answer_long_' . $languages[$i]['id'] .
 ?>
 
         <div id="images">
-          <table border="0" width="100%">
+          <table border="0" width="93%">
 
 <tr>		
 
