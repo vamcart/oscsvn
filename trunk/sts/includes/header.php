@@ -88,6 +88,10 @@
 <?php
   }
 
+	if (isset($_GET['error_message']) && tep_not_null($_GET['error_message'])) {
+        $messageStack->add('header', htmlspecialchars(stripslashes(urldecode($_GET['error_message']))), 'warning');
+	}
+	
   if (isset($_GET['info_message']) && tep_not_null($_GET['info_message'])) {
 ?>
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
