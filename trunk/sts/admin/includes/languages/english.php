@@ -571,4 +571,6 @@ define('BOX_CATALOG_PRODUCTS_SPECIFICATIONS', 'Products Specifications');
 
 define('BOX_EMAIL_QUEUE', 'Email Queue');
          
+define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'Displaying <b>%d</b> to <b>%d</b> (of <b>%d</b> entries)');         
+         
 ?>
