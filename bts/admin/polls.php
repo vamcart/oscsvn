@@ -81,9 +81,14 @@
 <?php
   if (ENABLE_TABS == 'true') { 
 ?>
-<script type="text/javascript" src="includes/javascript/tabber.js"></script>
-<link rel="stylesheet" href="includes/javascript/tabber.css" TYPE="text/css" MEDIA="screen">
-<link rel="stylesheet" href="includes/javascript/tabber-print.css" TYPE="text/css" MEDIA="print">
+		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs();
+			});
+		</script>
 <?php } ?>
 </head>
 <?php
@@ -122,14 +127,24 @@
 <br /> 
 <?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?>&nbsp;<?php echo '<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'cID')) . 'info=' . $_GET['cID'], 'NONSSL') . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
       
-<div class="tabber">
+<div id="tabs">
+
+			<ul>
+<?php
+    for ($l=0; $l<sizeof($languages); $l++) {
+?>
+				<li><a href="#language_<?php echo $languages[$l]['id']; ?>"><?php echo $languages[$l]['name']; ?></a></li>
+<?php
+	}
+?>
+				<li><a href="#category"><?php echo TEXT_POLLS_CATEGORY; ?></a></li>
+			</ul>
 
 <?php
     for ($l=0; $l<sizeof($languages); $l++) {
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo $languages[$l]['name']; ?></h3>
+        <div id="language_<?php echo $languages[$l]['id']; ?>">
           <table border="0">        
 	<tr>
         <td class="main"><?php echo TEXT_POLL_TITLE; ?>&nbsp;&nbsp;</td>
@@ -156,8 +171,7 @@
     }
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_POLLS_CATEGORY; ?></h3>
+        <div id="category">
           <table border="0">
           
 	<tr>
@@ -291,7 +305,18 @@ echo '            <td width="25%" valign="top">' . "\n";
 <br /> 
 <?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?>&nbsp;<?php echo '<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'cID')) . 'info=' . $_GET['cID'], 'NONSSL') . '">' . tep_image(DIR_WS_IMAGES . 'button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
 
-<div class="tabber">
+<div id="tabs">
+
+			<ul>
+<?php
+    for ($l=0; $l<sizeof($languages); $l++) {
+?>
+				<li><a href="#language_<?php echo $languages[$l]['id']; ?>"><?php echo $languages[$l]['name']; ?></a></li>
+<?php
+	}
+?>
+				<li><a href="#category"><?php echo TEXT_POLLS_CATEGORY; ?></a></li>
+			</ul>
 
 <?php
     for ($l=0; $l<sizeof($languages); $l++) {
@@ -301,8 +326,7 @@ echo '            <td width="25%" valign="top">' . "\n";
 
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo $languages[$l]['name']; ?></h3>
+        <div id="language_<?php echo $languages[$l]['id']; ?>">
           <table border="0">        
 
       <tr>
@@ -332,8 +356,7 @@ echo '            <td width="25%" valign="top">' . "\n";
     }
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_POLLS_CATEGORY; ?></h3>
+        <div id="category">
           <table border="0">
 
 	<tr>

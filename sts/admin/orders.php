@@ -322,8 +322,16 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
         <td>
 
 <div id="tabs">
-        <div id="tabbertab">
-        <h3><?php echo TEXT_ORDER_SUMMARY; ?></h3>
+
+			<ul>
+				<li><a href="#orders"><?php echo TEXT_ORDER_SUMMARY; ?></a></li>
+				<li><a href="#customers"><?php echo TEXT_ORDER_PAYMENT; ?></a></li>
+				<li><a href="#products"><?php echo TEXT_ORDER_PRODUCTS; ?></a></li>
+				<li><a href="#map" id="getmap"><?php echo TEXT_ORDER_MAP; ?></a></li>
+				<li><a href="#status"><?php echo TEXT_ORDER_STATUS; ?></a></li>
+			</ul>
+
+        <div id="orders">
 
           <table border="0">        
 
@@ -384,8 +392,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 </div>
 
-        <div id="tabbertab">
-        <h3><?php echo TEXT_ORDER_PAYMENT; ?></h3>
+        <div id="customers">
 
           <table border="0">
                 
@@ -434,8 +441,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 </div>
 
-        <div id="tabbertab">
-        <h3><?php echo TEXT_ORDER_PRODUCTS; ?></h3>
+        <div id="products">
 
           <table border="0" width="100%">
 
@@ -489,11 +495,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
 <?php if (ENABLE_MAP_TAB == 'true') { ?>
 
-        <div id="tabbertab">
-        <h3><?php echo TEXT_ORDER_MAP; ?></h3>
-        
 			<div id="map">
-			<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
 
     			<?php
     			
@@ -564,15 +566,11 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     <div id="error" style="display:none"></div>
     <div id="YMapsID" style="width:100%;height:350px"></div>
     			
-			</div>
-
-
 </div>
 
 <?php } ?>
 
-        <div id="tabbertab">
-        <h3><?php echo TEXT_ORDER_STATUS; ?></h3>
+        <div id="status">
       
           <table border="0">
           

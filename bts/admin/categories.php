@@ -1265,9 +1265,14 @@ tinyMCE.init({
 <?php
   if (ENABLE_TABS == 'true') { 
 ?>
-<script type="text/javascript" src="includes/javascript/tabber.js"></script>
-<link rel="stylesheet" href="includes/javascript/tabber.css" TYPE="text/css" MEDIA="screen">
-<link rel="stylesheet" href="includes/javascript/tabber-print.css" TYPE="text/css" MEDIA="print">
+		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs();
+			});
+		</script>
 <?php } ?>
 <script language="javascript"><!--
 function popupWindow1(url) {
@@ -1357,12 +1362,25 @@ function popupPropertiesWindow(url) {
 
 <?php echo tep_draw_hidden_field('categories_date_added', (($cInfo->date_added) ? $cInfo->date_added : date('Y-m-d'))) . tep_draw_hidden_field('parent_id', $cInfo->parent_id) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&cID=' . $_GET['cID']) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
               
-<div class="tabber">
+<div id="tabs">
 
-<?php for ($i = 0, $n = sizeof($languages); $i < $n; $i++) { ?>
+			<ul>
+<?php
+    for ($i=0; $i<sizeof($languages); $i++) {
+?>
+				<li><a href="#tab<?php echo $i; ?>"><?php echo $languages[$i]['name']; ?></a></li>
+<?php 
+}
+?>
+				<li><a href="#data"><?php echo TEXT_PRODUCTS_DATA; ?></a></li>
+				<li><a href="#images"><?php echo TEXT_TAB_CATEGORIES_IMAGE; ?></a></li>
+			</ul>
+
+<?php
+    for ($i=0; $i<sizeof($languages); $i++) {
+?>
 <!-- категории -->
-        <div class="tabbertab">
-        <h3><?php echo $languages[$i]['name']; ?></h3>
+        <div id="tab<?php echo $i; ?>">
           <table border="0" class="main">
 
           <tr>
@@ -1423,8 +1441,7 @@ function popupPropertiesWindow(url) {
 <!-- /категории -->
 
 <!-- info -->
-        <div class="tabbertab">
-        <h3><?php echo TEXT_PRODUCTS_DATA; ?></h3>
+        <div id="data">
           <table border="0" class="main">
           
           <tr>
@@ -1448,8 +1465,7 @@ function popupPropertiesWindow(url) {
 <!-- info -->
 
 <!-- картинка -->
-        <div class="tabbertab">
-        <h3><?php echo TEXT_TAB_CATEGORIES_IMAGE; ?></h3>
+        <div id="images">
           <table border="0">
           
           <tr>
@@ -1792,10 +1808,24 @@ function updateNet(products_price_t) {
 
 <?php echo tep_draw_hidden_field('products_date_added', (tep_not_null($pInfo->products_date_added) ? $pInfo->products_date_added : date('Y-m-d'))) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . (isset($_GET['pID']) ? '&pID=' . $_GET['pID'] : '')) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
         
-<div class="tabber">
+<div id="tabs">
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_PRODUCTS_DATA; ?></h3>
+			<ul>
+				<li><a href="#data"><?php echo TEXT_PRODUCTS_DATA; ?></a></li>
+<?php
+    for ($i=0; $i<sizeof($languages); $i++) {
+?>
+				<li><a href="#tab<?php echo $i; ?>"><?php echo $languages[$i]['name']; ?></a></li>
+<?php 
+}
+?>
+				<li><a href="#images"><?php echo TEXT_PRODUCTS_TAB_IMAGES; ?></a></li>
+				<li><a href="#prices"><?php echo TEXT_PRODUCTS_TAB_PRICE; ?></a></li>
+				<li><a href="#options"><?php echo TEXT_PRODUCTS_TAB_ATTRIBUTES; ?></a></li>
+				<li><a href="#specs"><?php echo TEXT_TAB_SPECIFICATIONS; ?></a></li>
+			</ul>
+
+        <div id="data">
           <table border="0">
        
           <tr>
@@ -1904,8 +1934,7 @@ function updateNet(products_price_t) {
 
 <?php for ($i = 0, $n = sizeof($languages); $i < $n; $i++) { ?>
 <!-- категории -->
-        <div class="tabbertab">
-        <h3><?php echo $languages[$i]['name']; ?></h3>
+        <div id="tab<?php echo $i; ?>">
           <table border="0" class="main">
 
           <tr>
@@ -1985,8 +2014,7 @@ function updateNet(products_price_t) {
         </div>
 <?php } ?>
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_PRODUCTS_TAB_IMAGES; ?></h3>
+        <div id="images">
           <table border="0">
 
 <!-- // BOF: MaxiDVD Added for Ulimited Images Pack! -->
@@ -2183,8 +2211,7 @@ function updateNet(products_price_t) {
           </table>
         </div>
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_PRODUCTS_TAB_PRICE; ?></h3>
+        <div id="prices">
           <table border="0">
 
           <tr>
@@ -2268,8 +2295,7 @@ updateGross('products_price');
  if (ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE == 'true') {
 
 ?>
-        <div class="tabbertab">
-        <h3><?php echo TEXT_PRODUCTS_TAB_ATTRIBUTES; ?></h3>
+        <div id="options">
           <table border="0">
 
 
@@ -2399,8 +2425,7 @@ updateGross('products_price');
         </div>
 
 <!-- спецификация -->
-        <div class="tabbertab">
-        <h3><?php echo TEXT_TAB_SPECIFICATIONS; ?></h3>
+        <div id="specs">
           <table border="0" class="main">
 
 <?php

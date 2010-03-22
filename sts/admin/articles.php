@@ -366,9 +366,14 @@ tinyMCE.init({
 <?php
   if (ENABLE_TABS == 'true') { 
 ?>
-<script type="text/javascript" src="includes/javascript/tabber.js"></script>
-<link rel="stylesheet" href="includes/javascript/tabber.css" TYPE="text/css" MEDIA="screen">
-<link rel="stylesheet" href="includes/javascript/tabber-print.css" TYPE="text/css" MEDIA="print">
+		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs();
+			});
+		</script>
 <?php } ?>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
@@ -425,14 +430,24 @@ tinyMCE.init({
 
 <?php echo tep_draw_hidden_field('topics_date_added', (($tInfo->date_added) ? $tInfo->date_added : date('Y-m-d'))) . tep_draw_hidden_field('parent_id', $tInfo->parent_id) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_ARTICLES, 'tPath=' . $tPath . '&tID=' . $_GET['tID']) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>        
 
-<div class="tabber">
+<div id="tabs">
+
+			<ul>
+<?php
+    for ($l=0; $l<sizeof($languages); $l++) {
+?>
+				<li><a href="#language_<?php echo $languages[$l]['id']; ?>"><?php echo $languages[$l]['name']; ?></a></li>
+<?php
+	}
+?>
+				<li><a href="#other"><?php echo TEXT_ARTICLE_OTHER; ?></a></li>
+			</ul>
 
 <?php
     for ($i=0; $i<sizeof($languages); $i++) {
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo $languages[$i]['name']; ?></h3>
+        <div id="language_<?php echo $languages[$i]['id']; ?>">
           <table border="0">        
         
           <tr>
@@ -471,8 +486,7 @@ tinyMCE.init({
     }
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_ARTICLE_OTHER; ?></h3>
+        <div id="other">
           <table border="0">
                     
           <tr>
@@ -658,10 +672,20 @@ tinyMCE.init({
 
 <?php echo tep_draw_hidden_field('articles_date_added', (tep_not_null($aInfo->articles_date_added) ? $aInfo->articles_date_added : date('Y-m-d'))) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_ARTICLES, 'tPath=' . $tPath . (isset($_GET['aID']) ? '&aID=' . $_GET['aID'] : '')) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
 
-<div class="tabber">
+<div id="tabs">
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_ARTICLE_OTHER; ?></h3>
+			<ul>
+				<li><a href="#status"><?php echo TEXT_ARTICLES_STATUS; ?></a></li>
+<?php
+    for ($l=0; $l<sizeof($languages); $l++) {
+?>
+				<li><a href="#language_<?php echo $languages[$l]['id']; ?>"><?php echo $languages[$l]['name']; ?></a></li>
+<?php
+	}
+?>
+			</ul>
+
+        <div id="status">
           <table border="0">
       
           <tr>
@@ -693,7 +717,7 @@ tinyMCE.init({
 <?php
     for ($i=0; $i<sizeof($languages); $i++) {
 ?>
-        <div class="tabbertab">
+        <div id="language_<?php echo $languages[$i]['id']; ?>">
         <h3><?php echo $languages[$i]['name']; ?></h3>
           <table border="0">
 

@@ -37,9 +37,14 @@
 <?php
   if (ENABLE_TABS == 'true') { 
 ?>
-<script type="text/javascript" src="includes/javascript/tabber.js"></script>
-<link rel="stylesheet" href="includes/javascript/tabber.css" TYPE="text/css" MEDIA="screen">
-<link rel="stylesheet" href="includes/javascript/tabber-print.css" TYPE="text/css" MEDIA="print">
+		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs();
+			});
+		</script>
 <?php } ?>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 </head>
@@ -98,39 +103,42 @@
 <tr>
     <td align="left" width="100%" valign="top">
 
-<div class="tabber">
+<div id="tabs">
 
-<div class="tabbertab">
-<h3><?php echo TEXT_SUMMARY_ORDERS; ?></h3>
-<table border="0" width="95%">
+			<ul>
+				<li><a href="#orders"><?php echo TEXT_SUMMARY_ORDERS; ?></a></li>
+				<li><a href="#customers"><?php echo TEXT_SUMMARY_CUSTOMERS; ?></a></li>
+				<li><a href="#products"><?php echo TEXT_SUMMARY_PRODUCTS; ?></a></li>
+				<li><a href="#stat"><?php echo TEXT_SUMMARY_STAT; ?></a></li>
+				<li><a href="#help"><?php echo TEXT_SUMMARY_HELP; ?></a></li>
+			</ul>
+
+<div id="orders">
+<table border="0" width="100%">
 <?php include(DIR_WS_MODULES . 'summary/orders.php'); ?>
 </table>
 </div>
 
-<div class="tabbertab">
-<h3><?php echo TEXT_SUMMARY_CUSTOMERS; ?></h3>
-<table border="0" width="95%">
+<div id="customers">
+<table border="0" width="100%">
 <?php include(DIR_WS_MODULES . 'summary/customers.php'); ?>
 </table>
 </div>
 
-<div class="tabbertab">
-<h3><?php echo TEXT_SUMMARY_PRODUCTS; ?></h3>
-<table border="0" width="95%">
+<div id="products">
+<table border="0" width="100%">
 <?php include(DIR_WS_MODULES . 'summary/products.php'); ?>
 </table>
 </div>
 
-<div class="tabbertab">
-<h3><?php echo TEXT_SUMMARY_STAT; ?></h3>
-<table border="0" width="95%">
+<div id="stat">
+<table border="0" width="100%">
 <?php include(DIR_WS_MODULES . 'summary/statistics.php'); ?>
 </table>
 </div>
 
-<div class="tabbertab">
-<h3><?php echo TEXT_SUMMARY_HELP; ?></h3>
-<table border="0" width="95%">
+<div id="help">
+<table border="0" width="100%">
 <?php include(DIR_WS_MODULES . 'summary/help.php'); ?>
 </table>
 </div>
