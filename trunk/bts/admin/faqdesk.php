@@ -465,9 +465,14 @@ tinyMCE.init({
 <?php
   if (ENABLE_TABS == 'true') { 
 ?>
-<script type="text/javascript" src="includes/javascript/tabber.js"></script>
-<link rel="stylesheet" href="includes/javascript/tabber.css" TYPE="text/css" MEDIA="screen">
-<link rel="stylesheet" href="includes/javascript/tabber-print.css" TYPE="text/css" MEDIA="print">
+		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs();
+			});
+		</script>
 <?php } ?>
 </head>
 
@@ -572,10 +577,21 @@ var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "fa
 	</tr>
 </table>
 
-<div class="tabber">
+<div id="tabs">
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_FAQDESK_DATA; ?></h3>
+			<ul>
+				<li><a href="#data"><?php echo TEXT_FAQDESK_DATA; ?></a></li>
+<?php
+    for ($l=0; $l<sizeof($languages); $l++) {
+?>
+				<li><a href="#language_<?php echo $languages[$l]['id']; ?>"><?php echo $languages[$l]['name']; ?></a></li>
+<?php
+	}
+?>
+				<li><a href="#images"><?php echo TEXT_FAQDESK_IMAGES; ?></a></li>
+			</ul>
+
+        <div id="data">
           <table border="0" width="100%">
 
 <tr>
@@ -639,8 +655,7 @@ var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "fa
     for ($i=0; $i<sizeof($languages); $i++) {
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo $languages[$i]['name']; ?></h3>
+        <div id="language_<?php echo $languages[$i]['id']; ?>">
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
@@ -720,8 +735,7 @@ echo faqdesk_draw_textarea_field('faqdesk_answer_long_' . $languages[$i]['id'] .
     }
 ?>
 
-        <div class="tabbertab">
-        <h3><?php echo TEXT_FAQDESK_IMAGES; ?></h3>
+        <div id="images">
           <table border="0" width="100%">
 
 <tr>		
