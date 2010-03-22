@@ -443,10 +443,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 
         <div id="products">
 
-          <table border="0" width="100%">
-
-      <tr>
-        <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+<table border="0" width="93%" cellspacing="0" cellpadding="2">
           <tr class="dataTableHeadingRow">
             <td class="dataTableHeadingContent" colspan="2"><?php echo TABLE_HEADING_PRODUCTS; ?></td>
             <td class="dataTableHeadingContent"><?php echo TABLE_HEADING_PRODUCTS_MODEL; ?></td>
@@ -486,10 +483,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 ?>
             </table></td>
           </tr>
-        </table></td>
-      </tr>
-
-</table>
+        </table>
       
 </div>
 
