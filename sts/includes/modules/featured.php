@@ -57,6 +57,7 @@ function FeaturedProductsModuleListingTemplate($url,$pid,$description,$manufactu
   $row = 0;
   $col = 0; 
   $num = 0;
+  $width = 100 / PRODUCT_LIST_COL_NUM;
   while ($featured_products = tep_db_fetch_array($featured_products_query)) {
     $num ++; if ($num == 1) { new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_FEATURED_PRODUCTS));}
     $featured_products['products_name'] = tep_get_products_name($featured_products['products_id']);
@@ -72,14 +73,14 @@ function FeaturedProductsModuleListingTemplate($url,$pid,$description,$manufactu
 	  if ($sts_featured_products_module_listing->enabled)
 	  {
       
-        $info_box_contents[$row][$col] = array('align' => 'center', 'params' => 'class="smallText" width="33%" valign="top"',
+        $info_box_contents[$row][$col] = array('align' => 'center', 'params' => 'class="smallText" width="' . $width . '%" valign="top"',
                                                 'text' => FeaturedProductsModuleListingTemplate(tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']),$featured_products['products_id'],tep_get_products_info($featured_products['products_id']),tep_get_manufacturers_name($featured_products['manufacturers_id']),tep_get_categories_name($current_category_id),$featured_products['products_model'],$featured_products['products_quantity'],$featured_products['products_weight'],$featured_products['products_name'],tep_image(DIR_WS_IMAGES . $featured_products['products_image'], $featured_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT),'<s>' . $currencies->display_price_nodiscount($featured_products['specials_featured_products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])) . '</s><br><span class="productSpecialPrice">' . 
                                            $currencies->display_price_nodiscount($featured_products['products_price'], tep_get_tax_rate($featured_products['products_tax_class_id']))));
 	  }
 	  else
 	  {
 	  $info_box_contents[$row][$col] = array('align' => 'center',
-                                       'params' => 'class="smallText" width="33%" valign="top"',
+                                       'params' => 'class="smallText" width="' . $width . '%" valign="top"',
                                        'text' => '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $featured_products['products_image'], $featured_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . $featured_products['products_name'] . '</a><br><s>' . $currencies->display_price_nodiscount($featured_products['specials_featured_products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])) . '</s><br><span class="productSpecialPrice">' . 
                                            $currencies->display_price_nodiscount($featured_products['products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])));
     }
@@ -99,13 +100,13 @@ function FeaturedProductsModuleListingTemplate($url,$pid,$description,$manufactu
 	  if ($sts_featured_products_module_listing->enabled)
 	  {
       
-        $info_box_contents[$row][$col] = array('align' => 'center', 'params' => 'class="smallText" width="33%" valign="top"',
+        $info_box_contents[$row][$col] = array('align' => 'center', 'params' => 'class="smallText" width="' . $width . '%" valign="top"',
                                                 'text' => FeaturedProductsModuleListingTemplate(tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']),$featured_products['products_id'],tep_get_products_info($featured_products['products_id']),tep_get_manufacturers_name($featured_products['manufacturers_id']),tep_get_categories_name($current_category_id),$featured_products['products_model'],$featured_products['products_quantity'],$featured_products['products_weight'],$featured_products['products_name'],tep_image(DIR_WS_IMAGES . $featured_products['products_image'], $featured_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT),$currencies->display_price($featured_products['specials_featured_products_price'], tep_get_tax_rate($featured_products['products_tax_class_id']))));
 	  }
 	  else
 	  {
 	  $info_box_contents[$row][$col] = array('align' => 'center',
-                                       'params' => 'class="smallText" width="33%" valign="top"',
+                                       'params' => 'class="smallText" width="' . $width . '%" valign="top"',
                                        'text' => '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $featured_products['products_image'], $featured_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . $featured_products['products_name'] . '</a><br>' . $currencies->display_price($featured_products['specials_featured_products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])));
     }
 	  }
