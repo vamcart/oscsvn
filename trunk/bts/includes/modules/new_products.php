@@ -28,6 +28,7 @@
   $row = 0;
   $col = 0;
   $info_box_contents = array();
+  $width = 100 / PRODUCT_LIST_COL_NUM;
   while ($new_products = tep_db_fetch_array($new_products_query)) {
 
 //    $special_price = tep_get_products_special_price($new_products['products_id']);
@@ -43,14 +44,14 @@
      $new_products['products_price'] = $new_price; // Обычная цена
      $new_products['specials_new_products_price'] = tep_xppp_getproductprice($new_products['products_id']); // Спец. цена
 	  $info_box_contents[$row][$col] = array('align' => 'center',
-                                       'params' => 'class="smallText" width="33%" valign="top"',
+                                       'params' => 'class="smallText" width="' . $width . '%" valign="top"',
                                        'text' => '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $new_products['products_image'], $new_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . $new_products['products_name'] . '</a><br><s>' . $currencies->display_price_nodiscount($new_products['specials_new_products_price'], tep_get_tax_rate($new_products['products_tax_class_id'])) . '</s><br><span class="productSpecialPrice">' . 
                                            $currencies->display_price_nodiscount($new_products['products_price'], tep_get_tax_rate($new_products['products_tax_class_id'])));
     } else {
      $new_products['products_price'] = $new_price; // Обычная цена
      $new_products['specials_new_products_price'] = tep_xppp_getproductprice($new_products['products_id']); // Спец. цена
 	  $info_box_contents[$row][$col] = array('align' => 'center',
-                                       'params' => 'class="smallText" width="33%" valign="top"',
+                                       'params' => 'class="smallText" width="' . $width . '%" valign="top"',
                                        'text' => '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $new_products['products_image'], $new_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . $new_products['products_name'] . '</a><br>' . $currencies->display_price($new_products['specials_new_products_price'], tep_get_tax_rate($new_products['products_tax_class_id'])));
     }
 
@@ -65,7 +66,7 @@
 
 
     $col ++;
-    if ($col > 2) {
+    if ($col > PRODUCT_LIST_COL_NUM - 1) {
       $col = 0;
       $row ++;
     }
