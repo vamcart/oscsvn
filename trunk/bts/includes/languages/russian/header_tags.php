@@ -13,7 +13,7 @@ define('HEAD_REPLY_TAG_ALL','ваш@e-mail');
 // The HEAD_TITLE_TAG_ALL is included BEFORE the specific one for the page
 // The HEAD_DESC_TAG_ALL is included AFTER the specific one for the page
 // The HEAD_KEY_TAG_ALL is included BEFORE the specific one for the page
-define('HEAD_TITLE_TAG_ALL','Интернет-магазин ');
+define('HEAD_TITLE_TAG_ALL',STORE_NAME.' ');
 define('HEAD_DESC_TAG_ALL','описание');
 define('HEAD_KEY_TAG_ALL','ключевые слова');
 
@@ -23,7 +23,7 @@ define('HEAD_KEY_TAG_ALL','ключевые слова');
 define('HTTA_DEFAULT_ON','1'); // Include HEAD_TITLE_TAG_ALL in Title
 define('HTKA_DEFAULT_ON','1'); // Include HEAD_KEY_TAG_ALL in Keywords
 define('HTDA_DEFAULT_ON','1'); // Include HEAD_DESC_TAG_ALL in Description
-define('HEAD_TITLE_TAG_DEFAULT', 'Заголовок главной страницы');
+define('HEAD_TITLE_TAG_DEFAULT',STORE_NAME);
 define('HEAD_DESC_TAG_DEFAULT','описание главной страницы');
 define('HEAD_KEY_TAG_DEFAULT','ключевые слова главной страницы');
 
