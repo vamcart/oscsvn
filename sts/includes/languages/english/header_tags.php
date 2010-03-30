@@ -13,7 +13,7 @@ define('HEAD_REPLY_TAG_ALL','your@e-mail');
 // The HEAD_TITLE_TAG_ALL is included BEFORE the specific one for the page
 // The HEAD_DESC_TAG_ALL is included AFTER the specific one for the page
 // The HEAD_KEY_TAG_ALL is included BEFORE the specific one for the page
-define('HEAD_TITLE_TAG_ALL','Store name ');
+define('HEAD_TITLE_TAG_ALL',STORE_NAME.' ');
 define('HEAD_DESC_TAG_ALL','description');
 define('HEAD_KEY_TAG_ALL','keywords');
 
@@ -23,7 +23,7 @@ define('HEAD_KEY_TAG_ALL','keywords');
 define('HTTA_DEFAULT_ON','1'); // Include HEAD_TITLE_TAG_ALL in Title
 define('HTKA_DEFAULT_ON','1'); // Include HEAD_KEY_TAG_ALL in Keywords
 define('HTDA_DEFAULT_ON','1'); // Include HEAD_DESC_TAG_ALL in Description
-define('HEAD_TITLE_TAG_DEFAULT', 'Main page');
+define('HEAD_TITLE_TAG_DEFAULT',STORE_NAME);
 define('HEAD_DESC_TAG_DEFAULT','main page');
 define('HEAD_KEY_TAG_DEFAULT','main page');
 
