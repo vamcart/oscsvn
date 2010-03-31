@@ -17,6 +17,11 @@ if (isset($pw_mispell)){ //added for search enhancements mod
 </table>
 <?php
  } //end added search enhancements mod
+ // BOF display_all_products
+  if ($_GET['page'] == 'all') {
+    $listing_split = new splitPageResults($listing_sql, 32767, 'p.products_id');
+  } else
+// EOF display_all_products
   $listing_split = new splitPageResults($listing_sql, MAX_DISPLAY_SEARCH_RESULTS, 'p.products_id');
 // fix counted products
 
@@ -25,7 +30,21 @@ if (isset($pw_mispell)){ //added for search enhancements mod
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
   <tr>
     <td class="smallText"><?php echo $listing_split->display_count(TEXT_DISPLAY_NUMBER_OF_PRODUCTS); ?></td>
-    <td class="smallText" align="right"><?php echo TEXT_RESULT_PAGE . ' ' . $listing_split->display_links(MAX_DISPLAY_PAGE_LINKS, tep_get_all_get_params(array('page', 'info', 'x', 'y'))); ?></td>
+    <td class="smallText" align="right"><?php echo TEXT_RESULT_PAGE . ' ' . $listing_split->display_links(MAX_DISPLAY_PAGE_LINKS, tep_get_all_get_params(array('page', 'info', 'x', 'y'))); ?>
+<?php
+// BOF display_all_products
+if ($listing_split->number_of_pages > 1) {
+?>
+    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=all', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_ALL_PRODUCTS . ' "><u>' . TEXT_DISPLAY_ALL_PRODUCTS . '</u></a>&nbsp;&nbsp;'; ?>
+<?php
+} elseif ($_GET['page'] == 'all') {
+?>
+    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=1', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_BY_PAGES . ' "><u>' . TEXT_DISPLAY_BY_PAGES . '</u></a>&nbsp;&nbsp;'; ?>
+<?php
+}
+// EOF display_all_products
+?>    
+    </td>
   </tr>
 </table>
 <?php
@@ -347,7 +366,21 @@ if (tep_has_product_attributes($listing['products_id'])) {
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
   <tr>
     <td class="smallText"><?php echo $listing_split->display_count(TEXT_DISPLAY_NUMBER_OF_PRODUCTS); ?></td>
-    <td class="smallText" align="right"><?php echo TEXT_RESULT_PAGE . ' ' . $listing_split->display_links(MAX_DISPLAY_PAGE_LINKS, tep_get_all_get_params(array('page', 'info', 'x', 'y'))); ?></td>
+    <td class="smallText" align="right"><?php echo TEXT_RESULT_PAGE . ' ' . $listing_split->display_links(MAX_DISPLAY_PAGE_LINKS, tep_get_all_get_params(array('page', 'info', 'x', 'y'))); ?>
+<?php
+// BOF display_all_products
+if ($listing_split->number_of_pages > 1) {
+?>
+    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=all', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_ALL_PRODUCTS . ' "><u>' . TEXT_DISPLAY_ALL_PRODUCTS . '</u></a>&nbsp;&nbsp;'; ?>
+<?php
+} elseif ($_GET['page'] == 'all') {
+?>
+    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=1', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_BY_PAGES . ' "><u>' . TEXT_DISPLAY_BY_PAGES . '</u></a>&nbsp;&nbsp;'; ?>
+<?php
+}
+// EOF display_all_products
+?>    
+    </td>
   </tr>
 </table>
 <?php

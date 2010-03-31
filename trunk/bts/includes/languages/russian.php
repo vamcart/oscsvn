@@ -569,4 +569,7 @@ define('TEXT_FIND_PRODUCTS', 'Найти подходящие товары');
 // Products Specifications
 define('TEXT_NOT_AVAILABLE', 'нет данных');
 
+define('TEXT_DISPLAY_ALL_PRODUCTS', 'Показать на одной странице');
+define('TEXT_DISPLAY_BY_PAGES', 'Разбить на страницы');
+
 ?>
