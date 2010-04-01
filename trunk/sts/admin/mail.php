@@ -50,9 +50,17 @@
     }
  
 */
-            while ($mail = tep_db_fetch_array($mail_query)) {
-      tep_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $subject, $message, STORE_OWNER, $from);
-    }
+while ($mail = tep_db_fetch_array($mail_query))
+{
+if (USE_EMAIL_QUEUE == 'true')
+{
+tep_store_mail($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $subject, $message, STORE_OWNER, $from);
+}
+else
+{
+tep_mail ($mail['customers_firstname'] . ' ' . $mail['customers_lastname'], $mail['customers_email_address'], $subject, $message, STORE_OWNER, $from);
+}
+}
  
 /* End Nay */ 
 
