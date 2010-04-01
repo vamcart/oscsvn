@@ -92,12 +92,20 @@ table_image_border_top(false, false, TABLE_HEADING_PAYMENT_METHOD);
   }
 
   $radio_buttons = 0;
+      $rows = 0;
   if( $payment == '') $payment = 'cod';
   for ($i=0, $n=sizeof($selection); $i<$n; $i++) {
+      $rows++;
+
+      if (($rows/2) == floor($rows/2)) {
+        $css_class = "even";
+      } else {
+        $css_class = "odd";
+      }      	
 ?>
               <tr>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
-                <td colspan="2"><table border="0" width="100%" cellspacing="0" cellpadding="2">
+                <td colspan="2" class="<?php echo $css_class; ?>"><table border="0" width="100%" cellspacing="0" cellpadding="2">
 <?php
     if ( ($selection[$i]['id'] == $payment) || ($n == 1) ) {
       echo '                  <tr id="defaultSelected" class="moduleRowSelected" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)" onclick="selectRowEffect(this, ' . $radio_buttons . ')">' . "\n";
