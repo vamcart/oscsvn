@@ -2118,12 +2118,34 @@ function tep_iconv_utf($text) {
   }
 // End products specifications
 
+  function tep_get_ip_address() {
+    if (isset($_SERVER)) {
+      if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+      } elseif (isset($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+      } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+      }
+    } else {
+      if (getenv('HTTP_X_FORWARDED_FOR')) {
+        $ip = getenv('HTTP_X_FORWARDED_FOR');
+      } elseif (getenv('HTTP_CLIENT_IP')) {
+        $ip = getenv('HTTP_CLIENT_IP');
+      } else {
+        $ip = getenv('REMOTE_ADDR');
+      }
+    }
+
+    return $ip;
+  }
+
 function tep_store_mail($to_name, $to_email_address, $email_subject, $email_text, $from_email_name, $from_email_address, $hold = '') {
 
   if (SEND_EMAILS != 'true') return false;
 
   $browser_ip = tep_get_ip_address();
-  $this_moment = date("Ymd") . ' ' . date("H:i:s");
+  $this_moment = date("Y-m-d") . ' ' . date("H:i:s");
   $sql_data_array = array('to_name'      => $to_name,
                           'charset'      => CHARSET,
                           'to_address'   => $to_email_address,
