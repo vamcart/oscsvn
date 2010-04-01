@@ -549,3 +549,6 @@ OTHER DEALINGS IN THE SOFTWARE.
   }
   
 /* End Products Specifications */
+
+td.odd { background: transparent; }
+td.even { background: white; }

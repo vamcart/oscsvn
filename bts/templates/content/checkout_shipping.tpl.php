@@ -144,11 +144,19 @@ table_image_border_top(false, false, TABLE_HEADING_SHIPPING_METHOD);
 <?php
     } else {
       $radio_buttons = 0;
+      $rows = 0;
       for ($i=0, $n=sizeof($quotes); $i<$n; $i++) {
+      $rows++;
+
+      if (($rows/2) == floor($rows/2)) {
+        $css_class = "even";
+      } else {
+        $css_class = "odd";
+      }      	
 ?>
               <tr>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
-                <td colspan="2"><table border="0" width="100%" cellspacing="0" cellpadding="2">
+                <td colspan="2" class="<?php echo $css_class; ?>"><table border="0" width="100%" cellspacing="0" cellpadding="2">
                   <tr>
                     <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                     <td class="main" colspan="3"><b><?php echo $quotes[$i]['module']; ?></b>&nbsp;<?php if (isset($quotes[$i]['icon']) && tep_not_null($quotes[$i]['icon'])) { echo $quotes[$i]['icon']; } ?></td>
