@@ -10,7 +10,7 @@
   //Go through each item in the cart, and look for xsell products.
   foreach ($products AS $product_id_in_cart) {
     //Main XSELL Query
-    $xsell_query = tep_db_query("SELECT p.products_id, pd.products_name, p.products_image, p.products_price, p.products_tax_class_id FROM  " . TABLE_PRODUCTS . " AS p, " . TABLE_PRODUCTS_DESCRIPTION . " AS pd, " . TABLE_PRODUCTS_XSELL . " AS px WHERE px.products_id = " . number_format($product_id_in_cart['id']) . " AND px.xsell_id = p.products_id AND px.xsell_id = pd.products_id AND p.products_status = '1' AND pd.language_id = '" . (int)$languages_id . "' ORDER BY p.products_ordered DESC");
+    $xsell_query = tep_db_query("SELECT p.products_id, pd.products_name, p.products_image, p.products_price, p.products_tax_class_id FROM  " . TABLE_PRODUCTS . " AS p, " . TABLE_PRODUCTS_DESCRIPTION . " AS pd, " . TABLE_PRODUCTS_XSELL . " AS px WHERE px.products_id = " . intval($product_id_in_cart['id']) . " AND px.xsell_id = p.products_id AND px.xsell_id = pd.products_id AND p.products_status = '1' AND pd.language_id = '" . (int)$languages_id . "' ORDER BY p.products_ordered DESC");
 
     //Cycle through each suggested product and add to box, if there are none
     //go to the next product in the cart.
