@@ -2941,8 +2941,7 @@ else {return false;}
       }
 
 // BOF: KategorienAdmin / OLISWISS
-     if ($admin_groups_id == 1 || in_array($categories['categories_id'],$admin_cat_access_array_cats) || $categories['parent_id'] != 0) {
-       if ($admin_groups_id == 1 || in_array($_GET['cPath'],$admin_cat_access_array_cats) || in_array($categories['categories_id'],$admin_cat_access_array_cats)) {
+     if ($admin_groups_id == 1 || is_array(array_intersect(explode('_',$_GET['cPath']),$admin_cat_access_array_cats)) ) {
 // EOF: KategorienAdmin / OLISWISS
 
       if (isset($cInfo) && is_object($cInfo) && ($categories['categories_id'] == $cInfo->categories_id) ) {
@@ -2972,7 +2971,6 @@ else {return false;}
 <?php
 // BOF: KategorienAdmin / OLISWISS
        }
-     }
 // EOF: KategorienAdmin / OLISWISS
     }
 
