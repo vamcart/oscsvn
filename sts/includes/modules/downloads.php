@@ -26,8 +26,8 @@
 // DEFINE WHICH ORDERS_STATUS TO USE IN downloads_controller.php
 // USE last_modified instead of date_purchased
 // original  $downloads_query = tep_db_query("select                 date_format(o.date_purchased, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays from " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd where o.customers_id = '" . (int)$customer_id . "' and o.orders_id = '" . (int)$last_order . "' and o.orders_id = op.orders_id and op.orders_products_id = opd.orders_products_id and opd.orders_products_filename != ''");
-             $downloads_query = tep_db_query("select o.orders_status, date_format(o.last_modified, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays from " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd where o.customers_id = '" . (int)$customer_id . "' and o.orders_status >= '" . DOWNLOADS_CONTROLLER_ORDERS_STATUS . "' and o.orders_status != '99999' and o.orders_id = '" . (int)$last_order . "' and o.orders_id = op.orders_id and op.orders_products_id = opd.orders_products_id and opd.orders_products_filename != ''");
-
+             $downloads_query = tep_db_query("select date_format(o.last_modified, '%Y-%m-%d') as date_modified_day,o.orders_status, date_format(o.date_purchased, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays from " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd where o.customers_id = '" . (int)$customer_id . "' and o.orders_status >= '" . DOWNLOADS_CONTROLLER_ORDERS_STATUS . "' and o.orders_status != '99999' and o.orders_id = '" . (int)$last_order . "' and o.orders_id = op.orders_id and op.orders_products_id = opd.orders_products_id and opd.orders_products_filename != ''");
+             
   if (tep_db_num_rows($downloads_query) > 0) {
 ?>
       <tr>
@@ -45,7 +45,12 @@
 <?php
     while ($downloads = tep_db_fetch_array($downloads_query)) {
 // MySQL 3.22 does not have INTERVAL
-      list($dt_year, $dt_month, $dt_day) = explode('-', $downloads['date_purchased_day']);
+if (strlen($downloads['date_modified_day'])>0){
+list($dt_year, $dt_month, $dt_day) = explode('-', $downloads['date_modified_day']);
+}
+else{
+list($dt_year, $dt_month, $dt_day) = explode('-', $downloads['date_purchased_day']);
+}
       $download_timestamp = mktime(23, 59, 59, $dt_month, $dt_day + $downloads['download_maxdays'], $dt_year);
       $download_expiry = date('Y-m-d H:i:s', $download_timestamp);
 ?>
