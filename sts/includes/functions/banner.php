@@ -84,23 +84,8 @@
       $banner_string = $banner['banners_html_text'];
     } else {
        if (preg_match('/\.swf$/i',$banner['banners_image'])){
-$banner_string='
-          <script language="JavaScript">
-var plugin = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
-if(plugin){
- plugin=(parseInt(plugin.description.substring(plugin.description.indexOf(".")-1))>=6);
-}
-else if((navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0)&&((navigator.userAgent.indexOf("Windows 95")>=0)||(navigator.userAgent.indexOf("Windows 98")>=0)||(navigator.userAgent.indexOf("Windows NT")>=0))){
- document.write(\'<\'+\'SCRIPT LANGUAGE=VBScript\'+\'>\n\');
- document.write(\'on error resume next\n\');
- document.write(\'plugin=( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6")))\n\');
- document.write(\'</\'+\'SCRIPT\'+\'>\');
-}
-
-if(plugin){
- document.write(\'<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="537" height="176"><param name="movie" value="'. tep_href_link(DIR_WS_IMAGES . $banner['banners_image']).'"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF"><embed src="'.tep_href_link(DIR_WS_IMAGES . $banner['banners_image'], '', 'NONSSL', false).'" quality="high" bgcolor="#FFFFFF" swLiveConnect="false" width="537" height="176" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>\');
-}
-</script>';
+$banner_string='<embed src="'.tep_href_link(DIR_WS_IMAGES . $banner['banners_image'], '', 'NONSSL', false).'" quality="high" bgcolor="#FFFFFF" swLiveConnect="false" width="400" height="125" ></embed>';
+';
        } else {
       $banner_string = '<a href="' . tep_href_link(FILENAME_REDIRECT, 'action=banner&goto=' . $banner['banners_id']) . '" target="_blank">' . tep_image(DIR_WS_IMAGES . $banner['banners_image'], $banner['banners_title']) . '</a>';
        }
