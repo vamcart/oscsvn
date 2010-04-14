@@ -48,6 +48,7 @@ if ( $status == 60 ) {
 	require_once(DIR_WS_CLASSES . 'order.php');
   
   	$order = new order($transaction);
+  	$language = 'russian';
 
 			  $lang_query = tep_db_query("select languages_id from " . TABLE_LANGUAGES . " where directory = '" . $language . "'");
 			  $lang = tep_db_fetch_array($lang_query);
@@ -61,8 +62,6 @@ if ( $status == 60 ) {
 					$orders_statuses[] = array ('id' => $orders_status['orders_status_id'], 'text' => $orders_status['orders_status_name']);
 					$orders_status_array[$orders_status['orders_status_id']] = $orders_status['orders_status_name'];
 				}
-
-				$vamTemplate->assign('ORDER_STATUS', $orders_status_array[MODULE_PAYMENT_QIWI_ORDER_STATUS_ID]);
 
 				include_once (DIR_FS_CATALOG.'admin/includes/languages/'.$language.'/orders.php');
 				include_once (DIR_WS_LANGUAGES.$language.'/modules/payment/qiwi.php');
