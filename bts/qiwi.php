@@ -66,7 +66,7 @@ if ( $status == 60 ) {
 				include_once (DIR_FS_CATALOG.'admin/includes/languages/'.$language.'/orders.php');
 				include_once (DIR_WS_LANGUAGES.$language.'/modules/payment/qiwi.php');
 
-            $email = STORE_NAME . "\n" . EMAIL_SEPARATOR . "\n" . EMAIL_TEXT_ORDER_NUMBER . ' ' . $transaction . "\n" . EMAIL_TEXT_INVOICE_URL . ' ' . tep_href_link(FILENAME_CATALOG_ACCOUNT_HISTORY_INFO, 'order_id=' . $transaction, 'SSL') . "\n" . EMAIL_TEXT_DATE_ORDERED . ' ' . tep_date_long($order->info['date_purchased']) . "\n\n" . $notify_comments . sprintf(EMAIL_TEXT_STATUS_UPDATE, $orders_status_array[MODULE_PAYMENT_QIWI_ORDER_STATUS_ID]);
+            $email = STORE_NAME . "\n" . EMAIL_SEPARATOR . "\n" . EMAIL_TEXT_ORDER_NUMBER . ' ' . $transaction . "\n" . EMAIL_TEXT_INVOICE_URL . ' ' . tep_href_link(FILENAME_ACCOUNT_HISTORY_INFO, 'order_id=' . $transaction, 'SSL') . "\n" . EMAIL_TEXT_DATE_ORDERED . ' ' . tep_date_long($order->info['date_purchased']) . "\n\n" . $notify_comments . sprintf(EMAIL_TEXT_STATUS_UPDATE, $orders_status_array[MODULE_PAYMENT_QIWI_ORDER_STATUS_ID]);
 
 	// send mail to admin
             tep_mail(STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, MODULE_PAYMENT_QIWI_EMAIL_SUBJECT . ' ' . $transaction, $email, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
