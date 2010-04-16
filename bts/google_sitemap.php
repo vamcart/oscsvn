@@ -279,6 +279,193 @@ require('includes/application_top.php');
     }
   }
 
+  $product_result = tep_db_query("
+    SELECT
+      a.articles_id,
+      ad.articles_name,
+      ad.language_id,
+      UNIX_TIMESTAMP(a.articles_date_added) as articles_date_added,
+      UNIX_TIMESTAMP(a.articles_last_modified) as articles_last_modified,
+      l.code
+    FROM
+      ".TABLE_ARTICLES." a, 
+      ".TABLE_ARTICLES_DESCRIPTION." ad,
+      ".TABLE_LANGUAGES." l
+    WHERE ad.language_id = '".(int)$languages_id."' and 
+      a.articles_status='1' AND
+      a.articles_id = ad.articles_id AND
+      ad.language_id = l.languages_id
+    ORDER BY
+      a.articles_id
+  ");
+
+  if (tep_db_num_rows($product_result) > 0) {
+    while($product_data = tep_db_fetch_array($product_result)) {
+    
+      $lang_param = ($product_data['code'] != DEFAULT_LANGUAGE) ? '&language='.$product_data['code'] : '';
+      $date = ($product_data['articles_last_modified'] != NULL) ? $product_data['articles_last_modified'] : $product_data['articles_date_added'];
+      
+      $string = sprintf(SITEMAP_ENTRY, htmlspecialchars(utf8_encode(tep_href_link(FILENAME_ARTICLE_INFO, 'articles_id='.$product_data['articles_id']))) , PRIORITY_PRODUCTS, iso8601_date($date), CHANGEFREQ_PRODUCTS);
+      
+      output($string);
+      $strlen += strlen($string);
+      
+      $c++;
+      if ($autogenerate) {
+        // 500000 entrys or filesize > 10,485,760 - some space for the last entry
+        if ( $c == MAX_ENTRYS || $strlen >= MAX_SIZE) {
+          output(SITEMAP_FOOTER);
+          $function_close($fp);
+          $c = 0;
+          $i++;
+          $fp = $function_open('sitemap'.$i.$file_extension, 'w');
+          output(SITEMAP_HEADER);
+          $strlen = strlen(SITEMAP_HEADER);
+        }
+      }
+    }
+  }
+
+  $product_result = tep_db_query("
+    SELECT
+      p.pages_id,
+      pd.pages_name,
+      pd.language_id,
+      UNIX_TIMESTAMP(p.pages_date_added) as date_added,
+      UNIX_TIMESTAMP(p.pages_last_modified) as last_modified,
+      l.code
+    FROM
+      ".TABLE_PAGES." p, 
+      ".TABLE_PAGES_DESCRIPTION." pd,
+      ".TABLE_LANGUAGES." l
+    WHERE pd.language_id = '".(int)$languages_id."' and 
+      p.pages_status='1' AND
+      p.pages_id = pd.pages_id AND
+      pd.language_id = l.languages_id
+    ORDER BY
+      p.pages_id
+  ");
+
+  if (tep_db_num_rows($product_result) > 0) {
+    while($product_data = tep_db_fetch_array($product_result)) {
+    
+      $lang_param = ($product_data['code'] != DEFAULT_LANGUAGE) ? '&language='.$product_data['code'] : '';
+      $date = ($product_data['last_modified'] != NULL) ? $product_data['last_modified'] : $product_data['date_added'];
+      
+      $string = sprintf(SITEMAP_ENTRY, htmlspecialchars(utf8_encode(tep_href_link(FILENAME_INFORMATION, 'pages_id='.$product_data['pages_id']))) , PRIORITY_PRODUCTS, iso8601_date($date), CHANGEFREQ_PRODUCTS);
+      
+      output($string);
+      $strlen += strlen($string);
+      
+      $c++;
+      if ($autogenerate) {
+        // 500000 entrys or filesize > 10,485,760 - some space for the last entry
+        if ( $c == MAX_ENTRYS || $strlen >= MAX_SIZE) {
+          output(SITEMAP_FOOTER);
+          $function_close($fp);
+          $c = 0;
+          $i++;
+          $fp = $function_open('sitemap'.$i.$file_extension, 'w');
+          output(SITEMAP_HEADER);
+          $strlen = strlen(SITEMAP_HEADER);
+        }
+      }
+    }
+  }
+
+  $product_result = tep_db_query("
+    SELECT
+      n.newsdesk_id,
+      nd.newsdesk_article_name,
+      nd.language_id,
+      UNIX_TIMESTAMP(n.newsdesk_date_added) as date_added,
+      UNIX_TIMESTAMP(n.newsdesk_last_modified) as last_modified,
+      l.code
+    FROM
+      ".TABLE_NEWSDESK." n, 
+      ".TABLE_NEWSDESK_DESCRIPTION." nd,
+      ".TABLE_LANGUAGES." l
+    WHERE nd.language_id = '".(int)$languages_id."' and 
+      n.newsdesk_status='1' AND
+      n.newsdesk_id = nd.newsdesk_id AND
+      nd.language_id = l.languages_id
+    ORDER BY
+      n.newsdesk_id
+  ");
+
+  if (tep_db_num_rows($product_result) > 0) {
+    while($product_data = tep_db_fetch_array($product_result)) {
+    
+      $lang_param = ($product_data['code'] != DEFAULT_LANGUAGE) ? '&language='.$product_data['code'] : '';
+      $date = ($product_data['last_modified'] != NULL) ? $product_data['last_modified'] : $product_data['date_added'];
+      
+      $string = sprintf(SITEMAP_ENTRY, htmlspecialchars(utf8_encode(tep_href_link(FILENAME_NEWSDESK_INFO, 'newsdesk_id='.$product_data['newsdesk_id']))) , PRIORITY_PRODUCTS, iso8601_date($date), CHANGEFREQ_PRODUCTS);
+      
+      output($string);
+      $strlen += strlen($string);
+      
+      $c++;
+      if ($autogenerate) {
+        // 500000 entrys or filesize > 10,485,760 - some space for the last entry
+        if ( $c == MAX_ENTRYS || $strlen >= MAX_SIZE) {
+          output(SITEMAP_FOOTER);
+          $function_close($fp);
+          $c = 0;
+          $i++;
+          $fp = $function_open('sitemap'.$i.$file_extension, 'w');
+          output(SITEMAP_HEADER);
+          $strlen = strlen(SITEMAP_HEADER);
+        }
+      }
+    }
+  }
+
+  $product_result = tep_db_query("
+    SELECT
+      f.faqdesk_id,
+      fd.faqdesk_question,
+      fd.language_id,
+      UNIX_TIMESTAMP(f.faqdesk_date_added) as date_added,
+      UNIX_TIMESTAMP(f.faqdesk_last_modified) as last_modified,
+      l.code
+    FROM
+      ".TABLE_FAQDESK." f, 
+      ".TABLE_FAQDESK_DESCRIPTION." fd,
+      ".TABLE_LANGUAGES." l
+    WHERE fd.language_id = '".(int)$languages_id."' and 
+      f.faqdesk_status='1' AND
+      f.faqdesk_id = fd.faqdesk_id AND
+      fd.language_id = l.languages_id
+    ORDER BY
+      f.faqdesk_id
+  ");
+
+  if (tep_db_num_rows($product_result) > 0) {
+    while($product_data = tep_db_fetch_array($product_result)) {
+    
+      $lang_param = ($product_data['code'] != DEFAULT_LANGUAGE) ? '&language='.$product_data['code'] : '';
+      $date = ($product_data['last_modified'] != NULL) ? $product_data['last_modified'] : $product_data['date_added'];
+      
+      $string = sprintf(SITEMAP_ENTRY, htmlspecialchars(utf8_encode(tep_href_link(FILENAME_FAQDESK_INFO, 'faqdesk_id='.$product_data['faqdesk_id']))) , PRIORITY_PRODUCTS, iso8601_date($date), CHANGEFREQ_PRODUCTS);
+      
+      output($string);
+      $strlen += strlen($string);
+      
+      $c++;
+      if ($autogenerate) {
+        // 500000 entrys or filesize > 10,485,760 - some space for the last entry
+        if ( $c == MAX_ENTRYS || $strlen >= MAX_SIZE) {
+          output(SITEMAP_FOOTER);
+          $function_close($fp);
+          $c = 0;
+          $i++;
+          $fp = $function_open('sitemap'.$i.$file_extension, 'w');
+          output(SITEMAP_HEADER);
+          $strlen = strlen(SITEMAP_HEADER);
+        }
+      }
+    }
+  }
 
   output(SITEMAP_FOOTER);
   if ($output_to_file || $autogenerate) {
