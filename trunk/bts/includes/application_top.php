@@ -814,7 +814,7 @@ if (!tep_session_is_registered('customer_id') && ENABLE_PAGE_CACHE == 'true') {
 function CanonicalUrl() {
 $domain = substr((($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER), 0); // gets the base URL minus the trailing slash
 $string = $_SERVER['REQUEST_URI']; // gets the url
-$search = '/\&osCsid.*|\?osCsid.*|\?sort.*|\&sort.*|\?direction.*|\&direction.*|\?on_page.*|\&on_page.*|\&cat.*|\&filter_id.*|\&manufacturers_id.*|\&params.*|\?q.*|\&q.*|\?price_min.*|\&price_min.*|\?price_max.*|\&price_max.*/'; // searches for the session id in the url
+$search = '/\&osCsid.[^\&\?]*|\?osCsid.[^\&\?]*|\?sort.[^\&\?]*|\&sort.[^\&\?]*|\?direction.[^\&\?]*|\&direction.[^\&\?]*|\?on_page.[^\&\?]*|\&on_page.[^\&\?]*|\?page=1|\&page=1|\&cat.[^\&\?]*|\&filter_id.[^\&\?]*|\&manufacturers_id.[^\&\?]*|\&params.[^\&\?]*|\?q.[^\&\?]*|\&q.[^\&\?]*|\?price_min.[^\&\?]*|\&price_min.[^\&\?]*|\?price_max.[^\&\?]*|\&price_max.[^\&\?]*/'; // searches for the session id in the url
 $replace = ''; // replaces with nothing i.e. deletes
 echo $domain . preg_replace( $search, $replace, $string ); // merges the variables and echoing them
 }
