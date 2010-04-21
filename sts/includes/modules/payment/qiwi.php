@@ -297,7 +297,7 @@
 			$params = array(
 			'login' => MODULE_PAYMENT_QIWI_ID,
 			'password' => MODULE_PAYMENT_QIWI_SECRET_KEY,
-			'user' => $_POST['qiwi_telephone'],
+			'user' => $_SESSION['qiwi_telephone'],
 			'amount' => number_format($order->info['total'],0),
 			'comment' => substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1),
 			'txn' => substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1),
@@ -323,7 +323,7 @@
 			//}
 			//}
 
-	      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_prepare_input((int)substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1)) . "', '" . tep_db_prepare_input($_POST['kvit_name']) . "', '" . tep_db_prepare_input($_POST['qiwi_telephone']) ."')");
+	      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_prepare_input((int)substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1)) . "', '" . tep_db_prepare_input($_SESSION['kvit_name']) . "', '" . tep_db_prepare_input($_SESSION['qiwi_telephone']) ."')");
 
         }
 
