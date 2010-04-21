@@ -91,8 +91,8 @@
 
 	function pre_confirmation_check() {
 
-        $this->name = tep_db_prepare_input($_POST['kvit_name']);
-        $this->address = tep_db_prepare_input($_POST['kvit_address']);
+        $this->name = tep_db_prepare_input($_SESSION['kvit_name']);
+        $this->address = tep_db_prepare_input($_SESSION['kvit_address']);
 
 	}
 
@@ -119,7 +119,7 @@
 	function after_process() {
 
       global $insert_id, $name, $address, $checkout_form_action, $checkout_form_submit;
-      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_prepare_input($insert_id) . "', '" . tep_db_prepare_input($_POST['kvit_name']) . "', '" . tep_db_prepare_input($_POST['kvit_address']) ."')");
+      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_prepare_input($insert_id) . "', '" . tep_db_prepare_input($_SESSION['kvit_name']) . "', '" . tep_db_prepare_input($_SESSION['kvit_address']) ."')");
 
 	}
 
