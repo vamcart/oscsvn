@@ -52,6 +52,11 @@ $cot_gv = $_POST['cot_gv'];
     $comments = tep_db_prepare_input($_POST['comments']);
   }
 
+if (!isset($_SESSION['kvit_name'])) $_SESSION['kvit_name'] = $_POST['kvit_name'];
+if (!isset($_SESSION['kvit_address'])) $_SESSION['kvit_address'] = $_POST['kvit_address'];
+
+if (!isset($_SESSION['qiwi_telephone'])) $_SESSION['qiwi_telephone'] = $_POST['qiwi_telephone'];
+
 // load the selected payment module
   require(DIR_WS_CLASSES . 'payment.php');
 //  if ($credit_covers) $payment=''; //ICW added for CREDIT CLASS
