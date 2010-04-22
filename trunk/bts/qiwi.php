@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: qiwi.php 106 2010-04-14 13:37:44Z oleg_vamsoft $
+  $Id: qiwi.php 106 2010-04-21 13:37:44Z oleg_vamsoft $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
