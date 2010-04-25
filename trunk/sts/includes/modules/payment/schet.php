@@ -77,24 +77,24 @@
       	                                         'field' => MODULE_PAYMENT_SCHET_J_NAME_DESC),
       	                                   array('title' => MODULE_PAYMENT_SCHET_J_NAME,
       	                                         'field' => tep_draw_input_field('s_name',$payment_info['name']) . MODULE_PAYMENT_SCHET_J_NAME_IP),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_INN,
-      	                                         'field' => tep_draw_input_field('s_inn',$payment_info['inn'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_KPP,
-      	                                         'field' => tep_draw_input_field('s_kpp',$payment_info['kpp'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_OGRN,
-      	                                         'field' => tep_draw_input_field('s_ogrn',$payment_info['ogrn'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_OKPO,
-      	                                         'field' => tep_draw_input_field('s_okpo',$payment_info['okpo'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_RS,
-      	                                         'field' => tep_draw_input_field('s_rs',$payment_info['rs'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_BANK_NAME,
-      	                                         'field' => tep_draw_input_field('s_bank_name',$payment_info['bank_name']) . MODULE_PAYMENT_SCHET_J_BANK_NAME_HELP),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_BIK,
-      	                                         'field' => tep_draw_input_field('s_bik',$payment_info['bik'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_KS,
-      	                                         'field' => tep_draw_input_field('s_ks',$payment_info['ks'])),
-      	                                   array('title' => MODULE_PAYMENT_SCHET_J_ADDRESS,
-      	                                         'field' => tep_draw_input_field('s_address',$payment_info['address']) . MODULE_PAYMENT_SCHET_J_ADDRESS_HELP),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_INN,
+//      	                                         'field' => tep_draw_input_field('s_inn',$payment_info['inn'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_KPP,
+//      	                                         'field' => tep_draw_input_field('s_kpp',$payment_info['kpp'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_OGRN,
+//      	                                         'field' => tep_draw_input_field('s_ogrn',$payment_info['ogrn'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_OKPO,
+//      	                                         'field' => tep_draw_input_field('s_okpo',$payment_info['okpo'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_RS,
+//      	                                         'field' => tep_draw_input_field('s_rs',$payment_info['rs'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_BANK_NAME,
+//      	                                         'field' => tep_draw_input_field('s_bank_name',$payment_info['bank_name']) . MODULE_PAYMENT_SCHET_J_BANK_NAME_HELP),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_BIK,
+//      	                                         'field' => tep_draw_input_field('s_bik',$payment_info['bik'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_KS,
+//      	                                         'field' => tep_draw_input_field('s_ks',$payment_info['ks'])),
+//      	                                   array('title' => MODULE_PAYMENT_SCHET_J_ADDRESS,
+//      	                                         'field' => tep_draw_input_field('s_address',$payment_info['address']) . MODULE_PAYMENT_SCHET_J_ADDRESS_HELP),
 //      	                                   array('title' => MODULE_PAYMENT_SCHET_J_YUR_ADDRESS,
 //      	                                         'field' => tep_draw_input_field('s_yur_address',$payment_info['yur_address'])),
 //      	                                   array('title' => MODULE_PAYMENT_SCHET_J_FAKT_ADDRESS,
@@ -118,23 +118,23 @@
 
 	function pre_confirmation_check() {
 
-        $this->name = tep_db_prepare_input($_POST['s_name']);
-        $this->inn = tep_db_prepare_input($_POST['s_inn']);
-        $this->kpp = tep_db_prepare_input($_POST['s_kpp']);
-        $this->ogrn = tep_db_prepare_input($_POST['s_ogrn']);
-        $this->okpo = tep_db_prepare_input($_POST['s_okpo']);
-        $this->rs = tep_db_prepare_input($_POST['s_rs']);
-        $this->bank_name = tep_db_prepare_input($_POST['s_bank_name']);
-        $this->bik = tep_db_prepare_input($_POST['s_bik']);
-        $this->ks = tep_db_prepare_input($_POST['s_ks']);
-        $this->address = tep_db_prepare_input($_POST['s_address']);
-        $this->yur_address = tep_db_prepare_input($_POST['s_yur_address']);
-        $this->fakt_address = tep_db_prepare_input($_POST['s_fakt_address']);
-        $this->telephone = tep_db_prepare_input($_POST['s_telephone']);
-        $this->fax = tep_db_prepare_input($_POST['s_fax']);
-        $this->email = tep_db_prepare_input($_POST['s_email']);
-        $this->director = tep_db_prepare_input($_POST['s_director']);
-        $this->accountant = tep_db_prepare_input($_POST['s_accountant']);
+        $this->name = tep_db_prepare_input($_SESSION['s_name']);
+        $this->inn = tep_db_prepare_input($_SESSION['s_inn']);
+        $this->kpp = tep_db_prepare_input($_SESSION['s_kpp']);
+        $this->ogrn = tep_db_prepare_input($_SESSION['s_ogrn']);
+        $this->okpo = tep_db_prepare_input($_SESSION['s_okpo']);
+        $this->rs = tep_db_prepare_input($_SESSION['s_rs']);
+        $this->bank_name = tep_db_prepare_input($_SESSION['s_bank_name']);
+        $this->bik = tep_db_prepare_input($_SESSION['s_bik']);
+        $this->ks = tep_db_prepare_input($_SESSION['s_ks']);
+        $this->address = tep_db_prepare_input($_SESSION['s_address']);
+        $this->yur_address = tep_db_prepare_input($_SESSION['s_yur_address']);
+        $this->fakt_address = tep_db_prepare_input($_SESSION['s_fakt_address']);
+        $this->telephone = tep_db_prepare_input($_SESSION['s_telephone']);
+        $this->fax = tep_db_prepare_input($_SESSION['s_fax']);
+        $this->email = tep_db_prepare_input($_SESSION['s_email']);
+        $this->director = tep_db_prepare_input($_SESSION['s_director']);
+        $this->accountant = tep_db_prepare_input($_SESSION['s_accountant']);
 
 	}
 
@@ -176,7 +176,7 @@
 	function after_process() {
 
       global $insert_id, $name, $inn, $kpp, $ogrn, $okpo, $rs, $bank_name, $bik, $ks, $address, $yur_address, $fakt_address, $telephone, $fax, $email, $director, $accountant, $checkout_form_action, $checkout_form_submit;
-      tep_db_query("INSERT INTO ".TABLE_COMPANIES." (orders_id, name, inn, kpp, ogrn, okpo, rs, bank_name, bik, ks, address, yur_address, fakt_address, telephone, fax, email, director, accountant) VALUES ('" . tep_db_prepare_input($insert_id) . "', '" . tep_db_prepare_input($_POST['name']) . "', '" . tep_db_prepare_input($_POST['inn']) . "', '" . tep_db_prepare_input($_POST['kpp']) . "', '" . tep_db_prepare_input($_POST['ogrn']) ."', '" . tep_db_prepare_input($_POST['okpo']) ."', '" . tep_db_prepare_input($_POST['rs']) ."', '" . tep_db_prepare_input($_POST['bank_name']) ."', '" . tep_db_prepare_input($_POST['bik']) ."', '" . tep_db_prepare_input($_POST['ks']) ."', '" . tep_db_prepare_input($_POST['address']) ."', '" . tep_db_prepare_input($_POST['yur_address']) ."', '" . tep_db_prepare_input($_POST['fakt_address']) ."', '" . tep_db_prepare_input($_POST['telephone']) ."', '" . tep_db_prepare_input($_POST['fax']) ."', '" . tep_db_prepare_input($_POST['email']) ."', '" . tep_db_prepare_input($_POST['director']) ."', '" . tep_db_prepare_input($_POST['accountant']) ."')");
+      tep_db_query("INSERT INTO ".TABLE_COMPANIES." (orders_id, name, inn, kpp, ogrn, okpo, rs, bank_name, bik, ks, address, yur_address, fakt_address, telephone, fax, email, director, accountant) VALUES ('" . tep_db_prepare_input($insert_id) . "', '" . tep_db_prepare_input($_SESSION['name']) . "', '" . tep_db_prepare_input($_SESSION['inn']) . "', '" . tep_db_prepare_input($_SESSION['kpp']) . "', '" . tep_db_prepare_input($_SESSION['ogrn']) ."', '" . tep_db_prepare_input($_SESSION['okpo']) ."', '" . tep_db_prepare_input($_SESSION['rs']) ."', '" . tep_db_prepare_input($_SESSION['bank_name']) ."', '" . tep_db_prepare_input($_SESSION['bik']) ."', '" . tep_db_prepare_input($_SESSION['ks']) ."', '" . tep_db_prepare_input($_SESSION['address']) ."', '" . tep_db_prepare_input($_SESSION['yur_address']) ."', '" . tep_db_prepare_input($_SESSION['fakt_address']) ."', '" . tep_db_prepare_input($_SESSION['telephone']) ."', '" . tep_db_prepare_input($_SESSION['fax']) ."', '" . tep_db_prepare_input($_SESSION['email']) ."', '" . tep_db_prepare_input($_SESSION['director']) ."', '" . tep_db_prepare_input($_SESSION['accountant']) ."')");
 
 	}
 
