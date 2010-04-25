@@ -144,23 +144,23 @@
 
 	function process_button() {
 
-      $process_button_string = tep_draw_hidden_field('name', $this->name) .
-                               tep_draw_hidden_field('inn', $this->inn).
-                               tep_draw_hidden_field('kpp', $this->kpp).
-                               tep_draw_hidden_field('ogrn', $this->ogrn).
-                               tep_draw_hidden_field('okpo', $this->okpo).
-                               tep_draw_hidden_field('rs', $this->rs).
-                               tep_draw_hidden_field('bank_name', $this->bank_name).
-                               tep_draw_hidden_field('bik', $this->bik).
-                               tep_draw_hidden_field('ks', $this->ks).
-                               tep_draw_hidden_field('address', $this->address).
-                               tep_draw_hidden_field('yur_address', $this->yur_address).
-                               tep_draw_hidden_field('fakt_address', $this->fakt_address) .
-                               tep_draw_hidden_field('telephone', $this->telephone) .
-                               tep_draw_hidden_field('fax', $this->fax) .
-                               tep_draw_hidden_field('email', $this->email) .
-                               tep_draw_hidden_field('director', $this->director) .
-                               tep_draw_hidden_field('accountant', $this->accountant);
+      $process_button_string = tep_draw_hidden_field('s_name', $this->name) .
+                               tep_draw_hidden_field('s_inn', $this->inn).
+                               tep_draw_hidden_field('s_kpp', $this->kpp).
+                               tep_draw_hidden_field('s_ogrn', $this->ogrn).
+                               tep_draw_hidden_field('s_okpo', $this->okpo).
+                               tep_draw_hidden_field('s_rs', $this->rs).
+                               tep_draw_hidden_field('s_bank_name', $this->bank_name).
+                               tep_draw_hidden_field('s_bik', $this->bik).
+                               tep_draw_hidden_field('s_ks', $this->ks).
+                               tep_draw_hidden_field('s_address', $this->address).
+                               tep_draw_hidden_field('s_yur_address', $this->yur_address).
+                               tep_draw_hidden_field('s_fakt_address', $this->fakt_address) .
+                               tep_draw_hidden_field('s_telephone', $this->telephone) .
+                               tep_draw_hidden_field('s_fax', $this->fax) .
+                               tep_draw_hidden_field('s_email', $this->email) .
+                               tep_draw_hidden_field('s_director', $this->director) .
+                               tep_draw_hidden_field('s_accountant', $this->accountant);
 
       return $process_button_string;
 
@@ -176,7 +176,7 @@
 	function after_process() {
 
       global $insert_id, $name, $inn, $kpp, $ogrn, $okpo, $rs, $bank_name, $bik, $ks, $address, $yur_address, $fakt_address, $telephone, $fax, $email, $director, $accountant, $checkout_form_action, $checkout_form_submit;
-      tep_db_query("INSERT INTO ".TABLE_COMPANIES." (orders_id, name, inn, kpp, ogrn, okpo, rs, bank_name, bik, ks, address, yur_address, fakt_address, telephone, fax, email, director, accountant) VALUES ('" . tep_db_prepare_input($insert_id) . "', '" . tep_db_prepare_input($_SESSION['name']) . "', '" . tep_db_prepare_input($_SESSION['inn']) . "', '" . tep_db_prepare_input($_SESSION['kpp']) . "', '" . tep_db_prepare_input($_SESSION['ogrn']) ."', '" . tep_db_prepare_input($_SESSION['okpo']) ."', '" . tep_db_prepare_input($_SESSION['rs']) ."', '" . tep_db_prepare_input($_SESSION['bank_name']) ."', '" . tep_db_prepare_input($_SESSION['bik']) ."', '" . tep_db_prepare_input($_SESSION['ks']) ."', '" . tep_db_prepare_input($_SESSION['address']) ."', '" . tep_db_prepare_input($_SESSION['yur_address']) ."', '" . tep_db_prepare_input($_SESSION['fakt_address']) ."', '" . tep_db_prepare_input($_SESSION['telephone']) ."', '" . tep_db_prepare_input($_SESSION['fax']) ."', '" . tep_db_prepare_input($_SESSION['email']) ."', '" . tep_db_prepare_input($_SESSION['director']) ."', '" . tep_db_prepare_input($_SESSION['accountant']) ."')");
+      tep_db_query("INSERT INTO ".TABLE_COMPANIES." (orders_id, name, inn, kpp, ogrn, okpo, rs, bank_name, bik, ks, address, yur_address, fakt_address, telephone, fax, email, director, accountant) VALUES ('" . tep_db_prepare_input($insert_id) . "', '" . tep_db_prepare_input($_SESSION['s_name']) . "', '" . tep_db_prepare_input($_SESSION['s_inn']) . "', '" . tep_db_prepare_input($_SESSION['s_kpp']) . "', '" . tep_db_prepare_input($_SESSION['s_ogrn']) ."', '" . tep_db_prepare_input($_SESSION['s_okpo']) ."', '" . tep_db_prepare_input($_SESSION['s_rs']) ."', '" . tep_db_prepare_input($_SESSION['s_bank_name']) ."', '" . tep_db_prepare_input($_SESSION['s_bik']) ."', '" . tep_db_prepare_input($_SESSION['s_ks']) ."', '" . tep_db_prepare_input($_SESSION['s_address']) ."', '" . tep_db_prepare_input($_SESSION['s_yur_address']) ."', '" . tep_db_prepare_input($_SESSION['s_fakt_address']) ."', '" . tep_db_prepare_input($_SESSION['s_telephone']) ."', '" . tep_db_prepare_input($_SESSION['s_fax']) ."', '" . tep_db_prepare_input($_SESSION['s_email']) ."', '" . tep_db_prepare_input($_SESSION['s_director']) ."', '" . tep_db_prepare_input($_SESSION['s_accountant']) ."')");
 
 	}
 
