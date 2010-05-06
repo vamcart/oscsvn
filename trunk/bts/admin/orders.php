@@ -327,7 +327,9 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 				<li><a href="#orders"><?php echo TEXT_ORDER_SUMMARY; ?></a></li>
 				<li><a href="#customers"><?php echo TEXT_ORDER_PAYMENT; ?></a></li>
 				<li><a href="#products"><?php echo TEXT_ORDER_PRODUCTS; ?></a></li>
+<?php if (ENABLE_MAP_TAB == 'true') { ?>
 				<li><a href="#map" id="getmap"><?php echo TEXT_ORDER_MAP; ?></a></li>
+<?php } ?>
 				<li><a href="#status"><?php echo TEXT_ORDER_STATUS; ?></a></li>
 			</ul>
 
