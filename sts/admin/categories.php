@@ -1821,8 +1821,13 @@ function updateNet(products_price_t) {
 ?>
 				<li><a href="#images"><?php echo TEXT_PRODUCTS_TAB_IMAGES; ?></a></li>
 				<li><a href="#prices"><?php echo TEXT_PRODUCTS_TAB_PRICE; ?></a></li>
+<?php
+ if (ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE == 'true') {
+?>
 				<li><a href="#options"><?php echo TEXT_PRODUCTS_TAB_ATTRIBUTES; ?></a></li>
-				<li><a href="#specs"><?php echo TEXT_TAB_SPECIFICATIONS; ?></a></li>
+<?php
+}
+?>				<li><a href="#specs"><?php echo TEXT_TAB_SPECIFICATIONS; ?></a></li>
 			</ul>
 
         <div id="data">
