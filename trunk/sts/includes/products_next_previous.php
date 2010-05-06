@@ -35,10 +35,12 @@
 				if (!$current_category_id) {
 					$cPath_query = tep_db_query ("SELECT categories_id FROM " . TABLE_PRODUCTS_TO_CATEGORIES . " WHERE products_id ='" .  (int)$_GET['products_id'] . "'");
 					$cPath_row = tep_db_fetch_array($cPath_query);
-					$current_category_id = $cPath_row['categories_id'];
+				    if ($cPath_row = tep_db_fetch_array($cPath_query)) {
+      				$current_category_id = $cPath_row['categories_id'];
+    				}
 				}
-				$products_ids = tep_db_query("select p.products_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_TO_CATEGORIES . " ptc where p.products_status = '1'  and p.products_id = ptc.products_id and ptc.categories_id = $current_category_id");
-				$category_name_query = tep_db_query("select categories_name from " . TABLE_CATEGORIES_DESCRIPTION . " where categories_id = $current_category_id AND language_id = $languages_id");
+				$products_ids = tep_db_query("select p.products_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_TO_CATEGORIES . " ptc where p.products_status = '1'  and p.products_id = ptc.products_id and ptc.categories_id = '" . (int)$current_category_id . "'");
+				$category_name_query = tep_db_query("select categories_name from " . TABLE_CATEGORIES_DESCRIPTION . " where categories_id = '" . (int)$current_category_id . "' AND language_id = '" . (int)$languages_id . "'");
 				$category_name_row = tep_db_fetch_array($category_name_query);
 				$prev_next_in = PREV_NEXT_CAT . ($category_name_row['categories_name']);
 				$fPath = 'cPath=' . $cPath;
@@ -75,8 +77,8 @@
 ?>
     <table border="0" align="center" width="100%">
       <tr>
-        <td align="left" class="main"><a href="<?php echo tep_href_link(FILENAME_PRODUCT_INFO, "products_id=".$previous.$manufacturer); ?>"><?php echo tep_image_button('button_prev.gif', IMAGE_BUTTON_PREVIOUS); ?></a></td>
+        <td align="left" class="main"><?php if ($previous) { ?><a href="<?php echo tep_href_link(FILENAME_PRODUCT_INFO, "products_id=".$previous.$manufacturer); ?>"><?php echo tep_image_button('button_prev.gif', IMAGE_BUTTON_PREVIOUS); ?></a><?php } ?></td>
         <td align="center" class="main" valign="top"><?php echo (PREV_NEXT_PRODUCT); ?><?php echo ($position+1 . PREV_NEXT_PRODUCT1 . $counter . '<br>' . $prev_next_in); ?></td>
-        <td align="right" class="main">&nbsp;<a href="<?php echo tep_href_link(FILENAME_PRODUCT_INFO, "products_id=".$next_item.$manufacturer); ?>"><?php echo tep_image_button('button_next.gif', IMAGE_BUTTON_NEXT); ?></a></td>
+        <td align="right" class="main">&nbsp;<?php if ($next_item) { ?><a href="<?php echo tep_href_link(FILENAME_PRODUCT_INFO, "products_id=".$next_item.$manufacturer); ?>"><?php echo tep_image_button('button_next.gif', IMAGE_BUTTON_NEXT); ?></a><?php } ?></td>
       </tr>
     </table>
