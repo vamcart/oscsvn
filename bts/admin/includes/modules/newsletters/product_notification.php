@@ -208,7 +208,7 @@ function selectAll(FormName, SelectBox) {
 //      } else {
 //      $mimemessage->add_html($this->content);
 // MaxiDVD Added Line For WYSIWYG HTML Area: EOF (Send TEXT Product Notifications v1.7 when WYSIWYG Enabled)
-      }
+      //}
       
 //      $mimemessage->build_message();
 

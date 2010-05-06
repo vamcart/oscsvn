@@ -208,7 +208,7 @@ function selectAll(FormName, SelectBox) {
 //      } else {
 //      $mimemessage->add_html($this->content);
 // MaxiDVD Added Line For WYSIWYG HTML Area: EOF (Send TEXT Product Notifications v1.7 when WYSIWYG Enabled)
-      }
+      //}
       
 //      $mimemessage->build_message();
 
@@ -220,7 +220,6 @@ function selectAll(FormName, SelectBox) {
   } else {
       tep_mail($value['firstname'] . ' ' . $value['lastname'], $value['email_address'], $this->title, $this->content, STORE_OWNER, EMAIL_FROM);
   }
-
       }
 
       $newsletter_id = tep_db_prepare_input($newsletter_id);
