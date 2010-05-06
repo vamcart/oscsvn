@@ -19,7 +19,7 @@ require (DIR_WS_CLASSES.'order.php');
 
 // logging
 
-//$fp = fopen('liqpay.log', 'a+');
+//$fp = fopen('ik.log', 'a+');
 //$str=date('Y-m-d H:i:s').' - ';
 //foreach ($_POST as $vn=>$vv) {
 //  $str.=$vn.'='.$vv.';';
