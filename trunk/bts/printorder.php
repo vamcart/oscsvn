@@ -35,6 +35,9 @@
     tep_redirect(tep_href_link(FILENAME_DEFAULT, '', 'SSL'));
   }
   
+  $company_query = tep_db_query("SELECT * FROM " . TABLE_COMPANIES . " WHERE orders_id='". tep_db_input(tep_db_prepare_input($_GET['order_id'])) . "'");
+  $company = tep_db_fetch_array($company_query);
+
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
@@ -55,7 +58,7 @@
           <td colspan="2" class="pageHeading"><?php echo tep_draw_separator('pixel_trans.gif', '1', '20'); ?></td>
         </tr>
         <tr> 
-         <td colspan="2" class="pageHeading" align="right"><?php echo tep_image(DIR_WS_IMAGES . 'oscommerce.gif', TITLE_PRINT_ORDER ); ?></td>
+         <td colspan="2" class="pageHeading" align="right"><?php echo tep_image(DIR_WS_IMAGES . 'printorder.gif', TITLE_PRINT_ORDER ); ?></td>
         </tr>
 		<tr>
 		<td colspan="2">&nbsp;</td>
@@ -153,14 +156,26 @@
         <tr> 
           <td valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="2">
               <tr> 
-                <td class="main"> <?php echo   '<b>' . ENTRY_SOLD_TO . '</b>' . '&nbsp;' . $order->customer['company']; ?></td>
-                <td valign="top" class="main" align="right"><?php echo '<b>' . ENTRY_SOLD_TO_2 . '</b>' . '&nbsp;' . $order->customer['telephone']; ?></td>
+                <td class="main" width="20" valign="top"> 
+                  <?php if (tep_not_null($company['name'])) { echo '<b>' . ENTRY_SOLD_TO .'</b></td><td class="main" valign="top">' . $company['name'];
+                           if (tep_not_null($company['address'])) { echo ', ' . $company['address'] . ' '; }
+                           if (tep_not_null($company['rs'])) { echo ', <b>' . ENTRY_SOLD_TO_RS . '</b>&nbsp;' . $company['rs']; }
+                           if (tep_not_null($company['bank_name'])) { echo ', <b>' .  ENTRY_SOLD_TO_BANK_NAME . '</b>&nbsp;' . $company['bank_name']; }
+                           if (tep_not_null($company['ks'])) { echo ', <b>' . ENTRY_SOLD_TO_KS . '</b>&nbsp;' . $company['ks']; }
+                           if (tep_not_null($company['bik'])) { echo ', <b>' . ENTRY_SOLD_TO_BIK . '</b>&nbsp;' . $company['bik']; }
+                           if (tep_not_null($company['inn'])) { echo ', <b>' . ENTRY_SOLD_TO_INN . '</b>&nbsp;' . $company['inn']; }
+                           if (tep_not_null($company['kpp'])) { echo ', <b>' . ENTRY_SOLD_TO_KPP . '</b>&nbsp;' . $company['kpp']; }
+                        } else { echo '</td><td>'; } ?>
+                </td>
+                <td valign="top" class="main" align="right">
+                  <?php if (tep_not_null($company['telephone'])) { echo '<b>' . ENTRY_SOLD_TO_2 .'</b>&nbsp;' . $company['telephone']; } ?>
+                </td>
               </tr>
               <tr> 
-                <td class="main" colspan="2"><?php echo  '<b>' . ENTRY_SOLD_TO_1 . '</b>' . '&nbsp;' . $order->customer['name']; ?></td>
+                <td class="main" colspan="3"><?php echo  '<b>' . ENTRY_SOLD_TO_1 . '</b>' . '&nbsp;' . $order->customer['name']; ?></td>
               </tr>
 			  <tr> 
-                <td class="main" colspan="2"><?php echo  '<b>' . TITLE_PRINT_ORDER_NUM . '</b>' . '&nbsp;' . $_GET['order_id']; ?></td>
+                <td class="main" colspan="3"><?php echo  '<b>' . TITLE_PRINT_ORDER_NUM . '</b>' . '&nbsp;' . $_GET['order_id']; ?></td>
               </tr>
             </table></td>          
         </tr>
