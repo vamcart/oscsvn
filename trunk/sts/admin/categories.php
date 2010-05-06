@@ -1827,7 +1827,8 @@ function updateNet(products_price_t) {
 				<li><a href="#options"><?php echo TEXT_PRODUCTS_TAB_ATTRIBUTES; ?></a></li>
 <?php
 }
-?>				<li><a href="#specs"><?php echo TEXT_TAB_SPECIFICATIONS; ?></a></li>
+?>				
+				<li><a href="#specs"><?php echo TEXT_TAB_SPECIFICATIONS; ?></a></li>
 			</ul>
 
         <div id="data">
