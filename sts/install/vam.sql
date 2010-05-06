@@ -14,14 +14,14 @@ create table address_book (
   address_book_id int(11) not null auto_increment,
   customers_id int(11) default '0' not null ,
   entry_gender char(1) not null ,
-  entry_company varchar(32) ,
-  entry_firstname varchar(32) not null ,
-  entry_lastname varchar(32) not null ,
+  entry_company varchar(255) ,
+  entry_firstname varchar(255) not null ,
+  entry_lastname varchar(255) not null ,
   entry_street_address varchar(64) not null ,
-  entry_suburb varchar(32) ,
+  entry_suburb varchar(255) ,
   entry_postcode varchar(10) not null ,
-  entry_city varchar(32) not null ,
-  entry_state varchar(32) ,
+  entry_city varchar(255) not null ,
+  entry_state varchar(255) ,
   entry_country_id int(11) default '0' not null ,
   entry_zone_id int(11) default '0' not null ,
   PRIMARY KEY (address_book_id),
@@ -45,8 +45,8 @@ drop table if exists admin;
 create table admin (
   admin_id int(11) not null auto_increment,
   admin_groups_id int(11) ,
-  admin_firstname varchar(32) not null ,
-  admin_lastname varchar(32) ,
+  admin_firstname varchar(255) not null ,
+  admin_lastname varchar(255) ,
   admin_email_address varchar(96) not null ,
   admin_password varchar(40) not null ,
   admin_created datetime ,
@@ -232,19 +232,19 @@ drop table if exists affiliate_affiliate;
 create table affiliate_affiliate (
   affiliate_id int(11) not null auto_increment,
   affiliate_gender char(1) not null ,
-  affiliate_firstname varchar(32) not null ,
-  affiliate_lastname varchar(32) not null ,
+  affiliate_firstname varchar(255) not null ,
+  affiliate_lastname varchar(255) not null ,
   affiliate_dob datetime default '0000-00-00 00:00:00' not null ,
   affiliate_email_address varchar(96) not null ,
-  affiliate_telephone varchar(32) not null ,
-  affiliate_fax varchar(32) not null ,
+  affiliate_telephone varchar(255) not null ,
+  affiliate_fax varchar(255) not null ,
   affiliate_password varchar(40) not null ,
   affiliate_homepage varchar(96) not null ,
   affiliate_street_address varchar(64) not null ,
   affiliate_suburb varchar(64) not null ,
-  affiliate_city varchar(32) not null ,
+  affiliate_city varchar(255) not null ,
   affiliate_postcode varchar(10) not null ,
-  affiliate_state varchar(32) not null ,
+  affiliate_state varchar(255) not null ,
   affiliate_country_id int(11) default '0' not null ,
   affiliate_zone_id int(11) default '0' not null ,
   affiliate_agb tinyint(4) default '0' not null ,
@@ -345,15 +345,15 @@ create table affiliate_payment (
   affiliate_payment_date datetime default '0000-00-00 00:00:00' not null ,
   affiliate_payment_last_modified datetime default '0000-00-00 00:00:00' not null ,
   affiliate_payment_status int(5) default '0' not null ,
-  affiliate_firstname varchar(32) not null ,
-  affiliate_lastname varchar(32) not null ,
+  affiliate_firstname varchar(255) not null ,
+  affiliate_lastname varchar(255) not null ,
   affiliate_street_address varchar(64) not null ,
   affiliate_suburb varchar(64) not null ,
-  affiliate_city varchar(32) not null ,
+  affiliate_city varchar(255) not null ,
   affiliate_postcode varchar(10) not null ,
-  affiliate_country varchar(32) default '0' not null ,
+  affiliate_country varchar(255) default '0' not null ,
   affiliate_company varchar(60) not null ,
-  affiliate_state varchar(32) default '0' not null ,
+  affiliate_state varchar(255) default '0' not null ,
   affiliate_address_format_id int(5) default '0' not null ,
   affiliate_last_modified datetime default '0000-00-00 00:00:00' not null ,
   PRIMARY KEY (affiliate_payment_id)
@@ -363,7 +363,7 @@ drop table if exists affiliate_payment_status;
 create table affiliate_payment_status (
   affiliate_payment_status_id int(11) default '0' not null ,
   affiliate_language_id int(11) default '1' not null ,
-  affiliate_payment_status_name varchar(32) not null ,
+  affiliate_payment_status_name varchar(255) not null ,
   PRIMARY KEY (affiliate_payment_status_id, affiliate_language_id),
   KEY idx_affiliate_payment_status_name (affiliate_payment_status_name)
 );
@@ -472,7 +472,7 @@ insert into articles_xsell (ID, articles_id, xsell_id, sort_order) values ('1', 
 drop table if exists authors;
 create table authors (
   authors_id int(11) not null auto_increment,
-  authors_name varchar(32) not null ,
+  authors_name varchar(255) not null ,
   authors_image varchar(64) ,
   date_added datetime ,
   last_modified datetime ,
@@ -1151,9 +1151,9 @@ create table coupon_email_track (
   unique_id int(11) not null auto_increment,
   coupon_id int(11) default '0' not null ,
   customer_id_sent int(11) default '0' not null ,
-  sent_firstname varchar(32) ,
-  sent_lastname varchar(32) ,
-  emailed_to varchar(32) ,
+  sent_firstname varchar(255) ,
+  sent_lastname varchar(255) ,
+  emailed_to varchar(255) ,
   date_sent datetime default '0000-00-00 00:00:00' not null ,
   PRIMARY KEY (unique_id)
 );
@@ -1173,7 +1173,7 @@ create table coupon_gv_queue (
   order_id int(5) default '0' not null ,
   amount decimal(8,4) default '0.0000' not null ,
   date_created datetime default '0000-00-00 00:00:00' not null ,
-  ipaddr varchar(32) not null ,
+  ipaddr varchar(255) not null ,
   release_flag char(1) default 'N' not null ,
   PRIMARY KEY (unique_id),
   KEY uid (unique_id, customer_id, order_id)
@@ -1185,7 +1185,7 @@ create table coupon_redeem_track (
   coupon_id int(11) default '0' not null ,
   customer_id int(11) default '0' not null ,
   redeem_date datetime default '0000-00-00 00:00:00' not null ,
-  redeem_ip varchar(32) not null ,
+  redeem_ip varchar(255) not null ,
   order_id int(11) default '0' not null ,
   PRIMARY KEY (unique_id)
 );
@@ -1194,7 +1194,7 @@ drop table if exists coupons;
 create table coupons (
   coupon_id int(11) not null auto_increment,
   coupon_type char(1) default 'F' not null ,
-  coupon_code varchar(32) not null ,
+  coupon_code varchar(255) not null ,
   coupon_amount decimal(8,4) default '0.0000' not null ,
   coupon_minimum_order decimal(8,4) default '0.0000' not null ,
   coupon_start_date datetime default '0000-00-00 00:00:00' not null ,
@@ -1214,7 +1214,7 @@ drop table if exists coupons_description;
 create table coupons_description (
   coupon_id int(11) default '0' not null ,
   language_id int(11) default '0' not null ,
-  coupon_name varchar(32) not null ,
+  coupon_name varchar(255) not null ,
   coupon_description text ,
   KEY coupon_id (coupon_id)
 );
@@ -1222,7 +1222,7 @@ create table coupons_description (
 drop table if exists currencies;
 create table currencies (
   currencies_id int(11) not null auto_increment,
-  title varchar(32) not null ,
+  title varchar(255) not null ,
   code char(3) not null ,
   symbol_left varchar(12) ,
   symbol_right varchar(12) ,
@@ -1241,13 +1241,13 @@ drop table if exists customers;
 create table customers (
   customers_id int(11) not null auto_increment,
   customers_gender char(1) not null ,
-  customers_firstname varchar(32) not null ,
-  customers_lastname varchar(32) not null ,
+  customers_firstname varchar(255) not null ,
+  customers_lastname varchar(255) not null ,
   customers_dob datetime default '0000-00-00 00:00:00' not null ,
   customers_email_address varchar(96) not null ,
   customers_default_address_id int(11) ,
-  customers_telephone varchar(32) not null ,
-  customers_fax varchar(32) ,
+  customers_telephone varchar(255) not null ,
+  customers_fax varchar(255) ,
   customers_password varchar(40) not null ,
   customers_newsletter char(1) ,
   customers_selected_template varchar(20) not null ,
@@ -1288,7 +1288,7 @@ create table customers_basket_attributes (
 drop table if exists customers_groups;
 create table customers_groups (
   customers_groups_id int(11) not null auto_increment,
-  customers_groups_name varchar(32) not null ,
+  customers_groups_name varchar(255) not null ,
   customers_groups_discount decimal(8,2) default '-0.00' not null ,
   customers_groups_price int(11) default '1' not null ,
   customers_groups_accumulated_limit decimal(15,4) default '0.0000' not null ,
@@ -1357,7 +1357,7 @@ drop table if exists extra_fields_info;
 create table extra_fields_info (
   fields_id int(11) default '0' not null ,
   languages_id int(11) default '0' not null ,
-  fields_name varchar(32) not null 
+  fields_name varchar(255) not null 
 );
 
 drop table if exists extra_product_price;
@@ -1414,7 +1414,7 @@ drop table if exists faqdesk_categories_description;
 create table faqdesk_categories_description (
   categories_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  categories_name varchar(32) not null ,
+  categories_name varchar(255) not null ,
   categories_heading_title varchar(64) ,
   categories_description text ,
   PRIMARY KEY (categories_id, language_id),
@@ -1551,7 +1551,7 @@ insert into featured (featured_id, products_id, featured_date_added, featured_la
 drop table if exists geo_zones;
 create table geo_zones (
   geo_zone_id int(11) not null auto_increment,
-  geo_zone_name varchar(32) not null ,
+  geo_zone_name varchar(255) not null ,
   geo_zone_description varchar(255) not null ,
   last_modified datetime ,
   date_added datetime default '0000-00-00 00:00:00' not null ,
@@ -1562,10 +1562,10 @@ insert into geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_mo
 drop table if exists languages;
 create table languages (
   languages_id int(11) not null auto_increment,
-  name varchar(32) not null ,
+  name varchar(255) not null ,
   code char(2) not null ,
   image varchar(64) ,
-  directory varchar(32) ,
+  directory varchar(255) ,
   sort_order int(3) ,
   PRIMARY KEY (languages_id),
   KEY IDX_LANGUAGES_NAME (name)
@@ -1600,7 +1600,7 @@ drop table if exists link_categories_description;
 create table link_categories_description (
   link_categories_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  link_categories_name varchar(32) not null ,
+  link_categories_name varchar(255) not null ,
   link_categories_description text ,
   PRIMARY KEY (link_categories_id, language_id),
   KEY idx_link_categories_name (link_categories_name)
@@ -1640,7 +1640,7 @@ drop table if exists links_status;
 create table links_status (
   links_status_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  links_status_name varchar(32) not null ,
+  links_status_name varchar(255) not null ,
   PRIMARY KEY (links_status_id, language_id),
   KEY idx_links_status_name (links_status_name)
 );
@@ -1746,7 +1746,7 @@ drop table if exists newsdesk_categories_description;
 create table newsdesk_categories_description (
   categories_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  categories_name varchar(32) not null ,
+  categories_name varchar(255) not null ,
   PRIMARY KEY (categories_id, language_id),
   KEY idx_categories_name (categories_name)
 );
@@ -1887,39 +1887,39 @@ create table orders (
   customers_id int(11) default '0' not null ,
   customers_groups_id int(11) default '0' not null ,
   customers_name varchar(64) not null ,
-  customers_company varchar(32) ,
+  customers_company varchar(255) ,
   customers_street_address varchar(64) not null ,
-  customers_suburb varchar(32) ,
-  customers_city varchar(32) not null ,
+  customers_suburb varchar(255) ,
+  customers_city varchar(255) not null ,
   customers_postcode varchar(10) not null ,
-  customers_state varchar(32) ,
-  customers_country varchar(32) not null ,
-  customers_telephone varchar(32) not null ,
+  customers_state varchar(255) ,
+  customers_country varchar(255) not null ,
+  customers_telephone varchar(255) not null ,
   customers_email_address varchar(96) not null ,
   customers_address_format_id int(5) default '0' not null ,
   delivery_name varchar(64) not null ,
-  delivery_company varchar(32) ,
+  delivery_company varchar(255) ,
   delivery_street_address varchar(64) not null ,
-  delivery_suburb varchar(32) ,
-  delivery_city varchar(32) not null ,
+  delivery_suburb varchar(255) ,
+  delivery_city varchar(255) not null ,
   delivery_postcode varchar(10) not null ,
-  delivery_state varchar(32) ,
-  delivery_country varchar(32) not null ,
+  delivery_state varchar(255) ,
+  delivery_country varchar(255) not null ,
   delivery_address_format_id int(5) default '0' not null ,
   billing_name varchar(64) not null ,
-  billing_company varchar(32) ,
+  billing_company varchar(255) ,
   billing_street_address varchar(64) not null ,
-  billing_suburb varchar(32) ,
-  billing_city varchar(32) not null ,
+  billing_suburb varchar(255) ,
+  billing_city varchar(255) not null ,
   billing_postcode varchar(10) not null ,
-  billing_state varchar(32) ,
-  billing_country varchar(32) not null ,
+  billing_state varchar(255) ,
+  billing_country varchar(255) not null ,
   billing_address_format_id int(5) default '0' not null ,
   payment_method varchar(255) not null ,
   payment_info text ,
   cc_type varchar(20) ,
   cc_owner varchar(64) ,
-  cc_number varchar(32) ,
+  cc_number varchar(255) ,
   cc_expires varchar(4) ,
   last_modified datetime ,
   date_purchased datetime ,
@@ -1928,7 +1928,7 @@ create table orders (
   currency char(3) ,
   currency_value decimal(14,6) ,
   customers_referer_url varchar(255) ,
-  customers_fax varchar(32) not null ,
+  customers_fax varchar(255) not null ,
   shipping_module varchar(255) ,
   PRIMARY KEY (orders_id),
   KEY idx_orders_customers_id (customers_id)
@@ -1955,8 +1955,8 @@ create table orders_products_attributes (
   orders_products_attributes_id int(11) not null auto_increment,
   orders_id int(11) default '0' not null ,
   orders_products_id int(11) default '0' not null ,
-  products_options varchar(32) not null ,
-  products_options_values varchar(32) not null ,
+  products_options varchar(255) not null ,
+  products_options_values varchar(255) not null ,
   options_values_price decimal(15,4) default '0.0000' not null ,
   price_prefix char(1) not null ,
   PRIMARY KEY (orders_products_attributes_id),
@@ -1979,7 +1979,7 @@ drop table if exists orders_status;
 create table orders_status (
   orders_status_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  orders_status_name varchar(32) not null ,
+  orders_status_name varchar(255) not null ,
   PRIMARY KEY (orders_status_id, language_id),
   KEY idx_orders_status_name (orders_status_name)
 );
@@ -2015,7 +2015,7 @@ create table orders_total (
   title varchar(255) not null ,
   text varchar(255) not null ,
   value decimal(15,4) default '0.0000' not null ,
-  class varchar(32) not null ,
+  class varchar(255) not null ,
   sort_order int(11) default '0' not null ,
   PRIMARY KEY (orders_total_id),
   KEY idx_orders_total_orders_id (orders_id)
@@ -2356,11 +2356,11 @@ drop table if exists products_options;
 create table products_options (
   products_options_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  products_options_name varchar(32) not null ,
+  products_options_name varchar(255) not null ,
   products_options_sort_order int(4) default '0' not null ,
   products_options_type int(5) default '0' not null ,
   products_options_length smallint(2) default '32' not null ,
-  products_options_comment varchar(32) ,
+  products_options_comment varchar(255) ,
   products_options_images_enabled varchar(5) NOT NULL default 'false',
   PRIMARY KEY (products_options_id, language_id)
 );
@@ -2400,7 +2400,7 @@ create table products_prop_options (
   products_options_id int(11) default '1' not null ,
   categories_options_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  products_options_name varchar(32) not null ,
+  products_options_name varchar(255) not null ,
   PRIMARY KEY (products_options_id, language_id)
 );
 
@@ -2537,7 +2537,7 @@ create table searchword_swap (
 
 drop table if exists sessions;
 create table sessions (
-  sesskey varchar(32) not null ,
+  sesskey varchar(255) not null ,
   expiry int(11) unsigned default '0' not null ,
   value text ,
   PRIMARY KEY (sesskey)
@@ -2625,7 +2625,7 @@ create table special_product (
 drop table if exists tax_class;
 create table tax_class (
   tax_class_id int(11) not null auto_increment,
-  tax_class_title varchar(32) not null ,
+  tax_class_title varchar(255) not null ,
   tax_class_description varchar(255) not null ,
   last_modified datetime ,
   date_added datetime default '0000-00-00 00:00:00' not null ,
@@ -2664,7 +2664,7 @@ drop table if exists topics_description;
 create table topics_description (
   topics_id int(11) default '0' not null ,
   language_id int(11) default '1' not null ,
-  topics_name varchar(32) not null ,
+  topics_name varchar(255) not null ,
   topics_heading_title varchar(64) ,
   topics_description text ,
   PRIMARY KEY (topics_id, language_id),
@@ -3067,7 +3067,7 @@ CREATE TABLE IF NOT EXISTS `specifications` (
   `show_comparison` set('True','False') NOT NULL DEFAULT 'True',
   `show_products` set('True','False') NOT NULL DEFAULT 'True',
   `show_filter` set('True','False') NOT NULL DEFAULT 'True',
-  `products_column_name` varchar(32) NOT NULL,
+  `products_column_name` varchar(255) NOT NULL,
   `column_justify` set('Left','Center','Right') NOT NULL DEFAULT 'Left',
   `filter_class` set('none','exact','multiple','range','reverse','start','partial','like') NOT NULL DEFAULT 'none',
   `filter_display` set('pulldown','multi','checkbox','radio','links','text','image','multiimage') NOT NULL DEFAULT 'pulldown',
@@ -3089,7 +3089,7 @@ CREATE TABLE IF NOT EXISTS `specification_description` (
   `specification_description_id` int(11) NOT NULL AUTO_INCREMENT,
   `specifications_id` int(11) NOT NULL DEFAULT '0',
   `language_id` int(11) NOT NULL DEFAULT '1',
-  `specification_name` varchar(32) NOT NULL DEFAULT '',
+  `specification_name` varchar(255) NOT NULL DEFAULT '',
   `specification_description` varchar(128) NOT NULL,
   `specification_prefix` varchar(128) NOT NULL DEFAULT '',
   `specification_suffix` varchar(128) NOT NULL DEFAULT '',
