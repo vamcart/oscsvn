@@ -30,22 +30,30 @@ class sts_product_info {
   // Private function to check if there is a content template for products.
 
     // Is there a content template for this particular product?
-	$check_file= STS_TEMPLATE_DIR . "content/product_info.php_$products_id.html"; 
-	if (file_exists($check_file)) return $check_file;
-	  
-	// Is there a category-specific content template file like "product_info.php_c1_17.html", then "product_info.php_c1.html
-	while ($sts_cpath != "") {
+    $check_file= STS_TEMPLATE_DIR . "content/product_info.php_$products_id.html";
+    if (file_exists($check_file)) return $check_file;
+
+    // Is there a category-specific content template file like "product_info.php_c1_17.html", then "product_info.php_c1.html
+    while ($sts_cpath != "") {
       $check_file = STS_TEMPLATE_DIR . "content/product_info.php_c$sts_cpath.html";
       if (file_exists($check_file)) return $check_file;
-	  $sts_cpath = substr($sts_cpath, 0, (strrpos($sts_cpath, "_")));
-	} //end while
+      $sts_cpath = substr($sts_cpath, 0, (strrpos($sts_cpath, "_")));
+    } //end while
 
-	// or is there a general content template for products
-	$check_file= STS_TEMPLATE_DIR . "content/product_info.php.html"; 
-	if (file_exists($check_file)) return $check_file;
-	
-	// If no content template found, return empty string
-	return '';
+    global $languages_id;
+    $product_check_query = tep_db_query("select count(*) as total from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$products_id . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
+    $product_check = tep_db_fetch_array($product_check_query);
+    if ($product_check['total'] == 0) {
+      $check_file= STS_TEMPLATE_DIR . "content/product_not_found.php.html";
+      if (file_exists($check_file)) return $check_file;      
+    }
+
+    // or is there a general content template for products
+    $check_file= STS_TEMPLATE_DIR . "content/product_info.php.html";
+    if (file_exists($check_file)) return $check_file;
+
+    // If no content template found, return empty string
+    return '';
   }
 
   function find_template (){
