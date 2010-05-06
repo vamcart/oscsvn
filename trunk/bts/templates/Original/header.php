@@ -13,7 +13,7 @@ define('DIR_WS_TEMPLATE_IMAGES', 'templates/Original/images/');
 
 // WebMakers.com Added: Down for Maintenance
 // Hide header if not to show
-if (DOWN_FOR_MAINTENANCE_HEADER_OFF =='false') {
+if (DOWN_FOR_MAINTENANCE_HEADER_OFF =='false' || DOWN_FOR_MAINTENANCE == 'false') {
 
 if (SITE_WIDTH!='100%') {
 ?>

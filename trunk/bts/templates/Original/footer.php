@@ -14,7 +14,7 @@
 
 // WebMakers.com Added: Down for Maintenance
 // Hide footer.php if not to show
-if (DOWN_FOR_MAINTENANCE_FOOTER_OFF =='false') {
+if (DOWN_FOR_MAINTENANCE_FOOTER_OFF =='false' || DOWN_FOR_MAINTENANCE == 'false') {
   require(DIR_WS_INCLUDES . 'counter.php');
 ?>
 <table border="0" width="100%" cellspacing="0" cellpadding="1">
