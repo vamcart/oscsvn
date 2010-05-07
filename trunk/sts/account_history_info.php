@@ -145,7 +145,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
   for ($i=0, $n=sizeof($order->products); $i<$n; $i++) {
     echo '          <tr>' . "\n" .
          '            <td class="main" align="right" valign="top" width="30">' . $order->products[$i]['qty'] . '&nbsp;x</td>' . "\n" .
-         '            <td class="main" valign="top">' . $order->products[$i]['name'];
+         '            <td class="main" valign="top"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $order->products[$i]['id']) . '">' . $order->products[$i]['name'] . '</a>';
 
     if ( (isset($order->products[$i]['attributes'])) && (sizeof($order->products[$i]['attributes']) > 0) ) {
       for ($j=0, $n2=sizeof($order->products[$i]['attributes']); $j<$n2; $j++) {
