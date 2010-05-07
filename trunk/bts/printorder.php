@@ -238,7 +238,7 @@ $order->products[$i]['qty'] . '</td>';
             </table></td>
         </tr>
 		<tr><td colspan="8"><?php echo '<strong>' . TABLE_HEADING_SUMMA . '</strong>' . '&nbsp;'; 
-require 'includes/summa_' . $language . '.php'; 
+require 'includes/summa.php'; 
 ?> 
 </td></tr>
       </table></td>

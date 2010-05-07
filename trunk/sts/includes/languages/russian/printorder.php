@@ -69,4 +69,65 @@ define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_8','<font color=red>ќплата про
 define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_9','<font color=red>¬Ќ»ћјЌ»≈!</font> ќплата данного предварительного счета означает согласие с услови€ми поставки товара. —чет действителен в течение 3-х банковских дней с момента выписки. ѕо истечении срока действи€ счета оплату производить строго по уведомлению.');
 
 define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_10', MODULE_PAYMENT_RUS_SCHET_8); // јдрес получател€
+
+define('text_zero', 'ноль');
+define('text_three', 'три');
+define('text_four', 'четыре');
+define('text_five', 'п€ть');
+define('text_six', 'шесть');
+define('text_seven', 'семь');
+define('text_eight', 'восемь');
+define('text_nine', 'дев€ть');
+define('text_ten', 'дес€ть');
+define('text_eleven', 'одинадцать');
+define('text_twelve', 'двенадцать');
+define('text_thirteen', 'тринадцать');
+define('text_fourteen', 'четырнадцать');
+define('text_fifteen', 'п€тнадцать');
+define('text_sixteen', 'шестнадцать');
+define('text_seventeen', 'семнадцать');
+define('text_eighteen', 'восемнадцать');
+define('text_nineteen', 'дев€тнадцать');
+define('text_twenty', 'двадцать');
+define('text_thirty', 'тридцать');
+define('text_forty', 'сорок');
+define('text_fifty', 'п€тьдес€т');
+define('text_sixty', 'шестьдес€т');
+define('text_seventy', 'семьдес€т');
+define('text_eighty', 'восемьдес€т');
+define('text_ninety', 'дев€носто');
+define('text_hundred', 'сто');
+define('text_two_hundred', 'двести');
+define('text_three_hundred', 'триста');
+define('text_four_hundred', 'четыреста');
+define('text_five_hundred', 'п€тьсот');
+define('text_six_hundred', 'шестьсот');
+define('text_seven_hundred', 'семьсот');
+define('text_eight_hundred', 'восемьсот');
+define('text_nine_hundred', 'дев€тьсот');
+define('text_penny', 'копейки');
+define('text_kopecks', 'копеек');
+define('text_single_kopek', 'одна копейка');
+define('text_two_penny', 'две копейки');
+define('text_ruble', 'рубл€');
+define('text_rubles', 'рублей');
+define('text_one_ruble', 'один рубль');
+define('text_two_rubles', 'два рубл€');
+define('text_thousands', 'тыс€чи');
+define('text_thousand', 'тыс€ч');
+define('text_one_thousand', 'одна тыс€ча');
+define('text_two_thousand', 'две тыс€чи');
+define('text_million', 'миллиона');
+define('text_millions', 'миллионов');
+define('text_one_million', 'один миллион');
+define('text_two_million', 'два миллиона');
+define('text_billion', 'миллиарда');
+define('text_billions', 'миллиардов');
+define('text_one_billion', 'один миллиард');
+define('text_two_billion', 'два миллиарда');
+define('text_trillion', 'триллиона');
+define('text_trillions', 'триллионов');
+define('text_one_trillion', 'один триллион');
+define('text_two_trillion', 'два триллиона');
+
 ?>
