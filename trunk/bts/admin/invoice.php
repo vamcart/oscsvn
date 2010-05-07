@@ -39,55 +39,55 @@
 
 class inwords { 
 
-var $diw=Array(    0 =>    Array(    0  => Array( 0=> "ноль",    1=>1), 
+var $diw=Array(    0 =>    Array(    0  => Array( 0=> text_zero,    1=>1), 
                 1  => Array( 0=> "",        1=>2), 
                 2  => Array( 0=> "",        1=>3), 
-                3  => Array( 0=> "три",        1=>0), 
-                4  => Array( 0=> "четыре",    1=>0), 
-                5  => Array( 0=> "п€ть",    1=>1), 
-                6  => Array( 0=> "шесть",    1=>1), 
-                7  => Array( 0=> "семь",    1=>1), 
-                8  => Array( 0=> "восемь",    1=>1), 
-                9  => Array( 0=> "дев€ть",    1=>1), 
-                10 => Array( 0=> "дес€ть",    1=>1), 
-                11 => Array( 0=> "одинадцать",    1=>1), 
-                12 => Array( 0=> "двенадцать",    1=>1), 
-                13 => Array( 0=> "тринадцать",    1=>1), 
-                14 => Array( 0=> "четырнадцать",1=>1), 
-                15 => Array( 0=> "п€тнадцать",    1=>1), 
-                16 => Array( 0=> "шестнадцать",    1=>1), 
-                17 => Array( 0=> "семнадцать",    1=>1), 
-                18 => Array( 0=> "восемнадцать",1=>1), 
-                19 => Array( 0=> "дев€тнадцать",1=>1) 
+                3  => Array( 0=> text_three,        1=>0), 
+                4  => Array( 0=> text_four,    1=>0), 
+                5  => Array( 0=> text_five,    1=>1), 
+                6  => Array( 0=> text_six,    1=>1), 
+                7  => Array( 0=> text_seven,    1=>1), 
+                8  => Array( 0=> text_eight,    1=>1), 
+                9  => Array( 0=> text_nine,    1=>1), 
+                10 => Array( 0=> text_ten,    1=>1), 
+                11 => Array( 0=> text_eleven,    1=>1), 
+                12 => Array( 0=> text_twelve,    1=>1), 
+                13 => Array( 0=> text_thirteen,    1=>1), 
+                14 => Array( 0=> text_fourteen,1=>1), 
+                15 => Array( 0=> text_fifteen,    1=>1), 
+                16 => Array( 0=> text_sixteen,    1=>1), 
+                17 => Array( 0=> text_seventeen,    1=>1), 
+                18 => Array( 0=> text_eighteen,1=>1), 
+                19 => Array( 0=> text_nineteen,1=>1) 
             ), 
-        1 =>    Array(    2  => Array( 0=> "двадцать",    1=>1), 
-                3  => Array( 0=> "тридцать",    1=>1), 
-                4  => Array( 0=> "сорок",    1=>1), 
-                5  => Array( 0=> "п€тьдес€т",    1=>1), 
-                6  => Array( 0=> "шестьдес€т",    1=>1), 
-                7  => Array( 0=> "семьдес€т",    1=>1), 
-                8  => Array( 0=> "восемьдес€т",    1=>1), 
-                9  => Array( 0=> "дев€носто",    1=>1)  
+        1 =>    Array(    2  => Array( 0=> text_twenty,    1=>1), 
+                3  => Array( 0=> text_thirty,    1=>1), 
+                4  => Array( 0=> text_forty,    1=>1), 
+                5  => Array( 0=> text_fifty,    1=>1), 
+                6  => Array( 0=> text_sixty,    1=>1), 
+                7  => Array( 0=> text_seventy,    1=>1), 
+                8  => Array( 0=> text_eighty,    1=>1), 
+                9  => Array( 0=> text_ninety,    1=>1)  
             ), 
-        2 =>    Array(    1  => Array( 0=> "сто",        1=>1), 
-                2  => Array( 0=> "двести",    1=>1), 
-                3  => Array( 0=> "триста",    1=>1), 
-                4  => Array( 0=> "четыреста",    1=>1), 
-                5  => Array( 0=> "п€тьсот",    1=>1), 
-                6  => Array( 0=> "шестьсот",    1=>1), 
-                7  => Array( 0=> "семьсот",    1=>1), 
-                8  => Array( 0=> "восемьсот",    1=>1), 
-                9  => Array( 0=> "дев€тьсот",    1=>1) 
+        2 =>    Array(    1  => Array( 0=> text_hundred,        1=>1), 
+                2  => Array( 0=> text_two_hundred,    1=>1), 
+                3  => Array( 0=> text_three_hundred,    1=>1), 
+                4  => Array( 0=> text_four_hundred,    1=>1), 
+                5  => Array( 0=> text_five_hundred,    1=>1), 
+                6  => Array( 0=> text_six_hundred,    1=>1), 
+                7  => Array( 0=> text_seven_hundred,    1=>1), 
+                8  => Array( 0=> text_eight_hundred,    1=>1), 
+                9  => Array( 0=> text_nine_hundred,    1=>1) 
             ) 
 ); 
 
-var $nom=Array(    0 => Array(0=>"копейки",  1=>"копеек",    2=>"одна копейка", 3=>"две копейки"), 
-        1 => Array(0=>"рубл€",    1=>"рублей",    2=>"один рубль",   3=>"два рубл€"), 
-        2 => Array(0=>"тыс€чи",   1=>"тыс€ч",     2=>"одна тыс€ча",  3=>"две тыс€чи"), 
-        3 => Array(0=>"миллиона", 1=>"миллионов", 2=>"один миллион", 3=>"два миллиона"), 
-        4 => Array(0=>"миллиарда",1=>"миллиардов",2=>"один миллиард",3=>"два миллиарда"), 
+var $nom=Array(    0 => Array(0=> text_penny,  1=> text_kopecks,    2=> text_single_kopek, 3=> text_two_penny), 
+        1 => Array(0=> text_ruble,    1=> text_rubles,    2=> text_one_ruble,   3=> text_two_rubles), 
+        2 => Array(0=> text_thousands,   1=> text_thousand,     2=> text_one_thousand,  3=> text_two_thousand), 
+        3 => Array(0=> text_million, 1=> text_millions, 2=> text_one_million, 3=> text_two_million), 
+        4 => Array(0=> text_billion, 1=> text_billions, 2=> text_one_billion, 3=> text_two_billion), 
 /* :))) */ 
-        5 => Array(0=>"триллиона",1=>"триллионов",2=>"один триллион",3=>"два триллиона") 
+        5 => Array(0=> text_trillion, 1=> text_trillions, 2=> text_one_trillion, 3=>text_two_trillion) 
 ); 
 
 var $out_rub; 
@@ -107,7 +107,7 @@ function get($summ){
   if(($summ_rub-$summ_tmp)>0) $summ_rub--; 
   $retval=$this->get_string($summ_part,$i)." ".$retval; 
  endfor; 
- if(($this->out_rub)==0) $retval.=" рублей"; 
+ if(($this->out_rub)==0) $retval.=' ' . text_rubles; 
  return $retval." ".$kop; 
 } 
 
@@ -259,9 +259,8 @@ function get_string($summ,$nominal){
 <p><b><?php echo TEXT_18; ?> <?php echo $iw->get($total_summ['value']); ?><?php echo TEXT_24; ?></b></p>
 <p>&nbsp;</p>
 <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<?php echo TEXT_19; ?> _____________________________ /<?php echo TEXT_20; ?>/</b></p>
+<?php echo TEXT_19; ?> ____ћеновщиков ј.¬.____________ /<?php echo TEXT_20; ?>/</b></p>
 <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo TEXT_21; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<?php echo TEXT_22; ?> _________________________/<?php echo TEXT_23; ?>/</b></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
