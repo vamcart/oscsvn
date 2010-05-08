@@ -1465,7 +1465,7 @@ if ($cPath_array) {
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
                   <tr>
                     <td class="smallText" valign="top"><?php echo $products_split->display_count($products_query_numrows, MAX_PROD_ADMIN_SIDE, $_GET['page'], TEXT_DISPLAY_NUMBER_OF_FAQS); ?></td>
-                    <td class="smallText" align="right"><?php echo $products_split->display_links($products_query_numrows, MAX_PROD_ADMIN_SIDE, MAX_DISPLAY_PAGE_LINKS, $_GET['page'], tep_get_all_get_params(array('page', 'info', 'x', 'y', 'cID'))); ?></td>
+                    <td class="smallText" align="right"><?php echo $products_split->display_links($products_query_numrows, MAX_PROD_ADMIN_SIDE, MAX_DISPLAY_PAGE_LINKS, $_GET['page'], tep_get_all_get_params(array('page', 'info', 'x', 'y', 'cID', 'pID'))); ?></td>
                   </tr>
 </table>                  
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
