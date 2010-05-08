@@ -85,7 +85,6 @@
     } else {
        if (preg_match('/\.swf$/i',$banner['banners_image'])){
 $banner_string='<embed src="'.tep_href_link(DIR_WS_IMAGES . $banner['banners_image'], '', 'NONSSL', false).'" quality="high" bgcolor="#FFFFFF" swLiveConnect="false" width="400" height="125" ></embed>';
-';
        } else {
       $banner_string = '<a href="' . tep_href_link(FILENAME_REDIRECT, 'action=banner&goto=' . $banner['banners_id']) . '" target="_blank">' . tep_image(DIR_WS_IMAGES . $banner['banners_image'], $banner['banners_title']) . '</a>';
        }
