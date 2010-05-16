@@ -259,7 +259,7 @@ function get_string($summ,$nominal){
 <p><b><?php echo TEXT_18; ?> <?php echo $iw->get($total_summ['value']); ?><?php echo TEXT_24; ?></b></p>
 <p>&nbsp;</p>
 <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<?php echo TEXT_19; ?> ____Меновщиков А.В.____________ /<?php echo TEXT_20; ?>/</b></p>
+<?php echo TEXT_19; ?> ___________________ /<?php echo TEXT_20; ?>/</b></p>
 <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo TEXT_21; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
