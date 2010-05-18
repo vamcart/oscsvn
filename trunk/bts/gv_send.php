@@ -39,7 +39,7 @@
     $gv_result = tep_db_fetch_array($gv_query);
     $customer_amount = $gv_result['amount'];
     $gv_amount = trim($_POST['amount']);
-    if (preg_match('/[^0-9/.]/', $gv_amount)) {
+    if (preg_match('/[^0-9]/', $gv_amount)) {
       $error = true;
       $error_amount = ERROR_ENTRY_AMOUNT_CHECK; 
     }
