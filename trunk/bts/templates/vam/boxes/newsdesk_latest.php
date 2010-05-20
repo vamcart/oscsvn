@@ -82,10 +82,10 @@ $latest_news_string .= $latest_news['newsdesk_article_name'];
 $latest_news_string .= '</a>';
 $latest_news_string .= '<br>';
 
-echo $latest_news_string;
-
 	$row++;
 }
+
+echo $latest_news_string;
 
 }
 //}
