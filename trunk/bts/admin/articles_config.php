@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: articles_config.php, v1.0 2003/12/04 12:00:00 ra Exp $
+  $Id: articles_config.php, v1.1 2003/12/04 12:00:00 ra Exp $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
@@ -32,6 +32,7 @@
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
