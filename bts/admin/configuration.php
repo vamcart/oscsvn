@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: configuration.php,v 1.2 2003/09/24 13:57:05 wilt Exp $
+  $Id: configuration.php,v 1.3 2003/09/24 13:57:05 wilt Exp $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
@@ -59,6 +59,7 @@ Header("Pragma: no-cache");
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">

@@ -26,6 +26,7 @@
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
@@ -153,7 +154,7 @@
 	Please read the NOTE and INSTALL documents that are provided with this file for further information and installation notes.
 
 	script name:	NewsDesk
-	version:		1.4.5
+	version:		1.4.6
 	date:			2003-08-31
 	author:			Carsten aka moyashi
 	web site:		www..com
