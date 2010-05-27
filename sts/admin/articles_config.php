@@ -61,7 +61,7 @@
         </table></td>
       </tr>
 
-<?php echo tep_draw_form('configuration', FILENAME_ARTICLES_CONFIG, 'gID=456&action=save'); ?>
+<?php echo tep_draw_form('configuration', FILENAME_CONFIGURATION, 'gID=456&action=save'); ?>
             <table width="100%"  border="0" cellspacing="0" cellpadding="4">
 <?php
   $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = 456  order by sort_order");
@@ -145,7 +145,7 @@
   }
 ?>
             </table>
-<?php echo '<input type="submit" class="button" onClick="this.blur();" value="' . BUTTON_SAVE . '"/>'; ?></form>
+<?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?></form>
             </td>
 
           </tr>
