@@ -14,16 +14,19 @@
 
   $action = (isset($_GET['action']) ? $_GET['action'] : '');
 
-  if (tep_not_null($action)) {
-    switch ($action) {
+  if ($_GET['action']) {
+    switch ($_GET['action']) {
       case 'save':
-        $configuration_value = tep_db_prepare_input($_POST['configuration_value']);
+     $configuration_value = tep_db_prepare_input($_POST['configuration_value']);
         $cID = tep_db_prepare_input($_GET['cID']);
 
-        tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . tep_db_input($configuration_value) . "', last_modified = now() where configuration_id = '" . (int)$cID . "'");
+          $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
 
-        tep_redirect(tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cID));
+          while ($configuration = tep_db_fetch_array($configuration_query))
+              tep_db_query("UPDATE ".TABLE_CONFIGURATION." SET configuration_value='".$_POST[$configuration['configuration_key']]."' where configuration_key='".$configuration['configuration_key']."'");
+               tep_redirect(FILENAME_CONFIGURATION. '?gID=' . (int)$_GET['gID']);
         break;
+
     }
   }
 
@@ -71,18 +74,43 @@ $text = constant('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id']);
           </tr>
         </table></td>
       </tr>
-      <tr>
-        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
-          <tr>
-            <td valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="2">
-              <tr class="dataTableHeadingRow">
-                <td class="dataTableHeadingContent"><?php echo TABLE_HEADING_CONFIGURATION_TITLE; ?></td>
-                <td class="dataTableHeadingContent"><?php echo TABLE_HEADING_CONFIGURATION_VALUE; ?></td>
-                <td class="dataTableHeadingContent" align="right"><?php echo TABLE_HEADING_ACTION; ?>&nbsp;</td>
-              </tr>
+
+<?php echo tep_draw_form('configuration', FILENAME_CONFIGURATION, 'gID=' . (int)$_GET['gID'] . '&action=save'); ?>
+            <table width="100%"  border="0" cellspacing="0" cellpadding="4">
 <?php
-  $configuration_query = tep_db_query("select configuration_id, configuration_title, configuration_key, configuration_value, use_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$gID . "' order by sort_order");
+  $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
+
   while ($configuration = tep_db_fetch_array($configuration_query)) {
+ /*   if ($_GET['gID'] == 6) {
+      switch ($configuration['configuration_key']) {
+        case 'MODULE_PAYMENT_INSTALLED':
+          if ($configuration['configuration_value'] != '') {
+            $payment_installed = explode(';', $configuration['configuration_value']);
+            for ($i = 0, $n = sizeof($payment_installed); $i < $n; $i++) {
+              include(DIR_FS_CATALOG_LANGUAGES . $language . '/modules/payment/' . $payment_installed[$i]);
+            }
+          }
+          break;
+
+        case 'MODULE_SHIPPING_INSTALLED':
+          if ($configuration['configuration_value'] != '') {
+            $shipping_installed = explode(';', $configuration['configuration_value']);
+            for ($i = 0, $n = sizeof($shipping_installed); $i < $n; $i++) {
+              include(DIR_FS_CATALOG_LANGUAGES . $language . '/modules/shipping/' . $shipping_installed[$i]);
+            }
+          }
+          break;
+
+        case 'MODULE_ORDER_TOTAL_INSTALLED':
+          if ($configuration['configuration_value'] != '') {
+            $ot_installed = explode(';', $configuration['configuration_value']);
+            for ($i = 0, $n = sizeof($ot_installed); $i < $n; $i++) {
+              include(DIR_FS_CATALOG_LANGUAGES . $language . '/modules/order_total/' . $ot_installed[$i]);
+            }
+          }
+          break;
+      }
+    }*/
     if (tep_not_null($configuration['use_function'])) {
       $use_function = $configuration['use_function'];
       if (preg_match('/->/', $use_function)) {
@@ -99,140 +127,41 @@ $text = constant('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id']);
       $cfgValue = $configuration['configuration_value'];
     }
 
-    if ((!isset($_GET['cID']) || (isset($_GET['cID']) && ($_GET['cID'] == $configuration['configuration_id']))) && !isset($cInfo) && (substr($action, 0, 3) != 'new')) {
-      $cfg_extra_query = tep_db_query("select configuration_key, configuration_description, date_added, last_modified, use_function, set_function from " . TABLE_CONFIGURATION . " where configuration_id = '" . (int)$configuration['configuration_id'] . "'");
+    if (((!$_GET['cID']) || (@$_GET['cID'] == $configuration['configuration_id'])) && (!$cInfo) && (substr($_GET['action'], 0, 3) != 'new')) {
+      $cfg_extra_query = tep_db_query("select configuration_key,configuration_value, date_added, last_modified, use_function, set_function from " . TABLE_CONFIGURATION . " where configuration_id = '" . $configuration['configuration_id'] . "'");
       $cfg_extra = tep_db_fetch_array($cfg_extra_query);
 
-      $cInfo_array = array_merge($configuration, $cfg_extra);
+      $cInfo_array = tep_array_merge($configuration, $cfg_extra);
       $cInfo = new objectInfo($cInfo_array);
     }
-
-    if ( (isset($cInfo) && is_object($cInfo)) && ($configuration['configuration_id'] == $cInfo->configuration_id) ) {
-    	if($cInfo->set_function == 'file_upload'){
-      echo '                  <tr id="defaultSelected" class="dataTableRowSelected" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)" onclick="document.location.href=\'' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id . '&action=upload') . '\'">' . "\n";
+    if ($configuration['set_function']) {
+        eval('$value_field = ' . $configuration['set_function'] . '"' . htmlspecialchars($configuration['configuration_value']) . '");');
       } else {
-      echo '                  <tr id="defaultSelected" class="dataTableRowSelected" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)" onclick="document.location.href=\'' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id . '&action=edit') . '\'">' . "\n";
+        $value_field = tep_draw_input_field($configuration['configuration_key'], $configuration['configuration_value'],'size=40');
       }
-    } else {
-      echo '                  <tr class="dataTableRow" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)" onclick="document.location.href=\'' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $configuration['configuration_id']) . '\'">' . "\n";
-    }
-?>
-<?php
-if (!defined($configuration['configuration_key'].'_TITLE')) {
-$conf_title = $configuration['configuration_title'];
-} else {
-$conf_title = constant($configuration['configuration_key'].'_TITLE');
-}
-?>  
-                <td class="dataTableContent"><?php echo $conf_title; ?></td>
-                <td class="dataTableContent"><?php echo htmlspecialchars($cfgValue); ?></td>
-                <td class="dataTableContent" align="right"><?php if ( (isset($cInfo) && is_object($cInfo)) && ($configuration['configuration_id'] == $cInfo->configuration_id) ) { echo tep_image(DIR_WS_IMAGES . 'icon_arrow_right.gif', ''); } else { echo '<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $configuration['configuration_id']) . '">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a>'; } ?>&nbsp;</td>
-              </tr>
-<?php
+   // add
+
+   if (strstr($value_field,'configuration_value')) $value_field=str_replace('configuration_value',$configuration['configuration_key'],$value_field);
+
+   echo '
+  <tr>
+    <td width="300" valign="top" align="right" class="dataTableContent"><b>'.constant(strtoupper($configuration['configuration_key'].'_TITLE')).'</b></td>
+    <td valign="top" class="dataTableContent">
+    <table width="100%"  border="0" cellspacing="0" cellpadding="2">
+      <tr>
+        <td style="background-color:#DFDFDF ; border: 1px solid; border-color: #CCCCCC;" class="dataTableContent">'.$value_field.'</td>
+      </tr>
+    </table>
+    '.constant(strtoupper( $configuration['configuration_key'].'_DESC')).'<br /></td>
+  </tr>
+  ';
+
   }
 ?>
-            </table></td>
-<?php
-  $heading = array();
-  $contents = array();
+            </table>
+<?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?></form>
+            </td>
 
-  switch ($action) {
-    case 'edit':
-    
-if (!defined($cInfo->configuration_key.'_TITLE')) {
-$conf_title_right = $cInfo->configuration_title;
-} else {
-$conf_title_right = constant($cInfo->configuration_key.'_TITLE');
-}
-
-if (!defined($cInfo->configuration_key.'_DESC')) {
-$conf_desc_right = $cInfo->configuration_description;
-} else {
-$conf_desc_right = constant($cInfo->configuration_key.'_DESC');
-}
-    
-      $heading[] = array('text' => '<b>' . $conf_title_right . '</b>');
-
-      if ($cInfo->set_function) {
-        eval('$value_field = ' . $cInfo->set_function . '"' . htmlspecialchars($cInfo->configuration_value) . '");');
-      } else {
-        $value_field = tep_draw_input_field('configuration_value', $cInfo->configuration_value);
-      }
-
-      $contents = array('form' => tep_draw_form('configuration', FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id . '&action=save'));
-      $contents[] = array('text' => TEXT_INFO_EDIT_INTRO);
-      $contents[] = array('text' => '<br><b>' . $conf_title_right . '</b><br>' . $conf_desc_right . '<br>' . $value_field);
-//      $contents[] = array('text' => '<br><b>' . $cInfo->configuration_title . '</b><br>' . $cInfo->configuration_description . '<br>' . $value_field);
-      $contents[] = array('align' => 'center', 'text' => '<br>' . tep_image_submit('button_update.gif', IMAGE_UPDATE) . '&nbsp;<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>');
-      break;
-    case 'upload':
-      $directory_writeable = true;
-      if (!is_writeable($upload_fs_dir)) {
-        $directory_writeable = false;
-        $messageStack->add(sprintf(ERROR_DIRECTORY_NOT_WRITEABLE, $upload_fs_dir), 'error');
-      }
-
-if (!defined($cInfo->configuration_key.'_TITLE')) {
-$conf_title_right = $cInfo->configuration_title;
-} else {
-$conf_title_right = constant($cInfo->configuration_key.'_TITLE');
-}
-
-if (!defined($cInfo->configuration_key.'_DESC')) {
-$conf_desc_right = $cInfo->configuration_description;
-} else {
-$conf_desc_right = constant($cInfo->configuration_key.'_DESC');
-}
-      
-      $heading[] = array('text' => '<b>' . $conf_title_right . '</b>');
-
-      $contents = array('form' => tep_draw_form('file', FILENAME_CONFIGURATION, 'action=processuploads&gID='.$_GET['gID'].'&cID='.$_GET['cID'], 'post', 'enctype="multipart/form-data"'));
-      $contents[] = array('text' => TEXT_INFO_EDIT_INTRO);
-      $file_upload = tep_draw_file_field('file_name') . '<br>';
-      $contents[] = array('text' => '<br>' . $file_upload);
-      $contents[] = array('align' => 'center', 'text' => '<br>' . tep_image_submit('button_update.gif', IMAGE_UPDATE) . '&nbsp;<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>');
-      break;
-    default:
-
-if (!defined($cInfo->configuration_key.'_TITLE')) {
-$conf_title_right = $cInfo->configuration_title;
-} else {
-$conf_title_right = constant($cInfo->configuration_key.'_TITLE');
-}
-
-if (!defined($cInfo->configuration_key.'_DESC')) {
-$conf_desc_right = $cInfo->configuration_description;
-} else {
-$conf_desc_right = constant($cInfo->configuration_key.'_DESC');
-}
-
-      if (isset($cInfo) && is_object($cInfo)) {
-
-        $heading[] = array('text' => '<b>' . $conf_title_right . '</b>');
-
-      if ($cInfo->set_function == 'file_upload') {
-        $contents[] = array('align' => 'center', 'text' => '<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id . '&action=upload') . '">' . tep_image_button('button_upload.gif', IMAGE_EDIT) . '</a>'.'<p>');
-        $contents[] = array('align' => 'center', 'text' => tep_image($upload_ws_dir . $cInfo->configuration_value, IMAGE_EDIT));
-      } else {
-        $contents[] = array('align' => 'center', 'text' => '<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $_GET['gID'] . '&cID=' . $cInfo->configuration_id . '&action=edit') . '">' . tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a>');
-      }
-        $contents[] = array('text' => '<br>' . $conf_desc_right);
-        $contents[] = array('text' => '<br>' . TEXT_INFO_DATE_ADDED . ' ' . tep_date_short($cInfo->date_added));
-        if (tep_not_null($cInfo->last_modified)) $contents[] = array('text' => TEXT_INFO_LAST_MODIFIED . ' ' . tep_date_short($cInfo->last_modified));
-      }
-
-      break;
-  }
-
-  if ( (tep_not_null($heading)) && (tep_not_null($contents)) ) {
-    echo '            <td width="25%" valign="top">' . "\n";
-
-    $box = new box;
-    echo $box->infoBox($heading, $contents);
-
-    echo '            </td>' . "\n";
-  }
-?>
           </tr>
         </table></td>
       </tr>
