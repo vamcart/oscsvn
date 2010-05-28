@@ -49,7 +49,7 @@ if (!isset($PHP_SELF)) $PHP_SELF = (isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_
 // include the list of project database tables
   require(DIR_WS_INCLUDES . 'database_tables.php');
 
-//     define('BOX_WIDTH', 125); // how wide the boxes should be in pixels (default: 125)
+     define('BOX_WIDTH', 125); // how wide the boxes should be in pixels (default: 125)
  define('MENU_DHTML', false);
 
 // Define how do we update currency exchange rates
