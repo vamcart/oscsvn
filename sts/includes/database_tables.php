@@ -141,4 +141,6 @@
 
 define('TABLE_EMAIL_BATCH', 'email_batch');      // the email queue
 
+define('TABLE_SPSR_ZONES', 'spsr_zones');
+
 ?>

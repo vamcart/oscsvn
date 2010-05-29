@@ -1693,5 +1693,16 @@ function tep_store_mail($to_name, $to_email_address, $email_subject, $email_text
 
   tep_db_perform(TABLE_EMAIL_BATCH, $sql_data_array);
 }
+
+function tep_get_spsr_zone_id($zone_id) {
+    $spsr_zone_query = tep_db_query("select spsr_zone_id from " . TABLE_SPSR_ZONES . " where zone_id = '" . $zone_id . "'");
+    if (tep_db_num_rows($spsr_zone_query)) {
+      $spsr_zone = tep_db_fetch_array($spsr_zone_query);
+	  $spsr_zone_id = $spsr_zone['spsr_zone_id'];
+	  return $spsr_zone_id;
+    } else {
+	  return false;
+    }
+   }
     
 ?>
