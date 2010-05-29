@@ -43,7 +43,7 @@ define('LANGUAGE_CURRENCY', 'USD');
 define('HTML_PARAMS','dir="LTR" lang="en"');
 
 // charset for web pages and emails
-define('CHARSET', 'iso-8859-1');
+define('CHARSET', 'windows-1251');
 
 // page title
 define('TITLE', 'Your Store Name');
