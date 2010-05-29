@@ -579,7 +579,7 @@ create table configuration (
   configuration_id int(11) not null auto_increment,
   configuration_title varchar(255) not null ,
   configuration_key varchar(64) not null ,
-  configuration_value varchar(255) not null ,
+  configuration_value text ,
   configuration_description varchar(255) not null ,
   configuration_group_id int(11) default '0' not null ,
   sort_order int(5) ,
