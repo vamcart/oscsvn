@@ -1703,5 +1703,102 @@ function tep_get_spsr_zone_id($zone_id) {
 	  return false;
     }
    }
-    
+
+	function make_alias ($alias)
+	{
+
+		//Replace cyrillic symbols to translit
+		$trdic = array(
+		"¸"=>"jo",
+		"æ"=>"zh",
+		"ô"=>"ph",
+		"õ"=>"kh",
+		"ö"=>"ts",
+		"÷"=>"ch",
+		"ø"=>"sh",
+		"ù"=>"sch",
+		"ý"=>"je",
+		"þ"=>"ju",
+		"ÿ"=>"ja",
+		
+		"à"=>"a",
+		"á"=>"b",
+		"â"=>"v",
+		"ã"=>"g",
+		"ä"=>"d",
+		"å"=>"e",
+		"ç"=>"z",
+		"è"=>"i",
+		"é"=>"j",
+		"ê"=>"k",
+		"ë"=>"l",
+		"ì"=>"m",
+		"í"=>"n",
+		"î"=>"o",
+		"ï"=>"p",
+		"ð"=>"r",
+		"ñ"=>"s",
+		"ò"=>"t",
+		"ó"=>"u",
+		"õ"=>"h",
+		"ö"=>"c",
+		"û"=>"y",
+		
+		"¨"=>"E",
+		"Æ"=>"ZH",
+		"Ô"=>"PH",
+		"Õ"=>"KH",
+		"Ö"=>"TS",
+		"×"=>"CH",
+		"Ø"=>"SH",
+		"Ù"=>"SCH",
+		"Ý"=>"JE",
+		"Þ"=>"JU",
+		"ß"=>"JA",
+		
+		"À"=>"A",
+		"Á"=>"B",
+		"Â"=>"V",
+		"Ã"=>"G",
+		"Ä"=>"D",
+		"Å"=>"E",
+		"Ç"=>"Z",
+		"È"=>"I",
+		"É"=>"J",
+		"Ê"=>"K",
+		"Ë"=>"L",
+		"Ì"=>"M",
+		"Í"=>"N",
+		
+		"Î"=>"O",
+		"Ï"=>"P",
+		"Ð"=>"R",
+		"Ñ"=>"S",
+		"Ò"=>"T",
+		"Ó"=>"U",
+		"Õ"=>"H",
+		"Ö"=>"C",
+		"Û"=>"Y",
+		
+		// -----------------------
+		"Ú" => "",
+		"Ü" => "",
+		"ú" => "",
+		"ü" => ""
+		);			
+
+						if($alias == "") {
+							$alias = rand(1000,9999);
+						}
+							
+						//$alias = trim($alias);
+						//$alias = strtolower($alias);
+						$alias = str_replace(' ','-',$alias);
+						//Replace cyrillic symbols to translit
+						$alias = strtr(stripslashes($alias), $trdic);
+						$alias = preg_replace("/[^a-zA-Z0-9-s]/", "", $alias);						
+                
+		return $alias;
+	}
+	    
 ?>
