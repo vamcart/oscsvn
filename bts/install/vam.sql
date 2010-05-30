@@ -3400,6 +3400,8 @@ insert into configuration (configuration_title, configuration_key, configuration
 
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('Hold Email Queue', 'HOLD_EMAIL_QUEUE', 'false', 'Hold all emails in the Email Queue', '12', '12', '2009-04-24 15:29:10', '2008-07-17 10:29:22', NULL, 'tep_cfg_select_option(array(\'true\', \'false\'),');
 
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES ('Site Time Zone', 'SITE_TIME_ZONE', '', 'Site time zone', 1, 999, '2009-04-24 15:29:10', '2008-07-17 10:29:22', NULL, 'tep_cfg_pull_down_timezone_list(');
+
 drop table if exists spsr_zones;
 create table spsr_zones (
   id int(11) not null auto_increment,
@@ -3495,5 +3497,3 @@ insert into spsr_zones (id, zone_id, spsr_zone_id) values ('84', '269', '90');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('85', '270', '95');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('86', '271', '97');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('87', '272', '99');
-
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) VALUES ('Site Time Zone', 'SITE_TIME_ZONE', '', 'Site time zone', 1, 999, NULL, 'tep_cfg_pull_down_timezone_list(', NOW());
