@@ -1032,4 +1032,7 @@ define('USE_EMAIL_QUEUE_DESC','Process the emails via the Email Queue');
 define('HOLD_EMAIL_QUEUE_TITLE','Hold Email Queue');
 define('HOLD_EMAIL_QUEUE_DESC','Hold all emails in the Email Queue');
 
+define('SITE_TIME_ZONE_TITLE', 'Site Time Zone');
+define('SITE_TIME_ZONE_DESC', 'Site time zone');
+
 ?>

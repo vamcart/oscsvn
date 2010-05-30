@@ -1034,4 +1034,7 @@ define('USE_EMAIL_QUEUE_DESC','Отправлять почту через модуль email очередь');
 define('HOLD_EMAIL_QUEUE_TITLE','Блокировать email очередь');
 define('HOLD_EMAIL_QUEUE_DESC','Блокировать все email на отправку');
 
+define('SITE_TIME_ZONE_TITLE', 'Временная зона');
+define('SITE_TIME_ZONE_DESC', 'Временная зона');
+
 ?>
