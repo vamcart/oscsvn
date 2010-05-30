@@ -3495,3 +3495,5 @@ insert into spsr_zones (id, zone_id, spsr_zone_id) values ('84', '269', '90');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('85', '270', '95');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('86', '271', '97');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('87', '272', '99');
+
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) VALUES ('Site Time Zone', 'SITE_TIME_ZONE', '', 'Site time zone', 1, 999, NULL, 'tep_cfg_pull_down_timezone_list(', NOW());
