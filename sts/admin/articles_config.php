@@ -65,7 +65,7 @@
 <?php echo tep_draw_form('configuration', FILENAME_CONFIGURATION, 'gID=456&action=save'); ?>
             <table width="100%"  border="0" cellspacing="0" cellpadding="4">
 <?php
-  $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = 456  order by sort_order");
+  $configuration_query = tep_db_query("select configuration_key,configuration_title,configuration_description,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = 456  order by sort_order");
 
   while ($configuration = tep_db_fetch_array($configuration_query)) {
   /*  if ($_GET['gID'] == 6) {
@@ -130,16 +130,28 @@
 
    if (strstr($value_field,'configuration_value')) $value_field=str_replace('configuration_value',$configuration['configuration_key'],$value_field);
 
+if (!defined($configuration['configuration_key'].'_TITLE')) {
+$conf_title = $configuration['configuration_title'];
+} else {
+$conf_title = constant($configuration['configuration_key'].'_TITLE');
+}
+
+if (!defined($configuration['configuration_key'].'_DESC')) {
+$conf_desc = $configuration['configuration_description'];
+} else {
+$conf_desc = constant($configuration['configuration_key'].'_DESC');
+}
+
    echo '
   <tr>
-    <td width="300" valign="top" align="right" class="dataTableContent"><b>'.constant(strtoupper($configuration['configuration_key'].'_TITLE')).'</b></td>
+    <td width="300" valign="top" align="right" class="dataTableContent"><b>'.$conf_title.'</b></td>
     <td valign="top" class="dataTableContent">
     <table width="100%"  border="0" cellspacing="0" cellpadding="2">
       <tr>
         <td style="background-color:#DFDFDF ; border: 1px solid; border-color: #CCCCCC;" class="dataTableContent">'.$value_field.'</td>
       </tr>
     </table>
-    '.constant(strtoupper( $configuration['configuration_key'].'_DESC')).'<br /></td>
+    '.$conf_desc.'<br /></td>
   </tr>
   ';
 
