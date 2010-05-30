@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: configuration.php,v 1.2 2003/09/24 13:57:05 wilt Exp $
+  $Id: configuration.php,v 1.3 2003/09/24 13:57:05 wilt Exp $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
