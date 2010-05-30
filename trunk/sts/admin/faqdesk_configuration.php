@@ -9,7 +9,7 @@ $configuration_value = tep_db_prepare_input($_POST['configuration_value']);
 $cID = tep_db_prepare_input($_GET['cID']);
 
 
-          $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_FAQDESK_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
+          $configuration_query = tep_db_query("select configuration_key,configuration_title,configuration_description,configuration_id, configuration_value, use_function,set_function from " . TABLE_FAQDESK_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
 
           while ($configuration = tep_db_fetch_array($configuration_query))
               tep_db_query("UPDATE ".TABLE_FAQDESK_CONFIGURATION." SET configuration_value='".$_POST[$configuration['configuration_key']]."' where configuration_key='".$configuration['configuration_key']."'");
@@ -20,14 +20,13 @@ $cID = tep_db_prepare_input($_GET['cID']);
     }
   }
 
-  $cfg_group_query = tep_db_query("select configuration_group_title, configuration_group_key from " . TABLE_FAQDESK_CONFIGURATION_GROUP . " where configuration_group_id = '" . (int)$_GET['gID'] . "'");
+  $cfg_group_query = tep_db_query("select configuration_group_id, configuration_group_title, configuration_group_key from " . TABLE_FAQDESK_CONFIGURATION_GROUP . " where configuration_group_id = '" . (int)$_GET['gID'] . "'");
   $cfg_group = tep_db_fetch_array($cfg_group_query);
 ?>
 
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
@@ -57,9 +56,16 @@ $cID = tep_db_prepare_input($_GET['cID']);
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
 	<tr>
 		<td>
+<?php
+if (!defined('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id'])) {
+$text = $cfg_group['configuration_group_title'];
+} else {
+$text = constant('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id']);
+}
+?>   		
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
-		<td class="pageHeading"><?php echo constant(strtoupper($cfg_group['configuration_group_key'])); ?></td>
+		<td class="pageHeading"><?php echo $text; ?></td>
 		<td class="pageHeading" align="right"><?php echo tep_draw_separator('pixel_trans.gif', HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
 	</tr>
 </table>
@@ -105,16 +111,28 @@ $cID = tep_db_prepare_input($_GET['cID']);
 
    if (strstr($value_field,'configuration_value')) $value_field=str_replace('configuration_value',$configuration['configuration_key'],$value_field);
 
+if (!defined($configuration['configuration_key'].'_TITLE')) {
+$conf_title = $configuration['configuration_title'];
+} else {
+$conf_title = constant($configuration['configuration_key'].'_TITLE');
+}
+
+if (!defined($configuration['configuration_key'].'_DESC')) {
+$conf_desc = $configuration['configuration_description'];
+} else {
+$conf_desc = constant($configuration['configuration_key'].'_DESC');
+}
+
    echo '
   <tr>
-    <td width="300" valign="top" class="dataTableContent"><b>'.constant(strtoupper($configuration['configuration_key'].'_TITLE')).'</b></td>
+    <td width="300" valign="top" class="dataTableContent"><b>'.$conf_title.'</b></td>
     <td valign="top" class="dataTableContent">
     <table width="100%"  border="0" cellspacing="0" cellpadding="2">
       <tr>
         <td style="background-color:#DFDFDF ; border: 1px solid; border-color: #CCCCCC;" class="dataTableContent">'.$value_field.'</td>
       </tr>
     </table>
-    <br />'.constant(strtoupper( $configuration['configuration_key'].'_DESC')).'</td>
+    <br />'.$conf_desc.'</td>
   </tr>
   ';
 
@@ -154,7 +172,7 @@ $cID = tep_db_prepare_input($_GET['cID']);
 	Please read the NOTE and INSTALL documents that are provided with this file for further information and installation notes.
 
 	script name:	FaqDesk
-	version:		1.2.6
+	version:		1.2.5
 	date:			2003-09-01
 	author:			Carsten aka moyashi
 	web site:		www..com
