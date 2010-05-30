@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: configuration.php,v 1.3 2003/09/24 13:57:05 wilt Exp $
+  $Id: configuration.php,v 1.2 2003/09/24 13:57:05 wilt Exp $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
@@ -20,7 +20,7 @@
      $configuration_value = tep_db_prepare_input($_POST['configuration_value']);
         $cID = tep_db_prepare_input($_GET['cID']);
 
-          $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
+          $configuration_query = tep_db_query("select configuration_key,configuration_title,configuration_description,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
 
           while ($configuration = tep_db_fetch_array($configuration_query))
               tep_db_query("UPDATE ".TABLE_CONFIGURATION." SET configuration_value='".$_POST[$configuration['configuration_key']]."' where configuration_key='".$configuration['configuration_key']."'");
@@ -38,7 +38,6 @@
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
@@ -144,16 +143,28 @@ $text = constant('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id']);
 
    if (strstr($value_field,'configuration_value')) $value_field=str_replace('configuration_value',$configuration['configuration_key'],$value_field);
 
+if (!defined($configuration['configuration_key'].'_TITLE')) {
+$conf_title = $configuration['configuration_title'];
+} else {
+$conf_title = constant($configuration['configuration_key'].'_TITLE');
+}
+
+if (!defined($configuration['configuration_key'].'_DESC')) {
+$conf_desc = $configuration['configuration_description'];
+} else {
+$conf_desc = constant($configuration['configuration_key'].'_DESC');
+}
+
    echo '
   <tr>
-    <td width="300" valign="top" align="right" class="dataTableContent"><b>'.constant(strtoupper($configuration['configuration_key'].'_TITLE')).'</b></td>
+    <td width="300" valign="top" align="right" class="dataTableContent"><b>'.$conf_title.'</b></td>
     <td valign="top" class="dataTableContent">
     <table width="100%"  border="0" cellspacing="0" cellpadding="2">
       <tr>
         <td style="background-color:#DFDFDF ; border: 1px solid; border-color: #CCCCCC;" class="dataTableContent">'.$value_field.'</td>
       </tr>
     </table>
-    '.constant(strtoupper( $configuration['configuration_key'].'_DESC')).'<br /></td>
+    '.$conf_desc.'<br /></td>
   </tr>
   ';
 
