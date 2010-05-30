@@ -90,6 +90,14 @@ define('BOX_WIDTH', 125); // how wide the boxes should be in pixels (default: 12
     define($configuration['cfgKey'], $configuration['cfgValue']);
   }
 
+// BOF Site timezone
+if (defined('SITE_TIME_ZONE') && SITE_TIME_ZONE != '') {
+putenv("TZ=" . SITE_TIME_ZONE);
+date_default_timezone_set(SITE_TIME_ZONE);
+tep_db_query("SET LOCAL time_zone='" . date('P') . "'");
+}
+// EOF Site timezone
+
 // if gzip_compression is enabled, start to buffer the output
   if ( (GZIP_COMPRESSION == 'true') && ($ext_zlib_loaded = extension_loaded('zlib')) && (PHP_VERSION >= '4') ) {
     if (($ini_zlib_output_compression = (int)ini_get('zlib.output_compression')) < 1) {

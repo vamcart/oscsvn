@@ -2268,5 +2268,34 @@ function tep_get_spsr_zone_id($zone_id) {
                 
 		return $alias;
 	}
+
+// BOF Site timezone
+function tep_cfg_pull_down_timezone_list($timezone, $key = '') {
+$name = (($key) ? 'configuration[' . $key . ']' : 'configuration_value');
+// $zones = timezone_identifiers_list();
+$zones = DateTimeZone::listIdentifiers();
+$locations = array();
+foreach ($zones as $zone) {
+$zone = explode('/', $zone);
+if (!in_array($zone[0], array('Africa', 'America', 'Antarctica', 'Arctic', 'Asia', 'Atlantic', 'Australia', 'Europe', 'Indian', 'Pacific')) || !isset($zone[1]) || $zone[1] == '') continue;
+$locations[$zone[0]][$zone[0] . '/' . $zone[1]] = str_replace('_', ' ', $zone[1]);
+}
+$field = '<select name="' . $name . '">' . "\n";
+$field .= ' <option value="">' . '--' . '</option>' . "\n";
+foreach ($locations as $continent => $zones) {
+$field .= ' <optgroup label="' . $continent . '">' . "\n";
+foreach ($zones as $zone => $city) {
+$field .= ' <option value="' . $zone . '"';
+if ($timezone == $zone) {
+$field .= ' selected="selected"';
+}
+$field .= '>' . $city . '</option>' . "\n";
+}
+$field .= ' </optgroup>' . "\n";
+}
+$field .= '</select>' . "\n";
+return $field;
+}
+// EOF Site timezone
 	
 ?>
