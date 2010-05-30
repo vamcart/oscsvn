@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: configuration.php,v 1.2 2003/09/24 13:57:05 wilt Exp $
+  $Id: configuration.php,v 1.3 2003/09/24 13:57:05 wilt Exp $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
@@ -78,7 +78,7 @@ $text = constant('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id']);
 <?php echo tep_draw_form('configuration', FILENAME_CONFIGURATION, 'gID=' . (int)$_GET['gID'] . '&action=save'); ?>
             <table width="100%"  border="0" cellspacing="0" cellpadding="4">
 <?php
-  $configuration_query = tep_db_query("select configuration_key,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
+  $configuration_query = tep_db_query("select configuration_key,configuration_title,configuration_description,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
 
   while ($configuration = tep_db_fetch_array($configuration_query)) {
  /*   if ($_GET['gID'] == 6) {
