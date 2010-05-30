@@ -406,10 +406,20 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 <!-- add Order # // -->
 <?php
 // EOF: WebMakers.com Added: Show Order Info
+
+      $shipping_method_query = tep_db_query("select title from " . TABLE_ORDERS_TOTAL . " where orders_id = '" . tep_db_input($_GET['oID']) . "' and class = 'ot_shipping'");
+      $shipping_method = tep_db_fetch_array($shipping_method_query);
+
+  $order_shipping_text = ((substr($shipping_method['title'], -1) == ':') ? substr(strip_tags($shipping_method['title']), 0, -1) : strip_tags($shipping_method['title']));
+  
 ?>
           <tr>
             <td class="main"><b><?php echo ENTRY_PAYMENT_METHOD; ?></b></td>
             <td class="main"><?php echo $order->info['payment_method']; ?></td>
+          </tr>
+          <tr>
+            <td class="main"><b><?php echo ENTRY_SHIPPING_METHOD; ?></b></td>
+            <td class="main"><?php echo $order_shipping_text; ?></td>
           </tr>
 <?php
     if (tep_not_null($order->info['cc_type']) || tep_not_null($order->info['cc_owner']) || tep_not_null($order->info['cc_number'])) {
