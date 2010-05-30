@@ -171,7 +171,7 @@ switch ($_GET['op']) {
 ?>
 			<tr><td colspan="2" align="center">&nbsp;</td></tr>
 			<tr><td colspan="2" align="center" class="main"><?php echo _TOTALVOTES?> = <?php echo $sum?></td></tr>
-			<tr><td colspan="2" align="center" class="main">[ <a href="<?php echo tep_href_link('pollbooth.php','pollid='.$pollid.'&op=comment','NONSSL')?>"><?php if (SHOW_POLL_COMMENTS == '1') { echo _ADD_COMMENTS;?></a> | <?php } ?><a href="<?php echo tep_href_link('pollbooth.php','pollid='.$pollid.'&op=vote','NONSSL')?>"><?php echo _VOTING?></a> | <a href="<?php echo tep_href_link('pollbooth.php','op=list','NONSSL')?>"><?echo _OTHERPOLLS?></a> ]</td></tr>
+			<tr><td colspan="2" align="center" class="main">[ <a href="<?php echo tep_href_link('pollbooth.php','pollid='.$pollid.'&op=comment','NONSSL')?>"><?php if (SHOW_POLL_COMMENTS == '1') { echo _ADD_COMMENTS;?></a> | <?php } if ($polls['poll_open']=='1') { ?><a href="<?php echo tep_href_link('pollbooth.php','pollid='.$pollid.'&op=vote','NONSSL')?>"><?php } echo _VOTING?></a> | <a href="<?php echo tep_href_link('pollbooth.php','op=list','NONSSL')?>"><?echo _OTHERPOLLS?></a> ]</td></tr>
 <?php
 			break;
                 case 'comment':
