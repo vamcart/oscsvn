@@ -28,7 +28,7 @@
     </table></td>
   </tr>
   <tr>
-    <td align="center" class="smallText">Copyright &copy; 2004-2008 <a href="http://www.oscommerce.com" target="_blank">osCommerce</a></td>
+    <td align="center" class="smallText">Copyright &copy; 2004-<?php echo date("o"); ?> <a href="http://www.oscommerce.com" target="_blank">osCommerce</a></td>
   </tr>
 </table>
 <!-- footer_eof //-->
