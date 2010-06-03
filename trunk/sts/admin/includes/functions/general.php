@@ -2271,6 +2271,7 @@ function tep_get_spsr_zone_id($zone_id) {
 
 // BOF Site timezone
 function tep_cfg_pull_down_timezone_list($timezone, $key = '') {
+if (class_exists(DateTimeZone)) {
 $name = (($key) ? 'configuration[' . $key . ']' : 'configuration_value');
 // $zones = timezone_identifiers_list();
 $zones = DateTimeZone::listIdentifiers();
@@ -2294,6 +2295,7 @@ $field .= '>' . $city . '</option>' . "\n";
 $field .= ' </optgroup>' . "\n";
 }
 $field .= '</select>' . "\n";
+}
 return $field;
 }
 // EOF Site timezone
