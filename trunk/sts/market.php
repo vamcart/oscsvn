@@ -132,7 +132,8 @@ $products_sql = "select p.products_id, p.products_model, p.products_quantity, p.
 								 " and p.products_id = p2c.products_id
 									 and pd.language_id = " . (int)$languages_id . "
 									 and p.products_price > 0
-									 and l.languages_id=pd.language_id
+									 and l.languages_id=pd.language_id 
+									 group by p.products_id 
 								 order by pd.products_name";
 $products_query = tep_db_query($products_sql);
 $prev_prod['products_id'] = 0;
