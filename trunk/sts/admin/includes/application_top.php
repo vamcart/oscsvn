@@ -70,11 +70,11 @@ if (!isset($PHP_SELF)) $PHP_SELF = (isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_
   }
 
 // BOF Site timezone
-if (defined('SITE_TIME_ZONE') && SITE_TIME_ZONE != '') {
-putenv("TZ=" . SITE_TIME_ZONE);
-date_default_timezone_set(SITE_TIME_ZONE);
-tep_db_query("SET LOCAL time_zone='" . date('P') . "'");
-}
+//if (defined('SITE_TIME_ZONE') && SITE_TIME_ZONE != '') {
+//putenv("TZ=" . SITE_TIME_ZONE);
+//date_default_timezone_set(SITE_TIME_ZONE);
+//tep_db_query("SET LOCAL time_zone='" . date('P') . "'");
+//}
 // EOF Site timezone
 
 // define our general functions used application-wide
