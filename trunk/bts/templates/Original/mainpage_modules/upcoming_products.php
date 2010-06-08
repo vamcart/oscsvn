@@ -23,7 +23,6 @@
               <tr>
                 <td colspan="2"><?php echo tep_draw_separator(); ?></td>
               </tr>
-              <tr>
 <?php
     $row = 0;
     while ($expected = tep_db_fetch_array($expected_query)) {
