@@ -50,39 +50,88 @@
 
         $from_city = strtolower('city--'.MODULE_SHIPPING_RUSSIANPOSTEMS_CITY);
         $to_city = strtolower('city--'.make_alias($order->delivery['city']));
-        
-        $url = 'http://emspost.ru/api/rest?method=ems.calculate&from='.$from_city.'&to='.$to_city.'&weight='.$shipping_weight;
+
+        $this->quotes = array('id' => $this->code,
+                            'module' => MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_TITLE,
+                            'methods' => array(array('id' => $this->code,
+                                                     'title' => MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_NOTE)));
+
+        if (tep_not_null($this->icon)) $this->quotes['icon'] = tep_image($this->icon, $this->title);
+
+        $urlCities = 'http://emspost.ru/api/rest?method=ems.get.locations&type=cities';
 
         // create curl resource
         $ch = curl_init();
 
-        // set url
-        curl_setopt($ch, CURLOPT_URL, $url);
-
         //return the transfer as a string
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-        // $output contains the output string
+        // set url
+		curl_setopt($ch, CURLOPT_URL, $urlCities);
+		$outCities = curl_exec($ch);
+
+
+		//---- get city list
+        $citiesList = json_decode(utf8_encode($outCities), true);
+        foreach ($citiesList['rsp']['locations'] as $city){
+          if (strtolower($city['name']) == strtolower(MODULE_SHIPPING_RUSSIANPOSTEMS_CITY)){
+            $from_city = $city['value'];
+          }
+          if (strtolower($city['name']) == strtolower($order->delivery['city'])){
+            $to_city = $city['value'];
+          }
+        }
+	if ($from_city === null){
+	  $this->quotes['error']='Доставка из города '.MODULE_SHIPPING_RUSSIANPOSTEMS_CITY.' не производится!';
+	  return $this->quotes;
+	} else if ($to_city === null){
+	  $this->quotes['error']='Доставка в город '.$order->delivery['city'].' не производится!';
+	  return $this->quotes;
+	}
+	//----
+
+		$url = 'http://emspost.ru/api/rest?method=ems.calculate&from='.$from_city.'&to='.$to_city.'&weight='.$shipping_weight;
+		curl_setopt($ch, CURLOPT_URL, $url);
         $output = curl_exec($ch);
 
         // close curl resource to free up system resources
-        curl_close($ch);  
+        curl_close($ch);
 
         $contents = $output;
         $contents = utf8_encode($contents);
-        $results = json_decode($contents, true); 
+        $results = json_decode($contents, true);
 
-      $this->quotes = array('id' => $this->code,
-                            'module' => MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_TITLE,
-                            'methods' => array(array('id' => $this->code,
-                                                     'title' => MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_NOTE,
-                                                     'cost' => $results['rsp']['price'] + MODULE_SHIPPING_RUSSIANPOSTEMS_HANDLING)));
+        if ($results['rsp']['stat'] == 'fail'){
+          $this->quotes['error'] = 'Ошибка: '.$results['rsp']['err']['msg'];
+		  return $this->quotes;
+		}
+	$shPrice = $results['rsp']['price'];
+	if (MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT >0){
+	  $shPrice += $order->info['subtotal']*MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT/100;
+	}
+        $this->quotes['methods'][key($this->quotes['methods'])]['cost'] = $shPrice + MODULE_SHIPPING_RUSSIANPOSTEMS_HANDLING;
+        $dlvr_min = $results['rsp']['term']['min'];
+        $dlvr_max = $results['rsp']['term']['max'];
+        if (($dlvr_min > 0) AND ( $dlvr_max > 0)){
+          if ($dlvr_min == $dlvr_max){
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '<br /><i>(срок доставки '.$dlvr_max;
+          } else {
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '<br /><i>(срок доставки '.$dlvr_min.' - '.$dlvr_max;
+          }
+          if ($dlvr_max == 1){
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ' день';
+          } else if (($dlvr_max > 1) and ($dlvr_max < 5)){
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ' дня';
+          } else {
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ' дней';
+          }
+          $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ') </i>';
+        }
 
       if ($this->tax_class > 0) {
         $this->quotes['tax'] = tep_get_tax_rate($this->tax_class, $order->delivery['country']['id'], $order->delivery['zone_id']);
       }
 
-      if (tep_not_null($this->icon)) $this->quotes['icon'] = tep_image($this->icon, $this->title);
 
       return $this->quotes;
     }
@@ -102,6 +151,7 @@
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Налог', 'MODULE_SHIPPING_RUSSIANPOSTEMS_TAX_CLASS', '0', 'Использовать налог.', '6', '0', 'tep_get_tax_class_title', 'tep_cfg_pull_down_tax_classes(', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона', 'MODULE_SHIPPING_RUSSIANPOSTEMS_ZONE', '0', 'Если выбрана зона, то данный модуль доставки будет виден только покупателям из выбранной зоны.', '6', '0', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки', 'MODULE_SHIPPING_RUSSIANPOSTEMS_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '0', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Процентная ставка для объявленной ценности', 'MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT', '0', '0 - не учитывать, 1-100 - текущая процентная ставка из расчета суммы заказа', '6', '0', now())");
     }
 
     function remove() {
@@ -109,7 +159,7 @@
     }
 
     function keys() {
-      return array('MODULE_SHIPPING_RUSSIANPOSTEMS_STATUS', 'MODULE_SHIPPING_RUSSIANPOSTEMS_CITY', 'MODULE_SHIPPING_RUSSIANPOSTEMS_HANDLING', 'MODULE_SHIPPING_RUSSIANPOSTEMS_TAX_CLASS', 'MODULE_SHIPPING_RUSSIANPOSTEMS_ZONE', 'MODULE_SHIPPING_RUSSIANPOSTEMS_SORT_ORDER');
+      return array('MODULE_SHIPPING_RUSSIANPOSTEMS_STATUS', 'MODULE_SHIPPING_RUSSIANPOSTEMS_CITY', 'MODULE_SHIPPING_RUSSIANPOSTEMS_HANDLING', 'MODULE_SHIPPING_RUSSIANPOSTEMS_TAX_CLASS', 'MODULE_SHIPPING_RUSSIANPOSTEMS_ZONE', 'MODULE_SHIPPING_RUSSIANPOSTEMS_SORT_ORDER', 'MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT');
     }
   }
 ?>
