@@ -62,6 +62,12 @@
           tep_db_query("insert into " . TABLE_ORDERS_STATUS . " (orders_status_id, language_id, orders_status_name) values ('" . (int)$orders_status['orders_status_id'] . "', '" . (int)$insert_id . "', '" . tep_db_input($orders_status['orders_status_name']) . "')");
         }
 
+// create additional pages_description records
+        $pages_query = tep_db_query("select * from " . TABLE_PAGES_DESCRIPTION . " where language_id = '" . (int)$languages_id . "'");
+        while ($pages = tep_db_fetch_array($pages_query)) {
+          tep_db_query("insert into " . TABLE_PAGES_DESCRIPTION . " (pages_id, language_id, pages_name, pages_description, pages_viewed) VALUES ('" . (int)$pages['pages_id'] . "', '" . (int)$insert_id . "', '" . tep_db_input($pages['pages_name']) . "', '" . tep_db_input($pages['pages_description']) . "', '0')");
+        }
+
         if (isset($_POST['default']) && ($_POST['default'] == 'on')) {
           tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . tep_db_input($code) . "' where configuration_key = 'DEFAULT_LANGUAGE'");
         }
