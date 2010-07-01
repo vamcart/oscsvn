@@ -25,6 +25,10 @@
 //  tep_session_register('customer_zone_id');
 //  tep_session_register('comments');
 //  $cart->reset();
+
+	$sppc_customers_groups_id = 1;
+	tep_session_register('sppc_customers_groups_id');
+				
   //TotalB2B end
 
   if (sizeof($navigation->snapshot) > 0) {
