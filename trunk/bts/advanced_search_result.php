@@ -22,14 +22,14 @@ break;
 }
 
 if(isset($_GET['keywords']) && $_GET['keywords'] != ''){
-	if(!isset($_GET['s'])){
-  	    $pwstr_check = strtolower(substr($_GET['keywords'], strlen($_GET['keywords'])-1, strlen($_GET['keywords'])));
-  	    if($pwstr_check == 's'){
-  	            $pwstr_replace = substr($_GET['keywords'], 0, strlen($_GET['keywords'])-1);
-  	            header('location: ' . tep_href_link( FILENAME_ADVANCED_SEARCH_RESULT , 'search_in_description=1&s=1&keywords=' . urlencode($pwstr_replace) . '' ));
-  	            exit;
-  	    }
-        } 
+	//if(!isset($_GET['s'])){
+  	    //$pwstr_check = strtolower(substr($_GET['keywords'], strlen($_GET['keywords'])-1, strlen($_GET['keywords'])));
+  	    //if($pwstr_check == 's'){
+  	            //$pwstr_replace = substr($_GET['keywords'], 0, strlen($_GET['keywords'])-1);
+  	            //header('location: ' . tep_href_link( FILENAME_ADVANCED_SEARCH_RESULT , 'search_in_description=1&s=1&keywords=' . urlencode($pwstr_replace) . '' ));
+  	            //exit;
+  	    //}
+        //} 
 
        $pw_keywords = explode(' ',stripslashes(strtolower($_GET['keywords'])));
        $pw_boldwords = $pw_keywords;
