@@ -1,40 +1,40 @@
 <?php
 /*
-  $Id: webmoney_merchant.php 1803 2008-01-11 18:16:37Z hpdl $
+  $Id: lendshop.php 1803 2010-07-12 18:16:37Z oleg_vamoft $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2008 osCommerce
+  Copyright (c) 2010 VaMSoft Ltd. http://kypi.ru
 
   Released under the GNU General Public License
 */
 
-  class webmoney_merchant {
+  class lendshop {
     var $code, $title, $description, $enabled;
 
 // class constructor
-    function webmoney_merchant() {
+    function lendshop() {
       global $order;
 
-      $this->code = 'webmoney_merchant';
-      $this->title = MODULE_PAYMENT_WEBMONEY_MERCHANT_TEXT_TITLE;
-      $this->public_title = MODULE_PAYMENT_WEBMONEY_MERCHANT_TEXT_PUBLIC_TITLE;
-      $this->description = MODULE_PAYMENT_WEBMONEY_MERCHANT_TEXT_ADMIN_DESCRIPTION;
-      $this->icon = DIR_WS_ICONS . 'webmoney.png';
-      $this->sort_order = MODULE_PAYMENT_WEBMONEY_MERCHANT_SORT_ORDER;
-      $this->enabled = ((MODULE_PAYMENT_WEBMONEY_MERCHANT_STATUS == 'True') ? true : false);
+      $this->code = 'lendshop';
+      $this->title = MODULE_PAYMENT_LENDSHOP_TEXT_TITLE;
+      $this->public_title = MODULE_PAYMENT_LENDSHOP_TEXT_PUBLIC_TITLE;
+      $this->description = MODULE_PAYMENT_LENDSHOP_TEXT_ADMIN_DESCRIPTION;
+      $this->icon = DIR_WS_ICONS . 'lendshop.png';
+      $this->sort_order = MODULE_PAYMENT_LENDSHOP_SORT_ORDER;
+      $this->enabled = ((MODULE_PAYMENT_LENDSHOP_STATUS == 'True') ? true : false);
 
-        $this->form_action_url = 'https://merchant.webmoney.ru/lmi/payment.asp';
+        $this->form_action_url = 'https://lendshop.ru/lmi/payment/';
     }
 
 // class methods
     function update_status() {
       global $order;
 
-      if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_WEBMONEY_MERCHANT_ZONE > 0) ) {
+      if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_LENDSHOP_ZONE > 0) ) {
         $check_flag = false;
-        $check_query = tep_db_query("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_WEBMONEY_MERCHANT_ZONE . "' and zone_country_id = '" . $order->billing['country']['id'] . "' order by zone_id");
+        $check_query = tep_db_query("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_LENDSHOP_ZONE . "' and zone_country_id = '" . $order->billing['country']['id'] . "' order by zone_id");
         while ($check = tep_db_fetch_array($check_query)) {
           if ($check['zone_id'] < 1) {
             $check_flag = true;
@@ -56,10 +56,10 @@
     }
 
     function selection() {
-      global $cart_webmoney_id;
+      global $cart_lendshop_id;
 
-      if (tep_session_is_registered('cart_webmoney_id')) {
-        $order_id = substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1);
+      if (tep_session_is_registered('cart_lendshop_id')) {
+        $order_id = substr($cart_lendshop_id, strpos($cart_lendshop_id, '-')+1);
 
         $check_query = tep_db_query('select orders_id from ' . TABLE_ORDERS_STATUS_HISTORY . ' where orders_id = "' . (int)$order_id . '" limit 1');
 
@@ -71,7 +71,7 @@
           tep_db_query('delete from ' . TABLE_ORDERS_PRODUCTS_ATTRIBUTES . ' where orders_id = "' . (int)$order_id . '"');
           tep_db_query('delete from ' . TABLE_ORDERS_PRODUCTS_DOWNLOAD . ' where orders_id = "' . (int)$order_id . '"');
 
-          tep_session_unregister('cart_webmoney_id');
+          tep_session_unregister('cart_lendshop_id');
         }
       }
 
@@ -96,18 +96,18 @@
     }
 
     function confirmation() {
-      global $cartID, $cart_webmoney_id, $customer_id, $languages_id, $order, $order_total_modules;
+      global $cartID, $cart_lendshop_id, $customer_id, $languages_id, $order, $order_total_modules;
 
       if (tep_session_is_registered('cartID')) {
         $insert_order = false;
 
-        if (tep_session_is_registered('cart_webmoney_id')) {
-          $order_id = substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1);
+        if (tep_session_is_registered('cart_lendshop_id')) {
+          $order_id = substr($cart_lendshop_id, strpos($cart_lendshop_id, '-')+1);
 
           $curr_check = tep_db_query("select currency from " . TABLE_ORDERS . " where orders_id = '" . (int)$order_id . "'");
           $curr = tep_db_fetch_array($curr_check);
 
-          if ( ($curr['currency'] != $order->info['currency']) || ($cartID != substr($cart_webmoney_id, 0, strlen($cartID))) ) {
+          if ( ($curr['currency'] != $order->info['currency']) || ($cartID != substr($cart_lendshop_id, 0, strlen($cartID))) ) {
             $check_query = tep_db_query('select orders_id from ' . TABLE_ORDERS_STATUS_HISTORY . ' where orders_id = "' . (int)$order_id . '" limit 1');
 
             if (tep_db_num_rows($check_query) < 1) {
@@ -258,25 +258,25 @@
             }
           }
 
-          $cart_webmoney_id = $cartID . '-' . $insert_id;
-          tep_session_register('cart_webmoney_id');
+          $cart_lendshop_id = $cartID . '-' . $insert_id;
+          tep_session_register('cart_lendshop_id');
         }
       }
 
-      return array('title' => MODULE_PAYMENT_WEBMONEY_MERCHANT_TEXT_DESCRIPTION);
+      return array('title' => MODULE_PAYMENT_LENDSHOP_TEXT_DESCRIPTION);
     }
 
     function process_button() {
-      global $customer_id, $order, $sendto, $currency, $currencies, $cart_webmoney_id, $shipping;
+      global $customer_id, $order, $sendto, $currency, $currencies, $cart_lendshop_id, $shipping;
 
       $process_button_string = '';
 
-                               $purse = MODULE_PAYMENT_WEBMONEY_MERCHANT_WMR;
+                               $purse = MODULE_PAYMENT_LENDSHOP_WMR;
                                $order_sum = $order->info['total'];
 
-      $process_button_string = tep_draw_hidden_field('LMI_PAYMENT_NO', substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1)) .
+      $process_button_string = tep_draw_hidden_field('LMI_PAYMENT_NO', substr($cart_lendshop_id, strpos($cart_lendshop_id, '-')+1)) .
                                tep_draw_hidden_field('LMI_PAYEE_PURSE', $purse) .
-                               tep_draw_hidden_field('LMI_PAYMENT_DESC', 'Заказ номер: ' . substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1) . ', покупатель номер: ' . $customer_id) .
+                               tep_draw_hidden_field('LMI_PAYMENT_DESC', 'Заказ номер: ' . substr($cart_lendshop_id, strpos($cart_lendshop_id, '-')+1) . ', покупатель номер: ' . $customer_id) .
                                tep_draw_hidden_field('LMI_PAYMENT_AMOUNT', $order_sum) .
                                tep_draw_hidden_field('LMI_SIM_MODE', '0');
 
@@ -284,10 +284,10 @@
     }
 
     function before_process() {
-      global $customer_id, $order, $order_totals, $sendto, $billto, $languages_id, $payment, $currencies, $cart, $cart_webmoney_id;
+      global $customer_id, $order, $order_totals, $sendto, $billto, $languages_id, $payment, $currencies, $cart, $cart_lendshop_id;
       global $$payment;
 
-      $order_id = substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1);
+      $order_id = substr($cart_lendshop_id, strpos($cart_lendshop_id, '-')+1);
 
 // initialized for the email confirmation
       $products_ordered = '';
@@ -425,7 +425,7 @@
       tep_session_unregister('payment');
       tep_session_unregister('comments');
 
-      tep_session_unregister('cart_webmoney_id');
+      tep_session_unregister('cart_lendshop_id');
 
       tep_redirect(tep_href_link(FILENAME_CHECKOUT_SUCCESS, '', 'SSL'));
     }
@@ -440,7 +440,7 @@
 
     function check() {
       if (!isset($this->_check)) {
-        $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'MODULE_PAYMENT_WEBMONEY_MERCHANT_STATUS'");
+        $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'MODULE_PAYMENT_LENDSHOP_STATUS'");
         $this->_check = tep_db_num_rows($check_query);
       }
       return $this->_check;
@@ -448,13 +448,13 @@
 
     function install() {
 
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты WebMoney', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_STATUS', 'True', 'Разрешить модуль оплаты WebMoney?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш WM ID', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ID', '', 'Укажите Ваш WM идентификатор.', '6', '4', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш WMR кошелёк', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_WMR', '', 'Укажите Ваш WMR кошелёк.', '6', '5', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '6', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '7', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Секретный ключ', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SECRET_KEY', '0', 'В данной опции укажите Ваш ключ, указанный в опции Secret Key на сайте WebMoney Merchant.', '6', '8', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты LendShop.Ru', 'MODULE_PAYMENT_LENDSHOP_STATUS', 'True', 'Разрешить модуль оплаты LendShop.Ru?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш WM ID', 'MODULE_PAYMENT_LENDSHOP_ID', '', 'Укажите Ваш WM идентификатор.', '6', '4', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш WMR кошелёк', 'MODULE_PAYMENT_LENDSHOP_WMR', '', 'Укажите Ваш WMR кошелёк.', '6', '5', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_LENDSHOP_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '6', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_LENDSHOP_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '7', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Секретный ключ', 'MODULE_PAYMENT_LENDSHOP_SECRET_KEY', '0', 'В данной опции укажите Ваш ключ, указанный в опции Secret Key на сайте LendShop.Ru.', '6', '8', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_LENDSHOP_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
 
     function remove() {
@@ -462,7 +462,7 @@
     }
 
     function keys() {
-      return array('MODULE_PAYMENT_WEBMONEY_MERCHANT_STATUS', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ID', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_WMR', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SORT_ORDER', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ZONE', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SECRET_KEY', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ORDER_STATUS_ID');
+      return array('MODULE_PAYMENT_LENDSHOP_STATUS', 'MODULE_PAYMENT_LENDSHOP_ID', 'MODULE_PAYMENT_LENDSHOP_WMR', 'MODULE_PAYMENT_LENDSHOP_SORT_ORDER', 'MODULE_PAYMENT_LENDSHOP_ZONE', 'MODULE_PAYMENT_LENDSHOP_SECRET_KEY', 'MODULE_PAYMENT_LENDSHOP_ORDER_STATUS_ID');
     }
 
 // format prices without currency formatting
