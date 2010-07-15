@@ -46,7 +46,7 @@ function NewProductsModuleListingTemplate($url,$pid,$description,$manufacturer,$
   //TotalB2B end
   
  $info_box_contents = array();
-  $info_box_contents[] = array('text' => sprintf(TABLE_HEADING_NEW_PRODUCTS, strftime('%B')));
+  $info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_PRODUCTS_NEW, '', 'NONSSL') . '">' . sprintf(TABLE_HEADING_NEW_PRODUCTS, strftime('%B')) . '</a>');
 
   new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_PRODUCTS_NEW));
 
