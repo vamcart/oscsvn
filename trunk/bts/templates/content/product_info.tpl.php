@@ -4,7 +4,7 @@
   if ($product_check['total'] < 1) {
 ?>
       <tr>
-        <td><?php new infoBox(array(array('text' => TEXT_PRODUCT_NOT_FOUND))); ?></td>
+        <td><?php new errorBox(array(array('text' => TEXT_PRODUCT_NOT_FOUND))); ?></td>
       </tr>
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
