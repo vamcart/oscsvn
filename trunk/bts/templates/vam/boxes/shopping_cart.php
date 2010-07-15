@@ -77,6 +77,10 @@ echo $cart_contents_string;
   }
   //TotalB2B end
 
+  if ($cart->count_contents() > 0) {
+      echo '<p align="center"><a href="' . tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL') . '">'.HEADER_TITLE_CHECKOUT.'</a></p>';
+  }
+
 
 // ICW ADDED FOR CREDIT CLASS GV
   if (tep_session_is_registered('customer_id')) {
