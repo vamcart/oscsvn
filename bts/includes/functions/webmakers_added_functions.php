@@ -91,7 +91,19 @@
       // If a Special, Show it
       if ($add_special=tep_get_products_special_price($products_id)) {
         //       $products_price = '<s>' . $currencies->display_price($product_info_values['products_price'], tep_get_tax_rate($product_info_values['products_tax_class_id'])) . '</s> <span class="productSpecialPrice">' . $currencies->display_price($new_price, tep_get_tax_rate($product_info_values['products_tax_class_id'])) . '</span>';
+       /* ORIGINAL 213
         $display_price = '<s>' . $display_price . '</s> <span class="productSpecialPrice"> ' . $currencies->display_price($add_special,tep_get_tax_rate($product_check['products_tax_class_id']),'1') .  '</span> ';
+       */
+/* CDS Patch. 1. BOF */
+       $tmp_real_price = $display_price;
+       $tmp_specials_price = $currencies->display_price($add_special,tep_get_tax_rate($product_check['products_tax_class_id']),'1');
+       $display_price = '<nobr><s>' . $tmp_real_price . '</s></nobr><br />
+	   <nobr><span class="productSpecialPrice">' . $tmp_specials_price . '</span></nobr>';
+	   if (str_replace(",", "", $tmp_real_price) != 0)
+	   {
+	   $display_price .= '<br /><nobr><span class="productSpecialPrice">(-' . (int)(((str_replace(",", "", $tmp_real_price) - str_replace(",", "", $tmp_specials_price)) * 100) / str_replace(",", "", $tmp_real_price)) . '%)</span></nobr>';
+	   }
+/* CDS Patch. 1. EOF */
       }
 
       // If Free, Show it
