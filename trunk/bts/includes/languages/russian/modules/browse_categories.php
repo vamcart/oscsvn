@@ -22,8 +22,8 @@
 
   //DWD Contribution: Browse by Categories.
 
-  define('BOX_HEADING_BROWSE_TOP_CATEGORIES', '&nbsp;Каталог товаров - выберите интересующий Вас раздел');
-  define('BOX_HEADING_BROWSE_SUB_CATEGORIES', '&nbsp;Выберите интересующий Вас подраздел');
+  define('BOX_HEADING_BROWSE_TOP_CATEGORIES', 'Каталог товаров - выберите интересующий Вас раздел');
+  define('BOX_HEADING_BROWSE_SUB_CATEGORIES', 'Выберите интересующий Вас подраздел');
   define('TEXT_BROWSE_TOP_CATEGORY', 'Вернуться к списку разделов');
   define('TEXT_BROWSE_PARENT_CATEGORY', 'Вернуться в раздел:&nbsp;');
 
