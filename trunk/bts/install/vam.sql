@@ -2353,7 +2353,7 @@ create table products (
   products_date_added datetime default '0000-00-00 00:00:00' not null ,
   products_last_modified datetime ,
   products_date_available datetime ,
-  products_weight decimal(5,2) default '0.00' not null ,
+  products_weight decimal(5,3) default '0.000' not null ,
   products_status tinyint(1) default '0' not null ,
   products_to_xml tinyint(1) default '1' not null ,
   products_tax_class_id int(11) default '0' not null ,
