@@ -68,9 +68,30 @@
 
     $column_list = array();
     reset($define_list);
+/* ORIGINAL 213
     while (list($key, $value) = each($define_list)) {
       if ($value > 0) $column_list[] = $key;
     }
+*/
+/* CDS Patch. 4. OF */
+    $column_list_order = array();
+    $order = 0;
+    $order_group = -1;
+    $value_old = 0;
+    while (list($key, $value) = each($define_list)) {
+      if ($value > 0)
+      {
+        $column_list[$order] = $key;
+        if ($value_old != $value)
+        {
+          $value_old = $value;
+          $order_group++;
+        }
+        $column_list_order[$order] = $order_group;
+        $order++;
+      }
+    }
+/* CDS Patch. 4. EOF */
 
     $select_column_list = '';
 
