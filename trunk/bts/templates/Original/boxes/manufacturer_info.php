@@ -26,7 +26,12 @@
             <td>
 <?php
   $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text'  => '<font color="' . $font_color . '">' . BOX_HEADING_MANUFACTURER_INFO . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text'  => '<a href="' . tep_href_link(FILENAME_REDIRECT, 'action=manufacturer', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_MANUFACTURER_INFO . '</font></a>');
+/* CDS Patch. 12. EOF */
   new infoBoxHeading($info_box_contents, false, false);
 
      $manufacturer_info_string = '<div align="center">' . tep_image(DIR_WS_IMAGES . $manufacturer['manufacturers_image'], $manufacturer['manufacturers_name']) . '</div><table border="0" width="80%" cellspacing="0" cellpadding="0">';

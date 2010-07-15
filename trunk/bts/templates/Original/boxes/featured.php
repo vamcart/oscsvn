@@ -24,9 +24,14 @@
     $random_product['specials_new_products_price'] = tep_get_products_special_price($random_product['products_id']);
 
     $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('align' => 'left',
                                  'text'  => '<font color="' . $font_color . '">' .BOX_HEADING_FEATURED . '</font>'
                                 );
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_FEATURED_PRODUCTS, '', 'NONSSL') . '"><font color="' . $font_color . '">' .BOX_HEADING_FEATURED . '</font></a>');
+/* CDS Patch. 12. EOF */
     new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_FEATURED_PRODUCTS, '', 'NONSSL'));
 
 	//TotalB2B start
@@ -41,6 +46,7 @@
 //      $query_special_prices_hide_result = tep_db_fetch_array($query_special_prices_hide); 
       $query_special_prices_hide_result = SPECIAL_PRICES_HIDE; 
     $random_product['products_price'] = tep_xppp_getproductprice($random_product['products_id']);      
+        /* ORIGINAL. 213
       if ($query_special_prices_hide_result == 'true') {
           $random_product['products_price'] = tep_xppp_getproductprice($random_product['products_id']);
 		$whats_new_price .= '<span class="productSpecialPrice">' . $currencies->display_price_nodiscount($random_product['specials_new_products_price'], tep_get_tax_rate($random_product['products_tax_class_id'])) . '</span>';
@@ -53,6 +59,27 @@
     } else {
       $whats_new_price = $currencies->display_price($random_product['products_price'], tep_get_tax_rate($random_product['products_tax_class_id']));
     }
+        */
+/* CDS Patch. 1. BOF */
+      if ($query_special_prices_hide_result == 'true') {
+          $random_product['products_price'] = tep_xppp_getproductprice($random_product['products_id']);
+		$whats_new_price .= '<nobr><span class="productSpecialPrice">' . $currencies->display_price_nodiscount($random_product['specials_new_products_price'], tep_get_tax_rate($random_product['products_tax_class_id'])) . '</span></nobr>';
+	  } else {
+        $tmp_real_price = $currencies->display_price_nodiscount($random_product['products_price'], tep_get_tax_rate($random_product['products_tax_class_id']));
+        $tmp_specials_price = $currencies->display_price_nodiscount($random_product['specials_new_products_price'], tep_get_tax_rate($random_product['products_tax_class_id']));
+        $whats_new_price = '<nobr><s>' . $tmp_real_price . '</s></nobr><br />
+        <nobr><span class="productSpecialPrice">' . $tmp_specials_price . '</span></nobr>';
+        if (str_replace(",", "", $tmp_real_price) != 0)
+        {
+        $whats_new_price .= '<br /><nobr><span class="productSpecialPrice">(-' . (int)(((str_replace(",", "", $tmp_real_price) - str_replace(",", "", $tmp_specials_price)) * 100) / str_replace(",", "", $tmp_real_price)) . '%)</span></nobr>';
+        }
+	  }
+      //TotalB2B end
+
+    } else {
+      $whats_new_price = '<nobr>' . $currencies->display_price($random_product['products_price'], tep_get_tax_rate($random_product['products_tax_class_id'])) . '</nobr>';
+    }
+/* CDS Patch. 1. EOF */
 
     $info_box_contents = array();
     $random_product['products_price'] = tep_xppp_getproductprice($random_product['products_id']);    

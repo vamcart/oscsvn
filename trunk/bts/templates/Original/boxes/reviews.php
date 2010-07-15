@@ -15,7 +15,12 @@
             <td>
 <?php
   $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text'  => '<font color="' . $font_color . '">' . BOX_HEADING_REVIEWS . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_REVIEWS, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_REVIEWS . '</font></a>');
+/* CDS Patch. 12. EOF */
   new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_REVIEWS, '', 'NONSSL'));
 
   $random_select = "select r.reviews_id, r.reviews_rating, substring(rd.reviews_text, 1, 60) as reviews_text, p.products_id, p.products_image from " . TABLE_REVIEWS . " r left join " . TABLE_PRODUCTS . " p on r.products_id = p.products_id, " . TABLE_REVIEWS_DESCRIPTION . " rd where p.products_status = '1' and r.status_otz = '1' and rd.reviews_id = r.reviews_id and languages_id = '" . $languages_id . "'";

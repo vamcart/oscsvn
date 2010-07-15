@@ -17,8 +17,12 @@
             <td>
 <?php
     $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text' => BOX_HEADING_NOTIFICATIONS);
-
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_ACCOUNT_NOTIFICATIONS, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_NOTIFICATIONS . '</font></a>');
+/* CDS Patch. 12. EOF */
     new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_ACCOUNT_NOTIFICATIONS, '', 'SSL'));
 
     if (tep_session_is_registered('customer_id')) {

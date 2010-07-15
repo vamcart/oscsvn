@@ -63,7 +63,12 @@ if ($pollid) {
         $title_query = tep_db_query("select optionText from phesis_poll_data where pollid=$pollid and voteid='0' and language_id = '" . $languages_id . "'");
         $title = tep_db_fetch_array($title_query);
 	$info_box_contents = array();
+/* ORIGINAL 213
    $info_box_contents[] = array('text' => '<font color="' . $font_color . '">' . _POLLS . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+   $info_box_contents[] = array('text' => '<a href="' . tep_href_link('pollbooth.php', 'op=list') . '"><font color="' . $font_color . '">' . _POLLS . '</font></a>');
+/* CDS Patch. 12. EOF */
   	new infoBoxHeading($info_box_contents, false, false);
   	$url = tep_href_link('pollbooth.php', 'op=results&pollid='.$pollid);
 	$cont = "<tr><td colspan=\"2\" class=\"main\">" . $title['optionText'] . "</td></tr>";
@@ -120,7 +125,12 @@ $info_box_contents = array();
 	<td>
 <?php
 $info_box_contents = array();
+/* ORIGINAL 213
 $info_box_contents[] = array('text' => '<font color="' . $font_color . '">' . _NOPOLLS . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+$info_box_contents[] = array('text' => '<a href="' . tep_href_link('pollbooth.php', 'op=list') . '"><font color="' . $font_color . '">' . _NOPOLLS . '</font></a>');
+/* CDS Patch. 12. EOF */
 new infoBoxHeading($info_box_contents, false, false);
 $info_box_contents = array();
 $info_box_contents[] = array('align' => 'center',

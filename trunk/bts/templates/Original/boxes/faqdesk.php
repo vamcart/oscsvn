@@ -128,7 +128,12 @@ if ($foo_faqdesk[$counter]['next_id']) {
 <?php
 
   $faqdesk_box_contents = array();
+/* ORIGINAL 213
   $faqdesk_box_contents[] = array('text' => '<font color="' . $font_color . '">' . BOX_HEADING_FAQDESK_CATEGORIES . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+  $faqdesk_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_FAQDESK_INDEX, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_FAQDESK_CATEGORIES . '</font></a>');
+/* CDS Patch. 12. EOF */
 
 new infoBoxHeading($faqdesk_box_contents, false, false);
 
