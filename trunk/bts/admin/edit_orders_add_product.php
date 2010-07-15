@@ -219,7 +219,7 @@ $product['products_price']=b2b_display_price($add_product_products_id,$product['
         $add_product_products_id = 0;
         
 			 
-		tep_redirect(tep_href_link(FILENAME_ORDERS_EDIT_ADD_PRODUCT, 'oID=' . $oID . '&step=1&submitForm=yes'));
+		tep_redirect(tep_href_link(FILENAME_ORDERS_EDIT_ADD_PRODUCT, 'oID=' . $oID . '&customer_id='.$customer_id.'&step=1&submitForm=yes'));
         
 		break;
     }
