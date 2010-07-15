@@ -9,7 +9,7 @@
 
   Released under the GNU General Public License
 */
-define('DIR_WS_TEMPLATE_IMAGES', 'templates/Original/images/');
+define('DIR_WS_TEMPLATE_IMAGES', DIR_WS_TEMPLATES . TEMPLATE_NAME . '/images/');
 
 // WebMakers.com Added: Down for Maintenance
 // Hide header if not to show
