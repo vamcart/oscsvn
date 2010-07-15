@@ -1956,7 +1956,7 @@ create table orders_products_attributes (
   orders_id int(11) default '0' not null ,
   orders_products_id int(11) default '0' not null ,
   products_options varchar(255) not null ,
-  products_options_values varchar(255) not null ,
+  products_options_values text not null ,
   options_values_price decimal(15,4) default '0.0000' not null ,
   price_prefix char(1) not null ,
   PRIMARY KEY (orders_products_attributes_id),
