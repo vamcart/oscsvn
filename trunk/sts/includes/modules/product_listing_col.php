@@ -56,11 +56,11 @@ if (isset($pw_mispell)){ //added for search enhancements mod
 // BOF display_all_products
 if ($listing_split->number_of_pages > 1) {
 ?>
-    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=all', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_ALL_PRODUCTS . ' "><u>' . TEXT_DISPLAY_ALL_PRODUCTS . '</u></a>&nbsp;&nbsp;'; ?>
+    <?php echo '<br><a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=all', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_ALL_PRODUCTS . ' ">' . TEXT_DISPLAY_ALL_PRODUCTS . '</a>'; ?>
 <?php
 } elseif ($_GET['page'] == 'all') {
 ?>
-    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=1', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_BY_PAGES . ' "><u>' . TEXT_DISPLAY_BY_PAGES . '</u></a>&nbsp;&nbsp;'; ?>
+    <?php echo '<br><a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=1', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_BY_PAGES . ' ">' . TEXT_DISPLAY_BY_PAGES . '</a>'; ?>
 <?php
 }
 // EOF display_all_products
@@ -188,19 +188,21 @@ if ($listing_split->number_of_pages > 1) {
           switch ($column_list[$col]) {
             case 'PRODUCT_LIST_MODEL':
               $lc_align = '';
-              $lc_text = '&nbsp;' . $listing['products_model'] . '&nbsp;';
+              $lc_text = $listing['products_model'] == ''?'&nbsp;':$listing['products_model'];
               break;
             case 'PRODUCT_LIST_NAME':
               $lc_align = '';
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
-                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>&nbsp;' . tep_get_products_info($listing['products_id']);
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
+                ' . tep_get_products_info($listing['products_id']);
               } else {
-                $lc_text = '&nbsp;<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>&nbsp;' . tep_get_products_info($listing['products_id']);
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
+                ' . tep_get_products_info($listing['products_id']);
               }
               break;
             case 'PRODUCT_LIST_MANUFACTURER':
               $lc_align = '';
-              $lc_text = '&nbsp;<a href="' . tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $listing['manufacturers_id']) . '">' . $listing['manufacturers_name'] . '</a>&nbsp;';
+              $lc_text = $listing['manufacturers_name'] == ''?'&nbsp;':'<a href="' . tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $listing['manufacturers_id']) . '">' . $listing['manufacturers_name'] . '</a>';
               break;
           case 'PRODUCT_LIST_PRICE':
             $lc_align = 'right';
@@ -228,11 +230,11 @@ if ($listing_split->number_of_pages > 1) {
               break;
             case 'PRODUCT_LIST_QUANTITY':
               $lc_align = 'right';
-              $lc_text = '&nbsp;' . $listing['products_quantity'] . '&nbsp;';
+              $lc_text = $listing['products_quantity'] == ''?'&nbsp;':$listing['products_quantity'];
               break;
             case 'PRODUCT_LIST_WEIGHT':
               $lc_align = 'right';
-              $lc_text = '&nbsp;' . $listing['products_weight'] . '&nbsp;';
+              $lc_text = $listing['products_weight'] == ''?'&nbsp;':$listing['products_weight'];
               break;
             case 'PRODUCT_LIST_BUY_NOW':
               $lc_align = 'center';
@@ -241,7 +243,7 @@ if (tep_has_product_attributes($listing['products_id'])) {
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . TEXT_MORE_INFO . '</a>';
               } else {
-                $lc_text = '&nbsp;<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . TEXT_MORE_INFO . '</a>';
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . TEXT_MORE_INFO . '</a>';
               }
 } else {
               $lc_text =                
@@ -251,14 +253,14 @@ if (tep_has_product_attributes($listing['products_id'])) {
               break;
            case 'PRODUCT_SORT_ORDER';
             $lc_align = 'center';
-            $lc_text = '&nbsp;' . $listing['products_sort_order'] . '&nbsp;';
+            $lc_text = $listing['products_sort_order'] == ''?'&nbsp;':$listing['products_sort_order'];
             break;             
             case 'PRODUCT_LIST_IMAGE':
               $lc_align = 'center';
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
               } else {
-                $lc_text = '&nbsp;<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>&nbsp;';
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
               }
               break;
           }
@@ -323,11 +325,9 @@ if (tep_has_product_attributes($listing['products_id'])) {
     } else {
       $list_box_contents = array();
 
-      $list_box_contents[0] = array('params' => 'class="productListing-odd"');
-      $list_box_contents[0][] = array('params' => 'class="productListing-data"',
-                                        'text' => TEXT_NO_PRODUCTS);
+      $list_box_contents[] = array('text' => TEXT_NO_PRODUCTS);
+      new errorBox($list_box_contents);
 
-      new productListingBox($list_box_contents);
     }
     
   } elseif (PRODUCT_LISTING_DISPLAY_STYLE == 'columns') {
@@ -424,7 +424,7 @@ if (tep_has_product_attributes($listing['products_id'])) {
     }
   }
     
-  if ( ($listing_split->number_of_rows > 0) && ((PREV_NEXT_BAR_LOCATION == '2') || (PREV_NEXT_BAR_LOCATION == '3')) ) {
+  if ( ($listing_split->number_of_rows > 0) && ( (PREV_NEXT_BAR_LOCATION == '1') || (PREV_NEXT_BAR_LOCATION == '3') ) ) {
 ?>
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
   <tr>
@@ -434,11 +434,11 @@ if (tep_has_product_attributes($listing['products_id'])) {
 // BOF display_all_products
 if ($listing_split->number_of_pages > 1) {
 ?>
-    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=all', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_ALL_PRODUCTS . ' "><u>' . TEXT_DISPLAY_ALL_PRODUCTS . '</u></a>&nbsp;&nbsp;'; ?>
+    <?php echo '<br><a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=all', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_ALL_PRODUCTS . ' ">' . TEXT_DISPLAY_ALL_PRODUCTS . '</a>'; ?>
 <?php
 } elseif ($_GET['page'] == 'all') {
 ?>
-    <?php echo '&nbsp;<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=1', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_BY_PAGES . ' "><u>' . TEXT_DISPLAY_BY_PAGES . '</u></a>&nbsp;&nbsp;'; ?>
+    <?php echo '<br><a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'x', 'y')) . 'page=1', $request_type) . '" class="pageResults" title=" ' . TEXT_DISPLAY_BY_PAGES . ' ">' . TEXT_DISPLAY_BY_PAGES . '</a>'; ?>
 <?php
 }
 // EOF display_all_products
