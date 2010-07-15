@@ -62,8 +62,12 @@ if (!tep_db_num_rows($latest_news_var_query)) { // there is no news
 } else {
 
 $info_box_contents = array();
+/* ORIGINAL 213
 $info_box_contents[] = array('text' => '<font color="' . $font_color . '">' . BOX_HEADING_NEWSDESK_LATEST . '</font>');
-
+*/
+/* CDS Patch. 12. BOF */
+$info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_NEWSDESK_INFO, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_NEWSDESK_LATEST . '</font></a>');
+/* CDS Patch. 12. EOF */
 new infoBoxHeading($info_box_contents, false, false);
 
 $latest_news_string = '';

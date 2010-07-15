@@ -19,7 +19,12 @@
 
 
   $info_box_contents = array();
+/* ORIGINAL 213
   $info_box_contents[] = array('text' => '<font color="' . $font_color . '">' . BOX_HEADING_AUTHORS . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+  $info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_ARTICLES, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_AUTHORS . '</font></a>');
+/* CDS Patch. 12. EOF */
   new infoBoxHeading($info_box_contents, false, false);
 
     if ($number_of_author_rows <= MAX_DISPLAY_AUTHORS_IN_A_LIST) {

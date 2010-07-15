@@ -25,14 +25,34 @@
             <td>
 <?php
   $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text'  => '<font color="' . $font_color . '">' . BOX_HEADING_SPECIALS . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text'  => '<a href="' . tep_href_link(FILENAME_SPECIALS, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_SPECIALS . '</font></a>');
+/* CDS Patch. 12. EOF */
   new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_SPECIALS, '', 'NONSSL'));
 
     $info_box_contents = array();
     $random_product['products_price'] = tep_xppp_getproductprice($random_product['products_id']);
+    /* ORIGINAL. 213
     $info_box_contents[] = array('align' => 'center',
                                  'text'  => '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $random_product["products_id"]) . '">' . tep_image(DIR_WS_IMAGES . $random_product['products_image'], $random_product['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $random_product['products_id']) . '">' . $random_product['products_name'] . '</a><br><s>' . $currencies->display_price_nodiscount($random_product['products_price'], tep_get_tax_rate($random_product['products_tax_class_id'])) . '</s><br><span class="productSpecialPrice">' . $currencies->display_price_nodiscount(tep_get_products_special_price($random_product['products_id']), tep_get_tax_rate($random_product['products_tax_class_id'])) . '</span>'
                                 );
+    */
+/* CDS Patch. 1. BOF */
+    $tmp_real_price = $currencies->display_price_nodiscount($random_product['products_price'], tep_get_tax_rate($random_product['products_tax_class_id']));
+    $tmp_specials_price = $currencies->display_price_nodiscount(tep_get_products_special_price($random_product['products_id']), tep_get_tax_rate($random_product['products_tax_class_id']));
+    $tmp_products_price = '<nobr><s>' . $tmp_real_price . '</s></nobr><br />
+    <nobr><span class="productSpecialPrice">' . $tmp_specials_price . '</span></nobr>';
+    if (str_replace(",", "", $tmp_real_price) != 0)
+    {
+    $tmp_products_price .= '<br /><nobr><span class="productSpecialPrice">(-' . (int)(((str_replace(",", "", $tmp_real_price) - str_replace(",", "", $tmp_specials_price)) * 100) / str_replace(",", "", $tmp_real_price)) . '%)</span></nobr>';
+    }
+    $info_box_contents[] = array('align' => 'center',
+                                 'text'  => '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $random_product["products_id"]) . '">' . tep_image(DIR_WS_IMAGES . $random_product['products_image'], $random_product['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $random_product['products_id']) . '">' . $random_product['products_name'] . '</a><br>' . $tmp_products_price
+                                );
+/* CDS Patch. 1. EOF */
    new infoBox($info_box_contents);
 
 

@@ -23,7 +23,12 @@ if (!tep_session_is_registered('customer_id') && ENABLE_PAGE_CACHE == 'true' && 
             <td>
 <?php
   $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text'  => '<font color="' . $font_color . '">' . BOX_HEADING_SHOPPING_CART . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text'  => '<a href="' . tep_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_SHOPPING_CART . '</font></a>');
+/* CDS Patch. 12. EOF */
   new infoBoxHeading($info_box_contents, false, true, tep_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'));
 
   $cart_contents_string = '';

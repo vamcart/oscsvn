@@ -34,7 +34,12 @@ if ( (!strstr($_SERVER['PHP_SELF'],'login.php')) and (!strstr($_SERVER['PHP_SELF
 <?php
 
   $info_box_contents = array();
+/* ORIGINAL 213
 $info_box_contents[] = array('text' => '<font color="' . $font_color . '">' . BOX_HEADING_LOGIN . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+$info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_LOGIN, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_LOGIN . '</font></a>');
+/* CDS Patch. 12. EOF */
     new infoBoxHeading($info_box_contents, false, false);
 
     $loginboxcontent = "

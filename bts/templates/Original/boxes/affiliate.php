@@ -19,7 +19,12 @@
             <td>
 <?php
   $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text'  => '<font color="' . $font_color . '">' . BOX_HEADING_AFFILIATE . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text'  => '<a href="' . tep_href_link(FILENAME_AFFILIATE_INFO, '', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_AFFILIATE . '</font></a>');
+/* CDS Patch. 12. EOF */
 
   new infoBoxHeading($info_box_contents, false, false);
 

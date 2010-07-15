@@ -54,6 +54,7 @@
 // display category name
     $categories_string .= $foo[$counter]['name'];
 
+/* ORIGINAL 213
     if ( ($id) && (in_array($counter, $id)) ) {
       $categories_string .= '</b>';
     }
@@ -61,6 +62,16 @@
     if (tep_has_category_subcategories($counter)) {
       $categories_string .= '</span>';
     }
+*/
+/* CDS Patch. 15. BOF */
+    if ($cat_name == $tree[$counter]['name']) {
+      $categories_string .= '</span>';
+    }
+
+    if ( ($id) && (in_array($counter, $id)) ) {
+      $categories_string .= '</b>';
+    }
+/* CDS Patch. 15. EOF */
 
     $categories_string .= '</a>';
 
@@ -84,7 +95,12 @@
 <?php
 
   $info_box_contents = array();
+/* ORIGINAL 213
   $info_box_contents[] = array('text' => '<font color="' . $font_color . '">' . BOX_HEADING_CATEGORIES . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+  $info_box_contents[] = array('text' => '<a href="' . tep_href_link(FILENAME_DEFAULT, 'cPath=' . $cPath, 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_CATEGORIES . '</font></a>');
+/* CDS Patch. 12. EOF */
   new infoBoxHeading($info_box_contents, true, false);
 
   $categories_string = '';

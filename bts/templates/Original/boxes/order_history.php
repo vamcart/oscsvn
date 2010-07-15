@@ -18,7 +18,14 @@
 <?php
 
   $info_box_contents = array();
+/* ORIGINAL 213
     $info_box_contents[] = array('text'  => '<font color="' . $font_color . '">' . BOX_HEADING_CUSTOMER_ORDERS . '</font>');
+*/
+/* CDS Patch. 12. BOF */
+    $info_box_contents[] = array('text'  => '<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('action')) . 'action=cust_order', 'NONSSL') . '"><font color="' . $font_color . '">' . BOX_HEADING_CUSTOMER_ORDERS . '</font></a>');
+/* CDS Patch. 12. EOF */
+
+
   new infoBoxHeading($info_box_contents, false, false);
 
     $info_box_contents = array();
