@@ -250,11 +250,23 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 
   asort($define_list);
 
-  $column_list = array();
-  reset($define_list);
-  while (list($key, $value) = each($define_list)) {
-    if ($value > 0) $column_list[] = $key;
-  }
+    $column_list_order = array();
+    $order = 0;
+    $order_group = -1;
+    $value_old = 0;
+    while (list($key, $value) = each($define_list)) {
+      if ($value > 0)
+      {
+        $column_list[$order] = $key;
+        if ($value_old != $value)
+        {
+          $value_old = $value;
+          $order_group++;
+        }
+        $column_list_order[$order] = $order_group;
+        $order++;
+      }
+    }
 
   $select_column_list = '';
 
