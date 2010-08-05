@@ -87,19 +87,19 @@
   }
 
 // Register needed Post / Get Variables
-  if ($_GET['ref']) $affiliate_id=$_GET['ref'];
-  if ($_POST['ref']) $affiliate_id=$_POST['ref'];
+  if ($_GET['ref']) $affiliate_id=(int)$_GET['ref'];
+  if ($_POST['ref']) $affiliate_id=(int)$_POST['ref'];
 
-  if ($_GET['affiliate_banner_id']) $banner_id = $_GET['affiliate_banner_id'];
-  if ($_POST['affiliate_banner_id']) $banner_id = $_POST['affiliate_banner_id'];
-  if ($_GET['affiliate_pbanner_id']) $prod_banner_id = $_GET['affiliate_pbanner_id'];
-  if ($_POST['affiliate_pbanner_id']) $prod_banner_id = $_POST['affiliate_pbanner_id'];
+  if ($_GET['affiliate_banner_id']) $banner_id = (int)$_GET['affiliate_banner_id'];
+  if ($_POST['affiliate_banner_id']) $banner_id = (int)$_POST['affiliate_banner_id'];
+  if ($_GET['affiliate_pbanner_id']) $prod_banner_id = (int)$_GET['affiliate_pbanner_id'];
+  if ($_POST['affiliate_pbanner_id']) $prod_banner_id = (int)$_POST['affiliate_pbanner_id'];
 
   $banner = '';
   $products_id = '';
 
   if ($banner_id) {
-    $sql = "select affiliate_banners_image, affiliate_products_id from " . TABLE_AFFILIATE_BANNERS . " where affiliate_banners_id = '" . $banner_id  . "' and affiliate_status = 1";
+    $sql = "select affiliate_banners_image, affiliate_products_id from " . TABLE_AFFILIATE_BANNERS . " where affiliate_banners_id = '" . (int)$banner_id  . "' and affiliate_status = 1";
     $banner_values = tep_db_query($sql);
     if ($banner_array = tep_db_fetch_array($banner_values)) {
       $banner = $banner_array['affiliate_banners_image'];
@@ -109,7 +109,7 @@
 
   if ($prod_banner_id) {
     $banner_id = 1; // Banner ID for these Banners is one
-    $sql = "select products_image from " . TABLE_PRODUCTS . " where products_id = '" . $prod_banner_id  . "' and products_status = 1";
+    $sql = "select products_image from " . TABLE_PRODUCTS . " where products_id = '" . (int)$prod_banner_id  . "' and products_status = 1";
     $banner_values = tep_db_query($sql);
     if ($banner_array = tep_db_fetch_array($banner_values)) {
       $banner = $banner_array['products_image'];
@@ -128,12 +128,12 @@
       $today = date('Y-m-d');
     // Update stats:
       if ($affiliate_id) {
-        $banner_stats_query = tep_db_query("select * from " . TABLE_AFFILIATE_BANNERS_HISTORY . " where affiliate_banners_id = '" . $banner_id  . "' and affiliate_banners_products_id = '" . $products_id ."' and affiliate_banners_affiliate_id = '" . $affiliate_id. "' and affiliate_banners_history_date = '" . $today . "'");
+        $banner_stats_query = tep_db_query("select * from " . TABLE_AFFILIATE_BANNERS_HISTORY . " where affiliate_banners_id = '" . (int)$banner_id  . "' and affiliate_banners_products_id = '" . (int)$products_id ."' and affiliate_banners_affiliate_id = '" . (int)$affiliate_id. "' and affiliate_banners_history_date = '" . tep_db_input($today) . "'");
     // Banner has been shown today 
         if ($banner_stats_array = tep_db_fetch_array($banner_stats_query)) {
-          tep_db_query("update " . TABLE_AFFILIATE_BANNERS_HISTORY . " set affiliate_banners_shown = affiliate_banners_shown + 1 where affiliate_banners_id = '" . $banner_id  . "' and affiliate_banners_affiliate_id = '" . $affiliate_id. "' and affiliate_banners_products_id = '" . $products_id ."' and affiliate_banners_history_date = '" . $today . "'");
+          tep_db_query("update " . TABLE_AFFILIATE_BANNERS_HISTORY . " set affiliate_banners_shown = affiliate_banners_shown + 1 where affiliate_banners_id = '" . (int)$banner_id  . "' and affiliate_banners_affiliate_id = '" . (int)$affiliate_id. "' and affiliate_banners_products_id = '" . (int)$products_id ."' and affiliate_banners_history_date = '" . tep_db_input($today) . "'");
         } else { // First view of Banner today
-          tep_db_query("insert into " . TABLE_AFFILIATE_BANNERS_HISTORY . " (affiliate_banners_id, affiliate_banners_products_id, affiliate_banners_affiliate_id, affiliate_banners_shown, affiliate_banners_history_date) VALUES ('" . $banner_id  . "', '" .  $products_id ."', '" . $affiliate_id. "', '1', '" . $today . "')");
+          tep_db_query("insert into " . TABLE_AFFILIATE_BANNERS_HISTORY . " (affiliate_banners_id, affiliate_banners_products_id, affiliate_banners_affiliate_id, affiliate_banners_shown, affiliate_banners_history_date) VALUES ('" . (int)$banner_id  . "', '" .  (int)$products_id ."', '" . (int)$affiliate_id. "', '1', '" . tep_db_input($today) . "')");
         }
       }
     // Show Banner
