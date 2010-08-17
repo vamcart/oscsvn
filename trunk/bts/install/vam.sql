@@ -220,6 +220,7 @@ insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes,
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('186', 'products_specifications.php', '0', '3', '1');
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('187', 'email_queue.php', '0', '9', '1');
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('188', 'email_batch_send.php', '0', '9', '1');
+insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('189', 'yml_import.php', '0', '9', '1');
 
 drop table if exists admin_groups;
 create table admin_groups (
