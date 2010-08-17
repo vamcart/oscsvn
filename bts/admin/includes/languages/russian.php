@@ -573,5 +573,7 @@ define('BOX_CATALOG_PRODUCTS_SPECIFICATIONS', 'Спецификации товаров');
 define('BOX_EMAIL_QUEUE', 'Очередь email');
          
 define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> записей)');
+
+define('BOX_YML_IMPORT', 'Я-маркет импорт/экспорт');
          
 ?>
