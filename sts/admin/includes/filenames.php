@@ -171,4 +171,6 @@ define('FILENAME_SELECT_SPECIAL','select_special.php');
 
 define('FILENAME_EMAIL_QUEUE','email_queue.php');
 
+define('FILENAME_YML_IMPORT','yml_import.php');
+
 ?>
