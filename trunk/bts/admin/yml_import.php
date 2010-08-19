@@ -74,12 +74,12 @@ $xml = simplexml_load_file($_FILES['xml_file']['tmp_name']);
         $row=tep_db_fetch_array($products_query);
         if ($row['products_price']!=$products_price) {
           tep_db_perform(TABLE_PRODUCTS, array('products_last_modified' => 'now()', 'products_price' => $products_price, 'products_image' => $products_image, 'products_status' => $products_status, 'products_quantity' => $products_quantity, 'products_date_available' => 'now()'), 'update', 'products_id=\''.$products_id.'\'');
-          tep_db_perform(TABLE_PRODUCTS_DESCRIPTION, array('products_name' => $products_name), 'update', 'products_id=\''.$products_id.'\' and language_id=\''.(int)$languages_id.'\'');
+          tep_db_perform(TABLE_PRODUCTS_DESCRIPTION, array('products_name' => $products_name, 'products_description' => $products_description), 'update', 'products_id=\''.$products_id.'\' and language_id=\''.(int)$languages_id.'\'');
           $count_upd++;
         }
       } else {
         tep_db_perform(TABLE_PRODUCTS, array('products_id' => $products_id, 'products_last_modified' => 'now()', 'products_price' => $products_price, 'products_image' => $products_image, 'products_status' => $products_status, 'products_quantity' => $products_quantity, 'products_date_available' => 'now()'));
-        tep_db_perform(TABLE_PRODUCTS_DESCRIPTION, array('products_id' => $products_id, 'products_name' => $products_name, 'language_id' => (int)$languages_id));
+        tep_db_perform(TABLE_PRODUCTS_DESCRIPTION, array('products_id' => $products_id, 'products_name' => $products_name, 'products_description' => $products_description, 'language_id' => (int)$languages_id));
         tep_db_perform(TABLE_PRODUCTS_TO_CATEGORIES, array('products_id' => $products_id, 'categories_id' => $categoryId));
         $count_add++;
       }
@@ -101,6 +101,7 @@ $xml = simplexml_load_file($_FILES['xml_file']['tmp_name']);
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
