@@ -239,8 +239,8 @@ function get_string($summ,$nominal){
 
       echo '        </td>' . "\n" .
            '        <td width="12%" style="border-style: solid; border-width: 1px">' . $order->products[$i]['qty'] . '</td>' . "\n" .
-           '        <td style="border-style: solid; border-width: 1px" width="6%">' . number_format($currencies->format($order->products[$i]['final_price'], true, $order->info['currency'], $order->info['currency_value']),2) . '</td>' . "\n" .
-           '        <td width="9%" style="border-style: solid; border-width: 1px">' . number_format($currencies->format(tep_add_tax($order->products[$i]['final_price'], $order->products[$i]['tax'], true) * $order->products[$i]['qty'], true, $order->info['currency'], $order->info['currency_value']),2) . '</td>' . "\n";
+           '        <td style="border-style: solid; border-width: 1px" width="6%">' . number_format(tep_round(tep_add_tax($order->products[$i]['final_price']*$order->info['currency_value'], $order->products[$i]['tax'], true), $currencies->currencies[$order->info['currency']]['decimal_places']), 2) . '</td>' . "\n" .
+           '        <td width="9%" style="border-style: solid; border-width: 1px">' . number_format(tep_round(tep_add_tax($order->products[$i]['final_price']*$order->info['currency_value']* $order->products[$i]['qty'], $order->products[$i]['tax'], true), $currencies->currencies[$order->info['currency']]['decimal_places']), 2) . '</td>' . "\n";
            '      </tr>' . "\n";
     }
 ?>
@@ -250,7 +250,7 @@ function get_string($summ,$nominal){
   for ($i = 0, $n = sizeof($order->totals); $i < $n; $i++) {
     echo '          <tr>' . "\n" .
          '            <td colspan="5" style="border-style: solid; border-width: 1px"><p align="right"><b>' . $order->totals[$i]['title'] . '</b></p></td>' . "\n" .
-         '            <td width="9%" style="border-style: solid; border-width: 1px">' . number_format($order->totals[$i]['value'],2) . '</td>' . "\n" .
+         '            <td width="9%" style="border-style: solid; border-width: 1px">' . number_format(tep_round($order->totals[$i]['value']*$order->info['currency_value'], $currencies->currencies[$order->info['currency']]['decimal_places']), 2) . '</td>' . "\n" .
          '          </tr>' . "\n";
   }
 ?>
