@@ -19,7 +19,7 @@ $currencies = new currencies();
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
 <?php
 // Get Product Info
-  $product_info_query = tep_db_query("select p.products_id, pd.products_name, pd.products_description, p.products_model, p.products_quantity, p.products_image, pd.products_url, p.products_price, p.products_tax_class_id, p.products_date_added, p.products_date_available, p.manufacturers_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_id = '" . $look_it_up . "' and pd.products_id = '" . $look_it_up . "' and pd.language_id = '" . $languages_id . "'");
+  $product_info_query = tep_db_query("select p.products_id, pd.products_name, pd.products_description, p.products_model, p.products_quantity, p.products_image, pd.products_url, p.products_price, p.products_tax_class_id, p.products_date_added, p.products_date_available, p.manufacturers_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_id = '" . $_GET['look_it_up'] . "' and pd.products_id = '" . $_GET['look_it_up'] . "' and pd.language_id = '" . $languages_id . "'");
   $product_info = tep_db_fetch_array($product_info_query);
 
 ?>
@@ -27,7 +27,7 @@ $currencies = new currencies();
 <table border="0" width="80%" align="center">
 <tr><td colspan="2"><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td></tr>
 <tr>
-  <td class="main" align="left">Номер товара: <b><?php echo $look_it_up;?></b></td>
+  <td class="main" align="left">Номер товара: <b><?php echo $_GET['look_it_up'];?></b></td>
   <td class="main" align="center"><?php echo tep_image(DIR_WS_CATALOG_IMAGES . $product_info['products_image'],'', SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT);?></td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ $currencies = new currencies();
 
     echo '<table border="0" width="80%" align="center"><tr><td>';
 
-    $products_attributes = tep_db_query("select popt.products_options_name from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_ATTRIBUTES . " patrib where patrib.products_id='" . $look_it_up . "' and patrib.options_id = popt.products_options_id and popt.language_id = '" . $languages_id . "'");
+    $products_attributes = tep_db_query("select popt.products_options_name from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_ATTRIBUTES . " patrib where patrib.products_id='" . $_GET['look_it_up'] . "' and patrib.options_id = popt.products_options_id and popt.language_id = '" . $languages_id . "'");
     if (tep_db_num_rows($products_attributes)) {
       $products_attributes = '1';
     } else {
@@ -56,7 +56,7 @@ $currencies = new currencies();
       echo '</td></tr></table>';
     }
     if ($products_attributes == '1') {
-      $products_options_name = tep_db_query("select distinct popt.products_options_id, popt.products_options_name, popt.products_options_sort_order from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_ATTRIBUTES . " patrib where patrib.products_id='" . $look_it_up . "' and patrib.options_id = popt.products_options_id and popt.language_id = '" . $languages_id . "'" . " order by popt.products_options_sort_order");
+      $products_options_name = tep_db_query("select distinct popt.products_options_id, popt.products_options_name, popt.products_options_sort_order from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_ATTRIBUTES . " patrib where patrib.products_id='" . $_GET['look_it_up'] . "' and patrib.options_id = popt.products_options_id and popt.language_id = '" . $languages_id . "'" . " order by popt.products_options_sort_order");
       echo '<table border="0" cellpadding="0" cellspacing"0">';
       echo '<tr><td class="main" colspan="2">';
       echo '<b>' . 'Текущие атрибуты товара:' . '</b>';
@@ -66,7 +66,7 @@ $currencies = new currencies();
         $selected = 0;
         $products_options_array = array();
         echo '<tr><td class="main">' . $products_options_name_values['products_options_name'] . ':</td><td>' . "\n";
-        $products_options = tep_db_query("select pa.products_options_sort_order, pov.products_options_values_id, pov.products_options_values_name, pa.options_values_price, pa.price_prefix from " . TABLE_PRODUCTS_ATTRIBUTES . " pa, " . TABLE_PRODUCTS_OPTIONS_VALUES . " pov where pa.products_id = '" . $look_it_up . "' and pa.options_id = '" . $products_options_name_values['products_options_id'] . "' and pa.options_values_id = pov.products_options_values_id and pov.language_id = '" . $languages_id . "'" . " order by pa.products_options_sort_order, pa.options_values_price");
+        $products_options = tep_db_query("select pa.products_options_sort_order, pov.products_options_values_id, pov.products_options_values_name, pa.options_values_price, pa.price_prefix from " . TABLE_PRODUCTS_ATTRIBUTES . " pa, " . TABLE_PRODUCTS_OPTIONS_VALUES . " pov where pa.products_id = '" . $_GET['look_it_up'] . "' and pa.options_id = '" . $products_options_name_values['products_options_id'] . "' and pa.options_values_id = pov.products_options_values_id and pov.language_id = '" . $languages_id . "'" . " order by pa.products_options_sort_order, pa.options_values_price");
         while ($products_options_values = tep_db_fetch_array($products_options)) {
           $products_options_array[] = array('id' => $products_options_values['products_options_values_id'], 'text' => $products_options_values['products_options_values_name']);
           if ($products_options_values['options_values_price'] != '0') {
