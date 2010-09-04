@@ -482,7 +482,7 @@ $cPath=$_POST['cPath'];}
       case 'create_copy_product_attributes':
   // $products_id_to= $copy_to_products_id;
   // $products_id_from = $pID;
-        tep_copy_products_attributes($pID,$copy_to_products_id);
+        tep_copy_products_attributes($_GET['pID'],$_POST['copy_to_products_id']);
         break;
 // EOF: WebMakers.com Added: Copy Attributes Existing Product to another Existing Product
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -3380,7 +3380,7 @@ echo '              <tr class="dataTableRow" onmouseover="rowOverEffect(this)" o
         $heading[] = array('text' => '<b>' . ATTRIBUTES_COPY_MANAGER_13 . '</b>');
         $contents = array('form' => tep_draw_form('products', FILENAME_CATEGORIES, 'action=create_copy_product_attributes&cPath=' . $cPath . '&pID=' . $pInfo->products_id) . tep_draw_hidden_field('products_id', $pInfo->products_id) . tep_draw_hidden_field('products_name', $pInfo->products_name));
         $contents[] = array('text' => '<br>' . ATTRIBUTES_COPY_MANAGER_2 . '<b>' . $pInfo->products_name . '</b><br>' . ATTRIBUTES_COPY_MANAGER_15 . '<b>' . $pInfo->products_id . '</b>');
-        $contents[] = array('text' => ATTRIBUTES_COPY_MANAGER_16 . tep_draw_input_field('copy_to_products_id', $copy_to_products_id, 'size="3"') . ATTRIBUTES_COPY_MANAGER_3);
+        $contents[] = array('text' => ATTRIBUTES_COPY_MANAGER_16 . tep_draw_input_field('copy_to_products_id', $_POST['copy_to_products_id'], 'size="3"') . ATTRIBUTES_COPY_MANAGER_3);
         $contents[] = array('text' => '<br>' . ATTRIBUTES_COPY_MANAGER_17 . tep_draw_checkbox_field('copy_attributes_delete_first',$copy_attributes_delete_first, 'size="2"'));
         $contents[] = array('text' => '<br>' . tep_image(DIR_WS_IMAGES . 'pixel_black.gif','','100%','1'));
         $contents[] = array('text' => '<br>' . ATTRIBUTES_COPY_MANAGER_7);

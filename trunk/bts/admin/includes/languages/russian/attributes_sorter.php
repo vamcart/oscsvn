@@ -17,7 +17,7 @@ define('TEXT_COPY_ATTRIBUTES_NO','Нет');
 
 // WebMakers.com Added: Attributes Copy from Existing Product to Existing Product
 define('PRODUCT_NAMES_HELPER','<a href="' . 'quick_products_popup.php' . '" onclick="NewWindow(this.href,\'name\',\'700\',\'500\',\'yes\');return false;"><b><font color=red>[ Смотреть номера товаров ]</font></b></a>');
-define('ATTRIBUTES_NAMES_HELPER','<a href="' . 'quick_attributes_popup.php?look_it_up=' . $pID . '&my_languages_id=' . $languages_id . '" onclick="NewWindow2(this.href,\'name2\',\'700\',\'400\',\'yes\');return false;">[ Смотреть атрибуты данного товара ]<br></a>Номер данного товара: ' . $pID);
+define('ATTRIBUTES_NAMES_HELPER','<a href="' . 'quick_attributes_popup.php?look_it_up=' . $_GET['pID'] . '&my_languages_id=' . $languages_id . '" onclick="NewWindow2(this.href,\'name2\',\'700\',\'400\',\'yes\');return false;">[ Смотреть атрибуты данного товара ]<br></a>Номер данного товара: ' . $_GET['pID']);
 
 // WebMakers.com Added: Product Option Attributes Sort Order - products_attributes.php
 define('TABLE_HEADING_OPTION_SORT_ORDER','Порядок сортировки');
