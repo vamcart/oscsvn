@@ -1243,7 +1243,7 @@ tinyMCE.init({
   <script language="javascript" type="text/javascript" src="includes/functions/jquery-1.3.2.min.js"></script> 
   <script language="javascript" type="text/javascript">
     $(document).ready(function(){  
-      initTabs();  
+      inittabs({ fx: { opacity: 'toggle', duration: 'fast' } });  
     });  
   
     function initTabs() {  
@@ -1270,7 +1270,7 @@ tinyMCE.init({
 		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$('#tabs').tabs();
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
 			});
 		</script>
 <?php } ?>
