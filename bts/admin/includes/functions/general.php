@@ -1509,7 +1509,7 @@ function tep_try_upload($file = '', $destination = '', $permissions = '777', $ex
       $exp = pow(10, $precision);
       return round($value * $exp) / $exp;
     } else {
-      return round($value, $precision);
+      return round($value, (int)$precision);
     }
   }
 
