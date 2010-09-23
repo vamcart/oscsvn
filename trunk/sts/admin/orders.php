@@ -510,7 +510,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     			$postcode = (!isset($order->delivery["postcode"])) ? null : $order->delivery["postcode"] . ', ';
     			$state = (!isset($order->delivery["state"])) ? null : $order->delivery["state"] . ', ';
     			$country = (!isset($order->delivery["country"])) ? null : $order->delivery["country"] . ', ';
-    			$ship_address = $postcode . $country . $state. $city . $street_address;
+    			$ship_address = $postcode . $city . $street_address;
     			
     			?>
     <script type="text/javascript">
