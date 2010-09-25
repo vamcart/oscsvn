@@ -205,9 +205,7 @@
     for ($i = 0, $n = sizeof($order->products); $i < $n; $i++) {
       echo '      <tr class="dataTableRow" align="center">' . "\n" .
 	 ' <td class="dataTableContent" valign="middle">' . $order->products[$i]['model'] . '</td>' . "\n" .
-           '        <td class="dataTableContent" valign="middle">' . $order->products[$i]['name'] . "\n" .
-           '        <td class="dataTableContent" valign="middle">' .
-$order->products[$i]['qty'] . '</td>';
+           '        <td class="dataTableContent" valign="middle">' . $order->products[$i]['name'] . "\n";
       if ($k = sizeof($order->products[$i]['attributes']) > 0) {
         for ($j = 0; $j < $k; $j++) {
           echo '<br><nobr><small>&nbsp;<i> - ' . $order->products[$i]['attributes'][$j]['option'] . ': ' . $order->products[$i]['attributes'][$j]['value'];
@@ -215,7 +213,8 @@ $order->products[$i]['qty'] . '</td>';
           echo '</i></small></nobr>';
         }
       }
-
+         echo  '        </td><td class="dataTableContent" valign="middle">' .
+$order->products[$i]['qty'] . '</td>';
       echo '        </td>' . "\n";
       echo '        <td class="dataTableContent" valign="middle">' . tep_display_tax_value($order->products[$i]['tax']) . '%</td>' . "\n" .
            '        <td class="dataTableContent" align="right" valign="middle"><b>' . $currencies->format($order->products[$i]['final_price'], true, $order->info['currency'], $order->info['currency_value']) . '</b></td>' . "\n" .
