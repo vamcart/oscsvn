@@ -99,18 +99,18 @@ $urlWeight = 'http://emspost.ru/api/rest/?method=ems.get.max.weight';
 	
 	//Вытягиваем регион магазина
 		$zones_shop = STORE_ZONE;
-		$zones_zones = tep_db_query("select zone_id, zone_ems from " . TABLE_ZONES . " where (zone_id='$zones_shop')");
+		$zones_zones = tep_db_query("select zone_id, zone_name from " . TABLE_ZONES . " where (zone_id='$zones_shop')");
 		$zones_id = tep_db_fetch_array($zones_zones);
-		$zonesshop = $zones_id['zone_ems'];
+		$zonesshop = $zones_id['zone_name'];
 		
 	//Вытягиваем город получателя
 	$tocity = $order->delivery['city'];	
 	
 	//Вытягиваем регион получателя 
 	$tostate_id = $order->delivery['state']; 
-	$tostate_tostate = tep_db_query("select zone_id, zone_name, zone_ems from " . TABLE_ZONES . " where (zone_name='$tostate_id')");
+	$tostate_tostate = tep_db_query("select zone_id, zone_name from " . TABLE_ZONES . " where (zone_name='$tostate_id')");
 	$tostate_tostate_id = tep_db_fetch_array($tostate_tostate);
-	$tostate = $tostate_tostate_id['zone_ems'];
+	$tostate = $tostate_tostate_id['zone_name'];
 	
 	
 	
