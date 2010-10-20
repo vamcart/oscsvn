@@ -54,8 +54,36 @@
                                                      'title' => MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_NOTE)));
 
         if (tep_not_null($this->icon)) $this->quotes['icon'] = tep_image($this->icon, $this->title);
+		
+		
+		//Проверка на максимальный вес	
+$urlWeight = 'http://emspost.ru/api/rest/?method=ems.get.max.weight';		
+	
+ // create curl resource
+        $ch = curl_init();
 
-        $urlCities = 'http://emspost.ru/api/rest?method=ems.get.locations&type=cities';
+        //return the transfer as a string
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+        // set url
+		curl_setopt($ch, CURLOPT_URL, $urlWeight);
+		$outWeight = curl_exec($ch);
+	
+	    $WeightList = json_decode($outWeight, true);
+
+       foreach ($WeightList as $weight){
+	   $max_weight = $weight['max_weight'];
+
+	if ($shipping_weight > $max_weight){
+	  $this->quotes['error']='Превышен максимально возможный вес одного отправления. Разбейте заказ на несколько частей.';
+	  return $this->quotes;
+
+ }
+ }
+		
+//Получаем список городов и регионов		
+
+        $urlRussia = 'http://emspost.ru/api/rest?method=ems.get.locations&type=russia';
 
         // create curl resource
         $ch = curl_init();
@@ -64,59 +92,70 @@
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
         // set url
-        curl_setopt($ch, CURLOPT_URL, $urlCities);
-        $outCities = curl_exec($ch);
-        
-        
-        //---- get city list
-        $tocity = $order->delivery['city'];
-        $citiesList = json_decode(utf8_encode($outCities), true);
-        foreach ($citiesList['rsp']['locations'] as $city){
-          if (strtolower(iconv("UTF-8", CHARSET, $city['name'])) == strtolower(MODULE_SHIPPING_RUSSIANPOSTEMS_CITY)){
-            $from_city = $city['value'];
-          }
-          if (strtolower(iconv("UTF-8", CHARSET, $city['name'])) == strtolower($tocity)){
-            $to_city = $city['value'];
-          }
-        }
-    if ($from_city === null){
-      $this->quotes['error']='Доставка из города '.MODULE_SHIPPING_RUSSIANPOSTEMS_CITY.' не производится!';
-      return $this->quotes;
-    } else if ($to_city === null){
-      $this->quotes['error']='Доставка в город '.$order->delivery['city'].' не производится!';
-      return $this->quotes;
-    }
-    //----
-
-        
-//Проверка на максимальный вес    
-$urlWeight = 'http://emspost.ru/api/rest/?method=ems.get.max.weight';        
+		curl_setopt($ch, CURLOPT_URL, $urlRussia);
+		$outRussia = curl_exec($ch);
+		
     
-// create curl resource
-        $ch = curl_init();
+	
+	//Вытягиваем регион магазина
+		$zones_shop = STORE_ZONE;
+		$zones_zones = tep_db_query("select zone_id, zone_ems from " . TABLE_ZONES . " where (zone_id='$zones_shop')");
+		$zones_id = tep_db_fetch_array($zones_zones);
+		$zonesshop = $zones_id['zone_ems'];
+		
+	//Вытягиваем город получателя
+	$tocity = $order->delivery['city'];	
+	
+	//Вытягиваем регион получателя 
+	$tostate_id = $order->delivery['state']; 
+	$tostate_tostate = tep_db_query("select zone_id, zone_name, zone_ems from " . TABLE_ZONES . " where (zone_name='$tostate_id')");
+	$tostate_tostate_id = tep_db_fetch_array($tostate_tostate);
+	$tostate = $tostate_tostate_id['zone_ems'];
+	
+	
+	
+		
+		//проверяем город/регион отправителя/получателя
+		$RussiaList = json_decode(utf8_encode($outRussia), true);
+        foreach ($RussiaList['rsp']['locations'] as $russia){
+          if (strtolower(iconv("UTF-8", CHARSET, $russia['name'])) == strtolower(MODULE_SHIPPING_RUSSIANPOSTEMS_CITY)){
+            $from = $russia['value'];			
+		  }
+		  if ($from === null){
+		   if (strtolower(iconv("UTF-8", CHARSET, $russia['name'])) == strtolower($zonesshop)){
+            $from = $russia['value'];			
+		   }
+		  }
+		  
+		  if (strtolower(iconv("UTF-8", CHARSET, $russia['name'])) == strtolower($tocity)){
+            $to = $russia['value'];
+			$tomessag = 'город: '. iconv("UTF-8", CHARSET, $russia['name']);
+          }
+		  if ($to === null){
+		   if (strtolower(iconv("UTF-8", CHARSET, $russia['name'])) == strtolower($tostate)){
+            $to = $russia['value'];
+			$tomessag = 'регион: '. iconv("UTF-8", CHARSET, $russia['name']);
+		   }
+		  }
+		 }
+	
+		
+  // Если вдруг ничего не нашлось		
+		
+	if ($from === null){
+	  $this->quotes['error']='Доставка из города:  '. MODULE_SHIPPING_RUSSIANPOSTEMS_CITY. ' не производится! Возможно Вы допустили ошибку в адресе.';
+	  return $this->quotes;
+	} else if ($to === null){
+	  $this->quotes['error']='Доставка в город:  '. $tocity. ' не производится! Возможно Вы допустили ошибку в адресе.';
+	  return $this->quotes;
+	}
+	//----
 
-        //return the transfer as a string
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		
 
-        // set url
-        curl_setopt($ch, CURLOPT_URL, $urlWeight);
-        $outWeight = curl_exec($ch);
-    
-        $WeightList = json_decode($outWeight, true);
-
-       foreach ($WeightList as $weight){
-       $max_weight = $weight['max_weight'];
-
-    if ($shipping_weight > $max_weight){
-      $this->quotes['error']='Превышен максимально возможный вес одного отправления. Разбейте заказ на несколько частей.';
-      return $this->quotes;
-
-}
-}
-
-        $url = 'http://emspost.ru/api/rest?method=ems.calculate&from='.$from_city.'&to='.$to_city.'&weight='.$shipping_weight;
-        
-        curl_setopt($ch, CURLOPT_URL, $url);
+		$url = 'http://emspost.ru/api/rest?method=ems.calculate&from='.$from.'&to='.$to.'&weight='.$shipping_weight;
+		
+		curl_setopt($ch, CURLOPT_URL, $url);
         $output = curl_exec($ch);
 
         // close curl resource to free up system resources
@@ -128,20 +167,21 @@ $urlWeight = 'http://emspost.ru/api/rest/?method=ems.get.max.weight';
 
         if ($results['rsp']['stat'] == 'fail'){
           $this->quotes['error'] = 'Ошибка: '.$results['rsp']['err']['msg'];
-          return $this->quotes;
-        }
-    $shPrice = $results['rsp']['price'];
-    if (MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT >0){
-      $shPrice += $order->info['subtotal']*MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT/100;
-    }
+		  return $this->quotes;
+		}
+	$shPrice = $results['rsp']['price'];
+	if (MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT >0){
+	  $shPrice += $order->info['subtotal']*MODULE_SHIPPING_RUSSIANPOSTEMS_DCVAL_PERCENT/100;
+	}
         $this->quotes['methods'][key($this->quotes['methods'])]['cost'] = $shPrice + MODULE_SHIPPING_RUSSIANPOSTEMS_HANDLING;
+		$this->quotes['methods'][key($this->quotes['methods'])]['title'] = 'Доставка в ' . $tomessag. '. ';
         $dlvr_min = $results['rsp']['term']['min'];
         $dlvr_max = $results['rsp']['term']['max'];
         if (($dlvr_min > 0) AND ( $dlvr_max > 0)){
           if ($dlvr_min == $dlvr_max){
-            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '<br /><i>(срок доставки '.$dlvr_max;
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '(<i>Срок доставки '.$dlvr_max;
           } else {
-            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '<br /><i>(срок доставки '.$dlvr_min.' - '.$dlvr_max;
+            $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '(<i>Срок доставки '.$dlvr_min.' - '.$dlvr_max;
           }
           if ($dlvr_max == 1){
             $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ' день';
@@ -150,7 +190,7 @@ $urlWeight = 'http://emspost.ru/api/rest/?method=ems.get.max.weight';
           } else {
             $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ' дней';
           }
-          $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= ') </i>';
+          $this->quotes['methods'][key($this->quotes['methods'])]['title'] .= '</i>)';
         }
 
       if ($this->tax_class > 0) {
