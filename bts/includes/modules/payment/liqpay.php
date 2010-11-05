@@ -189,10 +189,6 @@
 
           $insert_id = tep_db_insert_id();
 
-			$customer_notification = (SEND_EMAILS == 'true') ? '1' : '0';
-			$sql_data_array = array ('orders_id' => $insert_id, 'orders_status_id' => $order->info['order_status'], 'date_added' => 'now()', 'customer_notified' => $customer_notification, 'comments' => $order->info['comments']);
-			tep_db_perform(TABLE_ORDERS_STATUS_HISTORY, $sql_data_array);
-
           for ($i=0, $n=sizeof($order_totals); $i<$n; $i++) {
             $sql_data_array = array('orders_id' => $insert_id,
                                     'title' => $order_totals[$i]['title'],
@@ -277,18 +273,31 @@
 
                                $order_sum = $order->info['total'];
 
-          $order_id = substr($cart_liqpay_id, strpos($cart_liqpay_id, '-')+1);
+          $order_id = substr($_SESSION['cart_liqpay_id'], strpos($_SESSION['cart_liqpay_id'], '-')+1);
           $curr_check = tep_db_query("select currency from " . TABLE_ORDERS . " where orders_id = '" . (int)$order_id . "'");
           $curr = tep_db_fetch_array($curr_check);
 
-      $process_button_string = tep_draw_hidden_field('order_id', $order_id) .
-                               tep_draw_hidden_field('currency', $curr['currency']) .
-                               tep_draw_hidden_field('description', $order_id) .
-                               tep_draw_hidden_field('amount', $order_sum) .
-                               tep_draw_hidden_field('server_url', tep_href_link('liqpay.php', '', 'SSL')) .
-                               tep_draw_hidden_field('result_url', tep_href_link(FILENAME_CHECKOUT_PROCESS, '', 'SSL')) .
-                               tep_draw_hidden_field('merchant_id', MODULE_PAYMENT_LIQPAY_ID) .
-                               tep_draw_hidden_field('version', '1.1');
+        $xml = '<?xml version="1.0" encoding="utf-8"?>
+                <request>
+                    <version>1.2</version>
+                    <merchant_id>'.MODULE_PAYMENT_LIQPAY_ID.'</merchant_id>
+                    <result_url>'.tep_href_link(FILENAME_CHECKOUT_PROCESS, '', 'SSL').'</result_url>
+                    <server_url>'.tep_href_link('liqpay.php', '', 'SSL').'</server_url>
+                    <order_id>'.$order_id.'</order_id>
+                    <amount>'.$order_sum.'</amount>
+                    <currency>RUR</currency>
+                    <description>'.$order_id.'</description>
+                    <default_phone></default_phone>
+                    <pay_way>card</pay_way>
+                </request>';
+                
+$merchant_pass = MODULE_PAYMENT_LIQPAY_SECRET_KEY; 
+
+        $operation_xml = base64_encode($xml);
+        $signature = base64_encode(sha1($merchant_pass.$xml.$merchant_pass, 1));        
+        
+      $process_button_string = tep_draw_hidden_field('operation_xml', $operation_xml) . 
+                               tep_draw_hidden_field('signature', $signature);
 
       return $process_button_string;
     }
