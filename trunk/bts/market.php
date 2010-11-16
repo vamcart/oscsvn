@@ -81,7 +81,7 @@ echo "<?xml version=\"1.0\" encoding=\"" . $charset ."\"?><!DOCTYPE yml_catalog 
 		 "<shop>\n" .
 		 "<name>" . _clear_string((YML_NAME == "" ? STORE_NAME : YML_NAME)) ."</name>\n" .
 		 "<company>" . _clear_string((YML_COMPANY == "" ? STORE_OWNER : YML_COMPANY)) . "</company>\n" .
-		 "<url>" . HTTP_SERVER . "/</url>\n\n";
+		 "<url>" . HTTP_SERVER . DIR_WS_HTTP_CATALOG . "</url>\n\n";
 
 echo "  <currencies>\n";
 if ($_GET['currency'] == "") {
