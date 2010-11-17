@@ -120,7 +120,9 @@ Class constructor must have the $cart_cache passed to keep the customer shopping
 		if ( rand(0, 100) <= 5 ) $this->collect_garbage(); // 5% chance of triggering GC
 		# Add a way to output the debug array other than globally
 		# To activate this switch append ?debug=1 to the end of a cached file URL
-		($_GET['debug'] ? $this->debug_messages = 'true' : $this->debug_messages = $debug_switch);
+		if (PAGE_CACHE_DEBUG_MODE=='true'){
+      ($_GET['debug'] ? $this->debug_messages = 'true' : $this->debug_messages = $debug_switch);
+      }
 		# Add the setting to the debug array
 		$this->debug_output['debug_output'] = $this->debug_messages;
 		# Check to see if the customer is a guest and add to the debug array
