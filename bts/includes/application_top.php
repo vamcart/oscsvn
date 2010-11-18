@@ -41,10 +41,6 @@ if (isset($_GET['products_id']))
 // Redirect to install if configure.php is empty
 if (defined('DIR_WS_INCLUDES') === false) header('Location: install');
 
-  // Spiderkiller 
-  require(DIR_WS_INCLUDES . 'spider_configure.php');
-
-
   if (strlen(DB_SERVER) < 1) {
     if (is_dir('install')) {
       header('Location: install/index.php');
