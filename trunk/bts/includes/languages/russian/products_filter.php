@@ -12,19 +12,19 @@
 */
 
  
-  define('HEADING_TITLE', 'Выбранные товары');
+  define('HEADING_TITLE', 'Р’С‹Р±СЂР°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
 
-  define('TABLE_HEADING_IMAGE', 'Товары');
-  define('TABLE_HEADING_MODEL', 'Код');
-  define('TABLE_HEADING_PRODUCTS', 'Название товара');
-  define('TABLE_HEADING_MANUFACTURER', 'Производитель');
-  define('TABLE_HEADING_QUANTITY', 'Количество');
-  define('TABLE_HEADING_PRICE', 'Цена');
-  define('TABLE_HEADING_WEIGHT', 'Вес');
-  define('TABLE_HEADING_BUY_NOW', 'Купить');
-  define('TEXT_NO_PRODUCTS', 'Не найдено товаров, соответствующих Вашему зарпосу.');
-  define('TEXT_NUMBER_OF_PRODUCTS', 'Количество товаров: ');
-  define('TEXT_SHOW', '<b>Показывать:</b>');
-  define('TEXT_BUY', 'Купить \'');
+  define('TABLE_HEADING_IMAGE', 'РўРѕРІР°СЂС‹');
+  define('TABLE_HEADING_MODEL', 'РљРѕРґ');
+  define('TABLE_HEADING_PRODUCTS', 'РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+  define('TABLE_HEADING_MANUFACTURER', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ');
+  define('TABLE_HEADING_QUANTITY', 'РљРѕР»РёС‡РµСЃС‚РІРѕ');
+  define('TABLE_HEADING_PRICE', 'Р¦РµРЅР°');
+  define('TABLE_HEADING_WEIGHT', 'Р’РµСЃ');
+  define('TABLE_HEADING_BUY_NOW', 'РљСѓРїРёС‚СЊ');
+  define('TEXT_NO_PRODUCTS', 'РќРµ РЅР°Р№РґРµРЅРѕ С‚РѕРІР°СЂРѕРІ, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… Р’Р°С€РµРјСѓ Р·Р°СЂРїРѕСЃСѓ.');
+  define('TEXT_NUMBER_OF_PRODUCTS', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ: ');
+  define('TEXT_SHOW', '<b>РџРѕРєР°Р·С‹РІР°С‚СЊ:</b>');
+  define('TEXT_BUY', 'РљСѓРїРёС‚СЊ \'');
   define('TEXT_NOW', '\'');
 ?>

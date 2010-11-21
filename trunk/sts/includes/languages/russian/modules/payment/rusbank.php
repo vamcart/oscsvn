@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_RUS_BANK_TEXT_TITLE', 'Оплата по квитанции Сбербанка РФ');
-  define('MODULE_PAYMENT_RUS_BANK_TEXT_DESCRIPTION', 'Наши банковские реквизиты:<br><br>Название банка: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_1 . '<br>Расчетный счет: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_2 . '<br>БИК: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_3 . '<br>Кор./счет: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_4 . '<br>ИНН: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_5 . '<br>Получатель: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_6 . '<br>КПП: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_7 . '<br>Назначение платежа: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_8 . '<br><br>После оплаты заказа обязательно сообщите нам по электронной почте <a href="mailto:' . STORE_OWNER_EMAIL_ADDRESS . '">' . STORE_OWNER_EMAIL_ADDRESS . '</a> о факте оплаты. Ваш заказ будет отправлен сразу после подтверждения факта оплаты.<br><br>Распечатать квитанцию для оплаты Вы сможете на следующей странице.');
-  define('MODULE_PAYMENT_RUS_BANK_TEXT_EMAIL_FOOTER', "Наши банковские реквизиты:\n\nНазвание банка: " . MODULE_PAYMENT_RUS_BANK_1 . "\nРасчетный счет: " . MODULE_PAYMENT_RUS_BANK_2 . "\nБИК: " . MODULE_PAYMENT_RUS_BANK_3 . "\nКор./счет: " . MODULE_PAYMENT_RUS_BANK_4 . "\nИНН: " . MODULE_PAYMENT_RUS_BANK_5 . "\nПолучатель: " . MODULE_PAYMENT_RUS_BANK_6 . "\nКПП: " . MODULE_PAYMENT_RUS_BANK_7 . "\nНазначение платежа: " . MODULE_PAYMENT_RUS_BANK_8 . "\n\nПосле оплаты заказа обязательно сообщите нам по электронной почте " . STORE_OWNER_EMAIL_ADDRESS . " о факте оплаты. Ваш заказ будет отправлен сразу после подтверждения факта оплаты.");
+  define('MODULE_PAYMENT_RUS_BANK_TEXT_TITLE', 'РћРїР»Р°С‚Р° РїРѕ РєРІРёС‚Р°РЅС†РёРё РЎР±РµСЂР±Р°РЅРєР° Р Р¤');
+  define('MODULE_PAYMENT_RUS_BANK_TEXT_DESCRIPTION', 'РќР°С€Рё Р±Р°РЅРєРѕРІСЃРєРёРµ СЂРµРєРІРёР·РёС‚С‹:<br><br>РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_1 . '<br>Р Р°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_2 . '<br>Р‘РРљ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_3 . '<br>РљРѕСЂ./СЃС‡РµС‚: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_4 . '<br>РРќРќ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_5 . '<br>РџРѕР»СѓС‡Р°С‚РµР»СЊ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_6 . '<br>РљРџРџ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_7 . '<br>РќР°Р·РЅР°С‡РµРЅРёРµ РїР»Р°С‚РµР¶Р°: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_BANK_8 . '<br><br>РџРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЃРѕРѕР±С‰РёС‚Рµ РЅР°Рј РїРѕ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚Рµ <a href="mailto:' . STORE_OWNER_EMAIL_ADDRESS . '">' . STORE_OWNER_EMAIL_ADDRESS . '</a> Рѕ С„Р°РєС‚Рµ РѕРїР»Р°С‚С‹. Р’Р°С€ Р·Р°РєР°Р· Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ СЃСЂР°Р·Сѓ РїРѕСЃР»Рµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ С„Р°РєС‚Р° РѕРїР»Р°С‚С‹.<br><br>Р Р°СЃРїРµС‡Р°С‚Р°С‚СЊ РєРІРёС‚Р°РЅС†РёСЋ РґР»СЏ РѕРїР»Р°С‚С‹ Р’С‹ СЃРјРѕР¶РµС‚Рµ РЅР° СЃР»РµРґСѓСЋС‰РµР№ СЃС‚СЂР°РЅРёС†Рµ.');
+  define('MODULE_PAYMENT_RUS_BANK_TEXT_EMAIL_FOOTER', "РќР°С€Рё Р±Р°РЅРєРѕРІСЃРєРёРµ СЂРµРєРІРёР·РёС‚С‹:\n\nРќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°: " . MODULE_PAYMENT_RUS_BANK_1 . "\nР Р°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚: " . MODULE_PAYMENT_RUS_BANK_2 . "\nР‘РРљ: " . MODULE_PAYMENT_RUS_BANK_3 . "\nРљРѕСЂ./СЃС‡РµС‚: " . MODULE_PAYMENT_RUS_BANK_4 . "\nРРќРќ: " . MODULE_PAYMENT_RUS_BANK_5 . "\nРџРѕР»СѓС‡Р°С‚РµР»СЊ: " . MODULE_PAYMENT_RUS_BANK_6 . "\nРљРџРџ: " . MODULE_PAYMENT_RUS_BANK_7 . "\nРќР°Р·РЅР°С‡РµРЅРёРµ РїР»Р°С‚РµР¶Р°: " . MODULE_PAYMENT_RUS_BANK_8 . "\n\nРџРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЃРѕРѕР±С‰РёС‚Рµ РЅР°Рј РїРѕ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚Рµ " . STORE_OWNER_EMAIL_ADDRESS . " Рѕ С„Р°РєС‚Рµ РѕРїР»Р°С‚С‹. Р’Р°С€ Р·Р°РєР°Р· Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ СЃСЂР°Р·Сѓ РїРѕСЃР»Рµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ С„Р°РєС‚Р° РѕРїР»Р°С‚С‹.");
   
-define('MODULE_PAYMENT_RUS_BANK_TEXT_PRINT','Распечатать квитанцию для оплаты');  
-define('MODULE_PAYMENT_RUS_BANK_ORDER_NUMBER','Заказ номер ');
+define('MODULE_PAYMENT_RUS_BANK_TEXT_PRINT','Р Р°СЃРїРµС‡Р°С‚Р°С‚СЊ РєРІРёС‚Р°РЅС†РёСЋ РґР»СЏ РѕРїР»Р°С‚С‹');  
+define('MODULE_PAYMENT_RUS_BANK_ORDER_NUMBER','Р—Р°РєР°Р· РЅРѕРјРµСЂ ');
 
-define('MODULE_PAYMENT_KVITANCIA_NAME_TITLE','Информация о плательщике');
+define('MODULE_PAYMENT_KVITANCIA_NAME_TITLE','РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїР»Р°С‚РµР»СЊС‰РёРєРµ');
 define('MODULE_PAYMENT_KVITANCIA_NAME_DESC','');
-define('MODULE_PAYMENT_KVITANCIA_NAME','ФИО:');
-define('MODULE_PAYMENT_KVITANCIA_ADDRESS','Адрес:');
-define('MODULE_PAYMENT_KVITANCIA_ADDRESS_HELP',' Пример: г. Ставрополь, ул. Мира 111, оф. 11');
+define('MODULE_PAYMENT_KVITANCIA_NAME','Р¤РРћ:');
+define('MODULE_PAYMENT_KVITANCIA_ADDRESS','РђРґСЂРµСЃ:');
+define('MODULE_PAYMENT_KVITANCIA_ADDRESS_HELP',' РџСЂРёРјРµСЂ: Рі. РЎС‚Р°РІСЂРѕРїРѕР»СЊ, СѓР». РњРёСЂР° 111, РѕС„. 11');
 
 ?>

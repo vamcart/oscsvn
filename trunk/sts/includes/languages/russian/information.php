@@ -9,6 +9,6 @@
 
   Released under the GNU General Public License
 */
-define('TEXT_PAGE_NOT_FOUND', 'Страница не найдена!');
-define('TEXT_DATE_ADDED', 'Страница добавлена %s');
+define('TEXT_PAGE_NOT_FOUND', 'РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°!');
+define('TEXT_DATE_ADDED', 'РЎС‚СЂР°РЅРёС†Р° РґРѕР±Р°РІР»РµРЅР° %s');
 ?>

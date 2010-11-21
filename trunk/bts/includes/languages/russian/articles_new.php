@@ -10,15 +10,15 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Íîâûå ñòàòüè');
-define('HEADING_TITLE', 'Íîâûå ñòàòüè');
-define('TEXT_ARTICLES_SEARCH', 'Ïîèñê â ñòàòüÿõ: ');
+define('NAVBAR_TITLE', 'ÐÐ¾Ð²Ñ‹Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEADING_TITLE', 'ÐÐ¾Ð²Ñ‹Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('TEXT_ARTICLES_SEARCH', 'ÐŸÐ¾Ð¸ÑÐº Ð² ÑÑ‚Ð°Ñ‚ÑŒÑÑ…: ');
 
-define('TEXT_NEW_ARTICLES', 'Ñëåäóþùèå ñòàòüè áûëè äîáàâëåííû çà ïîñëåäíèå %s äíåé.');
-define('TEXT_NO_NEW_ARTICLES', 'Çà ïîñëåäíèå %s äíåé íîâûõ ñòàòåé äîáàâëåíî íå áûëî.');
-define('TEXT_DATE_ADDED', 'Îïóáëèêîâàíî:');
-define('TEXT_AUTHOR', 'Àâòîð:');
-define('TEXT_TOPIC', 'Ðàçäåë:');
+define('TEXT_NEW_ARTICLES', 'Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸ Ð±Ñ‹Ð»Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹ Ð·Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ %s Ð´Ð½ÐµÐ¹.');
+define('TEXT_NO_NEW_ARTICLES', 'Ð—Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ %s Ð´Ð½ÐµÐ¹ Ð½Ð¾Ð²Ñ‹Ñ… ÑÑ‚Ð°Ñ‚ÐµÐ¹ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾ Ð½Ðµ Ð±Ñ‹Ð»Ð¾.');
+define('TEXT_DATE_ADDED', 'ÐžÐ¿ÑƒÐ±Ð»Ð¸ÐºÐ¾Ð²Ð°Ð½Ð¾:');
+define('TEXT_AUTHOR', 'ÐÐ²Ñ‚Ð¾Ñ€:');
+define('TEXT_TOPIC', 'Ð Ð°Ð·Ð´ÐµÐ»:');
 define('TEXT_BY', ' ');
-define('TEXT_READ_MORE', '×èòàòü äàëåå');
+define('TEXT_READ_MORE', 'Ð§Ð¸Ñ‚Ð°Ñ‚ÑŒ Ð´Ð°Ð»ÐµÐµ');
 ?>

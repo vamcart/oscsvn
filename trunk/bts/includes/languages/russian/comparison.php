@@ -11,8 +11,8 @@
   Released under the GNU General Public License
 */
 
-  define ('HEADING_TITLE', 'Сравнение');
+  define ('HEADING_TITLE', 'РЎСЂР°РІРЅРµРЅРёРµ');
 
-  define ('TEXT_NO_COMPARISON_AVAILABLE', 'Извините, но страница сравнения для данного товара на данный момент недоступна.');
-  define ('TEXT_NOT_AVAILABLE', 'нет данных');
+  define ('TEXT_NO_COMPARISON_AVAILABLE', 'РР·РІРёРЅРёС‚Рµ, РЅРѕ СЃС‚СЂР°РЅРёС†Р° СЃСЂР°РІРЅРµРЅРёСЏ РґР»СЏ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР° РЅР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµРґРѕСЃС‚СѓРїРЅР°.');
+  define ('TEXT_NOT_AVAILABLE', 'РЅРµС‚ РґР°РЅРЅС‹С…');
 ?>

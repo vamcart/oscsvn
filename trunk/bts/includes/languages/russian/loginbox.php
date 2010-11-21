@@ -12,16 +12,16 @@
 
   Released under the GNU General Public License
 */
-  define('BOX_LOGINBOX_HEADING', 'Âõîä');
+  define('BOX_LOGINBOX_HEADING', 'Ð’Ñ…Ð¾Ð´');
   define('BOX_LOGINBOX_EMAIL', 'E-Mail:');
-  define('BOX_LOGINBOX_PASSWORD', 'Ïàðîëü:');
-  define('IMAGE_BUTTON_LOGIN', 'Âîéòè');
+  define('BOX_LOGINBOX_PASSWORD', 'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ:');
+  define('IMAGE_BUTTON_LOGIN', 'Ð’Ð¾Ð¹Ñ‚Ð¸');
 
-  define('BOX_HEADING_LOGIN_BOX_MY_ACCOUNT','Ìîè äàííûå');
-  define('LOGIN_BOX_ACCOUNT_EDIT','Èçìåíèòü äàííûå');
-  define('LOGIN_BOX_ACCOUNT_HISTORY','Èñòîðèÿ çàêàçîâ');
-  define('LOGIN_BOX_ADDRESS_BOOK','Àäðåñíàÿ êíèãà');
-  define('LOGIN_BOX_PRODUCT_NOTIFICATIONS','Óâåäîìëåíèÿ');
-  define('LOGIN_BOX_MY_ACCOUNT','Ìîè äàííûå');
-  define('LOGIN_BOX_LOGOFF','Âûõîä');
+  define('BOX_HEADING_LOGIN_BOX_MY_ACCOUNT','ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+  define('LOGIN_BOX_ACCOUNT_EDIT','Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+  define('LOGIN_BOX_ACCOUNT_HISTORY','Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
+  define('LOGIN_BOX_ADDRESS_BOOK','ÐÐ´Ñ€ÐµÑÐ½Ð°Ñ ÐºÐ½Ð¸Ð³Ð°');
+  define('LOGIN_BOX_PRODUCT_NOTIFICATIONS','Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ');
+  define('LOGIN_BOX_MY_ACCOUNT','ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+  define('LOGIN_BOX_LOGOFF','Ð’Ñ‹Ñ…Ð¾Ð´');
 ?>

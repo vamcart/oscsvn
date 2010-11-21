@@ -14,17 +14,17 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Клики');
+define('HEADING_TITLE', 'РљР»РёРєРё');
 
-define('TABLE_HEADING_ONLINE', 'Клики');
-define('TABLE_HEADING_AFFILIATE_USERNAME', 'Партнёр');
-define('TABLE_HEADING_IPADDRESS', 'IP Адрес');
-define('TABLE_HEADING_ENTRY_TIME', 'Время');
-define('TABLE_HEADING_BROWSER', 'Браузер');
-define('TABLE_HEADING_ENTRY_DATE', 'Дата');
-define('TABLE_HEADING_CLICKED_PRODUCT','Товар или Страница');
-define('TABLE_HEADING_REFERRAL_URL', 'Откуда');
+define('TABLE_HEADING_ONLINE', 'РљР»РёРєРё');
+define('TABLE_HEADING_AFFILIATE_USERNAME', 'РџР°СЂС‚РЅС‘СЂ');
+define('TABLE_HEADING_IPADDRESS', 'IP РђРґСЂРµСЃ');
+define('TABLE_HEADING_ENTRY_TIME', 'Р’СЂРµРјСЏ');
+define('TABLE_HEADING_BROWSER', 'Р‘СЂР°СѓР·РµСЂ');
+define('TABLE_HEADING_ENTRY_DATE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_CLICKED_PRODUCT','РўРѕРІР°СЂ РёР»Рё РЎС‚СЂР°РЅРёС†Р°');
+define('TABLE_HEADING_REFERRAL_URL', 'РћС‚РєСѓРґР°');
 
-define('TEXT_NO_CLICKS', 'Пока ещё не было зарегистрировано ни одного клика');
-define('TEXT_DISPLAY_NUMBER_OF_CLICKS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> кликов)');
+define('TEXT_NO_CLICKS', 'РџРѕРєР° РµС‰С‘ РЅРµ Р±С‹Р»Рѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРѕ РЅРё РѕРґРЅРѕРіРѕ РєР»РёРєР°');
+define('TEXT_DISPLAY_NUMBER_OF_CLICKS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РєР»РёРєРѕРІ)');
 ?>

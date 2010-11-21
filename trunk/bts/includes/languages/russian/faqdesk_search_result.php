@@ -3,16 +3,16 @@
 define('NAVBAR_TITLE', 'FAQ');
 
 //define('NAVBAR_TITLE1', 'FAQ Search');
-define('NAVBAR_TITLE2', 'FAQ - Ðåçóëüòàòû ïîèñêà');
-define('HEADING_TITLE', 'FAQ, ñîîòâåòñòâóþùèå Âàøåìó çàïðîñó');
+define('NAVBAR_TITLE2', 'FAQ - Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¿Ð¾Ð¸ÑÐºÐ°');
+define('HEADING_TITLE', 'FAQ, ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ');
 
-define('TABLE_HEADING_ARTICLE_NAME', 'Âîïðîñ');
-define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'Êðàòêèé îòâåò');
-define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'Ðàñøèðåííûé îòâåò');
-define('TABLE_HEADING_DATE_AVAILABLE', 'Äàòà');
-define('TABLE_HEADING_TOPICS', 'Âîïðîñû');
+define('TABLE_HEADING_ARTICLE_NAME', 'Ð’Ð¾Ð¿Ñ€Ð¾Ñ');
+define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'ÐšÑ€Ð°Ñ‚ÐºÐ¸Ð¹ Ð¾Ñ‚Ð²ÐµÑ‚');
+define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½Ñ‹Ð¹ Ð¾Ñ‚Ð²ÐµÑ‚');
+define('TABLE_HEADING_DATE_AVAILABLE', 'Ð”Ð°Ñ‚Ð°');
+define('TABLE_HEADING_TOPICS', 'Ð’Ð¾Ð¿Ñ€Ð¾ÑÑ‹');
 
-define('TEXT_NO_ARTICLES', 'Íå íàéäåíî íè îäíîãî FAQ, ñîîòâåòñòâóþùåãî Âàøåìó çàïðîñó.');
-define('TEXT_NO_ARTICLES2', 'Íå íàéäåíî íè îäíîãî FAQ, ñîîòâåòñòâóþùåãî Âàøåìó çàïðîñó');
+define('TEXT_NO_ARTICLES', 'ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ FAQ, ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ³Ð¾ Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ.');
+define('TEXT_NO_ARTICLES2', 'ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ FAQ, ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ³Ð¾ Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ');
 
 ?>

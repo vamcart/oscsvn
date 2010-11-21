@@ -14,42 +14,42 @@
 
 // BOF FlyOpenair: Extra Product Price
 
-define('HEADING_TITLE', 'Система наценок');
+define('HEADING_TITLE', 'РЎРёСЃС‚РµРјР° РЅР°С†РµРЅРѕРє');
 
-define('TABLE_EXTRA_PRODUCT_PRICE_NAME', 'Название');
-define('TABLE_EXTRA_PRODUCT_PRICE_DEDUCTION', 'Наценка');
-define('TABLE_EXTRA_PRODUCT_PRICE_HEADING_DEDUCTION_STATUS', 'Статус');
-define('TABLE_EXTRA_PRODUCT_PRICE_HEADING_ACTION', 'Действие');
-
-
-
-define('TEXT_EXTRA_PRODUCT_PRICE_DEDUCTION_TYPE', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тип:&nbsp;&nbsp;');
-define('TEXT_EXTRA_PRODUCT_PRICE_PRICERANGE_FROM', 'Товары стоимостью от:');
-define('TEXT_EXTRA_PRODUCT_PRICE_PRICERANGE_TO', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;до&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
-
-define('TEXT_EXTRA_PRODUCT_PRICE_CATEGORIES', '<b>Или</b> выберите категории, для которых будет действительна данная наценка:');
+define('TABLE_EXTRA_PRODUCT_PRICE_NAME', 'РќР°Р·РІР°РЅРёРµ');
+define('TABLE_EXTRA_PRODUCT_PRICE_DEDUCTION', 'РќР°С†РµРЅРєР°');
+define('TABLE_EXTRA_PRODUCT_PRICE_HEADING_DEDUCTION_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_EXTRA_PRODUCT_PRICE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
 
-define('TEXT_EXTRA_PRODUCT_PRICE_ENTIRE_CATALOG', 'Отметьте, если наценка действительна для <b>всех</b> товаров магазина:');
-define('TEXT_EXTRA_PRODUCT_PRICE_TOP', 'Наценка действительна для всех товаров магазина');
 
-define('TEXT_INFO_DATE_ADDED', 'Дата создания:');
-define('TEXT_INFO_DATE_MODIFIED', 'Последние изменения:');
-define('TEXT_INFO_DEDUCTION', 'Наценка:');
-define('TEXT_INFO_PRICERANGE_FROM', 'Товары стоимостью от:');
-define('TEXT_INFO_PRICERANGE_TO', ' до ');
+define('TEXT_EXTRA_PRODUCT_PRICE_DEDUCTION_TYPE', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РўРёРї:&nbsp;&nbsp;');
+define('TEXT_EXTRA_PRODUCT_PRICE_PRICERANGE_FROM', 'РўРѕРІР°СЂС‹ СЃС‚РѕРёРјРѕСЃС‚СЊСЋ РѕС‚:');
+define('TEXT_EXTRA_PRODUCT_PRICE_PRICERANGE_TO', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РґРѕ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
 
-define('DEDUCTION_TYPE_DROPDOWN_0', 'Добавка к сумме');
-define('DEDUCTION_TYPE_DROPDOWN_1', 'Процент наценки');
-define('DEDUCTION_TYPE_DROPDOWN_2', 'Новая цена');
+define('TEXT_EXTRA_PRODUCT_PRICE_CATEGORIES', '<b>РР»Рё</b> РІС‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёРё, РґР»СЏ РєРѕС‚РѕСЂС‹С… Р±СѓРґРµС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґР°РЅРЅР°СЏ РЅР°С†РµРЅРєР°:');
 
-define('TEXT_INFO_HEADING_COPY_SALE', 'Копировать наценку');
-define('TEXT_INFO_COPY_INTRO', 'Введите название для копируемой наценки<br>&nbsp;&nbsp;"%s"');
 
-define('TEXT_INFO_HEADING_DELETE_SALE', 'Удалить наценку');
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить данную наценку?');
-define('TEXT_DISPLAY_NUMBER_OF_EXTRA_PRODUCT_PRICE', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> наценок)');
-define('IMAGE_NEW_EXTRA_PRODUCT_PRICE', 'Новая наценка');
+define('TEXT_EXTRA_PRODUCT_PRICE_ENTIRE_CATALOG', 'РћС‚РјРµС‚СЊС‚Рµ, РµСЃР»Рё РЅР°С†РµРЅРєР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґР»СЏ <b>РІСЃРµС…</b> С‚РѕРІР°СЂРѕРІ РјР°РіР°Р·РёРЅР°:');
+define('TEXT_EXTRA_PRODUCT_PRICE_TOP', 'РќР°С†РµРЅРєР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґР»СЏ РІСЃРµС… С‚РѕРІР°СЂРѕРІ РјР°РіР°Р·РёРЅР°');
+
+define('TEXT_INFO_DATE_ADDED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ:');
+define('TEXT_INFO_DATE_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_INFO_DEDUCTION', 'РќР°С†РµРЅРєР°:');
+define('TEXT_INFO_PRICERANGE_FROM', 'РўРѕРІР°СЂС‹ СЃС‚РѕРёРјРѕСЃС‚СЊСЋ РѕС‚:');
+define('TEXT_INFO_PRICERANGE_TO', ' РґРѕ ');
+
+define('DEDUCTION_TYPE_DROPDOWN_0', 'Р”РѕР±Р°РІРєР° Рє СЃСѓРјРјРµ');
+define('DEDUCTION_TYPE_DROPDOWN_1', 'РџСЂРѕС†РµРЅС‚ РЅР°С†РµРЅРєРё');
+define('DEDUCTION_TYPE_DROPDOWN_2', 'РќРѕРІР°СЏ С†РµРЅР°');
+
+define('TEXT_INFO_HEADING_COPY_SALE', 'РљРѕРїРёСЂРѕРІР°С‚СЊ РЅР°С†РµРЅРєСѓ');
+define('TEXT_INFO_COPY_INTRO', 'Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РґР»СЏ РєРѕРїРёСЂСѓРµРјРѕР№ РЅР°С†РµРЅРєРё<br>&nbsp;&nbsp;"%s"');
+
+define('TEXT_INFO_HEADING_DELETE_SALE', 'РЈРґР°Р»РёС‚СЊ РЅР°С†РµРЅРєСѓ');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅСѓСЋ РЅР°С†РµРЅРєСѓ?');
+define('TEXT_DISPLAY_NUMBER_OF_EXTRA_PRODUCT_PRICE', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РЅР°С†РµРЅРѕРє)');
+define('IMAGE_NEW_EXTRA_PRODUCT_PRICE', 'РќРѕРІР°СЏ РЅР°С†РµРЅРєР°');
 
 
 // EOF FlyOpenair: Extra Product Price

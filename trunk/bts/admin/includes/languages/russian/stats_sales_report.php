@@ -10,64 +10,64 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Ñòàòèñòèêà ïðîäàæ');
+define('HEADING_TITLE', 'Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ñ€Ð¾Ð´Ð°Ð¶');
 
-define('TABLE_HEADING_CONVERSION', 'Ñóììà');
-define('TABLE_HEADING_CONV_PER_ORDER', 'Ñðåäíÿÿ ñòîèìîñòü çàêàçà');
-define('TABLE_HEADING_STAT_ORDERS', 'Êîëè÷åñòâî çàêàçîâ');
-define('TEXT_MONTH', 'Ìåñÿö');
-define('TEXT_WEEK', 'Íåäåëÿ');
+define('TABLE_HEADING_CONVERSION', 'Ð¡ÑƒÐ¼Ð¼Ð°');
+define('TABLE_HEADING_CONV_PER_ORDER', 'Ð¡Ñ€ÐµÐ´Ð½ÑÑ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('TABLE_HEADING_STAT_ORDERS', 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
+define('TEXT_MONTH', 'ÐœÐµÑÑÑ†');
+define('TEXT_WEEK', 'ÐÐµÐ´ÐµÐ»Ñ');
 
 define('TABLE_HEADING_VARIANCE', '+/- %');
 
-define('AVERAGE_HOURLY_TOTAL', 'Â ñðåäíåì çà ÷àñ:');
-define('AVERAGE_DAILY_TOTAL', 'Â ñðåäíåì çà äåíü:');
-define('AVERAGE_MONTHLY_TOTAL', 'Â ñðåäíåì çà ìåñÿö:');
-define('AVERAGE_WEEKLY_TOTAL', 'Â ñðåäíåì çà íåäåëþ:');
-define('AVERAGE_YEARLY_TOTAL', 'Â ñðåäíåì çà ãîä:');
+define('AVERAGE_HOURLY_TOTAL', 'Ð’ ÑÑ€ÐµÐ´Ð½ÐµÐ¼ Ð·Ð° Ñ‡Ð°Ñ:');
+define('AVERAGE_DAILY_TOTAL', 'Ð’ ÑÑ€ÐµÐ´Ð½ÐµÐ¼ Ð·Ð° Ð´ÐµÐ½ÑŒ:');
+define('AVERAGE_MONTHLY_TOTAL', 'Ð’ ÑÑ€ÐµÐ´Ð½ÐµÐ¼ Ð·Ð° Ð¼ÐµÑÑÑ†:');
+define('AVERAGE_WEEKLY_TOTAL', 'Ð’ ÑÑ€ÐµÐ´Ð½ÐµÐ¼ Ð·Ð° Ð½ÐµÐ´ÐµÐ»ÑŽ:');
+define('AVERAGE_YEARLY_TOTAL', 'Ð’ ÑÑ€ÐµÐ´Ð½ÐµÐ¼ Ð·Ð° Ð³Ð¾Ð´:');
 
-define('AVERAGE_ORDER', 'Ñðåäíÿÿ ñòîèìîñòü çàêàçà:');
+define('AVERAGE_ORDER', 'Ð¡Ñ€ÐµÐ´Ð½ÑÑ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°:');
 
-define('TODAY_TO_DATE', 'Âñåãî çà äåíü:');
-define('WEEK_TO_DATE', 'Âñåãî çà íåäåëþ:');
-define('MONTH_TO_DATE', 'Âñåãî çà ìåñÿö:');
-define('YEAR_TO_DATE', 'Âñåãî çà ãîä:');
-define('YEARLY_TOTAL', 'Âñåãî:');
+define('TODAY_TO_DATE', 'Ð’ÑÐµÐ³Ð¾ Ð·Ð° Ð´ÐµÐ½ÑŒ:');
+define('WEEK_TO_DATE', 'Ð’ÑÐµÐ³Ð¾ Ð·Ð° Ð½ÐµÐ´ÐµÐ»ÑŽ:');
+define('MONTH_TO_DATE', 'Ð’ÑÐµÐ³Ð¾ Ð·Ð° Ð¼ÐµÑÑÑ†:');
+define('YEAR_TO_DATE', 'Ð’ÑÐµÐ³Ð¾ Ð·Ð° Ð³Ð¾Ð´:');
+define('YEARLY_TOTAL', 'Ð’ÑÐµÐ³Ð¾:');
 
-define('REPORT_TYPE_HOURLY', '×àñ');
-define('REPORT_TYPE_DAILY', 'Äåíü');
-define('REPORT_TYPE_WEEKLY', 'Íåäåëÿ');
-define('REPORT_TYPE_MONTHLY', 'Ìåñÿö');
-define('REPORT_TYPE_YEARLY', 'Ãîä');
+define('REPORT_TYPE_HOURLY', 'Ð§Ð°Ñ');
+define('REPORT_TYPE_DAILY', 'Ð”ÐµÐ½ÑŒ');
+define('REPORT_TYPE_WEEKLY', 'ÐÐµÐ´ÐµÐ»Ñ');
+define('REPORT_TYPE_MONTHLY', 'ÐœÐµÑÑÑ†');
+define('REPORT_TYPE_YEARLY', 'Ð“Ð¾Ð´');
 
-define('FILTER_STATUS', 'Ñòàòóñû');
-define('FILTER_VALUE', 'Çíà÷åíèå');
+define('FILTER_STATUS', 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑÑ‹');
+define('FILTER_VALUE', 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ');
 
-define('TEXT_PREVIOUS', 'Íàçàä');
-define('TEXT_NEXT', 'Âïåð¸ä');
+define('TEXT_PREVIOUS', 'ÐÐ°Ð·Ð°Ð´');
+define('TEXT_NEXT', 'Ð’Ð¿ÐµÑ€Ñ‘Ð´');
 
 define('FULL_DATE_FORMAT', 'M. d, Y');
 define('FROM_DATE_FORMAT', 'M. d');
 define('TO_DATE_FORMAT', 'd, Y');
 
-define('DAILY_TOTAL','âñåãî çà äåíü');
-define('AVERAGE_TOTAL','ñðåäíèé çàêàç');
+define('DAILY_TOTAL','Ð²ÑÐµÐ³Ð¾ Ð·Ð° Ð´ÐµÐ½ÑŒ');
+define('AVERAGE_TOTAL','ÑÑ€ÐµÐ´Ð½Ð¸Ð¹ Ð·Ð°ÐºÐ°Ð·');
 
-define('IMAGE_ICON_STATUS_GREEN', 'Àêòèâíûé');
-define('IMAGE_ICON_STATUS_GREEN_LIGHT', 'Àêòèâèçèðîâàòü');
-define('IMAGE_ICON_STATUS_RED', 'Íåàêòèâíûé');
-define('IMAGE_ICON_STATUS_RED_LIGHT', 'Ñäåëàòü íåàêòèâíûì');
+define('IMAGE_ICON_STATUS_GREEN', 'ÐÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¹');
+define('IMAGE_ICON_STATUS_GREEN_LIGHT', 'ÐÐºÑ‚Ð¸Ð²Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ');
+define('IMAGE_ICON_STATUS_RED', 'ÐÐµÐ°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¹');
+define('IMAGE_ICON_STATUS_RED_LIGHT', 'Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð½ÐµÐ°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¼');
 
-define('TABLE_HEADING_DATE', 'Äàòà');
+define('TABLE_HEADING_DATE', 'Ð”Ð°Ñ‚Ð°');
 
-define('TEXT_NUMBER_OF_ORDERS','Êîëè÷åñòâî çàêàçîâ');
-define('TEXT_AVERAGE_ORDER','Ñðåäíÿÿ ñóììà çàêàçà');
-define('TEXT_TOTAL_SUMM','Îáùàÿ ñóììà çàêàçîâ');
+define('TEXT_NUMBER_OF_ORDERS','ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
+define('TEXT_AVERAGE_ORDER','Ð¡Ñ€ÐµÐ´Ð½ÑÑ ÑÑƒÐ¼Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð°');
+define('TEXT_TOTAL_SUMM','ÐžÐ±Ñ‰Ð°Ñ ÑÑƒÐ¼Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
 
-define('TEXT_STATS_SALES',' ñòàòèñòèêà ïðîäàæ');
+define('TEXT_STATS_SALES',' ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ñ€Ð¾Ð´Ð°Ð¶');
 
-define('TAB_CHART','Ãðàôèê');
-define('TAB_TABLE','Òàáëèöà');
-define('TAB_STATUS','Ñòàòóñû çàêàçà');
+define('TAB_CHART','Ð“Ñ€Ð°Ñ„Ð¸Ðº');
+define('TAB_TABLE','Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð°');
+define('TAB_STATUS','Ð¡Ñ‚Ð°Ñ‚ÑƒÑÑ‹ Ð·Ð°ÐºÐ°Ð·Ð°');
 
 ?>

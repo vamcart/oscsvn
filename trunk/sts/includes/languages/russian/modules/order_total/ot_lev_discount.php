@@ -10,8 +10,8 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_LEV_DISCOUNT_TITLE', 'Âàøà ñêèäêà');
-  define('MODULE_LEV_DISCOUNT_DESCRIPTION', 'Âàøà ñêèäêà');
-  define('SHIPPING_NOT_INCLUDED', ' [Ñòîèìîñòü äîñòàâêè íå âêëþ÷åíà]');
-  define('TAX_NOT_INCLUDED', ' [Íàëîã íå âêëþ÷¸í]');
+  define('MODULE_LEV_DISCOUNT_TITLE', 'Ð’Ð°ÑˆÐ° ÑÐºÐ¸Ð´ÐºÐ°');
+  define('MODULE_LEV_DISCOUNT_DESCRIPTION', 'Ð’Ð°ÑˆÐ° ÑÐºÐ¸Ð´ÐºÐ°');
+  define('SHIPPING_NOT_INCLUDED', ' [Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°]');
+  define('TAX_NOT_INCLUDED', ' [ÐÐ°Ð»Ð¾Ð³ Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡Ñ‘Ð½]');
 ?>

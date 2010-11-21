@@ -1,48 +1,48 @@
 <?php
-define('HEADING_TITLE', 'Очередь Email');
+define('HEADING_TITLE', 'РћС‡РµСЂРµРґСЊ Email');
 
-define('LINK_QUEUE', 'Очередь');
-define('LINK_ARCHIVE', 'Архив');
-define('LINK_REFRESH', 'Обновить очередь');
-define('LINK_RELEASE_ON_HOLD', 'Разблокировать все');
-define('LINK_HOLD_PENDING', 'Блокировать все незаконченные');
-define('LINK_DELETE_SEND', 'Удалить все отправленные (!)');
-define('LINK_ARCHIVE_SEND', 'Все отправленные в архив');
+define('LINK_QUEUE', 'РћС‡РµСЂРµРґСЊ');
+define('LINK_ARCHIVE', 'РђСЂС…РёРІ');
+define('LINK_REFRESH', 'РћР±РЅРѕРІРёС‚СЊ РѕС‡РµСЂРµРґСЊ');
+define('LINK_RELEASE_ON_HOLD', 'Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ РІСЃРµ');
+define('LINK_HOLD_PENDING', 'Р‘Р»РѕРєРёСЂРѕРІР°С‚СЊ РІСЃРµ РЅРµР·Р°РєРѕРЅС‡РµРЅРЅС‹Рµ');
+define('LINK_DELETE_SEND', 'РЈРґР°Р»РёС‚СЊ РІСЃРµ РѕС‚РїСЂР°РІР»РµРЅРЅС‹Рµ (!)');
+define('LINK_ARCHIVE_SEND', 'Р’СЃРµ РѕС‚РїСЂР°РІР»РµРЅРЅС‹Рµ РІ Р°СЂС…РёРІ');
 
-define('ALT_RELEASED', 'Разблокирован');
-define('ALT_HOLDING', 'Блокирован');
-define('ALT_SEND', 'Отправлен');
-define('ALT_SCHEDULED', 'Поставлен в очередь');
+define('ALT_RELEASED', 'Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°РЅ');
+define('ALT_HOLDING', 'Р‘Р»РѕРєРёСЂРѕРІР°РЅ');
+define('ALT_SEND', 'РћС‚РїСЂР°РІР»РµРЅ');
+define('ALT_SCHEDULED', 'РџРѕСЃС‚Р°РІР»РµРЅ РІ РѕС‡РµСЂРµРґСЊ');
 
-define('MSG_MASTERSWITCH', 'Блокировка разрешена');
+define('MSG_MASTERSWITCH', 'Р‘Р»РѕРєРёСЂРѕРІРєР° СЂР°Р·СЂРµС€РµРЅР°');
 
 define('TABLE_HEADING_EMAIL_ID', 'ID');
-define('TABLE_HEADING_EMAIL_CREATED', 'Создан');
-define('TABLE_HEADING_TO_NAME', 'Кому');
-define('TABLE_HEADING_TO_ADDRESS', 'Адрес');
-define('TABLE_HEADING_SUBJECT', 'Тема');
-define('TABLE_HEADING_SEND', 'Отправлен');
-define('TABLE_HEADING_HOLD', 'Блокирован');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_EMAIL_CREATED', 'РЎРѕР·РґР°РЅ');
+define('TABLE_HEADING_TO_NAME', 'РљРѕРјСѓ');
+define('TABLE_HEADING_TO_ADDRESS', 'РђРґСЂРµСЃ');
+define('TABLE_HEADING_SUBJECT', 'РўРµРјР°');
+define('TABLE_HEADING_SEND', 'РћС‚РїСЂР°РІР»РµРЅ');
+define('TABLE_HEADING_HOLD', 'Р‘Р»РѕРєРёСЂРѕРІР°РЅ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_INFO_EDIT_INTRO', 'Внесите необходимые изменения');
+define('TEXT_INFO_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
 define('TEXT_INFO_EMAIL_ID', 'ID: ');
-define('TEXT_INFO_EMAIL_CHARSET', 'Кодировка: ');
+define('TEXT_INFO_EMAIL_CHARSET', 'РљРѕРґРёСЂРѕРІРєР°: ');
 define('TEXT_INFO_EMAIL_IP', '- ip: ');
-define('TEXT_INFO_EMAIL_TO_NAME', 'Кому: ');
-define('TEXT_INFO_EMAIL_TO_ADDRESS', 'Кому (email): ');
-define('TEXT_INFO_EMAIL_FROM_NAME', 'От кого: ');
-define('TEXT_INFO_EMAIL_FROM_ADDRESS', 'От кого (email): ');
-define('TEXT_INFO_EMAIL_SUBJECT', 'Тема: ');
+define('TEXT_INFO_EMAIL_TO_NAME', 'РљРѕРјСѓ: ');
+define('TEXT_INFO_EMAIL_TO_ADDRESS', 'РљРѕРјСѓ (email): ');
+define('TEXT_INFO_EMAIL_FROM_NAME', 'РћС‚ РєРѕРіРѕ: ');
+define('TEXT_INFO_EMAIL_FROM_ADDRESS', 'РћС‚ РєРѕРіРѕ (email): ');
+define('TEXT_INFO_EMAIL_SUBJECT', 'РўРµРјР°: ');
 define('TEXT_INFO_EMAIL_TEXT', '');
-define('TEXT_INFO_EMAIL_SEND', '<b>Отправлен</b>');
-define('TEXT_INFO_EMAIL_NOT_SEND', '<b>Поставлен в очередь на отправку</b>');
-define('TEXT_INFO_EMAIL_CREATED', 'Дата создания: ');
-define('TEXT_INFO_EMAIL_LAST_UPDATED', 'Дата изменения: ');
-define('TEXT_INFO_EMAIL_HOLD', '<b>Блокирован</b>');
-define('TEXT_INFO_EMAIL_RELEASED', '<b>Разблокирован</b>');
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить данный email?');
-define('TEXT_INFO_HEADING_EDIT_EMAIL', 'Редактировать Email');
-define('TEXT_INFO_HEADING_DELETE_EMAIL', 'Удалить Email');
-define('TEXT_INFO_EMAIL_UPDATED', 'Успешно обновлено.');
+define('TEXT_INFO_EMAIL_SEND', '<b>РћС‚РїСЂР°РІР»РµРЅ</b>');
+define('TEXT_INFO_EMAIL_NOT_SEND', '<b>РџРѕСЃС‚Р°РІР»РµРЅ РІ РѕС‡РµСЂРµРґСЊ РЅР° РѕС‚РїСЂР°РІРєСѓ</b>');
+define('TEXT_INFO_EMAIL_CREATED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ: ');
+define('TEXT_INFO_EMAIL_LAST_UPDATED', 'Р”Р°С‚Р° РёР·РјРµРЅРµРЅРёСЏ: ');
+define('TEXT_INFO_EMAIL_HOLD', '<b>Р‘Р»РѕРєРёСЂРѕРІР°РЅ</b>');
+define('TEXT_INFO_EMAIL_RELEASED', '<b>Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°РЅ</b>');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ email?');
+define('TEXT_INFO_HEADING_EDIT_EMAIL', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ Email');
+define('TEXT_INFO_HEADING_DELETE_EMAIL', 'РЈРґР°Р»РёС‚СЊ Email');
+define('TEXT_INFO_EMAIL_UPDATED', 'РЈСЃРїРµС€РЅРѕ РѕР±РЅРѕРІР»РµРЅРѕ.');
 ?>

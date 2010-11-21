@@ -1,23 +1,23 @@
 <?php
-define('TEXT_NEWSDESK_HEADING', 'Новости');
-define('NAVBAR_TITLE', 'Новости');
+define('TEXT_NEWSDESK_HEADING', 'РќРѕРІРѕСЃС‚Рё');
+define('NAVBAR_TITLE', 'РќРѕРІРѕСЃС‚Рё');
 
-define('TEXT_NEWSDESK_DATE', 'Дата: %s');
-define('TEXT_NEWSDESK_SUMMARY', 'Кратко:');
-define('TEXT_NEWSDESK_CONTENT', 'Содержание:');
+define('TEXT_NEWSDESK_DATE', 'Р”Р°С‚Р°: %s');
+define('TEXT_NEWSDESK_SUMMARY', 'РљСЂР°С‚РєРѕ:');
+define('TEXT_NEWSDESK_CONTENT', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ:');
 
-define('TEXT_NEWSDESK_LINK_HEADING', 'Дополнительная информация:');
-define('TEXT_NEWSDESK_LINK', 'Для получения дополнительной информация, посетите следующий <a href="%s" target="_blank"><u>сайт</u></a>.');
+define('TEXT_NEWSDESK_LINK_HEADING', 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ:');
+define('TEXT_NEWSDESK_LINK', 'Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёСЏ, РїРѕСЃРµС‚РёС‚Рµ СЃР»РµРґСѓСЋС‰РёР№ <a href="%s" target="_blank"><u>СЃР°Р№С‚</u></a>.');
 
-define('TEXT_NEWS_NOT_FOUND', 'Новостей нет.');
+define('TEXT_NEWS_NOT_FOUND', 'РќРѕРІРѕСЃС‚РµР№ РЅРµС‚.');
 
-define('TEXT_NEWSDESK_REVIEWS_HEADING', 'Статистика:');
-define('TEXT_NEWSDESK_REVIEWS', 'Комментарии:');
+define('TEXT_NEWSDESK_REVIEWS_HEADING', 'РЎС‚Р°С‚РёСЃС‚РёРєР°:');
+define('TEXT_NEWSDESK_REVIEWS', 'РљРѕРјРјРµРЅС‚Р°СЂРёРё:');
 
-define('TEXT_DATE_ADDED', 'Новость добавлена %s.');
+define('TEXT_DATE_ADDED', 'РќРѕРІРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅР° %s.');
 
-define('TEXT_CLICK_TO_ENLARGE', 'Увеличить');
+define('TEXT_CLICK_TO_ENLARGE', 'РЈРІРµР»РёС‡РёС‚СЊ');
 
-define('TEXT_NEWSDESK_VIEWED', 'Просмотров:');
+define('TEXT_NEWSDESK_VIEWED', 'РџСЂРѕСЃРјРѕС‚СЂРѕРІ:');
 
 ?>

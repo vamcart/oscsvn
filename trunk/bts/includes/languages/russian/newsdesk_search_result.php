@@ -1,18 +1,18 @@
 <?php
-define('HEADING_TITLE', 'Новости');
-define('HEADING_TITLE_2', 'Результаты поиска');
-define('NAVBAR_TITLE_SEARCH', 'Новости, соответствующие Вашему запросу');
+define('HEADING_TITLE', 'РќРѕРІРѕСЃС‚Рё');
+define('HEADING_TITLE_2', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РїРѕРёСЃРєР°');
+define('NAVBAR_TITLE_SEARCH', 'РќРѕРІРѕСЃС‚Рё, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ Р’Р°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ');
 
-define('TABLE_HEADING_IMAGE', 'Картинка');
-define('TABLE_HEADING_ARTICLE_NAME', 'Заголовок');
-define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'Кратко');
-define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'Содержание');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_DATE_AVAILABLE', 'Дата');
-define('TABLE_HEADING_ARTRICLE_URL', 'URL источника');
+define('TABLE_HEADING_IMAGE', 'РљР°СЂС‚РёРЅРєР°');
+define('TABLE_HEADING_ARTICLE_NAME', 'Р—Р°РіРѕР»РѕРІРѕРє');
+define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'РљСЂР°С‚РєРѕ');
+define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_DATE_AVAILABLE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_ARTRICLE_URL', 'URL РёСЃС‚РѕС‡РЅРёРєР°');
 
-define('TEXT_NO_ARTICLES', 'Не найдено ни одной новости, соответствующей Вашему запросу.');
+define('TEXT_NO_ARTICLES', 'РќРµ РЅР°Р№РґРµРЅРѕ РЅРё РѕРґРЅРѕР№ РЅРѕРІРѕСЃС‚Рё, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµР№ Р’Р°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ.');
 
-define('TEXT_NUMBER_OF_ARTICLES', 'Количество новостей: ');
-define('TEXT_SHOW', '<b>Показать:</b>');
+define('TEXT_NUMBER_OF_ARTICLES', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРІРѕСЃС‚РµР№: ');
+define('TEXT_SHOW', '<b>РџРѕРєР°Р·Р°С‚СЊ:</b>');
 ?>

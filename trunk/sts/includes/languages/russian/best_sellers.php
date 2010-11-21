@@ -12,11 +12,11 @@
 	Best Sellers v1.0 released by Tornadoburn.com
 */
 
-define('NAVBAR_TITLE', 'Лучшие товары');
-define('HEADING_TITLE', 'Лучшие товары');
+define('NAVBAR_TITLE', 'Р›СѓС‡С€РёРµ С‚РѕРІР°СЂС‹');
+define('HEADING_TITLE', 'Р›СѓС‡С€РёРµ С‚РѕРІР°СЂС‹');
 
-define('TEXT_DATE_ADDED', 'Дата добавления:');
-define('TEXT_MANUFACTURER', 'Производитель:');
-define('TEXT_PRICE', 'Стоимость:');
-define('TEXT_DISPLAY_NUMBER_OF_BEST_SELLERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> лучших товаров)');
+define('TEXT_DATE_ADDED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_MANUFACTURER', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ:');
+define('TEXT_PRICE', 'РЎС‚РѕРёРјРѕСЃС‚СЊ:');
+define('TEXT_DISPLAY_NUMBER_OF_BEST_SELLERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р»СѓС‡С€РёС… С‚РѕРІР°СЂРѕРІ)');
 ?>

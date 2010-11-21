@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_COUPON_HELP', 'Помощь');
-define('TEXT_CLOSE_WINDOW', 'Закрыть окно [x]');
-define('TEXT_COUPON_HELP_HEADER', 'Вы использовали купон.');
-define('TEXT_COUPON_HELP_NAME', '<br><br>Название купона: %s');
-define('TEXT_COUPON_HELP_FIXED', '<br><br>Данный купон номиналом  %s позволяет Вам сэкономить при оформлении заказа в нашем интернет-магазине.');
-define('TEXT_COUPON_HELP_MINORDER', '<br><br>Чтобы воспользоваться купоном, сумма Вашего заказа должна быть как минимум %s');
-define('TEXT_COUPON_HELP_FREESHIP', '<br><br>Данный купон даёт право бесплатной доставки Вашего заказа, т.е. Вы платите только за товар, доставка бесплатна.');
-define('TEXT_COUPON_HELP_DESC', '<br><br>Описание: %s');
-define('TEXT_COUPON_HELP_DATE', '<br><br>Купон действителен с %s до %s');
-define('TEXT_COUPON_HELP_RESTRICT', '<br><br>Купон действителен для Товара/Категории');
-define('TEXT_COUPON_HELP_CATEGORIES', 'Категория');
-define('TEXT_COUPON_HELP_PRODUCTS', 'Товар');
+define('HEADING_COUPON_HELP', 'РџРѕРјРѕС‰СЊ');
+define('TEXT_CLOSE_WINDOW', 'Р—Р°РєСЂС‹С‚СЊ РѕРєРЅРѕ [x]');
+define('TEXT_COUPON_HELP_HEADER', 'Р’С‹ РёСЃРїРѕР»СЊР·РѕРІР°Р»Рё РєСѓРїРѕРЅ.');
+define('TEXT_COUPON_HELP_NAME', '<br><br>РќР°Р·РІР°РЅРёРµ РєСѓРїРѕРЅР°: %s');
+define('TEXT_COUPON_HELP_FIXED', '<br><br>Р”Р°РЅРЅС‹Р№ РєСѓРїРѕРЅ РЅРѕРјРёРЅР°Р»РѕРј  %s РїРѕР·РІРѕР»СЏРµС‚ Р’Р°Рј СЃСЌРєРѕРЅРѕРјРёС‚СЊ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р° РІ РЅР°С€РµРј РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ.');
+define('TEXT_COUPON_HELP_MINORDER', '<br><br>Р§С‚РѕР±С‹ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєСѓРїРѕРЅРѕРј, СЃСѓРјРјР° Р’Р°С€РµРіРѕ Р·Р°РєР°Р·Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј %s');
+define('TEXT_COUPON_HELP_FREESHIP', '<br><br>Р”Р°РЅРЅС‹Р№ РєСѓРїРѕРЅ РґР°С‘С‚ РїСЂР°РІРѕ Р±РµСЃРїР»Р°С‚РЅРѕР№ РґРѕСЃС‚Р°РІРєРё Р’Р°С€РµРіРѕ Р·Р°РєР°Р·Р°, С‚.Рµ. Р’С‹ РїР»Р°С‚РёС‚Рµ С‚РѕР»СЊРєРѕ Р·Р° С‚РѕРІР°СЂ, РґРѕСЃС‚Р°РІРєР° Р±РµСЃРїР»Р°С‚РЅР°.');
+define('TEXT_COUPON_HELP_DESC', '<br><br>РћРїРёСЃР°РЅРёРµ: %s');
+define('TEXT_COUPON_HELP_DATE', '<br><br>РљСѓРїРѕРЅ РґРµР№СЃС‚РІРёС‚РµР»РµРЅ СЃ %s РґРѕ %s');
+define('TEXT_COUPON_HELP_RESTRICT', '<br><br>РљСѓРїРѕРЅ РґРµР№СЃС‚РІРёС‚РµР»РµРЅ РґР»СЏ РўРѕРІР°СЂР°/РљР°С‚РµРіРѕСЂРёРё');
+define('TEXT_COUPON_HELP_CATEGORIES', 'РљР°С‚РµРіРѕСЂРёСЏ');
+define('TEXT_COUPON_HELP_PRODUCTS', 'РўРѕРІР°СЂ');
 ?>

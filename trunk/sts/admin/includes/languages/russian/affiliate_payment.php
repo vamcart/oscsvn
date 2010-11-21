@@ -14,63 +14,63 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Выплаты партнёрам');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
-define('HEADING_TITLE_STATUS','Статус:');
+define('HEADING_TITLE', 'Р’С‹РїР»Р°С‚С‹ РїР°СЂС‚РЅС‘СЂР°Рј');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
+define('HEADING_TITLE_STATUS','РЎС‚Р°С‚СѓСЃ:');
 
-define('TEXT_ALL_PAYMENTS','Все выплаты');
-define('TEXT_NO_PAYMENT_HISTORY', 'Нет архива выплат');
+define('TEXT_ALL_PAYMENTS','Р’СЃРµ РІС‹РїР»Р°С‚С‹');
+define('TEXT_NO_PAYMENT_HISTORY', 'РќРµС‚ Р°СЂС…РёРІР° РІС‹РїР»Р°С‚');
 
 
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_AFILIATE_NAME', 'Партнёр');
-define('TABLE_HEADING_PAYMENT','Сумма (с налогом)');
-define('TABLE_HEADING_NET_PAYMENT','Сумма (без налога)');
-define('TABLE_HEADING_DATE_BILLED','Дата');
-define('TABLE_HEADING_NEW_VALUE', 'Новый статус');
-define('TABLE_HEADING_OLD_VALUE', 'Старый статус');
-define('TABLE_HEADING_AFFILIATE_NOTIFIED', 'Партнёр уведомлён');
-define('TABLE_HEADING_DATE_ADDED', 'Дата');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_AFILIATE_NAME', 'РџР°СЂС‚РЅС‘СЂ');
+define('TABLE_HEADING_PAYMENT','РЎСѓРјРјР° (СЃ РЅР°Р»РѕРіРѕРј)');
+define('TABLE_HEADING_NET_PAYMENT','РЎСѓРјРјР° (Р±РµР· РЅР°Р»РѕРіР°)');
+define('TABLE_HEADING_DATE_BILLED','Р”Р°С‚Р°');
+define('TABLE_HEADING_NEW_VALUE', 'РќРѕРІС‹Р№ СЃС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_OLD_VALUE', 'РЎС‚Р°СЂС‹Р№ СЃС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_AFFILIATE_NOTIFIED', 'РџР°СЂС‚РЅС‘СЂ СѓРІРµРґРѕРјР»С‘РЅ');
+define('TABLE_HEADING_DATE_ADDED', 'Р”Р°С‚Р°');
 
-define('TEXT_DATE_PAYMENT_BILLED','Оплачено:');
-define('TEXT_DATE_ORDER_LAST_MODIFIED','Последние изменения:');
-define('TEXT_AFFILIATE_PAYMENT','Сумма:');
-define('TEXT_AFFILIATE_BILLED','Дата:');
-define('TEXT_AFFILIATE','Партнёр:');
-define('TEXT_INFO_DELETE_INTRO','Вы действительно хотите удалить этот платёж?');
-define('TEXT_DISPLAY_NUMBER_OF_PAYMENTS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> выплат)');
+define('TEXT_DATE_PAYMENT_BILLED','РћРїР»Р°С‡РµРЅРѕ:');
+define('TEXT_DATE_ORDER_LAST_MODIFIED','РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_AFFILIATE_PAYMENT','РЎСѓРјРјР°:');
+define('TEXT_AFFILIATE_BILLED','Р”Р°С‚Р°:');
+define('TEXT_AFFILIATE','РџР°СЂС‚РЅС‘СЂ:');
+define('TEXT_INFO_DELETE_INTRO','Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚РѕС‚ РїР»Р°С‚С‘Р¶?');
+define('TEXT_DISPLAY_NUMBER_OF_PAYMENTS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РІС‹РїР»Р°С‚)');
 
-define('TEXT_AFFILIATE_PAYING_POSSIBILITIES','Способы оплаты:');
+define('TEXT_AFFILIATE_PAYING_POSSIBILITIES','РЎРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹:');
 define('TEXT_AFFILIATE_PAYMENT_CHECK','Webmoney:');
-define('TEXT_AFFILIATE_PAYMENT_CHECK_PAYEE','Номер Z кошелька:');
-define('TEXT_AFFILIATE_PAYMENT_PAYPAL','Система PayPal:');
-define('TEXT_AFFILIATE_PAYMENT_PAYPAL_EMAIL','Email партнёра в системе PayPal:');
-define('TEXT_AFFILIATE_PAYMENT_BANK_TRANSFER','Перевод на счёт в банке:');
-define('TEXT_AFFILIATE_PAYMENT_BANK_NAME','Название банка:');
-define('TEXT_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME','Получатель платежа:');
-define('TEXT_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER','Номер счета:');
-define('TEXT_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER','ABA/BSB номер:');
-define('TEXT_AFFILIATE_PAYMENT_BANK_SWIFT_CODE','SWIFT Код:');
+define('TEXT_AFFILIATE_PAYMENT_CHECK_PAYEE','РќРѕРјРµСЂ Z РєРѕС€РµР»СЊРєР°:');
+define('TEXT_AFFILIATE_PAYMENT_PAYPAL','РЎРёСЃС‚РµРјР° PayPal:');
+define('TEXT_AFFILIATE_PAYMENT_PAYPAL_EMAIL','Email РїР°СЂС‚РЅС‘СЂР° РІ СЃРёСЃС‚РµРјРµ PayPal:');
+define('TEXT_AFFILIATE_PAYMENT_BANK_TRANSFER','РџРµСЂРµРІРѕРґ РЅР° СЃС‡С‘С‚ РІ Р±Р°РЅРєРµ:');
+define('TEXT_AFFILIATE_PAYMENT_BANK_NAME','РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°:');
+define('TEXT_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME','РџРѕР»СѓС‡Р°С‚РµР»СЊ РїР»Р°С‚РµР¶Р°:');
+define('TEXT_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER','РќРѕРјРµСЂ СЃС‡РµС‚Р°:');
+define('TEXT_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER','ABA/BSB РЅРѕРјРµСЂ:');
+define('TEXT_AFFILIATE_PAYMENT_BANK_SWIFT_CODE','SWIFT РљРѕРґ:');
 
-define('TEXT_INFO_HEADING_DELETE_PAYMENT','Удалить выплату');
+define('TEXT_INFO_HEADING_DELETE_PAYMENT','РЈРґР°Р»РёС‚СЊ РІС‹РїР»Р°С‚Сѓ');
 
-define('IMAGE_AFFILIATE_BILLING','Выписать счета к оплате');
+define('IMAGE_AFFILIATE_BILLING','Р’С‹РїРёСЃР°С‚СЊ СЃС‡РµС‚Р° Рє РѕРїР»Р°С‚Рµ');
 
-define('ERROR_PAYMENT_DOES_NOT_EXIST','Нет новых счетов');
+define('ERROR_PAYMENT_DOES_NOT_EXIST','РќРµС‚ РЅРѕРІС‹С… СЃС‡РµС‚РѕРІ');
 
 
-define('SUCCESS_BILLING','Ваши партнёры получили уведомления');
-define('SUCCESS_PAYMENT_UPDATED','Статус выплаты успешно изменён');
+define('SUCCESS_BILLING','Р’Р°С€Рё РїР°СЂС‚РЅС‘СЂС‹ РїРѕР»СѓС‡РёР»Рё СѓРІРµРґРѕРјР»РµРЅРёСЏ');
+define('SUCCESS_PAYMENT_UPDATED','РЎС‚Р°С‚СѓСЃ РІС‹РїР»Р°С‚С‹ СѓСЃРїРµС€РЅРѕ РёР·РјРµРЅС‘РЅ');
 
-define('PAYMENT_STATUS','Статус выплаты');
-define('PAYMENT_NOTIFY_AFFILIATE', 'Уведомить партнёра');
+define('PAYMENT_STATUS','РЎС‚Р°С‚СѓСЃ РІС‹РїР»Р°С‚С‹');
+define('PAYMENT_NOTIFY_AFFILIATE', 'РЈРІРµРґРѕРјРёС‚СЊ РїР°СЂС‚РЅС‘СЂР°');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
-define('EMAIL_TEXT_SUBJECT', 'Выплаты по партнёрской программе!');
-define('EMAIL_TEXT_AFFILIATE_PAYMENT_NUMBER', 'Номер счёта:');
-define('EMAIL_TEXT_INVOICE_URL', 'Подробности:');
-define('EMAIL_TEXT_PAYMENT_BILLED', 'Дата:');
-define('EMAIL_TEXT_STATUS_UPDATE', 'Статус Вашей выплаты в нашей партнёрской программе был изменён.' . "\n\n" . 'Новый статус: %s' . "\n\n" . 'Если у Вас возникли какие-либо вопросы, задайте нам их в ответном письме.' . "\n");
-define('EMAIL_TEXT_NEW_PAYMENT', 'Выписан счёт к оплате Ваших комиссионных, заработанных в нашей партнёрской программе, как только мы оплатим счёт, Вы получите дополнительное уведомление' . "\n");
+define('EMAIL_TEXT_SUBJECT', 'Р’С‹РїР»Р°С‚С‹ РїРѕ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјРµ!');
+define('EMAIL_TEXT_AFFILIATE_PAYMENT_NUMBER', 'РќРѕРјРµСЂ СЃС‡С‘С‚Р°:');
+define('EMAIL_TEXT_INVOICE_URL', 'РџРѕРґСЂРѕР±РЅРѕСЃС‚Рё:');
+define('EMAIL_TEXT_PAYMENT_BILLED', 'Р”Р°С‚Р°:');
+define('EMAIL_TEXT_STATUS_UPDATE', 'РЎС‚Р°С‚СѓСЃ Р’Р°С€РµР№ РІС‹РїР»Р°С‚С‹ РІ РЅР°С€РµР№ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјРµ Р±С‹Р» РёР·РјРµРЅС‘РЅ.' . "\n\n" . 'РќРѕРІС‹Р№ СЃС‚Р°С‚СѓСЃ: %s' . "\n\n" . 'Р•СЃР»Рё Сѓ Р’Р°СЃ РІРѕР·РЅРёРєР»Рё РєР°РєРёРµ-Р»РёР±Рѕ РІРѕРїСЂРѕСЃС‹, Р·Р°РґР°Р№С‚Рµ РЅР°Рј РёС… РІ РѕС‚РІРµС‚РЅРѕРј РїРёСЃСЊРјРµ.' . "\n");
+define('EMAIL_TEXT_NEW_PAYMENT', 'Р’С‹РїРёСЃР°РЅ СЃС‡С‘С‚ Рє РѕРїР»Р°С‚Рµ Р’Р°С€РёС… РєРѕРјРёСЃСЃРёРѕРЅРЅС‹С…, Р·Р°СЂР°Р±РѕС‚Р°РЅРЅС‹С… РІ РЅР°С€РµР№ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјРµ, РєР°Рє С‚РѕР»СЊРєРѕ РјС‹ РѕРїР»Р°С‚РёРј СЃС‡С‘С‚, Р’С‹ РїРѕР»СѓС‡РёС‚Рµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СѓРІРµРґРѕРјР»РµРЅРёРµ' . "\n");
 ?>

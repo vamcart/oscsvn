@@ -11,18 +11,18 @@
 */
 
 
-define('HEADER_TITLE', 'Ìîäóëü êàðòèíîê ê àòðèáóòàì');
-define('TABLE_HEADING_NAME', 'Çíà÷åíèå àòðèáóòà');
-define('TABLE_HEADING_IMAGE', 'Êàðòèíêà ê çíà÷åíèþ');
-define('TABLE_HEADING_IMAGE_NAME', 'Èìÿ ôàéëà êàðòèíêè');
+define('HEADER_TITLE', 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº Ðº Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°Ð¼');
+define('TABLE_HEADING_NAME', 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°');
+define('TABLE_HEADING_IMAGE', 'ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° Ðº Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸ÑŽ');
+define('TABLE_HEADING_IMAGE_NAME', 'Ð˜Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸');
 
-define('TEXT_INFO_EDIT_INTRO', 'Íàçíà÷èòü/èçìåíèòü êàðòèíêó');
-define ('TEXT_SELECT_FILE', 'Âûáðàòü ôàéë');
+define('TEXT_INFO_EDIT_INTRO', 'ÐÐ°Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ÑŒ/Ð¸Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ');
+define ('TEXT_SELECT_FILE', 'Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»');
 
-define ('ERROR_OPTIONS_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Îøèáêà: /images/options Ïàïêà îòñóòñòâóåò');
-define ('ERROR_OPTIONS_IMAGES_DIRECTORY_NOT_WRITEABLE', 'Ïðåäóïðåæäåíèå: /images/options Ïàïêà çàùèùåíà îò çàïèñè - ïîñòàâüòå ïðàâà 777');
+define ('ERROR_OPTIONS_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'ÐžÑˆÐ¸Ð±ÐºÐ°: /images/options ÐŸÐ°Ð¿ÐºÐ° Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚');
+define ('ERROR_OPTIONS_IMAGES_DIRECTORY_NOT_WRITEABLE', 'ÐŸÑ€ÐµÐ´ÑƒÐ¿Ñ€ÐµÐ¶Ð´ÐµÐ½Ð¸Ðµ: /images/options ÐŸÐ°Ð¿ÐºÐ° Ð·Ð°Ñ‰Ð¸Ñ‰ÐµÐ½Ð° Ð¾Ñ‚ Ð·Ð°Ð¿Ð¸ÑÐ¸ - Ð¿Ð¾ÑÑ‚Ð°Ð²ÑŒÑ‚Ðµ Ð¿Ñ€Ð°Ð²Ð° 777');
 
-define('TEXT_SELECT_ATTRIBUTE','Âûáåðèòå àòðèáóò äëÿ ðàáîòû:');
-define('TEXT_ENABLE_DISABLE','Âêëþ÷èòü - âûêëþ÷èòü êàðòèíêè àòðèáóòà:');
+define('TEXT_SELECT_ATTRIBUTE','Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹:');
+define('TEXT_ENABLE_DISABLE','Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ - Ð²Ñ‹ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°:');
 
 ?>

@@ -10,32 +10,32 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Ìîè äàííûå');
-define('NAVBAR_TITLE_2', 'Èñòîðèÿ çàêàçîâ');
-define('NAVBAR_TITLE_3', 'Èíôîðìàöèÿ î çàêàçàõ');
+define('NAVBAR_TITLE_1', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+define('NAVBAR_TITLE_2', 'Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
+define('NAVBAR_TITLE_3', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°Ñ…');
 
-define('HEADING_TITLE', 'Èíôîðìàöèÿ î çàêàçàõ');
+define('HEADING_TITLE', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°Ñ…');
 
-define('HEADING_ORDER_NUMBER', 'Çàêàç #%s');
-define('HEADING_ORDER_DATE', 'Äàòà:');
-define('HEADING_ORDER_TOTAL', 'Ñòîèìîñòü çàêàçà:');
+define('HEADING_ORDER_NUMBER', 'Ð—Ð°ÐºÐ°Ð· #%s');
+define('HEADING_ORDER_DATE', 'Ð”Ð°Ñ‚Ð°:');
+define('HEADING_ORDER_TOTAL', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°:');
 
-define('HEADING_DELIVERY_ADDRESS', 'Àäðåñ äîñòàâêè');
-define('HEADING_SHIPPING_METHOD', 'Ñïîñîá äîñòàâêè');
+define('HEADING_DELIVERY_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('HEADING_SHIPPING_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
 
-define('HEADING_PRODUCTS', 'Òîâàð');
-define('HEADING_TAX', 'Íàëîã');
-define('HEADING_TOTAL', 'Âñåãî');
+define('HEADING_PRODUCTS', 'Ð¢Ð¾Ð²Ð°Ñ€');
+define('HEADING_TAX', 'ÐÐ°Ð»Ð¾Ð³');
+define('HEADING_TOTAL', 'Ð’ÑÐµÐ³Ð¾');
 
-define('HEADING_BILLING_INFORMATION', 'Èíôîðìàöèÿ îá îïëàòå');
-define('HEADING_BILLING_ADDRESS', 'Àäðåñ ïîêóïàòåëÿ');
-define('HEADING_PAYMENT_METHOD', 'Ñïîñîá îïëàòû');
+define('HEADING_BILLING_INFORMATION', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ');
+define('HEADING_BILLING_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('HEADING_PAYMENT_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹');
 
-define('HEADING_ORDER_HISTORY', 'Èñòîðèÿ çàêàçà');
-define('HEADING_COMMENT', 'Êîììåíòàðèè');
-define('TEXT_NO_COMMENTS_AVAILABLE', 'Íåò êîììåíòàðèåâ');
+define('HEADING_ORDER_HISTORY', 'Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('HEADING_COMMENT', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
+define('TEXT_NO_COMMENTS_AVAILABLE', 'ÐÐµÑ‚ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²');
 
-define('TABLE_HEADING_DOWNLOAD_DATE', 'Ññûëêà äåéñòâèòåëüíà äî: ');
-define('TABLE_HEADING_DOWNLOAD_COUNT', ' ðàç ìîæíî çàãðóçèòü ôàéë.');
-define('HEADING_DOWNLOAD', 'Ññûëêè äëÿ ñêà÷èâàíèÿ');
+define('TABLE_HEADING_DOWNLOAD_DATE', 'Ð¡ÑÑ‹Ð»ÐºÐ° Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð° Ð´Ð¾: ');
+define('TABLE_HEADING_DOWNLOAD_COUNT', ' Ñ€Ð°Ð· Ð¼Ð¾Ð¶Ð½Ð¾ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ñ„Ð°Ð¹Ð».');
+define('HEADING_DOWNLOAD', 'Ð¡ÑÑ‹Ð»ÐºÐ¸ Ð´Ð»Ñ ÑÐºÐ°Ñ‡Ð¸Ð²Ð°Ð½Ð¸Ñ');
 ?>

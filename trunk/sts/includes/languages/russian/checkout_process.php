@@ -10,24 +10,24 @@
   Released under the GNU General Public License
 */
 
-define('EMAIL_TEXT_SUBJECT', 'Âàø çàêàç');
-define('EMAIL_TEXT_ORDER_NUMBER', 'Íîìåð çàêàçà:');
-define('EMAIL_TEXT_INVOICE_URL', 'Èíôîðìàöèÿ î çàêàçå:');
-define('EMAIL_TEXT_DATE_ORDERED', 'Äàòà çàêàçà:');
-define('EMAIL_TEXT_PRODUCTS', 'Âû çàêàçàëè:');
-define('EMAIL_TEXT_SUBTOTAL', 'Ñòîèìîñòü:');
-define('EMAIL_TEXT_TAX', 'Íàëîãè:        ');
-define('EMAIL_TEXT_SHIPPING', 'Ñïîñîá äîñòàâêè: ');
-define('EMAIL_TEXT_TOTAL', 'Âñåãî:    ');
-define('EMAIL_TEXT_DELIVERY_ADDRESS', 'Àäðåñ äîñòàâêè');
-define('EMAIL_TEXT_BILLING_ADDRESS', 'Àäðåñ ïîêóïàòåëÿ');
-define('EMAIL_TEXT_PAYMENT_METHOD', 'Ñïîñîá îïëàòû');
+define('EMAIL_TEXT_SUBJECT', 'Ð’Ð°Ñˆ Ð·Ð°ÐºÐ°Ð·');
+define('EMAIL_TEXT_ORDER_NUMBER', 'ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°:');
+define('EMAIL_TEXT_INVOICE_URL', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð·Ð°ÐºÐ°Ð·Ðµ:');
+define('EMAIL_TEXT_DATE_ORDERED', 'Ð”Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°:');
+define('EMAIL_TEXT_PRODUCTS', 'Ð’Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°Ð»Ð¸:');
+define('EMAIL_TEXT_SUBTOTAL', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ:');
+define('EMAIL_TEXT_TAX', 'ÐÐ°Ð»Ð¾Ð³Ð¸:        ');
+define('EMAIL_TEXT_SHIPPING', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸: ');
+define('EMAIL_TEXT_TOTAL', 'Ð’ÑÐµÐ³Ð¾:    ');
+define('EMAIL_TEXT_DELIVERY_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('EMAIL_TEXT_BILLING_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('EMAIL_TEXT_PAYMENT_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
-define('TEXT_EMAIL_VIA', '÷åðåç');
+define('TEXT_EMAIL_VIA', 'Ñ‡ÐµÑ€ÐµÐ·');
 
-define('EMAIL_TEXT_CUSTOMER_NAME', 'Ïîêóïàòåëü:');
+define('EMAIL_TEXT_CUSTOMER_NAME', 'ÐŸÐ¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŒ:');
 define('EMAIL_TEXT_CUSTOMER_EMAIL_ADDRESS', 'Email:');
-define('EMAIL_TEXT_CUSTOMER_TELEPHONE', 'Òåëåôîí:');
+define('EMAIL_TEXT_CUSTOMER_TELEPHONE', 'Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½:');
 
 ?>

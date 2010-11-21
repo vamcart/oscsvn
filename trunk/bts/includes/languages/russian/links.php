@@ -10,23 +10,23 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Ссылки');
+define('NAVBAR_TITLE', 'РЎСЃС‹Р»РєРё');
 
 if ($display_mode == 'links') {
-  define('HEADING_TITLE', 'Ссылки');
+  define('HEADING_TITLE', 'РЎСЃС‹Р»РєРё');
   define('TABLE_HEADING_LINKS_IMAGE', '');
-  define('TABLE_HEADING_LINKS_TITLE', 'Название');
-  define('TABLE_HEADING_LINKS_URL', 'URL Адрес');
-  define('TABLE_HEADING_LINKS_DESCRIPTION', 'Описание');
-  define('TABLE_HEADING_LINKS_COUNT', 'Клики');
-  define('TEXT_NO_LINKS', 'В данном разделе нет ни одной ссылки.');
+  define('TABLE_HEADING_LINKS_TITLE', 'РќР°Р·РІР°РЅРёРµ');
+  define('TABLE_HEADING_LINKS_URL', 'URL РђРґСЂРµСЃ');
+  define('TABLE_HEADING_LINKS_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ');
+  define('TABLE_HEADING_LINKS_COUNT', 'РљР»РёРєРё');
+  define('TEXT_NO_LINKS', 'Р’ РґР°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ РЅРµС‚ РЅРё РѕРґРЅРѕР№ СЃСЃС‹Р»РєРё.');
 } elseif ($display_mode == 'categories') {
-  define('HEADING_TITLE', 'Разделы');
-  define('TEXT_NO_CATEGORIES', 'Нет ни одного раздела.');
+  define('HEADING_TITLE', 'Р Р°Р·РґРµР»С‹');
+  define('TEXT_NO_CATEGORIES', 'РќРµС‚ РЅРё РѕРґРЅРѕРіРѕ СЂР°Р·РґРµР»Р°.');
 }
 
 // VJ todo - move to common language file
-define('TEXT_DISPLAY_NUMBER_OF_LINKS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> ссылок)');
+define('TEXT_DISPLAY_NUMBER_OF_LINKS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃСЃС‹Р»РѕРє)');
 
-define('IMAGE_BUTTON_SUBMIT_LINK', 'Добавить ссылку');
+define('IMAGE_BUTTON_SUBMIT_LINK', 'Р”РѕР±Р°РІРёС‚СЊ СЃСЃС‹Р»РєСѓ');
 ?>

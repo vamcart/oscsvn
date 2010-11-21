@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_ARTICLE_NOT_FOUND', 'Статья не найдена');
-define('TEXT_ARTICLE_NOT_FOUND', 'Извините, но статья, которую Вы запросили, недоступна!');
-define('TEXT_MORE_INFORMATION', 'Для получения дополнительной информации Вы можете посетить <a href="%s" target="_blank"><u>' .  $article['articles_name'].'</u></a>.');
-define('TEXT_DATE_ADDED', 'Эта статья была опубликована %s.');
-define('TEXT_DATE_AVAILABLE', '<font color="#FF0000">Данная статья будет доступна %s.</font>');
+define('HEADING_ARTICLE_NOT_FOUND', 'РЎС‚Р°С‚СЊСЏ РЅРµ РЅР°Р№РґРµРЅР°');
+define('TEXT_ARTICLE_NOT_FOUND', 'РР·РІРёРЅРёС‚Рµ, РЅРѕ СЃС‚Р°С‚СЊСЏ, РєРѕС‚РѕСЂСѓСЋ Р’С‹ Р·Р°РїСЂРѕСЃРёР»Рё, РЅРµРґРѕСЃС‚СѓРїРЅР°!');
+define('TEXT_MORE_INFORMATION', 'Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё Р’С‹ РјРѕР¶РµС‚Рµ РїРѕСЃРµС‚РёС‚СЊ <a href="%s" target="_blank"><u>' .  $article['articles_name'].'</u></a>.');
+define('TEXT_DATE_ADDED', 'Р­С‚Р° СЃС‚Р°С‚СЊСЏ Р±С‹Р»Р° РѕРїСѓР±Р»РёРєРѕРІР°РЅР° %s.');
+define('TEXT_DATE_AVAILABLE', '<font color="#FF0000">Р”Р°РЅРЅР°СЏ СЃС‚Р°С‚СЊСЏ Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРЅР° %s.</font>');
 define('TEXT_BY', 'by ');
-define('TEXT_CURRENT_REVIEWS', 'Число отзывов:');
-define('BOX_TEXT_TELL_A_FRIEND', 'Рассказать знакомому');
-define('TEXT_TELL_A_FRIEND', 'Расскажите Вашему знакомому о данной статье:');
-define('TEXT_XSELL_ARTICLES', 'Товары, связанные с данной статьёй:');
-define('BOX_HEADING_TELL_A_FRIEND', 'Рассказать другу');
-define('TEXT_ARTICLES_SEARCH', 'Поиск в статьях: ');
+define('TEXT_CURRENT_REVIEWS', 'Р§РёСЃР»Рѕ РѕС‚Р·С‹РІРѕРІ:');
+define('BOX_TEXT_TELL_A_FRIEND', 'Р Р°СЃСЃРєР°Р·Р°С‚СЊ Р·РЅР°РєРѕРјРѕРјСѓ');
+define('TEXT_TELL_A_FRIEND', 'Р Р°СЃСЃРєР°Р¶РёС‚Рµ Р’Р°С€РµРјСѓ Р·РЅР°РєРѕРјРѕРјСѓ Рѕ РґР°РЅРЅРѕР№ СЃС‚Р°С‚СЊРµ:');
+define('TEXT_XSELL_ARTICLES', 'РўРѕРІР°СЂС‹, СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ РґР°РЅРЅРѕР№ СЃС‚Р°С‚СЊС‘Р№:');
+define('BOX_HEADING_TELL_A_FRIEND', 'Р Р°СЃСЃРєР°Р·Р°С‚СЊ РґСЂСѓРіСѓ');
+define('TEXT_ARTICLES_SEARCH', 'РџРѕРёСЃРє РІ СЃС‚Р°С‚СЊСЏС…: ');
 
 ?>

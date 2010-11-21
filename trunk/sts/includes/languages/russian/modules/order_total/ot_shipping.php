@@ -10,9 +10,9 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_ORDER_TOTAL_SHIPPING_TITLE', 'Äîñòàâêà');
-  define('MODULE_ORDER_TOTAL_SHIPPING_DESCRIPTION', 'Ñòîèìîñòü äîñòàâêè');
+  define('MODULE_ORDER_TOTAL_SHIPPING_TITLE', 'Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°');
+  define('MODULE_ORDER_TOTAL_SHIPPING_DESCRIPTION', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
 
-  define('FREE_SHIPPING_TITLE', 'Áåñïëàòíàÿ äîñòàâêà');
-  define('FREE_SHIPPING_DESCRIPTION', 'Áåñïëàòíàÿ äîñòàâêà äëÿ çàêàçîâ ñâûøå %s');
+  define('FREE_SHIPPING_TITLE', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°');
+  define('FREE_SHIPPING_DESCRIPTION', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð´Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð¾Ð² ÑÐ²Ñ‹ÑˆÐµ %s');
 ?>

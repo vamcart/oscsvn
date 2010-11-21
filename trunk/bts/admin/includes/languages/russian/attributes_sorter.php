@@ -7,18 +7,18 @@
 define('I_AM_OFF',true);
 
 // WebMakers.com Added: Attributes - Definitions to move to attribute_sorter.php
-define('TABLE_HEADING_PRODUCT_ATTRIBUTE_ONE_TIME','Единоразовая цена');
+define('TABLE_HEADING_PRODUCT_ATTRIBUTE_ONE_TIME','Р•РґРёРЅРѕСЂР°Р·РѕРІР°СЏ С†РµРЅР°');
 
 // WebMakers.com Added: Attribute Copy Option
-define('TEXT_COPY_ATTRIBUTES_ONLY','Использовать только для повторяющихся товаров...');
-define('TEXT_COPY_ATTRIBUTES','Копировать атрибуты товара?');
-define('TEXT_COPY_ATTRIBUTES_YES','Да');
-define('TEXT_COPY_ATTRIBUTES_NO','Нет');
+define('TEXT_COPY_ATTRIBUTES_ONLY','РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РѕР»СЊРєРѕ РґР»СЏ РїРѕРІС‚РѕСЂСЏСЋС‰РёС…СЃСЏ С‚РѕРІР°СЂРѕРІ...');
+define('TEXT_COPY_ATTRIBUTES','РљРѕРїРёСЂРѕРІР°С‚СЊ Р°С‚СЂРёР±СѓС‚С‹ С‚РѕРІР°СЂР°?');
+define('TEXT_COPY_ATTRIBUTES_YES','Р”Р°');
+define('TEXT_COPY_ATTRIBUTES_NO','РќРµС‚');
 
 // WebMakers.com Added: Attributes Copy from Existing Product to Existing Product
-define('PRODUCT_NAMES_HELPER','<a href="' . 'quick_products_popup.php' . '" onclick="NewWindow(this.href,\'name\',\'700\',\'500\',\'yes\');return false;"><b><font color=red>[ Смотреть номера товаров ]</font></b></a>');
-define('ATTRIBUTES_NAMES_HELPER','<a href="' . 'quick_attributes_popup.php?look_it_up=' . $_GET['pID'] . '&my_languages_id=' . $languages_id . '" onclick="NewWindow2(this.href,\'name2\',\'700\',\'400\',\'yes\');return false;">[ Смотреть атрибуты данного товара ]<br></a>Номер данного товара: ' . $_GET['pID']);
+define('PRODUCT_NAMES_HELPER','<a href="' . 'quick_products_popup.php' . '" onclick="NewWindow(this.href,\'name\',\'700\',\'500\',\'yes\');return false;"><b><font color=red>[ РЎРјРѕС‚СЂРµС‚СЊ РЅРѕРјРµСЂР° С‚РѕРІР°СЂРѕРІ ]</font></b></a>');
+define('ATTRIBUTES_NAMES_HELPER','<a href="' . 'quick_attributes_popup.php?look_it_up=' . $_GET['pID'] . '&my_languages_id=' . $languages_id . '" onclick="NewWindow2(this.href,\'name2\',\'700\',\'400\',\'yes\');return false;">[ РЎРјРѕС‚СЂРµС‚СЊ Р°С‚СЂРёР±СѓС‚С‹ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР° ]<br></a>РќРѕРјРµСЂ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР°: ' . $_GET['pID']);
 
 // WebMakers.com Added: Product Option Attributes Sort Order - products_attributes.php
-define('TABLE_HEADING_OPTION_SORT_ORDER','Порядок сортировки');
+define('TABLE_HEADING_OPTION_SORT_ORDER','РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
 ?>

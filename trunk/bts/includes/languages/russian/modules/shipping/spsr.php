@@ -1,11 +1,11 @@
 <?php
 /*
-  Ìîäóëü äîñòàâêè "ÑÏÑÐ Ýêñïðåññ"
+  ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ "Ð¡ÐŸÐ¡Ð  Ð­ÐºÑÐ¿Ñ€ÐµÑÑ"
   $Id: spsr.php, v 1.01 15/08/07
-  Àâòîð: Ðîäèîíîâñêèé Ðîìàí, spmob@mail.ru
-  Ñïàñèáî çà ïîìîùü Àëåêñàíäðó Ìåíîâùèêîâó aka VAM
+  ÐÐ²Ñ‚Ð¾Ñ€: Ð Ð¾Ð´Ð¸Ð¾Ð½Ð¾Ð²ÑÐºÐ¸Ð¹ Ð Ð¾Ð¼Ð°Ð½, spmob@mail.ru
+  Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾ Ð·Ð° Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒ ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ñƒ ÐœÐµÐ½Ð¾Ð²Ñ‰Ð¸ÐºÐ¾Ð²Ñƒ aka VAM
   
-	  Ðàçðàáîòàí íà îñíîâå:
+	  Ð Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð½ Ð½Ð° Ð¾ÑÐ½Ð¾Ð²Ðµ:
 	  $Id: pickup.php,v 1.40 2003/02/05 22:41:52 hpdl Exp $
 	
 	  osCommerce, Open Source E-Commerce Solutions
@@ -16,7 +16,7 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_SPSR_TEXT_TITLE', 'ÑÏÑÐ-Ýêñïðåññ');
-define('MODULE_SHIPPING_SPSR_TEXT_DESCRIPTION', 'Ýêñïðåññ ïî÷òà "ÑÏÑÐ-Ýêñïðåññ"');
+define('MODULE_SHIPPING_SPSR_TEXT_TITLE', 'Ð¡ÐŸÐ¡Ð -Ð­ÐºÑÐ¿Ñ€ÐµÑÑ');
+define('MODULE_SHIPPING_SPSR_TEXT_DESCRIPTION', 'Ð­ÐºÑÐ¿Ñ€ÐµÑÑ Ð¿Ð¾Ñ‡Ñ‚Ð° "Ð¡ÐŸÐ¡Ð -Ð­ÐºÑÐ¿Ñ€ÐµÑÑ"');
 
 ?>

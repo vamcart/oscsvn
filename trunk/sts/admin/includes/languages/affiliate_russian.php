@@ -15,19 +15,19 @@
 */
 
 // reports box text in includes/boxes/affiliate.php
-define('BOX_HEADING_AFFILIATE', 'Ïàðòí¸ðû');
-define('BOX_AFFILIATE_SUMMARY', 'Îáùàÿ ñòàòèñòèêà');
-define('BOX_AFFILIATE', 'Ïàðòí¸ðû');
-define('BOX_AFFILIATE_PAYMENT', 'Âûïëàòû');
-define('BOX_AFFILIATE_BANNERS', 'Áàííåðû');
-define('BOX_AFFILIATE_CONTACT', 'Îáðàòíàÿ ñâÿçü');
-define('BOX_AFFILIATE_SALES', 'Ïðîäàæè');
-define('BOX_AFFILIATE_CLICKS', 'Êëèêè');
-define('BOX_AFFILIATE_NEWS', 'Íîâîñòè');
-define('BOX_AFFILIATE_NEWSLETTER_MANAGER', 'Ðàññûëêà');
+define('BOX_HEADING_AFFILIATE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€Ñ‹');
+define('BOX_AFFILIATE_SUMMARY', 'ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°');
+define('BOX_AFFILIATE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€Ñ‹');
+define('BOX_AFFILIATE_PAYMENT', 'Ð’Ñ‹Ð¿Ð»Ð°Ñ‚Ñ‹');
+define('BOX_AFFILIATE_BANNERS', 'Ð‘Ð°Ð½Ð½ÐµÑ€Ñ‹');
+define('BOX_AFFILIATE_CONTACT', 'ÐžÐ±Ñ€Ð°Ñ‚Ð½Ð°Ñ ÑÐ²ÑÐ·ÑŒ');
+define('BOX_AFFILIATE_SALES', 'ÐŸÑ€Ð¾Ð´Ð°Ð¶Ð¸');
+define('BOX_AFFILIATE_CLICKS', 'ÐšÐ»Ð¸ÐºÐ¸');
+define('BOX_AFFILIATE_NEWS', 'ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸');
+define('BOX_AFFILIATE_NEWSLETTER_MANAGER', 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°');
 
-define('BOX_TITLE_AFFILIATES', 'Ïàðòí¸ðû');
-define('BOX_ENTRY_AFFILIATES', 'Ïàðòí¸ðû:');
+define('BOX_TITLE_AFFILIATES', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€Ñ‹');
+define('BOX_ENTRY_AFFILIATES', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€Ñ‹:');
 define('BOX_ENTRY_CONVERSION', 'CTR:');
-define('BOX_ENTRY_COMMISSION', 'Êîìèññèÿ:');
+define('BOX_ENTRY_COMMISSION', 'ÐšÐ¾Ð¼Ð¸ÑÑÐ¸Ñ:');
 ?>

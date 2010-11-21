@@ -1,17 +1,17 @@
 <?php
 // BEGIN -- newsdesk
-define('TABLE_HEADING_NEWSDESK', 'Новости');
-define('TEXT_NO_NEWSDESK_NEWS', 'Извините, но на данный момент нет новостей');
-define('TEXT_NEWSDESK_READMORE', 'Подробнее');
-define('TEXT_NEWSDESK_VIEWED', 'Просмотров:');
+define('TABLE_HEADING_NEWSDESK', 'РќРѕРІРѕСЃС‚Рё');
+define('TEXT_NO_NEWSDESK_NEWS', 'РР·РІРёРЅРёС‚Рµ, РЅРѕ РЅР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµС‚ РЅРѕРІРѕСЃС‚РµР№');
+define('TEXT_NEWSDESK_READMORE', 'РџРѕРґСЂРѕР±РЅРµРµ');
+define('TEXT_NEWSDESK_VIEWED', 'РџСЂРѕСЃРјРѕС‚СЂРѕРІ:');
 
-define('BOX_HEADING_NEWSDESK_CATEGORIES', 'Новости по разделам');
-define('BOX_HEADING_NEWSDESK_LATEST', 'Новости');
+define('BOX_HEADING_NEWSDESK_CATEGORIES', 'РќРѕРІРѕСЃС‚Рё РїРѕ СЂР°Р·РґРµР»Р°Рј');
+define('BOX_HEADING_NEWSDESK_LATEST', 'РќРѕРІРѕСЃС‚Рё');
 
-define('NEWSDESK_INFO_COMMENTS','Комментарии: ');
+define('NEWSDESK_INFO_COMMENTS','РљРѕРјРјРµРЅС‚Р°СЂРёРё: ');
 
-define('TEXT_DISPLAY_NUMBER_OF_ARTICLES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> записей)');
-define('TEXT_NEWSDESK_SEARCH', 'Поиск в новостях: ');
+define('TEXT_DISPLAY_NUMBER_OF_ARTICLES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р·Р°РїРёСЃРµР№)');
+define('TEXT_NEWSDESK_SEARCH', 'РџРѕРёСЃРє РІ РЅРѕРІРѕСЃС‚СЏС…: ');
 //END -- newsdesk
 
 ?>

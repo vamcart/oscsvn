@@ -2,9 +2,9 @@
 //BEGIN -- faqdesk
 define('BOX_HEADING_FAQDESK', 'FAQ');
 define('BOX_FAQDESK', 'FAQ');
-define('BOX_FAQDESK_REVIEWS', 'Êîììåíòàðèè');
+define('BOX_FAQDESK_REVIEWS', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
 
 define('FAQDESK_ARTICLES', 'FAQ');
-define('FAQDESK_REVIEWS', 'Êîììåíòàðèè');
+define('FAQDESK_REVIEWS', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
 //END -- faqdesk
 ?>

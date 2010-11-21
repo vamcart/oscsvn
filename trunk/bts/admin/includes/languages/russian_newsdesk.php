@@ -1,10 +1,10 @@
 <?php
 //BEGIN -- newsdesk
-define('BOX_HEADING_NEWSDESK', 'Íîâîñòè');
-define('BOX_NEWSDESK', 'Íîâîñòè');
-define('BOX_NEWSDESK_REVIEWS', 'Êîììåíòàðèè');
+define('BOX_HEADING_NEWSDESK', 'ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸');
+define('BOX_NEWSDESK', 'ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸');
+define('BOX_NEWSDESK_REVIEWS', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
 
-define('NEWSDESK_ARTICLES', 'Íîâîñòè');
-define('NEWSDESK_REVIEWS', 'Êîììåíòàðèè');
+define('NEWSDESK_ARTICLES', 'ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸');
+define('NEWSDESK_REVIEWS', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
 //END -- newsdesk
 ?>

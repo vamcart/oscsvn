@@ -9,7 +9,7 @@
 
   Released under the GNU General Public License
 */
-define('MODULE_SHIPPING_PERCENT_TEXT_TITLE', 'Ïðîöåíòíàÿ äîñòàâêà');
-define('MODULE_SHIPPING_PERCENT_TEXT_DESCRIPTION', 'Ïðîöåíòíàÿ ñòîèìîñòü äîñòàâêè');
-define('MODULE_SHIPPING_PERCENT_TEXT_WAY', 'Âñåãî');
+define('MODULE_SHIPPING_PERCENT_TEXT_TITLE', 'ÐŸÑ€Ð¾Ñ†ÐµÐ½Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°');
+define('MODULE_SHIPPING_PERCENT_TEXT_DESCRIPTION', 'ÐŸÑ€Ð¾Ñ†ÐµÐ½Ñ‚Ð½Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('MODULE_SHIPPING_PERCENT_TEXT_WAY', 'Ð’ÑÐµÐ³Ð¾');
 ?>

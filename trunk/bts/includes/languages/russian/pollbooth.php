@@ -13,47 +13,47 @@ if (!isset($_GET['op'])) {
 	$_GET['op']="list";
 	}
 if ($_GET['op']=='results') {
-  define('TOP_BAR_TITLE', 'Результаты опроса');
-  define('HEADING_TITLE', 'Результаты опроса');
-  define('SUB_BAR_TITLE', 'Результаты опроса');
+  define('TOP_BAR_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+  define('HEADING_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+  define('SUB_BAR_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
 }
 if ($_GET['op']=='list') {
-  define('TOP_BAR_TITLE', 'Результаты опроса');
-  define('HEADING_TITLE', 'Результаты опроса');
-  define('SUB_BAR_TITLE', 'Другие опросы');
+  define('TOP_BAR_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+  define('HEADING_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+  define('SUB_BAR_TITLE', 'Р”СЂСѓРіРёРµ РѕРїСЂРѕСЃС‹');
 }
 if ($_GET['op']=='vote') {
-  define('TOP_BAR_TITLE', 'Результаты опроса');
-  define('HEADING_TITLE', 'Результаты опроса');
-  define('SUB_BAR_TITLE', 'Проголосуйте');
+  define('TOP_BAR_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+  define('HEADING_TITLE', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+  define('SUB_BAR_TITLE', 'РџСЂРѕРіРѕР»РѕСЃСѓР№С‚Рµ');
 }
 if ($_GET['op']=='comment') {
-  define('HEADING_TITLE', 'Отзывы');
+  define('HEADING_TITLE', 'РћС‚Р·С‹РІС‹');
 }
-define('_WARNING', 'Предупреждение: ');
-define('_ALREADY_VOTED', 'Вы уже голосовали.');
-define('_NO_VOTE_SELECTED', 'Вы не выбрали ответ для голосования.');
-define('_TOTALVOTES', 'Всего голосов');
-define('_OTHERPOLLS', 'Другие опросы');
-define('NAVBAR_TITLE_1', 'Результаты опроса');
-define('_POLLRESULTS', 'Результаты опроса');
-define('_VOTING', 'Голосовать');
-define('_RESULTS', 'Результаты');
-define('_VOTES', 'Голосов');
-define('_VOTE', 'Голосовать');
-define('_COMMENT', 'Отзыв');
-define('_COMMENTS', 'Отзывы');
-define('_COMMENTS_POSTED', 'Отзывы добавлены');
-define('_COMMENTS_BY', 'Отзыв добавил ');
+define('_WARNING', 'РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ: ');
+define('_ALREADY_VOTED', 'Р’С‹ СѓР¶Рµ РіРѕР»РѕСЃРѕРІР°Р»Рё.');
+define('_NO_VOTE_SELECTED', 'Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё РѕС‚РІРµС‚ РґР»СЏ РіРѕР»РѕСЃРѕРІР°РЅРёСЏ.');
+define('_TOTALVOTES', 'Р’СЃРµРіРѕ РіРѕР»РѕСЃРѕРІ');
+define('_OTHERPOLLS', 'Р”СЂСѓРіРёРµ РѕРїСЂРѕСЃС‹');
+define('NAVBAR_TITLE_1', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+define('_POLLRESULTS', 'Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕРїСЂРѕСЃР°');
+define('_VOTING', 'Р“РѕР»РѕСЃРѕРІР°С‚СЊ');
+define('_RESULTS', 'Р РµР·СѓР»СЊС‚Р°С‚С‹');
+define('_VOTES', 'Р“РѕР»РѕСЃРѕРІ');
+define('_VOTE', 'Р“РѕР»РѕСЃРѕРІР°С‚СЊ');
+define('_COMMENT', 'РћС‚Р·С‹РІ');
+define('_COMMENTS', 'РћС‚Р·С‹РІС‹');
+define('_COMMENTS_POSTED', 'РћС‚Р·С‹РІС‹ РґРѕР±Р°РІР»РµРЅС‹');
+define('_COMMENTS_BY', 'РћС‚Р·С‹РІ РґРѕР±Р°РІРёР» ');
 define('_COMMENTS_ON', '  ');
-define('_YOURNAME', 'Ваше имя:');
-define('_OTZYV', 'Отзыв:');
-define('TEXT_CONTINUE', 'Добавить отзыв');
-define('_PUBLIC','Открытое голосование');
-define('_PRIVATE','Закрытое голосование');
-define('_POLLOPEN','Опрос открыт');
-define('_POLLCLOSED','Опрос для зарегистрированных пользователей');
-define('_POLLPRIVATE','Опрос для зарегистрированных пользователей, войдите в магазин, опрос только для зарегистрированных пользователей');
-define('_ADD_COMMENTS', 'Добавить отзыв');
-define('TEXT_DISPLAY_NUMBER_OF_COMMENTS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> отзывов)');
+define('_YOURNAME', 'Р’Р°С€Рµ РёРјСЏ:');
+define('_OTZYV', 'РћС‚Р·С‹РІ:');
+define('TEXT_CONTINUE', 'Р”РѕР±Р°РІРёС‚СЊ РѕС‚Р·С‹РІ');
+define('_PUBLIC','РћС‚РєСЂС‹С‚РѕРµ РіРѕР»РѕСЃРѕРІР°РЅРёРµ');
+define('_PRIVATE','Р—Р°РєСЂС‹С‚РѕРµ РіРѕР»РѕСЃРѕРІР°РЅРёРµ');
+define('_POLLOPEN','РћРїСЂРѕСЃ РѕС‚РєСЂС‹С‚');
+define('_POLLCLOSED','РћРїСЂРѕСЃ РґР»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№');
+define('_POLLPRIVATE','РћРїСЂРѕСЃ РґР»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№, РІРѕР№РґРёС‚Рµ РІ РјР°РіР°Р·РёРЅ, РѕРїСЂРѕСЃ С‚РѕР»СЊРєРѕ РґР»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№');
+define('_ADD_COMMENTS', 'Р”РѕР±Р°РІРёС‚СЊ РѕС‚Р·С‹РІ');
+define('TEXT_DISPLAY_NUMBER_OF_COMMENTS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РѕС‚Р·С‹РІРѕРІ)');
 ?>

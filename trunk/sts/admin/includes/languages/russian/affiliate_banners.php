@@ -10,50 +10,50 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Баннеры');
+define('HEADING_TITLE', 'Р‘Р°РЅРЅРµСЂС‹');
 
-define('TABLE_HEADING_BANNERS', 'Баннеры');
-define('TABLE_HEADING_GROUPS', 'Группы');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_STATISTICS', 'Статистика');
-define('TABLE_HEADING_PRODUCT_ID', 'Код товара');
+define('TABLE_HEADING_BANNERS', 'Р‘Р°РЅРЅРµСЂС‹');
+define('TABLE_HEADING_GROUPS', 'Р“СЂСѓРїРїС‹');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_STATISTICS', 'РЎС‚Р°С‚РёСЃС‚РёРєР°');
+define('TABLE_HEADING_PRODUCT_ID', 'РљРѕРґ С‚РѕРІР°СЂР°');
 
-define('TEXT_BANNERS_TITLE', 'Название Баннера:');
-define('TEXT_BANNERS_GROUP', 'Группа Баннера:');
-define('TEXT_BANNERS_NEW_GROUP', ', или укажите новую группу');
-define('TEXT_BANNERS_IMAGE', 'Баннер:');
-define('TEXT_BANNERS_IMAGE_LOCAL', ', выберите файл на диске или укажите путь до баннера ниже');
-define('TEXT_BANNERS_IMAGE_TARGET', 'Баннер (Сохранить как):');
-define('TEXT_BANNERS_HTML_TEXT', 'HTML Код:');
-define('TEXT_AFFILIATE_BANNERS_NOTE', '<b>Примечание:</b><ul><li>Используйте для баннера только изображение или HTML Код, но не одновременно оба способа.</li><li>    * HTML Код имеет приоритет над изображением</li></ul>');
+define('TEXT_BANNERS_TITLE', 'РќР°Р·РІР°РЅРёРµ Р‘Р°РЅРЅРµСЂР°:');
+define('TEXT_BANNERS_GROUP', 'Р“СЂСѓРїРїР° Р‘Р°РЅРЅРµСЂР°:');
+define('TEXT_BANNERS_NEW_GROUP', ', РёР»Рё СѓРєР°Р¶РёС‚Рµ РЅРѕРІСѓСЋ РіСЂСѓРїРїСѓ');
+define('TEXT_BANNERS_IMAGE', 'Р‘Р°РЅРЅРµСЂ:');
+define('TEXT_BANNERS_IMAGE_LOCAL', ', РІС‹Р±РµСЂРёС‚Рµ С„Р°Р№Р» РЅР° РґРёСЃРєРµ РёР»Рё СѓРєР°Р¶РёС‚Рµ РїСѓС‚СЊ РґРѕ Р±Р°РЅРЅРµСЂР° РЅРёР¶Рµ');
+define('TEXT_BANNERS_IMAGE_TARGET', 'Р‘Р°РЅРЅРµСЂ (РЎРѕС…СЂР°РЅРёС‚СЊ РєР°Рє):');
+define('TEXT_BANNERS_HTML_TEXT', 'HTML РљРѕРґ:');
+define('TEXT_AFFILIATE_BANNERS_NOTE', '<b>РџСЂРёРјРµС‡Р°РЅРёРµ:</b><ul><li>РСЃРїРѕР»СЊР·СѓР№С‚Рµ РґР»СЏ Р±Р°РЅРЅРµСЂР° С‚РѕР»СЊРєРѕ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РёР»Рё HTML РљРѕРґ, РЅРѕ РЅРµ РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ РѕР±Р° СЃРїРѕСЃРѕР±Р°.</li><li>    * HTML РљРѕРґ РёРјРµРµС‚ РїСЂРёРѕСЂРёС‚РµС‚ РЅР°Рґ РёР·РѕР±СЂР°Р¶РµРЅРёРµРј</li></ul>');
 
-define('TEXT_BANNERS_LINKED_PRODUCT','Код товара:');
-define('TEXT_BANNERS_LINKED_PRODUCT_NOTE','Если Вы хотите чтобы баннер ссылался на конкретный товар, введите код товара выше, если Вы хотите чтобы баннер ссылался на главную страницу, просто поставьте 0 (ноль) в поле "Код товара"');
+define('TEXT_BANNERS_LINKED_PRODUCT','РљРѕРґ С‚РѕРІР°СЂР°:');
+define('TEXT_BANNERS_LINKED_PRODUCT_NOTE','Р•СЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ С‡С‚РѕР±С‹ Р±Р°РЅРЅРµСЂ СЃСЃС‹Р»Р°Р»СЃСЏ РЅР° РєРѕРЅРєСЂРµС‚РЅС‹Р№ С‚РѕРІР°СЂ, РІРІРµРґРёС‚Рµ РєРѕРґ С‚РѕРІР°СЂР° РІС‹С€Рµ, РµСЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ С‡С‚РѕР±С‹ Р±Р°РЅРЅРµСЂ СЃСЃС‹Р»Р°Р»СЃСЏ РЅР° РіР»Р°РІРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ, РїСЂРѕСЃС‚Рѕ РїРѕСЃС‚Р°РІСЊС‚Рµ 0 (РЅРѕР»СЊ) РІ РїРѕР»Рµ "РљРѕРґ С‚РѕРІР°СЂР°"');
 
-define('TEXT_BANNERS_DATE_ADDED', 'Дата создания:');
-define('TEXT_BANNERS_STATUS_CHANGE', 'Последние изменения: %s');
+define('TEXT_BANNERS_DATE_ADDED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ:');
+define('TEXT_BANNERS_STATUS_CHANGE', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ: %s');
 
-define('TEXT_AFFILIATE_VALIDPRODUCTS', 'Нажмите здесь');
-define('TEXT_AFFILIATE_INDIVIDUAL_BANNER_VIEW', 'для просмотра кодов доступных товаров.');
-define('TEXT_AFFILIATE_INDIVIDUAL_BANNER_HELP', 'Выберите код товара в popup окне, который Вам нужен и введите его в поле "Код товара".');
+define('TEXT_AFFILIATE_VALIDPRODUCTS', 'РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ');
+define('TEXT_AFFILIATE_INDIVIDUAL_BANNER_VIEW', 'РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° РєРѕРґРѕРІ РґРѕСЃС‚СѓРїРЅС‹С… С‚РѕРІР°СЂРѕРІ.');
+define('TEXT_AFFILIATE_INDIVIDUAL_BANNER_HELP', 'Р’С‹Р±РµСЂРёС‚Рµ РєРѕРґ С‚РѕРІР°СЂР° РІ popup РѕРєРЅРµ, РєРѕС‚РѕСЂС‹Р№ Р’Р°Рј РЅСѓР¶РµРЅ Рё РІРІРµРґРёС‚Рµ РµРіРѕ РІ РїРѕР»Рµ "РљРѕРґ С‚РѕРІР°СЂР°".');
 
-define('TEXT_VALID_PRODUCTS_LIST', 'Доступные товары');
-define('TEXT_VALID_PRODUCTS_ID', 'Код');
-define('TEXT_VALID_PRODUCTS_NAME', 'Название');
+define('TEXT_VALID_PRODUCTS_LIST', 'Р”РѕСЃС‚СѓРїРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('TEXT_VALID_PRODUCTS_ID', 'РљРѕРґ');
+define('TEXT_VALID_PRODUCTS_NAME', 'РќР°Р·РІР°РЅРёРµ');
 
-define('TEXT_CLOSE_WINDOW', '<u>Закрыть окно</u> [x]');
+define('TEXT_CLOSE_WINDOW', '<u>Р—Р°РєСЂС‹С‚СЊ РѕРєРЅРѕ</u> [x]');
 
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить этот баннер?');
-define('TEXT_INFO_DELETE_IMAGE', 'Удалить баннер');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚РѕС‚ Р±Р°РЅРЅРµСЂ?');
+define('TEXT_INFO_DELETE_IMAGE', 'РЈРґР°Р»РёС‚СЊ Р±Р°РЅРЅРµСЂ');
 
-define('SUCCESS_BANNER_INSERTED', 'Выполнено: Баннер успешно добавлен.');
-define('SUCCESS_BANNER_UPDATED', 'Выполнено: Информация успешно обновлена.');
-define('SUCCESS_BANNER_REMOVED', 'Выполнено: Баннер успешно удалён.');
+define('SUCCESS_BANNER_INSERTED', 'Р’С‹РїРѕР»РЅРµРЅРѕ: Р‘Р°РЅРЅРµСЂ СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅ.');
+define('SUCCESS_BANNER_UPDATED', 'Р’С‹РїРѕР»РЅРµРЅРѕ: РРЅС„РѕСЂРјР°С†РёСЏ СѓСЃРїРµС€РЅРѕ РѕР±РЅРѕРІР»РµРЅР°.');
+define('SUCCESS_BANNER_REMOVED', 'Р’С‹РїРѕР»РЅРµРЅРѕ: Р‘Р°РЅРЅРµСЂ СѓСЃРїРµС€РЅРѕ СѓРґР°Р»С‘РЅ.');
 
-define('ERROR_BANNER_TITLE_REQUIRED', 'Ошибка: Вы забыли указать название баннера.');
-define('ERROR_BANNER_GROUP_REQUIRED', 'Ошибка: Вы забыли указать группу баннера.');
-define('ERROR_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Ошибка: Директория, в которую загружается баннер отсутствует.');
-define('ERROR_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Ошибка: Директория, в которую загружается баннер защищена от записи, установите верные права доступа.');
-define('ERROR_IMAGE_DOES_NOT_EXIST', 'Ошибка: Изображение отсутствует.');
-define('ERROR_IMAGE_IS_NOT_WRITEABLE', 'Ошибка: Изображение не может быть удалено.');
+define('ERROR_BANNER_TITLE_REQUIRED', 'РћС€РёР±РєР°: Р’С‹ Р·Р°Р±С‹Р»Рё СѓРєР°Р·Р°С‚СЊ РЅР°Р·РІР°РЅРёРµ Р±Р°РЅРЅРµСЂР°.');
+define('ERROR_BANNER_GROUP_REQUIRED', 'РћС€РёР±РєР°: Р’С‹ Р·Р°Р±С‹Р»Рё СѓРєР°Р·Р°С‚СЊ РіСЂСѓРїРїСѓ Р±Р°РЅРЅРµСЂР°.');
+define('ERROR_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'РћС€РёР±РєР°: Р”РёСЂРµРєС‚РѕСЂРёСЏ, РІ РєРѕС‚РѕСЂСѓСЋ Р·Р°РіСЂСѓР¶Р°РµС‚СЃСЏ Р±Р°РЅРЅРµСЂ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚.');
+define('ERROR_IMAGE_DIRECTORY_NOT_WRITEABLE', 'РћС€РёР±РєР°: Р”РёСЂРµРєС‚РѕСЂРёСЏ, РІ РєРѕС‚РѕСЂСѓСЋ Р·Р°РіСЂСѓР¶Р°РµС‚СЃСЏ Р±Р°РЅРЅРµСЂ Р·Р°С‰РёС‰РµРЅР° РѕС‚ Р·Р°РїРёСЃРё, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂРЅС‹Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР°.');
+define('ERROR_IMAGE_DOES_NOT_EXIST', 'РћС€РёР±РєР°: РР·РѕР±СЂР°Р¶РµРЅРёРµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚.');
+define('ERROR_IMAGE_IS_NOT_WRITEABLE', 'РћС€РёР±РєР°: РР·РѕР±СЂР°Р¶РµРЅРёРµ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СѓРґР°Р»РµРЅРѕ.');
 ?>

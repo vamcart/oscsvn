@@ -10,9 +10,9 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_TITLE', 'EMS Ïî÷òà Ðîññèè');
-define('MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_DESCRIPTION', 'EMS Ïî÷òà Ðîññèè');
+define('MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_TITLE', 'EMS ÐŸÐ¾Ñ‡Ñ‚Ð° Ð Ð¾ÑÑÐ¸Ð¸');
+define('MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_DESCRIPTION', 'EMS ÐŸÐ¾Ñ‡Ñ‚Ð° Ð Ð¾ÑÑÐ¸Ð¸');
 
-define('MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_NOTE','Äîñòàâêà êóðüåðñêîé ñëóæáîé EMS Ïî÷òà Ðîññèè.');
+define('MODULE_SHIPPING_RUSSIANPOSTEMS_TEXT_NOTE','Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° ÐºÑƒÑ€ÑŒÐµÑ€ÑÐºÐ¾Ð¹ ÑÐ»ÑƒÐ¶Ð±Ð¾Ð¹ EMS ÐŸÐ¾Ñ‡Ñ‚Ð° Ð Ð¾ÑÑÐ¸Ð¸.');
 
 ?>

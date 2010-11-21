@@ -11,12 +11,12 @@
 
   Released under the GNU General Public License
 */
-define('HEADING_TITLE', 'Ïîèñêîâûå ñëîâà - Íàñòðîéêà');
-define('TABLE_HEADING_CONFIGURATION_TITLE', 'Îïöèÿ');
-define('TABLE_HEADING_CONFIGURATION_VALUE', 'Çíà÷åíèå');
-define('TABLE_HEADING_ACTION', 'Äåéñòâèå');
+define('HEADING_TITLE', 'ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ðµ ÑÐ»Ð¾Ð²Ð° - ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°');
+define('TABLE_HEADING_CONFIGURATION_TITLE', 'ÐžÐ¿Ñ†Ð¸Ñ');
+define('TABLE_HEADING_CONFIGURATION_VALUE', 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ');
+define('TABLE_HEADING_ACTION', 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ');
 
-define('TEXT_INFO_EDIT_INTRO', 'Âíåñèòå íåîáõîäèìûå èçìåíåíèÿ');
-define('TEXT_INFO_DATE_ADDED', 'Äàòà äîáàâëåíèÿ:');
-define('TEXT_INFO_LAST_MODIFIED', 'Ïîñëåäíåå èçìåíåíèå:');
+define('TEXT_INFO_EDIT_INTRO', 'Ð’Ð½ÐµÑÐ¸Ñ‚Ðµ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ñ‹Ðµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ');
+define('TEXT_INFO_DATE_ADDED', 'Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ:');
+define('TEXT_INFO_LAST_MODIFIED', 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½ÐµÐµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ:');
 ?>

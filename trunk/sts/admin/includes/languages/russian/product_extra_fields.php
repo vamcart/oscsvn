@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Дополнительные поля для товаров');
-define('SUBHEADING_TITLE', 'Новое поле');
+define('HEADING_TITLE', 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ РґР»СЏ С‚РѕРІР°СЂРѕРІ');
+define('SUBHEADING_TITLE', 'РќРѕРІРѕРµ РїРѕР»Рµ');
 
-define('TABLE_HEADING_FIELDS', 'Название поля');
-define('TABLE_HEADING_ORDER', 'Порядок сортировки');
-define('TABLE_HEADING_LANGUAGE', 'Язык');
-define('TABLE_HEADING_STATUS', 'Статус');
+define('TABLE_HEADING_FIELDS', 'РќР°Р·РІР°РЅРёРµ РїРѕР»СЏ');
+define('TABLE_HEADING_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+define('TABLE_HEADING_LANGUAGE', 'РЇР·С‹Рє');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
 
-define('IMAGE_ADD_FIELD', 'Добавить');
-define('IMAGE_UPDATE_FIELDS', 'Обновить');
-define('IMAGE_REMOVE_FIELDS', 'Удалить');
+define('IMAGE_ADD_FIELD', 'Р”РѕР±Р°РІРёС‚СЊ');
+define('IMAGE_UPDATE_FIELDS', 'РћР±РЅРѕРІРёС‚СЊ');
+define('IMAGE_REMOVE_FIELDS', 'РЈРґР°Р»РёС‚СЊ');
 
-define ('TEXT_ALL_LANGUAGES', 'Все');
+define ('TEXT_ALL_LANGUAGES', 'Р’СЃРµ');

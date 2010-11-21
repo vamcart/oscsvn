@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_QIWI_TEXT_TITLE', 'Киви');
-  define('MODULE_PAYMENT_QIWI_TEXT_PUBLIC_TITLE', 'Киви');
-  define('MODULE_PAYMENT_QIWI_TEXT_DESCRIPTION', 'Для подтверждения заказа нажмите кнопку Подтвердить.<br /><br /><br /><br /><strong><span class="Requirement">Вам был выписан счёт для оплаты заказа в QIWI Кошельке, Вы можете оплатить счёт в любом терминале киви, в своём личном кабинете (киви кошелёк), либо через интернет-версию киви кошелька по адресу <a href="http://mylk.qiwi.ru">http://mylk.qiwi.ru</a></span></strong><br /><br />');
-  define('MODULE_PAYMENT_QIWI_TEXT_ADMIN_DESCRIPTION', 'Модуль оплаты Киви<br />Как правильно настроить модуль читайте <a href="http://oscommerce.su/modules/smartsection/item.php?itemid=14" target="_blank"><u>здесь</u></a>.');
+  define('MODULE_PAYMENT_QIWI_TEXT_TITLE', 'РљРёРІРё');
+  define('MODULE_PAYMENT_QIWI_TEXT_PUBLIC_TITLE', 'РљРёРІРё');
+  define('MODULE_PAYMENT_QIWI_TEXT_DESCRIPTION', 'Р”Р»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ Р·Р°РєР°Р·Р° РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ РџРѕРґС‚РІРµСЂРґРёС‚СЊ.<br /><br /><br /><br /><strong><span class="Requirement">Р’Р°Рј Р±С‹Р» РІС‹РїРёСЃР°РЅ СЃС‡С‘С‚ РґР»СЏ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РІ QIWI РљРѕС€РµР»СЊРєРµ, Р’С‹ РјРѕР¶РµС‚Рµ РѕРїР»Р°С‚РёС‚СЊ СЃС‡С‘С‚ РІ Р»СЋР±РѕРј С‚РµСЂРјРёРЅР°Р»Рµ РєРёРІРё, РІ СЃРІРѕС‘Рј Р»РёС‡РЅРѕРј РєР°Р±РёРЅРµС‚Рµ (РєРёРІРё РєРѕС€РµР»С‘Рє), Р»РёР±Рѕ С‡РµСЂРµР· РёРЅС‚РµСЂРЅРµС‚-РІРµСЂСЃРёСЋ РєРёРІРё РєРѕС€РµР»СЊРєР° РїРѕ Р°РґСЂРµСЃСѓ <a href="http://mylk.qiwi.ru">http://mylk.qiwi.ru</a></span></strong><br /><br />');
+  define('MODULE_PAYMENT_QIWI_TEXT_ADMIN_DESCRIPTION', 'РњРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ РљРёРІРё<br />РљР°Рє РїСЂР°РІРёР»СЊРЅРѕ РЅР°СЃС‚СЂРѕРёС‚СЊ РјРѕРґСѓР»СЊ С‡РёС‚Р°Р№С‚Рµ <a href="http://oscommerce.su/modules/smartsection/item.php?itemid=14" target="_blank"><u>Р·РґРµСЃСЊ</u></a>.');
 
 define('MODULE_PAYMENT_QIWI_NAME_TITLE' , '');
-define('MODULE_PAYMENT_QIWI_NAME_DESC' , 'Укажите номер Вашего мобильного телефона.');
-define('MODULE_PAYMENT_QIWI_TELEPHONE' , 'Телефон: ');
-define('MODULE_PAYMENT_QIWI_TELEPHONE_HELP' , ' Пример: <strong>916820XXXX</strong>');
+define('MODULE_PAYMENT_QIWI_NAME_DESC' , 'РЈРєР°Р¶РёС‚Рµ РЅРѕРјРµСЂ Р’Р°С€РµРіРѕ РјРѕР±РёР»СЊРЅРѕРіРѕ С‚РµР»РµС„РѕРЅР°.');
+define('MODULE_PAYMENT_QIWI_TELEPHONE' , 'РўРµР»РµС„РѕРЅ: ');
+define('MODULE_PAYMENT_QIWI_TELEPHONE_HELP' , ' РџСЂРёРјРµСЂ: <strong>916820XXXX</strong>');
 
-define('MODULE_PAYMENT_QIWI_EMAIL_SUBJECT' , 'КИВИ: Оплачен заказ номер');
+define('MODULE_PAYMENT_QIWI_EMAIL_SUBJECT' , 'РљРР’Р: РћРїР»Р°С‡РµРЅ Р·Р°РєР°Р· РЅРѕРјРµСЂ');
 
 ?>

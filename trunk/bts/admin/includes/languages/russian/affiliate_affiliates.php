@@ -14,46 +14,46 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Партнёры');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
+define('HEADING_TITLE', 'РџР°СЂС‚РЅС‘СЂС‹');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
 
-define('TABLE_HEADING_FIRSTNAME', 'Имя');
-define('TABLE_HEADING_LASTNAME', 'Фамилия');
-define('TABLE_HEADING_USERHOMEPAGE', 'Адрес сайта');
-define('TABLE_HEADING_COMMISSION','Комиссия');
-define('TABLE_HEADING_ACCOUNT_CREATED', 'Дата регистрации');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_AFFILIATE_ID','ID Партнёра');
+define('TABLE_HEADING_FIRSTNAME', 'РРјСЏ');
+define('TABLE_HEADING_LASTNAME', 'Р¤Р°РјРёР»РёСЏ');
+define('TABLE_HEADING_USERHOMEPAGE', 'РђРґСЂРµСЃ СЃР°Р№С‚Р°');
+define('TABLE_HEADING_COMMISSION','РљРѕРјРёСЃСЃРёСЏ');
+define('TABLE_HEADING_ACCOUNT_CREATED', 'Р”Р°С‚Р° СЂРµРіРёСЃС‚СЂР°С†РёРё');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_AFFILIATE_ID','ID РџР°СЂС‚РЅС‘СЂР°');
 
-define('TEXT_DATE_ACCOUNT_CREATED', 'Запись создана:');
-define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', 'Последние изменения:');
-define('TEXT_INFO_DATE_LAST_LOGON', 'Последний раз заходил:');
-define('TEXT_INFO_NUMBER_OF_LOGONS', 'Количество входов в систему:');
-define('TEXT_INFO_COMMISSION','Индивидуальная комиссия:');
-define('TEXT_INFO_NUMBER_OF_SALES', 'Количество продаж:');
-define('TEXT_INFO_COUNTRY', 'Страна:');
-define('TEXT_INFO_SALES_TOTAL', 'Общая стоимость товара:');
-define('TEXT_INFO_AFFILIATE_TOTAL', 'Заработал:');
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить этого партнёра?');
-define('TEXT_INFO_HEADING_DELETE_CUSTOMER', 'Удалить партнёра');
-define('TEXT_DISPLAY_NUMBER_OF_AFFILIATES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> партнёров)');
+define('TEXT_DATE_ACCOUNT_CREATED', 'Р—Р°РїРёСЃСЊ СЃРѕР·РґР°РЅР°:');
+define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_INFO_DATE_LAST_LOGON', 'РџРѕСЃР»РµРґРЅРёР№ СЂР°Р· Р·Р°С…РѕРґРёР»:');
+define('TEXT_INFO_NUMBER_OF_LOGONS', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РІС…РѕРґРѕРІ РІ СЃРёСЃС‚РµРјСѓ:');
+define('TEXT_INFO_COMMISSION','РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ РєРѕРјРёСЃСЃРёСЏ:');
+define('TEXT_INFO_NUMBER_OF_SALES', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕРґР°Р¶:');
+define('TEXT_INFO_COUNTRY', 'РЎС‚СЂР°РЅР°:');
+define('TEXT_INFO_SALES_TOTAL', 'РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°:');
+define('TEXT_INFO_AFFILIATE_TOTAL', 'Р—Р°СЂР°Р±РѕС‚Р°Р»:');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚РѕРіРѕ РїР°СЂС‚РЅС‘СЂР°?');
+define('TEXT_INFO_HEADING_DELETE_CUSTOMER', 'РЈРґР°Р»РёС‚СЊ РїР°СЂС‚РЅС‘СЂР°');
+define('TEXT_DISPLAY_NUMBER_OF_AFFILIATES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїР°СЂС‚РЅС‘СЂРѕРІ)');
 
-define('ENTRY_AFFILIATE_PAYMENT_DETAILS', 'Получатель платежа:');
-define('ENTRY_AFFILIATE_PAYMENT_CHECK','Получатель платежа:');
-define('ENTRY_AFFILIATE_PAYMENT_PAYPAL','Ваш Email в системе PayPal:');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME','Название банка:');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME','Получатель платежа:');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER','Номер счёта:');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER','ABA/BSB номер:');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE','SWIFT код:');
-define('ENTRY_AFFILIATE_COMPANY','Организация:');
-define('ENTRY_AFFILIATE_COMPANY_TAXID','ИНН:');
-define('ENTRY_AFFILIATE_HOMEPAGE','Адрес сайта');
-define('ENTRY_AFFILIATE_COMMISSION','Процент, получаемый партнёром с каждого оплаченного заказа');
+define('ENTRY_AFFILIATE_PAYMENT_DETAILS', 'РџРѕР»СѓС‡Р°С‚РµР»СЊ РїР»Р°С‚РµР¶Р°:');
+define('ENTRY_AFFILIATE_PAYMENT_CHECK','РџРѕР»СѓС‡Р°С‚РµР»СЊ РїР»Р°С‚РµР¶Р°:');
+define('ENTRY_AFFILIATE_PAYMENT_PAYPAL','Р’Р°С€ Email РІ СЃРёСЃС‚РµРјРµ PayPal:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME','РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME','РџРѕР»СѓС‡Р°С‚РµР»СЊ РїР»Р°С‚РµР¶Р°:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER','РќРѕРјРµСЂ СЃС‡С‘С‚Р°:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER','ABA/BSB РЅРѕРјРµСЂ:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE','SWIFT РєРѕРґ:');
+define('ENTRY_AFFILIATE_COMPANY','РћСЂРіР°РЅРёР·Р°С†РёСЏ:');
+define('ENTRY_AFFILIATE_COMPANY_TAXID','РРќРќ:');
+define('ENTRY_AFFILIATE_HOMEPAGE','РђРґСЂРµСЃ СЃР°Р№С‚Р°');
+define('ENTRY_AFFILIATE_COMMISSION','РџСЂРѕС†РµРЅС‚, РїРѕР»СѓС‡Р°РµРјС‹Р№ РїР°СЂС‚РЅС‘СЂРѕРј СЃ РєР°Р¶РґРѕРіРѕ РѕРїР»Р°С‡РµРЅРЅРѕРіРѕ Р·Р°РєР°Р·Р°');
 
-define('CATEGORY_COMMISSION','Индивидуальный процент');
-define('CATEGORY_PAYMENT_DETAILS','Способ получения денег:');
+define('CATEGORY_COMMISSION','РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Р№ РїСЂРѕС†РµРЅС‚');
+define('CATEGORY_PAYMENT_DETAILS','РЎРїРѕСЃРѕР± РїРѕР»СѓС‡РµРЅРёСЏ РґРµРЅРµРі:');
 
-define('TYPE_BELOW', 'Укажите выше');
-define('PLEASE_SELECT', 'Выберите');
+define('TYPE_BELOW', 'РЈРєР°Р¶РёС‚Рµ РІС‹С€Рµ');
+define('PLEASE_SELECT', 'Р’С‹Р±РµСЂРёС‚Рµ');
 ?>

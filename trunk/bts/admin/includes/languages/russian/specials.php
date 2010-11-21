@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Скидки');
+define('HEADING_TITLE', 'РЎРєРёРґРєРё');
 
-define('TABLE_HEADING_PRODUCTS', 'Товары');
-define('TABLE_HEADING_PRODUCTS_PRICE', 'Цена');
-define('TABLE_HEADING_STATUS', 'Состояние');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_PRODUCTS', 'РўРѕРІР°СЂС‹');
+define('TABLE_HEADING_PRODUCTS_PRICE', 'Р¦РµРЅР°');
+define('TABLE_HEADING_STATUS', 'РЎРѕСЃС‚РѕСЏРЅРёРµ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_SPECIALS_PRODUCT', 'Товар:');
-define('TEXT_SPECIALS_SPECIAL_PRICE', 'Специальная цена:');
-define('TEXT_SPECIALS_EXPIRES_DATE', 'Действует До:');
-define('TEXT_SPECIALS_PRICE_TIP', '<b>Примечание:</b><ul><li>Вы можете ввести процент скидки в поле "Специальная Цена", например: <b>20%</b></li><li>Если Вы вводите новую цену, десятичный разделитель должен быть \'.\' (точка), например: <b>49.99</b></li></ul>');
+define('TEXT_SPECIALS_PRODUCT', 'РўРѕРІР°СЂ:');
+define('TEXT_SPECIALS_SPECIAL_PRICE', 'РЎРїРµС†РёР°Р»СЊРЅР°СЏ С†РµРЅР°:');
+define('TEXT_SPECIALS_EXPIRES_DATE', 'Р”РµР№СЃС‚РІСѓРµС‚ Р”Рѕ:');
+define('TEXT_SPECIALS_PRICE_TIP', '<b>РџСЂРёРјРµС‡Р°РЅРёРµ:</b><ul><li>Р’С‹ РјРѕР¶РµС‚Рµ РІРІРµСЃС‚Рё РїСЂРѕС†РµРЅС‚ СЃРєРёРґРєРё РІ РїРѕР»Рµ "РЎРїРµС†РёР°Р»СЊРЅР°СЏ Р¦РµРЅР°", РЅР°РїСЂРёРјРµСЂ: <b>20%</b></li><li>Р•СЃР»Рё Р’С‹ РІРІРѕРґРёС‚Рµ РЅРѕРІСѓСЋ С†РµРЅСѓ, РґРµСЃСЏС‚РёС‡РЅС‹Р№ СЂР°Р·РґРµР»РёС‚РµР»СЊ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ \'.\' (С‚РѕС‡РєР°), РЅР°РїСЂРёРјРµСЂ: <b>49.99</b></li></ul>');
 
 //TotalB2B start
 define('TEXT_SPECIALS_CUSTOMERS', 'Customer Special Price:');
@@ -28,14 +28,14 @@ define('TEXT_SPECIALS_GROUPS', 'Group Special Price:');
 //TotalB2B end
 
 
-define('TEXT_INFO_DATE_ADDED', 'Дата добавления:');
-define('TEXT_INFO_LAST_MODIFIED', 'Последнее изменение:');
-define('TEXT_INFO_NEW_PRICE', 'Новая Цена:');
-define('TEXT_INFO_ORIGINAL_PRICE', 'Исходная Цена:');
-define('TEXT_INFO_PERCENTAGE', 'Процент:');
-define('TEXT_INFO_EXPIRES_DATE', 'Действует до:');
-define('TEXT_INFO_STATUS_CHANGE', 'Изменить статус:');
+define('TEXT_INFO_DATE_ADDED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_INFO_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРµРµ РёР·РјРµРЅРµРЅРёРµ:');
+define('TEXT_INFO_NEW_PRICE', 'РќРѕРІР°СЏ Р¦РµРЅР°:');
+define('TEXT_INFO_ORIGINAL_PRICE', 'РСЃС…РѕРґРЅР°СЏ Р¦РµРЅР°:');
+define('TEXT_INFO_PERCENTAGE', 'РџСЂРѕС†РµРЅС‚:');
+define('TEXT_INFO_EXPIRES_DATE', 'Р”РµР№СЃС‚РІСѓРµС‚ РґРѕ:');
+define('TEXT_INFO_STATUS_CHANGE', 'РР·РјРµРЅРёС‚СЊ СЃС‚Р°С‚СѓСЃ:');
 
-define('TEXT_INFO_HEADING_DELETE_SPECIALS', 'Удалить скидку');
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить специальную цену для товара?');
+define('TEXT_INFO_HEADING_DELETE_SPECIALS', 'РЈРґР°Р»РёС‚СЊ СЃРєРёРґРєСѓ');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЃРїРµС†РёР°Р»СЊРЅСѓСЋ С†РµРЅСѓ РґР»СЏ С‚РѕРІР°СЂР°?');
 ?>

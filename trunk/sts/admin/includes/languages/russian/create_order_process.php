@@ -10,11 +10,11 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_CREATE', 'Èíôîðìàöèÿ');
+define('HEADING_CREATE', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ');
 
-define('ENTRY_SUB_TOTAL', 'Ñòîèìîñòü òîâàðà:');
-define('ENTRY_TAX', 'Íàëîã:');
-define('ENTRY_SHIPPING', 'Äîñòàâêà:');
-define('TABLE_CART_TOTAL', 'Ñòîèìîñòü çàêàçà:');
+define('ENTRY_SUB_TOTAL', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:');
+define('ENTRY_TAX', 'ÐÐ°Ð»Ð¾Ð³:');
+define('ENTRY_SHIPPING', 'Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°:');
+define('TABLE_CART_TOTAL', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°:');
 
 ?>

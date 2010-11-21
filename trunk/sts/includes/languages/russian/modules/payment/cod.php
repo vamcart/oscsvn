@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_COD_TEXT_TITLE', 'Îïëàòà íàëè÷íûìè ïðè ïîëó÷åíèè ');
-  define('MODULE_PAYMENT_COD_TEXT_DESCRIPTION', 'Îïëàòà íàëè÷íûìè ïðè ïîëó÷åíèè ');
+  define('MODULE_PAYMENT_COD_TEXT_TITLE', 'ÐžÐ¿Ð»Ð°Ñ‚Ð° Ð½Ð°Ð»Ð¸Ñ‡Ð½Ñ‹Ð¼Ð¸ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ ');
+  define('MODULE_PAYMENT_COD_TEXT_DESCRIPTION', 'ÐžÐ¿Ð»Ð°Ñ‚Ð° Ð½Ð°Ð»Ð¸Ñ‡Ð½Ñ‹Ð¼Ð¸ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ ');
 ?>

@@ -1,23 +1,23 @@
 <?php
 
-define('HEADING_TITLE', 'Ñêèäêà íà òîâàðû ïðîèçâîäèòåëåé');
-define('HEADING_TITLE_SEARCH', 'Ïîèñê:');
+define('HEADING_TITLE', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð½Ð° Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÐµÐ¹');
+define('HEADING_TITLE_SEARCH', 'ÐŸÐ¾Ð¸ÑÐº:');
 
-define('TABLE_HEADING_NAME', 'Íàçâàíèå');
-define('TABLE_HEADING_DISCOUNT', 'Ñêèäêà');
-define('TABLE_HEADING_CUSTOMERS', 'Ñêèäêà äëÿ ïîêóïàòåëÿ');
-define('TABLE_HEADING_GROUPS', 'Ñêèäêà äëÿ ãðóïïû');
-define('TABLE_HEADING_MANUFACTURERS', 'Ïðîèçâîäèòåëü');
-define('TABLE_HEADING_ACTION', 'Äåéñòâèå');
+define('TABLE_HEADING_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ');
+define('TABLE_HEADING_DISCOUNT', 'Ð¡ÐºÐ¸Ð´ÐºÐ°');
+define('TABLE_HEADING_CUSTOMERS', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð´Ð»Ñ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('TABLE_HEADING_GROUPS', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð´Ð»Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹');
+define('TABLE_HEADING_MANUFACTURERS', 'ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ');
+define('TABLE_HEADING_ACTION', 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ');
 
-define('ENTRY_MANUDISCOUNT_NAME', 'Íàçâàíèå:');
-define('ENTRY_CUSTOMERS_NAME', 'Ñêèäêà äëÿ ïîêóïàòåëÿ:');
-define('ENTRY_GROUPS_NAME', 'Ñêèäêà äëÿ ãðóïïû:');
-define('ENTRY_MANUFACTURERS_NAME', 'Ïðîèçâîäèòåëü:');
-define('ENTRY_DEFAULT_DISCOUNT', 'Ñêèäêà:');
+define('ENTRY_MANUDISCOUNT_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ:');
+define('ENTRY_CUSTOMERS_NAME', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð´Ð»Ñ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ:');
+define('ENTRY_GROUPS_NAME', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð´Ð»Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹:');
+define('ENTRY_MANUFACTURERS_NAME', 'ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ:');
+define('ENTRY_DEFAULT_DISCOUNT', 'Ð¡ÐºÐ¸Ð´ÐºÐ°:');
 
-define('TEXT_DELETE_INTRO', 'Âû äåéñòâèòåëüíî õîòèòå óäàëèòü äàííóþ ñêèäêó?');
-define('TEXT_INFO_HEADING_DELETE_MANUDISCOUNT', 'Óäàëèòü ñêèäêó?');
+define('TEXT_DELETE_INTRO', 'Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½ÑƒÑŽ ÑÐºÐ¸Ð´ÐºÑƒ?');
+define('TEXT_INFO_HEADING_DELETE_MANUDISCOUNT', 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐºÐ¸Ð´ÐºÑƒ?');
 
-define('ERROR_MANUDISCOUNT_NAME', 'Ââåäèòå íàçâàíèå ñîçäàâàåìîé ñêèäêè');
+define('ERROR_MANUDISCOUNT_NAME', 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ¾Ð·Ð´Ð°Ð²Ð°ÐµÐ¼Ð¾Ð¹ ÑÐºÐ¸Ð´ÐºÐ¸');
 ?>

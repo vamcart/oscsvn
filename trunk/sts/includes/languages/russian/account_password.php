@@ -10,13 +10,13 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Ìîè äàííûå');
-define('NAVBAR_TITLE_2', 'Èçìåíèòü ïàðîëü');
+define('NAVBAR_TITLE_1', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+define('NAVBAR_TITLE_2', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ');
 
-define('HEADING_TITLE', 'Ìîé ïàðîëü');
+define('HEADING_TITLE', 'ÐœÐ¾Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ');
 
-define('MY_PASSWORD_TITLE', 'Ìîé ïàðîëü');
+define('MY_PASSWORD_TITLE', 'ÐœÐ¾Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ');
 
-define('SUCCESS_PASSWORD_UPDATED', 'Âû óñïåøíî èçìåíèëè ñâîé ïàðîëü.');
-define('ERROR_CURRENT_PASSWORD_NOT_MATCHING', 'Âû óêàçàëè íåâåðíûé ïàðîëü, óêàæèòå ïàðîëü, êîòîðûé Âû ââîäèëè ïðè ðåãèñòðàöèè.');
+define('SUCCESS_PASSWORD_UPDATED', 'Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ð»Ð¸ ÑÐ²Ð¾Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.');
+define('ERROR_CURRENT_PASSWORD_NOT_MATCHING', 'Ð’Ñ‹ ÑƒÐºÐ°Ð·Ð°Ð»Ð¸ Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ, ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð’Ñ‹ Ð²Ð²Ð¾Ð´Ð¸Ð»Ð¸ Ð¿Ñ€Ð¸ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸.');
 ?>

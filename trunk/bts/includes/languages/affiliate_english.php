@@ -31,7 +31,7 @@ define('BOX_AFFILIATE_LOGOUT', 'Affiliate Log Out');
 
 define('ENTRY_AFFILIATE_PAYMENT_DETAILS', 'Payable to:');
 define('ENTRY_AFFILIATE_ACCEPT_AGB', 'Check here to indicate that you have read and agree to the <a target="_new" href="' . tep_href_link(FILENAME_AFFILIATE_TERMS, '', 'SSL') . '">Associates Terms & Conditions</a>.');
-define('ENTRY_AFFILIATE_AGB_ERROR', ' &nbsp;<small><font color="#FF0000">You must accept our Associates Terms & Conditions</font></small>');
+define('ENTRY_AFFILIATE_AGB_ERROR', 'Â &nbsp;<small><font color="#FF0000">You must accept our Associates Terms & Conditions</font></small>');
 define('ENTRY_AFFILIATE_PAYMENT_CHECK', 'Check Payee Name:');
 define('ENTRY_AFFILIATE_PAYMENT_CHECK_TEXT', '');
 define('ENTRY_AFFILIATE_PAYMENT_CHECK_ERROR', '&nbsp;<small><font color="#FF0000">required</font></small>');

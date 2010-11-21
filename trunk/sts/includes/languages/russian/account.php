@@ -10,22 +10,22 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Ìîè äàííûå');
-define('HEADING_TITLE', 'Ìîè äàííûå');
+define('NAVBAR_TITLE', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+define('HEADING_TITLE', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
 
-define('OVERVIEW_TITLE', 'Âàøè çàêàçû');
-define('OVERVIEW_SHOW_ALL_ORDERS', '(ïîêàçàòü âñå çàêàçû)');
-define('OVERVIEW_PREVIOUS_ORDERS', 'Ïîñëåäíèå çàêàçû');
+define('OVERVIEW_TITLE', 'Ð’Ð°ÑˆÐ¸ Ð·Ð°ÐºÐ°Ð·Ñ‹');
+define('OVERVIEW_SHOW_ALL_ORDERS', '(Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð²ÑÐµ Ð·Ð°ÐºÐ°Ð·Ñ‹)');
+define('OVERVIEW_PREVIOUS_ORDERS', 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ñ‹');
 
-define('MY_ACCOUNT_TITLE', 'Ìîè äàííûå');
-define('MY_ACCOUNT_INFORMATION', 'Ïðîñìîòð è ðåäàêòèðîâàíèå ìîèõ äàííûõ.');
-define('MY_ACCOUNT_ADDRESS_BOOK', 'Ïðîñìîòð è ðåäàêòèðîâàíèå çàïèñåé â ìîåé àäðåñíîé êíèãå.');
-define('MY_ACCOUNT_PASSWORD', 'Èçìåíèòü ïàðîëü.');
+define('MY_ACCOUNT_TITLE', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+define('MY_ACCOUNT_INFORMATION', 'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¸ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ð¸Ñ… Ð´Ð°Ð½Ð½Ñ‹Ñ….');
+define('MY_ACCOUNT_ADDRESS_BOOK', 'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¸ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ð² Ð¼Ð¾ÐµÐ¹ Ð°Ð´Ñ€ÐµÑÐ½Ð¾Ð¹ ÐºÐ½Ð¸Ð³Ðµ.');
+define('MY_ACCOUNT_PASSWORD', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.');
 
-define('MY_ORDERS_TITLE', 'Ìîè çàêàçû');
-define('MY_ORDERS_VIEW', 'Ïðîñìîòð ìîèõ çàêàçîâ.');
+define('MY_ORDERS_TITLE', 'ÐœÐ¾Ð¸ Ð·Ð°ÐºÐ°Ð·Ñ‹');
+define('MY_ORDERS_VIEW', 'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¼Ð¾Ð¸Ñ… Ð·Ð°ÐºÐ°Ð·Ð¾Ð².');
 
-define('EMAIL_NOTIFICATIONS_TITLE', 'Ðàññûëêà');
-define('EMAIL_NOTIFICATIONS_NEWSLETTERS', 'Ïîäïèñàòüñÿ èëè îòêàçàòüñÿ îò ðàññûëêè.');
-define('EMAIL_NOTIFICATIONS_PRODUCTS', 'Email óâåäîìëåíèÿ î òîâàðàõ, êîòîðûå ÿ ïîëó÷àþ.');
+define('EMAIL_NOTIFICATIONS_TITLE', 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°');
+define('EMAIL_NOTIFICATIONS_NEWSLETTERS', 'ÐŸÐ¾Ð´Ð¿Ð¸ÑÐ°Ñ‚ÑŒÑÑ Ð¸Ð»Ð¸ Ð¾Ñ‚ÐºÐ°Ð·Ð°Ñ‚ÑŒÑÑ Ð¾Ñ‚ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸.');
+define('EMAIL_NOTIFICATIONS_PRODUCTS', 'Email ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Ñ…, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ñ Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÑŽ.');
 ?>

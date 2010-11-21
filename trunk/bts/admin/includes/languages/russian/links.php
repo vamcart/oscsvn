@@ -10,67 +10,67 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Ссылки');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
+define('HEADING_TITLE', 'РЎСЃС‹Р»РєРё');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
 
-define('TABLE_HEADING_TITLE', 'Название');
-define('TABLE_HEADING_URL', 'URL адрес');
-define('TABLE_HEADING_CLICKS', 'Клики');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_TITLE', 'РќР°Р·РІР°РЅРёРµ');
+define('TABLE_HEADING_URL', 'URL Р°РґСЂРµСЃ');
+define('TABLE_HEADING_CLICKS', 'РљР»РёРєРё');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_INFO_HEADING_DELETE_LINK', 'Удалить ссылку');
-define('TEXT_INFO_HEADING_CHECK_LINK', 'Проверить ссылку');
+define('TEXT_INFO_HEADING_DELETE_LINK', 'РЈРґР°Р»РёС‚СЊ СЃСЃС‹Р»РєСѓ');
+define('TEXT_INFO_HEADING_CHECK_LINK', 'РџСЂРѕРІРµСЂРёС‚СЊ СЃСЃС‹Р»РєСѓ');
 
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить эту ссылку?');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚Сѓ СЃСЃС‹Р»РєСѓ?');
 
-define('TEXT_INFO_LINK_CHECK_RESULT', 'Результат проверки:');
-define('TEXT_INFO_LINK_CHECK_FOUND', 'Ссылка верная');
-define('TEXT_INFO_LINK_CHECK_NOT_FOUND', 'Ссылка отсутствует');
-define('TEXT_INFO_LINK_CHECK_ERROR', 'Ошибка чтения URL адреса');
+define('TEXT_INFO_LINK_CHECK_RESULT', 'Р РµР·СѓР»СЊС‚Р°С‚ РїСЂРѕРІРµСЂРєРё:');
+define('TEXT_INFO_LINK_CHECK_FOUND', 'РЎСЃС‹Р»РєР° РІРµСЂРЅР°СЏ');
+define('TEXT_INFO_LINK_CHECK_NOT_FOUND', 'РЎСЃС‹Р»РєР° РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚');
+define('TEXT_INFO_LINK_CHECK_ERROR', 'РћС€РёР±РєР° С‡С‚РµРЅРёСЏ URL Р°РґСЂРµСЃР°');
 
 
-define('TEXT_INFO_LINK_STATUS', 'Статус:');
-define('TEXT_INFO_LINK_CATEGORY', 'Раздел:');
-define('TEXT_INFO_LINK_CONTACT_NAME', 'Имя:');
+define('TEXT_INFO_LINK_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('TEXT_INFO_LINK_CATEGORY', 'Р Р°Р·РґРµР»:');
+define('TEXT_INFO_LINK_CONTACT_NAME', 'РРјСЏ:');
 define('TEXT_INFO_LINK_CONTACT_EMAIL', 'Email:');
-define('TEXT_INFO_LINK_CLICK_COUNT', 'Клики:');
-define('TEXT_INFO_LINK_DESCRIPTION', 'Описание:');
-define('TEXT_DATE_LINK_CREATED', 'Дата добавления:');
-define('TEXT_DATE_LINK_LAST_MODIFIED', 'Последние изменения:');
-define('TEXT_IMAGE_NONEXISTENT', 'КАРТИНКА ОТСУТСТВУЕТ');
+define('TEXT_INFO_LINK_CLICK_COUNT', 'РљР»РёРєРё:');
+define('TEXT_INFO_LINK_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ:');
+define('TEXT_DATE_LINK_CREATED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_DATE_LINK_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_IMAGE_NONEXISTENT', 'РљРђР РўРРќРљРђ РћРўРЎРЈРўРЎРўР’РЈР•Рў');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
-define('EMAIL_TEXT_SUBJECT', 'Статус ссылки изменён!');
-define('EMAIL_TEXT_STATUS_UPDATE', 'Уважаемый(ая) %s,' . "\n\n" . 'Статус Вашей ссылки в ' . STORE_NAME . ' изменён.' . "\n\n" . 'Новый статус: %s' . "\n\n" . 'Если у Вас возникли вопросы, задайте нам их в ответном письме.' . "\n");
+define('EMAIL_TEXT_SUBJECT', 'РЎС‚Р°С‚СѓСЃ СЃСЃС‹Р»РєРё РёР·РјРµРЅС‘РЅ!');
+define('EMAIL_TEXT_STATUS_UPDATE', 'РЈРІР°Р¶Р°РµРјС‹Р№(Р°СЏ) %s,' . "\n\n" . 'РЎС‚Р°С‚СѓСЃ Р’Р°С€РµР№ СЃСЃС‹Р»РєРё РІ ' . STORE_NAME . ' РёР·РјРµРЅС‘РЅ.' . "\n\n" . 'РќРѕРІС‹Р№ СЃС‚Р°С‚СѓСЃ: %s' . "\n\n" . 'Р•СЃР»Рё Сѓ Р’Р°СЃ РІРѕР·РЅРёРєР»Рё РІРѕРїСЂРѕСЃС‹, Р·Р°РґР°Р№С‚Рµ РЅР°Рј РёС… РІ РѕС‚РІРµС‚РЅРѕРј РїРёСЃСЊРјРµ.' . "\n");
 
 // VJ todo - move to common language file
-define('CATEGORY_WEBSITE', 'Информация о сайте');
-define('CATEGORY_RECIPROCAL', 'Страница, где размещена ссылка нашего магазина');
-define('CATEGORY_OPTIONS', 'Опции');
+define('CATEGORY_WEBSITE', 'РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃР°Р№С‚Рµ');
+define('CATEGORY_RECIPROCAL', 'РЎС‚СЂР°РЅРёС†Р°, РіРґРµ СЂР°Р·РјРµС‰РµРЅР° СЃСЃС‹Р»РєР° РЅР°С€РµРіРѕ РјР°РіР°Р·РёРЅР°');
+define('CATEGORY_OPTIONS', 'РћРїС†РёРё');
 
-define('ENTRY_LINKS_TITLE', 'Название сайта:');
-define('ENTRY_LINKS_TITLE_ERROR', 'Поле Название сайта должно содержать как минимум ' . ENTRY_LINKS_TITLE_MIN_LENGTH . ' символов.');
-define('ENTRY_LINKS_URL', 'URL адрес:');
-define('ENTRY_LINKS_URL_ERROR', 'Поле URL адрес должно содержать как минимум ' . ENTRY_LINKS_URL_MIN_LENGTH . ' символов.');
-define('ENTRY_LINKS_CATEGORY', 'Раздел:');
-define('ENTRY_LINKS_DESCRIPTION', 'Описание:');
-define('ENTRY_LINKS_DESCRIPTION_ERROR', 'Поле Описание должно содержать как минимум ' . ENTRY_LINKS_DESCRIPTION_MIN_LENGTH . ' символов.');
-define('ENTRY_LINKS_IMAGE', 'URL баннера:');
-define('ENTRY_LINKS_CONTACT_NAME', 'Имя:');
-define('ENTRY_LINKS_CONTACT_NAME_ERROR', 'Поле Имя должно содержать как минимум ' . ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH . ' символов.');
-define('ENTRY_LINKS_RECIPROCAL_URL', 'Адрес страницы, где размещена ссылка на наш магазин:');
-define('ENTRY_LINKS_RECIPROCAL_URL_ERROR', 'Поле Адрес страницы, где размещена ссылка на наш магазин должно содержать как минимум ' . ENTRY_LINKS_URL_MIN_LENGTH . ' символов.');
-define('ENTRY_LINKS_STATUS', 'Статус:');
-define('ENTRY_LINKS_NOTIFY_CONTACT', 'Уведомить автора ссылки:');
-define('ENTRY_LINKS_RATING', 'Рейтинг:');
-define('ENTRY_LINKS_RATING_ERROR', 'Поле рейтинг не должно быть пустым.');
+define('ENTRY_LINKS_TITLE', 'РќР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°:');
+define('ENTRY_LINKS_TITLE_ERROR', 'РџРѕР»Рµ РќР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р° РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј ' . ENTRY_LINKS_TITLE_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_URL', 'URL Р°РґСЂРµСЃ:');
+define('ENTRY_LINKS_URL_ERROR', 'РџРѕР»Рµ URL Р°РґСЂРµСЃ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј ' . ENTRY_LINKS_URL_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_CATEGORY', 'Р Р°Р·РґРµР»:');
+define('ENTRY_LINKS_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ:');
+define('ENTRY_LINKS_DESCRIPTION_ERROR', 'РџРѕР»Рµ РћРїРёСЃР°РЅРёРµ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј ' . ENTRY_LINKS_DESCRIPTION_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_IMAGE', 'URL Р±Р°РЅРЅРµСЂР°:');
+define('ENTRY_LINKS_CONTACT_NAME', 'РРјСЏ:');
+define('ENTRY_LINKS_CONTACT_NAME_ERROR', 'РџРѕР»Рµ РРјСЏ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј ' . ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_RECIPROCAL_URL', 'РђРґСЂРµСЃ СЃС‚СЂР°РЅРёС†С‹, РіРґРµ СЂР°Р·РјРµС‰РµРЅР° СЃСЃС‹Р»РєР° РЅР° РЅР°С€ РјР°РіР°Р·РёРЅ:');
+define('ENTRY_LINKS_RECIPROCAL_URL_ERROR', 'РџРѕР»Рµ РђРґСЂРµСЃ СЃС‚СЂР°РЅРёС†С‹, РіРґРµ СЂР°Р·РјРµС‰РµРЅР° СЃСЃС‹Р»РєР° РЅР° РЅР°С€ РјР°РіР°Р·РёРЅ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј ' . ENTRY_LINKS_URL_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('ENTRY_LINKS_NOTIFY_CONTACT', 'РЈРІРµРґРѕРјРёС‚СЊ Р°РІС‚РѕСЂР° СЃСЃС‹Р»РєРё:');
+define('ENTRY_LINKS_RATING', 'Р РµР№С‚РёРЅРі:');
+define('ENTRY_LINKS_RATING_ERROR', 'РџРѕР»Рµ СЂРµР№С‚РёРЅРі РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј.');
 
-define('TEXT_DISPLAY_NUMBER_OF_LINKS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> ссылок)');
+define('TEXT_DISPLAY_NUMBER_OF_LINKS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃСЃС‹Р»РѕРє)');
 
-define('IMAGE_NEW_LINK', 'Новая ссылка');
-define('IMAGE_CHECK_LINK', 'Проверить ссылку');
+define('IMAGE_NEW_LINK', 'РќРѕРІР°СЏ СЃСЃС‹Р»РєР°');
+define('IMAGE_CHECK_LINK', 'РџСЂРѕРІРµСЂРёС‚СЊ СЃСЃС‹Р»РєСѓ');
 
-define('TEXT_OPEN_LINK', 'Открыть ссылку');
+define('TEXT_OPEN_LINK', 'РћС‚РєСЂС‹С‚СЊ СЃСЃС‹Р»РєСѓ');
 
 ?>

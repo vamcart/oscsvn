@@ -10,53 +10,53 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Клиенты');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
+define('HEADING_TITLE', 'РљР»РёРµРЅС‚С‹');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
 
 //TotalB2B start
-define('TABLE_HEADING_CUSTOMERS_STATUS', 'Статус');
-define('TABLE_HEADING_CUSTOMERS_GROUP', 'Входит в группу');
-define('TABLE_HEADING_CUSTOMERS_DISCOUNT', 'Личная скидка');
-define('ENTRY_CUSTOMERS_DISCOUNT', 'Установите персональную скидку данному покупателю:');
-define('ENTRY_CUSTOMERS_GROUPS_NAME', 'Либо выберите группу, к которой относится данный покупатель:');
+define('TABLE_HEADING_CUSTOMERS_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_CUSTOMERS_GROUP', 'Р’С…РѕРґРёС‚ РІ РіСЂСѓРїРїСѓ');
+define('TABLE_HEADING_CUSTOMERS_DISCOUNT', 'Р›РёС‡РЅР°СЏ СЃРєРёРґРєР°');
+define('ENTRY_CUSTOMERS_DISCOUNT', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РїРµСЂСЃРѕРЅР°Р»СЊРЅСѓСЋ СЃРєРёРґРєСѓ РґР°РЅРЅРѕРјСѓ РїРѕРєСѓРїР°С‚РµР»СЋ:');
+define('ENTRY_CUSTOMERS_GROUPS_NAME', 'Р›РёР±Рѕ РІС‹Р±РµСЂРёС‚Рµ РіСЂСѓРїРїСѓ, Рє РєРѕС‚РѕСЂРѕР№ РѕС‚РЅРѕСЃРёС‚СЃСЏ РґР°РЅРЅС‹Р№ РїРѕРєСѓРїР°С‚РµР»СЊ:');
 
 // add for SPPC shipment and payment module start 
-define('ENTRY_CUSTOMERS_PAYMENT_SET', 'Установить модули оплаты для покупателя');
-define('ENTRY_CUSTOMERS_PAYMENT_DEFAULT', 'Использовать настройки группы или стандартные настройки');
-define('ENTRY_CUSTOMERS_PAYMENT_SET_EXPLAIN', 'Если Вы выбираете <b>Установить модули оплаты для покупателя</b>, но не выбираете ни одного модуля, будут действительны настройки группы или стандартные настройки.');
-define('ENTRY_CUSTOMERS_PAYMENT_SET_EXPLAIN2', 'Отметье те модули, которые будут <b><font color="red">доступны</font></b> данному покупателю при оформлении заказа.');
+define('ENTRY_CUSTOMERS_PAYMENT_SET', 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РѕРїР»Р°С‚С‹ РґР»СЏ РїРѕРєСѓРїР°С‚РµР»СЏ');
+define('ENTRY_CUSTOMERS_PAYMENT_DEFAULT', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РЅР°СЃС‚СЂРѕР№РєРё РіСЂСѓРїРїС‹ РёР»Рё СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё');
+define('ENTRY_CUSTOMERS_PAYMENT_SET_EXPLAIN', 'Р•СЃР»Рё Р’С‹ РІС‹Р±РёСЂР°РµС‚Рµ <b>РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РѕРїР»Р°С‚С‹ РґР»СЏ РїРѕРєСѓРїР°С‚РµР»СЏ</b>, РЅРѕ РЅРµ РІС‹Р±РёСЂР°РµС‚Рµ РЅРё РѕРґРЅРѕРіРѕ РјРѕРґСѓР»СЏ, Р±СѓРґСѓС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹ РЅР°СЃС‚СЂРѕР№РєРё РіСЂСѓРїРїС‹ РёР»Рё СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё.');
+define('ENTRY_CUSTOMERS_PAYMENT_SET_EXPLAIN2', 'РћС‚РјРµС‚СЊРµ С‚Рµ РјРѕРґСѓР»Рё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ <b><font color="red">РґРѕСЃС‚СѓРїРЅС‹</font></b> РґР°РЅРЅРѕРјСѓ РїРѕРєСѓРїР°С‚РµР»СЋ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°.');
 
-define('ENTRY_CUSTOMERS_SHIPPING_SET', 'Установить модули доставки для покупателя');
-define('ENTRY_CUSTOMERS_SHIPPING_DEFAULT', 'Использовать настройки группы или стандартные настройки');
-define('ENTRY_CUSTOMERS_SHIPPING_SET_EXPLAIN', 'Если Вы выбираете <b>Установить модули доставки для покупателя</b>, но не выбираете ни одного модуля, будут действительны настройки группы или стандартные настройки.');
-define('ENTRY_CUSTOMERS_SHIPPING_SET_EXPLAIN2', 'Отметье те модули, которые будут <b><font color="red">доступны</font></b> данному покупателю при оформлении заказа.');
+define('ENTRY_CUSTOMERS_SHIPPING_SET', 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РґРѕСЃС‚Р°РІРєРё РґР»СЏ РїРѕРєСѓРїР°С‚РµР»СЏ');
+define('ENTRY_CUSTOMERS_SHIPPING_DEFAULT', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РЅР°СЃС‚СЂРѕР№РєРё РіСЂСѓРїРїС‹ РёР»Рё СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё');
+define('ENTRY_CUSTOMERS_SHIPPING_SET_EXPLAIN', 'Р•СЃР»Рё Р’С‹ РІС‹Р±РёСЂР°РµС‚Рµ <b>РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РґРѕСЃС‚Р°РІРєРё РґР»СЏ РїРѕРєСѓРїР°С‚РµР»СЏ</b>, РЅРѕ РЅРµ РІС‹Р±РёСЂР°РµС‚Рµ РЅРё РѕРґРЅРѕРіРѕ РјРѕРґСѓР»СЏ, Р±СѓРґСѓС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹ РЅР°СЃС‚СЂРѕР№РєРё РіСЂСѓРїРїС‹ РёР»Рё СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё.');
+define('ENTRY_CUSTOMERS_SHIPPING_SET_EXPLAIN2', 'РћС‚РјРµС‚СЊРµ С‚Рµ РјРѕРґСѓР»Рё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ <b><font color="red">РґРѕСЃС‚СѓРїРЅС‹</font></b> РґР°РЅРЅРѕРјСѓ РїРѕРєСѓРїР°С‚РµР»СЋ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°.');
 // add for SPPC shipment and payment module end
 
 //TotalB2B end
 
-define('TABLE_HEADING_FIRSTNAME', 'Имя');
-define('TABLE_HEADING_LASTNAME', 'Фамилия');
-define('TABLE_HEADING_ACCOUNT_CREATED', 'Дата');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_FIRSTNAME', 'РРјСЏ');
+define('TABLE_HEADING_LASTNAME', 'Р¤Р°РјРёР»РёСЏ');
+define('TABLE_HEADING_ACCOUNT_CREATED', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_DATE_ACCOUNT_CREATED', 'Дата:');
-define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', 'Последнее Изменение:');
-define('TEXT_INFO_DATE_LAST_LOGON', 'Последний Вход:');
-define('TEXT_INFO_NUMBER_OF_LOGONS', 'Количество Входов:');
-define('TEXT_INFO_COUNTRY', 'Страна:');
-define('TEXT_INFO_NUMBER_OF_REVIEWS', 'Количество Отзывов:');
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить клиента?');
-define('TEXT_DELETE_REVIEWS', 'Удалить %s отзыв(ы)');
-define('TEXT_INFO_HEADING_DELETE_CUSTOMER', 'Удалить Клиента');
-define('TYPE_BELOW', 'Тип Ниже');
-define('PLEASE_SELECT', 'Выберите что-то одно');
+define('TEXT_DATE_ACCOUNT_CREATED', 'Р”Р°С‚Р°:');
+define('TEXT_DATE_ACCOUNT_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРµРµ РР·РјРµРЅРµРЅРёРµ:');
+define('TEXT_INFO_DATE_LAST_LOGON', 'РџРѕСЃР»РµРґРЅРёР№ Р’С…РѕРґ:');
+define('TEXT_INFO_NUMBER_OF_LOGONS', 'РљРѕР»РёС‡РµСЃС‚РІРѕ Р’С…РѕРґРѕРІ:');
+define('TEXT_INFO_COUNTRY', 'РЎС‚СЂР°РЅР°:');
+define('TEXT_INFO_NUMBER_OF_REVIEWS', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РћС‚Р·С‹РІРѕРІ:');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РєР»РёРµРЅС‚Р°?');
+define('TEXT_DELETE_REVIEWS', 'РЈРґР°Р»РёС‚СЊ %s РѕС‚Р·С‹РІ(С‹)');
+define('TEXT_INFO_HEADING_DELETE_CUSTOMER', 'РЈРґР°Р»РёС‚СЊ РљР»РёРµРЅС‚Р°');
+define('TYPE_BELOW', 'РўРёРї РќРёР¶Рµ');
+define('PLEASE_SELECT', 'Р’С‹Р±РµСЂРёС‚Рµ С‡С‚Рѕ-С‚Рѕ РѕРґРЅРѕ');
 
-define('NO_PERSONAL_DISCOUNT', 'Нет');
+define('NO_PERSONAL_DISCOUNT', 'РќРµС‚');
 define('TEXT_PERCENT', '%');
-define('TEXT_GROUP', '<br>Скидка: ');
-define('TEXT_HELP_HEADING', 'Справка:');
-define('TEXT_HELP_TEXT', 'Если будут указаны и персональная скидка и скидка группы, учтите, что обе скидки будут считаться. Например, если выбрана группа Оптовые покупатели, данный покупатель получает скидку -20%, и указана персональная скидка, например, -10%, тогда в итоге покупатель получит общую скидку -30%.');
+define('TEXT_GROUP', '<br>РЎРєРёРґРєР°: ');
+define('TEXT_HELP_HEADING', 'РЎРїСЂР°РІРєР°:');
+define('TEXT_HELP_TEXT', 'Р•СЃР»Рё Р±СѓРґСѓС‚ СѓРєР°Р·Р°РЅС‹ Рё РїРµСЂСЃРѕРЅР°Р»СЊРЅР°СЏ СЃРєРёРґРєР° Рё СЃРєРёРґРєР° РіСЂСѓРїРїС‹, СѓС‡С‚РёС‚Рµ, С‡С‚Рѕ РѕР±Рµ СЃРєРёРґРєРё Р±СѓРґСѓС‚ СЃС‡РёС‚Р°С‚СЊСЃСЏ. РќР°РїСЂРёРјРµСЂ, РµСЃР»Рё РІС‹Р±СЂР°РЅР° РіСЂСѓРїРїР° РћРїС‚РѕРІС‹Рµ РїРѕРєСѓРїР°С‚РµР»Рё, РґР°РЅРЅС‹Р№ РїРѕРєСѓРїР°С‚РµР»СЊ РїРѕР»СѓС‡Р°РµС‚ СЃРєРёРґРєСѓ -20%, Рё СѓРєР°Р·Р°РЅР° РїРµСЂСЃРѕРЅР°Р»СЊРЅР°СЏ СЃРєРёРґРєР°, РЅР°РїСЂРёРјРµСЂ, -10%, С‚РѕРіРґР° РІ РёС‚РѕРіРµ РїРѕРєСѓРїР°С‚РµР»СЊ РїРѕР»СѓС‡РёС‚ РѕР±С‰СѓСЋ СЃРєРёРґРєСѓ -30%.');
 
-define('CATEGORY_EXTRA_FIELDS','Дополнительная информация');
+define('CATEGORY_EXTRA_FIELDS','Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ');
 
 ?>

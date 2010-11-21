@@ -14,10 +14,10 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Ïàðòí¸ðñêàÿ ïðîãðàììà');
-define('HEADING_TITLE', 'Ïàðòí¸ðñêàÿ ïðîãðàììà');
+define('NAVBAR_TITLE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ°Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°');
+define('HEADING_TITLE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ°Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°');
 
-define('TEXT_INFORMATION', 'Âû óñïåøíî âûøëè.');
-define('TEXT_INFORMATION_ERROR_1', 'Âû íå ñìîãëè âûéòè, îøèáêà.');
-define('TEXT_INFORMATION_ERROR_2', 'Âû íå áûëè â ñèñòåìå, ñëåäîâàòåëüíî, Âû è íå âûõîäèëè èç íå¸.');
+define('TEXT_INFORMATION', 'Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð²Ñ‹ÑˆÐ»Ð¸.');
+define('TEXT_INFORMATION_ERROR_1', 'Ð’Ñ‹ Ð½Ðµ ÑÐ¼Ð¾Ð³Ð»Ð¸ Ð²Ñ‹Ð¹Ñ‚Ð¸, Ð¾ÑˆÐ¸Ð±ÐºÐ°.');
+define('TEXT_INFORMATION_ERROR_2', 'Ð’Ñ‹ Ð½Ðµ Ð±Ñ‹Ð»Ð¸ Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ, ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾, Ð’Ñ‹ Ð¸ Ð½Ðµ Ð²Ñ‹Ñ…Ð¾Ð´Ð¸Ð»Ð¸ Ð¸Ð· Ð½ÐµÑ‘.');
 ?>

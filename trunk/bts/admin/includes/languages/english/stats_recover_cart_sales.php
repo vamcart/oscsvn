@@ -26,11 +26,11 @@
   Dec 2nd 2003
 */
 
-define('HEADING_TITLE', 'Ñòàòèñòèêà íåçàâåðø¸ííûõ çàêàçîâ');
-define('DAYS_FIELD_PREFIX', 'Ïîêàçàòü çàêàçû çà ïîñëåäíèå ');
-define('DAYS_FIELD_POSTFIX', ' äíåé ');
-define('DAYS_FIELD_BUTTON', 'Ñìîòðåòü');
-define('TABLE_HEADING_CUSTOMER', 'Ïîêóïàòåëü');
-define('RECORDS', 'Îáðàáîòàíî çàïèñåé:');
-define('SALES', 'Çàêàçîâ:');
+define('HEADING_TITLE', 'Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð½ÐµÐ·Ð°Ð²ÐµÑ€ÑˆÑ‘Ð½Ð½Ñ‹Ñ… Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
+define('DAYS_FIELD_PREFIX', 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ñ‹ Ð·Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ ');
+define('DAYS_FIELD_POSTFIX', ' Ð´Ð½ÐµÐ¹ ');
+define('DAYS_FIELD_BUTTON', 'Ð¡Ð¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ');
+define('TABLE_HEADING_CUSTOMER', 'ÐŸÐ¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŒ');
+define('RECORDS', 'ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð½Ð¾ Ð·Ð°Ð¿Ð¸ÑÐµÐ¹:');
+define('SALES', 'Ð—Ð°ÐºÐ°Ð·Ð¾Ð²:');
 ?>

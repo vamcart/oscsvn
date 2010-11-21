@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_ORDER_TOTAL_TOTAL_TITLE', 'Βρεγξ');
-  define('MODULE_ORDER_TOTAL_TOTAL_DESCRIPTION', 'Βρεγξ');
+  define('MODULE_ORDER_TOTAL_TOTAL_TITLE', 'Π’ΡΠµΠ³ΠΎ');
+  define('MODULE_ORDER_TOTAL_TOTAL_DESCRIPTION', 'Π’ΡΠµΠ³ΠΎ');
 ?>

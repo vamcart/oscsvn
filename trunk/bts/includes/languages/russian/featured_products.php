@@ -10,11 +10,11 @@
   Featured Products Listing Language File
 */
 
-define('NAVBAR_TITLE', 'Ðåêîìåíäóåìûå òîâàðû');
-define('HEADING_TITLE', 'Ðåêîìåíäóåìûå òîâàðû');
+define('NAVBAR_TITLE', 'Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
+define('HEADING_TITLE', 'Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
 
-define('TEXT_NO_FEATURED_PRODUCTS', 'Íà äàííûé ìîìåíò íåò ðåêîìåíäóåìûõ òîâàðîâ.');
-define('TEXT_DATE_ADDED', 'Äîáàâëåíî:');
-define('TEXT_MANUFACTURER', 'Ïðîèçâîäèòåëü:');
-define('TEXT_PRICE', 'Öåíà:');
+define('TEXT_NO_FEATURED_PRODUCTS', 'ÐÐ° Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð½ÐµÑ‚ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð².');
+define('TEXT_DATE_ADDED', 'Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾:');
+define('TEXT_MANUFACTURER', 'ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ:');
+define('TEXT_PRICE', 'Ð¦ÐµÐ½Ð°:');
 ?>

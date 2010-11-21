@@ -13,240 +13,240 @@
 */
 
 // Headings
-  define ('HEADING_TITLE_GROUPS', 'Группы');
-  define ('HEADING_TITLE_SPECIFICATIONS', 'Спецификации в группе: ');
-  define ('HEADING_TITLE_FILTERS', 'Фильтры в спецификации: ');
-  define ('HEADING_TITLE_VALUES', 'Значения в спецификации: ');
-  define ('HEADING_TITLE_SEARCH_GROUPS', 'Поиск группы:');
-  define ('HEADING_TITLE_SEARCH_SPECIFICATIONS', 'Поиск спецификации:');
-  define ('HEADING_TITLE_SEARCH_FILTERS', 'Поиск фильтра:');
-  define ('HEADING_TITLE_SEARCH_VALUES', 'Поиск значений спецификации:');
-  define ('HEADING_TITLE_GROUPS', 'Поиск: ');
-  define ('HEADING_TITLE_GOTO', 'Перейти: ');
+  define ('HEADING_TITLE_GROUPS', 'Р“СЂСѓРїРїС‹');
+  define ('HEADING_TITLE_SPECIFICATIONS', 'РЎРїРµС†РёС„РёРєР°С†РёРё РІ РіСЂСѓРїРїРµ: ');
+  define ('HEADING_TITLE_FILTERS', 'Р¤РёР»СЊС‚СЂС‹ РІ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('HEADING_TITLE_VALUES', 'Р—РЅР°С‡РµРЅРёСЏ РІ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('HEADING_TITLE_SEARCH_GROUPS', 'РџРѕРёСЃРє РіСЂСѓРїРїС‹:');
+  define ('HEADING_TITLE_SEARCH_SPECIFICATIONS', 'РџРѕРёСЃРє СЃРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('HEADING_TITLE_SEARCH_FILTERS', 'РџРѕРёСЃРє С„РёР»СЊС‚СЂР°:');
+  define ('HEADING_TITLE_SEARCH_VALUES', 'РџРѕРёСЃРє Р·РЅР°С‡РµРЅРёР№ СЃРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('HEADING_TITLE_GROUPS', 'РџРѕРёСЃРє: ');
+  define ('HEADING_TITLE_GOTO', 'РџРµСЂРµР№С‚Рё: ');
 
 // Specification Groups
   // Table Headings
   define ('TABLE_HEADING_ID', 'ID');
-  define ('TABLE_HEADING_GROUPS', 'Название группы');
-  define ('TABLE_HEADING_SPECS', 'Спецификации');
-  define ('TABLE_HEADING_FILTERS', 'Фильтры');
-  define ('TABLE_HEADING_ACTION', 'Действие');
-  define ('TABLE_HEADING_PRODUCTS', 'Показывать на странице карточки товара');
-  define ('TABLE_HEADING_FILTER', 'Показывать фильтр');
-  define ('TABLE_HEADING_IN_FILTER', 'Показывать в фильтре');
-  define ('TABLE_HEADING_COMPARISON', 'Показывать страницу сравнения');
-  define ('TABLE_HEADING_ON_COMPARISON', 'Показывать на странице сравнения');
-  define ('TABLE_HEADING_SORT_ORDER', 'Порядок сортировки');
-  define ('TABLE_HEADING_VALUES', 'Значение');
+  define ('TABLE_HEADING_GROUPS', 'РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹');
+  define ('TABLE_HEADING_SPECS', 'РЎРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TABLE_HEADING_FILTERS', 'Р¤РёР»СЊС‚СЂС‹');
+  define ('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+  define ('TABLE_HEADING_PRODUCTS', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР° СЃС‚СЂР°РЅРёС†Рµ РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°');
+  define ('TABLE_HEADING_FILTER', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂ');
+  define ('TABLE_HEADING_IN_FILTER', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІ С„РёР»СЊС‚СЂРµ');
+  define ('TABLE_HEADING_COMPARISON', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚СЂР°РЅРёС†Сѓ СЃСЂР°РІРЅРµРЅРёСЏ');
+  define ('TABLE_HEADING_ON_COMPARISON', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР° СЃС‚СЂР°РЅРёС†Рµ СЃСЂР°РІРЅРµРЅРёСЏ');
+  define ('TABLE_HEADING_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+  define ('TABLE_HEADING_VALUES', 'Р—РЅР°С‡РµРЅРёРµ');
   
-  define ('TEXT_GROUPS_TOTAL', 'Всего групп: ');
-  define ('TEXT_SPECS_TOTAL', 'Всего спецификаций: ');
-  define ('TEXT_FILTERS_TOTAL', 'Всего фильтров: ');
-  define ('TEXT_VALUES_TOTAL', 'Всего значений: ');
-  define ('TEXT_FILTERS_TOTAL_SPEC', 'Всего фильтров в данной спецификации: ');
-  define ('TEXT_VALUES_TOTAL_SPEC', 'Всего значений для данной спецификации: ');
-  define ('TEXT_SPECS_TOTAL_GROUP', 'Всего спецификаций в данной группе: ');
-  define ('TEXT_FILTERS_TOTAL_GROUP', 'Всего фильтров в данной группе: ');
-  define ('TEXT_VALUES_TOTAL_GROUP', 'Всего значений для данной группы: ');
+  define ('TEXT_GROUPS_TOTAL', 'Р’СЃРµРіРѕ РіСЂСѓРїРї: ');
+  define ('TEXT_SPECS_TOTAL', 'Р’СЃРµРіРѕ СЃРїРµС†РёС„РёРєР°С†РёР№: ');
+  define ('TEXT_FILTERS_TOTAL', 'Р’СЃРµРіРѕ С„РёР»СЊС‚СЂРѕРІ: ');
+  define ('TEXT_VALUES_TOTAL', 'Р’СЃРµРіРѕ Р·РЅР°С‡РµРЅРёР№: ');
+  define ('TEXT_FILTERS_TOTAL_SPEC', 'Р’СЃРµРіРѕ С„РёР»СЊС‚СЂРѕРІ РІ РґР°РЅРЅРѕР№ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_VALUES_TOTAL_SPEC', 'Р’СЃРµРіРѕ Р·РЅР°С‡РµРЅРёР№ РґР»СЏ РґР°РЅРЅРѕР№ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_SPECS_TOTAL_GROUP', 'Р’СЃРµРіРѕ СЃРїРµС†РёС„РёРєР°С†РёР№ РІ РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ: ');
+  define ('TEXT_FILTERS_TOTAL_GROUP', 'Р’СЃРµРіРѕ С„РёР»СЊС‚СЂРѕРІ РІ РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ: ');
+  define ('TEXT_VALUES_TOTAL_GROUP', 'Р’СЃРµРіРѕ Р·РЅР°С‡РµРЅРёР№ РґР»СЏ РґР°РЅРЅРѕР№ РіСЂСѓРїРїС‹: ');
 
-  define ('TEXT_INFO_HEADING_NEW_GROUP', 'Новая группа');
-  define ('TEXT_INFO_HEADING_EDIT_GROUP', 'Редактирование группы');
-  define ('TEXT_NEW_GROUP_INTRO', 'Пожалуйста, заполните форму для создания новой группы.');
-  define ('TEXT_GROUP_NAME', 'Название группы:');
-  define ('TEXT_SHOW_COMPARISON', 'Показывать страницу сравнения:');
-  define ('TEXT_SHOW_ON_PRODUCTS', 'Показывать на странице сравнения');
-  define ('TEXT_SHOW_FILTER', 'Показывать фильтр:');
-  define ('TEXT_SHOW', 'Да');
-  define ('TEXT_DONT_SHOW', 'Нет');
-  define ('TEXT_FILTER_CLASS', 'Класс фильтра');
-  define ('TEXT_FILTER_DISPLAY', 'Показывать фильтр как');
-  define ('TEXT_FILTER_SHOW_ALL', 'Фильтр показать все');
-  define ('TEXT_ENTER_FILTER', 'Укажите фильтр');
-  define ('TEXT_ENTER_VALUE', 'Укажите значение спецификации');
+  define ('TEXT_INFO_HEADING_NEW_GROUP', 'РќРѕРІР°СЏ РіСЂСѓРїРїР°');
+  define ('TEXT_INFO_HEADING_EDIT_GROUP', 'Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РіСЂСѓРїРїС‹');
+  define ('TEXT_NEW_GROUP_INTRO', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°РїРѕР»РЅРёС‚Рµ С„РѕСЂРјСѓ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРѕРІРѕР№ РіСЂСѓРїРїС‹.');
+  define ('TEXT_GROUP_NAME', 'РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹:');
+  define ('TEXT_SHOW_COMPARISON', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚СЂР°РЅРёС†Сѓ СЃСЂР°РІРЅРµРЅРёСЏ:');
+  define ('TEXT_SHOW_ON_PRODUCTS', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР° СЃС‚СЂР°РЅРёС†Рµ СЃСЂР°РІРЅРµРЅРёСЏ');
+  define ('TEXT_SHOW_FILTER', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂ:');
+  define ('TEXT_SHOW', 'Р”Р°');
+  define ('TEXT_DONT_SHOW', 'РќРµС‚');
+  define ('TEXT_FILTER_CLASS', 'РљР»Р°СЃСЃ С„РёР»СЊС‚СЂР°');
+  define ('TEXT_FILTER_DISPLAY', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂ РєР°Рє');
+  define ('TEXT_FILTER_SHOW_ALL', 'Р¤РёР»СЊС‚СЂ РїРѕРєР°Р·Р°С‚СЊ РІСЃРµ');
+  define ('TEXT_ENTER_FILTER', 'РЈРєР°Р¶РёС‚Рµ С„РёР»СЊС‚СЂ');
+  define ('TEXT_ENTER_VALUE', 'РЈРєР°Р¶РёС‚Рµ Р·РЅР°С‡РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
 
-  define ('TEXT_INFO_HEADING_COPY_GROUP', 'Копирование группы');
-  define ('TEXT_COPY_GROUP_INTRO', 'Сделать копию данной группы?<br>Копируется только группа, включая отмеченные опции.');
-  define ('TEXT_COPY_QUERY_LINKS', 'Так же копируется ссылок на категории: %s');
-  define ('TEXT_COPY_QUERY_SPECS', 'Так же копируется спецификаций: %s');
-  define ('TEXT_COPY_QUERY_PRODUCTS', 'Так же копируется спецификаций товаров: %s');
-  define ('TEXT_COPY_QUERY_FILTERS', 'Так же копируется фильтров: %s');
-  define ('TEXT_COPY_QUERY_VALUES', 'Так же копируется значений спецификации: %s');
-  define ('TEXT_INFO_CURRENT_GROUP', 'Текущая группа: ');
-  define ('TEXT_GROUPS', 'Выберите новую группу:');
-  define ('TEXT_NO_GROUP_SELECT', 'Группа не выбрана!');
+  define ('TEXT_INFO_HEADING_COPY_GROUP', 'РљРѕРїРёСЂРѕРІР°РЅРёРµ РіСЂСѓРїРїС‹');
+  define ('TEXT_COPY_GROUP_INTRO', 'РЎРґРµР»Р°С‚СЊ РєРѕРїРёСЋ РґР°РЅРЅРѕР№ РіСЂСѓРїРїС‹?<br>РљРѕРїРёСЂСѓРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РіСЂСѓРїРїР°, РІРєР»СЋС‡Р°СЏ РѕС‚РјРµС‡РµРЅРЅС‹Рµ РѕРїС†РёРё.');
+  define ('TEXT_COPY_QUERY_LINKS', 'РўР°Рє Р¶Рµ РєРѕРїРёСЂСѓРµС‚СЃСЏ СЃСЃС‹Р»РѕРє РЅР° РєР°С‚РµРіРѕСЂРёРё: %s');
+  define ('TEXT_COPY_QUERY_SPECS', 'РўР°Рє Р¶Рµ РєРѕРїРёСЂСѓРµС‚СЃСЏ СЃРїРµС†РёС„РёРєР°С†РёР№: %s');
+  define ('TEXT_COPY_QUERY_PRODUCTS', 'РўР°Рє Р¶Рµ РєРѕРїРёСЂСѓРµС‚СЃСЏ СЃРїРµС†РёС„РёРєР°С†РёР№ С‚РѕРІР°СЂРѕРІ: %s');
+  define ('TEXT_COPY_QUERY_FILTERS', 'РўР°Рє Р¶Рµ РєРѕРїРёСЂСѓРµС‚СЃСЏ С„РёР»СЊС‚СЂРѕРІ: %s');
+  define ('TEXT_COPY_QUERY_VALUES', 'РўР°Рє Р¶Рµ РєРѕРїРёСЂСѓРµС‚СЃСЏ Р·РЅР°С‡РµРЅРёР№ СЃРїРµС†РёС„РёРєР°С†РёРё: %s');
+  define ('TEXT_INFO_CURRENT_GROUP', 'РўРµРєСѓС‰Р°СЏ РіСЂСѓРїРїР°: ');
+  define ('TEXT_GROUPS', 'Р’С‹Р±РµСЂРёС‚Рµ РЅРѕРІСѓСЋ РіСЂСѓРїРїСѓ:');
+  define ('TEXT_NO_GROUP_SELECT', 'Р“СЂСѓРїРїР° РЅРµ РІС‹Р±СЂР°РЅР°!');
   
-  define ('TEXT_SPECIFICATIONS', 'Спецификации в данной группе: ');
-  define ('TEXT_FILTERS_GROUP', 'Фильтры в данной группе: ');
-  define ('TEXT_FILTERS_SPEC', 'Фильтры на данной спецификации: ');
-  define ('TEXT_ALL_CATEGORIES', 'Всего групп спецификаций: ');
-  define ('TEXT_ALL_SPECIFICATIONS', 'Всего спецификаций: ');
-  define ('TEXT_ALL_FILTERS', 'Всего фильтров: ');
-  define ('TEXT_LIST_CATEGORIES_LINKED', 'Привязана к категориям: ');
+  define ('TEXT_SPECIFICATIONS', 'РЎРїРµС†РёС„РёРєР°С†РёРё РІ РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ: ');
+  define ('TEXT_FILTERS_GROUP', 'Р¤РёР»СЊС‚СЂС‹ РІ РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ: ');
+  define ('TEXT_FILTERS_SPEC', 'Р¤РёР»СЊС‚СЂС‹ РЅР° РґР°РЅРЅРѕР№ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_ALL_CATEGORIES', 'Р’СЃРµРіРѕ РіСЂСѓРїРї СЃРїРµС†РёС„РёРєР°С†РёР№: ');
+  define ('TEXT_ALL_SPECIFICATIONS', 'Р’СЃРµРіРѕ СЃРїРµС†РёС„РёРєР°С†РёР№: ');
+  define ('TEXT_ALL_FILTERS', 'Р’СЃРµРіРѕ С„РёР»СЊС‚СЂРѕРІ: ');
+  define ('TEXT_LIST_CATEGORIES_LINKED', 'РџСЂРёРІСЏР·Р°РЅР° Рє РєР°С‚РµРіРѕСЂРёСЏРј: ');
 
-  define ('TEXT_INFO_HEADING_LINK_CATEGORY', 'Привязать данную группу спецификаций к категорию');
-  define ('TEXT_LINK_CATEGORIES_INTRO', 'Выберите категорию, к которой необходимо добавить данную спецификацию.');
-  define ('TEXT_LINK_TO', 'Категория: ');
-  define ('TEXT_LINK_TO_SUBCATS', 'Включая все подкатегории');
+  define ('TEXT_INFO_HEADING_LINK_CATEGORY', 'РџСЂРёРІСЏР·Р°С‚СЊ РґР°РЅРЅСѓСЋ РіСЂСѓРїРїСѓ СЃРїРµС†РёС„РёРєР°С†РёР№ Рє РєР°С‚РµРіРѕСЂРёСЋ');
+  define ('TEXT_LINK_CATEGORIES_INTRO', 'Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ, Рє РєРѕС‚РѕСЂРѕР№ РЅРµРѕР±С…РѕРґРёРјРѕ РґРѕР±Р°РІРёС‚СЊ РґР°РЅРЅСѓСЋ СЃРїРµС†РёС„РёРєР°С†РёСЋ.');
+  define ('TEXT_LINK_TO', 'РљР°С‚РµРіРѕСЂРёСЏ: ');
+  define ('TEXT_LINK_TO_SUBCATS', 'Р’РєР»СЋС‡Р°СЏ РІСЃРµ РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
 
-  define ('TEXT_INFO_HEADING_LINK_ALL_CATEGORIES', 'Привязать ко всем категориям');
-  define ('TEXT_LINK_ALL_INTRO', '<b>Внимание!</b> Привязать ко всем категориям всех уровней!');
+  define ('TEXT_INFO_HEADING_LINK_ALL_CATEGORIES', 'РџСЂРёРІСЏР·Р°С‚СЊ РєРѕ РІСЃРµРј РєР°С‚РµРіРѕСЂРёСЏРј');
+  define ('TEXT_LINK_ALL_INTRO', '<b>Р’РЅРёРјР°РЅРёРµ!</b> РџСЂРёРІСЏР·Р°С‚СЊ РєРѕ РІСЃРµРј РєР°С‚РµРіРѕСЂРёСЏРј РІСЃРµС… СѓСЂРѕРІРЅРµР№!');
   
-  define ('TEXT_INFO_HEADING_UNLINK_CATEGORY', 'Снять с категории');
-  define ('TEXT_UNLINK_INTRO', 'Выберите категорию, с которой снять привязку');
-  define ('TEXT_UNLINK_CATEGORY', 'Категория: ');
-  define ('TEXT_NO_CATEGORIES', 'Нет категорий!');
+  define ('TEXT_INFO_HEADING_UNLINK_CATEGORY', 'РЎРЅСЏС‚СЊ СЃ РєР°С‚РµРіРѕСЂРёРё');
+  define ('TEXT_UNLINK_INTRO', 'Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ, СЃ РєРѕС‚РѕСЂРѕР№ СЃРЅСЏС‚СЊ РїСЂРёРІСЏР·РєСѓ');
+  define ('TEXT_UNLINK_CATEGORY', 'РљР°С‚РµРіРѕСЂРёСЏ: ');
+  define ('TEXT_NO_CATEGORIES', 'РќРµС‚ РєР°С‚РµРіРѕСЂРёР№!');
   
-  define ('TEXT_INFO_HEADING_UNLINK_ALL_CATEGORIES', 'Снять со всех категорий');
-  define ('TEXT_UNLINK_ALL_INTRO', '<b>Внимание!</b> Снимается привязка со всех категориий всех уровней!!');
+  define ('TEXT_INFO_HEADING_UNLINK_ALL_CATEGORIES', 'РЎРЅСЏС‚СЊ СЃРѕ РІСЃРµС… РєР°С‚РµРіРѕСЂРёР№');
+  define ('TEXT_UNLINK_ALL_INTRO', '<b>Р’РЅРёРјР°РЅРёРµ!</b> РЎРЅРёРјР°РµС‚СЃСЏ РїСЂРёРІСЏР·РєР° СЃРѕ РІСЃРµС… РєР°С‚РµРіРѕСЂРёРёР№ РІСЃРµС… СѓСЂРѕРІРЅРµР№!!');
   
-  define ('TEXT_INFO_HEADING_DELETE_GROUP', 'Удалить группу');
-  define ('TEXT_DELETE_GROUP_INTRO', 'Вы действительно хотите удалить группу?');
-  define ('TEXT_DELETE_WARNING_SPECS', '<b>Внимание!</b> будет удалено спецификаций: %s!');
-  define ('TEXT_DELETE_WARNING_PRODUCTS', '<b>Внимание!</b> будет удалено спецификаций товаров: %s!');
-  define ('TEXT_DELETE_WARNING_FILTERS', '<b>Внимание!</b> будет удалено фильтров: %s!');
+  define ('TEXT_INFO_HEADING_DELETE_GROUP', 'РЈРґР°Р»РёС‚СЊ РіСЂСѓРїРїСѓ');
+  define ('TEXT_DELETE_GROUP_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РіСЂСѓРїРїСѓ?');
+  define ('TEXT_DELETE_WARNING_SPECS', '<b>Р’РЅРёРјР°РЅРёРµ!</b> Р±СѓРґРµС‚ СѓРґР°Р»РµРЅРѕ СЃРїРµС†РёС„РёРєР°С†РёР№: %s!');
+  define ('TEXT_DELETE_WARNING_PRODUCTS', '<b>Р’РЅРёРјР°РЅРёРµ!</b> Р±СѓРґРµС‚ СѓРґР°Р»РµРЅРѕ СЃРїРµС†РёС„РёРєР°С†РёР№ С‚РѕРІР°СЂРѕРІ: %s!');
+  define ('TEXT_DELETE_WARNING_FILTERS', '<b>Р’РЅРёРјР°РЅРёРµ!</b> Р±СѓРґРµС‚ СѓРґР°Р»РµРЅРѕ С„РёР»СЊС‚СЂРѕРІ: %s!');
 
-  define ('TEXT_INFO_HEADING_EMPTY_GROUP', 'Нет данных!');
-  define ('TEXT_NO_GROUPS', 'Создайте группу спецификаций.');
+  define ('TEXT_INFO_HEADING_EMPTY_GROUP', 'РќРµС‚ РґР°РЅРЅС‹С…!');
+  define ('TEXT_NO_GROUPS', 'РЎРѕР·РґР°Р№С‚Рµ РіСЂСѓРїРїСѓ СЃРїРµС†РёС„РёРєР°С†РёР№.');
   
-  define ('TEXT_INFO_HEADING_EMPTY_SPECIFICATIONS', 'Нет данных!');
-  define ('TEXT_NO_SPECIFICATIONS', 'Создайте спецификации в данной группе.');
+  define ('TEXT_INFO_HEADING_EMPTY_SPECIFICATIONS', 'РќРµС‚ РґР°РЅРЅС‹С…!');
+  define ('TEXT_NO_SPECIFICATIONS', 'РЎРѕР·РґР°Р№С‚Рµ СЃРїРµС†РёС„РёРєР°С†РёРё РІ РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ.');
   
-  define ('TEXT_INFO_HEADING_EDIT_GROUP', 'Редактировать группу');
-  define ('TEXT_INFO_HEADING_MOVE_GROUP', 'Переместить группу');
+  define ('TEXT_INFO_HEADING_EDIT_GROUP', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РіСЂСѓРїРїСѓ');
+  define ('TEXT_INFO_HEADING_MOVE_GROUP', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ РіСЂСѓРїРїСѓ');
 
 // Specifications
-  define ('TEXT_SPECIFICATION', 'Спецификация');
-  define ('TEXT_SPEC_NAME', 'Название спецификации: ');
-  define ('TEXT_SPEC_DESCRIPTION', 'Описание спецификации: ');
-  define ('TEXT_SPEC_PREFIX', 'Префикс спецификации: ');
-  define ('TEXT_SPEC_SUFFIX', 'Суффикс спецификации: ');
-  define ('TEXT_SPEC_SORT_ORDER', 'Порядок сортировки: ');
-  define ('TEXT_SPEC_COLUMN_NAME', 'Название колонки: ');
-  define ('TEXT_SPEC_JUSTIFICATION', 'Выравнивание: ');
-  define ('TEXT_SPECS_LEGEND', 'Легенда');
-  define ('TEXT_SPECS_LEGEND_FILTERS', 'Раздел фильтров');
-  define ('TEXT_SPECS_LEGEND_VALUES', 'Раздел значений спецификации');
+  define ('TEXT_SPECIFICATION', 'РЎРїРµС†РёС„РёРєР°С†РёСЏ');
+  define ('TEXT_SPEC_NAME', 'РќР°Р·РІР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_SPEC_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_SPEC_PREFIX', 'РџСЂРµС„РёРєСЃ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_SPEC_SUFFIX', 'РЎСѓС„С„РёРєСЃ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_SPEC_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё: ');
+  define ('TEXT_SPEC_COLUMN_NAME', 'РќР°Р·РІР°РЅРёРµ РєРѕР»РѕРЅРєРё: ');
+  define ('TEXT_SPEC_JUSTIFICATION', 'Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ: ');
+  define ('TEXT_SPECS_LEGEND', 'Р›РµРіРµРЅРґР°');
+  define ('TEXT_SPECS_LEGEND_FILTERS', 'Р Р°Р·РґРµР» С„РёР»СЊС‚СЂРѕРІ');
+  define ('TEXT_SPECS_LEGEND_VALUES', 'Р Р°Р·РґРµР» Р·РЅР°С‡РµРЅРёР№ СЃРїРµС†РёС„РёРєР°С†РёРё');
 
-  define ('TEXT_INFO_HEADING_NEW_SPECIFICATION', 'Новая спецификация в &quot;%s&quot;');
-  define ('TEXT_NEW_SPECIFICATION_INTRO', 'Пожалуйста, заполните форму для создания новой спецификации в данном разделе.');
-  define ('TEXT_SPECIFICATION_NAME', 'Название спецификации:');
-  define ('TEXT_SPECIFICATION_DESCRIPTION', 'Описание спецификации:');
-  define ('TEXT_SPECIFICATION_PREFIX', 'Префикс спецификации:');
-  define ('TEXT_SPECIFICATION_SUFFIX', 'Суффикс спецификации:');
-  define ('TEXT_EXISTING_FIELD', 'Использовать существующее в базе данных поле:');
-  define ('TEXT_EXISTING_FIELD_NOTE', '<b>Замечание:</b> Если задана следующая опция, будут использованы данные из указанного поля.');
+  define ('TEXT_INFO_HEADING_NEW_SPECIFICATION', 'РќРѕРІР°СЏ СЃРїРµС†РёС„РёРєР°С†РёСЏ РІ &quot;%s&quot;');
+  define ('TEXT_NEW_SPECIFICATION_INTRO', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°РїРѕР»РЅРёС‚Рµ С„РѕСЂРјСѓ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРѕРІРѕР№ СЃРїРµС†РёС„РёРєР°С†РёРё РІ РґР°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ.');
+  define ('TEXT_SPECIFICATION_NAME', 'РќР°Р·РІР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('TEXT_SPECIFICATION_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('TEXT_SPECIFICATION_PREFIX', 'РџСЂРµС„РёРєСЃ СЃРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('TEXT_SPECIFICATION_SUFFIX', 'РЎСѓС„С„РёРєСЃ СЃРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('TEXT_EXISTING_FIELD', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРµ РІ Р±Р°Р·Рµ РґР°РЅРЅС‹С… РїРѕР»Рµ:');
+  define ('TEXT_EXISTING_FIELD_NOTE', '<b>Р—Р°РјРµС‡Р°РЅРёРµ:</b> Р•СЃР»Рё Р·Р°РґР°РЅР° СЃР»РµРґСѓСЋС‰Р°СЏ РѕРїС†РёСЏ, Р±СѓРґСѓС‚ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РґР°РЅРЅС‹Рµ РёР· СѓРєР°Р·Р°РЅРЅРѕРіРѕ РїРѕР»СЏ.');
   
-  define ('TEXT_INFO_HEADING_EDIT_SPECIFICATION', 'Редактирование спецификации');
-  define ('TEXT_EDIT_INTRO', 'Внесите необходимые изменения');
-  define ('TEXT_EDIT_SORT_ORDER', 'Порядок сортировки');
-  define ('TEXT_COLUMN_JUSTIFY', 'Выравнивание');
+  define ('TEXT_INFO_HEADING_EDIT_SPECIFICATION', 'Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+  define ('TEXT_EDIT_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+  define ('TEXT_COLUMN_JUSTIFY', 'Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ');
 
   
-  define ('TEXT_INFO_HEADING_COPY_SPECIFICATION', 'Копирование спецификации');
-  define ('TEXT_INFO_COPY_SPECIFICATION_INTRO', 'Куда Вы хотите скопировать спецификацию %s?');
-  define ('TEXT_COPY_SPECIFICATION_TO', 'Копировать в группу:');
+  define ('TEXT_INFO_HEADING_COPY_SPECIFICATION', 'РљРѕРїРёСЂРѕРІР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_INFO_COPY_SPECIFICATION_INTRO', 'РљСѓРґР° Р’С‹ С…РѕС‚РёС‚Рµ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ СЃРїРµС†РёС„РёРєР°С†РёСЋ %s?');
+  define ('TEXT_COPY_SPECIFICATION_TO', 'РљРѕРїРёСЂРѕРІР°С‚СЊ РІ РіСЂСѓРїРїСѓ:');
   
-  define ('TEXT_INFO_HEADING_MOVE_SPECIFICATION', 'Перемещение спецификации');
-  define ('TEXT_MOVE_SPECIFICATION_INTRO', 'Куда Вы хотите переместить спецификацию %s?');
-  define ('TEXT_MOVE_SPECIFICATION_TO', 'Переместить в группу:');
-  define ('TEXT_MOVE', 'Переместить <b>%s</b> в:');
+  define ('TEXT_INFO_HEADING_MOVE_SPECIFICATION', 'РџРµСЂРµРјРµС‰РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_MOVE_SPECIFICATION_INTRO', 'РљСѓРґР° Р’С‹ С…РѕС‚РёС‚Рµ РїРµСЂРµРјРµСЃС‚РёС‚СЊ СЃРїРµС†РёС„РёРєР°С†РёСЋ %s?');
+  define ('TEXT_MOVE_SPECIFICATION_TO', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ РІ РіСЂСѓРїРїСѓ:');
+  define ('TEXT_MOVE', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ <b>%s</b> РІ:');
 
-  define ('TEXT_INFO_HEADING_DELETE_SPECIFICATION', 'Удаление спецификации');
-  define ('TEXT_DELETE_SPECIFICATION_INTRO', 'Вы действительно хотите удалить спецификацию?');
+  define ('TEXT_INFO_HEADING_DELETE_SPECIFICATION', 'РЈРґР°Р»РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_DELETE_SPECIFICATION_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЃРїРµС†РёС„РёРєР°С†РёСЋ?');
   
 // Filters
-  define ('TEXT_INFO_HEADING_FILTER', 'Класс фильтра: ');
-  define ('TEXT_FILTER_VALUE', 'Фильтр: ');
-  define ('TEXT_FILTER_SORT_ORDER', 'Порядок сортировки');
-  define ('TEXT_INFO_HEADING_EMPTY_FILTERS', 'Пустой фильтр');
-  define ('TEXT_NO_FILTERS', 'Вы можете создать один или несколько фильтров в данной спецификации.');
+  define ('TEXT_INFO_HEADING_FILTER', 'РљР»Р°СЃСЃ С„РёР»СЊС‚СЂР°: ');
+  define ('TEXT_FILTER_VALUE', 'Р¤РёР»СЊС‚СЂ: ');
+  define ('TEXT_FILTER_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+  define ('TEXT_INFO_HEADING_EMPTY_FILTERS', 'РџСѓСЃС‚РѕР№ С„РёР»СЊС‚СЂ');
+  define ('TEXT_NO_FILTERS', 'Р’С‹ РјРѕР¶РµС‚Рµ СЃРѕР·РґР°С‚СЊ РѕРґРёРЅ РёР»Рё РЅРµСЃРєРѕР»СЊРєРѕ С„РёР»СЊС‚СЂРѕРІ РІ РґР°РЅРЅРѕР№ СЃРїРµС†РёС„РёРєР°С†РёРё.');
   
-  define ('TEXT_INFO_HEADING_NEW_FILTER', 'Новый фильтр');
-  define ('TEXT_NEW_FILTER_INTRO', 'Пожалуйста, заполните форму для создания нового фильтра.');
-  define ('TEXT_NEW_FILTER', 'Фильтр');
+  define ('TEXT_INFO_HEADING_NEW_FILTER', 'РќРѕРІС‹Р№ С„РёР»СЊС‚СЂ');
+  define ('TEXT_NEW_FILTER_INTRO', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°РїРѕР»РЅРёС‚Рµ С„РѕСЂРјСѓ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРѕРІРѕРіРѕ С„РёР»СЊС‚СЂР°.');
+  define ('TEXT_NEW_FILTER', 'Р¤РёР»СЊС‚СЂ');
 
-  define ('TEXT_INFO_HEADING_EDIT_FILTER', 'Редактирование фильтра');
-  define ('TEXT_EDIT_FILTER_INTRO', 'Внесите необходимые изменения');
-  define ('TEXT_EDIT_FILTER', 'Фильтр');
+  define ('TEXT_INFO_HEADING_EDIT_FILTER', 'Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ С„РёР»СЊС‚СЂР°');
+  define ('TEXT_EDIT_FILTER_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+  define ('TEXT_EDIT_FILTER', 'Р¤РёР»СЊС‚СЂ');
   
-  define ('TEXT_INFO_HEADING_COPY_FILTER', 'Копирование фильтра');
-  define ('TEXT_COPY_FILTER_INTRO', 'В какую спецификацию Вы хотите скопировать данный фильтр?');
-  define ('TEXT_COPY_FILTER_TO', 'Копировать фильтр <b>%s</b> в: ');
+  define ('TEXT_INFO_HEADING_COPY_FILTER', 'РљРѕРїРёСЂРѕРІР°РЅРёРµ С„РёР»СЊС‚СЂР°');
+  define ('TEXT_COPY_FILTER_INTRO', 'Р’ РєР°РєСѓСЋ СЃРїРµС†РёС„РёРєР°С†РёСЋ Р’С‹ С…РѕС‚РёС‚Рµ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ РґР°РЅРЅС‹Р№ С„РёР»СЊС‚СЂ?');
+  define ('TEXT_COPY_FILTER_TO', 'РљРѕРїРёСЂРѕРІР°С‚СЊ С„РёР»СЊС‚СЂ <b>%s</b> РІ: ');
 
-  define ('TEXT_INFO_HEADING_MOVE_FILTER', 'Перемещение фильтра');
-  define ('TEXT_MOVE_FILTER_INTRO', 'Куда Вы хотите переместить данный фильтр?');
-  define ('TEXT_MOVE_FILTER_TO', 'Переместить фильтр <b>%s</b> в: ');
+  define ('TEXT_INFO_HEADING_MOVE_FILTER', 'РџРµСЂРµРјРµС‰РµРЅРёРµ С„РёР»СЊС‚СЂР°');
+  define ('TEXT_MOVE_FILTER_INTRO', 'РљСѓРґР° Р’С‹ С…РѕС‚РёС‚Рµ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РґР°РЅРЅС‹Р№ С„РёР»СЊС‚СЂ?');
+  define ('TEXT_MOVE_FILTER_TO', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ С„РёР»СЊС‚СЂ <b>%s</b> РІ: ');
 
-  define ('TEXT_INFO_HEADING_DELETE_FILTER', 'Удаление фильтра');
-  define ('TEXT_DELETE_FILTER_INTRO', 'Вы действительно хотите удалить данный фильтр?');
+  define ('TEXT_INFO_HEADING_DELETE_FILTER', 'РЈРґР°Р»РµРЅРёРµ С„РёР»СЊС‚СЂР°');
+  define ('TEXT_DELETE_FILTER_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ С„РёР»СЊС‚СЂ?');
   
 // Specification Values
-  define ('TEXT_INFO_HEADING_VALUE', 'Значение спецификации');
-  define ('TEXT_SPECIFICATION_VALUE', 'Значение спецификации: ');
-  define ('TEXT_INFO_HEADING_EMPTY_VALUES', 'Пустое значение спецификации');
-  define ('TEXT_NO_VALUES', 'Вы можете создать одно или несколько значений в данной спецификации.');
+  define ('TEXT_INFO_HEADING_VALUE', 'Р—РЅР°С‡РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_SPECIFICATION_VALUE', 'Р—РЅР°С‡РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_INFO_HEADING_EMPTY_VALUES', 'РџСѓСЃС‚РѕРµ Р·РЅР°С‡РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_NO_VALUES', 'Р’С‹ РјРѕР¶РµС‚Рµ СЃРѕР·РґР°С‚СЊ РѕРґРЅРѕ РёР»Рё РЅРµСЃРєРѕР»СЊРєРѕ Р·РЅР°С‡РµРЅРёР№ РІ РґР°РЅРЅРѕР№ СЃРїРµС†РёС„РёРєР°С†РёРё.');
 
-  define ('TEXT_INFO_HEADING_NEW_VALUE', 'Новое значение спецификации');
-  define ('TEXT_NEW_VALUE_INTRO', 'Добавить новое значение для %s, используя класс %s');
-  define ('TEXT_NEW_VALUE', 'Значение:');
+  define ('TEXT_INFO_HEADING_NEW_VALUE', 'РќРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_NEW_VALUE_INTRO', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ РґР»СЏ %s, РёСЃРїРѕР»СЊР·СѓСЏ РєР»Р°СЃСЃ %s');
+  define ('TEXT_NEW_VALUE', 'Р—РЅР°С‡РµРЅРёРµ:');
 
-  define ('TEXT_EDIT_VALUE_INTRO', 'Изменить значение для %s, используя класс %s');
-  define ('TEXT_EDIT_VALUE', 'Значение:');
-  define ('TEXT_VALUE_SORT_ORDER', 'Порядок сортировки значения:');
+  define ('TEXT_EDIT_VALUE_INTRO', 'РР·РјРµРЅРёС‚СЊ Р·РЅР°С‡РµРЅРёРµ РґР»СЏ %s, РёСЃРїРѕР»СЊР·СѓСЏ РєР»Р°СЃСЃ %s');
+  define ('TEXT_EDIT_VALUE', 'Р—РЅР°С‡РµРЅРёРµ:');
+  define ('TEXT_VALUE_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё Р·РЅР°С‡РµРЅРёСЏ:');
 
-  define ('TEXT_INFO_HEADING_DELETE_VALUE', 'Удаление значения спецификации');
-  define ('TEXT_DELETE_VALUE_INTRO', 'Вы действительно хотите удалить данное значение?');
+  define ('TEXT_INFO_HEADING_DELETE_VALUE', 'РЈРґР°Р»РµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ СЃРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_DELETE_VALUE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ?');
   
 
-  define ('TEXT_INFO_HEADING_EDIT_VALUE', 'Значение спецификации: ');
-  define ('TEXT_VALUE', 'Значение: ');
-  define ('TEXT_VALUE_SORT_ORDER', 'Порядок сортировки значения: ');
+  define ('TEXT_INFO_HEADING_EDIT_VALUE', 'Р—РЅР°С‡РµРЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё: ');
+  define ('TEXT_VALUE', 'Р—РЅР°С‡РµРЅРёРµ: ');
+  define ('TEXT_VALUE_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё Р·РЅР°С‡РµРЅРёСЏ: ');
 
-  define ('TEXT_INFO_HEADING_COPY_VALUE', 'Копирование значения');
-  define ('TEXT_COPY_VALUE_INTRO', 'В какую спецификацию Вы хотите скопировать данное значение?');
-  define ('TEXT_COPY_VALUE_TO', 'Копировать значение <b>%s</b> в:');
+  define ('TEXT_INFO_HEADING_COPY_VALUE', 'РљРѕРїРёСЂРѕРІР°РЅРёРµ Р·РЅР°С‡РµРЅРёСЏ');
+  define ('TEXT_COPY_VALUE_INTRO', 'Р’ РєР°РєСѓСЋ СЃРїРµС†РёС„РёРєР°С†РёСЋ Р’С‹ С…РѕС‚РёС‚Рµ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ РґР°РЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ?');
+  define ('TEXT_COPY_VALUE_TO', 'РљРѕРїРёСЂРѕРІР°С‚СЊ Р·РЅР°С‡РµРЅРёРµ <b>%s</b> РІ:');
 
-  define ('TEXT_INFO_HEADING_MOVE_VALUE', 'Перемещение значения');
-  define ('TEXT_MOVE_VALUE_INTRO', 'В какую спецификацию Вы хотите переместить данное значение?');
-  define ('TEXT_MOVE_VALUE_TO', 'Переместить значение <b>%s</b> в:');
+  define ('TEXT_INFO_HEADING_MOVE_VALUE', 'РџРµСЂРµРјРµС‰РµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ');
+  define ('TEXT_MOVE_VALUE_INTRO', 'Р’ РєР°РєСѓСЋ СЃРїРµС†РёС„РёРєР°С†РёСЋ Р’С‹ С…РѕС‚РёС‚Рµ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РґР°РЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ?');
+  define ('TEXT_MOVE_VALUE_TO', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ <b>%s</b> РІ:');
 
 // General
-  define ('IMAGE_LINK', 'Прикрепить к категории');
-  define ('IMAGE_LINK_ALL', 'Прикрепить ко всем категориям');
-  define ('IMAGE_UNLINK', 'Снять с категории');
-  define ('IMAGE_NEW_FILTER', 'Добавить новый фильтр');
-  define ('IMAGE_NEW_VALUE', 'Добавить новое значение');
-  define ('IMAGE_IMPORT_MANUFACTURERS', 'Импорт всех производителей');
+  define ('IMAGE_LINK', 'РџСЂРёРєСЂРµРїРёС‚СЊ Рє РєР°С‚РµРіРѕСЂРёРё');
+  define ('IMAGE_LINK_ALL', 'РџСЂРёРєСЂРµРїРёС‚СЊ РєРѕ РІСЃРµРј РєР°С‚РµРіРѕСЂРёСЏРј');
+  define ('IMAGE_UNLINK', 'РЎРЅСЏС‚СЊ СЃ РєР°С‚РµРіРѕСЂРёРё');
+  define ('IMAGE_NEW_FILTER', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Р№ С„РёР»СЊС‚СЂ');
+  define ('IMAGE_NEW_VALUE', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ');
+  define ('IMAGE_IMPORT_MANUFACTURERS', 'РРјРїРѕСЂС‚ РІСЃРµС… РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№');
   define ('ICON_BLANK', '');
   
-  define ('TEXT_NONE', 'Нет');
-  define ('TEXT_COMBI', 'Комбинация');
-  define ('TEXT_BUY_NOW', 'Купить');
-  define ('TEXT_PRODUCTS_MODEL', 'Код товара');
-  define ('TEXT_PRODUCTS_IMAGE', 'Картинка товара');
-  define ('TEXT_PRODUCTS_PRICE', 'Цена');
-  define ('TEXT_PRODUCTS_WEIGHT', 'Вес');
-  define ('TEXT_PRODUCTS_MANUFACTURER', 'Производитель');
-  define ('TEXT_PRODUCTS_NAME', 'Название товара');
-  define ('TEXT_LEFT', 'Слева');
-  define ('TEXT_CENTER', 'Центр');
-  define ('TEXT_RIGHT', 'Справа');
-  define ('TEXT_NO_FILTER', 'Нет фильтра');
-  define ('TEXT_EXACT', 'Точный');
-  define ('TEXT_MULTIPLE', 'Составной');
-  define ('TEXT_RANGE', 'Диапазон');
-  define ('TEXT_REVERSE', 'Обратный');
-  define ('TEXT_START', 'Стартовый');
-  define ('TEXT_PARTIAL', 'Частичный');
-  define ('TEXT_LIKE', 'Похожий');
-  define ('TEXT_PULLDOWN', 'Dropdown меню');
-  define ('TEXT_RADIO', 'Радио кнопки');
-  define ('TEXT_LINKS', 'Список ссылок');
-  define ('TEXT_TEXT_BOX', 'Текст');
-  define ('TEXT_MULTI', 'Мульти dropdown');
-  define ('TEXT_CHECK_BOXES', 'Чек боксы');
-  define ('TEXT_IMAGES', 'Картинки');
-  define ('TEXT_MULTI_IMAGE', 'Мульти картинки');
-  define ('TEXT_FINAL_PRICE', 'Сумма');
+  define ('TEXT_NONE', 'РќРµС‚');
+  define ('TEXT_COMBI', 'РљРѕРјР±РёРЅР°С†РёСЏ');
+  define ('TEXT_BUY_NOW', 'РљСѓРїРёС‚СЊ');
+  define ('TEXT_PRODUCTS_MODEL', 'РљРѕРґ С‚РѕРІР°СЂР°');
+  define ('TEXT_PRODUCTS_IMAGE', 'РљР°СЂС‚РёРЅРєР° С‚РѕРІР°СЂР°');
+  define ('TEXT_PRODUCTS_PRICE', 'Р¦РµРЅР°');
+  define ('TEXT_PRODUCTS_WEIGHT', 'Р’РµСЃ');
+  define ('TEXT_PRODUCTS_MANUFACTURER', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ');
+  define ('TEXT_PRODUCTS_NAME', 'РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+  define ('TEXT_LEFT', 'РЎР»РµРІР°');
+  define ('TEXT_CENTER', 'Р¦РµРЅС‚СЂ');
+  define ('TEXT_RIGHT', 'РЎРїСЂР°РІР°');
+  define ('TEXT_NO_FILTER', 'РќРµС‚ С„РёР»СЊС‚СЂР°');
+  define ('TEXT_EXACT', 'РўРѕС‡РЅС‹Р№');
+  define ('TEXT_MULTIPLE', 'РЎРѕСЃС‚Р°РІРЅРѕР№');
+  define ('TEXT_RANGE', 'Р”РёР°РїР°Р·РѕРЅ');
+  define ('TEXT_REVERSE', 'РћР±СЂР°С‚РЅС‹Р№');
+  define ('TEXT_START', 'РЎС‚Р°СЂС‚РѕРІС‹Р№');
+  define ('TEXT_PARTIAL', 'Р§Р°СЃС‚РёС‡РЅС‹Р№');
+  define ('TEXT_LIKE', 'РџРѕС…РѕР¶РёР№');
+  define ('TEXT_PULLDOWN', 'Dropdown РјРµРЅСЋ');
+  define ('TEXT_RADIO', 'Р Р°РґРёРѕ РєРЅРѕРїРєРё');
+  define ('TEXT_LINKS', 'РЎРїРёСЃРѕРє СЃСЃС‹Р»РѕРє');
+  define ('TEXT_TEXT_BOX', 'РўРµРєСЃС‚');
+  define ('TEXT_MULTI', 'РњСѓР»СЊС‚Рё dropdown');
+  define ('TEXT_CHECK_BOXES', 'Р§РµРє Р±РѕРєСЃС‹');
+  define ('TEXT_IMAGES', 'РљР°СЂС‚РёРЅРєРё');
+  define ('TEXT_MULTI_IMAGE', 'РњСѓР»СЊС‚Рё РєР°СЂС‚РёРЅРєРё');
+  define ('TEXT_FINAL_PRICE', 'РЎСѓРјРјР°');
 
 ?>

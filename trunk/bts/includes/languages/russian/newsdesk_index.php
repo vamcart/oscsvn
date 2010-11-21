@@ -2,29 +2,29 @@
 
 if ( ($category_depth == 'products') ) {
 
-define('HEADING_TITLE', 'Новости');
-define('NAVBAR_TITLE', 'Новости');
+define('HEADING_TITLE', 'РќРѕРІРѕСЃС‚Рё');
+define('NAVBAR_TITLE', 'РќРѕРІРѕСЃС‚Рё');
 
-define('TABLE_HEADING_IMAGE', 'Картинка');
-define('TABLE_HEADING_ARTICLE_NAME', 'Заголовок');
-define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'Кратко');
-define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'Содержание');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_DATE_AVAILABLE', 'Дата');
-define('TABLE_HEADING_ARTRICLE_URL', 'URL источника');
+define('TABLE_HEADING_IMAGE', 'РљР°СЂС‚РёРЅРєР°');
+define('TABLE_HEADING_ARTICLE_NAME', 'Р—Р°РіРѕР»РѕРІРѕРє');
+define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'РљСЂР°С‚РєРѕ');
+define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_DATE_AVAILABLE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_ARTRICLE_URL', 'URL РёСЃС‚РѕС‡РЅРёРєР°');
 
-define('TEXT_NO_ARTICLES', 'В данном разделе нет новостей.');
+define('TEXT_NO_ARTICLES', 'Р’ РґР°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ РЅРµС‚ РЅРѕРІРѕСЃС‚РµР№.');
 
-define('TEXT_NUMBER_OF_ARTICLES', 'Количество новостей: ');
-define('TEXT_SHOW', '<b>Показать:</b>');
+define('TEXT_NUMBER_OF_ARTICLES', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРІРѕСЃС‚РµР№: ');
+define('TEXT_SHOW', '<b>РџРѕРєР°Р·Р°С‚СЊ:</b>');
 
 } elseif ($category_depth == 'top') {
 
-define('HEADING_TITLE', 'Что нового?');
+define('HEADING_TITLE', 'Р§С‚Рѕ РЅРѕРІРѕРіРѕ?');
 
 } elseif ($category_depth == 'nested') {
 
-define('HEADING_TITLE', 'Разделы');
+define('HEADING_TITLE', 'Р Р°Р·РґРµР»С‹');
 
 }
 

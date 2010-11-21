@@ -10,20 +10,20 @@
   Released under the GNU General Public License
 */
 
-  define('TEXT_NEW_ATTRIBUTE_PREFIX', 'Ïðåôèêñ'); 
-  define('TEXT_NEW_ATTRIBUTE_WEIGHT', 'Âåñ'); 
-  define('TEXT_NEW_ATTRIBUTE_SORT_ORDER', 'Ïîðÿäîê ñîðòèðîâêè'); 
-  define('TEXT_NEW_ATTRIBUTE_PRICE', 'Ñòîèìîñòü'); 
-  define('TEXT_NEW_ATTRIBUTE_FILE', 'Ôàéë'); 
-  define('TEXT_NEW_ATTRIBUTE_MAX_COUNT', 'Ññûëêà àêòèâíà (äíåé)'); 
-  define('TEXT_NEW_ATTRIBUTE_MAX_DOWNLOAD', 'Ìàêñèìóì çàãðóçîê'); 
-  define('TEXT_NEW_ATTRIBUTE_NO_VALUES', 'Íåò çíà÷åíèé ó äàííîãî àòðèáóòà.'); 
-  define('TEXT_NEW_ATTRIBUTE_ERROR', 'Îøèáêà....'); 
-  define('TEXT_NEW_ATTRIBUTE_ADD', 'Óñòàíîâêà àòðèáóòîâ'); 
-  define('TEXT_NEW_ATTRIBUTE_UPDATED', 'Àòðèáóòû òîâàðà îáíîâëåíû.'); 
-  define('TEXT_NEW_ATTRIBUTE_SELECT', 'Âûáåðèòå òîâàð:'); 
-  define('TEXT_NEW_ATTRIBUTE_NO_PRODUCTS', 'Íà äàííûé ìîìåíò â ìàãàçèíå íåò òîâàðîâ.'); 
-  define('TEXT_NEW_ATTRIBUTE_UPLOAD', 'Îáçîð...'); 
+  define('TEXT_NEW_ATTRIBUTE_PREFIX', 'ÐŸÑ€ÐµÑ„Ð¸ÐºÑ'); 
+  define('TEXT_NEW_ATTRIBUTE_WEIGHT', 'Ð’ÐµÑ'); 
+  define('TEXT_NEW_ATTRIBUTE_SORT_ORDER', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸'); 
+  define('TEXT_NEW_ATTRIBUTE_PRICE', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ'); 
+  define('TEXT_NEW_ATTRIBUTE_FILE', 'Ð¤Ð°Ð¹Ð»'); 
+  define('TEXT_NEW_ATTRIBUTE_MAX_COUNT', 'Ð¡ÑÑ‹Ð»ÐºÐ° Ð°ÐºÑ‚Ð¸Ð²Ð½Ð° (Ð´Ð½ÐµÐ¹)'); 
+  define('TEXT_NEW_ATTRIBUTE_MAX_DOWNLOAD', 'ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº'); 
+  define('TEXT_NEW_ATTRIBUTE_NO_VALUES', 'ÐÐµÑ‚ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹ Ñƒ Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°.'); 
+  define('TEXT_NEW_ATTRIBUTE_ERROR', 'ÐžÑˆÐ¸Ð±ÐºÐ°....'); 
+  define('TEXT_NEW_ATTRIBUTE_ADD', 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð¾Ð²'); 
+  define('TEXT_NEW_ATTRIBUTE_UPDATED', 'ÐÑ‚Ñ€Ð¸Ð±ÑƒÑ‚Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹.'); 
+  define('TEXT_NEW_ATTRIBUTE_SELECT', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‚Ð¾Ð²Ð°Ñ€:'); 
+  define('TEXT_NEW_ATTRIBUTE_NO_PRODUCTS', 'ÐÐ° Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ðµ Ð½ÐµÑ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð².'); 
+  define('TEXT_NEW_ATTRIBUTE_UPLOAD', 'ÐžÐ±Ð·Ð¾Ñ€...'); 
   
 
 ?>

@@ -9,7 +9,7 @@
   Released under the GNU General Public License
 */
 
-  define('TEXT_BUY', 'Êóïèòü \'');
-  define('TEXT_NOW', '\' ñåé÷àñ');
+  define('TEXT_BUY', 'ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ \'');
+  define('TEXT_NOW', '\' ÑÐµÐ¹Ñ‡Ð°Ñ');
 
 ?>

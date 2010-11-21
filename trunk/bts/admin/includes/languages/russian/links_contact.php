@@ -10,15 +10,15 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Îáðàòíàÿ ñâÿçü');
+define('HEADING_TITLE', 'ÐžÐ±Ñ€Ð°Ñ‚Ð½Ð°Ñ ÑÐ²ÑÐ·ÑŒ');
 
-define('TEXT_LINK_PARTNER', 'Ïîëó÷àòåëü:');
-define('TEXT_SUBJECT', 'Òåìà:');
-define('TEXT_FROM', 'Îò:');
-define('TEXT_MESSAGE', 'Ñîîáùåíèå:');
-define('TEXT_SELECT_LINK_PARTNER', 'Âûáåðèòå ïîëó÷àòåëÿ');
-define('TEXT_ALL_LINK_PARTNERS', 'Âñåì ñðàçó');
+define('TEXT_LINK_PARTNER', 'ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»ÑŒ:');
+define('TEXT_SUBJECT', 'Ð¢ÐµÐ¼Ð°:');
+define('TEXT_FROM', 'ÐžÑ‚:');
+define('TEXT_MESSAGE', 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ:');
+define('TEXT_SELECT_LINK_PARTNER', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ');
+define('TEXT_ALL_LINK_PARTNERS', 'Ð’ÑÐµÐ¼ ÑÑ€Ð°Ð·Ñƒ');
 
-define('NOTICE_EMAIL_SENT_TO', 'Óâåäîìëåíèå: Email óñïåøíî îòïðàâëåí: %s');
-define('ERROR_NO_LINK_PARTNER_SELECTED', 'Îøèáêà: Âû íå âûáðàëè ïîëó÷àòåëÿ.');
+define('NOTICE_EMAIL_SENT_TO', 'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ: Email ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½: %s');
+define('ERROR_NO_LINK_PARTNER_SELECTED', 'ÐžÑˆÐ¸Ð±ÐºÐ°: Ð’Ñ‹ Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð»Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ.');
 ?>

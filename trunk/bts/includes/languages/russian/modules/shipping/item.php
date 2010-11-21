@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_ITEM_TEXT_TITLE', 'Íà åäèíèöó');
-define('MODULE_SHIPPING_ITEM_TEXT_DESCRIPTION', 'Íà åäèíèöó');
-define('MODULE_SHIPPING_ITEM_TEXT_WAY', 'Ëó÷øèé ìàðøðóò');
+define('MODULE_SHIPPING_ITEM_TEXT_TITLE', 'ÐÐ° ÐµÐ´Ð¸Ð½Ð¸Ñ†Ñƒ');
+define('MODULE_SHIPPING_ITEM_TEXT_DESCRIPTION', 'ÐÐ° ÐµÐ´Ð¸Ð½Ð¸Ñ†Ñƒ');
+define('MODULE_SHIPPING_ITEM_TEXT_WAY', 'Ð›ÑƒÑ‡ÑˆÐ¸Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚');
 ?>

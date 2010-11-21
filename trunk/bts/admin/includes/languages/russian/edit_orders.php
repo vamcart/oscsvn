@@ -10,123 +10,123 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Редактирование заказа номер %s от %s');
-define('ADDING_TITLE', 'Добавляем товар к заказу номер %s');
+define('HEADING_TITLE', 'Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РєР°Р·Р° РЅРѕРјРµСЂ %s РѕС‚ %s');
+define('ADDING_TITLE', 'Р”РѕР±Р°РІР»СЏРµРј С‚РѕРІР°СЂ Рє Р·Р°РєР°Р·Сѓ РЅРѕРјРµСЂ %s');
 
-define('ENTRY_UPDATE_TO_CC', '(Обновить способ оплаты на ' . ORDER_EDITOR_CREDIT_CARD . ' для просмотра полей с информацией о кредитной карточке.)');
-define('TABLE_HEADING_COMMENTS', 'Комментарии');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_NEW_STATUS', 'Новый статус');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_DELETE', 'Удалить?');
-define('TABLE_HEADING_QUANTITY', 'Количество');
-define('TABLE_HEADING_PRODUCTS_MODEL', 'Код');
-define('TABLE_HEADING_PRODUCTS', 'Товары');
-define('TABLE_HEADING_TAX', 'Налог');
-define('TABLE_HEADING_TOTAL', 'Всего');
-define('TABLE_HEADING_BASE_PRICE', 'Цена<br>(за единицу)');
-define('TABLE_HEADING_UNIT_PRICE', 'Цена<br>(без налога)');
-define('TABLE_HEADING_UNIT_PRICE_TAXED', 'Цена<br>(с налогом)');
-define('TABLE_HEADING_TOTAL_PRICE', 'Сумма<br>(без налога)');
-define('TABLE_HEADING_TOTAL_PRICE_TAXED', 'Сумма<br>(с налогом)');
-define('TABLE_HEADING_OT_TOTALS', 'Сумма заказа:');
-define('TABLE_HEADING_OT_VALUES', 'Значение:');
-define('TABLE_HEADING_SHIPPING_QUOTES', 'Доставка:');
-define('TABLE_HEADING_NO_SHIPPING_QUOTES', 'Нет информации!');
+define('ENTRY_UPDATE_TO_CC', '(РћР±РЅРѕРІРёС‚СЊ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ РЅР° ' . ORDER_EDITOR_CREDIT_CARD . ' РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° РїРѕР»РµР№ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРµ.)');
+define('TABLE_HEADING_COMMENTS', 'РљРѕРјРјРµРЅС‚Р°СЂРёРё');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_NEW_STATUS', 'РќРѕРІС‹Р№ СЃС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_DELETE', 'РЈРґР°Р»РёС‚СЊ?');
+define('TABLE_HEADING_QUANTITY', 'РљРѕР»РёС‡РµСЃС‚РІРѕ');
+define('TABLE_HEADING_PRODUCTS_MODEL', 'РљРѕРґ');
+define('TABLE_HEADING_PRODUCTS', 'РўРѕРІР°СЂС‹');
+define('TABLE_HEADING_TAX', 'РќР°Р»РѕРі');
+define('TABLE_HEADING_TOTAL', 'Р’СЃРµРіРѕ');
+define('TABLE_HEADING_BASE_PRICE', 'Р¦РµРЅР°<br>(Р·Р° РµРґРёРЅРёС†Сѓ)');
+define('TABLE_HEADING_UNIT_PRICE', 'Р¦РµРЅР°<br>(Р±РµР· РЅР°Р»РѕРіР°)');
+define('TABLE_HEADING_UNIT_PRICE_TAXED', 'Р¦РµРЅР°<br>(СЃ РЅР°Р»РѕРіРѕРј)');
+define('TABLE_HEADING_TOTAL_PRICE', 'РЎСѓРјРјР°<br>(Р±РµР· РЅР°Р»РѕРіР°)');
+define('TABLE_HEADING_TOTAL_PRICE_TAXED', 'РЎСѓРјРјР°<br>(СЃ РЅР°Р»РѕРіРѕРј)');
+define('TABLE_HEADING_OT_TOTALS', 'РЎСѓРјРјР° Р·Р°РєР°Р·Р°:');
+define('TABLE_HEADING_OT_VALUES', 'Р—РЅР°С‡РµРЅРёРµ:');
+define('TABLE_HEADING_SHIPPING_QUOTES', 'Р”РѕСЃС‚Р°РІРєР°:');
+define('TABLE_HEADING_NO_SHIPPING_QUOTES', 'РќРµС‚ РёРЅС„РѕСЂРјР°С†РёРё!');
 
-define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'Покупатель уведомлён');
-define('TABLE_HEADING_DATE_ADDED', 'Дата');
+define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'РџРѕРєСѓРїР°С‚РµР»СЊ СѓРІРµРґРѕРјР»С‘РЅ');
+define('TABLE_HEADING_DATE_ADDED', 'Р”Р°С‚Р°');
 
-define('ENTRY_CUSTOMER', 'Покупатель');
-define('ENTRY_NAME', 'Имя:');
-define('ENTRY_CITY_STATE', 'Город:');
-define('ENTRY_SHIPPING_ADDRESS', 'Адрес доставки');
-define('ENTRY_BILLING_ADDRESS', 'Адрес покупателя');
-define('ENTRY_PAYMENT_METHOD', 'Способ оплаты');
-define('ENTRY_CREDIT_CARD_TYPE', 'Тип карточки:');
-define('ENTRY_CREDIT_CARD_OWNER', 'Владелец карточки:');
-define('ENTRY_CREDIT_CARD_NUMBER', 'Номер карточки:');
-define('ENTRY_CREDIT_CARD_EXPIRES', 'Действительна до:');
-define('ENTRY_SUB_TOTAL', 'Стоимость товара:');
+define('ENTRY_CUSTOMER', 'РџРѕРєСѓРїР°С‚РµР»СЊ');
+define('ENTRY_NAME', 'РРјСЏ:');
+define('ENTRY_CITY_STATE', 'Р“РѕСЂРѕРґ:');
+define('ENTRY_SHIPPING_ADDRESS', 'РђРґСЂРµСЃ РґРѕСЃС‚Р°РІРєРё');
+define('ENTRY_BILLING_ADDRESS', 'РђРґСЂРµСЃ РїРѕРєСѓРїР°С‚РµР»СЏ');
+define('ENTRY_PAYMENT_METHOD', 'РЎРїРѕСЃРѕР± РѕРїР»Р°С‚С‹');
+define('ENTRY_CREDIT_CARD_TYPE', 'РўРёРї РєР°СЂС‚РѕС‡РєРё:');
+define('ENTRY_CREDIT_CARD_OWNER', 'Р’Р»Р°РґРµР»РµС† РєР°СЂС‚РѕС‡РєРё:');
+define('ENTRY_CREDIT_CARD_NUMBER', 'РќРѕРјРµСЂ РєР°СЂС‚РѕС‡РєРё:');
+define('ENTRY_CREDIT_CARD_EXPIRES', 'Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґРѕ:');
+define('ENTRY_SUB_TOTAL', 'РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°:');
 
 //the definition of ENTRY_TAX is important when dealing with certain tax components and scenarios
-define('ENTRY_TAX', 'Налог');
+define('ENTRY_TAX', 'РќР°Р»РѕРі');
 //do not use a colon (:) in the defintion, ie 'VAT' is ok, but 'VAT:' is not
 
-define('ENTRY_SHIPPING', 'Доставка:');
-define('ENTRY_TOTAL', 'Всего:');
-define('ENTRY_STATUS', 'Статус:');
-define('ENTRY_NOTIFY_CUSTOMER', 'Уведомить покупателя:');
-define('ENTRY_NOTIFY_COMMENTS', 'Отправить комментарии:');
-define('ENTRY_CURRENCY_TYPE', 'Валюта');
-define('ENTRY_CURRENCY_VALUE', 'Значение');
+define('ENTRY_SHIPPING', 'Р”РѕСЃС‚Р°РІРєР°:');
+define('ENTRY_TOTAL', 'Р’СЃРµРіРѕ:');
+define('ENTRY_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('ENTRY_NOTIFY_CUSTOMER', 'РЈРІРµРґРѕРјРёС‚СЊ РїРѕРєСѓРїР°С‚РµР»СЏ:');
+define('ENTRY_NOTIFY_COMMENTS', 'РћС‚РїСЂР°РІРёС‚СЊ РєРѕРјРјРµРЅС‚Р°СЂРёРё:');
+define('ENTRY_CURRENCY_TYPE', 'Р’Р°Р»СЋС‚Р°');
+define('ENTRY_CURRENCY_VALUE', 'Р—РЅР°С‡РµРЅРёРµ');
 
-define('TEXT_INFO_PAYMENT_METHOD', 'Способ оплаты:');
-define('TEXT_NO_ORDER_PRODUCTS', 'В данном заказе нет товаров');
-define('TEXT_ADD_NEW_PRODUCT', 'Добавить товар');
-define('TEXT_PACKAGE_WEIGHT_COUNT', 'Вес: %s  |  Количество единиц товара: %s');
+define('TEXT_INFO_PAYMENT_METHOD', 'РЎРїРѕСЃРѕР± РѕРїР»Р°С‚С‹:');
+define('TEXT_NO_ORDER_PRODUCTS', 'Р’ РґР°РЅРЅРѕРј Р·Р°РєР°Р·Рµ РЅРµС‚ С‚РѕРІР°СЂРѕРІ');
+define('TEXT_ADD_NEW_PRODUCT', 'Р”РѕР±Р°РІРёС‚СЊ С‚РѕРІР°СЂ');
+define('TEXT_PACKAGE_WEIGHT_COUNT', 'Р’РµСЃ: %s  |  РљРѕР»РёС‡РµСЃС‚РІРѕ РµРґРёРЅРёС† С‚РѕРІР°СЂР°: %s');
 
-define('TEXT_STEP_1', '<b>Шаг 1:</b>');
-define('TEXT_STEP_2', '<b>Шаг 2:</b>');
-define('TEXT_STEP_3', '<b>Шаг 3:</b>');
-define('TEXT_STEP_4', '<b>Шаг 4:</b>');
-define('TEXT_SELECT_CATEGORY', '- Выберите категорию -');
-define('TEXT_PRODUCT_SEARCH', '<b>- или введите ключевые слова для поиска -</b>');
-define('TEXT_ALL_CATEGORIES', 'Все категории/Все товары');
-define('TEXT_SELECT_PRODUCT', '- Выберите товар -');
-define('TEXT_BUTTON_SELECT_OPTIONS', 'Выберите атрибуты');
-define('TEXT_BUTTON_SELECT_CATEGORY', 'Выбрать данную категорию');
-define('TEXT_BUTTON_SELECT_PRODUCT', 'Выбрать данный товар');
-define('TEXT_SKIP_NO_OPTIONS', '<em>Нет атрибутов - Пропущено...</em>');
-define('TEXT_QUANTITY', 'Количество:');
-define('TEXT_BUTTON_ADD_PRODUCT', 'Добавить к заказу');
-define('TEXT_CLOSE_POPUP', '<u>Закрыть окно</u> [x]');
-define('TEXT_ADD_PRODUCT_INSTRUCTIONS', 'Продолжайте добавлять товар, когда будет добавлен весь необходимый товар, просто закройте окно.');
-define('TEXT_PRODUCT_NOT_FOUND', '<b>Товар не найден<b>');
-define('TEXT_SHIPPING_SAME_AS_BILLING', 'Адрес доставки и адрес покупателя совпадают');
-define('TEXT_BILLING_SAME_AS_CUSTOMER', 'Адреса одинаковые');
+define('TEXT_STEP_1', '<b>РЁР°Рі 1:</b>');
+define('TEXT_STEP_2', '<b>РЁР°Рі 2:</b>');
+define('TEXT_STEP_3', '<b>РЁР°Рі 3:</b>');
+define('TEXT_STEP_4', '<b>РЁР°Рі 4:</b>');
+define('TEXT_SELECT_CATEGORY', '- Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ -');
+define('TEXT_PRODUCT_SEARCH', '<b>- РёР»Рё РІРІРµРґРёС‚Рµ РєР»СЋС‡РµРІС‹Рµ СЃР»РѕРІР° РґР»СЏ РїРѕРёСЃРєР° -</b>');
+define('TEXT_ALL_CATEGORIES', 'Р’СЃРµ РєР°С‚РµРіРѕСЂРёРё/Р’СЃРµ С‚РѕРІР°СЂС‹');
+define('TEXT_SELECT_PRODUCT', '- Р’С‹Р±РµСЂРёС‚Рµ С‚РѕРІР°СЂ -');
+define('TEXT_BUTTON_SELECT_OPTIONS', 'Р’С‹Р±РµСЂРёС‚Рµ Р°С‚СЂРёР±СѓС‚С‹');
+define('TEXT_BUTTON_SELECT_CATEGORY', 'Р’С‹Р±СЂР°С‚СЊ РґР°РЅРЅСѓСЋ РєР°С‚РµРіРѕСЂРёСЋ');
+define('TEXT_BUTTON_SELECT_PRODUCT', 'Р’С‹Р±СЂР°С‚СЊ РґР°РЅРЅС‹Р№ С‚РѕРІР°СЂ');
+define('TEXT_SKIP_NO_OPTIONS', '<em>РќРµС‚ Р°С‚СЂРёР±СѓС‚РѕРІ - РџСЂРѕРїСѓС‰РµРЅРѕ...</em>');
+define('TEXT_QUANTITY', 'РљРѕР»РёС‡РµСЃС‚РІРѕ:');
+define('TEXT_BUTTON_ADD_PRODUCT', 'Р”РѕР±Р°РІРёС‚СЊ Рє Р·Р°РєР°Р·Сѓ');
+define('TEXT_CLOSE_POPUP', '<u>Р—Р°РєСЂС‹С‚СЊ РѕРєРЅРѕ</u> [x]');
+define('TEXT_ADD_PRODUCT_INSTRUCTIONS', 'РџСЂРѕРґРѕР»Р¶Р°Р№С‚Рµ РґРѕР±Р°РІР»СЏС‚СЊ С‚РѕРІР°СЂ, РєРѕРіРґР° Р±СѓРґРµС‚ РґРѕР±Р°РІР»РµРЅ РІРµСЃСЊ РЅРµРѕР±С…РѕРґРёРјС‹Р№ С‚РѕРІР°СЂ, РїСЂРѕСЃС‚Рѕ Р·Р°РєСЂРѕР№С‚Рµ РѕРєРЅРѕ.');
+define('TEXT_PRODUCT_NOT_FOUND', '<b>РўРѕРІР°СЂ РЅРµ РЅР°Р№РґРµРЅ<b>');
+define('TEXT_SHIPPING_SAME_AS_BILLING', 'РђРґСЂРµСЃ РґРѕСЃС‚Р°РІРєРё Рё Р°РґСЂРµСЃ РїРѕРєСѓРїР°С‚РµР»СЏ СЃРѕРІРїР°РґР°СЋС‚');
+define('TEXT_BILLING_SAME_AS_CUSTOMER', 'РђРґСЂРµСЃР° РѕРґРёРЅР°РєРѕРІС‹Рµ');
 
-define('IMAGE_ADD_NEW_OT', 'Укажите новую запись заказ итого');
-define('IMAGE_REMOVE_NEW_OT', 'Удалить данную строку');
-define('IMAGE_NEW_ORDER_EMAIL', 'Отправить e-mail с информацией о заказе');
+define('IMAGE_ADD_NEW_OT', 'РЈРєР°Р¶РёС‚Рµ РЅРѕРІСѓСЋ Р·Р°РїРёСЃСЊ Р·Р°РєР°Р· РёС‚РѕРіРѕ');
+define('IMAGE_REMOVE_NEW_OT', 'РЈРґР°Р»РёС‚СЊ РґР°РЅРЅСѓСЋ СЃС‚СЂРѕРєСѓ');
+define('IMAGE_NEW_ORDER_EMAIL', 'РћС‚РїСЂР°РІРёС‚СЊ e-mail СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ Р·Р°РєР°Р·Рµ');
 
-define('TEXT_NO_ORDER_HISTORY', 'Нет истории заказа');
+define('TEXT_NO_ORDER_HISTORY', 'РќРµС‚ РёСЃС‚РѕСЂРёРё Р·Р°РєР°Р·Р°');
 
-define('PLEASE_SELECT', 'Выберите');
+define('PLEASE_SELECT', 'Р’С‹Р±РµСЂРёС‚Рµ');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
-define('EMAIL_TEXT_SUBJECT', 'Ваш заказ был обновлён');
-define('EMAIL_TEXT_ORDER_NUMBER', 'Номер заказа:');
-define('EMAIL_TEXT_INVOICE_URL', 'Подробная информация о заказе:');
-define('EMAIL_TEXT_DATE_ORDERED', 'Дата заказа:');
-define('EMAIL_TEXT_STATUS_UPDATE', 'Спасибо за Ваш заказ!' . "\n\n" . 'Статус Вашего заказа был изменён.' . "\n\n" . 'Новый статус: %s' . "\n\n");
-define('EMAIL_TEXT_STATUS_UPDATE2', 'Если у Вас есть вопросы, задайте их нам в ответном письме.' . "\n\n" . 'С уважением, ' . STORE_NAME . "\n");
-define('EMAIL_TEXT_COMMENTS_UPDATE', 'Комментарии к Вашему заказу:' . "\n\n%s\n\n");
+define('EMAIL_TEXT_SUBJECT', 'Р’Р°С€ Р·Р°РєР°Р· Р±С‹Р» РѕР±РЅРѕРІР»С‘РЅ');
+define('EMAIL_TEXT_ORDER_NUMBER', 'РќРѕРјРµСЂ Р·Р°РєР°Р·Р°:');
+define('EMAIL_TEXT_INVOICE_URL', 'РџРѕРґСЂРѕР±РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ Р·Р°РєР°Р·Рµ:');
+define('EMAIL_TEXT_DATE_ORDERED', 'Р”Р°С‚Р° Р·Р°РєР°Р·Р°:');
+define('EMAIL_TEXT_STATUS_UPDATE', 'РЎРїР°СЃРёР±Рѕ Р·Р° Р’Р°С€ Р·Р°РєР°Р·!' . "\n\n" . 'РЎС‚Р°С‚СѓСЃ Р’Р°С€РµРіРѕ Р·Р°РєР°Р·Р° Р±С‹Р» РёР·РјРµРЅС‘РЅ.' . "\n\n" . 'РќРѕРІС‹Р№ СЃС‚Р°С‚СѓСЃ: %s' . "\n\n");
+define('EMAIL_TEXT_STATUS_UPDATE2', 'Р•СЃР»Рё Сѓ Р’Р°СЃ РµСЃС‚СЊ РІРѕРїСЂРѕСЃС‹, Р·Р°РґР°Р№С‚Рµ РёС… РЅР°Рј РІ РѕС‚РІРµС‚РЅРѕРј РїРёСЃСЊРјРµ.' . "\n\n" . 'РЎ СѓРІР°Р¶РµРЅРёРµРј, ' . STORE_NAME . "\n");
+define('EMAIL_TEXT_COMMENTS_UPDATE', 'РљРѕРјРјРµРЅС‚Р°СЂРёРё Рє Р’Р°С€РµРјСѓ Р·Р°РєР°Р·Сѓ:' . "\n\n%s\n\n");
 
-define('ERROR_ORDER_DOES_NOT_EXIST', 'Ошибка: Заказ %s не найден.');
-define('SUCCESS_ORDER_UPDATED', 'Успешно: Заказ был успешно обновлён.');
-define('WARNING_ORDER_NOT_UPDATED', 'Предупреждение: Никаких изменений сделано не было.');
+define('ERROR_ORDER_DOES_NOT_EXIST', 'РћС€РёР±РєР°: Р—Р°РєР°Р· %s РЅРµ РЅР°Р№РґРµРЅ.');
+define('SUCCESS_ORDER_UPDATED', 'РЈСЃРїРµС€РЅРѕ: Р—Р°РєР°Р· Р±С‹Р» СѓСЃРїРµС€РЅРѕ РѕР±РЅРѕРІР»С‘РЅ.');
+define('WARNING_ORDER_NOT_UPDATED', 'РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ: РќРёРєР°РєРёС… РёР·РјРµРЅРµРЅРёР№ СЃРґРµР»Р°РЅРѕ РЅРµ Р±С‹Р»Рѕ.');
 
 //the hints
-define('HINT_UPDATE_TO_CC', 'Установите способ оплаты на ' . ORDER_EDITOR_CREDIT_CARD . ' и появятся поля с информацией о кредитной карточке. Данные поля будут скрыты, пока не будет указан необходимй способ оплаты, способ оплаты для кредитных карточек настривается в Админке - Настройки - Редактор заказов.');
-define('HINT_UPDATE_CURRENCY', 'При смене валюты заказа будут пересчитаны все итоговые суммы заказа.');
-define('HINT_SHIPPING_ADDRESS', 'При смене региона, почтового индекса или страны Вы увидите предупреждение, пересчитать или нет итоговую стоимость заказа.');
-define('HINT_TOTALS', 'Вы можете указывать скидки, добавляя отрицательные значения. Поля стоимость товара, налог и всего редактировать нельзя.');
-define('HINT_PRESS_UPDATE', 'Нажмите Обновить для сохранения внесённых изменёний.');
-define('HINT_BASE_PRICE', 'Цена (за единицу) - это цена единицы товара без учёта атрибутов товара');
-define('HINT_PRICE_EXCL', 'Цены (без налога) - это цена товара, включающая в себя атрибуты, но без налога');
-define('HINT_PRICE_INCL', 'Цена (с налогом) - это цена товара + налог');
-define('HINT_TOTAL_EXCL', 'Сумма (без налога) - это цена товара * на количество товара, но без налога.');
-define('HINT_TOTAL_INCL', 'Сумма (с налогом) - это цена товара * на количество товара, включая налог.');
+define('HINT_UPDATE_TO_CC', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ РЅР° ' . ORDER_EDITOR_CREDIT_CARD . ' Рё РїРѕСЏРІСЏС‚СЃСЏ РїРѕР»СЏ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРµ. Р”Р°РЅРЅС‹Рµ РїРѕР»СЏ Р±СѓРґСѓС‚ СЃРєСЂС‹С‚С‹, РїРѕРєР° РЅРµ Р±СѓРґРµС‚ СѓРєР°Р·Р°РЅ РЅРµРѕР±С…РѕРґРёРјР№ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹, СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ РґР»СЏ РєСЂРµРґРёС‚РЅС‹С… РєР°СЂС‚РѕС‡РµРє РЅР°СЃС‚СЂРёРІР°РµС‚СЃСЏ РІ РђРґРјРёРЅРєРµ - РќР°СЃС‚СЂРѕР№РєРё - Р РµРґР°РєС‚РѕСЂ Р·Р°РєР°Р·РѕРІ.');
+define('HINT_UPDATE_CURRENCY', 'РџСЂРё СЃРјРµРЅРµ РІР°Р»СЋС‚С‹ Р·Р°РєР°Р·Р° Р±СѓРґСѓС‚ РїРµСЂРµСЃС‡РёС‚Р°РЅС‹ РІСЃРµ РёС‚РѕРіРѕРІС‹Рµ СЃСѓРјРјС‹ Р·Р°РєР°Р·Р°.');
+define('HINT_SHIPPING_ADDRESS', 'РџСЂРё СЃРјРµРЅРµ СЂРµРіРёРѕРЅР°, РїРѕС‡С‚РѕРІРѕРіРѕ РёРЅРґРµРєСЃР° РёР»Рё СЃС‚СЂР°РЅС‹ Р’С‹ СѓРІРёРґРёС‚Рµ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ, РїРµСЂРµСЃС‡РёС‚Р°С‚СЊ РёР»Рё РЅРµС‚ РёС‚РѕРіРѕРІСѓСЋ СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р°.');
+define('HINT_TOTALS', 'Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·С‹РІР°С‚СЊ СЃРєРёРґРєРё, РґРѕР±Р°РІР»СЏСЏ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ. РџРѕР»СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°, РЅР°Р»РѕРі Рё РІСЃРµРіРѕ СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РЅРµР»СЊР·СЏ.');
+define('HINT_PRESS_UPDATE', 'РќР°Р¶РјРёС‚Рµ РћР±РЅРѕРІРёС‚СЊ РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІРЅРµСЃС‘РЅРЅС‹С… РёР·РјРµРЅС‘РЅРёР№.');
+define('HINT_BASE_PRICE', 'Р¦РµРЅР° (Р·Р° РµРґРёРЅРёС†Сѓ) - СЌС‚Рѕ С†РµРЅР° РµРґРёРЅРёС†С‹ С‚РѕРІР°СЂР° Р±РµР· СѓС‡С‘С‚Р° Р°С‚СЂРёР±СѓС‚РѕРІ С‚РѕРІР°СЂР°');
+define('HINT_PRICE_EXCL', 'Р¦РµРЅС‹ (Р±РµР· РЅР°Р»РѕРіР°) - СЌС‚Рѕ С†РµРЅР° С‚РѕРІР°СЂР°, РІРєР»СЋС‡Р°СЋС‰Р°СЏ РІ СЃРµР±СЏ Р°С‚СЂРёР±СѓС‚С‹, РЅРѕ Р±РµР· РЅР°Р»РѕРіР°');
+define('HINT_PRICE_INCL', 'Р¦РµРЅР° (СЃ РЅР°Р»РѕРіРѕРј) - СЌС‚Рѕ С†РµРЅР° С‚РѕРІР°СЂР° + РЅР°Р»РѕРі');
+define('HINT_TOTAL_EXCL', 'РЎСѓРјРјР° (Р±РµР· РЅР°Р»РѕРіР°) - СЌС‚Рѕ С†РµРЅР° С‚РѕРІР°СЂР° * РЅР° РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РЅРѕ Р±РµР· РЅР°Р»РѕРіР°.');
+define('HINT_TOTAL_INCL', 'РЎСѓРјРјР° (СЃ РЅР°Р»РѕРіРѕРј) - СЌС‚Рѕ С†РµРЅР° С‚РѕРІР°СЂР° * РЅР° РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІРєР»СЋС‡Р°СЏ РЅР°Р»РѕРі.');
 //end hints
 
 //new order confirmation email- this is a separate email from order status update
-define('ENTRY_SEND_NEW_ORDER_CONFIRMATION', 'Отправить E-Mail:');
-define('EMAIL_TEXT_DATE_MODIFIED', 'Дата:');
-define('EMAIL_TEXT_PRODUCTS', 'Товары');
-define('EMAIL_TEXT_DELIVERY_ADDRESS', 'Адрес доставки');
-define('EMAIL_TEXT_BILLING_ADDRESS', 'Адрес покупателя');
-define('EMAIL_TEXT_PAYMENT_METHOD', 'Способ оплаты');
+define('ENTRY_SEND_NEW_ORDER_CONFIRMATION', 'РћС‚РїСЂР°РІРёС‚СЊ E-Mail:');
+define('EMAIL_TEXT_DATE_MODIFIED', 'Р”Р°С‚Р°:');
+define('EMAIL_TEXT_PRODUCTS', 'РўРѕРІР°СЂС‹');
+define('EMAIL_TEXT_DELIVERY_ADDRESS', 'РђРґСЂРµСЃ РґРѕСЃС‚Р°РІРєРё');
+define('EMAIL_TEXT_BILLING_ADDRESS', 'РђРґСЂРµСЃ РїРѕРєСѓРїР°С‚РµР»СЏ');
+define('EMAIL_TEXT_PAYMENT_METHOD', 'РЎРїРѕСЃРѕР± РѕРїР»Р°С‚С‹');
 // If you want to include extra payment information, enter text below (use <br> for line breaks):
 //define('EMAIL_TEXT_PAYMENT_INFO', ''); //why would this be useful???
 // If you want to include footer text, enter text below (use <br> for line breaks):
@@ -134,41 +134,41 @@ define('EMAIL_TEXT_FOOTER', '');
 //end email
 
 //add-on for downloads
-define('ENTRY_DOWNLOAD_COUNT', 'Загрузка ');
-define('ENTRY_DOWNLOAD_FILENAME', 'Имя файла');
-define('ENTRY_DOWNLOAD_MAXDAYS', 'Ссылка активна (дней)');
-define('ENTRY_DOWNLOAD_MAXCOUNT', 'Максимум загрузок');
+define('ENTRY_DOWNLOAD_COUNT', 'Р—Р°РіСЂСѓР·РєР° ');
+define('ENTRY_DOWNLOAD_FILENAME', 'РРјСЏ С„Р°Р№Р»Р°');
+define('ENTRY_DOWNLOAD_MAXDAYS', 'РЎСЃС‹Р»РєР° Р°РєС‚РёРІРЅР° (РґРЅРµР№)');
+define('ENTRY_DOWNLOAD_MAXCOUNT', 'РњР°РєСЃРёРјСѓРј Р·Р°РіСЂСѓР·РѕРє');
 
 //add-on for Ajax
-define('AJAX_CONFIRM_PRODUCT_DELETE', 'Вы действительно хотите удалить данный товар из заказа?');
-define('AJAX_CONFIRM_COMMENT_DELETE', 'Вы действительно хотите удалить данный комментарий из истории заказа?');
-define('AJAX_MESSAGE_STACK_SUCCESS', 'Выполнено! \' + %s + \' обновлено');
-define('AJAX_CONFIRM_RELOAD_TOTALS', 'Вы изменили информацию о доставке. Хотите чтобы были пересчитаны итоговые суммы заказа?');
-define('AJAX_CANNOT_CREATE_XMLHTTP', 'Не могу создать XMLHTTP');
-define('AJAX_SUBMIT_COMMENT', 'Добавить новые комментарии и/или статус');
-define('AJAX_NO_QUOTES', 'Нет информации.');
-define('AJAX_SELECTED_NO_SHIPPING', 'Вы выбрали новый способ доставки, хотите чтобы были пересчитаны итоговые суммы заказа?');
-define('AJAX_RELOAD_TOTALS', 'Новая единица была добавлена в заказ, но итоговые суммы не были пересчитаны. Нажмите обновить.');
-define('AJAX_NEW_ORDER_EMAIL', 'Вы действительно хотите отправить e-mail покупателю с информацией о сделанных изменениях в заказе?');
-define('AJAX_INPUT_NEW_EMAIL_COMMENTS', 'Укажите комментарии, либо оставьте поле пустым, если не хотите добавлять комментарии. Нажимая enter, Вы сохраняете введённый текст.');
-define('AJAX_SUCCESS_EMAIL_SENT', 'Выполнено! Информация о заказе отправлена %s');
-define('AJAX_WORKING', 'Загрузка, пожалуйста, подождите....');
+define('AJAX_CONFIRM_PRODUCT_DELETE', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ С‚РѕРІР°СЂ РёР· Р·Р°РєР°Р·Р°?');
+define('AJAX_CONFIRM_COMMENT_DELETE', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№ РёР· РёСЃС‚РѕСЂРёРё Р·Р°РєР°Р·Р°?');
+define('AJAX_MESSAGE_STACK_SUCCESS', 'Р’С‹РїРѕР»РЅРµРЅРѕ! \' + %s + \' РѕР±РЅРѕРІР»РµРЅРѕ');
+define('AJAX_CONFIRM_RELOAD_TOTALS', 'Р’С‹ РёР·РјРµРЅРёР»Рё РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РґРѕСЃС‚Р°РІРєРµ. РҐРѕС‚РёС‚Рµ С‡С‚РѕР±С‹ Р±С‹Р»Рё РїРµСЂРµСЃС‡РёС‚Р°РЅС‹ РёС‚РѕРіРѕРІС‹Рµ СЃСѓРјРјС‹ Р·Р°РєР°Р·Р°?');
+define('AJAX_CANNOT_CREATE_XMLHTTP', 'РќРµ РјРѕРіСѓ СЃРѕР·РґР°С‚СЊ XMLHTTP');
+define('AJAX_SUBMIT_COMMENT', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Рµ РєРѕРјРјРµРЅС‚Р°СЂРёРё Рё/РёР»Рё СЃС‚Р°С‚СѓСЃ');
+define('AJAX_NO_QUOTES', 'РќРµС‚ РёРЅС„РѕСЂРјР°С†РёРё.');
+define('AJAX_SELECTED_NO_SHIPPING', 'Р’С‹ РІС‹Р±СЂР°Р»Рё РЅРѕРІС‹Р№ СЃРїРѕСЃРѕР± РґРѕСЃС‚Р°РІРєРё, С…РѕС‚РёС‚Рµ С‡С‚РѕР±С‹ Р±С‹Р»Рё РїРµСЂРµСЃС‡РёС‚Р°РЅС‹ РёС‚РѕРіРѕРІС‹Рµ СЃСѓРјРјС‹ Р·Р°РєР°Р·Р°?');
+define('AJAX_RELOAD_TOTALS', 'РќРѕРІР°СЏ РµРґРёРЅРёС†Р° Р±С‹Р»Р° РґРѕР±Р°РІР»РµРЅР° РІ Р·Р°РєР°Р·, РЅРѕ РёС‚РѕРіРѕРІС‹Рµ СЃСѓРјРјС‹ РЅРµ Р±С‹Р»Рё РїРµСЂРµСЃС‡РёС‚Р°РЅС‹. РќР°Р¶РјРёС‚Рµ РѕР±РЅРѕРІРёС‚СЊ.');
+define('AJAX_NEW_ORDER_EMAIL', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ e-mail РїРѕРєСѓРїР°С‚РµР»СЋ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ СЃРґРµР»Р°РЅРЅС‹С… РёР·РјРµРЅРµРЅРёСЏС… РІ Р·Р°РєР°Р·Рµ?');
+define('AJAX_INPUT_NEW_EMAIL_COMMENTS', 'РЈРєР°Р¶РёС‚Рµ РєРѕРјРјРµРЅС‚Р°СЂРёРё, Р»РёР±Рѕ РѕСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІР»СЏС‚СЊ РєРѕРјРјРµРЅС‚Р°СЂРёРё. РќР°Р¶РёРјР°СЏ enter, Р’С‹ СЃРѕС…СЂР°РЅСЏРµС‚Рµ РІРІРµРґС‘РЅРЅС‹Р№ С‚РµРєСЃС‚.');
+define('AJAX_SUCCESS_EMAIL_SENT', 'Р’С‹РїРѕР»РЅРµРЅРѕ! РРЅС„РѕСЂРјР°С†РёСЏ Рѕ Р·Р°РєР°Р·Рµ РѕС‚РїСЂР°РІР»РµРЅР° %s');
+define('AJAX_WORKING', 'Р—Р°РіСЂСѓР·РєР°, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРґРѕР¶РґРёС‚Рµ....');
 
-define('EMAIL_ACC_DISCOUNT_INTRO_OWNER', 'Один из ваших клиентов достиг предела накопительной скидки и был переведен в новую группу. ' . "\n\n" . 'Детали:');
-define('EMAIL_TEXT_LIMIT', 'Достигнутый предел: ');
-define('EMAIL_TEXT_CURRENT_GROUP', 'Новая группа: ');
-define('EMAIL_TEXT_DISCOUNT', 'Скидка: ');
-define('EMAIL_ACC_SUBJECT', 'Накопительная скидка');
-define('EMAIL_ACC_INTRO_CUSTOMER', 'Поздравляем, Вы получили новую накопительную скидку. Все детали ниже:');
-define('EMAIL_ACC_FOOTER', 'Теперь Вы можете сэкономить, делая покупки в нашем интернет-магазине.');
+define('EMAIL_ACC_DISCOUNT_INTRO_OWNER', 'РћРґРёРЅ РёР· РІР°С€РёС… РєР»РёРµРЅС‚РѕРІ РґРѕСЃС‚РёРі РїСЂРµРґРµР»Р° РЅР°РєРѕРїРёС‚РµР»СЊРЅРѕР№ СЃРєРёРґРєРё Рё Р±С‹Р» РїРµСЂРµРІРµРґРµРЅ РІ РЅРѕРІСѓСЋ РіСЂСѓРїРїСѓ. ' . "\n\n" . 'Р”РµС‚Р°Р»Рё:');
+define('EMAIL_TEXT_LIMIT', 'Р”РѕСЃС‚РёРіРЅСѓС‚С‹Р№ РїСЂРµРґРµР»: ');
+define('EMAIL_TEXT_CURRENT_GROUP', 'РќРѕРІР°СЏ РіСЂСѓРїРїР°: ');
+define('EMAIL_TEXT_DISCOUNT', 'РЎРєРёРґРєР°: ');
+define('EMAIL_ACC_SUBJECT', 'РќР°РєРѕРїРёС‚РµР»СЊРЅР°СЏ СЃРєРёРґРєР°');
+define('EMAIL_ACC_INTRO_CUSTOMER', 'РџРѕР·РґСЂР°РІР»СЏРµРј, Р’С‹ РїРѕР»СѓС‡РёР»Рё РЅРѕРІСѓСЋ РЅР°РєРѕРїРёС‚РµР»СЊРЅСѓСЋ СЃРєРёРґРєСѓ. Р’СЃРµ РґРµС‚Р°Р»Рё РЅРёР¶Рµ:');
+define('EMAIL_ACC_FOOTER', 'РўРµРїРµСЂСЊ Р’С‹ РјРѕР¶РµС‚Рµ СЃСЌРєРѕРЅРѕРјРёС‚СЊ, РґРµР»Р°СЏ РїРѕРєСѓРїРєРё РІ РЅР°С€РµРј РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ.');
 
-define('EMAIL_TEXT_CUSTOMER_NAME', 'Покупатель:');
+define('EMAIL_TEXT_CUSTOMER_NAME', 'РџРѕРєСѓРїР°С‚РµР»СЊ:');
 define('EMAIL_TEXT_CUSTOMER_EMAIL_ADDRESS', 'Email:');
-define('EMAIL_TEXT_CUSTOMER_TELEPHONE', 'Телефон:');
+define('EMAIL_TEXT_CUSTOMER_TELEPHONE', 'РўРµР»РµС„РѕРЅ:');
 
-define('TEXT_ORDER_COMMENTS', 'Комментарий к заказу');
+define('TEXT_ORDER_COMMENTS', 'РљРѕРјРјРµРЅС‚Р°СЂРёР№ Рє Р·Р°РєР°Р·Сѓ');
 
-define('ENTRY_TYPE_BELOW', 'Выберите'); 
-define('ERROR_NO_ORDER_SELECTED', 'Вы не выбрали заказ для редактирования, либо не указан ID номер заказа для редактирования.');
+define('ENTRY_TYPE_BELOW', 'Р’С‹Р±РµСЂРёС‚Рµ'); 
+define('ERROR_NO_ORDER_SELECTED', 'Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё Р·Р°РєР°Р· РґР»СЏ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ, Р»РёР±Рѕ РЅРµ СѓРєР°Р·Р°РЅ ID РЅРѕРјРµСЂ Р·Р°РєР°Р·Р° РґР»СЏ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ.');
 
 ?>

@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Отзывы');
+define('NAVBAR_TITLE', 'РћС‚Р·С‹РІС‹');
 
-define('TEXT_CLICK_TO_ENLARGE', 'Увеличить');
+define('TEXT_CLICK_TO_ENLARGE', 'РЈРІРµР»РёС‡РёС‚СЊ');
 
-define('TEXT_OF_5_STARS', '%s из 5 звезд!');
+define('TEXT_OF_5_STARS', '%s РёР· 5 Р·РІРµР·Рґ!');
 
-define('TEXT_APPROVAL_WARNING', '<center>Спасибо! Ваш отзыв сохранён.<br />Примечание: Ваш отзыв не появится до тех пор, пока он не будет проверен администратором.<br /></center>');
+define('TEXT_APPROVAL_WARNING', '<center>РЎРїР°СЃРёР±Рѕ! Р’Р°С€ РѕС‚Р·С‹РІ СЃРѕС…СЂР°РЅС‘РЅ.<br />РџСЂРёРјРµС‡Р°РЅРёРµ: Р’Р°С€ РѕС‚Р·С‹РІ РЅРµ РїРѕСЏРІРёС‚СЃСЏ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РѕРЅ РЅРµ Р±СѓРґРµС‚ РїСЂРѕРІРµСЂРµРЅ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј.<br /></center>');
 
 ?>

@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Мои данные');
-define('NAVBAR_TITLE_2', 'Редактирование');
+define('NAVBAR_TITLE_1', 'РњРѕРё РґР°РЅРЅС‹Рµ');
+define('NAVBAR_TITLE_2', 'Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ');
 
-define('HEADING_TITLE', 'Мои данные');
+define('HEADING_TITLE', 'РњРѕРё РґР°РЅРЅС‹Рµ');
 
-define('MY_ACCOUNT_TITLE', 'Мои данные');
+define('MY_ACCOUNT_TITLE', 'РњРѕРё РґР°РЅРЅС‹Рµ');
 
-define('SUCCESS_ACCOUNT_UPDATED', 'Ваши данные обновлены.');
+define('SUCCESS_ACCOUNT_UPDATED', 'Р’Р°С€Рё РґР°РЅРЅС‹Рµ РѕР±РЅРѕРІР»РµРЅС‹.');
 ?>

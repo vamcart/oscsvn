@@ -14,20 +14,20 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Партнёрская программа');
-define('HEADING_TITLE', 'Партнёрская программа - Продажи');
+define('NAVBAR_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°');
+define('HEADING_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР° - РџСЂРѕРґР°Р¶Рё');
 
-define('TABLE_HEADING_DATE', 'Дата');
-define('TABLE_HEADING_SALES', 'Вы заработали');
-define('TABLE_HEADING_VALUE', 'Стоимость товара');
-define('TABLE_HEADING_PERCENTAGE','Комиссия');
-define('TABLE_HEADING_STATUS', 'Статус');
+define('TABLE_HEADING_DATE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_SALES', 'Р’С‹ Р·Р°СЂР°Р±РѕС‚Р°Р»Рё');
+define('TABLE_HEADING_VALUE', 'РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°');
+define('TABLE_HEADING_PERCENTAGE','РљРѕРјРёСЃСЃРёСЏ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
 
-define('TEXT_DELETED_ORDER_BY_ADMIN', 'Удалён (Администратор)');
-define('TEXT_INFORMATION_SALES_TOTAL', 'Всего:');
-define('TEXT_INFORMATION_SALES_TOTAL2', '<br>Считаются только оплаченные заказы!');
-define('TEXT_NO_SALES', 'Ни одной продажи ещё не было.');
-define('TEXT_DISPLAY_NUMBER_OF_SALES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> продаж)');
+define('TEXT_DELETED_ORDER_BY_ADMIN', 'РЈРґР°Р»С‘РЅ (РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ)');
+define('TEXT_INFORMATION_SALES_TOTAL', 'Р’СЃРµРіРѕ:');
+define('TEXT_INFORMATION_SALES_TOTAL2', '<br>РЎС‡РёС‚Р°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ РѕРїР»Р°С‡РµРЅРЅС‹Рµ Р·Р°РєР°Р·С‹!');
+define('TEXT_NO_SALES', 'РќРё РѕРґРЅРѕР№ РїСЂРѕРґР°Р¶Рё РµС‰С‘ РЅРµ Р±С‹Р»Рѕ.');
+define('TEXT_DISPLAY_NUMBER_OF_SALES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїСЂРѕРґР°Р¶)');
 
-define('TEXT_AFFILIATE_HEADER', 'Всего продаж через Ваш сайт:');
+define('TEXT_AFFILIATE_HEADER', 'Р’СЃРµРіРѕ РїСЂРѕРґР°Р¶ С‡РµСЂРµР· Р’Р°С€ СЃР°Р№С‚:');
 ?>

@@ -10,53 +10,53 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Массовые скидки');
+define('HEADING_TITLE', 'РњР°СЃСЃРѕРІС‹Рµ СЃРєРёРґРєРё');
 
-define('TABLE_HEADING_SALE_NAME', 'Название акции');
-define('TABLE_HEADING_SALE_DEDUCTION', 'Вычет');
-define('TABLE_HEADING_SALE_DATE_START', 'Начало действия акции');
-define('TABLE_HEADING_SALE_DATE_END', 'Дата окончания');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_SALE_NAME', 'РќР°Р·РІР°РЅРёРµ Р°РєС†РёРё');
+define('TABLE_HEADING_SALE_DEDUCTION', 'Р’С‹С‡РµС‚');
+define('TABLE_HEADING_SALE_DATE_START', 'РќР°С‡Р°Р»Рѕ РґРµР№СЃС‚РІРёСЏ Р°РєС†РёРё');
+define('TABLE_HEADING_SALE_DATE_END', 'Р”Р°С‚Р° РѕРєРѕРЅС‡Р°РЅРёСЏ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_SALEMAKER_NAME', 'Название акции:');
-define('TEXT_SALEMAKER_DEDUCTION', 'Вычет:');
-define('TEXT_SALEMAKER_DEDUCTION_TYPE', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тип:&nbsp;&nbsp;');
-define('TEXT_SALEMAKER_PRICERANGE_FROM', 'Товары стоимостью от:');
-define('TEXT_SALEMAKER_PRICERANGE_TO', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;до&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
-define('TEXT_SALEMAKER_SPECIALS_CONDITION', 'Если товар уже находится в скидках:');
-define('TEXT_SALEMAKER_DATE_START', 'Начало действия акции:');
-define('TEXT_SALEMAKER_DATE_END', 'Дата окончания:');
-define('TEXT_SALEMAKER_CATEGORIES', '<b>Или</b> выберите категории, для которых будет действительна данная акция:');
-define('TEXT_SALEMAKER_POPUP', '<a href="javascript:session_win();"><span class="errorText"><b>Рекомендации по созданию и использованию массовых скидок.</b></span></a>');
-define('TEXT_SALEMAKER_IMMEDIATELY', 'Немедленно');
-define('TEXT_SALEMAKER_NEVER', 'Нет ограничения');
-define('TEXT_SALEMAKER_ENTIRE_CATALOG', 'Отметьте, если акция действительна для <b>всех</b> товаров магазина:');
-define('TEXT_SALEMAKER_TOP', 'Скидка действительна для всех товаров магазина');
+define('TEXT_SALEMAKER_NAME', 'РќР°Р·РІР°РЅРёРµ Р°РєС†РёРё:');
+define('TEXT_SALEMAKER_DEDUCTION', 'Р’С‹С‡РµС‚:');
+define('TEXT_SALEMAKER_DEDUCTION_TYPE', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РўРёРї:&nbsp;&nbsp;');
+define('TEXT_SALEMAKER_PRICERANGE_FROM', 'РўРѕРІР°СЂС‹ СЃС‚РѕРёРјРѕСЃС‚СЊСЋ РѕС‚:');
+define('TEXT_SALEMAKER_PRICERANGE_TO', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РґРѕ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+define('TEXT_SALEMAKER_SPECIALS_CONDITION', 'Р•СЃР»Рё С‚РѕРІР°СЂ СѓР¶Рµ РЅР°С…РѕРґРёС‚СЃСЏ РІ СЃРєРёРґРєР°С…:');
+define('TEXT_SALEMAKER_DATE_START', 'РќР°С‡Р°Р»Рѕ РґРµР№СЃС‚РІРёСЏ Р°РєС†РёРё:');
+define('TEXT_SALEMAKER_DATE_END', 'Р”Р°С‚Р° РѕРєРѕРЅС‡Р°РЅРёСЏ:');
+define('TEXT_SALEMAKER_CATEGORIES', '<b>РР»Рё</b> РІС‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёРё, РґР»СЏ РєРѕС‚РѕСЂС‹С… Р±СѓРґРµС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґР°РЅРЅР°СЏ Р°РєС†РёСЏ:');
+define('TEXT_SALEMAKER_POPUP', '<a href="javascript:session_win();"><span class="errorText"><b>Р РµРєРѕРјРµРЅРґР°С†РёРё РїРѕ СЃРѕР·РґР°РЅРёСЋ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЋ РјР°СЃСЃРѕРІС‹С… СЃРєРёРґРѕРє.</b></span></a>');
+define('TEXT_SALEMAKER_IMMEDIATELY', 'РќРµРјРµРґР»РµРЅРЅРѕ');
+define('TEXT_SALEMAKER_NEVER', 'РќРµС‚ РѕРіСЂР°РЅРёС‡РµРЅРёСЏ');
+define('TEXT_SALEMAKER_ENTIRE_CATALOG', 'РћС‚РјРµС‚СЊС‚Рµ, РµСЃР»Рё Р°РєС†РёСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґР»СЏ <b>РІСЃРµС…</b> С‚РѕРІР°СЂРѕРІ РјР°РіР°Р·РёРЅР°:');
+define('TEXT_SALEMAKER_TOP', 'РЎРєРёРґРєР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґР»СЏ РІСЃРµС… С‚РѕРІР°СЂРѕРІ РјР°РіР°Р·РёРЅР°');
 
-define('TEXT_INFO_DATE_ADDED', 'Дата создания:');
-define('TEXT_INFO_DATE_MODIFIED', 'Последние изменения:');
-define('TEXT_INFO_DATE_STATUS_CHANGE', 'Последний раз статус акции менялся:');
-define('TEXT_INFO_SPECIALS_CONDITION', 'Если товар уже в скидках:');
-define('TEXT_INFO_DEDUCTION', 'Вычет:');
-define('TEXT_INFO_PRICERANGE_FROM', 'Товары стоимостью от:');
-define('TEXT_INFO_PRICERANGE_TO', ' до ');
-define('TEXT_INFO_DATE_START', 'Начало действия акции:');
-define('TEXT_INFO_DATE_END', 'Дата окончания:');
+define('TEXT_INFO_DATE_ADDED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ:');
+define('TEXT_INFO_DATE_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_INFO_DATE_STATUS_CHANGE', 'РџРѕСЃР»РµРґРЅРёР№ СЂР°Р· СЃС‚Р°С‚СѓСЃ Р°РєС†РёРё РјРµРЅСЏР»СЃСЏ:');
+define('TEXT_INFO_SPECIALS_CONDITION', 'Р•СЃР»Рё С‚РѕРІР°СЂ СѓР¶Рµ РІ СЃРєРёРґРєР°С…:');
+define('TEXT_INFO_DEDUCTION', 'Р’С‹С‡РµС‚:');
+define('TEXT_INFO_PRICERANGE_FROM', 'РўРѕРІР°СЂС‹ СЃС‚РѕРёРјРѕСЃС‚СЊСЋ РѕС‚:');
+define('TEXT_INFO_PRICERANGE_TO', ' РґРѕ ');
+define('TEXT_INFO_DATE_START', 'РќР°С‡Р°Р»Рѕ РґРµР№СЃС‚РІРёСЏ Р°РєС†РёРё:');
+define('TEXT_INFO_DATE_END', 'Р”Р°С‚Р° РѕРєРѕРЅС‡Р°РЅРёСЏ:');
 
-define('SPECIALS_CONDITION_DROPDOWN_0', 'Игнорировать специальную цену и ставить условие массовой скидки');
-define('SPECIALS_CONDITION_DROPDOWN_1', 'Игнорировать условие массовой скидки к такому товару');
-define('SPECIALS_CONDITION_DROPDOWN_2', 'Добавить условие массовой скидки к специальной цене');
+define('SPECIALS_CONDITION_DROPDOWN_0', 'РРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ СЃРїРµС†РёР°Р»СЊРЅСѓСЋ С†РµРЅСѓ Рё СЃС‚Р°РІРёС‚СЊ СѓСЃР»РѕРІРёРµ РјР°СЃСЃРѕРІРѕР№ СЃРєРёРґРєРё');
+define('SPECIALS_CONDITION_DROPDOWN_1', 'РРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ СѓСЃР»РѕРІРёРµ РјР°СЃСЃРѕРІРѕР№ СЃРєРёРґРєРё Рє С‚Р°РєРѕРјСѓ С‚РѕРІР°СЂСѓ');
+define('SPECIALS_CONDITION_DROPDOWN_2', 'Р”РѕР±Р°РІРёС‚СЊ СѓСЃР»РѕРІРёРµ РјР°СЃСЃРѕРІРѕР№ СЃРєРёРґРєРё Рє СЃРїРµС†РёР°Р»СЊРЅРѕР№ С†РµРЅРµ');
 
-define('DEDUCTION_TYPE_DROPDOWN_0', 'Вычет суммы');
-define('DEDUCTION_TYPE_DROPDOWN_1', 'Процент скидки');
-define('DEDUCTION_TYPE_DROPDOWN_2', 'Новая цена');
+define('DEDUCTION_TYPE_DROPDOWN_0', 'Р’С‹С‡РµС‚ СЃСѓРјРјС‹');
+define('DEDUCTION_TYPE_DROPDOWN_1', 'РџСЂРѕС†РµРЅС‚ СЃРєРёРґРєРё');
+define('DEDUCTION_TYPE_DROPDOWN_2', 'РќРѕРІР°СЏ С†РµРЅР°');
 
-define('TEXT_INFO_HEADING_COPY_SALE', 'Копировать акцию');
-define('TEXT_INFO_COPY_INTRO', 'Введите название для копируемой акции<br>&nbsp;&nbsp;"%s"');
+define('TEXT_INFO_HEADING_COPY_SALE', 'РљРѕРїРёСЂРѕРІР°С‚СЊ Р°РєС†РёСЋ');
+define('TEXT_INFO_COPY_INTRO', 'Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РґР»СЏ РєРѕРїРёСЂСѓРµРјРѕР№ Р°РєС†РёРё<br>&nbsp;&nbsp;"%s"');
 
-define('TEXT_INFO_HEADING_DELETE_SALE', 'Удалить акцию');
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить данную акцию?');
-define('TEXT_DISPLAY_NUMBER_OF_SALES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> массовых скидок)');
+define('TEXT_INFO_HEADING_DELETE_SALE', 'РЈРґР°Р»РёС‚СЊ Р°РєС†РёСЋ');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅСѓСЋ Р°РєС†РёСЋ?');
+define('TEXT_DISPLAY_NUMBER_OF_SALES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РјР°СЃСЃРѕРІС‹С… СЃРєРёРґРѕРє)');
 
 ?>

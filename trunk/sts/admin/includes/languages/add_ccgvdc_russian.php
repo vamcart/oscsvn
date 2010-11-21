@@ -1,34 +1,34 @@
 <?php
-define('BOX_HEADING_GV_ADMIN', 'Сертификаты/Купоны');
-define('BOX_GV_ADMIN_QUEUE', 'Сертификаты');
-define('BOX_GV_ADMIN_MAIL', 'Отправить сертификат');
-define('BOX_GV_ADMIN_SENT', 'Отправленные сертификаты');
-define('BOX_COUPON_ADMIN','Купоны');
+define('BOX_HEADING_GV_ADMIN', 'РЎРµСЂС‚РёС„РёРєР°С‚С‹/РљСѓРїРѕРЅС‹');
+define('BOX_GV_ADMIN_QUEUE', 'РЎРµСЂС‚РёС„РёРєР°С‚С‹');
+define('BOX_GV_ADMIN_MAIL', 'РћС‚РїСЂР°РІРёС‚СЊ СЃРµСЂС‚РёС„РёРєР°С‚');
+define('BOX_GV_ADMIN_SENT', 'РћС‚РїСЂР°РІР»РµРЅРЅС‹Рµ СЃРµСЂС‚РёС„РёРєР°С‚С‹');
+define('BOX_COUPON_ADMIN','РљСѓРїРѕРЅС‹');
 
-define('IMAGE_RELEASE', 'Использовать сертификат');
+define('IMAGE_RELEASE', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРµСЂС‚РёС„РёРєР°С‚');
 
-define('_JANUARY', 'Январь');
-define('_FEBRUARY', 'Февраль');
-define('_MARCH', 'Март');
-define('_APRIL', 'Апрель');
-define('_MAY', 'Май');
-define('_JUNE', 'Июнь');
-define('_JULY', 'Июль');
-define('_AUGUST', 'Август');
-define('_SEPTEMBER', 'Сентябрь');
-define('_OCTOBER', 'Октябрь');
-define('_NOVEMBER', 'Ноябрь');
-define('_DECEMBER', 'Декабрь');
+define('_JANUARY', 'РЇРЅРІР°СЂСЊ');
+define('_FEBRUARY', 'Р¤РµРІСЂР°Р»СЊ');
+define('_MARCH', 'РњР°СЂС‚');
+define('_APRIL', 'РђРїСЂРµР»СЊ');
+define('_MAY', 'РњР°Р№');
+define('_JUNE', 'РСЋРЅСЊ');
+define('_JULY', 'РСЋР»СЊ');
+define('_AUGUST', 'РђРІРіСѓСЃС‚');
+define('_SEPTEMBER', 'РЎРµРЅС‚СЏР±СЂСЊ');
+define('_OCTOBER', 'РћРєС‚СЏР±СЂСЊ');
+define('_NOVEMBER', 'РќРѕСЏР±СЂСЊ');
+define('_DECEMBER', 'Р”РµРєР°Р±СЂСЊ');
 
-define('TEXT_DISPLAY_NUMBER_OF_GIFT_VOUCHERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> сертификатов)');
-define('TEXT_DISPLAY_NUMBER_OF_COUPONS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> купонов)');
+define('TEXT_DISPLAY_NUMBER_OF_GIFT_VOUCHERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃРµСЂС‚РёС„РёРєР°С‚РѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_COUPONS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РєСѓРїРѕРЅРѕРІ)');
 
-define('TEXT_VALID_PRODUCTS_LIST', 'Список товаров');
-define('TEXT_VALID_PRODUCTS_ID', 'Код товара');
-define('TEXT_VALID_PRODUCTS_NAME', 'Название товара');
-define('TEXT_VALID_PRODUCTS_MODEL', 'Код товара');
+define('TEXT_VALID_PRODUCTS_LIST', 'РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ');
+define('TEXT_VALID_PRODUCTS_ID', 'РљРѕРґ С‚РѕРІР°СЂР°');
+define('TEXT_VALID_PRODUCTS_NAME', 'РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('TEXT_VALID_PRODUCTS_MODEL', 'РљРѕРґ С‚РѕРІР°СЂР°');
 
-define('TEXT_VALID_CATEGORIES_LIST', 'Список категорий');
-define('TEXT_VALID_CATEGORIES_ID', 'Код категории');
-define('TEXT_VALID_CATEGORIES_NAME', 'Название категории');
+define('TEXT_VALID_CATEGORIES_LIST', 'РЎРїРёСЃРѕРє РєР°С‚РµРіРѕСЂРёР№');
+define('TEXT_VALID_CATEGORIES_ID', 'РљРѕРґ РєР°С‚РµРіРѕСЂРёРё');
+define('TEXT_VALID_CATEGORIES_NAME', 'РќР°Р·РІР°РЅРёРµ РєР°С‚РµРіРѕСЂРёРё');
 ?>

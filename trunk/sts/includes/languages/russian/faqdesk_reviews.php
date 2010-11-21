@@ -1,8 +1,8 @@
 <?php
 
-define('NAVBAR_TITLE', 'Êîììåíòàðèè');
-define('HEADING_TITLE', 'Âû ìîæåòå ïðî÷èòàòü äðóãèå êîììåíòàðèè');
-define('TEXT_OF_5_STARS', '%s èç 5 çâ¸çä!');
+define('NAVBAR_TITLE', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
+define('HEADING_TITLE', 'Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³Ð¸Ðµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
+define('TEXT_OF_5_STARS', '%s Ð¸Ð· 5 Ð·Ð²Ñ‘Ð·Ð´!');
 
 
 ?>

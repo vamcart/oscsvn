@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Çàêàçàííûå òîâàðû');
+define('HEADING_TITLE', 'Ð—Ð°ÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
 
-define('TABLE_HEADING_NUMBER', '¹');
-define('TABLE_HEADING_MODEL', 'Êîä òîâàðà');
-define('TABLE_HEADING_PRODUCTS', 'Òîâàðû');
-define('TABLE_HEADING_PURCHASED', 'Êóïëåíî');
-define('TABLE_HEADING_GROSS', 'Ñóììà');
-define('ENTRY_STARTDATE', 'Ïåðèîä îò: ');
-define('ENTRY_TODATE', 'äî: ');
-define('ENTRY_PRINTABLE', 'Âåðñèÿ äëÿ ïå÷àòè:');
-define('ENTRY_SORTGROSS', 'Ñîðòèðîâàòü ïî ñóììå');
-define('ENTRY_TOTAL', 'Âñåãî');
-define('ENTRY_SUBMIT', 'Ñìîòðåòü');
+define('TABLE_HEADING_NUMBER', 'â„–');
+define('TABLE_HEADING_MODEL', 'ÐšÐ¾Ð´ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('TABLE_HEADING_PRODUCTS', 'Ð¢Ð¾Ð²Ð°Ñ€Ñ‹');
+define('TABLE_HEADING_PURCHASED', 'ÐšÑƒÐ¿Ð»ÐµÐ½Ð¾');
+define('TABLE_HEADING_GROSS', 'Ð¡ÑƒÐ¼Ð¼Ð°');
+define('ENTRY_STARTDATE', 'ÐŸÐµÑ€Ð¸Ð¾Ð´ Ð¾Ñ‚: ');
+define('ENTRY_TODATE', 'Ð´Ð¾: ');
+define('ENTRY_PRINTABLE', 'Ð’ÐµÑ€ÑÐ¸Ñ Ð´Ð»Ñ Ð¿ÐµÑ‡Ð°Ñ‚Ð¸:');
+define('ENTRY_SORTGROSS', 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾ ÑÑƒÐ¼Ð¼Ðµ');
+define('ENTRY_TOTAL', 'Ð’ÑÐµÐ³Ð¾');
+define('ENTRY_SUBMIT', 'Ð¡Ð¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ');
 ?>

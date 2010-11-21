@@ -10,32 +10,32 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_RUS_SCHET_TEXT_TITLE', 'Предоплата на счёт');
-  define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION', 'Наши банковские реквизиты:<br><br>Название банка: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_1 . '<br>Расчетный счет: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_2 . '<br>БИК: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_3 . '<br>Кор./счет: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_4 . '<br>КПП: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_5 . '<br>Получатель: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_6 . '<br>ИНН: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_7 . '<br><br>После оплаты заказа обязательно сообщите нам по электронной почте о факте оплаты.');
-  define('MODULE_PAYMENT_RUS_SCHET_TEXT_EMAIL_FOOTER', "Наши банковские реквизиты:\n\nНазвание банка: " . MODULE_PAYMENT_RUS_SCHET_1 . "\nРасчетный счет: " . MODULE_PAYMENT_RUS_SCHET_2 . "\nБИК: " . MODULE_PAYMENT_RUS_SCHET_3 . "\nКор./счет: " . MODULE_PAYMENT_RUS_SCHET_4 . "\nКПП: " . MODULE_PAYMENT_RUS_SCHET_5 . "\nПолучатель: " . MODULE_PAYMENT_RUS_SCHET_6 . "\nИНН: " . MODULE_PAYMENT_RUS_SCHET_7 . "\n\nПосле оплаты заказа обязательно сообщите нам по электронной почте о факте оплаты.");
+  define('MODULE_PAYMENT_RUS_SCHET_TEXT_TITLE', 'РџСЂРµРґРѕРїР»Р°С‚Р° РЅР° СЃС‡С‘С‚');
+  define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION', 'РќР°С€Рё Р±Р°РЅРєРѕРІСЃРєРёРµ СЂРµРєРІРёР·РёС‚С‹:<br><br>РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_1 . '<br>Р Р°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_2 . '<br>Р‘РРљ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_3 . '<br>РљРѕСЂ./СЃС‡РµС‚: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_4 . '<br>РљРџРџ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_5 . '<br>РџРѕР»СѓС‡Р°С‚РµР»СЊ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_6 . '<br>РРќРќ: &nbsp;&nbsp;&nbsp;' . MODULE_PAYMENT_RUS_SCHET_7 . '<br><br>РџРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЃРѕРѕР±С‰РёС‚Рµ РЅР°Рј РїРѕ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚Рµ Рѕ С„Р°РєС‚Рµ РѕРїР»Р°С‚С‹.');
+  define('MODULE_PAYMENT_RUS_SCHET_TEXT_EMAIL_FOOTER', "РќР°С€Рё Р±Р°РЅРєРѕРІСЃРєРёРµ СЂРµРєРІРёР·РёС‚С‹:\n\nРќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°: " . MODULE_PAYMENT_RUS_SCHET_1 . "\nР Р°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚: " . MODULE_PAYMENT_RUS_SCHET_2 . "\nР‘РРљ: " . MODULE_PAYMENT_RUS_SCHET_3 . "\nРљРѕСЂ./СЃС‡РµС‚: " . MODULE_PAYMENT_RUS_SCHET_4 . "\nРљРџРџ: " . MODULE_PAYMENT_RUS_SCHET_5 . "\nРџРѕР»СѓС‡Р°С‚РµР»СЊ: " . MODULE_PAYMENT_RUS_SCHET_6 . "\nРРќРќ: " . MODULE_PAYMENT_RUS_SCHET_7 . "\n\nРџРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЃРѕРѕР±С‰РёС‚Рµ РЅР°Рј РїРѕ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚Рµ Рѕ С„Р°РєС‚Рµ РѕРїР»Р°С‚С‹.");
   
-  define('MODULE_PAYMENT_SCHET_J_NAME_TITLE' , 'Информация о плательщике');
+  define('MODULE_PAYMENT_SCHET_J_NAME_TITLE' , 'РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїР»Р°С‚РµР»СЊС‰РёРєРµ');
   define('MODULE_PAYMENT_SCHET_J_NAME_DESC' , '');
 
-  define('MODULE_PAYMENT_SCHET_J_NAME' , 'Название организации:');
-  define('MODULE_PAYMENT_SCHET_J_NAME_IP' , ' или ФИО предпринимателя');
-  define('MODULE_PAYMENT_SCHET_J_INN' , 'ИНН:');
-  define('MODULE_PAYMENT_SCHET_J_KPP' , 'КПП:');
-  define('MODULE_PAYMENT_SCHET_J_OGRN' , 'ОГРН:');
-  define('MODULE_PAYMENT_SCHET_J_OKPO' , 'ОКПО:');
-  define('MODULE_PAYMENT_SCHET_J_RS' , 'Р/с:');
-  define('MODULE_PAYMENT_SCHET_J_BANK_NAME' , 'Название банка:');
-  define('MODULE_PAYMENT_SCHET_J_BANK_NAME_HELP' , ' Пример: ОАО АКБ "РОСБАНК" Ставропольский филиал, г. Ставрополь');
-  define('MODULE_PAYMENT_SCHET_J_BIK' , 'БИК:');
-  define('MODULE_PAYMENT_SCHET_J_KS' , 'К/с:');
-  define('MODULE_PAYMENT_SCHET_J_ADDRESS' , 'Почтовый адрес:');
-  define('MODULE_PAYMENT_SCHET_J_ADDRESS_HELP' , ' Пример: 355029, г. Ставрополь, ул. Мира 111, оф. 11');
-  define('MODULE_PAYMENT_SCHET_J_YUR_ADDRESS' , 'Юридический адрес');
-  define('MODULE_PAYMENT_SCHET_J_FAKT_ADDRESS' , 'Фактический адрес');
-  define('MODULE_PAYMENT_SCHET_J_TELEPHONE' , 'Телефон');
-  define('MODULE_PAYMENT_SCHET_J_FAX' , 'Факс');
+  define('MODULE_PAYMENT_SCHET_J_NAME' , 'РќР°Р·РІР°РЅРёРµ РѕСЂРіР°РЅРёР·Р°С†РёРё:');
+  define('MODULE_PAYMENT_SCHET_J_NAME_IP' , ' РёР»Рё Р¤РРћ РїСЂРµРґРїСЂРёРЅРёРјР°С‚РµР»СЏ');
+  define('MODULE_PAYMENT_SCHET_J_INN' , 'РРќРќ:');
+  define('MODULE_PAYMENT_SCHET_J_KPP' , 'РљРџРџ:');
+  define('MODULE_PAYMENT_SCHET_J_OGRN' , 'РћР“Р Рќ:');
+  define('MODULE_PAYMENT_SCHET_J_OKPO' , 'РћРљРџРћ:');
+  define('MODULE_PAYMENT_SCHET_J_RS' , 'Р /СЃ:');
+  define('MODULE_PAYMENT_SCHET_J_BANK_NAME' , 'РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°:');
+  define('MODULE_PAYMENT_SCHET_J_BANK_NAME_HELP' , ' РџСЂРёРјРµСЂ: РћРђРћ РђРљР‘ "Р РћРЎР‘РђРќРљ" РЎС‚Р°РІСЂРѕРїРѕР»СЊСЃРєРёР№ С„РёР»РёР°Р», Рі. РЎС‚Р°РІСЂРѕРїРѕР»СЊ');
+  define('MODULE_PAYMENT_SCHET_J_BIK' , 'Р‘РРљ:');
+  define('MODULE_PAYMENT_SCHET_J_KS' , 'Рљ/СЃ:');
+  define('MODULE_PAYMENT_SCHET_J_ADDRESS' , 'РџРѕС‡С‚РѕРІС‹Р№ Р°РґСЂРµСЃ:');
+  define('MODULE_PAYMENT_SCHET_J_ADDRESS_HELP' , ' РџСЂРёРјРµСЂ: 355029, Рі. РЎС‚Р°РІСЂРѕРїРѕР»СЊ, СѓР». РњРёСЂР° 111, РѕС„. 11');
+  define('MODULE_PAYMENT_SCHET_J_YUR_ADDRESS' , 'Р®СЂРёРґРёС‡РµСЃРєРёР№ Р°РґСЂРµСЃ');
+  define('MODULE_PAYMENT_SCHET_J_FAKT_ADDRESS' , 'Р¤Р°РєС‚РёС‡РµСЃРєРёР№ Р°РґСЂРµСЃ');
+  define('MODULE_PAYMENT_SCHET_J_TELEPHONE' , 'РўРµР»РµС„РѕРЅ');
+  define('MODULE_PAYMENT_SCHET_J_FAX' , 'Р¤Р°РєСЃ');
   define('MODULE_PAYMENT_SCHET_J_EMAIL' , 'Email');
-  define('MODULE_PAYMENT_SCHET_J_DIRECTOR' , 'Руководитель');
-  define('MODULE_PAYMENT_SCHET_J_ACCOUNTANT' , 'Бухгалтер');
+  define('MODULE_PAYMENT_SCHET_J_DIRECTOR' , 'Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ');
+  define('MODULE_PAYMENT_SCHET_J_ACCOUNTANT' , 'Р‘СѓС…РіР°Р»С‚РµСЂ');
 
 ?>

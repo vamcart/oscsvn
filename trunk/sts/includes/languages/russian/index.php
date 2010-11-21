@@ -11,46 +11,46 @@
 */
 
 define('TEXT_MAIN', '&nbsp;');
-define('TABLE_HEADING_NEW_PRODUCTS', 'Новинки %s');
-define('TABLE_HEADING_UPCOMING_PRODUCTS', 'Ожидается');
-define('TABLE_HEADING_DATE_EXPECTED', 'Дата поступления');
-define('TABLE_HEADING_DEFAULT_SPECIALS', 'Скидки %s');
+define('TABLE_HEADING_NEW_PRODUCTS', 'РќРѕРІРёРЅРєРё %s');
+define('TABLE_HEADING_UPCOMING_PRODUCTS', 'РћР¶РёРґР°РµС‚СЃСЏ');
+define('TABLE_HEADING_DATE_EXPECTED', 'Р”Р°С‚Р° РїРѕСЃС‚СѓРїР»РµРЅРёСЏ');
+define('TABLE_HEADING_DEFAULT_SPECIALS', 'РЎРєРёРґРєРё %s');
 
 if ( ($category_depth == 'products') || (isset($_GET['manufacturers_id'])) ) {
-  define('HEADING_TITLE', 'Список товаров');
+  define('HEADING_TITLE', 'РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ');
 
   define('TABLE_HEADING_IMAGE', '');
-  define('TABLE_HEADING_MODEL', 'Код товара');
-  define('TABLE_HEADING_PRODUCTS', 'Наименование');
-  define('TABLE_HEADING_MANUFACTURER', 'Производитель');
-  define('TABLE_HEADING_QUANTITY', 'Количество');
-  define('TABLE_HEADING_PRICE', 'Цена');
-  define('TABLE_HEADING_WEIGHT', 'Вес');
-  define('TABLE_HEADING_BUY_NOW', 'Купить');
-  define('TABLE_HEADING_PRODUCT_SORT', 'Порядок');   
-  define('TEXT_NO_PRODUCTS', 'Нет ни одного товара в этом разделе.');
-  define('TEXT_NO_PRODUCTS2', 'Нет ни одного товара данного производителя.');
-  define('TEXT_NUMBER_OF_PRODUCTS', 'Количество товара: ');
-  define('TEXT_SHOW', '<b>Смотреть:</b>');
-  define('TEXT_BUY', 'Купить \'');
-  define('TEXT_NOW', '\' сейчас');
-  define('TEXT_ALL_CATEGORIES', 'Все разделы');
-  define('TEXT_ALL_MANUFACTURERS', 'Все производители');
+  define('TABLE_HEADING_MODEL', 'РљРѕРґ С‚РѕРІР°СЂР°');
+  define('TABLE_HEADING_PRODUCTS', 'РќР°РёРјРµРЅРѕРІР°РЅРёРµ');
+  define('TABLE_HEADING_MANUFACTURER', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ');
+  define('TABLE_HEADING_QUANTITY', 'РљРѕР»РёС‡РµСЃС‚РІРѕ');
+  define('TABLE_HEADING_PRICE', 'Р¦РµРЅР°');
+  define('TABLE_HEADING_WEIGHT', 'Р’РµСЃ');
+  define('TABLE_HEADING_BUY_NOW', 'РљСѓРїРёС‚СЊ');
+  define('TABLE_HEADING_PRODUCT_SORT', 'РџРѕСЂСЏРґРѕРє');   
+  define('TEXT_NO_PRODUCTS', 'РќРµС‚ РЅРё РѕРґРЅРѕРіРѕ С‚РѕРІР°СЂР° РІ СЌС‚РѕРј СЂР°Р·РґРµР»Рµ.');
+  define('TEXT_NO_PRODUCTS2', 'РќРµС‚ РЅРё РѕРґРЅРѕРіРѕ С‚РѕРІР°СЂР° РґР°РЅРЅРѕРіРѕ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ.');
+  define('TEXT_NUMBER_OF_PRODUCTS', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°: ');
+  define('TEXT_SHOW', '<b>РЎРјРѕС‚СЂРµС‚СЊ:</b>');
+  define('TEXT_BUY', 'РљСѓРїРёС‚СЊ \'');
+  define('TEXT_NOW', '\' СЃРµР№С‡Р°СЃ');
+  define('TEXT_ALL_CATEGORIES', 'Р’СЃРµ СЂР°Р·РґРµР»С‹');
+  define('TEXT_ALL_MANUFACTURERS', 'Р’СЃРµ РїСЂРѕРёР·РІРѕРґРёС‚РµР»Рё');
 } elseif ($category_depth == 'top') {
-  define('HEADING_TITLE', 'Добро пожаловать');
+  define('HEADING_TITLE', 'Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ');
 } elseif ($category_depth == 'nested') {
-  define('HEADING_TITLE', 'Разделы');
+  define('HEADING_TITLE', 'Р Р°Р·РґРµР»С‹');
 }
-  define('HEADING_CUSTOMER_GREETING', 'Добро пожаловать');
-  define('MAINPAGE_HEADING_TITLE', 'Приветствуем Вас в нашем интернет-магазине');
+  define('HEADING_CUSTOMER_GREETING', 'Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ');
+  define('MAINPAGE_HEADING_TITLE', 'РџСЂРёРІРµС‚СЃС‚РІСѓРµРј Р’Р°СЃ РІ РЅР°С€РµРј РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ');
 // BOF: Lango added for Featured Products
-  define('TABLE_HEADING_FEATURED_PRODUCTS', 'Рекомендуемые товары');
-  define('TABLE_HEADING_FEATURED_PRODUCTS_CATEGORY', 'Рекомендуемые товары раздела %s'); 
+  define('TABLE_HEADING_FEATURED_PRODUCTS', 'Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹');
+  define('TABLE_HEADING_FEATURED_PRODUCTS_CATEGORY', 'Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹ СЂР°Р·РґРµР»Р° %s'); 
 // EOF: Lango added for Featured Products
 
 // Start Products Specifications
-  define('TEXT_BUTTON_COMPARISON', 'Показать страницу сравнения');
-  define('TEXT_LINK_PRODUCTS_COMPARISON', 'Смотреть страницу сравнения');
+  define('TEXT_BUTTON_COMPARISON', 'РџРѕРєР°Р·Р°С‚СЊ СЃС‚СЂР°РЅРёС†Сѓ СЃСЂР°РІРЅРµРЅРёСЏ');
+  define('TEXT_LINK_PRODUCTS_COMPARISON', 'РЎРјРѕС‚СЂРµС‚СЊ СЃС‚СЂР°РЅРёС†Сѓ СЃСЂР°РІРЅРµРЅРёСЏ');
 // End Products Specifications
 
 ?>

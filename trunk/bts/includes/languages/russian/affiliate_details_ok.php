@@ -14,6 +14,6 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Ïàðòí¸ðñêàÿ ïðîãðàììà');
-define('HEADING_TITLE', 'Âàøè äàííûå óñïåøíî èçìåíåíû!');
+define('NAVBAR_TITLE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ°Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°');
+define('HEADING_TITLE', 'Ð’Ð°ÑˆÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ñ‹!');
 ?>

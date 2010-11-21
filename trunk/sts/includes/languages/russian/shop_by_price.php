@@ -13,22 +13,22 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Сортировка по цене');
-define('HEADING_TITLE', 'Сортировка по цене');
-define('BOX_HEADING_SHOP_BY_PRICE', 'Сортировка по цене');
+define('NAVBAR_TITLE', 'РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С†РµРЅРµ');
+define('HEADING_TITLE', 'РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С†РµРЅРµ');
+define('BOX_HEADING_SHOP_BY_PRICE', 'РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С†РµРЅРµ');
 define('TABLE_HEADING_IMAGE', '');
-define('TABLE_HEADING_PRICE', 'Цена');
-define('TABLE_HEADING_BUY_NOW', 'Купить');
-define('TABLE_HEADING_MODEL', 'Код');
-define('TABLE_HEADING_PRODUCTS', 'Название');
-define('TABLE_HEADING_MANUFACTURER', 'Производитель');
-define('TABLE_HEADING_QUANTITY', 'Количество');
+define('TABLE_HEADING_PRICE', 'Р¦РµРЅР°');
+define('TABLE_HEADING_BUY_NOW', 'РљСѓРїРёС‚СЊ');
+define('TABLE_HEADING_MODEL', 'РљРѕРґ');
+define('TABLE_HEADING_PRODUCTS', 'РќР°Р·РІР°РЅРёРµ');
+define('TABLE_HEADING_MANUFACTURER', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ');
+define('TABLE_HEADING_QUANTITY', 'РљРѕР»РёС‡РµСЃС‚РІРѕ');
 
-$price_ranges = Array( 	"До 100",
-						"От 100 до 250",
-						"От 250 до 500",
-						"От 500 до 1000",
-						"От 1000 и выше" );
+$price_ranges = Array( 	"Р”Рѕ 100",
+						"РћС‚ 100 РґРѕ 250",
+						"РћС‚ 250 РґРѕ 500",
+						"РћС‚ 500 РґРѕ 1000",
+						"РћС‚ 1000 Рё РІС‹С€Рµ" );
 
 $price_ranges_sql = Array( 	"p.products_price < 100",
 							"(p.products_price <= 250 and p.products_price >= 100)",

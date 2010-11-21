@@ -10,25 +10,25 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Îôîðìëåíèå çàêàçà');
-define('NAVBAR_TITLE_2', 'Ñïîñîá äîñòàâêè');
+define('NAVBAR_TITLE_1', 'ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('NAVBAR_TITLE_2', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
 
-define('HEADING_TITLE', 'Èíôîðìàöèÿ î äîñòàâêå çàêàçà');
+define('HEADING_TITLE', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐµ Ð·Ð°ÐºÐ°Ð·Ð°');
 
-define('TABLE_HEADING_SHIPPING_ADDRESS', 'Àäðåñ äîñòàâêè');
-define('TEXT_CHOOSE_SHIPPING_DESTINATION', 'Åñëè Âû õîòèòå èçìåíèòü òåêóùèé àäðåñ äîñòàâêè, íàæìèòå êíîïêó Èçìåíèòü àäðåñ, åñëè òåêóùèé àäðåñ äîñòàâêè ïðàâèëüíûé, âûáèðàéòå íàèáîëåå ïîäõîäÿùèé Âàì ñïîñîá äîñòàâêè è ïðîäîëæàéòå îôîðìëÿòü çàêàç.');
-define('TITLE_SHIPPING_ADDRESS', 'Òåêóùèé àäðåñ äîñòàâêè:');
+define('TABLE_HEADING_SHIPPING_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('TEXT_CHOOSE_SHIPPING_DESTINATION', 'Ð•ÑÐ»Ð¸ Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°Ð´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸, Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ, ÐµÑÐ»Ð¸ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°Ð´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹, Ð²Ñ‹Ð±Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð½Ð°Ð¸Ð±Ð¾Ð»ÐµÐµ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð’Ð°Ð¼ ÑÐ¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð¸ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð°Ð¹Ñ‚Ðµ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·.');
+define('TITLE_SHIPPING_ADDRESS', 'Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°Ð´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸:');
 
-define('TABLE_HEADING_SHIPPING_METHOD', 'Ñïîñîá äîñòàâêè');
-define('TEXT_CHOOSE_SHIPPING_METHOD', 'Äîñòóïíûå ñïîñîáû äîñòàâêè çàêàçà.');
-define('TITLE_PLEASE_SELECT', 'Âûáåðèòå');
-define('TEXT_ENTER_SHIPPING_INFORMATION', 'Íà äàííûé ìîìåíò äîñòóïåí åäèíñòâåííûé ñïîñîá äîñòàâêè:');
+define('TABLE_HEADING_SHIPPING_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('TEXT_CHOOSE_SHIPPING_METHOD', 'Ð”Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ ÑÐ¿Ð¾ÑÐ¾Ð±Ñ‹ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð·Ð°ÐºÐ°Ð·Ð°.');
+define('TITLE_PLEASE_SELECT', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ');
+define('TEXT_ENTER_SHIPPING_INFORMATION', 'ÐÐ° Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ ÐµÐ´Ð¸Ð½ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸:');
 
-define('TABLE_HEADING_COMMENTS', 'Êîììåíòàðèè ê Âàøåìó çàêàçó');
+define('TABLE_HEADING_COMMENTS', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ðº Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°ÐºÐ°Ð·Ñƒ');
 
-define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'Ïðîäîëæèòü îôîðìëåíèå çàêàçà');
-define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Äàëåå Âàì íóæíî áóäåò âûáðàòü ïîäõîäÿùèé ñïîñîá îïëàòû çàêàçà.');
+define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Ð”Ð°Ð»ÐµÐµ Ð’Ð°Ð¼ Ð½ÑƒÐ¶Ð½Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°.');
 
-define('TEXT_ENTER_SHIPPING_NO_METHOD','Íåò äîñòóïíûõ ñïîñîáîâ äîñòàâêè.');
+define('TEXT_ENTER_SHIPPING_NO_METHOD','ÐÐµÑ‚ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ñ… ÑÐ¿Ð¾ÑÐ¾Ð±Ð¾Ð² Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸.');
 
 ?>

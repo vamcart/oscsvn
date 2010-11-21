@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Îòçûâû î ');
-define('NAVBAR_TITLE', 'Îòçûâû');
+define('HEADING_TITLE', 'ÐžÑ‚Ð·Ñ‹Ð²Ñ‹ Ð¾ ');
+define('NAVBAR_TITLE', 'ÐžÑ‚Ð·Ñ‹Ð²Ñ‹');
 
-define('TEXT_NO_ARTICLE_REVIEWS', 'Íà äàííûé ìîìåíò íåò îòçûâîâ î äàííîé ñòàòüå!');
-define('TEXT_OF_5_STARS', '%s èç 5 çâ¸çä');
-define('TEXT_REVIEW_VIEWS', '×èòàëè ðàç: ');
-define('TEXT_READ_REVIEW', '×èòàòü îòçûâ...');
+define('TEXT_NO_ARTICLE_REVIEWS', 'ÐÐ° Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð½ÐµÑ‚ Ð¾Ñ‚Ð·Ñ‹Ð²Ð¾Ð² Ð¾ Ð´Ð°Ð½Ð½Ð¾Ð¹ ÑÑ‚Ð°Ñ‚ÑŒÐµ!');
+define('TEXT_OF_5_STARS', '%s Ð¸Ð· 5 Ð·Ð²Ñ‘Ð·Ð´');
+define('TEXT_REVIEW_VIEWS', 'Ð§Ð¸Ñ‚Ð°Ð»Ð¸ Ñ€Ð°Ð·: ');
+define('TEXT_READ_REVIEW', 'Ð§Ð¸Ñ‚Ð°Ñ‚ÑŒ Ð¾Ñ‚Ð·Ñ‹Ð²...');
 
 ?>

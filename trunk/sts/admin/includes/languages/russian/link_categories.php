@@ -10,38 +10,38 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Раздел');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
+define('HEADING_TITLE', 'Р Р°Р·РґРµР»');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
 
-define('TABLE_HEADING_NAME', 'Название');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_NAME', 'РќР°Р·РІР°РЅРёРµ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_INFO_HEADING_NEW_LINK_CATEGORY', 'Новый раздел');
-define('TEXT_INFO_HEADING_EDIT_LINK_CATEGORY', 'Изменение раздела');
-define('TEXT_INFO_HEADING_DELETE_LINK_CATEGORY', 'Удаление раздела');
+define('TEXT_INFO_HEADING_NEW_LINK_CATEGORY', 'РќРѕРІС‹Р№ СЂР°Р·РґРµР»');
+define('TEXT_INFO_HEADING_EDIT_LINK_CATEGORY', 'РР·РјРµРЅРµРЅРёРµ СЂР°Р·РґРµР»Р°');
+define('TEXT_INFO_HEADING_DELETE_LINK_CATEGORY', 'РЈРґР°Р»РµРЅРёРµ СЂР°Р·РґРµР»Р°');
 
-define('TEXT_INFO_LINK_CATEGORY_COUNT', 'Ссылки:');
-define('TEXT_INFO_LINK_CATEGORY_STATUS', 'Статус:');
-define('TEXT_INFO_LINK_CATEGORY_DESCRIPTION', 'Описание:');
-define('TEXT_INFO_LINK_CATEGORY_SORT_ORDER', 'Порядок сортировки:');
-define('TEXT_DATE_LINK_CATEGORY_CREATED', 'Дата создания:');
-define('TEXT_DATE_LINK_CATEGORY_LAST_MODIFIED', 'Последние изменения:');
-define('TEXT_IMAGE_NONEXISTENT', 'КАРТИНКА ОТСУТСТВУЕТ');
+define('TEXT_INFO_LINK_CATEGORY_COUNT', 'РЎСЃС‹Р»РєРё:');
+define('TEXT_INFO_LINK_CATEGORY_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('TEXT_INFO_LINK_CATEGORY_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ:');
+define('TEXT_INFO_LINK_CATEGORY_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё:');
+define('TEXT_DATE_LINK_CATEGORY_CREATED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ:');
+define('TEXT_DATE_LINK_CATEGORY_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_IMAGE_NONEXISTENT', 'РљРђР РўРРќРљРђ РћРўРЎРЈРўРЎРўР’РЈР•Рў');
 
-define('TEXT_NEW_LINK_CATEGORIES_INTRO', 'Чтобы создать новый раздел, Вам необходимо заполнитт следующую форму');
-define('TEXT_EDIT_LINK_CATEGORIES_INTRO', 'Внесите необходимые изменения');
-define('TEXT_DELETE_LINK_CATEGORIES_INTRO', 'Вы действительно хотите удалить данный раздел?');
+define('TEXT_NEW_LINK_CATEGORIES_INTRO', 'Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ СЂР°Р·РґРµР», Р’Р°Рј РЅРµРѕР±С…РѕРґРёРјРѕ Р·Р°РїРѕР»РЅРёС‚С‚ СЃР»РµРґСѓСЋС‰СѓСЋ С„РѕСЂРјСѓ');
+define('TEXT_EDIT_LINK_CATEGORIES_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_DELETE_LINK_CATEGORIES_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ СЂР°Р·РґРµР»?');
 
-define('TEXT_LINK_CATEGORIES_NAME', 'Название раздела:');
-define('TEXT_LINK_CATEGORIES_DESCRIPTION', 'Описание раздела:');
-define('TEXT_LINK_CATEGORIES_IMAGE', 'Картинка раздела:');
-define('TEXT_LINK_CATEGORIES_SORT_ORDER', 'Порядок сортировки:');
-define('TEXT_LINK_CATEGORIES_STATUS', 'Статус:');
-define('TEXT_LINK_CATEGORIES_STATUS_ENABLE', 'Активна');
-define('TEXT_LINK_CATEGORIES_STATUS_DISABLE', 'Неактивна');
+define('TEXT_LINK_CATEGORIES_NAME', 'РќР°Р·РІР°РЅРёРµ СЂР°Р·РґРµР»Р°:');
+define('TEXT_LINK_CATEGORIES_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ СЂР°Р·РґРµР»Р°:');
+define('TEXT_LINK_CATEGORIES_IMAGE', 'РљР°СЂС‚РёРЅРєР° СЂР°Р·РґРµР»Р°:');
+define('TEXT_LINK_CATEGORIES_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё:');
+define('TEXT_LINK_CATEGORIES_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('TEXT_LINK_CATEGORIES_STATUS_ENABLE', 'РђРєС‚РёРІРЅР°');
+define('TEXT_LINK_CATEGORIES_STATUS_DISABLE', 'РќРµР°РєС‚РёРІРЅР°');
 
-define('TEXT_DELETE_WARNING_LINKS', '<b>ВНИМАНИЕ:</b> С данным разделом связано %s ссылок');
+define('TEXT_DELETE_WARNING_LINKS', '<b>Р’РќРРњРђРќРР•:</b> РЎ РґР°РЅРЅС‹Рј СЂР°Р·РґРµР»РѕРј СЃРІСЏР·Р°РЅРѕ %s СЃСЃС‹Р»РѕРє');
 
-define('TEXT_DISPLAY_NUMBER_OF_LINK_CATEGORIES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> разделов)');
+define('TEXT_DISPLAY_NUMBER_OF_LINK_CATEGORIES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЂР°Р·РґРµР»РѕРІ)');
 ?>

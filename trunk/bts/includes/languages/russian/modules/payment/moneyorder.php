@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_MONEYORDER_TEXT_TITLE', 'Чек');
-  define('MODULE_PAYMENT_MONEYORDER_TEXT_DESCRIPTION', 'Информация для оплаты:&nbsp;' . MODULE_PAYMENT_MONEYORDER_PAYTO . '<br><br>Почтовый адрес:<br>' . nl2br(STORE_NAME_ADDRESS) . '<br><br>' . 'Ваш заказ не будет отправлен пока мы не получим оплату.');
-  define('MODULE_PAYMENT_MONEYORDER_TEXT_EMAIL_FOOTER', "Информация для оплаты: ". MODULE_PAYMENT_MONEYORDER_PAYTO . "\n\nПочтовый адрес:\n" . STORE_NAME_ADDRESS . "\n\n" . 'Ваш заказ не будет отправлен пока мы не получим оплату.');
+  define('MODULE_PAYMENT_MONEYORDER_TEXT_TITLE', 'Р§РµРє');
+  define('MODULE_PAYMENT_MONEYORDER_TEXT_DESCRIPTION', 'РРЅС„РѕСЂРјР°С†РёСЏ РґР»СЏ РѕРїР»Р°С‚С‹:&nbsp;' . MODULE_PAYMENT_MONEYORDER_PAYTO . '<br><br>РџРѕС‡С‚РѕРІС‹Р№ Р°РґСЂРµСЃ:<br>' . nl2br(STORE_NAME_ADDRESS) . '<br><br>' . 'Р’Р°С€ Р·Р°РєР°Р· РЅРµ Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ РїРѕРєР° РјС‹ РЅРµ РїРѕР»СѓС‡РёРј РѕРїР»Р°С‚Сѓ.');
+  define('MODULE_PAYMENT_MONEYORDER_TEXT_EMAIL_FOOTER', "РРЅС„РѕСЂРјР°С†РёСЏ РґР»СЏ РѕРїР»Р°С‚С‹: ". MODULE_PAYMENT_MONEYORDER_PAYTO . "\n\nРџРѕС‡С‚РѕРІС‹Р№ Р°РґСЂРµСЃ:\n" . STORE_NAME_ADDRESS . "\n\n" . 'Р’Р°С€ Р·Р°РєР°Р· РЅРµ Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ РїРѕРєР° РјС‹ РЅРµ РїРѕР»СѓС‡РёРј РѕРїР»Р°С‚Сѓ.');
 ?>

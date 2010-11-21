@@ -329,7 +329,7 @@ define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'The first four digits of the number ent
 */
 define('FOOTER_TEXT_BODY', '<center>
 <span class="smallText">
-E-Commerce Engine Copyright © 2003-2007 <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br>
+E-Commerce Engine Copyright В© 2003-2007 <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br>
 osCommerce provides no warranty and is redistributable under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a><br>
 <a href="http://oscommerce.com" target="_blank">Powered by osCommerce 2.2 MS2 VaM Edition Ver. ' . implode('', file(DIR_FS_CATALOG .'VERSION.txt')) . '</a><br>
 <a href="rss2_info.php"><img src="images/rss.png" width="36" height="14" alt="RSS channels" border="0"></a><br>

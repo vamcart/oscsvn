@@ -10,35 +10,35 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE_OPT', 'Àòðèáóòû òîâàðîâ');
-define('HEADING_TITLE_VAL', 'Çíà÷åíèÿ àòðèáóòîâ');
-define('HEADING_TITLE_ATRIB', 'Àòðèáóòû òîâàðîâ');
+define('HEADING_TITLE_OPT', 'ÐÑ‚Ñ€Ð¸Ð±ÑƒÑ‚Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²');
+define('HEADING_TITLE_VAL', 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð¾Ð²');
+define('HEADING_TITLE_ATRIB', 'ÐÑ‚Ñ€Ð¸Ð±ÑƒÑ‚Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²');
 
 define('TABLE_HEADING_ID', 'ID');
-define('TABLE_HEADING_PRODUCT', 'Íàçâàíèå òîâàðà');
-define('TABLE_HEADING_OPT_NAME', 'Íàçâàíèå àòðèáóòà');
+define('TABLE_HEADING_PRODUCT', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('TABLE_HEADING_OPT_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°');
 
 // otf 1.71 New field definitions
-define('TABLE_HEADING_OPT_TYPE', 'Òèï àòðèáóòà');
-define('TABLE_HEADING_OPT_LENGTH', 'Äëèíà ïîëÿ');
-define('TABLE_HEADING_OPT_COMMENT', 'Êîììåíòàðèé');
+define('TABLE_HEADING_OPT_TYPE', 'Ð¢Ð¸Ð¿ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°');
+define('TABLE_HEADING_OPT_LENGTH', 'Ð”Ð»Ð¸Ð½Ð° Ð¿Ð¾Ð»Ñ');
+define('TABLE_HEADING_OPT_COMMENT', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹');
 
-define('TABLE_HEADING_OPT_VALUE', 'Çíà÷åíèå àòðèáóòà');
-define('TABLE_HEADING_OPT_PRICE', 'Öåíà');
-define('TABLE_HEADING_OPT_PRICE_PREFIX', 'Ïðåôèêñ');
-define('TABLE_HEADING_ACTION', 'Äåéñòâèå');
-define('TABLE_HEADING_DOWNLOAD', 'Ñêà÷èâàåìûå òîâàðû:');
-define('TABLE_TEXT_FILENAME', 'Èìÿ ôàéëà:');
-define('TABLE_HEADING_FILENAME', 'Èìÿ ôàéëà');
-define('TABLE_TEXT_MAX_DAYS', 'Äàòà îêîí÷àíèÿ:');
-define('TABLE_TEXT_MAX_COUNT', 'Ìàêñèìóì çàãðóçîê:');
+define('TABLE_HEADING_OPT_VALUE', 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°');
+define('TABLE_HEADING_OPT_PRICE', 'Ð¦ÐµÐ½Ð°');
+define('TABLE_HEADING_OPT_PRICE_PREFIX', 'ÐŸÑ€ÐµÑ„Ð¸ÐºÑ');
+define('TABLE_HEADING_ACTION', 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ');
+define('TABLE_HEADING_DOWNLOAD', 'Ð¡ÐºÐ°Ñ‡Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹:');
+define('TABLE_TEXT_FILENAME', 'Ð˜Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°:');
+define('TABLE_HEADING_FILENAME', 'Ð˜Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°');
+define('TABLE_TEXT_MAX_DAYS', 'Ð”Ð°Ñ‚Ð° Ð¾ÐºÐ¾Ð½Ñ‡Ð°Ð½Ð¸Ñ:');
+define('TABLE_TEXT_MAX_COUNT', 'ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº:');
 
 define('MAX_ROW_LISTS_OPTIONS', 10);
 
-define('TEXT_WARNING_OF_DELETE', 'Ýòà îïöèÿ ñâÿçàíà ñ òîâàðàìè è íå ñîõðàíèòñÿ ïîñëå åå óäàëåíèÿ.');
-define('TEXT_OK_TO_DELETE', 'Ýòà îïöèÿ íå ñâÿçàíà ñ òîâàðàìè è íå ñîõðàíèòñÿ ïîñëå åå óäàëåíèÿ.');
-define('TEXT_OPTION_ID', 'Êîä àòðèáóòà');
-define('TEXT_OPTION_NAME', 'Íàçâàíèå àòðèáóòà');
-define('TEXT_OPTION_SORT_ORDER', 'Ïîðÿäîê ñîðòèðîâêè:');
-define('TABLE_HEADING_OPTION_SORT_ORDER', 'Ïîðÿäîê ñîðòèðîâêè');
+define('TEXT_WARNING_OF_DELETE', 'Ð­Ñ‚Ð° Ð¾Ð¿Ñ†Ð¸Ñ ÑÐ²ÑÐ·Ð°Ð½Ð° Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Ð¼Ð¸ Ð¸ Ð½Ðµ ÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑÑ Ð¿Ð¾ÑÐ»Ðµ ÐµÐµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ.');
+define('TEXT_OK_TO_DELETE', 'Ð­Ñ‚Ð° Ð¾Ð¿Ñ†Ð¸Ñ Ð½Ðµ ÑÐ²ÑÐ·Ð°Ð½Ð° Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Ð¼Ð¸ Ð¸ Ð½Ðµ ÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑÑ Ð¿Ð¾ÑÐ»Ðµ ÐµÐµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ.');
+define('TEXT_OPTION_ID', 'ÐšÐ¾Ð´ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°');
+define('TEXT_OPTION_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð°Ñ‚Ñ€Ð¸Ð±ÑƒÑ‚Ð°');
+define('TEXT_OPTION_SORT_ORDER', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:');
+define('TABLE_HEADING_OPTION_SORT_ORDER', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸');
 ?>

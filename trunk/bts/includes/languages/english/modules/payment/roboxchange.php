@@ -4,6 +4,6 @@
   metashop@metashop.ru
 */
 
-  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_TITLE', 'RoboKassa (MoneyMail, Åäèíûé Êîøåëåê, EasyPay, PayExpress)');
-  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_DESCRIPTION', 'RoboKassa (MoneyMail, Åäèíûé Êîøåëåê, EasyPay, PayExpress)');
+  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_TITLE', 'RoboKassa (MoneyMail, Ð•Ð´Ð¸Ð½Ñ‹Ð¹ ÐšÐ¾ÑˆÐµÐ»ÐµÐº, EasyPay, PayExpress)');
+  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_DESCRIPTION', 'RoboKassa (MoneyMail, Ð•Ð´Ð¸Ð½Ñ‹Ð¹ ÐšÐ¾ÑˆÐµÐ»ÐµÐº, EasyPay, PayExpress)');
 ?>

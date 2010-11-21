@@ -60,7 +60,7 @@ define('TEXT_DUMPER_FILE', 'File:');
 define('TEXT_DUMPER_TABLE_STATUS', 'Table status:');
 define('TEXT_DUMPER_TOTAL_STATUS', 'Total:');
 
-define('TEXT_DUMPER_ERROR', 'Œ¯Ë·Í‡');
+define('TEXT_DUMPER_ERROR', '–û—à–∏–±–∫–∞');
 define('TEXT_DUMPER_BROWSER_ERROR', 'Minimum system requirements:<br /> - Internet Explorer 5.5+, Mozilla or Opera 8+ (<span id=sie>-</span>)<br /> - JavaScript enabled (<span id=sjs>-</span>)');
 
 define('TEXT_DUMPER_LOGIN_HEADER', 'Login and password');

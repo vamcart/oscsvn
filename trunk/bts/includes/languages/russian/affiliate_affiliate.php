@@ -14,23 +14,23 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Вход');
-define('HEADING_TITLE', 'Вход');
-define('HEADING_TITLE_ERROR', 'Ошибка регистрации');
+define('NAVBAR_TITLE', 'Р’С…РѕРґ');
+define('HEADING_TITLE', 'Р’С…РѕРґ');
+define('HEADING_TITLE_ERROR', 'РћС€РёР±РєР° СЂРµРіРёСЃС‚СЂР°С†РёРё');
 
-define('TEXT_AFFILIATE_LOGOFF', 'Выход');
+define('TEXT_AFFILIATE_LOGOFF', 'Р’С‹С…РѕРґ');
 define('TEXT_AFFILIATE_ID', 'Email:');
-define('TEXT_AFFILIATE_PASSWORD', 'Пароль:');
+define('TEXT_AFFILIATE_PASSWORD', 'РџР°СЂРѕР»СЊ:');
 
-define('HEADING_NEW_AFFILIATE', 'Регистрация в партнёрской программе');
-define('TEXT_NEW_AFFILIATE', 'Я хочу зарегистрироваться.');
-define('TEXT_NEW_AFFILIATE_INTRODUCTION', 'Регистрируясь в Партнёрской программе ' . STORE_NAME . ', Вы получаете возможность зарабатывать деньги, привлекая новых клиентов в наш магазин, получая при этом свою комиссию за каждый оплаченный заказ, сделанный через Вас.');
-define('TEXT_NEW_AFFILIATE_TERMS', 'Правила партнёрской программы');
+define('HEADING_NEW_AFFILIATE', 'Р РµРіРёСЃС‚СЂР°С†РёСЏ РІ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјРµ');
+define('TEXT_NEW_AFFILIATE', 'РЇ С…РѕС‡Сѓ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ.');
+define('TEXT_NEW_AFFILIATE_INTRODUCTION', 'Р РµРіРёСЃС‚СЂРёСЂСѓСЏСЃСЊ РІ РџР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјРµ ' . STORE_NAME . ', Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°СЂР°Р±Р°С‚С‹РІР°С‚СЊ РґРµРЅСЊРіРё, РїСЂРёРІР»РµРєР°СЏ РЅРѕРІС‹С… РєР»РёРµРЅС‚РѕРІ РІ РЅР°С€ РјР°РіР°Р·РёРЅ, РїРѕР»СѓС‡Р°СЏ РїСЂРё СЌС‚РѕРј СЃРІРѕСЋ РєРѕРјРёСЃСЃРёСЋ Р·Р° РєР°Р¶РґС‹Р№ РѕРїР»Р°С‡РµРЅРЅС‹Р№ Р·Р°РєР°Р·, СЃРґРµР»Р°РЅРЅС‹Р№ С‡РµСЂРµР· Р’Р°СЃ.');
+define('TEXT_NEW_AFFILIATE_TERMS', 'РџСЂР°РІРёР»Р° РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјС‹');
 
-define('HEADING_RETURNING_AFFILIATE', 'Зарегистрированный пользователь');
-define('TEXT_RETURNING_AFFILIATE', 'Я уже зарегистрирован.');
+define('HEADING_RETURNING_AFFILIATE', 'Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ');
+define('TEXT_RETURNING_AFFILIATE', 'РЇ СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ.');
 
-define('TEXT_AFFILIATE_PASSWORD_FORGOTTEN', 'Забыли пароль? Нажмите здесь.');
+define('TEXT_AFFILIATE_PASSWORD_FORGOTTEN', 'Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ? РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ.');
 
-define('TEXT_LOGIN_ERROR', '<font color="#ff0000"><b>ОШИБКА:</b></font> Неверный \'Email\' или/и \'Пароль\'.');
+define('TEXT_LOGIN_ERROR', '<font color="#ff0000"><b>РћРЁРР‘РљРђ:</b></font> РќРµРІРµСЂРЅС‹Р№ \'Email\' РёР»Рё/Рё \'РџР°СЂРѕР»СЊ\'.');
 ?>

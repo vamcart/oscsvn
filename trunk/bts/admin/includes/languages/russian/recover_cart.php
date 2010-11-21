@@ -11,38 +11,38 @@
 
 */
 
-define('MESSAGE_STACK_CUSTOMER_ID', 'Íåçàâåðø¸ííûé çàêàç ïîêóïàòåëÿ (id êîä ');
-define('MESSAGE_STACK_DELETE_SUCCESS', ') óñïåøíî óäàë¸í.');
-define('HEADING_TITLE', 'Íåçàâåðø¸ííûå çàêàçû');
-define('HEADING_EMAIL_SENT', 'Îò÷¸ò îá îòïðàâêå ïèñåì');
+define('MESSAGE_STACK_CUSTOMER_ID', 'ÐÐµÐ·Ð°Ð²ÐµÑ€ÑˆÑ‘Ð½Ð½Ñ‹Ð¹ Ð·Ð°ÐºÐ°Ð· Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ (id ÐºÐ¾Ð´ ');
+define('MESSAGE_STACK_DELETE_SUCCESS', ') ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑƒÐ´Ð°Ð»Ñ‘Ð½.');
+define('HEADING_TITLE', 'ÐÐµÐ·Ð°Ð²ÐµÑ€ÑˆÑ‘Ð½Ð½Ñ‹Ðµ Ð·Ð°ÐºÐ°Ð·Ñ‹');
+define('HEADING_EMAIL_SENT', 'ÐžÑ‚Ñ‡Ñ‘Ñ‚ Ð¾Ð± Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐµ Ð¿Ð¸ÑÐµÐ¼');
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
-define('EMAIL_TEXT_SUBJECT', 'Ñîîáùåíèå îò Èíòåðíåò-ìàãàçèíà '.  STORE_NAME );
-define('EMAIL_TEXT_SALUTATION', 'Óâàæàåìûé ' );
-define('EMAIL_TEXT_NEWCUST_INTRO', "\n\n" . 'Âû íà÷èíàëè îôîðìëÿòü çàêàç â Èíòåðíåò-ìàãàçèíå ' .
-                                   STORE_NAME . ', íî òàê è íå îôîðìèëè åãî äî êîíöà.');
-define('EMAIL_TEXT_CURCUST_INTRO', "\n\n" . 'Âû íà÷èíàëè îôîðìëÿòü çàêàç â Èíòåðíåò-ìàãàçèíå ' .
-                                   STORE_NAME . ', íî òàê è íå îôîðìèëè åãî äî êîíöà.  ');
-define('EMAIL_TEXT_COMMON_BODY', "\n\n" . 'Íàì áûëî áû èíòåðåñíî óçíàòü, ïî÷åìó Âû òàê è íå îôîðìèëè åãî äî êîíöà? Åñëè ó Âàñ â ïðîöåññå îôîðìëåíèÿ çàêàçà âîçíèêëè êàêèå-ëèáî ïðîáëåìû, ìû âñåãäà ãîòîâû Âàì ïîìî÷ü ñ îôîðìëåíèåì çàêàçà è ñ óäîâîëüñòâèåì îòâåòèì íà âîçíèêøèå âîïðîñû. Çàäàéòå íàì èõ â îòâåòíîì ïèñüìå, ìû ïîìîæåì Âàì îôîðìèòü çàêàç.' .
-                                  "\n\n" . 'Òîâàð, êîòîðûé Âû çàêàçûâàëè:' .
+define('EMAIL_TEXT_SUBJECT', 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¾Ñ‚ Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° '.  STORE_NAME );
+define('EMAIL_TEXT_SALUTATION', 'Ð£Ð²Ð°Ð¶Ð°ÐµÐ¼Ñ‹Ð¹ ' );
+define('EMAIL_TEXT_NEWCUST_INTRO', "\n\n" . 'Ð’Ñ‹ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ð»Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð· Ð² Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ðµ ' .
+                                   STORE_NAME . ', Ð½Ð¾ Ñ‚Ð°Ðº Ð¸ Ð½Ðµ Ð¾Ñ„Ð¾Ñ€Ð¼Ð¸Ð»Ð¸ ÐµÐ³Ð¾ Ð´Ð¾ ÐºÐ¾Ð½Ñ†Ð°.');
+define('EMAIL_TEXT_CURCUST_INTRO', "\n\n" . 'Ð’Ñ‹ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ð»Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð· Ð² Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ðµ ' .
+                                   STORE_NAME . ', Ð½Ð¾ Ñ‚Ð°Ðº Ð¸ Ð½Ðµ Ð¾Ñ„Ð¾Ñ€Ð¼Ð¸Ð»Ð¸ ÐµÐ³Ð¾ Ð´Ð¾ ÐºÐ¾Ð½Ñ†Ð°.  ');
+define('EMAIL_TEXT_COMMON_BODY', "\n\n" . 'ÐÐ°Ð¼ Ð±Ñ‹Ð»Ð¾ Ð±Ñ‹ Ð¸Ð½Ñ‚ÐµÑ€ÐµÑÐ½Ð¾ ÑƒÐ·Ð½Ð°Ñ‚ÑŒ, Ð¿Ð¾Ñ‡ÐµÐ¼Ñƒ Ð’Ñ‹ Ñ‚Ð°Ðº Ð¸ Ð½Ðµ Ð¾Ñ„Ð¾Ñ€Ð¼Ð¸Ð»Ð¸ ÐµÐ³Ð¾ Ð´Ð¾ ÐºÐ¾Ð½Ñ†Ð°? Ð•ÑÐ»Ð¸ Ñƒ Ð’Ð°Ñ Ð² Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐµ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð° Ð²Ð¾Ð·Ð½Ð¸ÐºÐ»Ð¸ ÐºÐ°ÐºÐ¸Ðµ-Ð»Ð¸Ð±Ð¾ Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹, Ð¼Ñ‹ Ð²ÑÐµÐ³Ð´Ð° Ð³Ð¾Ñ‚Ð¾Ð²Ñ‹ Ð’Ð°Ð¼ Ð¿Ð¾Ð¼Ð¾Ñ‡ÑŒ Ñ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸ÐµÐ¼ Ð·Ð°ÐºÐ°Ð·Ð° Ð¸ Ñ ÑƒÐ´Ð¾Ð²Ð¾Ð»ÑŒÑÑ‚Ð²Ð¸ÐµÐ¼ Ð¾Ñ‚Ð²ÐµÑ‚Ð¸Ð¼ Ð½Ð° Ð²Ð¾Ð·Ð½Ð¸ÐºÑˆÐ¸Ðµ Ð²Ð¾Ð¿Ñ€Ð¾ÑÑ‹. Ð—Ð°Ð´Ð°Ð¹Ñ‚Ðµ Ð½Ð°Ð¼ Ð¸Ñ… Ð² Ð¾Ñ‚Ð²ÐµÑ‚Ð½Ð¾Ð¼ Ð¿Ð¸ÑÑŒÐ¼Ðµ, Ð¼Ñ‹ Ð¿Ð¾Ð¼Ð¾Ð¶ÐµÐ¼ Ð’Ð°Ð¼ Ð¾Ñ„Ð¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·.' .
+                                  "\n\n" . 'Ð¢Ð¾Ð²Ð°Ñ€, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð’Ñ‹ Ð·Ð°ÐºÐ°Ð·Ñ‹Ð²Ð°Ð»Ð¸:' .
                                  "\n\n" . '%s' . "\n");
-define('DAYS_FIELD_PREFIX', 'Ïîêàçàòü çàêàçû çà ïîñëåäíèå ');
-define('DAYS_FIELD_POSTFIX', ' äíåé ');
-define('DAYS_FIELD_BUTTON', 'Ñìîòðåòü');
-define('TABLE_HEADING_DATE', 'Äàòà');
-define('TABLE_HEADING_CONTACT', 'Óâåäîìë¸í');
-define('TABLE_HEADING_CUSTOMER', 'Èìÿ ïîêóïàòåëÿ');
-define('TABLE_HEADING_EMAIL', 'E-mail àäðåñ');
-define('TABLE_HEADING_PHONE', 'Òåëåôîí');
-define('TABLE_HEADING_MODEL', 'Êîä');
-define('TABLE_HEADING_DESCRIPTION', 'Òîâàð');
-define('TABLE_HEADING_QUANTY', 'Êîëè÷åñòâî');
-define('TABLE_HEADING_PRICE', 'Ñòîèìîñòü');
-define('TABLE_HEADING_TOTAL', 'Âñåãî');
-define('TABLE_GRAND_TOTAL', 'Îáùàÿ ñòîèìîñòü íåçàâåðø¸ííûõ çàêàçîâ: ');
-define('TABLE_CART_TOTAL', 'Ñòîèìîñòü çàêàçà: ');
-define('TEXT_CURRENT_CUSTOMER', 'Ïîêóïàòåëü');
-define('TEXT_SEND_EMAIL', 'Îòïðàâèòü E-mail');
-define('TEXT_RETURN', 'Âåðíóòüñÿ íàçàä');
-define('TEXT_NOT_CONTACTED', 'Íå óâåäîìë¸í');
-define('PSMSG', 'Äîïîëíèòåëüíîå ñîîáùåíèå: ');
+define('DAYS_FIELD_PREFIX', 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ñ‹ Ð·Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ ');
+define('DAYS_FIELD_POSTFIX', ' Ð´Ð½ÐµÐ¹ ');
+define('DAYS_FIELD_BUTTON', 'Ð¡Ð¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ');
+define('TABLE_HEADING_DATE', 'Ð”Ð°Ñ‚Ð°');
+define('TABLE_HEADING_CONTACT', 'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»Ñ‘Ð½');
+define('TABLE_HEADING_CUSTOMER', 'Ð˜Ð¼Ñ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('TABLE_HEADING_EMAIL', 'E-mail Ð°Ð´Ñ€ÐµÑ');
+define('TABLE_HEADING_PHONE', 'Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½');
+define('TABLE_HEADING_MODEL', 'ÐšÐ¾Ð´');
+define('TABLE_HEADING_DESCRIPTION', 'Ð¢Ð¾Ð²Ð°Ñ€');
+define('TABLE_HEADING_QUANTY', 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾');
+define('TABLE_HEADING_PRICE', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ');
+define('TABLE_HEADING_TOTAL', 'Ð’ÑÐµÐ³Ð¾');
+define('TABLE_GRAND_TOTAL', 'ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð½ÐµÐ·Ð°Ð²ÐµÑ€ÑˆÑ‘Ð½Ð½Ñ‹Ñ… Ð·Ð°ÐºÐ°Ð·Ð¾Ð²: ');
+define('TABLE_CART_TOTAL', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°: ');
+define('TEXT_CURRENT_CUSTOMER', 'ÐŸÐ¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŒ');
+define('TEXT_SEND_EMAIL', 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ E-mail');
+define('TEXT_RETURN', 'Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´');
+define('TEXT_NOT_CONTACTED', 'ÐÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»Ñ‘Ð½');
+define('PSMSG', 'Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ: ');
 ?>

@@ -1,13 +1,13 @@
 <?php
 
-define('NAVBAR_TITLE', 'Êîììåíòàðèè ê íîâîñòÿì');
-define('HEADING_TITLE', 'Êîììåíòàðèè ê íîâîñòÿì');
-define('TABLE_HEADING_NUMBER', '¹');
-define('TABLE_HEADING_AUTHOR', 'Àâòîð');
-define('TABLE_HEADING_RATING', 'Ðåéòèíã');
-define('TABLE_HEADING_READ', 'Ïðîñìîòðîâ');
-define('TABLE_HEADING_DATE_ADDED', 'Äàòà');
-define('TEXT_OF_5_STARS', '%s èç 5 çâ¸çä!');
-define('TEXT_NO_REVIEWS', 'Ïîêà íåò íè îäíîãî êîììåíòàðèÿ!');
+define('NAVBAR_TITLE', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ðº Ð½Ð¾Ð²Ð¾ÑÑ‚ÑÐ¼');
+define('HEADING_TITLE', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ðº Ð½Ð¾Ð²Ð¾ÑÑ‚ÑÐ¼');
+define('TABLE_HEADING_NUMBER', 'â„–');
+define('TABLE_HEADING_AUTHOR', 'ÐÐ²Ñ‚Ð¾Ñ€');
+define('TABLE_HEADING_RATING', 'Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³');
+define('TABLE_HEADING_READ', 'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð¾Ð²');
+define('TABLE_HEADING_DATE_ADDED', 'Ð”Ð°Ñ‚Ð°');
+define('TEXT_OF_5_STARS', '%s Ð¸Ð· 5 Ð·Ð²Ñ‘Ð·Ð´!');
+define('TEXT_NO_REVIEWS', 'ÐŸÐ¾ÐºÐ° Ð½ÐµÑ‚ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ!');
 
 ?>

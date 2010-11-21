@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Îòçûâ');
-define('HEADING_TITLE', 'Îòçûâ î ');
-define('SUB_TITLE_ARTICLE', 'Ñòàòüÿ:');
-define('SUB_TITLE_FROM', 'Îò:');
-define('SUB_TITLE_DATE', 'Äàòà:');
-define('SUB_TITLE_REVIEW', 'Îòçûâ:');
-define('SUB_TITLE_RATING', 'Ðåéòèíã:');
-define('TEXT_OF_5_STARS', '%s èç 5 çâ¸çä');
+define('NAVBAR_TITLE', 'ÐžÑ‚Ð·Ñ‹Ð²');
+define('HEADING_TITLE', 'ÐžÑ‚Ð·Ñ‹Ð² Ð¾ ');
+define('SUB_TITLE_ARTICLE', 'Ð¡Ñ‚Ð°Ñ‚ÑŒÑ:');
+define('SUB_TITLE_FROM', 'ÐžÑ‚:');
+define('SUB_TITLE_DATE', 'Ð”Ð°Ñ‚Ð°:');
+define('SUB_TITLE_REVIEW', 'ÐžÑ‚Ð·Ñ‹Ð²:');
+define('SUB_TITLE_RATING', 'Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³:');
+define('TEXT_OF_5_STARS', '%s Ð¸Ð· 5 Ð·Ð²Ñ‘Ð·Ð´');
 ?>

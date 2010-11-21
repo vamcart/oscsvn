@@ -15,10 +15,10 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Ìàãàçèí çàêðûò íà òåõíè÷åñêîå îáñëóæèâàíèå.');
-define('HEADING_TITLE', 'Ìàãàçèí âðåìåííî çàêðûò ...');
-define('DOWN_FOR_MAINTENANCE_TEXT_INFORMATION', 'Ïðîâîäÿòñÿ òåõíè÷åñêèå ðàáîòû íà ñåðâåðå, çàõîäèòå ïîçæå.');
-define('TEXT_MAINTENANCE_ON_AT_TIME', 'Äàòà çàêðûòèÿ: ');
-define('TEXT_MAINTENANCE_PERIOD', 'Ìàãàçèí âîçîáíîâèò ðàáîòó ÷åðåç: ');
-define('DOWN_FOR_MAINTENANCE_STATUS_TEXT', 'Íàæìèòå êíîïêó "Ïðîäîëæèòü", âîçìîæíî, ìàãàçèí óæå ðàáîòàåò:');
+define('NAVBAR_TITLE', 'ÐœÐ°Ð³Ð°Ð·Ð¸Ð½ Ð·Ð°ÐºÑ€Ñ‹Ñ‚ Ð½Ð° Ñ‚ÐµÑ…Ð½Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¾Ð±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°Ð½Ð¸Ðµ.');
+define('HEADING_TITLE', 'ÐœÐ°Ð³Ð°Ð·Ð¸Ð½ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾ Ð·Ð°ÐºÑ€Ñ‹Ñ‚ ...');
+define('DOWN_FOR_MAINTENANCE_TEXT_INFORMATION', 'ÐŸÑ€Ð¾Ð²Ð¾Ð´ÑÑ‚ÑÑ Ñ‚ÐµÑ…Ð½Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð½Ð° ÑÐµÑ€Ð²ÐµÑ€Ðµ, Ð·Ð°Ñ…Ð¾Ð´Ð¸Ñ‚Ðµ Ð¿Ð¾Ð·Ð¶Ðµ.');
+define('TEXT_MAINTENANCE_ON_AT_TIME', 'Ð”Ð°Ñ‚Ð° Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ð¸Ñ: ');
+define('TEXT_MAINTENANCE_PERIOD', 'ÐœÐ°Ð³Ð°Ð·Ð¸Ð½ Ð²Ð¾Ð·Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ Ñ‡ÐµÑ€ÐµÐ·: ');
+define('DOWN_FOR_MAINTENANCE_STATUS_TEXT', 'ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ ÐºÐ½Ð¾Ð¿ÐºÑƒ "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ", Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾, Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ ÑƒÐ¶Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚:');
 ?>

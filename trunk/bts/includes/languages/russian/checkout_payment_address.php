@@ -10,22 +10,22 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Îôîðìëåíèå çàêàçà');
-define('NAVBAR_TITLE_2', 'Èçìåíèòü àäðåñ');
+define('NAVBAR_TITLE_1', 'ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('NAVBAR_TITLE_2', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ');
 
-define('HEADING_TITLE', 'Èíôîðìàöèÿ îá îïëàòå');
+define('HEADING_TITLE', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ');
 
-define('TABLE_HEADING_PAYMENT_ADDRESS', 'Àäðåñ ïîêóïàòåëÿ');
-define('TEXT_SELECTED_PAYMENT_DESTINATION', 'Ýòî òåêóùèé àäðåñ ïîêóïàòåëÿ.');
-define('TITLE_PAYMENT_ADDRESS', 'Òåêóùèé àäðåñ:');
+define('TABLE_HEADING_PAYMENT_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('TEXT_SELECTED_PAYMENT_DESTINATION', 'Ð­Ñ‚Ð¾ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°Ð´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ.');
+define('TITLE_PAYMENT_ADDRESS', 'Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°Ð´Ñ€ÐµÑ:');
 
-define('TABLE_HEADING_ADDRESS_BOOK_ENTRIES', 'Çàïèñè â àäðåñíîé êíèãå');
-define('TEXT_SELECT_OTHER_PAYMENT_DESTINATION', 'Âûáåðèòå àäðåñ.');
-define('TITLE_PLEASE_SELECT', 'Âûáåðèòå');
+define('TABLE_HEADING_ADDRESS_BOOK_ENTRIES', 'Ð—Ð°Ð¿Ð¸ÑÐ¸ Ð² Ð°Ð´Ñ€ÐµÑÐ½Ð¾Ð¹ ÐºÐ½Ð¸Ð³Ðµ');
+define('TEXT_SELECT_OTHER_PAYMENT_DESTINATION', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð°Ð´Ñ€ÐµÑ.');
+define('TITLE_PLEASE_SELECT', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ');
 
-define('TABLE_HEADING_NEW_PAYMENT_ADDRESS', 'Íîâûé àäðåñ');
-define('TEXT_CREATE_NEW_PAYMENT_ADDRESS', 'Èñïîëüçóéòå äàííóþ ôîðìó, ÷òîáû ñîçäàòü íîâûé àäðåñ.');
+define('TABLE_HEADING_NEW_PAYMENT_ADDRESS', 'ÐÐ¾Ð²Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ');
+define('TEXT_CREATE_NEW_PAYMENT_ADDRESS', 'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð´Ð°Ð½Ð½ÑƒÑŽ Ñ„Ð¾Ñ€Ð¼Ñƒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ.');
 
-define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'Ïðîäîëæèòü îôîðìëåíèå çàêàçà');
-define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Äàëåå Âàì íóæíî áóäåò âûáðàòü ñïîñîá îïëàòû çàêàçà.');
+define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Ð”Ð°Ð»ÐµÐµ Ð’Ð°Ð¼ Ð½ÑƒÐ¶Ð½Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°.');
 ?>

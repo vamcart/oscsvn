@@ -12,7 +12,7 @@
 
   define('MODULE_PAYMENT_LIQPAY_TEXT_TITLE', 'LiqPAY');
   define('MODULE_PAYMENT_LIQPAY_TEXT_PUBLIC_TITLE', 'LiqPAY');
-  define('MODULE_PAYMENT_LIQPAY_TEXT_DESCRIPTION', 'После нажатия кнопки Подтвердить заказ Вы перейдёте на сайт платёжной системы для оплаты заказа, после оплаты Ваш заказ будет выполнен.');
-  define('MODULE_PAYMENT_LIQPAY_TEXT_ADMIN_DESCRIPTION', 'Модуль оплаты LiqPAY.<br />Как правильно настроить модуль читайте <a href="http://oscommerce.su/modules/smartsection/item.php?itemid=13" target="_blank"><u>здесь</u></a>.');
+  define('MODULE_PAYMENT_LIQPAY_TEXT_DESCRIPTION', 'РџРѕСЃР»Рµ РЅР°Р¶Р°С‚РёСЏ РєРЅРѕРїРєРё РџРѕРґС‚РІРµСЂРґРёС‚СЊ Р·Р°РєР°Р· Р’С‹ РїРµСЂРµР№РґС‘С‚Рµ РЅР° СЃР°Р№С‚ РїР»Р°С‚С‘Р¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РґР»СЏ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р°, РїРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р’Р°С€ Р·Р°РєР°Р· Р±СѓРґРµС‚ РІС‹РїРѕР»РЅРµРЅ.');
+  define('MODULE_PAYMENT_LIQPAY_TEXT_ADMIN_DESCRIPTION', 'РњРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ LiqPAY.<br />РљР°Рє РїСЂР°РІРёР»СЊРЅРѕ РЅР°СЃС‚СЂРѕРёС‚СЊ РјРѕРґСѓР»СЊ С‡РёС‚Р°Р№С‚Рµ <a href="http://oscommerce.su/modules/smartsection/item.php?itemid=13" target="_blank"><u>Р·РґРµСЃСЊ</u></a>.');
 
 ?>

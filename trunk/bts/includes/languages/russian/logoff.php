@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Выход');
-define('NAVBAR_TITLE', 'Выход');
-define('TEXT_MAIN', 'Вы успешно вышли.<br><br>Содержимое Вашей корзины сохранено.');
+define('HEADING_TITLE', 'Р’С‹С…РѕРґ');
+define('NAVBAR_TITLE', 'Р’С‹С…РѕРґ');
+define('TEXT_MAIN', 'Р’С‹ СѓСЃРїРµС€РЅРѕ РІС‹С€Р»Рё.<br><br>РЎРѕРґРµСЂР¶РёРјРѕРµ Р’Р°С€РµР№ РєРѕСЂР·РёРЅС‹ СЃРѕС…СЂР°РЅРµРЅРѕ.');
 ?>

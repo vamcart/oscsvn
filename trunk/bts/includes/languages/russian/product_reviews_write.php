@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Отзывы');
+define('NAVBAR_TITLE', 'РћС‚Р·С‹РІС‹');
 
-define('SUB_TITLE_FROM', 'От:');
-define('SUB_TITLE_REVIEW', 'Отзыв:');
-define('SUB_TITLE_RATING', 'Рейтинг:');
-define('TEXT_NO_HTML', '<small><font color="#ff0000"><b>ЗАМЕЧАНИЕ:</b></font></small>&nbsp;HTML тэги не поддерживаются!');
-define('TEXT_BAD', '<small><font color="#ff0000"><b>ХУЖЕ</b></font></small>');
-define('TEXT_GOOD', '<small><font color="#ff0000"><b>ЛУЧШЕ</b></font></small>');
+define('SUB_TITLE_FROM', 'РћС‚:');
+define('SUB_TITLE_REVIEW', 'РћС‚Р·С‹РІ:');
+define('SUB_TITLE_RATING', 'Р РµР№С‚РёРЅРі:');
+define('TEXT_NO_HTML', '<small><font color="#ff0000"><b>Р—РђРњР•Р§РђРќРР•:</b></font></small>&nbsp;HTML С‚СЌРіРё РЅРµ РїРѕРґРґРµСЂР¶РёРІР°СЋС‚СЃСЏ!');
+define('TEXT_BAD', '<small><font color="#ff0000"><b>РҐРЈР–Р•</b></font></small>');
+define('TEXT_GOOD', '<small><font color="#ff0000"><b>Р›РЈР§РЁР•</b></font></small>');
 
-define('TEXT_CLICK_TO_ENLARGE', 'Увеличить');
+define('TEXT_CLICK_TO_ENLARGE', 'РЈРІРµР»РёС‡РёС‚СЊ');
 
-define('ENTRY_CAPTCHA', 'Укажите код на картинке:');
+define('ENTRY_CAPTCHA', 'РЈРєР°Р¶РёС‚Рµ РєРѕРґ РЅР° РєР°СЂС‚РёРЅРєРµ:');
 
 ?>

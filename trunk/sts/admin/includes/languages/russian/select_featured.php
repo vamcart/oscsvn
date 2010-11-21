@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Ðåêîìåíäóåìûå òîâàðû');
+define('HEADING_TITLE', 'Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
 
-define('TABLE_HEADING_PRODUCTS', 'Íàçâàíèå òîâàðà');
-define('TABLE_HEADING_MODEL', 'Êîä òîâàðà');
-define('TABLE_HEADING_PRODUCTS_PRICE', 'Öåíà');
-define('TABLE_HEADING_STATUS', 'Ñòàòóñ');
+define('TABLE_HEADING_PRODUCTS', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('TABLE_HEADING_MODEL', 'ÐšÐ¾Ð´ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('TABLE_HEADING_PRODUCTS_PRICE', 'Ð¦ÐµÐ½Ð°');
+define('TABLE_HEADING_STATUS', 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ');
 
-define('TEXT_FEATURED_PRODUCT', 'Òîâàð:');
-define('TEXT_FEATURED_MODEL', 'Êîä:');
+define('TEXT_FEATURED_PRODUCT', 'Ð¢Ð¾Ð²Ð°Ñ€:');
+define('TEXT_FEATURED_MODEL', 'ÐšÐ¾Ð´:');
 
-define('SUBMIT_SEARCH', 'Ïîèñê');
+define('SUBMIT_SEARCH', 'ÐŸÐ¾Ð¸ÑÐº');
 
 ?>

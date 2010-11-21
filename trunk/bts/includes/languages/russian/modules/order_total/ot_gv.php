@@ -10,11 +10,11 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_ORDER_TOTAL_GV_TITLE', 'Ñåðòèôèêàò');
-  define('MODULE_ORDER_TOTAL_GV_HEADER', 'Ñåðòèôèêàòû/Êóïîíû');
-  define('MODULE_ORDER_TOTAL_GV_DESCRIPTION', 'Ïîäàðî÷íûå ñåðòèôèêàòû');
-  define('SHIPPING_NOT_INCLUDED', ' [Ñòîèìîñòü äîñòàâêè íå âêëþ÷åíà]');
-  define('TAX_NOT_INCLUDED', ' [Íàëîã íå âêëþ÷¸í]');
-  define('MODULE_ORDER_TOTAL_GV_USER_PROMPT', 'Âû ìîæåòå èñïîëüçîâàòü ñâîé ñåðòèôèêàò, äëÿ ýòîãî ïîñòàâüòå çäåñü ãàëî÷êó è íàæìèòå êíîïêó "Ïðèìåíèòü":&nbsp;');
-  define('TEXT_ENTER_GV_CODE', 'Êîä ñåðòèôèêàòà&nbsp;&nbsp;');
+  define('MODULE_ORDER_TOTAL_GV_TITLE', 'Ð¡ÐµÑ€Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚');
+  define('MODULE_ORDER_TOTAL_GV_HEADER', 'Ð¡ÐµÑ€Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ñ‹/ÐšÑƒÐ¿Ð¾Ð½Ñ‹');
+  define('MODULE_ORDER_TOTAL_GV_DESCRIPTION', 'ÐŸÐ¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ñ‹Ðµ ÑÐµÑ€Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ñ‹');
+  define('SHIPPING_NOT_INCLUDED', ' [Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°]');
+  define('TAX_NOT_INCLUDED', ' [ÐÐ°Ð»Ð¾Ð³ Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡Ñ‘Ð½]');
+  define('MODULE_ORDER_TOTAL_GV_USER_PROMPT', 'Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ ÑÐµÑ€Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚, Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑ‚Ð°Ð²ÑŒÑ‚Ðµ Ð·Ð´ÐµÑÑŒ Ð³Ð°Ð»Ð¾Ñ‡ÐºÑƒ Ð¸ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ ÐºÐ½Ð¾Ð¿ÐºÑƒ "ÐŸÑ€Ð¸Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ":&nbsp;');
+  define('TEXT_ENTER_GV_CODE', 'ÐšÐ¾Ð´ ÑÐµÑ€Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð°&nbsp;&nbsp;');
 ?>

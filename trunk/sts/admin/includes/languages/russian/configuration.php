@@ -10,1031 +10,1031 @@
   Released under the GNU General Public License
 */
 
-define('TABLE_HEADING_CONFIGURATION_TITLE', 'Заголовок');
-define('TABLE_HEADING_CONFIGURATION_VALUE', 'Значение');
-define('TABLE_HEADING_ACTION', 'Действие');
-
-define('TEXT_INFO_EDIT_INTRO', 'Пожалуйста, внесите необходимые изменения');
-define('TEXT_INFO_DATE_ADDED', 'Дата добавления:');
-define('TEXT_INFO_LAST_MODIFIED', 'Последнее изменение:');
-define('ERROR_TEMPLATE_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Директория защищена от записи, установите верные права доступа (например chmod 777) для директории ');
-define('ERROR_TEMPLATE_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Директория отсутствует, создайте директорию ');
-
-// Мой магазин
-
-define('DEFAULT_TEMPLATE_TITLE' , 'Шаблон по умолчанию');
-define('STORE_NAME_TITLE' , 'Название магазина');
-define('STORE_OWNER_TITLE' , 'Владелец магазина');
-define('STORE_LOGO_TITLE' , 'Логотип магазина');
-define('STORE_OWNER_EMAIL_ADDRESS_TITLE' , 'E-Mail Адрес');
-define('STORE_OWNER_ICQ_NUMBER_TITLE' , 'ICQ номер');
-define('EMAIL_FROM_TITLE' , 'E-Mail От');
-define('STORE_COUNTRY_TITLE' , 'Страна');
-define('STORE_ZONE_TITLE' , 'Регион');
-define('EXPECTED_PRODUCTS_SORT_TITLE' , 'Порядок сортировки ожидаемых товаров');
-define('EXPECTED_PRODUCTS_FIELD_TITLE' , 'Сортировка ожидаемых товаров');
-define('USE_DEFAULT_LANGUAGE_CURRENCY_TITLE' , 'Переключение на валюту текущего языка');
-define('SEND_EXTRA_ORDER_EMAILS_TO_TITLE' , 'Отправка копий писем с заказом');
-define('SEARCH_ENGINE_FRIENDLY_URLS_TITLE' , 'Использовать короткие URL адреса (находится в разработке)');
-define('DISPLAY_CART_TITLE' , 'Переходить в корзину после добавления товара');
-define('ALLOW_GUEST_TO_TELL_A_FRIEND_TITLE' , 'Разрешить гостям использовать функцию Рассказать другу');
-define('ADVANCED_SEARCH_DEFAULT_OPERATOR_TITLE' , 'Оператор поиска по умолчанию');
-define('STORE_NAME_ADDRESS_TITLE' , 'Адрес и телефон магазина');
-define('SHOW_COUNTS_TITLE' , 'Показывать счётчик товаров');
-define('ALLOW_CATEGORY_DESCRIPTIONS_TITLE' , 'Разрешить описания категорий');
-define('TAX_DECIMAL_PLACES_TITLE' , 'Количество знаков после запятой у налогов');
-define('SHOW_MAIN_FEATURED_PRODUCTS_TITLE' , 'Показывать рекомендуемые товары на главной странице');
-define('DISPLAY_PRICE_WITH_TAX_TITLE' , 'Показывать цены с налогами');
-define('XPRICES_NUM_TITLE' , 'Количество возможных цен для товара');
-define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_TITLE' , 'Номинал подарочного сертификата, который получат посетители');
-define('ALLOW_GUEST_TO_SEE_PRICES_TITLE' , 'Показывать цены посетителям');
-define('NEW_SIGNUP_DISCOUNT_COUPON_TITLE' , 'Код купона, который получат посетители, прошедшие регистрацию');
-define('GUEST_DISCOUNT_TITLE' , 'Наценка для посетителей');
-define('CATEGORIES_SORT_ORDER_TITLE' , 'Сортировка товара, категорий');
-define('QUICKSEARCH_IN_DESCRIPTION_TITLE' , 'Поиск в описаниях товара');
-define('CONTACT_US_LIST_TITLE' , 'Получатели писем, отправленных со страницы Свяжитесь с нами');
-define('ALLOW_GIFT_VOUCHERS_TITLE' , 'Разрешить использование подарочных сертификатов и купонов');
-define('ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE_TITLE' , 'Разрешить управление атрибутами на странице добавления товара');
-define('SHOW_SUBCATEGORIES_WHEN_CATEGORIES_HAS_PRODUCTS_TITLE' , 'Выводить субкатегории при наличии товара в категории');
-define('SHOW_PDF_DATASHEET_TITLE' , 'Показывать PDF описание товара');
-
-// Минимальнаые значения
-
-define('ENTRY_FIRST_NAME_MIN_LENGTH_TITLE' , 'Имя');
-define('ENTRY_LAST_NAME_MIN_LENGTH_TITLE' , 'Фамилия');
-define('ENTRY_DOB_MIN_LENGTH_TITLE' , 'Дата рождения');
-define('ENTRY_EMAIL_ADDRESS_MIN_LENGTH_TITLE' , 'E-Mail адрес');
-define('ENTRY_STREET_ADDRESS_MIN_LENGTH_TITLE' , 'Адрес');
-define('ENTRY_COMPANY_MIN_LENGTH_TITLE' , 'Компания');
-define('ENTRY_POSTCODE_MIN_LENGTH_TITLE' , 'Почтовый индекс');
-define('ENTRY_CITY_MIN_LENGTH_TITLE' , 'Город');
-define('ENTRY_STATE_MIN_LENGTH_TITLE' , 'Регион');
-define('ENTRY_TELEPHONE_MIN_LENGTH_TITLE' , 'Телефон');
-define('ENTRY_PASSWORD_MIN_LENGTH_TITLE' , 'Пароль');
-define('CC_OWNER_MIN_LENGTH_TITLE' , 'Владелец кредитной карточки');
-define('CC_NUMBER_MIN_LENGTH_TITLE' , 'Номер кредитной карточки');
-define('REVIEW_TEXT_MIN_LENGTH_TITLE' , 'Текст отзыва');
-define('MIN_DISPLAY_BESTSELLERS_TITLE' , 'Лидеры продаж');
-define('MIN_DISPLAY_ALSO_PURCHASED_TITLE' , 'Также заказали');
-define('MIN_DISPLAY_XSELL_TITLE' , 'Связанные товары');
-define('MIN_ORDER_TITLE' , 'Минимальная сумма заказа');
-
-// Максимальные значения
-
-define('MAX_PROD_ADMIN_SIDE_TITLE' , 'Товаров на одной странице в администраторской');
-define('MAX_ADDRESS_BOOK_ENTRIES_TITLE' , 'Записи в адресной книге');
-define('MAX_DISPLAY_SEARCH_RESULTS_TITLE' , 'Товаров на одной странице в каталоге');
-define('MAX_DISPLAY_PAGE_LINKS_TITLE' , 'Ссылок на страницы');
-define('MAX_DISPLAY_SPECIAL_PRODUCTS_TITLE' , 'Специальные цены');
-define('MAX_DISPLAY_NEW_PRODUCTS_TITLE' , 'Новинки');
-define('MAX_DISPLAY_UPCOMING_PRODUCTS_TITLE' , 'Ожидаемые товары');
-define('MAX_DISPLAY_MANUFACTURERS_IN_A_LIST_TITLE' , 'Список производителей');
-define('MAX_MANUFACTURERS_LIST_TITLE' , 'Производители в виде развёрнутого меню');
-define('MAX_DISPLAY_MANUFACTURER_NAME_LEN_TITLE' , 'Ограничение длины названия производителя');
-define('MAX_DISPLAY_NEW_REVIEWS_TITLE' , 'Новые отзывы');
-define('MAX_RANDOM_SELECT_REVIEWS_TITLE' , 'Выбор случайных отзывов');
-define('MAX_RANDOM_SELECT_NEW_TITLE' , 'Выбор случайного товара в боксе Новинки');
-define('MAX_RANDOM_SELECT_SPECIALS_TITLE' , 'Выбор случайного товара в боксе Скидки');
-define('MAX_DISPLAY_CATEGORIES_PER_ROW_TITLE' , 'Количество категорий в строке');
-define('MAX_DISPLAY_PRODUCTS_NEW_TITLE' , 'Количество Новинок на странице');
-define('MAX_DISPLAY_BESTSELLERS_TITLE' , 'Лидеры продаж');
-define('MAX_DISPLAY_ALSO_PURCHASED_TITLE' , 'Также заказали');
-define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_TITLE' , 'Бокс История заказов');
-define('MAX_DISPLAY_ORDER_HISTORY_TITLE' , 'История заказов');
-define('MAX_DISPLAY_FEATURED_PRODUCTS_TITLE' , 'Товаров в боксе Рекомендуемые товары на главной странице');
-define('MAX_DISPLAY_FEATURED_PRODUCTS_LISTING_TITLE' , 'Товаров на одной странице Рекомендуемых товаров');
-
-// Картинки
-
-define('SMALL_IMAGE_WIDTH_TITLE' , 'Ширина маленькой картинки');
-define('SMALL_IMAGE_HEIGHT_TITLE' , 'Высота маленькой картинки');
-define('HEADING_IMAGE_WIDTH_TITLE' , 'Ширина картинки категории');
-define('HEADING_IMAGE_HEIGHT_TITLE' , 'Высота картинки категории');
-define('SUBCATEGORY_IMAGE_WIDTH_TITLE' , 'Ширина картинки подкатегории');
-define('SUBCATEGORY_IMAGE_HEIGHT_TITLE' , 'Высота картинки подкатегории');
-define('CONFIG_CALCULATE_IMAGE_SIZE_TITLE' , 'Вычислять размер картинки');
-define('IMAGE_REQUIRED_TITLE' , 'Картинка обязательна');
-define('ULTIMATE_ADDITIONAL_IMAGES_TITLE' , 'Разрешить использование модуля дополнительных картинок?');
-define('ULT_THUMB_IMAGE_WIDTH_TITLE' , 'Ширина дополнительной картинки');
-define('ULT_THUMB_IMAGE_HEIGHT_TITLE' , 'Высота дополнительной картинки');
-define('MEDIUM_IMAGE_WIDTH_TITLE' , 'Ширина большой картинки');
-define('MEDIUM_IMAGE_HEIGHT_TITLE' , 'Высота большой картинки');
-define('LARGE_IMAGE_WIDTH_TITLE' , 'Ширина картинки для pop-up окна');
-define('LARGE_IMAGE_HEIGHT_TITLE' , 'Высота картинки для pop-up окна');
-
-// Данные покупателя
-
-define('ACCOUNT_GENDER_TITLE' , 'Пол');
-define('ACCOUNT_DOB_TITLE' , 'Дата рождения');
-define('ACCOUNT_COMPANY_TITLE' , 'Компания');
-define('ACCOUNT_SUBURB_TITLE' , 'Район');
-define('ACCOUNT_STATE_TITLE' , 'Регион');
-define('ACCOUNT_STREET_ADDRESS_TITLE' , 'Адрес');
-define('ACCOUNT_CITY_TITLE' , 'Город');
-define('ACCOUNT_POSTCODE_TITLE' , 'Почтовый индекс');
-define('ACCOUNT_COUNTRY_TITLE' , 'Страна');
-define('ACCOUNT_TELE_TITLE' , 'Телефон');
-define('ACCOUNT_FAX_TITLE' , 'Факс');
-define('ACCOUNT_NEWS_TITLE' , 'Рассылка');
-
-// Доставка/упаковка
-
-define('SHIPPING_ORIGIN_COUNTRY_TITLE' , 'Страна магазина');
-define('SHIPPING_ORIGIN_ZIP_TITLE' , 'Почтовый индекс магазина');
-define('SHIPPING_MAX_WEIGHT_TITLE' , 'Максимальный вес доставки');
-define('SHIPPING_BOX_WEIGHT_TITLE' , 'Минимальный вес упаковки');
-define('SHIPPING_BOX_PADDING_TITLE' , 'Вес упаковки в процентах'); 
-define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_TITLE' , 'Разрешить бесплатную доставку');
-define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_OVER_TITLE' , 'Бесплатная доставка для заказов на сумму свыше');
-define('MODULE_ORDER_TOTAL_SHIPPING_DESTINATION_TITLE' , 'Бесплатная доставка для заказов, оформленных из');
-define('SHOW_SHIPPING_ESTIMATOR_TITLE' , 'Показывать способы и стоимость доставки в корзине');
-define('SHOW_XSELL_CART_TITLE' , 'Показывать сопутствующие в корзине');
-
-// Вывод товара
-
-define('PRODUCT_LISTING_DISPLAY_STYLE_TITLE' , 'Формат вывода товара');
-define('PRODUCT_LIST_IMAGE_TITLE' , 'Показывать картинку товара');
-define('PRODUCT_LIST_COL_NUM_TITLE' , 'Количество товара в одной строке');
-define('PRODUCT_LIST_MANUFACTURER_TITLE' , 'Показывать производителя товара');
-define('PRODUCT_LIST_MODEL_TITLE' , 'Показывать код товара');
-define('PRODUCT_LIST_NAME_TITLE' , 'Показывать название товара');
-define('PRODUCT_LIST_PRICE_TITLE' , 'Показывать стоимость товара');
-define('PRODUCT_LIST_QUANTITY_TITLE' , 'Показывать количество товара на складе');
-define('PRODUCT_LIST_WEIGHT_TITLE' , 'Показывать вес товара');
-define('PRODUCT_LIST_BUY_NOW_TITLE' , 'Показывать кнопку Купить сейчас!');
-define('PRODUCT_LIST_FILTER_TITLE' , 'Показывать фильтр Категория/Производители (0=не показывать; 1=показывать)');
-define('PREV_NEXT_BAR_LOCATION_TITLE' , 'Расположение навигации Следующая/Предыдущая страница');
-define('PRODUCT_LIST_INFO_TITLE' , 'Показывать краткое описание');
-define('PRODUCT_SORT_ORDER_TITLE' , 'Показывать порядок сортировки');
-
-// Склад
-
-define('STOCK_CHECK_TITLE' , 'Проверять наличие товара на складе');
-define('STOCK_LIMITED_TITLE' , 'Вычитать товар со склада');
-define('STOCK_ALLOW_CHECKOUT_TITLE' , 'Разрешить оформление заказа');
-define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_TITLE' , 'Отмечать товар, отсутствующий на складе');
-define('STOCK_REORDER_LEVEL_TITLE' , 'Лимит количества товара на складе');
-
-// Логи
-
-define('STORE_PAGE_PARSE_TIME_TITLE' , 'Сохранять время парсинга страниц');
-define('STORE_PAGE_PARSE_TIME_LOG_TITLE' , 'Директория хранения логов');
-define('STORE_PARSE_DATE_TIME_FORMAT_TITLE' , 'Формат даты логов');
-define('DISPLAY_PAGE_PARSE_TIME_TITLE' , 'Показывать время парсинга страниц');
-define('STORE_DB_TRANSACTIONS_TITLE' , 'Сохранять запросы к базе дынных');
-
-// Кэш
-
-define('USE_CACHE_TITLE' , 'Использовать кэш');
-define('DIR_FS_CACHE_TITLE' , 'Кэш директория');
-
-// Настройка E-Mail
-
-define('EMAIL_TRANSPORT_TITLE' , 'Способ отправки E-Mail');
-define('EMAIL_LINEFEED_TITLE' , 'Разделитель строк в E-Mail');
-define('EMAIL_USE_HTML_TITLE' , 'Использовать HTML формат при отправке писем');
-define('ENTRY_EMAIL_ADDRESS_CHECK_TITLE' , 'Проверять E-Mail адрес через DNS');
-define('SEND_EMAILS_TITLE' , 'Отправлять письма из магазина');
-
-// Скачивание
-
-define('DOWNLOAD_ENABLED_TITLE' , 'Разрешить функцию скачивания товаров');
-define('DOWNLOAD_BY_REDIRECT_TITLE' , 'Использовать перенаправление при скачивании');
-define('DOWNLOAD_MAX_DAYS_TITLE' , 'Срок существования ссылки для скачивания (дней)');
-define('DOWNLOAD_MAX_COUNT_TITLE' , 'Максимальное количество скачиваний');
-define('DOWNLOADS_ORDERS_STATUS_UPDATED_VALUE_TITLE' , 'Сброс статистики скачиваний');
-define('DOWNLOADS_CONTROLLER_ON_HOLD_MSG_TITLE' , 'Предупреждением о необходимости оплатить скачиваемый товар');
-define('DOWNLOADS_CONTROLLER_ORDERS_STATUS_TITLE' , 'Скачивание разрешается только заказам, имеющим указанный статус и выше');
-
-// GZip Компрессия
-
-define('GZIP_COMPRESSION_TITLE' , 'Разрешить GZip компрессию');
-define('GZIP_LEVEL_TITLE' , 'Уровень компрессии');
-
-// Сессии
-
-define('SESSION_WRITE_DIRECTORY_TITLE' , 'Директория сессий');
-define('SESSION_FORCE_COOKIE_USE_TITLE' , 'Принудительное использование Cookie');
-define('SESSION_CHECK_SSL_SESSION_ID_TITLE' , 'Проверять ID SSL сессии');
-define('SESSION_CHECK_USER_AGENT_TITLE' , 'Проверять переменную User Agent');
-define('SESSION_CHECK_IP_ADDRESS_TITLE' , 'Проверять IP адрес');
-define('SESSION_BLOCK_SPIDERS_TITLE' , 'Не показывать сессию в адресе паукам поисковых машин');
-define('SESSION_RECREATE_TITLE' , 'Воссоздавать сессию');
-
-// HTML Редактор
-
-define('HTML_AREA_WYSIWYG_DISABLE_TITLE' , 'Использовать HTML редактор для поля описание товара?');
-define('HTML_AREA_WYSIWYG_DISABLE_JPSY_TITLE' , 'Использовать улучшенный модуль для добавления картинок к товару?');
-define('HTML_AREA_WYSIWYG_BASIC_PD_TITLE' , 'Возможности HTML редактора для поля описание товара');
-define('HTML_AREA_WYSIWYG_WIDTH_TITLE' , 'Ширина HTML редактора для поля описание товара');
-define('HTML_AREA_WYSIWYG_HEIGHT_TITLE' , 'Высота HTML редактора для поля описание товара');
-define('HTML_AREA_WYSIWYG_DISABLE_EMAIL_TITLE' , 'Использовать HTML редактор на странице отправить Email?');
-define('HTML_AREA_WYSIWYG_BASIC_EMAIL_TITLE' , 'Возможности HTML редактора на странице отправить Email');
-define('EMAIL_AREA_WYSIWYG_WIDTH_TITLE' , 'Ширина HTML редактора для страницы отправить EMail');
-define('EMAIL_AREA_WYSIWYG_HEIGHT_TITLE' , 'Высота HTML редактора для страницы отправить EMail');
-define('HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER_TITLE' , 'Использовать HTML редактор на странице менеджер почтовых рассылок?');
-define('HTML_AREA_WYSIWYG_BASIC_NEWSLETTER_TITLE' , 'Возможности HTML редактора на странице менеджер почтовых рассылок');
-define('NEWSLETTER_EMAIL_WYSIWYG_WIDTH_TITLE' , 'Ширина HTML редактора для страницы менеджер почтовых рассылок');
-define('NEWSLETTER_EMAIL_WYSIWYG_HEIGHT_TITLE' , 'Высота HTML редактора для страницы менеджер почтовых рассылок');
-define('HTML_AREA_WYSIWYG_DISABLE_DEFINE_TITLE' , 'Использовать HTML редактор при редактировании главной страницы');
-define('HTML_AREA_WYSIWYG_BASIC_DEFINE_TITLE' , 'Возможности HTML редактора при редактировании главной страницы');
-define('HTML_AREA_WYSIWYG_DISABLE_ARTICLES_TITLE' , 'Использовать HTML редактор при редактировании статей');
-define('HTML_AREA_WYSIWYG_BASIC_ARTICLES_TITLE' , 'Возможности HTML редактора при редактировании статей');
-define('HTML_AREA_WYSIWYG_DISABLE_FAQDESK_TITLE' , 'Использовать HTML редактор при редактировании faq');
-define('HTML_AREA_WYSIWYG_BASIC_FAQDESK_TITLE' , 'Возможности HTML редактора при редактировании faq');
-define('HTML_AREA_WYSIWYG_DISABLE_NEWSDESK_TITLE' , 'Использовать HTML редактор при редактировании новостей');
-define('HTML_AREA_WYSIWYG_BASIC_NEWSDESK_TITLE' , 'Возможности HTML редактора при редактировании новостей');
-define('HTML_AREA_WYSIWYG_DISABLE_INFOPAGES_TITLE' , 'Использовать HTML редактор при редактировании информационных страниц');
-define('HTML_AREA_WYSIWYG_BASIC_INFOPAGES_TITLE' , 'Возможности HTML редактора при редактировании информационных страниц');
-define('DEFINE_MAINPAGE_WYSIWYG_WIDTH_TITLE' , 'Ширина HTML редактора при редактировании главной страницы');
-define('DEFINE_MAINPAGE_WYSIWYG_HEIGHT_TITLE' , 'Высота HTML редактора при редактировании главной страницы');
-define('HTML_AREA_WYSIWYG_FONT_TYPE_TITLE' , 'Глобальные настройки - Шрифт, используемый в интерфейсе HTML редактора');
-define('HTML_AREA_WYSIWYG_FONT_SIZE_TITLE' , 'Глобальные настройки - Размер шрифта, используемого в интерфейсе HTML редактора');
-define('HTML_AREA_WYSIWYG_FONT_COLOUR_TITLE' , 'Глобальные настройки - Цвет шрифта, используемого в интерфейсе HTML редактора');
-define('HTML_AREA_WYSIWYG_BG_COLOUR_TITLE' , 'Глобальные настройки - Цвет фона в интерфейсе HTML редактора');
-define('HTML_AREA_WYSIWYG_DEBUG_TITLE' , 'Глобальные настройки - Разрешить режим отладки?');
-
-// Партнёрская программа
-
-define('AFFILIATE_EMAIL_ADDRESS_TITLE' , 'E-Mail Адрес');
-define('AFFILIATE_PERCENT_TITLE' , 'Процент с каждой продажи, начисляемый партнёру');
-define('AFFILIATE_THRESHOLD_TITLE' , 'Минимальная сумма к оплате');
-define('AFFILIATE_COOKIE_LIFETIME_TITLE' , 'Время хранения cookies');
-define('AFFILIATE_BILLING_TIME_TITLE' , 'Выписка счетов к оплате');
-define('AFFILIATE_PAYMENT_ORDER_MIN_STATUS_TITLE' , 'Минимальный статус заказа');
-define('AFFILIATE_USE_CHECK_TITLE' , 'Оплата партнёрам через WebMoney');
-define('AFFILIATE_USE_PAYPAL_TITLE' , 'Оплата партнёрам через PayPal');
-define('AFFILIATE_USE_BANK_TITLE' , 'Оплата партнёрам переводом на счёт в банке');
-define('AFFILATE_INDIVIDUAL_PERCENTAGE_TITLE' , 'Индивидуальные проценты для партнёров');
-define('AFFILATE_USE_TIER_TITLE' , 'Партнёрская пирамида');
-define('AFFILIATE_TIER_LEVELS_TITLE' , 'Количество уровей пирамиды');
-define('AFFILIATE_TIER_PERCENTAGE_TITLE' , 'Процент комиссии партнёрской пирамиды');
-
-// Модуль Dynamic MoPics
-
-define('IN_IMAGE_BIGIMAGES_TITLE' , 'Каталог хранения больших картинок');
-define('IN_IMAGE_THUMBS_TITLE' , 'Каталог хранения маленьких картинок');
-define('MAIN_THUMB_IN_SUBDIR_TITLE' , 'Оригинальная картинка хранится в папке с автоматически генерируемыми картинками');
-define('THUMBS_PER_ROW_TITLE' , 'Количество картинок в одной строке');
-define('MORE_PICS_EXT_TITLE' , 'Префикс автоматически генерируемой картинки');
-define('BIG_PIC_EXT_TITLE' , 'Префикс автоматичски генерируемой большой картинки');
-define('THUMB_IMAGE_TYPE_TITLE' , 'Тип генерируемых картинок');
-define('BIG_IMAGE_TYPE_TITLE' , 'Тип больших картинок');
-
-// Тех. обслуживание
-
-define('DOWN_FOR_MAINTENANCE_TITLE' , 'Техническое обслуживание: Вкл./Выкл.');
-define('DOWN_FOR_MAINTENANCE_FILENAME_TITLE' , 'Техническое обслуживание: Имя файла');
-define('DOWN_FOR_MAINTENANCE_HEADER_OFF_TITLE' , 'Техническое обслуживание: Не показывать шапку');
-define('DOWN_FOR_MAINTENANCE_COLUMN_LEFT_OFF_TITLE' , 'Техническое обслуживание: Не показывать левую колонку');
-define('DOWN_FOR_MAINTENANCE_COLUMN_RIGHT_OFF_TITLE' , 'Техническое обслуживание: Не показывать правую колонку');
-define('DOWN_FOR_MAINTENANCE_FOOTER_OFF_TITLE' , 'Техническое обслуживание: Не показывать нижнюю часть');
-define('DOWN_FOR_MAINTENANCE_PRICES_OFF_TITLE' , 'Техническое обслуживание: Не показывать цены');
-define('EXCLUDE_ADMIN_IP_FOR_MAINTENANCE_TITLE' , 'Техническое обслуживание: Исключить указанный IP адрес');
-define('WARN_BEFORE_DOWN_FOR_MAINTENANCE_TITLE' , 'Уведомлять посетителей магазина перед уходом на Техническое обслуживание');
-define('PERIOD_BEFORE_DOWN_FOR_MAINTENANCE_TITLE' , 'Текст уведомления');
-define('DISPLAY_MAINTENANCE_TIME_TITLE' , 'Показывать дату активации режима Техническое обслуживание');
-define('DISPLAY_MAINTENANCE_PERIOD_TITLE' , 'Показывать период работы режима Техническое обслуживание');
-define('TEXT_MAINTENANCE_PERIOD_TIME_TITLE' , 'Время работы режима Техническое обслуживание');
-
-// Быстрое оформление
-
-define('GUEST_ON_TITLE' , 'Быстрое оформление заказа');
-
-// Ссылки
-
-define('ENABLE_LINKS_COUNT_TITLE' , 'Счётчик переходов');
-define('ENABLE_SPIDER_FRIENDLY_LINKS_TITLE' , 'Использовать короткие URL адреса');
-define('LINKS_IMAGE_WIDTH_TITLE' , 'Ширина картинки');
-define('LINKS_IMAGE_HEIGHT_TITLE' , 'Высота картинки');
-define('LINK_LIST_IMAGE_TITLE' , 'Показывать картинку');
-define('LINK_LIST_URL_TITLE' , 'Показывать URL');
-define('LINK_LIST_TITLE_TITLE' , 'Показывать название ссылки');
-define('LINK_LIST_DESCRIPTION_TITLE' , 'Показывать описание ссылки');
-define('LINK_LIST_COUNT_TITLE' , 'Показывать количество переходов');
-define('ENTRY_LINKS_TITLE_MIN_LENGTH_TITLE' , 'Минимальное количество символов поля Название сайта');
-define('ENTRY_LINKS_URL_MIN_LENGTH_TITLE' , 'Минимальное количество символов поля URL Адрес');
-define('ENTRY_LINKS_DESCRIPTION_MIN_LENGTH_TITLE' , 'Минимальное количество символов поля Описание');
-define('ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH_TITLE' , 'Минимальное количество символов поля Ваше имя');
-define('LINKS_CHECK_PHRASE_TITLE' , 'Текст для проверки');
-
-// Обновление прайса
-
-define('DISPLAY_MODEL_TITLE' , 'Показывать код товара');
-define('MODIFY_MODEL_TITLE' , 'Показывать код товара');
-define('MODIFY_NAME_TITLE' , 'Показывать название товара');
-define('DISPLAY_STATUT_TITLE' , 'Показывать статус товара');
-define('DISPLAY_WEIGHT_TITLE' , 'Показывать вес товара');
-define('DISPLAY_QUANTITY_TITLE' , 'Показывать количество товара');
-define('DISPLAY_SORT_ORDER_TITLE' , 'Показывать порядок сортировки');
-define('DISPLAY_ORDER_MIN_TITLE' , 'Показывать минимум для заказа');
-define('DISPLAY_ORDER_UNITS_TITLE' , 'Показывать шаг');
-define('DISPLAY_IMAGE_TITLE' , 'Показывать картинку товара');
-define('DISPLAY_XML_TITLE' , 'Показывать XML');
-define('DISPLAY_MANUFACTURER_TITLE' , 'Показывать производителя');
-define('MODIFY_MANUFACTURER_TITLE' , 'Показывать производителей товара');
-define('DISPLAY_TAX_TITLE' , 'Показывать налог');
-define('MODIFY_TAX_TITLE' , 'Показывать налог');
-define('DISPLAY_TVA_OVER_TITLE' , 'Показывать цены с налогами');
-define('DISPLAY_TVA_UP_TITLE' , 'Показывать цены с налогами при изменении цены');
-define('DISPLAY_PREVIEW_TITLE' , 'Показывать ссылку на описание товара');
-define('DISPLAY_EDIT_TITLE' , 'Показывать ссылку на редактирование товара');
-define('ACTIVATE_COMMERCIAL_MARGIN_TITLE' , 'Показывать возможность массового изменения цен');
-
-// Отложенные товары
-
-define('MAX_DISPLAY_WISHLIST_PRODUCTS_TITLE' , 'Количество отложенных товаров на странице');
-define('MAX_DISPLAY_WISHLIST_BOX_TITLE' , 'Количество отложенных товаров в боксе');
-define('DISPLAY_WISHLIST_EMAILS_TITLE' , 'Количество e-mail адресов');
-define('WISHLIST_REDIRECT_TITLE' , 'Оставаться на странице карточки товара');
-
-// Кэш страниц
-
-define('ENABLE_PAGE_CACHE_TITLE' , 'Разрешить кэширование страниц');
-define('PAGE_CACHE_LIFETIME_TITLE' , 'Срок жизни кэша');
-define('PAGE_CACHE_DEBUG_MODE_TITLE' , 'Включить режим отладки?');
-define('PAGE_CACHE_DISABLE_PARAMETERS_TITLE' , 'Отключать URL параметры?');
-define('PAGE_CACHE_DELETE_FILES_TITLE' , 'Удалять кэш файлы?');
-define('PAGE_CACHE_UPDATE_CONFIG_FILES_TITLE' , 'Настроить обновление кэш файлов?');
-
-// Яндекс маркет
-
-define('YML_NAME_TITLE' , 'Название магазина');
-define('YML_COMPANY_TITLE' , 'Название компании');
-define('YML_DELIVERYINCLUDED_TITLE' , 'Доставка включена');
-define('YML_AVAILABLE_TITLE' , 'Товар в наличии');
-define('YML_AUTH_USER_TITLE' , 'Логин');
-define('YML_AUTH_PW_TITLE' , 'Пароль');
-define('YML_REFERER_TITLE' , 'Ссылка');
-define('YML_STRIP_TAGS_TITLE' , 'Теги');
-define('YML_UTF8_TITLE' , 'Перекодировка в UTF-8');
-define('YML_SALES_NOTES_TITLE' , 'Тэг sales_notes');
-
-// Описание полей
-
-// Мой магазин
-
-define('DEFAULT_TEMPLATE_DESC', 'Здесь Вы можете указать шаблон, используемый в магазине по умолчанию.');
-define('STORE_NAME_DESC', 'Название Вашего магазина');
-define('STORE_OWNER_DESC', 'Имя владельца магазина');
-define('STORE_LOGO_DESC', 'Укажите логотип Вашего магазина');
-define('STORE_OWNER_EMAIL_ADDRESS_DESC', 'E-Mail адрес владельца магазина');
-define('STORE_OWNER_ICQ_NUMBER_DESC', 'ICQ номер, который будет выведен в боксе Консультант в магазине.');
-define('EMAIL_FROM_DESC', 'E-Mail адрес в отправляемых письмах');
-define('STORE_COUNTRY_DESC', 'Страна находения магазина.<br><br><b>Замечание: Не забудьте также указать Зону.</b>');
-define('STORE_ZONE_DESC', 'Регион нахождения магазина');
-define('EXPECTED_PRODUCTS_SORT_DESC', 'Укажите порядок сортировки для ожидаемых товаров, по возрастанию - asc или по убыванию - desc.');
-define('EXPECTED_PRODUCTS_FIELD_DESC', 'По какому значению будут сортироваться ожидаемые товары.');
-define('USE_DEFAULT_LANGUAGE_CURRENCY_DESC', 'Автоматическое переключение цен в магазине на валюту текущего языка.');
-define('SEND_EXTRA_ORDER_EMAILS_TO_DESC', 'Если Вы хотите получать письма с заказами, т.е. такие же письма, что и получает клиент после оформления заказа, укажите e-mail адрес для получения копий писем в следующем формате: Имя 1 &lt;email@address1&gt;, Имя 2 &lt;email@address2&gt;');
-define('SEARCH_ENGINE_FRIENDLY_URLS_DESC', 'Использовать короткие URL адреса в магазине');
-define('DISPLAY_CART_DESC', 'Переходить в корзину после добавления товара в корзину или оставаться на той же странице.');
-define('ALLOW_GUEST_TO_TELL_A_FRIEND_DESC', 'Позволить гостям использовать функцию магазина Рассказать другу, если нет, то данной функцией могут пользоваться только зарегистрированные пользователи магазина.');
-define('ADVANCED_SEARCH_DEFAULT_OPERATOR_DESC', 'Укажите, какой оператор будет использоваться по умолчанию при осуществлении посетителем поиска в магазине.');
-define('STORE_NAME_ADDRESS_DESC', 'Здесь Вы можете указать адрес и телефон магазина');
-define('SHOW_COUNTS_DESC', 'Показывает количество товара в каждой категории. При большом количестве товара в магазина рекомендуется отключать счётчик - false, чтобы снизить нагрузку на MySQL сервер, тем самых скорость загрузки страницы Вашего магазина увеличится.');
-define('ALLOW_CATEGORY_DESCRIPTIONS_DESC', 'Разрешить добавление описаний для категорий.');
-define('TAX_DECIMAL_PLACES_DESC', 'Количество знаков после целого числа у налогов.');
-define('SHOW_MAIN_FEATURED_PRODUCTS_DESC', 'true - Показывать<br>false - Не показывать');
-define('DISPLAY_PRICE_WITH_TAX_DESC', 'Показывать цены в магазине с налогами (true) или показывать налог только на заключительном этапе оформления заказа (false)');
-
-define('XPRICES_NUM_DESC', 'Здесь Вы можете указать, какое количество цен может иметь каждый товар<br><br>Например, Вы можете покупателям из группы Покупатели показывать одну цену товара, покупателям из группы Оптовики - показывать другую.');
-define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_DESC', 'Если Вы не хотите отправлять подарочный сертификат зарегистрированным в магазине покупателям, укажите 0. Чтобы отправлять зарегистрированным покупателям сертификат, например, номиналом в 10$ - укажите 10, если 25.5$ - укажите 25.5 и т.д.');
-define('ALLOW_GUEST_TO_SEE_PRICES_DESC', 'Если стоит false, то цены в магазине могут видеть только зарегистрированные посетители, если true - все посетители могут видеть цены в магазине.');
-define('NEW_SIGNUP_DISCOUNT_COUPON_DESC', 'Если Вы не хотите давать купон посетителям, прошедшим регистрацию, просто оставьте поле пустым, либо укажите код существующего купона, который Вы хотите давать всем зарегистрированным покупателям.');
-define('GUEST_DISCOUNT_DESC', 'Наценка для простых посетителей магазина. Для зарегистрированных в магазине посетителей данная опция не действует. Указывайте наценку в процентах. Например укажите 10, это значит, что для простых посетителей все цены в магазине будут на 10% выше чем для зарегистрированных посетителей.');
-define('CATEGORIES_SORT_ORDER_DESC', '<b>Возможные значения:<br>products_name<br>products_name-desc<br>model<br>model-desc</b>');
-define('QUICKSEARCH_IN_DESCRIPTION_DESC', 'При поиске товара с помощью бокса быстрый поиск, Вы можете указать, как искать товары, только по названиям - FALSE или искать в названиях + описаниях - TRUE');
-define('CONTACT_US_LIST_DESC', 'Вы можете указать разных получателей на странице Свяжитесь с нами. Формат записи: Имя 1 &lt;email@address1&gt;, Имя 2 &lt;email@address2&gt;. Если Вы хотите оставить всего одного получателя писем, просто оставьте поле пустым.');
-define('ALLOW_GIFT_VOUCHERS_DESC', 'Вы можете включить - true или выключить - false возможность использования подарочных сертификатов и купонов при оформлении заказа.');
-define('ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE_DESC', 'Вы можете включить - true или выключить - false возможность управления атрибутами товаров прямо на странице добавления/редактирования товаров.');
-define('SHOW_SUBCATEGORIES_WHEN_CATEGORIES_HAS_PRODUCTS_DESC', 'Если в категории есть товар и в данной категории есть субкатегории, то по умолчанию (true), зайдя в такую категорию, Вы увидите список субкатегорий и список товаров категории. Можно отключить вывод субкатегорий, для этого поставьте false.');
-define('SHOW_PDF_DATASHEET_DESC', 'Показывать (true) или нет (false) PDF описание товара на странице описания товара.');
-
-// Минимальнаые значения
-
-define('ENTRY_FIRST_NAME_MIN_LENGTH_DESC', 'Минимальное количество символов поля Имя');
-define('ENTRY_LAST_NAME_MIN_LENGTH_DESC', 'Минимальное количество символов поля Фамилия');
-define('ENTRY_DOB_MIN_LENGTH_DESC', 'Минимальное количество символов поля Дата рождения');
-define('ENTRY_EMAIL_ADDRESS_MIN_LENGTH_DESC', 'Минимальное количество символов поля E-Mail адрес');
-define('ENTRY_STREET_ADDRESS_MIN_LENGTH_DESC', 'Минимальное количество символов поля Адрес');
-define('ENTRY_COMPANY_MIN_LENGTH_DESC', 'Минимальное количество символов поля Компания');
-define('ENTRY_POSTCODE_MIN_LENGTH_DESC', 'Минимальное количество символов поля Почтовый индекс');
-define('ENTRY_CITY_MIN_LENGTH_DESC', 'Минимальное количество символов поля Город');
-define('ENTRY_STATE_MIN_LENGTH_DESC', 'Минимальное количество символов поля Регион');
-define('ENTRY_TELEPHONE_MIN_LENGTH_DESC', 'Минимальное количество символов поля Телефон');
-define('ENTRY_PASSWORD_MIN_LENGTH_DESC', 'Минимальное количество символов поля Пароль');
-define('CC_OWNER_MIN_LENGTH_DESC', 'Минимальное количество символов поля Владелец кредитной карточки');
-define('CC_NUMBER_MIN_LENGTH_DESC', 'Минимальное количество символов поля Номер кредитной карточки');
-define('REVIEW_TEXT_MIN_LENGTH_DESC', 'Минимальное количество символов для отызов');
-define('MIN_DISPLAY_BESTSELLERS_DESC', 'Минимальное количество товара, выводимого в блоке Лидеры продаж');
-define('MIN_DISPLAY_ALSO_PURCHASED_DESC', 'Минимальное количество товара, выводимого в боксе Также заказали');
-define('MIN_DISPLAY_XSELL_DESC', 'Минимальное количество товаров, выводимых в боксе Связанные товары');
-define('MIN_ORDER_DESC', 'Если сумма заказа будет меньше указанной, такой заказ нельзя будет оформить. Указывайте просто число, без симолов валюты ($, руб. и т.д.). Поставьте 0, если Вы не хотите ограничивать минимальную сумму заказа.');
-
-// Максимальные значения
-
-define('MAX_PROD_ADMIN_SIDE_DESC', 'Количество товара на одной странице в администраторской');
-
-define('MAX_ADDRESS_BOOK_ENTRIES_DESC', 'Максимальное количество записей, которые может сделать покупатель в своей адресной книге');
-define('MAX_DISPLAY_SEARCH_RESULTS_DESC', 'Количество товара, выводимого на одной странице');
-define('MAX_DISPLAY_PAGE_LINKS_DESC', 'Количество ссылок на другие страницы');
-define('MAX_DISPLAY_SPECIAL_PRODUCTS_DESC', 'Максимальное количество товара, выводимого на странице Скидки');
-define('MAX_DISPLAY_NEW_PRODUCTS_DESC', 'Максимальное количество товара, выводимых в боксе Новинки');
-define('MAX_DISPLAY_UPCOMING_PRODUCTS_DESC', 'Максимальное количество товара, выводимого в блоке Ожидаемые товары');
-define('MAX_DISPLAY_MANUFACTURERS_IN_A_LIST_DESC', 'Данная опция используется для настройки бокса производителей, если число производителей превышает указанное в данной опции, список производителей будет выводиться в виде drop-down списка, если число производителей меньше указанного в данной опции, производители будут выводиться в виде списка.');
-define('MAX_MANUFACTURERS_LIST_DESC', 'Данная опция используется для настройки бокса производителей, если указана цифра \'1\', то список производителей выводится в виде стандартного drop-down списка. Если указана любая другая цифра, то выводится только X производителей в виде развёрнутого меню.');
-define('MAX_DISPLAY_MANUFACTURER_NAME_LEN_DESC', 'Данная опция используется для настройки бокса производителей, Вы указываете количество символов, выводимого в боксе производителей, если название производителя будет состоять из большего количества символов, то будут выведены первые X символов названия');
-define('MAX_DISPLAY_NEW_REVIEWS_DESC', 'Максимальное количество выводимых новых отзывов');
-define('MAX_RANDOM_SELECT_REVIEWS_DESC', 'Количество отзывов, которое будет использоваться для вывода случайного, т.е. если указано X - число отзывов, то случайный отзыв будет выбран из этих X отзывов');
-define('MAX_RANDOM_SELECT_NEW_DESC', 'Количество товара, среди которого будет выбран случайный товар и выведен в бокс Новинок, т.е. если указано число X, то новый товар, который будет показан в боксе Новинок будет выбран из этих X новых товаров');
-define('MAX_RANDOM_SELECT_SPECIALS_DESC', 'Количество товара, среди которого будет выбран случайный товар и выведен в бокс Скидки, т.е. если указано число X, то товар, который будет показан в боксе Скидки будет выбран из этих X товаров');
-define('MAX_DISPLAY_CATEGORIES_PER_ROW_DESC', 'Сколько категорий выводить в одной строке');
-define('MAX_DISPLAY_PRODUCTS_NEW_DESC', 'Максимальное количество новинок, выводимых на одной странице в разделе Новинки');
-define('MAX_DISPLAY_BESTSELLERS_DESC', 'Максимальное количество лидеров продаж, выводимых в боксе Лидеры продаж');
-define('MAX_DISPLAY_ALSO_PURCHASED_DESC', 'Максимальное количество товаров в боксе Наши покупатели также заказали');
-define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_DESC', 'Максимальное количество товаров, выводимых в боксе История заказов');
-define('MAX_DISPLAY_ORDER_HISTORY_DESC', 'Максимальное количество заказов, выводимых на странице История заказов');
-define('MAX_DISPLAY_FEATURED_PRODUCTS_DESC', 'Максимальное количество товара в боксе Рекомендуемые товары на главной странице');
-define('MAX_DISPLAY_FEATURED_PRODUCTS_LISTING_DESC', 'Количество товара на одной странице Рекомендуемых товаров');
-
-// Картинки
-
-define('SMALL_IMAGE_WIDTH_DESC', 'Ширина картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать ширину картинки. Ограничение ширины картинки не значит физического уменьшения размеров картинки.');
-define('SMALL_IMAGE_HEIGHT_DESC', 'Высота картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать высоту картинки. Ограничение высоты картинки не значит физического уменьшения размеров картинки.');
-define('HEADING_IMAGE_WIDTH_DESC', 'Ширина картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать ширину картинки. Ограничение ширины картинки не значит физического уменьшения размеров картинки.');
-define('HEADING_IMAGE_HEIGHT_DESC', 'Высота картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать высоту картинки. Ограничение высоты картинки не значит физического уменьшения размеров картинки.');
-define('SUBCATEGORY_IMAGE_WIDTH_DESC', 'Ширина картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать ширину картинки. Ограничение ширины картинки не значит физического уменьшения размеров картинки.');
-define('SUBCATEGORY_IMAGE_HEIGHT_DESC', 'Высота картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать высоту картинки. Ограничение высоты картинки не значит физического уменьшения размеров картинки.');
-define('CONFIG_CALCULATE_IMAGE_SIZE_DESC', 'Данная опция просто смотрит переменные, указанные выше и сжимает картинку до указанных размеров, это не значит, что физический размер картинки уменьшится, происходит принудительный вывод картинки определённого размера. Рекомендуется ставить значение false');
-define('IMAGE_REQUIRED_DESC', 'Необходимо для поиска ошибок, в случае, если картинка не выводится.');
-define('ULTIMATE_ADDITIONAL_IMAGES_DESC', 'Вы можете включить/выключить модуль дополнительных картинок для товара.');
-define('ULT_THUMB_IMAGE_WIDTH_DESC', 'Ширина дополнительной картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать ширину картинки. Ограничение ширины картинки не значит физического уменьшения размеров картинки.');
-define('ULT_THUMB_IMAGE_HEIGHT_DESC', 'Высота дополнительной картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать высоту картинки. Ограничение высоты картинки не значит физического уменьшения размеров картинки.');
-define('MEDIUM_IMAGE_WIDTH_DESC', 'Ширина большой картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать ширину большой картинки. Ограничение ширины большой картинки не значит физического уменьшения размеров картинки.');
-define('MEDIUM_IMAGE_HEIGHT_DESC', 'Высота большой картинки в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать высоту большой картинки. Ограничение высоты большой картинки не значит физического уменьшения размеров картинки.');
-define('LARGE_IMAGE_WIDTH_DESC', 'Ширина картинки для pop-up окна в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать ширину картинки для pop-up окна. Ограничение ширины картинки для pop-up окна не значит физического уменьшения размеров картинки.');
-define('LARGE_IMAGE_HEIGHT_DESC', 'Высота картинки для pop-up окна в пикселах. Оставьте поле пустым или поставьте 0, если не хотите ограничивать высоту картинки для pop-up окна. Ограничение высоты картинки для pop-up окна не значит физического уменьшения размеров картинки.');
-
-// Данные покупателя
-
-define('ACCOUNT_GENDER_DESC', 'Показывать поле Пол при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_DOB_DESC', 'Показывать поле Дата рождения при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_COMPANY_DESC', 'Показывать поле Компания при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_SUBURB_DESC', 'Показывать поле Район при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_STATE_DESC', 'Показывать поле Регион при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_STREET_ADDRESS_DESC', 'Показывать поле Адрес при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_CITY_DESC', 'Показывать поле Город при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_POSTCODE_DESC', 'Показывать поле Почтовый индекс при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_COUNTRY_DESC', 'Показывать поле Страна при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_TELE_DESC', 'Показывать поле Телефон при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_FAX_DESC', 'Показывать поле Факс при регистрации покупателя в магазине и в адресной книге');
-define('ACCOUNT_NEWS_DESC', 'Показывать поле Рассылка при регистрации покупателя в магазине и в адресной книге');
-
-// Доставка/упаковка
-
-define('SHIPPING_ORIGIN_COUNTRY_DESC', 'Страна, где находится магазин. Необходимо для некоторых модулей доставки.');
-define('SHIPPING_ORIGIN_ZIP_DESC', 'Укажите почтовый индекс магазина. Необходимо для некоторых модулей доставки.');
-define('SHIPPING_MAX_WEIGHT_DESC', 'Вы можете указать максимальный вес доставки, свыше которого заказы не доставляются. Необходимо для некоторых модулей доставки.');
-define('SHIPPING_BOX_WEIGHT_DESC', 'Вы можете указать вес упаковки.');
-define('SHIPPING_BOX_PADDING_DESC', 'Доставка заказов, вес которых больше указанного в переменной Максимальный вес доставки, увеличивается на указанный процент. Если Вы хотите увелить стоимость на 10%, пишите - 10');
-define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_DESC', 'Вы хотите разрешить использование модуля бесплатной доставки?');
-define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_OVER_DESC', 'Заказы, свыше суммы, указанной данной поле, будут доставляться бесплатно.');
-define('MODULE_ORDER_TOTAL_SHIPPING_DESTINATION_DESC', 'national - заказы из страны нахождения магазина(переменная Страна магазина), international - заказы из любой страны, кроме страны нахождения магазина, если both - тогда все заказы. При условии, что сумма заказы выше суммы, указанной в переменной выше.');
-define('SHOW_SHIPPING_ESTIMATOR_DESC', 'Показывать информацию о способах и стоимости доставки в корзине?<br>true - показывать.<br>false - не показывать.');
-define('SHOW_XSELL_CART_DESC', 'Показывать сопутствующие в корзине?<br>true - показывать.<br>false - не показывать.');
-
-// Вывод товара
-
-define('PRODUCT_LISTING_DISPLAY_STYLE_DESC', 'Вы можете выбрать, в каком формате выводить товар, в виде таблицы - list, либо в столбец - columns.');
-define('PRODUCT_LIST_IMAGE_DESC', 'Укажите порядок вывода, т.е. введите цифру. Если укажите 1, то картинка будет слева на первом месте, если 2, то картинка будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_COL_NUM_DESC', 'Данная опция действительна только если в качестве вывода товара выбран вывод товара в столбец - columns. Вы можете указать, какое количество товара будет выводиться в одной строке.');
-define('PRODUCT_LIST_MANUFACTURER_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_MODEL_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_NAME_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_PRICE_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_QUANTITY_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_WEIGHT_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_BUY_NOW_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д.');
-define('PRODUCT_LIST_FILTER_DESC', 'Показывать бокс(drop-down) меню, с помощью которого можно сортировать товар в какой-либо категории магазина по Производителю.');
-define('PREV_NEXT_BAR_LOCATION_DESC', 'Установите расположение навигации Следующая/Предыдущая страница (1-верх, 2-низ, 3-верх+низ)');
-define('PRODUCT_LIST_INFO_DESC', 'Если Вы укажите 0, тогда краткое описание показываться не будет, если 1-99 - краткое описание будет показываться, но только если краткое описание было добавлено при добавлении товара.');
-define('PRODUCT_SORT_ORDER_DESC', 'Укажите порядок вывода данного поля в Вашем магазине, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. 0 - значит не показывать данное поле');
-
-// Склад
-
-define('STOCK_CHECK_DESC', 'Проверять, есть ли необходимое количество товара на складе при оформлении заказа');
-define('STOCK_LIMITED_DESC', 'Вычитать со склада то количество товара, которое будет заказываться в интернет-магазине');
-define('STOCK_ALLOW_CHECKOUT_DESC', 'Разрешить покупателям оформлять заказ, даже если на складе нет достаточного количества единиц заказываемого товара');
-define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_DESC', 'Показывать покупателю маркер напротив товара при оформлении заказа, если на складе нет необходимого количества единиц заказываемого товара');
-define('STOCK_REORDER_LEVEL_DESC', 'Если количество товара на складе меньше, чем указанное число в данной переменной, то в корзине выводится предупреждение о недостаточном количестве товара на складе для выполнения заказа.');
-
-// Логи
-
-define('STORE_PAGE_PARSE_TIME_DESC', 'Хранить время, затраченное на генерацию(парсинг) страниц магазина.');
-define('STORE_PAGE_PARSE_TIME_LOG_DESC', 'Полный путь до директории и файла, в который будет записываться лог парсинга страниц.');
-define('STORE_PARSE_DATE_TIME_FORMAT_DESC', 'Формат даты');
-define('DISPLAY_PAGE_PARSE_TIME_DESC', 'Показывать время парсинга страницы в интернет-магазине (опция Сохранять время парсинга страниц должна быть включена)');
-define('STORE_DB_TRANSACTIONS_DESC', 'Сохранять все запросы к базе данных в файле, указанном в переменной Директория хранение логов (только для PHP4 и выше)');
-
-// Кэш
-
-define('USE_CACHE_DESC', 'Использовать кэширование информации.');
-define('DIR_FS_CACHE_DESC', 'Директория, куда будут записываться и сохраняться кэш-файлы.');
-
-// Настройка E-Mail
-
-define('EMAIL_TRANSPORT_DESC', 'Укажите, какой способ отправки писем из магазина будет использоваться. Для серверов, работающих под управлением Windows или MacOS необходимо установить SMTP для отправки писем.');
-define('EMAIL_LINEFEED_DESC', 'Используемая последовательность символов для разделения заголовков в письме.');
-define('EMAIL_USE_HTML_DESC', 'Отправлять письма из магазина в HTML формате.');
-define('ENTRY_EMAIL_ADDRESS_CHECK_DESC', 'Проверять, верные ли e-mail адреса указываются при регистрации в интернет-магазине. Для проверки используется DNS.');
-define('SEND_EMAILS_DESC', 'Отправлять письма из магазина.');
-
-// Скачивание
-
-define('DOWNLOAD_ENABLED_DESC', 'Разрешить функцию скачивания товаров.');
-define('DOWNLOAD_BY_REDIRECT_DESC', 'Использовать перенаправление в браузере для скачивания товара. Для не Unix систем(Windows, Mac OS и т.д.) должно стоять false.');
-define('DOWNLOAD_MAX_DAYS_DESC', 'Установите количество дней, в течение которых покупатель может скачать свой товар. Если укажите 0, тогда срок существования ссылки для скачивания ограничен не будет.');
-define('DOWNLOAD_MAX_COUNT_DESC', 'Установите максимальное количество скачиваний для одного товара. Если укажите 0, тогда никаких ограничений по количеству скачиваний не будет.');
-define('DOWNLOADS_ORDERS_STATUS_UPDATED_VALUE_DESC', 'Какой ID номер статуса заказа сбрасывает переменные Срок существования ссылки для скачивания (дней) и Максимальное количество скачиваний - По умолчанию Доставляется (id код 4).');
-define('DOWNLOADS_CONTROLLER_ON_HOLD_MSG_DESC', 'Вы можете указать сообщение, которое будет показано клиенту, в случае, если он захочет скачать ещё неоплаченный товар.');
-define('DOWNLOADS_CONTROLLER_ORDERS_STATUS_DESC', 'Скачивание файла (файлов) будет разрешено только в случае, если заказ будет иметь указанный статус (а именно id код статуса заказа). По умолчанию скачивание разрешено для заказов со статусом ждём оплаты (id код 2).');
-
-// GZip Компрессия
-
-define('GZIP_COMPRESSION_DESC', 'Разрешить HTTP GZip компрессию.');
-define('GZIP_LEVEL_DESC', 'Вы можете указать уровень компрессии от 0 до 9 (0 = минимум, 9 = максимум).');
-
-// Сессии
-
-define('SESSION_WRITE_DIRECTORY_DESC', 'Если сессии хранятся в файлах, то здесь необходимо указать полный путь до папки, в которой будут храниться файлы сессий.');
-define('SESSION_FORCE_COOKIE_USE_DESC', 'Принудительно использовать сессии, только когда в браузере активированы cookies.');
-define('SESSION_CHECK_SSL_SESSION_ID_DESC', 'Проверять  SSL_SESSION_ID при каждом обращении к странице, защищённой протоколом HTTPS.');
-define('SESSION_CHECK_USER_AGENT_DESC', 'Проверять переменную бразура user agent при каждом обращении к страницам интернет-магазина.');
-define('SESSION_CHECK_IP_ADDRESS_DESC', 'Проверять IP адреса клиентов при каждом обращении к страницам интернет-магазина.');
-define('SESSION_BLOCK_SPIDERS_DESC', 'Не показывать сессию в адресе при обращении к станицам магазина известных поисковых пауков. Список известных пауков находится в файле includes/spiders.txt.');
-define('SESSION_RECREATE_DESC', 'Воссоздавать сессию для генерации нового ID кода сессии при входе зарегистрированного покупателя в магазин, либо при регистрации нового покупателя (Только для PHP 4.1 и выше).');
-
-// HTML Редактор
-
-define('HTML_AREA_WYSIWYG_DISABLE_DESC', 'Enable - Включить HTML редактор для поля Описание товара при добавлении/редактировании товара<br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_DISABLE_JPSY_DESC', 'Enable - Включить<br>Disable - Выключить<br>Данный модуль работает с браузером Internet Explorer 5.5 и выше. Если Вам не нравится данный модуль, можете его выключить, поставив Disable и при добавлении картинок к товару будет более простой вариант с кнопко');
-define('HTML_AREA_WYSIWYG_BASIC_PD_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('HTML_AREA_WYSIWYG_WIDTH_DESC', 'Ширина HTML редактора в пикселах (по умолчанию: 505)');
-define('HTML_AREA_WYSIWYG_HEIGHT_DESC', 'Высота HTML редактора в пикселах (по умолчанию: 240)');
-define('HTML_AREA_WYSIWYG_DISABLE_EMAIL_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_EMAIL_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.');
-define('EMAIL_AREA_WYSIWYG_WIDTH_DESC', 'Ширина HTML редактора в пикселах (по умолчанию: 505)');
-define('EMAIL_AREA_WYSIWYG_HEIGHT_DESC', 'Высота HTML редактора в пикселах (по умолчанию: 140)');
-define('HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_NEWSLETTER_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('NEWSLETTER_EMAIL_WYSIWYG_WIDTH_DESC', 'Ширина HTML редактора в пикселах (по умолчанию: 505)');
-define('NEWSLETTER_EMAIL_WYSIWYG_HEIGHT_DESC', 'Высота HTML редактора в пикселах (по умолчанию: 140)');
-define('HTML_AREA_WYSIWYG_DISABLE_DEFINE_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_DEFINE_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('HTML_AREA_WYSIWYG_DISABLE_ARTICLES_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_ARTICLES_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('HTML_AREA_WYSIWYG_DISABLE_FAQDESK_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_FAQDESK_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('HTML_AREA_WYSIWYG_DISABLE_NEWSDESK_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_NEWSDESK_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('HTML_AREA_WYSIWYG_DISABLE_INFOPAGES_DESC', 'Enable - Включить HTML редактор <br>Disable - Выключить HTML редактор.');
-define('HTML_AREA_WYSIWYG_BASIC_INFOPAGES_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br> Advanced - Расширенный HTML редактор, максимальное количество возможностей.<br>Medium - Нечто среднее между Basic и Advanced.');
-define('DEFINE_MAINPAGE_WYSIWYG_WIDTH_DESC', 'Ширина HTML редактора в пикселах (по умолчанию: 505)');
-define('DEFINE_MAINPAGE_WYSIWYG_HEIGHT_DESC', 'Высота HTML редактора в пикселах (по умолчанию: 140)');
-define('HTML_AREA_WYSIWYG_FONT_TYPE_DESC', 'Шрифт интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.');
-define('HTML_AREA_WYSIWYG_FONT_SIZE_DESC', 'Размер шрифта интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.');
-define('HTML_AREA_WYSIWYG_FONT_COLOUR_DESC', 'Цвет шрифта интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.<br>Вы можете указать либо код цвета, например #FFFFFF, либо название цвета, например black.');
-define('HTML_AREA_WYSIWYG_BG_COLOUR_DESC', 'Цвет фона интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.<br>Вы можете указать либо код цвета, например #FFFFFF, либо название цвета, например black.');
-define('HTML_AREA_WYSIWYG_DEBUG_DESC', 'Следить за генерируемым HTML-кодом, т.е. Вы можете видеть, какой HTML-код создаётся при использовании HTML редактора.<p>0 - Отключить.<br>1 - Включить<br>По умолчанию стоит 0');
-
-// Партнёрская программа
-
-define('AFFILIATE_EMAIL_ADDRESS_DESC', 'E-Mail Адрес Партнёрской программы');
-define('AFFILIATE_PERCENT_DESC', 'Процент от суммы оплаченного заказа, начисляемый партнёрам');
-define('AFFILIATE_THRESHOLD_DESC', 'Минимальная сумма партнёрской комиссии к оплате');
-define('AFFILIATE_COOKIE_LIFETIME_DESC', 'Время (в секундах) хранения cookies. Если посетитель с одного IP адреса сделал клик или покупку, и комиссия с его покупки была зачтена партнёру, то в следующий раз клики и продажи с этого IP будут засчитыватсья только через 7200 секунд (по умолчанию).');
-define('AFFILIATE_BILLING_TIME_DESC', 'По умолчанию стоит 30, это значит, что счета для оплаты комиссий партнёрам выписываются раз в месяц');
-define('AFFILIATE_PAYMENT_ORDER_MIN_STATUS_DESC', 'Необходимо для того, чтобы комиссия партнёрам начислялась только за оплаченные заказы, статус ID - 3 или выше. По умолчанию стоит 3 (Выполняется), т.е. заказ уже оплачен и комиссия партнёрам начисляется только за оплаченные заказы.');
-define('AFFILIATE_USE_CHECK_DESC', 'Оплата партнёрских комиссий через WebMoney. При регистрации партнёр указывает свои данные в WebMoney.<br>true - Включено<br>false - Выключено');
-define('AFFILIATE_USE_PAYPAL_DESC', 'Оплата через систему PayPal.<br>true - Включено<br>false - Выключено');
-define('AFFILIATE_USE_BANK_DESC', 'Оплата партнёрских комиссий через банк.<br>true - Включено<br>false - Выключено');
-define('AFFILATE_INDIVIDUAL_PERCENTAGE_DESC', 'Позволяет указывать индивидуальные процентны комиссии для партнёров. Например, по умолчанию стоит 10% с продажи для всех зарегистрированных партнёров, а Вы можете наиболее успешным партнёрам давать комиссию 15% с продажи.');
-define('AFFILATE_USE_TIER_DESC', 'Партнёры, зарегистрировавшиеся через себя новых партнёров, могут получать комиссию за заказы, оформленные через партнёров, которых он привёл в магазин.');
-define('AFFILIATE_TIER_LEVELS_DESC', 'Количество уровней, которое учитываются при учёте комиссии.');
-define('AFFILIATE_TIER_PERCENTAGE_DESC', 'Проценты комиссии для каждого из уровней.<br>Пример: 8.00;5.00;1.00');
-
-// Модуль Dynamic MoPics
-
-define('IN_IMAGE_BIGIMAGES_DESC', 'Каталог, где будут храниться большие картинки.');
-define('IN_IMAGE_THUMBS_DESC', 'Каталог, куда будут записываться маленькие картинки, автоматически генерируемые из большх картинок.');
-define('MAIN_THUMB_IN_SUBDIR_DESC', 'По умолчанию true.');
-define('THUMBS_PER_ROW_DESC', 'Сколько картинок должно показываться в одной строке.');
-define('MORE_PICS_EXT_DESC', 'Данный префикс будет добавлен к оригинальному названию файла картинки. Можно оставить данное поле пустым, если не хотите добавлять каких-либо префиксов к оригинальному названию файла.');
-define('BIG_PIC_EXT_DESC', 'Данный префикс будет добавлен к оригинальному названию файла большой картинки. Можно оставить данное поле пустым, если не хотите добавлять каких-либо префиксов к оригинальному названию файла.');
-define('THUMB_IMAGE_TYPE_DESC', 'Тип генерируемых картинок.');
-define('BIG_IMAGE_TYPE_DESC', 'Тип больших картинок');
-
-// Тех. обслуживание
-
-define('DOWN_FOR_MAINTENANCE_DESC', 'Техническое обслуживание. Если включено, то в магазине нельзя будет делать заказы и будет выведено предупреждение о проведении технического обслуживания магазина.<br>true - Включено<br>false - Выключено');
-define('DOWN_FOR_MAINTENANCE_FILENAME_DESC', 'Файл, который будет показан в магазине, если включено Техническое обслуживание магазина. По умолчанию - down_for_maintenance.php');
-define('DOWN_FOR_MAINTENANCE_HEADER_OFF_DESC', 'При включённом техническом обслуживании Вы можете запретить показывать шапку магазина<br>true - Не показывать<Br>false - Показывать');
-define('DOWN_FOR_MAINTENANCE_COLUMN_LEFT_OFF_DESC', 'При включённом техническом обслуживании Вы можете запретить показывать левую колонку магазина<br>true - Не показывать<Br>false - Показывать');
-define('DOWN_FOR_MAINTENANCE_COLUMN_RIGHT_OFF_DESC', 'При включённом техническом обслуживании Вы можете запретить показывать правую колонку магазина<br>true - Не показывать<Br>false - Показывать');
-define('DOWN_FOR_MAINTENANCE_FOOTER_OFF_DESC', 'При включённом техническом обслуживании Вы можете запретить показывать нижнюю часть магазина<br>true - Не показывать<Br>false - Показывать');
-define('DOWN_FOR_MAINTENANCE_PRICES_OFF_DESC', 'При включённом техническом обслуживании Вы можете запретить показывать цены на товары в магазине<br>true - Не показывать<Br>false - Показывать');
-define('EXCLUDE_ADMIN_IP_FOR_MAINTENANCE_DESC', 'Для указанного IP адреса магазин будет доступен даже при включённом режиме Техническое обслуживание. Обычно здесь указывает IP адрес администратора магазина.');
-define('WARN_BEFORE_DOWN_FOR_MAINTENANCE_DESC', 'Предупреждать посетителей перед уходом на техническое обслуживание. Если техническое обслуживание уже включено, то данная опция автоматически устанавливается в false.');
-define('PERIOD_BEFORE_DOWN_FOR_MAINTENANCE_DESC', 'Укажите текст уведомления.');
-define('DISPLAY_MAINTENANCE_TIME_DESC', 'Показывать дату активации режима Техническое обслуживание.');
-define('DISPLAY_MAINTENANCE_PERIOD_DESC', 'Показывать в течение какого времени магазин будет находиться в режиме Техническое обслуживание.');
-define('TEXT_MAINTENANCE_PERIOD_TIME_DESC', 'Укажите время работы магазина в режиме Техническое обслуживание');
-
-// Быстрое оформление
-
-define('GUEST_ON_DESC', 'Разрешить покупателям быстро оформлять заказ.');
-
-// Ссылки
-
-define('ENABLE_LINKS_COUNT_DESC', 'Показывать количество переходов по ссылке.');
-define('ENABLE_SPIDER_FRIENDLY_LINKS_DESC', 'Использовать короткие URL адреса.');
-define('LINKS_IMAGE_WIDTH_DESC', 'Ширина картинки ссылки.');
-define('LINKS_IMAGE_HEIGHT_DESC', 'Высота картинки ссылки.');
-define('LINK_LIST_IMAGE_DESC', 'Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.');
-define('LINK_LIST_URL_DESC', 'Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.');
-define('LINK_LIST_TITLE_DESC', 'Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.');
-define('LINK_LIST_DESCRIPTION_DESC', 'Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.');
-define('LINK_LIST_COUNT_DESC', 'Укажите порядок вывода данного поля, т.е. введите цифру. Если укажите 1, то данное поле будет слева на первом месте, если 2, то поле будет показана после(правее) поля, у которого указана цифра 1 и т.д. Если укажите 0, то данное поле не будет показываться.');
-define('ENTRY_LINKS_TITLE_MIN_LENGTH_DESC', 'Минимальное количество символов.');
-define('ENTRY_LINKS_URL_MIN_LENGTH_DESC', 'Минимальное количество символов.');
-define('ENTRY_LINKS_DESCRIPTION_MIN_LENGTH_DESC', 'Минимальное количество символов.');
-define('ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH_DESC', 'Минимальное количество символов.');
-define('LINKS_CHECK_PHRASE_DESC', 'Текст (обычно адрес магазина), который будет искаться при проверке ссылки. Необходимо для того, чтобы убедиться, что на сайте, добавленном в каталог ссылок, установлена ссылка на Ваш магазин.');
-
-// Обновление прайса
-
-define('DISPLAY_MODEL_DESC', 'Показывать/Не показывать код товара');
-define('MODIFY_MODEL_DESC', 'Показывать/Не показывать код товара');
-define('MODIFY_NAME_DESC', 'Показывать/Не показывать название товара');
-define('DISPLAY_STATUT_DESC', 'Показывать/Не показывать статус товара');
-define('DISPLAY_WEIGHT_DESC', 'Показывать/Не показывать вес товара');
-define('DISPLAY_QUANTITY_DESC', 'Показывать/Не показывать количество товара');
-define('DISPLAY_SORT_ORDER_DESC', 'Показывать/Не показывать порядок сортировки');
-define('DISPLAY_ORDER_MIN_DESC', 'Показывать/Не показывать минимум для заказа');
-define('DISPLAY_ORDER_UNITS_DESC', 'Показывать/Не показывать шаг');
-define('DISPLAY_IMAGE_DESC', 'Показывать/Не показывать картинку товара');
-define('DISPLAY_XML_DESC', 'Показывать/Не показывать колонку XML');
-define('MODIFY_MANUFACTURER_DESC', 'Показывать/Не показывать производителя товара');
-define('MODIFY_TAX_DESC', 'Показывать/Не показывать налог');
-define('DISPLAY_TVA_OVER_DESC', 'Показывать/Не показывать цены с налогами');
-define('DISPLAY_TVA_UP_DESC', 'Показывать/Не показывать цены с налогами при изменении цены');
-define('DISPLAY_PREVIEW_DESC', 'Показывать/Не показывать ссылку на описание товара');
-define('DISPLAY_EDIT_DESC', 'Показывать/Не показывать ссылку на редактирование товара');
-define('DISPLAY_MANUFACTURER_DESC', 'Показывать/Не показывать производителя');
-define('DISPLAY_TAX_DESC', 'Показывать/Не показывать налог');
-define('ACTIVATE_COMMERCIAL_MARGIN_DESC', 'Показывать/Не показывать возможность массового  изменения цен');
-
-// Отложенные товары
-
-define('MAX_DISPLAY_WISHLIST_PRODUCTS_DESC' , 'Сколько отложенных товаров показывать на одной странице?');
-define('MAX_DISPLAY_WISHLIST_BOX_DESC' , 'Сколько отложенных товаров показывать в боксе до того, как список изменится на счётчик?');
-define('DISPLAY_WISHLIST_EMAILS_DESC' , 'Сколько возможных e-mail адресов показывать на странице отложенных товаров?');
-define('WISHLIST_REDIRECT_DESC' , 'Возвращаться на страницу карточки товара после добавления товара в отложенные?');
-
-// Кэш страниц
-
-define('ENABLE_PAGE_CACHE_DESC' , 'Разрешить кэширование страниц? Данная функция помогает снизить нагрузку на сервер и ускорить загрузку страниц.');
-define('PAGE_CACHE_LIFETIME_DESC' , 'Как долго кэшировать страницы (в минутах)?');
-define('PAGE_CACHE_DEBUG_MODE_DESC' , 'Включить режим отладки (внизу страницы)? Не включайте данную опцию на работающих магазинах! Вы можете включить режим отладки просто добавив к URL адресу параметр ?debug=1');
-define('PAGE_CACHE_DISABLE_PARAMETERS_DESC' , 'В некоторых случаях (например, при включённых коротких адресах) или при большом количестве партнёров может привести к чрезмерному использованию дискового пространства.');
-define('PAGE_CACHE_DELETE_FILES_DESC' , 'Если установлено в true, то при любом следующем просмотре любой страницы в каталоге, все кэш файлы будут удалены, после этого верните false.');
-define('PAGE_CACHE_UPDATE_CONFIG_FILES_DESC' , 'Если у Вас установлен модуль configuration cache, укажите полный (абсолютный) путь до файла обновления.');
-
-// Яндекс маркет
-
-define('YML_NAME_DESC' , 'Название магазина для Яндекс-Маркет. Если поле пустое, то используется STORE_NAME.');
-define('YML_COMPANY_DESC' , 'Название компании для Яндекс-Маркет. Если поле пустое, то используется STORE_OWNER.');
-define('YML_DELIVERYINCLUDED_DESC' , 'Доставка включена в стоимость товара?');
-define('YML_AVAILABLE_DESC' , 'Товар в наличии или под заказ?');
-define('YML_AUTH_USER_DESC' , 'Логин для доступа к YML');
-define('YML_AUTH_PW_DESC' , 'Пароль для доступа к YML');
-define('YML_REFERER_DESC' , 'Добавить в адрес товара параметр с ссылкой на User agent или ip?');
-define('YML_STRIP_TAGS_DESC' , 'Убирать html-теги в строках?');
-define('YML_UTF8_DESC' , 'Перекодировать в UTF-8?');
-define('YML_SALES_NOTES_DESC' , 'Текст для тэга sales_notes');
-
-// Список категорий на главной странице
-
-define('BRWCAT_ENABLE_TITLE' , 'Разрешить модуль просмотр категорий');
-define('BRWCAT_ICON_MODE_TITLE' , 'Картинки категорий');
-define('BRWCAT_SUBCAT_MODE_TITLE' , 'Ссылки на подкатегории');
-define('BRWCAT_ICONS_PER_ROW_TITLE' , 'Максимальное количество подкатегорий в одной строке');
-define('BRWCAT_SUBCAT_BULLET_TITLE' , 'Символ перед названием категорий');
-define('BRWCAT_SUBCAT_COUNTS_TITLE' , 'Счетчик количества товаров в категориях');
-define('BRWCAT_NAME_CASE_TITLE' , 'Формат вывода названий категорий');
-
-define('BRWCAT_ENABLE_DESC' , 'Активировать модуль просмотр категорий.');
-define('BRWCAT_ICON_MODE_DESC' , 'Выберите, показывать картинки или нет и если показывать, то как:<br><br>Disabled - Не показывать.<br>Text - Название без картинки.<br>Image only - Картинка.<br>Image with caption - Картинка + текст.');
-define('BRWCAT_SUBCAT_MODE_DESC' , 'Как показывать ссылку на подкатегории:<br><br>Off - Не показывать вообще.<br>Bottom - Показывать снизу.<br>Right top - Справа сверху.<br>Right middle - Справа посередине.<br>Right bottom - Справа снизу.');
-define('BRWCAT_ICONS_PER_ROW_DESC' , 'Сколько подкатегорий показывать в одной строке:');
-define('BRWCAT_SUBCAT_BULLET_DESC' , 'Символ, показываемый перед названием категории.');
-define('BRWCAT_SUBCAT_COUNTS_DESC' , 'Счётчик количества товара в категориях.');
-define('BRWCAT_NAME_CASE_DESC' , 'Выберите, в каком формате выводить названия категорий.');
-
-// Статьи - Настройки 
-
-define('DISPLAY_NEW_ARTICLES_TITLE', 'Показывать ссылку новые статьи');
-define('NEW_ARTICLES_DAYS_DISPLAY_TITLE', 'Количество дней, в течение которых статья считается новой');
-define('MAX_NEW_ARTICLES_PER_PAGE_TITLE', 'Количество статей на одной странице новых статей');
-define('DISPLAY_ALL_ARTICLES_TITLE', 'Показывать ссылку все статьи');
-define('MAX_ARTICLES_PER_PAGE_TITLE', 'Количество статей на одной странице');
-define('MAX_DISPLAY_UPCOMING_ARTICLES_TITLE', 'Максимальное количество готовящихся к публикации статей');
-define('ENABLE_ARTICLE_REVIEWS_TITLE', 'Разрешить отзывы к статьям');
-define('ENABLE_TELL_A_FRIEND_ARTICLE_TITLE', 'Разрешить функцию рассказать знакомому');
-define('MIN_DISPLAY_ARTICLES_XSELL_TITLE', 'Минимальное количество товара, выводимого в боксе связанные товары');
-define('MAX_DISPLAY_ARTICLES_XSELL_TITLE', 'Максимальное количество товара, выводимого в боксе связанные товары');
-define('SHOW_ARTICLE_COUNTS_TITLE', 'Показывать счётчик статей');
-define('MAX_DISPLAY_AUTHOR_NAME_LEN_TITLE', 'Максимальная длина поля автор');
-define('MAX_DISPLAY_AUTHORS_IN_A_LIST_TITLE', 'Формат вывода списка авторов');
-define('MAX_AUTHORS_LIST_TITLE', 'Авторы в виде развёрнутого меню');
-define('DISPLAY_AUTHOR_ARTICLE_LISTING_TITLE', 'Показывать автора в списке статей');
-define('DISPLAY_TOPIC_ARTICLE_LISTING_TITLE', 'Показывать раздел в списке статей');
-define('DISPLAY_ABSTRACT_ARTICLE_LISTING_TITLE', 'Показывать Meta Description в списке статей');
-define('DISPLAY_DATE_ADDED_ARTICLE_LISTING_TITLE', 'Показывать дату добавления в списке статей');
-define('MAX_ARTICLE_ABSTRACT_LENGTH_TITLE', 'Максимальная длина поля Meta Description');
-define('ARTICLE_LIST_FILTER_TITLE', 'Показывать фильтр Раздел/Авторы');
-define('ARTICLE_PREV_NEXT_BAR_LOCATION_TITLE', 'Расположение навигации Следующая/Предыдущая страница');
-define('ARTICLE_WYSIWYG_ENABLE_TITLE', 'Использовать HTML редактор для написания статей?');
-define('ARTICLE_MANAGER_WYSIWYG_BASIC_TITLE', 'Возможности HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_WIDTH_TITLE', 'Ширина HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_HEIGHT_TITLE', 'Высота HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_FONT_TYPE_TITLE', 'Шрифт, используемый в интерфейсе HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_FONT_SIZE_TITLE', 'Размер шрифта, используемого в интерфейсе HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_FONT_COLOUR_TITLE', 'Цвет шрифта, используемого в интерфейсе HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_BG_COLOUR_TITLE', 'Цвет фона в интерфейсе HTML редактора');
-define('ARTICLE_MANAGER_WYSIWYG_DEBUG_TITLE', 'Разрешить режим отладки?');
-
-define('DISPLAY_NEW_ARTICLES_DESC', 'Показывать ссылку новые статьи в боксе статьи?');
-define('NEW_ARTICLES_DAYS_DISPLAY_DESC', 'Какое количество дней после добавления, статья считается новой и отображатеся на странице новые статьи.');
-define('MAX_NEW_ARTICLES_PER_PAGE_DESC', 'Максимальное количество статей, выводимых на одной странице новых статей.');
-define('DISPLAY_ALL_ARTICLES_DESC', 'Показывать ссылку все статьи в боксе статьи?');
-define('MAX_ARTICLES_PER_PAGE_DESC', 'Максимальное количество статей, выводимых на одной странице.');
-define('MAX_DISPLAY_UPCOMING_ARTICLES_DESC', 'Максимальное количество статей, выводимых в блоке готовятся к публикации');
-define('ENABLE_ARTICLE_REVIEWS_DESC', 'Разрешить посетителям оставлять свои отзывы о статьях.');
-define('ENABLE_TELL_A_FRIEND_ARTICLE_DESC', 'Разрешить посетителям использовть функцию Рассказать знакомому.');
-define('MIN_DISPLAY_ARTICLES_XSELL_DESC', 'Минимальное количество товара, выводимого в боксе связанные товары.');
-define('MAX_DISPLAY_ARTICLES_XSELL_DESC', 'Максимальное количество товара, выводимого в боксе связанные товары.');
-define('SHOW_ARTICLE_COUNTS_DESC', 'Показывать количество статей в каждой разделе.');
-define('MAX_DISPLAY_AUTHOR_NAME_LEN_DESC', 'Максимальная количество символов, выводимых в боксе авторы.');
-define('MAX_DISPLAY_AUTHORS_IN_A_LIST_DESC', 'Если число авторов меньше указанной цифры, тогда в боксе авторы выводится простой список, если число авторов больше указанной цифры, тогра выводится drop-down список авторов.');
-define('MAX_AUTHORS_LIST_DESC', 'Данная опция используется для настройки бокса авторы, если указана цифра 1, то список авторов выводится в виде стандартного drop-down списка. Если указана любая другая цифра, то выводится только X производителей в виде развёрнутого меню.');
-define('DISPLAY_AUTHOR_ARTICLE_LISTING_DESC', 'Показывать автора в списке статей?');
-define('DISPLAY_TOPIC_ARTICLE_LISTING_DESC', 'Показывать раздел в списке статей?');
-define('DISPLAY_ABSTRACT_ARTICLE_LISTING_DESC', 'Показывать Meta Description в списке статей?');
-define('DISPLAY_DATE_ADDED_ARTICLE_LISTING_DESC', 'Показывать дату добавления в списке статей?');
-define('MAX_ARTICLE_ABSTRACT_LENGTH_DESC', 'Максимальное количество символов поля Meta Description.');
-define('ARTICLE_LIST_FILTER_DESC', 'Показывать фильтр Раздел/Авторы?');
-define('ARTICLE_PREV_NEXT_BAR_LOCATION_DESC', 'Расположение навигации Следующая/Предыдущая страница<br><br>top - верх<br>bottom - низ<br>both - (верх+низ)');
-define('ARTICLE_WYSIWYG_ENABLE_DESC', 'Использовать HTML редактор для написания статей?');
-define('ARTICLE_MANAGER_WYSIWYG_BASIC_DESC', 'Basic - Простой HTML редактор с минимальным количеством возможностей.<br>Advanced - Расширенный HTML редактор, максимальное количество возможностей.');
-define('ARTICLE_MANAGER_WYSIWYG_WIDTH_DESC', 'Ширина HTML редактора в пикселах (по умолчанию: 605)');
-define('ARTICLE_MANAGER_WYSIWYG_HEIGHT_DESC', 'Высота HTML редактора в пикселах (по умолчанию: 300)');
-define('ARTICLE_MANAGER_WYSIWYG_FONT_TYPE_DESC', 'Шрифт интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.');
-define('ARTICLE_MANAGER_WYSIWYG_FONT_SIZE_DESC', 'Размер шрифта интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора.');
-define('ARTICLE_MANAGER_WYSIWYG_FONT_COLOUR_DESC', 'Цвет шрифта интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора. Вы можете указать либо код цвета, например #FFFFFF, либо название цвета, например black.');
-define('ARTICLE_MANAGER_WYSIWYG_BG_COLOUR_DESC', 'Цвет фона интерфейса HTML редактора, никак не связано с теми данными, которые Вы будете вводить с помощью HTML редактора. Вы можете указать либо код цвета, например #FFFFFF, либо название цвета, например black.');
-define('ARTICLE_MANAGER_WYSIWYG_DEBUG_DESC', 'Следить за генерируемым HTML-кодом, т.е. Вы можете видеть, какой HTML-код создаётся при использовании HTML редактора.<br><br>0 - Отключить.<br>1 - Включить<br>По умолчанию стоит 0');
-
-// Установка модулей
-
-define('DIR_FS_CIP_TITLE' , 'Директория с модулями');
-define('DIR_FS_CIP_DESC' , 'Директория, где будут находиться архивы с модулями');
-define('ALLOW_SQL_BACKUP_TITLE' , 'Делать резервную копию базы данных перед установкой нового модуля');
-define('ALLOW_SQL_BACKUP_DESC' , 'Если база данных большая, лучше поставить false.');
-define('ALLOW_SQL_RESTORE_TITLE' , 'Восстанавливать резервную копию базы данных при удалении модуля');
-define('ALLOW_SQL_RESTORE_DESC' , 'Ставьте true только для отладки и если Вы точно знаете, как и для чего работает данная опция.');
-define('ALLOW_FILES_BACKUP_TITLE' , 'Делать резервные копии файлов перед установкой нового модуля');
-define('ALLOW_FILES_BACKUP_DESC' , 'Сохраняются только файлы, которые изменяет установщик модулей, рекомендуется поставить true.');
-define('ALLOW_FILES_RESTORE_TITLE' , 'Восстанавливать резервные копии файлов при удалении модуля');
-define('ALLOW_FILES_RESTORE_DESC' , 'Ставьте true только для отладки и если Вы точно знаете, как и для чего работает данная опция.');
-define('ALLOW_OVERWRITE_MODIFIED_TITLE' , 'Разрешить перезаписывать уже изменённые файлы');
-define('ALLOW_OVERWRITE_MODIFIED_DESC' , 'Если true, то установщик модулей перезапишет уже изменённый при установке другого модуля файл. Ставьте true только для отладки и если Вы точно знаете, как и для чего работает данная опция.');
-define('TEXT_LINK_FORUM_TITLE' , 'Ссылка на форум');
-define('TEXT_LINK_FORUM_DESC' , 'Ссылка на форум поддежки');
-define('TEXT_LINK_CONTR_TITLE' , 'Ссылка на каталог с модулями');
-define('TEXT_LINK_CONTR_DESC' , 'URL каталога с доступными модулями для магазина.');
-define('ALWAYS_DISPLAY_REMOVE_BUTTON_TITLE' , 'Всегда показывать кнопку удалить');
-define('ALWAYS_DISPLAY_REMOVE_BUTTON_DESC' , 'Поставьте true и кнопка удалить будет показываться напротив каждого модуля, вне зависимости от того, установлен он или нет.');
-define('ALWAYS_DISPLAY_INSTALL_BUTTON_TITLE' , 'Всегда показывать кнопку установить');
-define('ALWAYS_DISPLAY_INSTALL_BUTTON_DESC' , 'Поставьте true и кнопка установить будет показываться напротив каждого модуля, вне зависимости от того, установлен он или нет.');
-define('SHOW_PACK_BUTTONS_TITLE' , 'Показывать кнопки архивировать/разархивировать');
-define('SHOW_PACK_BUTTONS_DESC' , 'Показывать - true, не показывать - false.');
-define('SHOW_PERMISSIONS_COLUMN_TITLE' , 'Показывать колонку права доступа');
-define('SHOW_PERMISSIONS_COLUMN_DESC' , 'Выберите true и в списке модулей будет отображаться колонка права доступа.');
-define('SHOW_USER_GROUP_COLUMN_TITLE' , 'Показывать колонку пользователь/группа');
-define('SHOW_USER_GROUP_COLUMN_DESC' , 'Выберите true и в списке модулей будет отображаться колонка пользователь/группа.');
-define('SHOW_UPLOADER_COLUMN_TITLE' , 'Показывать колонку автор модуля');
-define('SHOW_UPLOADER_COLUMN_DESC' , 'Выберите true и в списке модулей будет отображаться колонка автор модуля.');
-define('SHOW_UPLOADED_COLUMN_TITLE' , 'Показывать колонку дата');
-define('SHOW_UPLOADED_COLUMN_DESC' , 'Выберите true и в списке модулей будет отображаться колонка дата.');
-define('SHOW_SIZE_COLUMN_TITLE' , 'Показывать колонку размер');
-define('SHOW_SIZE_COLUMN_DESC' , 'Выберите true и в списке модулей будет отображаться колонка размер.');
-define('USE_LOG_SYSTEM_TITLE' , 'Вести лог');
-define('USE_LOG_SYSTEM_DESC' , 'Если true, то всё действия установщика модулей будут записываться в папку backups.');
-define('MAX_UPLOADED_FILESIZE_TITLE' , 'Максимальный размер загружаемых CIP модулей');
-define('MAX_UPLOADED_FILESIZE_DESC' , 'Установите максимальный размер архивов, которые Вы можете загружать через браузер в установщике модулей.');
-
-define('MAX_QTY_IN_CART_TITLE' , 'Количество товара в корзине');
-define('MAX_QTY_IN_CART_DESC' , 'Максимально возможное количество товара, которое может быть добавлено в корзину (0 - без ограничений)');
-
-// Редактор заказов
-
-define('ORDER_EDITOR_PAYMENT_DROPDOWN_TITLE','Показывать dropdown меню с модулями оплаты?');
-define('ORDER_EDITOR_PAYMENT_DROPDOWN_DESC','Показывать способ оплаты заказа в виде drop-down меню (true), либо в виде input поля (false).');
-define('ORDER_EDITOR_USE_SPPC_TITLE','Использовать возможности модуля SPPC (должно быть выключено)?');
-define('ORDER_EDITOR_USE_SPPC_DESC','Данная опция должна быть выключена, т.к. на данный момент модуль SPPC не установлен.');
-define('ORDER_EDITOR_USE_AJAX_TITLE','Использовать Ajax при редактировании заказа?');
-define('ORDER_EDITOR_USE_AJAX_DESC','Если Ваш браузер не поддерживает JavaScript, установите false.');
-define('ORDER_EDITOR_CREDIT_CARD_TITLE','Выбери способ оплаты кредитной карточкой');
-define('ORDER_EDITOR_CREDIT_CARD_DESC','Редактор заказов выведет поля для указания информации о карточке когда будет выбран указанный в настройке способ оплаты.');
-
-define('MAX_REVIEWS_TITLE','Количество отзывов на странице карточки товара');
-define('MAX_REVIEWS_DESC','Максимальное количество отзывов, отображаемых на странице карточки товара.');
-
-define('ENABLE_TABS_TITLE','Разрешить закладки в админке');
-define('ENABLE_TABS_DESC','Использовать закладки в админке при добавлении/редактировании категорий, товаров, при редактировании заказов.');
-
-define('MASTER_PASS_TITLE','Мастер пароль');
-define('MASTER_PASS_DESC','С данным паролем Вы сможете входить в магазин под любым клиентом, указывая при входе email клиента и мастер пароль');
-
-define('OPTIONS_AS_IMAGES_ENABLED_TITLE','Использовать модуль картинок атрибутов?');
-define('OPTIONS_AS_IMAGES_ENABLED_DESC','Хотите разрешить модуль?');
-define('OPTIONS_IMAGES_NUMBER_PER_ROW_TITLE','Число картинок в одном ряду');
-define('OPTIONS_IMAGES_NUMBER_PER_ROW_DESC','Введите максимальную длину ряда картинок');
-define('OPTIONS_IMAGES_WIDTH_TITLE','Ширина картинки атрибута');
-define('OPTIONS_IMAGES_WIDTH_DESC','Укажите ширины картинки атрибута.');
-define('OPTIONS_IMAGES_HEIGHT_TITLE','Высота картинки атрибута');
-define('OPTIONS_IMAGES_HEIGHT_DESC','Укажите высоту картинки атрибута.');
-define('OPTIONS_IMAGES_CLICK_ENLARGE_TITLE','Увеличение кликом');
-define('OPTIONS_IMAGES_CLICK_ENLARGE_DESC','Активировать функцию увеличения картинки кликом мышки?');
-
-define('SET_BOX_CATEGORIES_TITLE', 'Разделы');
-define('SET_BOX_INFORMATION_TITLE', 'Информация');
-define('SET_BOX_MANUFACTURERS_TITLE', 'Производитель');
-define('SET_BOX_LATESTNEWS_TITLE', 'Новости');
-define('SET_BOX_SEARCH_TITLE', 'Поиск');
-define('SET_BOX_WHATSNEW_TITLE', 'Новинки');
-define('SET_BOX_FEATURED_TITLE', 'Рекомендуемые');
-define('SET_BOX_SHOP_BY_PRICE_TITLE', 'Сортировка по цене');
-define('SET_BOX_ARTICLES_TITLE', 'Статьи');
-define('SET_BOX_AUTHORS_TITLE', 'Авторы');
-define('SET_BOX_LINKS_TITLE', 'Ссылки');
-define('SET_BOX_CART_TITLE', 'Корзина');
-define('SET_BOX_DOWNLOADS_TITLE', 'Мои загрузки');
-define('SET_BOX_HELP_TITLE', 'Консультант');
-define('SET_BOX_LOGIN_TITLE', 'Вход');
-define('SET_BOX_WISHLIST_TITLE', 'Отложенные товары');
-define('SET_BOX_AFFILIATE_TITLE', 'Партнёрская программа');
-define('SET_BOX_FAQ_TITLE', 'Вопросы и ответы - категории');
-define('SET_BOX_FAQ_LATEST_TITLE', 'Последние вопросы и ответы');
-define('SET_BOX_POLLS_TITLE', 'Опросы');
-define('SET_BOX_MANUFACTURERS_INFO_TITLE', 'Информация о производителе');
-define('SET_BOX_ORDER_HISTORY_TITLE', 'Информация о заказах');
-define('SET_BOX_BESTSELLERS_TITLE', 'Лучшие товары');
-define('SET_BOX_NOTIFICATIONS_TITLE', 'Уведомления');
-define('SET_BOX_SET_BOX_TELL_A_FRIEND_TITLE', 'Рассказать другу');
-define('SET_BOX_SPECIALS_TITLE', 'Скидки');
-define('SET_BOX_REVIEWS_TITLE', 'Отзывы');
-define('SET_BOX_LANGUAGES_TITLE', 'Языки');
-define('SET_BOX_CURRENCIES_TITLE', 'Валюты');
-
-define('SET_BOX_CATEGORIES_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_INFORMATION_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_MANUFACTURERS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_LATESTNEWS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_SEARCH_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_WHATSNEW_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_FEATURED_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_SHOP_BY_PRICE_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_ARTICLES_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_AUTHORS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_LINKS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_CART_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_DOWNLOADS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_HELP_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_LOGIN_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_WISHLIST_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_AFFILIATE_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_FAQ_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_FAQ_LATEST_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_POLLS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_MANUFACTURERS_INFO_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_ORDER_HISTORY_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_BESTSELLERS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_NOTIFICATIONS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_SET_BOX_TELL_A_FRIEND_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_SPECIALS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_REVIEWS_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_LANGUAGES_DESC', 'Включить/выключить бокс.');
-define('SET_BOX_CURRENCIES_DESC', 'Включить/выключить бокс.');
+define('TABLE_HEADING_CONFIGURATION_TITLE', 'Р—Р°РіРѕР»РѕРІРѕРє');
+define('TABLE_HEADING_CONFIGURATION_VALUE', 'Р—РЅР°С‡РµРЅРёРµ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+
+define('TEXT_INFO_EDIT_INTRO', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_INFO_DATE_ADDED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_INFO_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРµРµ РёР·РјРµРЅРµРЅРёРµ:');
+define('ERROR_TEMPLATE_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Р”РёСЂРµРєС‚РѕСЂРёСЏ Р·Р°С‰РёС‰РµРЅР° РѕС‚ Р·Р°РїРёСЃРё, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂРЅС‹Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР° (РЅР°РїСЂРёРјРµСЂ chmod 777) РґР»СЏ РґРёСЂРµРєС‚РѕСЂРёРё ');
+define('ERROR_TEMPLATE_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Р”РёСЂРµРєС‚РѕСЂРёСЏ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚, СЃРѕР·РґР°Р№С‚Рµ РґРёСЂРµРєС‚РѕСЂРёСЋ ');
+
+// РњРѕР№ РјР°РіР°Р·РёРЅ
+
+define('DEFAULT_TEMPLATE_TITLE' , 'РЁР°Р±Р»РѕРЅ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ');
+define('STORE_NAME_TITLE' , 'РќР°Р·РІР°РЅРёРµ РјР°РіР°Р·РёРЅР°');
+define('STORE_OWNER_TITLE' , 'Р’Р»Р°РґРµР»РµС† РјР°РіР°Р·РёРЅР°');
+define('STORE_LOGO_TITLE' , 'Р›РѕРіРѕС‚РёРї РјР°РіР°Р·РёРЅР°');
+define('STORE_OWNER_EMAIL_ADDRESS_TITLE' , 'E-Mail РђРґСЂРµСЃ');
+define('STORE_OWNER_ICQ_NUMBER_TITLE' , 'ICQ РЅРѕРјРµСЂ');
+define('EMAIL_FROM_TITLE' , 'E-Mail РћС‚');
+define('STORE_COUNTRY_TITLE' , 'РЎС‚СЂР°РЅР°');
+define('STORE_ZONE_TITLE' , 'Р РµРіРёРѕРЅ');
+define('EXPECTED_PRODUCTS_SORT_TITLE' , 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РѕР¶РёРґР°РµРјС‹С… С‚РѕРІР°СЂРѕРІ');
+define('EXPECTED_PRODUCTS_FIELD_TITLE' , 'РЎРѕСЂС‚РёСЂРѕРІРєР° РѕР¶РёРґР°РµРјС‹С… С‚РѕРІР°СЂРѕРІ');
+define('USE_DEFAULT_LANGUAGE_CURRENCY_TITLE' , 'РџРµСЂРµРєР»СЋС‡РµРЅРёРµ РЅР° РІР°Р»СЋС‚Сѓ С‚РµРєСѓС‰РµРіРѕ СЏР·С‹РєР°');
+define('SEND_EXTRA_ORDER_EMAILS_TO_TITLE' , 'РћС‚РїСЂР°РІРєР° РєРѕРїРёР№ РїРёСЃРµРј СЃ Р·Р°РєР°Р·РѕРј');
+define('SEARCH_ENGINE_FRIENDLY_URLS_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєРѕСЂРѕС‚РєРёРµ URL Р°РґСЂРµСЃР° (РЅР°С…РѕРґРёС‚СЃСЏ РІ СЂР°Р·СЂР°Р±РѕС‚РєРµ)');
+define('DISPLAY_CART_TITLE' , 'РџРµСЂРµС…РѕРґРёС‚СЊ РІ РєРѕСЂР·РёРЅСѓ РїРѕСЃР»Рµ РґРѕР±Р°РІР»РµРЅРёСЏ С‚РѕРІР°СЂР°');
+define('ALLOW_GUEST_TO_TELL_A_FRIEND_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РіРѕСЃС‚СЏРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С„СѓРЅРєС†РёСЋ Р Р°СЃСЃРєР°Р·Р°С‚СЊ РґСЂСѓРіСѓ');
+define('ADVANCED_SEARCH_DEFAULT_OPERATOR_TITLE' , 'РћРїРµСЂР°С‚РѕСЂ РїРѕРёСЃРєР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ');
+define('STORE_NAME_ADDRESS_TITLE' , 'РђРґСЂРµСЃ Рё С‚РµР»РµС„РѕРЅ РјР°РіР°Р·РёРЅР°');
+define('SHOW_COUNTS_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‡С‘С‚С‡РёРє С‚РѕРІР°СЂРѕРІ');
+define('ALLOW_CATEGORY_DESCRIPTIONS_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РѕРїРёСЃР°РЅРёСЏ РєР°С‚РµРіРѕСЂРёР№');
+define('TAX_DECIMAL_PLACES_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ Р·РЅР°РєРѕРІ РїРѕСЃР»Рµ Р·Р°РїСЏС‚РѕР№ Сѓ РЅР°Р»РѕРіРѕРІ');
+define('SHOW_MAIN_FEATURED_PRODUCTS_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЂРµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('DISPLAY_PRICE_WITH_TAX_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ СЃ РЅР°Р»РѕРіР°РјРё');
+define('XPRICES_NUM_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅС‹С… С†РµРЅ РґР»СЏ С‚РѕРІР°СЂР°');
+define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_TITLE' , 'РќРѕРјРёРЅР°Р» РїРѕРґР°СЂРѕС‡РЅРѕРіРѕ СЃРµСЂС‚РёС„РёРєР°С‚Р°, РєРѕС‚РѕСЂС‹Р№ РїРѕР»СѓС‡Р°С‚ РїРѕСЃРµС‚РёС‚РµР»Рё');
+define('ALLOW_GUEST_TO_SEE_PRICES_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ РїРѕСЃРµС‚РёС‚РµР»СЏРј');
+define('NEW_SIGNUP_DISCOUNT_COUPON_TITLE' , 'РљРѕРґ РєСѓРїРѕРЅР°, РєРѕС‚РѕСЂС‹Р№ РїРѕР»СѓС‡Р°С‚ РїРѕСЃРµС‚РёС‚РµР»Рё, РїСЂРѕС€РµРґС€РёРµ СЂРµРіРёСЃС‚СЂР°С†РёСЋ');
+define('GUEST_DISCOUNT_TITLE' , 'РќР°С†РµРЅРєР° РґР»СЏ РїРѕСЃРµС‚РёС‚РµР»РµР№');
+define('CATEGORIES_SORT_ORDER_TITLE' , 'РЎРѕСЂС‚РёСЂРѕРІРєР° С‚РѕРІР°СЂР°, РєР°С‚РµРіРѕСЂРёР№');
+define('QUICKSEARCH_IN_DESCRIPTION_TITLE' , 'РџРѕРёСЃРє РІ РѕРїРёСЃР°РЅРёСЏС… С‚РѕРІР°СЂР°');
+define('CONTACT_US_LIST_TITLE' , 'РџРѕР»СѓС‡Р°С‚РµР»Рё РїРёСЃРµРј, РѕС‚РїСЂР°РІР»РµРЅРЅС‹С… СЃРѕ СЃС‚СЂР°РЅРёС†С‹ РЎРІСЏР¶РёС‚РµСЃСЊ СЃ РЅР°РјРё');
+define('ALLOW_GIFT_VOUCHERS_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РїРѕРґР°СЂРѕС‡РЅС‹С… СЃРµСЂС‚РёС„РёРєР°С‚РѕРІ Рё РєСѓРїРѕРЅРѕРІ');
+define('ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ СѓРїСЂР°РІР»РµРЅРёРµ Р°С‚СЂРёР±СѓС‚Р°РјРё РЅР° СЃС‚СЂР°РЅРёС†Рµ РґРѕР±Р°РІР»РµРЅРёСЏ С‚РѕРІР°СЂР°');
+define('SHOW_SUBCATEGORIES_WHEN_CATEGORIES_HAS_PRODUCTS_TITLE' , 'Р’С‹РІРѕРґРёС‚СЊ СЃСѓР±РєР°С‚РµРіРѕСЂРёРё РїСЂРё РЅР°Р»РёС‡РёРё С‚РѕРІР°СЂР° РІ РєР°С‚РµРіРѕСЂРёРё');
+define('SHOW_PDF_DATASHEET_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ PDF РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°');
+
+// РњРёРЅРёРјР°Р»СЊРЅР°С‹Рµ Р·РЅР°С‡РµРЅРёСЏ
+
+define('ENTRY_FIRST_NAME_MIN_LENGTH_TITLE' , 'РРјСЏ');
+define('ENTRY_LAST_NAME_MIN_LENGTH_TITLE' , 'Р¤Р°РјРёР»РёСЏ');
+define('ENTRY_DOB_MIN_LENGTH_TITLE' , 'Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ');
+define('ENTRY_EMAIL_ADDRESS_MIN_LENGTH_TITLE' , 'E-Mail Р°РґСЂРµСЃ');
+define('ENTRY_STREET_ADDRESS_MIN_LENGTH_TITLE' , 'РђРґСЂРµСЃ');
+define('ENTRY_COMPANY_MIN_LENGTH_TITLE' , 'РљРѕРјРїР°РЅРёСЏ');
+define('ENTRY_POSTCODE_MIN_LENGTH_TITLE' , 'РџРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ');
+define('ENTRY_CITY_MIN_LENGTH_TITLE' , 'Р“РѕСЂРѕРґ');
+define('ENTRY_STATE_MIN_LENGTH_TITLE' , 'Р РµРіРёРѕРЅ');
+define('ENTRY_TELEPHONE_MIN_LENGTH_TITLE' , 'РўРµР»РµС„РѕРЅ');
+define('ENTRY_PASSWORD_MIN_LENGTH_TITLE' , 'РџР°СЂРѕР»СЊ');
+define('CC_OWNER_MIN_LENGTH_TITLE' , 'Р’Р»Р°РґРµР»РµС† РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё');
+define('CC_NUMBER_MIN_LENGTH_TITLE' , 'РќРѕРјРµСЂ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё');
+define('REVIEW_TEXT_MIN_LENGTH_TITLE' , 'РўРµРєСЃС‚ РѕС‚Р·С‹РІР°');
+define('MIN_DISPLAY_BESTSELLERS_TITLE' , 'Р›РёРґРµСЂС‹ РїСЂРѕРґР°Р¶');
+define('MIN_DISPLAY_ALSO_PURCHASED_TITLE' , 'РўР°РєР¶Рµ Р·Р°РєР°Р·Р°Р»Рё');
+define('MIN_DISPLAY_XSELL_TITLE' , 'РЎРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('MIN_ORDER_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅР°СЏ СЃСѓРјРјР° Р·Р°РєР°Р·Р°');
+
+// РњР°РєСЃРёРјР°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ
+
+define('MAX_PROD_ADMIN_SIDE_TITLE' , 'РўРѕРІР°СЂРѕРІ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РІ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєРѕР№');
+define('MAX_ADDRESS_BOOK_ENTRIES_TITLE' , 'Р—Р°РїРёСЃРё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('MAX_DISPLAY_SEARCH_RESULTS_TITLE' , 'РўРѕРІР°СЂРѕРІ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РІ РєР°С‚Р°Р»РѕРіРµ');
+define('MAX_DISPLAY_PAGE_LINKS_TITLE' , 'РЎСЃС‹Р»РѕРє РЅР° СЃС‚СЂР°РЅРёС†С‹');
+define('MAX_DISPLAY_SPECIAL_PRODUCTS_TITLE' , 'РЎРїРµС†РёР°Р»СЊРЅС‹Рµ С†РµРЅС‹');
+define('MAX_DISPLAY_NEW_PRODUCTS_TITLE' , 'РќРѕРІРёРЅРєРё');
+define('MAX_DISPLAY_UPCOMING_PRODUCTS_TITLE' , 'РћР¶РёРґР°РµРјС‹Рµ С‚РѕРІР°СЂС‹');
+define('MAX_DISPLAY_MANUFACTURERS_IN_A_LIST_TITLE' , 'РЎРїРёСЃРѕРє РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№');
+define('MAX_MANUFACTURERS_LIST_TITLE' , 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»Рё РІ РІРёРґРµ СЂР°Р·РІС‘СЂРЅСѓС‚РѕРіРѕ РјРµРЅСЋ');
+define('MAX_DISPLAY_MANUFACTURER_NAME_LEN_TITLE' , 'РћРіСЂР°РЅРёС‡РµРЅРёРµ РґР»РёРЅС‹ РЅР°Р·РІР°РЅРёСЏ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ');
+define('MAX_DISPLAY_NEW_REVIEWS_TITLE' , 'РќРѕРІС‹Рµ РѕС‚Р·С‹РІС‹');
+define('MAX_RANDOM_SELECT_REVIEWS_TITLE' , 'Р’С‹Р±РѕСЂ СЃР»СѓС‡Р°Р№РЅС‹С… РѕС‚Р·С‹РІРѕРІ');
+define('MAX_RANDOM_SELECT_NEW_TITLE' , 'Р’С‹Р±РѕСЂ СЃР»СѓС‡Р°Р№РЅРѕРіРѕ С‚РѕРІР°СЂР° РІ Р±РѕРєСЃРµ РќРѕРІРёРЅРєРё');
+define('MAX_RANDOM_SELECT_SPECIALS_TITLE' , 'Р’С‹Р±РѕСЂ СЃР»СѓС‡Р°Р№РЅРѕРіРѕ С‚РѕРІР°СЂР° РІ Р±РѕРєСЃРµ РЎРєРёРґРєРё');
+define('MAX_DISPLAY_CATEGORIES_PER_ROW_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°С‚РµРіРѕСЂРёР№ РІ СЃС‚СЂРѕРєРµ');
+define('MAX_DISPLAY_PRODUCTS_NEW_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ РќРѕРІРёРЅРѕРє РЅР° СЃС‚СЂР°РЅРёС†Рµ');
+define('MAX_DISPLAY_BESTSELLERS_TITLE' , 'Р›РёРґРµСЂС‹ РїСЂРѕРґР°Р¶');
+define('MAX_DISPLAY_ALSO_PURCHASED_TITLE' , 'РўР°РєР¶Рµ Р·Р°РєР°Р·Р°Р»Рё');
+define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_TITLE' , 'Р‘РѕРєСЃ РСЃС‚РѕСЂРёСЏ Р·Р°РєР°Р·РѕРІ');
+define('MAX_DISPLAY_ORDER_HISTORY_TITLE' , 'РСЃС‚РѕСЂРёСЏ Р·Р°РєР°Р·РѕРІ');
+define('MAX_DISPLAY_FEATURED_PRODUCTS_TITLE' , 'РўРѕРІР°СЂРѕРІ РІ Р±РѕРєСЃРµ Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('MAX_DISPLAY_FEATURED_PRODUCTS_LISTING_TITLE' , 'РўРѕРІР°СЂРѕРІ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ Р РµРєРѕРјРµРЅРґСѓРµРјС‹С… С‚РѕРІР°СЂРѕРІ');
+
+// РљР°СЂС‚РёРЅРєРё
+
+define('SMALL_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° РјР°Р»РµРЅСЊРєРѕР№ РєР°СЂС‚РёРЅРєРё');
+define('SMALL_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° РјР°Р»РµРЅСЊРєРѕР№ РєР°СЂС‚РёРЅРєРё');
+define('HEADING_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РєР°С‚РµРіРѕСЂРёРё');
+define('HEADING_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РєР°С‚РµРіРѕСЂРёРё');
+define('SUBCATEGORY_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
+define('SUBCATEGORY_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
+define('CONFIG_CALCULATE_IMAGE_SIZE_TITLE' , 'Р’С‹С‡РёСЃР»СЏС‚СЊ СЂР°Р·РјРµСЂ РєР°СЂС‚РёРЅРєРё');
+define('IMAGE_REQUIRED_TITLE' , 'РљР°СЂС‚РёРЅРєР° РѕР±СЏР·Р°С‚РµР»СЊРЅР°');
+define('ULTIMATE_ADDITIONAL_IMAGES_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РјРѕРґСѓР»СЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РєР°СЂС‚РёРЅРѕРє?');
+define('ULT_THUMB_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РєР°СЂС‚РёРЅРєРё');
+define('ULT_THUMB_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РєР°СЂС‚РёРЅРєРё');
+define('MEDIUM_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё');
+define('MEDIUM_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё');
+define('LARGE_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР°');
+define('LARGE_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР°');
+
+// Р”Р°РЅРЅС‹Рµ РїРѕРєСѓРїР°С‚РµР»СЏ
+
+define('ACCOUNT_GENDER_TITLE' , 'РџРѕР»');
+define('ACCOUNT_DOB_TITLE' , 'Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ');
+define('ACCOUNT_COMPANY_TITLE' , 'РљРѕРјРїР°РЅРёСЏ');
+define('ACCOUNT_SUBURB_TITLE' , 'Р Р°Р№РѕРЅ');
+define('ACCOUNT_STATE_TITLE' , 'Р РµРіРёРѕРЅ');
+define('ACCOUNT_STREET_ADDRESS_TITLE' , 'РђРґСЂРµСЃ');
+define('ACCOUNT_CITY_TITLE' , 'Р“РѕСЂРѕРґ');
+define('ACCOUNT_POSTCODE_TITLE' , 'РџРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ');
+define('ACCOUNT_COUNTRY_TITLE' , 'РЎС‚СЂР°РЅР°');
+define('ACCOUNT_TELE_TITLE' , 'РўРµР»РµС„РѕРЅ');
+define('ACCOUNT_FAX_TITLE' , 'Р¤Р°РєСЃ');
+define('ACCOUNT_NEWS_TITLE' , 'Р Р°СЃСЃС‹Р»РєР°');
+
+// Р”РѕСЃС‚Р°РІРєР°/СѓРїР°РєРѕРІРєР°
+
+define('SHIPPING_ORIGIN_COUNTRY_TITLE' , 'РЎС‚СЂР°РЅР° РјР°РіР°Р·РёРЅР°');
+define('SHIPPING_ORIGIN_ZIP_TITLE' , 'РџРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ РјР°РіР°Р·РёРЅР°');
+define('SHIPPING_MAX_WEIGHT_TITLE' , 'РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РІРµСЃ РґРѕСЃС‚Р°РІРєРё');
+define('SHIPPING_BOX_WEIGHT_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅС‹Р№ РІРµСЃ СѓРїР°РєРѕРІРєРё');
+define('SHIPPING_BOX_PADDING_TITLE' , 'Р’РµСЃ СѓРїР°РєРѕРІРєРё РІ РїСЂРѕС†РµРЅС‚Р°С…'); 
+define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ Р±РµСЃРїР»Р°С‚РЅСѓСЋ РґРѕСЃС‚Р°РІРєСѓ');
+define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_OVER_TITLE' , 'Р‘РµСЃРїР»Р°С‚РЅР°СЏ РґРѕСЃС‚Р°РІРєР° РґР»СЏ Р·Р°РєР°Р·РѕРІ РЅР° СЃСѓРјРјСѓ СЃРІС‹С€Рµ');
+define('MODULE_ORDER_TOTAL_SHIPPING_DESTINATION_TITLE' , 'Р‘РµСЃРїР»Р°С‚РЅР°СЏ РґРѕСЃС‚Р°РІРєР° РґР»СЏ Р·Р°РєР°Р·РѕРІ, РѕС„РѕСЂРјР»РµРЅРЅС‹С… РёР·');
+define('SHOW_SHIPPING_ESTIMATOR_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРїРѕСЃРѕР±С‹ Рё СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё РІ РєРѕСЂР·РёРЅРµ');
+define('SHOW_XSELL_CART_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРѕРїСѓС‚СЃС‚РІСѓСЋС‰РёРµ РІ РєРѕСЂР·РёРЅРµ');
+
+// Р’С‹РІРѕРґ С‚РѕРІР°СЂР°
+
+define('PRODUCT_LISTING_DISPLAY_STYLE_TITLE' , 'Р¤РѕСЂРјР°С‚ РІС‹РІРѕРґР° С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_IMAGE_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_COL_NUM_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ');
+define('PRODUCT_LIST_MANUFACTURER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_MODEL_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_NAME_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_PRICE_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_QUANTITY_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ');
+define('PRODUCT_LIST_WEIGHT_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІРµСЃ С‚РѕРІР°СЂР°');
+define('PRODUCT_LIST_BUY_NOW_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєСѓ РљСѓРїРёС‚СЊ СЃРµР№С‡Р°СЃ!');
+define('PRODUCT_LIST_FILTER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂ РљР°С‚РµРіРѕСЂРёСЏ/РџСЂРѕРёР·РІРѕРґРёС‚РµР»Рё (0=РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ; 1=РїРѕРєР°Р·С‹РІР°С‚СЊ)');
+define('PREV_NEXT_BAR_LOCATION_TITLE' , 'Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РЅР°РІРёРіР°С†РёРё РЎР»РµРґСѓСЋС‰Р°СЏ/РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°');
+define('PRODUCT_LIST_INFO_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ');
+define('PRODUCT_SORT_ORDER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+
+// РЎРєР»Р°Рґ
+
+define('STOCK_CHECK_TITLE' , 'РџСЂРѕРІРµСЂСЏС‚СЊ РЅР°Р»РёС‡РёРµ С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ');
+define('STOCK_LIMITED_TITLE' , 'Р’С‹С‡РёС‚Р°С‚СЊ С‚РѕРІР°СЂ СЃРѕ СЃРєР»Р°РґР°');
+define('STOCK_ALLOW_CHECKOUT_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РѕС„РѕСЂРјР»РµРЅРёРµ Р·Р°РєР°Р·Р°');
+define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_TITLE' , 'РћС‚РјРµС‡Р°С‚СЊ С‚РѕРІР°СЂ, РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‰РёР№ РЅР° СЃРєР»Р°РґРµ');
+define('STOCK_REORDER_LEVEL_TITLE' , 'Р›РёРјРёС‚ РєРѕР»РёС‡РµСЃС‚РІР° С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ');
+
+// Р›РѕРіРё
+
+define('STORE_PAGE_PARSE_TIME_TITLE' , 'РЎРѕС…СЂР°РЅСЏС‚СЊ РІСЂРµРјСЏ РїР°СЂСЃРёРЅРіР° СЃС‚СЂР°РЅРёС†');
+define('STORE_PAGE_PARSE_TIME_LOG_TITLE' , 'Р”РёСЂРµРєС‚РѕСЂРёСЏ С…СЂР°РЅРµРЅРёСЏ Р»РѕРіРѕРІ');
+define('STORE_PARSE_DATE_TIME_FORMAT_TITLE' , 'Р¤РѕСЂРјР°С‚ РґР°С‚С‹ Р»РѕРіРѕРІ');
+define('DISPLAY_PAGE_PARSE_TIME_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІСЂРµРјСЏ РїР°СЂСЃРёРЅРіР° СЃС‚СЂР°РЅРёС†');
+define('STORE_DB_TRANSACTIONS_TITLE' , 'РЎРѕС…СЂР°РЅСЏС‚СЊ Р·Р°РїСЂРѕСЃС‹ Рє Р±Р°Р·Рµ РґС‹РЅРЅС‹С…');
+
+// РљСЌС€
+
+define('USE_CACHE_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєСЌС€');
+define('DIR_FS_CACHE_TITLE' , 'РљСЌС€ РґРёСЂРµРєС‚РѕСЂРёСЏ');
+
+// РќР°СЃС‚СЂРѕР№РєР° E-Mail
+
+define('EMAIL_TRANSPORT_TITLE' , 'РЎРїРѕСЃРѕР± РѕС‚РїСЂР°РІРєРё E-Mail');
+define('EMAIL_LINEFEED_TITLE' , 'Р Р°Р·РґРµР»РёС‚РµР»СЊ СЃС‚СЂРѕРє РІ E-Mail');
+define('EMAIL_USE_HTML_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML С„РѕСЂРјР°С‚ РїСЂРё РѕС‚РїСЂР°РІРєРµ РїРёСЃРµРј');
+define('ENTRY_EMAIL_ADDRESS_CHECK_TITLE' , 'РџСЂРѕРІРµСЂСЏС‚СЊ E-Mail Р°РґСЂРµСЃ С‡РµСЂРµР· DNS');
+define('SEND_EMAILS_TITLE' , 'РћС‚РїСЂР°РІР»СЏС‚СЊ РїРёСЃСЊРјР° РёР· РјР°РіР°Р·РёРЅР°');
+
+// РЎРєР°С‡РёРІР°РЅРёРµ
+
+define('DOWNLOAD_ENABLED_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ С„СѓРЅРєС†РёСЋ СЃРєР°С‡РёРІР°РЅРёСЏ С‚РѕРІР°СЂРѕРІ');
+define('DOWNLOAD_BY_REDIRECT_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїРµСЂРµРЅР°РїСЂР°РІР»РµРЅРёРµ РїСЂРё СЃРєР°С‡РёРІР°РЅРёРё');
+define('DOWNLOAD_MAX_DAYS_TITLE' , 'РЎСЂРѕРє СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ СЃСЃС‹Р»РєРё РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ (РґРЅРµР№)');
+define('DOWNLOAD_MAX_COUNT_TITLE' , 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРєР°С‡РёРІР°РЅРёР№');
+define('DOWNLOADS_ORDERS_STATUS_UPDATED_VALUE_TITLE' , 'РЎР±СЂРѕСЃ СЃС‚Р°С‚РёСЃС‚РёРєРё СЃРєР°С‡РёРІР°РЅРёР№');
+define('DOWNLOADS_CONTROLLER_ON_HOLD_MSG_TITLE' , 'РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµРј Рѕ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё РѕРїР»Р°С‚РёС‚СЊ СЃРєР°С‡РёРІР°РµРјС‹Р№ С‚РѕРІР°СЂ');
+define('DOWNLOADS_CONTROLLER_ORDERS_STATUS_TITLE' , 'РЎРєР°С‡РёРІР°РЅРёРµ СЂР°Р·СЂРµС€Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р·Р°РєР°Р·Р°Рј, РёРјРµСЋС‰РёРј СѓРєР°Р·Р°РЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Рё РІС‹С€Рµ');
+
+// GZip РљРѕРјРїСЂРµСЃСЃРёСЏ
+
+define('GZIP_COMPRESSION_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ GZip РєРѕРјРїСЂРµСЃСЃРёСЋ');
+define('GZIP_LEVEL_TITLE' , 'РЈСЂРѕРІРµРЅСЊ РєРѕРјРїСЂРµСЃСЃРёРё');
+
+// РЎРµСЃСЃРёРё
+
+define('SESSION_WRITE_DIRECTORY_TITLE' , 'Р”РёСЂРµРєС‚РѕСЂРёСЏ СЃРµСЃСЃРёР№');
+define('SESSION_FORCE_COOKIE_USE_TITLE' , 'РџСЂРёРЅСѓРґРёС‚РµР»СЊРЅРѕРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ Cookie');
+define('SESSION_CHECK_SSL_SESSION_ID_TITLE' , 'РџСЂРѕРІРµСЂСЏС‚СЊ ID SSL СЃРµСЃСЃРёРё');
+define('SESSION_CHECK_USER_AGENT_TITLE' , 'РџСЂРѕРІРµСЂСЏС‚СЊ РїРµСЂРµРјРµРЅРЅСѓСЋ User Agent');
+define('SESSION_CHECK_IP_ADDRESS_TITLE' , 'РџСЂРѕРІРµСЂСЏС‚СЊ IP Р°РґСЂРµСЃ');
+define('SESSION_BLOCK_SPIDERS_TITLE' , 'РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ СЃРµСЃСЃРёСЋ РІ Р°РґСЂРµСЃРµ РїР°СѓРєР°Рј РїРѕРёСЃРєРѕРІС‹С… РјР°С€РёРЅ');
+define('SESSION_RECREATE_TITLE' , 'Р’РѕСЃСЃРѕР·РґР°РІР°С‚СЊ СЃРµСЃСЃРёСЋ');
+
+// HTML Р РµРґР°РєС‚РѕСЂ
+
+define('HTML_AREA_WYSIWYG_DISABLE_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РґР»СЏ РїРѕР»СЏ РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°?');
+define('HTML_AREA_WYSIWYG_DISABLE_JPSY_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СѓР»СѓС‡С€РµРЅРЅС‹Р№ РјРѕРґСѓР»СЊ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ РєР°СЂС‚РёРЅРѕРє Рє С‚РѕРІР°СЂСѓ?');
+define('HTML_AREA_WYSIWYG_BASIC_PD_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ РїРѕР»СЏ РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('HTML_AREA_WYSIWYG_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ РїРѕР»СЏ РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('HTML_AREA_WYSIWYG_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ РїРѕР»СЏ РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('HTML_AREA_WYSIWYG_DISABLE_EMAIL_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РЅР° СЃС‚СЂР°РЅРёС†Рµ РѕС‚РїСЂР°РІРёС‚СЊ Email?');
+define('HTML_AREA_WYSIWYG_BASIC_EMAIL_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РЅР° СЃС‚СЂР°РЅРёС†Рµ РѕС‚РїСЂР°РІРёС‚СЊ Email');
+define('EMAIL_AREA_WYSIWYG_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ РѕС‚РїСЂР°РІРёС‚СЊ EMail');
+define('EMAIL_AREA_WYSIWYG_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ РѕС‚РїСЂР°РІРёС‚СЊ EMail');
+define('HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РЅР° СЃС‚СЂР°РЅРёС†Рµ РјРµРЅРµРґР¶РµСЂ РїРѕС‡С‚РѕРІС‹С… СЂР°СЃСЃС‹Р»РѕРє?');
+define('HTML_AREA_WYSIWYG_BASIC_NEWSLETTER_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РЅР° СЃС‚СЂР°РЅРёС†Рµ РјРµРЅРµРґР¶РµСЂ РїРѕС‡С‚РѕРІС‹С… СЂР°СЃСЃС‹Р»РѕРє');
+define('NEWSLETTER_EMAIL_WYSIWYG_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ РјРµРЅРµРґР¶РµСЂ РїРѕС‡С‚РѕРІС‹С… СЂР°СЃСЃС‹Р»РѕРє');
+define('NEWSLETTER_EMAIL_WYSIWYG_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ РјРµРЅРµРґР¶РµСЂ РїРѕС‡С‚РѕРІС‹С… СЂР°СЃСЃС‹Р»РѕРє');
+define('HTML_AREA_WYSIWYG_DISABLE_DEFINE_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹');
+define('HTML_AREA_WYSIWYG_BASIC_DEFINE_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹');
+define('HTML_AREA_WYSIWYG_DISABLE_ARTICLES_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё СЃС‚Р°С‚РµР№');
+define('HTML_AREA_WYSIWYG_BASIC_ARTICLES_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё СЃС‚Р°С‚РµР№');
+define('HTML_AREA_WYSIWYG_DISABLE_FAQDESK_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё faq');
+define('HTML_AREA_WYSIWYG_BASIC_FAQDESK_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё faq');
+define('HTML_AREA_WYSIWYG_DISABLE_NEWSDESK_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РЅРѕРІРѕСЃС‚РµР№');
+define('HTML_AREA_WYSIWYG_BASIC_NEWSDESK_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РЅРѕРІРѕСЃС‚РµР№');
+define('HTML_AREA_WYSIWYG_DISABLE_INFOPAGES_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЃС‚СЂР°РЅРёС†');
+define('HTML_AREA_WYSIWYG_BASIC_INFOPAGES_TITLE' , 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЃС‚СЂР°РЅРёС†');
+define('DEFINE_MAINPAGE_WYSIWYG_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹');
+define('DEFINE_MAINPAGE_WYSIWYG_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹');
+define('HTML_AREA_WYSIWYG_FONT_TYPE_TITLE' , 'Р“Р»РѕР±Р°Р»СЊРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё - РЁСЂРёС„С‚, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('HTML_AREA_WYSIWYG_FONT_SIZE_TITLE' , 'Р“Р»РѕР±Р°Р»СЊРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё - Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°, РёСЃРїРѕР»СЊР·СѓРµРјРѕРіРѕ РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('HTML_AREA_WYSIWYG_FONT_COLOUR_TITLE' , 'Р“Р»РѕР±Р°Р»СЊРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё - Р¦РІРµС‚ С€СЂРёС„С‚Р°, РёСЃРїРѕР»СЊР·СѓРµРјРѕРіРѕ РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('HTML_AREA_WYSIWYG_BG_COLOUR_TITLE' , 'Р“Р»РѕР±Р°Р»СЊРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё - Р¦РІРµС‚ С„РѕРЅР° РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('HTML_AREA_WYSIWYG_DEBUG_TITLE' , 'Р“Р»РѕР±Р°Р»СЊРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё - Р Р°Р·СЂРµС€РёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё?');
+
+// РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°
+
+define('AFFILIATE_EMAIL_ADDRESS_TITLE' , 'E-Mail РђРґСЂРµСЃ');
+define('AFFILIATE_PERCENT_TITLE' , 'РџСЂРѕС†РµРЅС‚ СЃ РєР°Р¶РґРѕР№ РїСЂРѕРґР°Р¶Рё, РЅР°С‡РёСЃР»СЏРµРјС‹Р№ РїР°СЂС‚РЅС‘СЂСѓ');
+define('AFFILIATE_THRESHOLD_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅР°СЏ СЃСѓРјРјР° Рє РѕРїР»Р°С‚Рµ');
+define('AFFILIATE_COOKIE_LIFETIME_TITLE' , 'Р’СЂРµРјСЏ С…СЂР°РЅРµРЅРёСЏ cookies');
+define('AFFILIATE_BILLING_TIME_TITLE' , 'Р’С‹РїРёСЃРєР° СЃС‡РµС‚РѕРІ Рє РѕРїР»Р°С‚Рµ');
+define('AFFILIATE_PAYMENT_ORDER_MIN_STATUS_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°');
+define('AFFILIATE_USE_CHECK_TITLE' , 'РћРїР»Р°С‚Р° РїР°СЂС‚РЅС‘СЂР°Рј С‡РµСЂРµР· WebMoney');
+define('AFFILIATE_USE_PAYPAL_TITLE' , 'РћРїР»Р°С‚Р° РїР°СЂС‚РЅС‘СЂР°Рј С‡РµСЂРµР· PayPal');
+define('AFFILIATE_USE_BANK_TITLE' , 'РћРїР»Р°С‚Р° РїР°СЂС‚РЅС‘СЂР°Рј РїРµСЂРµРІРѕРґРѕРј РЅР° СЃС‡С‘С‚ РІ Р±Р°РЅРєРµ');
+define('AFFILATE_INDIVIDUAL_PERCENTAGE_TITLE' , 'РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ РїСЂРѕС†РµРЅС‚С‹ РґР»СЏ РїР°СЂС‚РЅС‘СЂРѕРІ');
+define('AFFILATE_USE_TIER_TITLE' , 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїРёСЂР°РјРёРґР°');
+define('AFFILIATE_TIER_LEVELS_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ СѓСЂРѕРІРµР№ РїРёСЂР°РјРёРґС‹');
+define('AFFILIATE_TIER_PERCENTAGE_TITLE' , 'РџСЂРѕС†РµРЅС‚ РєРѕРјРёСЃСЃРёРё РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїРёСЂР°РјРёРґС‹');
+
+// РњРѕРґСѓР»СЊ Dynamic MoPics
+
+define('IN_IMAGE_BIGIMAGES_TITLE' , 'РљР°С‚Р°Р»РѕРі С…СЂР°РЅРµРЅРёСЏ Р±РѕР»СЊС€РёС… РєР°СЂС‚РёРЅРѕРє');
+define('IN_IMAGE_THUMBS_TITLE' , 'РљР°С‚Р°Р»РѕРі С…СЂР°РЅРµРЅРёСЏ РјР°Р»РµРЅСЊРєРёС… РєР°СЂС‚РёРЅРѕРє');
+define('MAIN_THUMB_IN_SUBDIR_TITLE' , 'РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РєР°СЂС‚РёРЅРєР° С…СЂР°РЅРёС‚СЃСЏ РІ РїР°РїРєРµ СЃ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РіРµРЅРµСЂРёСЂСѓРµРјС‹РјРё РєР°СЂС‚РёРЅРєР°РјРё');
+define('THUMBS_PER_ROW_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°СЂС‚РёРЅРѕРє РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ');
+define('MORE_PICS_EXT_TITLE' , 'РџСЂРµС„РёРєСЃ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РіРµРЅРµСЂРёСЂСѓРµРјРѕР№ РєР°СЂС‚РёРЅРєРё');
+define('BIG_PIC_EXT_TITLE' , 'РџСЂРµС„РёРєСЃ Р°РІС‚РѕРјР°С‚РёС‡СЃРєРё РіРµРЅРµСЂРёСЂСѓРµРјРѕР№ Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё');
+define('THUMB_IMAGE_TYPE_TITLE' , 'РўРёРї РіРµРЅРµСЂРёСЂСѓРµРјС‹С… РєР°СЂС‚РёРЅРѕРє');
+define('BIG_IMAGE_TYPE_TITLE' , 'РўРёРї Р±РѕР»СЊС€РёС… РєР°СЂС‚РёРЅРѕРє');
+
+// РўРµС…. РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ
+
+define('DOWN_FOR_MAINTENANCE_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: Р’РєР»./Р’С‹РєР».');
+define('DOWN_FOR_MAINTENANCE_FILENAME_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РРјСЏ С„Р°Р№Р»Р°');
+define('DOWN_FOR_MAINTENANCE_HEADER_OFF_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ С€Р°РїРєСѓ');
+define('DOWN_FOR_MAINTENANCE_COLUMN_LEFT_OFF_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ Р»РµРІСѓСЋ РєРѕР»РѕРЅРєСѓ');
+define('DOWN_FOR_MAINTENANCE_COLUMN_RIGHT_OFF_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РїСЂР°РІСѓСЋ РєРѕР»РѕРЅРєСѓ');
+define('DOWN_FOR_MAINTENANCE_FOOTER_OFF_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ');
+define('DOWN_FOR_MAINTENANCE_PRICES_OFF_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹');
+define('EXCLUDE_ADMIN_IP_FOR_MAINTENANCE_TITLE' , 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ: РСЃРєР»СЋС‡РёС‚СЊ СѓРєР°Р·Р°РЅРЅС‹Р№ IP Р°РґСЂРµСЃ');
+define('WARN_BEFORE_DOWN_FOR_MAINTENANCE_TITLE' , 'РЈРІРµРґРѕРјР»СЏС‚СЊ РїРѕСЃРµС‚РёС‚РµР»РµР№ РјР°РіР°Р·РёРЅР° РїРµСЂРµРґ СѓС…РѕРґРѕРј РЅР° РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ');
+define('PERIOD_BEFORE_DOWN_FOR_MAINTENANCE_TITLE' , 'РўРµРєСЃС‚ СѓРІРµРґРѕРјР»РµРЅРёСЏ');
+define('DISPLAY_MAINTENANCE_TIME_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РґР°С‚Сѓ Р°РєС‚РёРІР°С†РёРё СЂРµР¶РёРјР° РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ');
+define('DISPLAY_MAINTENANCE_PERIOD_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРµСЂРёРѕРґ СЂР°Р±РѕС‚С‹ СЂРµР¶РёРјР° РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ');
+define('TEXT_MAINTENANCE_PERIOD_TIME_TITLE' , 'Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹ СЂРµР¶РёРјР° РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ');
+
+// Р‘С‹СЃС‚СЂРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ
+
+define('GUEST_ON_TITLE' , 'Р‘С‹СЃС‚СЂРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ Р·Р°РєР°Р·Р°');
+
+// РЎСЃС‹Р»РєРё
+
+define('ENABLE_LINKS_COUNT_TITLE' , 'РЎС‡С‘С‚С‡РёРє РїРµСЂРµС…РѕРґРѕРІ');
+define('ENABLE_SPIDER_FRIENDLY_LINKS_TITLE' , 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєРѕСЂРѕС‚РєРёРµ URL Р°РґСЂРµСЃР°');
+define('LINKS_IMAGE_WIDTH_TITLE' , 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё');
+define('LINKS_IMAGE_HEIGHT_TITLE' , 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё');
+define('LINK_LIST_IMAGE_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ');
+define('LINK_LIST_URL_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ URL');
+define('LINK_LIST_TITLE_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ СЃСЃС‹Р»РєРё');
+define('LINK_LIST_DESCRIPTION_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РѕРїРёСЃР°РЅРёРµ СЃСЃС‹Р»РєРё');
+define('LINK_LIST_COUNT_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµС…РѕРґРѕРІ');
+define('ENTRY_LINKS_TITLE_MIN_LENGTH_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РќР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°');
+define('ENTRY_LINKS_URL_MIN_LENGTH_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ URL РђРґСЂРµСЃ');
+define('ENTRY_LINKS_DESCRIPTION_MIN_LENGTH_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РћРїРёСЃР°РЅРёРµ');
+define('ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH_TITLE' , 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Р’Р°С€Рµ РёРјСЏ');
+define('LINKS_CHECK_PHRASE_TITLE' , 'РўРµРєСЃС‚ РґР»СЏ РїСЂРѕРІРµСЂРєРё');
+
+// РћР±РЅРѕРІР»РµРЅРёРµ РїСЂР°Р№СЃР°
+
+define('DISPLAY_MODEL_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР°');
+define('MODIFY_MODEL_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР°');
+define('MODIFY_NAME_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('DISPLAY_STATUT_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚Р°С‚СѓСЃ С‚РѕРІР°СЂР°');
+define('DISPLAY_WEIGHT_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІРµСЃ С‚РѕРІР°СЂР°');
+define('DISPLAY_QUANTITY_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°');
+define('DISPLAY_SORT_ORDER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+define('DISPLAY_ORDER_MIN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РјРёРЅРёРјСѓРј РґР»СЏ Р·Р°РєР°Р·Р°');
+define('DISPLAY_ORDER_UNITS_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ С€Р°Рі');
+define('DISPLAY_IMAGE_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ С‚РѕРІР°СЂР°');
+define('DISPLAY_XML_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ XML');
+define('DISPLAY_MANUFACTURER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ');
+define('MODIFY_MANUFACTURER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ С‚РѕРІР°СЂР°');
+define('DISPLAY_TAX_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі');
+define('MODIFY_TAX_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі');
+define('DISPLAY_TVA_OVER_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ СЃ РЅР°Р»РѕРіР°РјРё');
+define('DISPLAY_TVA_UP_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ СЃ РЅР°Р»РѕРіР°РјРё РїСЂРё РёР·РјРµРЅРµРЅРёРё С†РµРЅС‹');
+define('DISPLAY_PREVIEW_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('DISPLAY_EDIT_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('ACTIVATE_COMMERCIAL_MARGIN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РјР°СЃСЃРѕРІРѕРіРѕ РёР·РјРµРЅРµРЅРёСЏ С†РµРЅ');
+
+// РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹
+
+define('MAX_DISPLAY_WISHLIST_PRODUCTS_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РЅР° СЃС‚СЂР°РЅРёС†Рµ');
+define('MAX_DISPLAY_WISHLIST_BOX_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РІ Р±РѕРєСЃРµ');
+define('DISPLAY_WISHLIST_EMAILS_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ e-mail Р°РґСЂРµСЃРѕРІ');
+define('WISHLIST_REDIRECT_TITLE' , 'РћСЃС‚Р°РІР°С‚СЊСЃСЏ РЅР° СЃС‚СЂР°РЅРёС†Рµ РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°');
+
+// РљСЌС€ СЃС‚СЂР°РЅРёС†
+
+define('ENABLE_PAGE_CACHE_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РєСЌС€РёСЂРѕРІР°РЅРёРµ СЃС‚СЂР°РЅРёС†');
+define('PAGE_CACHE_LIFETIME_TITLE' , 'РЎСЂРѕРє Р¶РёР·РЅРё РєСЌС€Р°');
+define('PAGE_CACHE_DEBUG_MODE_TITLE' , 'Р’РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё?');
+define('PAGE_CACHE_DISABLE_PARAMETERS_TITLE' , 'РћС‚РєР»СЋС‡Р°С‚СЊ URL РїР°СЂР°РјРµС‚СЂС‹?');
+define('PAGE_CACHE_DELETE_FILES_TITLE' , 'РЈРґР°Р»СЏС‚СЊ РєСЌС€ С„Р°Р№Р»С‹?');
+define('PAGE_CACHE_UPDATE_CONFIG_FILES_TITLE' , 'РќР°СЃС‚СЂРѕРёС‚СЊ РѕР±РЅРѕРІР»РµРЅРёРµ РєСЌС€ С„Р°Р№Р»РѕРІ?');
+
+// РЇРЅРґРµРєСЃ РјР°СЂРєРµС‚
+
+define('YML_NAME_TITLE' , 'РќР°Р·РІР°РЅРёРµ РјР°РіР°Р·РёРЅР°');
+define('YML_COMPANY_TITLE' , 'РќР°Р·РІР°РЅРёРµ РєРѕРјРїР°РЅРёРё');
+define('YML_DELIVERYINCLUDED_TITLE' , 'Р”РѕСЃС‚Р°РІРєР° РІРєР»СЋС‡РµРЅР°');
+define('YML_AVAILABLE_TITLE' , 'РўРѕРІР°СЂ РІ РЅР°Р»РёС‡РёРё');
+define('YML_AUTH_USER_TITLE' , 'Р›РѕРіРёРЅ');
+define('YML_AUTH_PW_TITLE' , 'РџР°СЂРѕР»СЊ');
+define('YML_REFERER_TITLE' , 'РЎСЃС‹Р»РєР°');
+define('YML_STRIP_TAGS_TITLE' , 'РўРµРіРё');
+define('YML_UTF8_TITLE' , 'РџРµСЂРµРєРѕРґРёСЂРѕРІРєР° РІ UTF-8');
+define('YML_SALES_NOTES_TITLE' , 'РўСЌРі sales_notes');
+
+// РћРїРёСЃР°РЅРёРµ РїРѕР»РµР№
+
+// РњРѕР№ РјР°РіР°Р·РёРЅ
+
+define('DEFAULT_TEMPLATE_DESC', 'Р—РґРµСЃСЊ Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ С€Р°Р±Р»РѕРЅ, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РІ РјР°РіР°Р·РёРЅРµ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.');
+define('STORE_NAME_DESC', 'РќР°Р·РІР°РЅРёРµ Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР°');
+define('STORE_OWNER_DESC', 'РРјСЏ РІР»Р°РґРµР»СЊС†Р° РјР°РіР°Р·РёРЅР°');
+define('STORE_LOGO_DESC', 'РЈРєР°Р¶РёС‚Рµ Р»РѕРіРѕС‚РёРї Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР°');
+define('STORE_OWNER_EMAIL_ADDRESS_DESC', 'E-Mail Р°РґСЂРµСЃ РІР»Р°РґРµР»СЊС†Р° РјР°РіР°Р·РёРЅР°');
+define('STORE_OWNER_ICQ_NUMBER_DESC', 'ICQ РЅРѕРјРµСЂ, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РІС‹РІРµРґРµРЅ РІ Р±РѕРєСЃРµ РљРѕРЅСЃСѓР»СЊС‚Р°РЅС‚ РІ РјР°РіР°Р·РёРЅРµ.');
+define('EMAIL_FROM_DESC', 'E-Mail Р°РґСЂРµСЃ РІ РѕС‚РїСЂР°РІР»СЏРµРјС‹С… РїРёСЃСЊРјР°С…');
+define('STORE_COUNTRY_DESC', 'РЎС‚СЂР°РЅР° РЅР°С…РѕРґРµРЅРёСЏ РјР°РіР°Р·РёРЅР°.<br><br><b>Р—Р°РјРµС‡Р°РЅРёРµ: РќРµ Р·Р°Р±СѓРґСЊС‚Рµ С‚Р°РєР¶Рµ СѓРєР°Р·Р°С‚СЊ Р—РѕРЅСѓ.</b>');
+define('STORE_ZONE_DESC', 'Р РµРіРёРѕРЅ РЅР°С…РѕР¶РґРµРЅРёСЏ РјР°РіР°Р·РёРЅР°');
+define('EXPECTED_PRODUCTS_SORT_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РґР»СЏ РѕР¶РёРґР°РµРјС‹С… С‚РѕРІР°СЂРѕРІ, РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ - asc РёР»Рё РїРѕ СѓР±С‹РІР°РЅРёСЋ - desc.');
+define('EXPECTED_PRODUCTS_FIELD_DESC', 'РџРѕ РєР°РєРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ Р±СѓРґСѓС‚ СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊСЃСЏ РѕР¶РёРґР°РµРјС‹Рµ С‚РѕРІР°СЂС‹.');
+define('USE_DEFAULT_LANGUAGE_CURRENCY_DESC', 'РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ РїРµСЂРµРєР»СЋС‡РµРЅРёРµ С†РµРЅ РІ РјР°РіР°Р·РёРЅРµ РЅР° РІР°Р»СЋС‚Сѓ С‚РµРєСѓС‰РµРіРѕ СЏР·С‹РєР°.');
+define('SEND_EXTRA_ORDER_EMAILS_TO_DESC', 'Р•СЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ РїРѕР»СѓС‡Р°С‚СЊ РїРёСЃСЊРјР° СЃ Р·Р°РєР°Р·Р°РјРё, С‚.Рµ. С‚Р°РєРёРµ Р¶Рµ РїРёСЃСЊРјР°, С‡С‚Рѕ Рё РїРѕР»СѓС‡Р°РµС‚ РєР»РёРµРЅС‚ РїРѕСЃР»Рµ РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°РєР°Р·Р°, СѓРєР°Р¶РёС‚Рµ e-mail Р°РґСЂРµСЃ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РєРѕРїРёР№ РїРёСЃРµРј РІ СЃР»РµРґСѓСЋС‰РµРј С„РѕСЂРјР°С‚Рµ: РРјСЏ 1 &lt;email@address1&gt;, РРјСЏ 2 &lt;email@address2&gt;');
+define('SEARCH_ENGINE_FRIENDLY_URLS_DESC', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєРѕСЂРѕС‚РєРёРµ URL Р°РґСЂРµСЃР° РІ РјР°РіР°Р·РёРЅРµ');
+define('DISPLAY_CART_DESC', 'РџРµСЂРµС…РѕРґРёС‚СЊ РІ РєРѕСЂР·РёРЅСѓ РїРѕСЃР»Рµ РґРѕР±Р°РІР»РµРЅРёСЏ С‚РѕРІР°СЂР° РІ РєРѕСЂР·РёРЅСѓ РёР»Рё РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РЅР° С‚РѕР№ Р¶Рµ СЃС‚СЂР°РЅРёС†Рµ.');
+define('ALLOW_GUEST_TO_TELL_A_FRIEND_DESC', 'РџРѕР·РІРѕР»РёС‚СЊ РіРѕСЃС‚СЏРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С„СѓРЅРєС†РёСЋ РјР°РіР°Р·РёРЅР° Р Р°СЃСЃРєР°Р·Р°С‚СЊ РґСЂСѓРіСѓ, РµСЃР»Рё РЅРµС‚, С‚Рѕ РґР°РЅРЅРѕР№ С„СѓРЅРєС†РёРµР№ РјРѕРіСѓС‚ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ С‚РѕР»СЊРєРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»Рё РјР°РіР°Р·РёРЅР°.');
+define('ADVANCED_SEARCH_DEFAULT_OPERATOR_DESC', 'РЈРєР°Р¶РёС‚Рµ, РєР°РєРѕР№ РѕРїРµСЂР°С‚РѕСЂ Р±СѓРґРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РїСЂРё РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёРё РїРѕСЃРµС‚РёС‚РµР»РµРј РїРѕРёСЃРєР° РІ РјР°РіР°Р·РёРЅРµ.');
+define('STORE_NAME_ADDRESS_DESC', 'Р—РґРµСЃСЊ Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ Р°РґСЂРµСЃ Рё С‚РµР»РµС„РѕРЅ РјР°РіР°Р·РёРЅР°');
+define('SHOW_COUNTS_DESC', 'РџРѕРєР°Р·С‹РІР°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РІ РєР°Р¶РґРѕР№ РєР°С‚РµРіРѕСЂРёРё. РџСЂРё Р±РѕР»СЊС€РѕРј РєРѕР»РёС‡РµСЃС‚РІРµ С‚РѕРІР°СЂР° РІ РјР°РіР°Р·РёРЅР° СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РѕС‚РєР»СЋС‡Р°С‚СЊ СЃС‡С‘С‚С‡РёРє - false, С‡С‚РѕР±С‹ СЃРЅРёР·РёС‚СЊ РЅР°РіСЂСѓР·РєСѓ РЅР° MySQL СЃРµСЂРІРµСЂ, С‚РµРј СЃР°РјС‹С… СЃРєРѕСЂРѕСЃС‚СЊ Р·Р°РіСЂСѓР·РєРё СЃС‚СЂР°РЅРёС†С‹ Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР° СѓРІРµР»РёС‡РёС‚СЃСЏ.');
+define('ALLOW_CATEGORY_DESCRIPTIONS_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РґРѕР±Р°РІР»РµРЅРёРµ РѕРїРёСЃР°РЅРёР№ РґР»СЏ РєР°С‚РµРіРѕСЂРёР№.');
+define('TAX_DECIMAL_PLACES_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ Р·РЅР°РєРѕРІ РїРѕСЃР»Рµ С†РµР»РѕРіРѕ С‡РёСЃР»Р° Сѓ РЅР°Р»РѕРіРѕРІ.');
+define('SHOW_MAIN_FEATURED_PRODUCTS_DESC', 'true - РџРѕРєР°Р·С‹РІР°С‚СЊ<br>false - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ');
+define('DISPLAY_PRICE_WITH_TAX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ РІ РјР°РіР°Р·РёРЅРµ СЃ РЅР°Р»РѕРіР°РјРё (true) РёР»Рё РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі С‚РѕР»СЊРєРѕ РЅР° Р·Р°РєР»СЋС‡РёС‚РµР»СЊРЅРѕРј СЌС‚Р°РїРµ РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°РєР°Р·Р° (false)');
+
+define('XPRICES_NUM_DESC', 'Р—РґРµСЃСЊ Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ, РєР°РєРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С†РµРЅ РјРѕР¶РµС‚ РёРјРµС‚СЊ РєР°Р¶РґС‹Р№ С‚РѕРІР°СЂ<br><br>РќР°РїСЂРёРјРµСЂ, Р’С‹ РјРѕР¶РµС‚Рµ РїРѕРєСѓРїР°С‚РµР»СЏРј РёР· РіСЂСѓРїРїС‹ РџРѕРєСѓРїР°С‚РµР»Рё РїРѕРєР°Р·С‹РІР°С‚СЊ РѕРґРЅСѓ С†РµРЅСѓ С‚РѕРІР°СЂР°, РїРѕРєСѓРїР°С‚РµР»СЏРј РёР· РіСЂСѓРїРїС‹ РћРїС‚РѕРІРёРєРё - РїРѕРєР°Р·С‹РІР°С‚СЊ РґСЂСѓРіСѓСЋ.');
+define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_DESC', 'Р•СЃР»Рё Р’С‹ РЅРµ С…РѕС‚РёС‚Рµ РѕС‚РїСЂР°РІР»СЏС‚СЊ РїРѕРґР°СЂРѕС‡РЅС‹Р№ СЃРµСЂС‚РёС„РёРєР°С‚ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рј РІ РјР°РіР°Р·РёРЅРµ РїРѕРєСѓРїР°С‚РµР»СЏРј, СѓРєР°Р¶РёС‚Рµ 0. Р§С‚РѕР±С‹ РѕС‚РїСЂР°РІР»СЏС‚СЊ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рј РїРѕРєСѓРїР°С‚РµР»СЏРј СЃРµСЂС‚РёС„РёРєР°С‚, РЅР°РїСЂРёРјРµСЂ, РЅРѕРјРёРЅР°Р»РѕРј РІ 10$ - СѓРєР°Р¶РёС‚Рµ 10, РµСЃР»Рё 25.5$ - СѓРєР°Р¶РёС‚Рµ 25.5 Рё С‚.Рґ.');
+define('ALLOW_GUEST_TO_SEE_PRICES_DESC', 'Р•СЃР»Рё СЃС‚РѕРёС‚ false, С‚Рѕ С†РµРЅС‹ РІ РјР°РіР°Р·РёРЅРµ РјРѕРіСѓС‚ РІРёРґРµС‚СЊ С‚РѕР»СЊРєРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рµ РїРѕСЃРµС‚РёС‚РµР»Рё, РµСЃР»Рё true - РІСЃРµ РїРѕСЃРµС‚РёС‚РµР»Рё РјРѕРіСѓС‚ РІРёРґРµС‚СЊ С†РµРЅС‹ РІ РјР°РіР°Р·РёРЅРµ.');
+define('NEW_SIGNUP_DISCOUNT_COUPON_DESC', 'Р•СЃР»Рё Р’С‹ РЅРµ С…РѕС‚РёС‚Рµ РґР°РІР°С‚СЊ РєСѓРїРѕРЅ РїРѕСЃРµС‚РёС‚РµР»СЏРј, РїСЂРѕС€РµРґС€РёРј СЂРµРіРёСЃС‚СЂР°С†РёСЋ, РїСЂРѕСЃС‚Рѕ РѕСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј, Р»РёР±Рѕ СѓРєР°Р¶РёС‚Рµ РєРѕРґ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ РєСѓРїРѕРЅР°, РєРѕС‚РѕСЂС‹Р№ Р’С‹ С…РѕС‚РёС‚Рµ РґР°РІР°С‚СЊ РІСЃРµРј Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рј РїРѕРєСѓРїР°С‚РµР»СЏРј.');
+define('GUEST_DISCOUNT_DESC', 'РќР°С†РµРЅРєР° РґР»СЏ РїСЂРѕСЃС‚С‹С… РїРѕСЃРµС‚РёС‚РµР»РµР№ РјР°РіР°Р·РёРЅР°. Р”Р»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РІ РјР°РіР°Р·РёРЅРµ РїРѕСЃРµС‚РёС‚РµР»РµР№ РґР°РЅРЅР°СЏ РѕРїС†РёСЏ РЅРµ РґРµР№СЃС‚РІСѓРµС‚. РЈРєР°Р·С‹РІР°Р№С‚Рµ РЅР°С†РµРЅРєСѓ РІ РїСЂРѕС†РµРЅС‚Р°С…. РќР°РїСЂРёРјРµСЂ СѓРєР°Р¶РёС‚Рµ 10, СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ РґР»СЏ РїСЂРѕСЃС‚С‹С… РїРѕСЃРµС‚РёС‚РµР»РµР№ РІСЃРµ С†РµРЅС‹ РІ РјР°РіР°Р·РёРЅРµ Р±СѓРґСѓС‚ РЅР° 10% РІС‹С€Рµ С‡РµРј РґР»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїРѕСЃРµС‚РёС‚РµР»РµР№.');
+define('CATEGORIES_SORT_ORDER_DESC', '<b>Р’РѕР·РјРѕР¶РЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ:<br>products_name<br>products_name-desc<br>model<br>model-desc</b>');
+define('QUICKSEARCH_IN_DESCRIPTION_DESC', 'РџСЂРё РїРѕРёСЃРєРµ С‚РѕРІР°СЂР° СЃ РїРѕРјРѕС‰СЊСЋ Р±РѕРєСЃР° Р±С‹СЃС‚СЂС‹Р№ РїРѕРёСЃРє, Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ, РєР°Рє РёСЃРєР°С‚СЊ С‚РѕРІР°СЂС‹, С‚РѕР»СЊРєРѕ РїРѕ РЅР°Р·РІР°РЅРёСЏРј - FALSE РёР»Рё РёСЃРєР°С‚СЊ РІ РЅР°Р·РІР°РЅРёСЏС… + РѕРїРёСЃР°РЅРёСЏС… - TRUE');
+define('CONTACT_US_LIST_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ СЂР°Р·РЅС‹С… РїРѕР»СѓС‡Р°С‚РµР»РµР№ РЅР° СЃС‚СЂР°РЅРёС†Рµ РЎРІСЏР¶РёС‚РµСЃСЊ СЃ РЅР°РјРё. Р¤РѕСЂРјР°С‚ Р·Р°РїРёСЃРё: РРјСЏ 1 &lt;email@address1&gt;, РРјСЏ 2 &lt;email@address2&gt;. Р•СЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ РѕСЃС‚Р°РІРёС‚СЊ РІСЃРµРіРѕ РѕРґРЅРѕРіРѕ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїРёСЃРµРј, РїСЂРѕСЃС‚Рѕ РѕСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј.');
+define('ALLOW_GIFT_VOUCHERS_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ РІРєР»СЋС‡РёС‚СЊ - true РёР»Рё РІС‹РєР»СЋС‡РёС‚СЊ - false РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РїРѕРґР°СЂРѕС‡РЅС‹С… СЃРµСЂС‚РёС„РёРєР°С‚РѕРІ Рё РєСѓРїРѕРЅРѕРІ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°.');
+define('ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ РІРєР»СЋС‡РёС‚СЊ - true РёР»Рё РІС‹РєР»СЋС‡РёС‚СЊ - false РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ СѓРїСЂР°РІР»РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°РјРё С‚РѕРІР°СЂРѕРІ РїСЂСЏРјРѕ РЅР° СЃС‚СЂР°РЅРёС†Рµ РґРѕР±Р°РІР»РµРЅРёСЏ/СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ С‚РѕРІР°СЂРѕРІ.');
+define('SHOW_SUBCATEGORIES_WHEN_CATEGORIES_HAS_PRODUCTS_DESC', 'Р•СЃР»Рё РІ РєР°С‚РµРіРѕСЂРёРё РµСЃС‚СЊ С‚РѕРІР°СЂ Рё РІ РґР°РЅРЅРѕР№ РєР°С‚РµРіРѕСЂРёРё РµСЃС‚СЊ СЃСѓР±РєР°С‚РµРіРѕСЂРёРё, С‚Рѕ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ (true), Р·Р°Р№РґСЏ РІ С‚Р°РєСѓСЋ РєР°С‚РµРіРѕСЂРёСЋ, Р’С‹ СѓРІРёРґРёС‚Рµ СЃРїРёСЃРѕРє СЃСѓР±РєР°С‚РµРіРѕСЂРёР№ Рё СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ РєР°С‚РµРіРѕСЂРёРё. РњРѕР¶РЅРѕ РѕС‚РєР»СЋС‡РёС‚СЊ РІС‹РІРѕРґ СЃСѓР±РєР°С‚РµРіРѕСЂРёР№, РґР»СЏ СЌС‚РѕРіРѕ РїРѕСЃС‚Р°РІСЊС‚Рµ false.');
+define('SHOW_PDF_DATASHEET_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ (true) РёР»Рё РЅРµС‚ (false) PDF РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР° РЅР° СЃС‚СЂР°РЅРёС†Рµ РѕРїРёСЃР°РЅРёСЏ С‚РѕРІР°СЂР°.');
+
+// РњРёРЅРёРјР°Р»СЊРЅР°С‹Рµ Р·РЅР°С‡РµРЅРёСЏ
+
+define('ENTRY_FIRST_NAME_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РРјСЏ');
+define('ENTRY_LAST_NAME_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Р¤Р°РјРёР»РёСЏ');
+define('ENTRY_DOB_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ');
+define('ENTRY_EMAIL_ADDRESS_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ E-Mail Р°РґСЂРµСЃ');
+define('ENTRY_STREET_ADDRESS_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РђРґСЂРµСЃ');
+define('ENTRY_COMPANY_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РљРѕРјРїР°РЅРёСЏ');
+define('ENTRY_POSTCODE_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РџРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ');
+define('ENTRY_CITY_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Р“РѕСЂРѕРґ');
+define('ENTRY_STATE_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Р РµРіРёРѕРЅ');
+define('ENTRY_TELEPHONE_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РўРµР»РµС„РѕРЅ');
+define('ENTRY_PASSWORD_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РџР°СЂРѕР»СЊ');
+define('CC_OWNER_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Р’Р»Р°РґРµР»РµС† РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё');
+define('CC_NUMBER_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ РќРѕРјРµСЂ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё');
+define('REVIEW_TEXT_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РґР»СЏ РѕС‚С‹Р·РѕРІ');
+define('MIN_DISPLAY_BESTSELLERS_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±Р»РѕРєРµ Р›РёРґРµСЂС‹ РїСЂРѕРґР°Р¶');
+define('MIN_DISPLAY_ALSO_PURCHASED_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±РѕРєСЃРµ РўР°РєР¶Рµ Р·Р°РєР°Р·Р°Р»Рё');
+define('MIN_DISPLAY_XSELL_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ, РІС‹РІРѕРґРёРјС‹С… РІ Р±РѕРєСЃРµ РЎРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('MIN_ORDER_DESC', 'Р•СЃР»Рё СЃСѓРјРјР° Р·Р°РєР°Р·Р° Р±СѓРґРµС‚ РјРµРЅСЊС€Рµ СѓРєР°Р·Р°РЅРЅРѕР№, С‚Р°РєРѕР№ Р·Р°РєР°Р· РЅРµР»СЊР·СЏ Р±СѓРґРµС‚ РѕС„РѕСЂРјРёС‚СЊ. РЈРєР°Р·С‹РІР°Р№С‚Рµ РїСЂРѕСЃС‚Рѕ С‡РёСЃР»Рѕ, Р±РµР· СЃРёРјРѕР»РѕРІ РІР°Р»СЋС‚С‹ ($, СЂСѓР±. Рё С‚.Рґ.). РџРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё Р’С‹ РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РјРёРЅРёРјР°Р»СЊРЅСѓСЋ СЃСѓРјРјСѓ Р·Р°РєР°Р·Р°.');
+
+// РњР°РєСЃРёРјР°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ
+
+define('MAX_PROD_ADMIN_SIDE_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РІ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєРѕР№');
+
+define('MAX_ADDRESS_BOOK_ENTRIES_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїРёСЃРµР№, РєРѕС‚РѕСЂС‹Рµ РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ РїРѕРєСѓРїР°С‚РµР»СЊ РІ СЃРІРѕРµР№ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('MAX_DISPLAY_SEARCH_RESULTS_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('MAX_DISPLAY_PAGE_LINKS_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ СЃСЃС‹Р»РѕРє РЅР° РґСЂСѓРіРёРµ СЃС‚СЂР°РЅРёС†С‹');
+define('MAX_DISPLAY_SPECIAL_PRODUCTS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РЅР° СЃС‚СЂР°РЅРёС†Рµ РЎРєРёРґРєРё');
+define('MAX_DISPLAY_NEW_PRODUCTS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјС‹С… РІ Р±РѕРєСЃРµ РќРѕРІРёРЅРєРё');
+define('MAX_DISPLAY_UPCOMING_PRODUCTS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±Р»РѕРєРµ РћР¶РёРґР°РµРјС‹Рµ С‚РѕРІР°СЂС‹');
+define('MAX_DISPLAY_MANUFACTURERS_IN_A_LIST_DESC', 'Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё Р±РѕРєСЃР° РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№, РµСЃР»Рё С‡РёСЃР»Рѕ РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ РїСЂРµРІС‹С€Р°РµС‚ СѓРєР°Р·Р°РЅРЅРѕРµ РІ РґР°РЅРЅРѕР№ РѕРїС†РёРё, СЃРїРёСЃРѕРє РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ Р±СѓРґРµС‚ РІС‹РІРѕРґРёС‚СЊСЃСЏ РІ РІРёРґРµ drop-down СЃРїРёСЃРєР°, РµСЃР»Рё С‡РёСЃР»Рѕ РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ РјРµРЅСЊС€Рµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РІ РґР°РЅРЅРѕР№ РѕРїС†РёРё, РїСЂРѕРёР·РІРѕРґРёС‚РµР»Рё Р±СѓРґСѓС‚ РІС‹РІРѕРґРёС‚СЊСЃСЏ РІ РІРёРґРµ СЃРїРёСЃРєР°.');
+define('MAX_MANUFACTURERS_LIST_DESC', 'Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё Р±РѕРєСЃР° РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№, РµСЃР»Рё СѓРєР°Р·Р°РЅР° С†РёС„СЂР° \'1\', С‚Рѕ СЃРїРёСЃРѕРє РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ РІС‹РІРѕРґРёС‚СЃСЏ РІ РІРёРґРµ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРіРѕ drop-down СЃРїРёСЃРєР°. Р•СЃР»Рё СѓРєР°Р·Р°РЅР° Р»СЋР±Р°СЏ РґСЂСѓРіР°СЏ С†РёС„СЂР°, С‚Рѕ РІС‹РІРѕРґРёС‚СЃСЏ С‚РѕР»СЊРєРѕ X РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ РІ РІРёРґРµ СЂР°Р·РІС‘СЂРЅСѓС‚РѕРіРѕ РјРµРЅСЋ.');
+define('MAX_DISPLAY_MANUFACTURER_NAME_LEN_DESC', 'Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё Р±РѕРєСЃР° РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№, Р’С‹ СѓРєР°Р·С‹РІР°РµС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±РѕРєСЃРµ РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№, РµСЃР»Рё РЅР°Р·РІР°РЅРёРµ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ Р±СѓРґРµС‚ СЃРѕСЃС‚РѕСЏС‚СЊ РёР· Р±РѕР»СЊС€РµРіРѕ РєРѕР»РёС‡РµСЃС‚РІР° СЃРёРјРІРѕР»РѕРІ, С‚Рѕ Р±СѓРґСѓС‚ РІС‹РІРµРґРµРЅС‹ РїРµСЂРІС‹Рµ X СЃРёРјРІРѕР»РѕРІ РЅР°Р·РІР°РЅРёСЏ');
+define('MAX_DISPLAY_NEW_REVIEWS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІС‹РІРѕРґРёРјС‹С… РЅРѕРІС‹С… РѕС‚Р·С‹РІРѕРІ');
+define('MAX_RANDOM_SELECT_REVIEWS_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р·С‹РІРѕРІ, РєРѕС‚РѕСЂРѕРµ Р±СѓРґРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РґР»СЏ РІС‹РІРѕРґР° СЃР»СѓС‡Р°Р№РЅРѕРіРѕ, С‚.Рµ. РµСЃР»Рё СѓРєР°Р·Р°РЅРѕ X - С‡РёСЃР»Рѕ РѕС‚Р·С‹РІРѕРІ, С‚Рѕ СЃР»СѓС‡Р°Р№РЅС‹Р№ РѕС‚Р·С‹РІ Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅ РёР· СЌС‚РёС… X РѕС‚Р·С‹РІРѕРІ');
+define('MAX_RANDOM_SELECT_NEW_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, СЃСЂРµРґРё РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅ СЃР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ Рё РІС‹РІРµРґРµРЅ РІ Р±РѕРєСЃ РќРѕРІРёРЅРѕРє, С‚.Рµ. РµСЃР»Рё СѓРєР°Р·Р°РЅРѕ С‡РёСЃР»Рѕ X, С‚Рѕ РЅРѕРІС‹Р№ С‚РѕРІР°СЂ, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅ РІ Р±РѕРєСЃРµ РќРѕРІРёРЅРѕРє Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅ РёР· СЌС‚РёС… X РЅРѕРІС‹С… С‚РѕРІР°СЂРѕРІ');
+define('MAX_RANDOM_SELECT_SPECIALS_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, СЃСЂРµРґРё РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅ СЃР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ Рё РІС‹РІРµРґРµРЅ РІ Р±РѕРєСЃ РЎРєРёРґРєРё, С‚.Рµ. РµСЃР»Рё СѓРєР°Р·Р°РЅРѕ С‡РёСЃР»Рѕ X, С‚Рѕ С‚РѕРІР°СЂ, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅ РІ Р±РѕРєСЃРµ РЎРєРёРґРєРё Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅ РёР· СЌС‚РёС… X С‚РѕРІР°СЂРѕРІ');
+define('MAX_DISPLAY_CATEGORIES_PER_ROW_DESC', 'РЎРєРѕР»СЊРєРѕ РєР°С‚РµРіРѕСЂРёР№ РІС‹РІРѕРґРёС‚СЊ РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ');
+define('MAX_DISPLAY_PRODUCTS_NEW_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРІРёРЅРѕРє, РІС‹РІРѕРґРёРјС‹С… РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РІ СЂР°Р·РґРµР»Рµ РќРѕРІРёРЅРєРё');
+define('MAX_DISPLAY_BESTSELLERS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р»РёРґРµСЂРѕРІ РїСЂРѕРґР°Р¶, РІС‹РІРѕРґРёРјС‹С… РІ Р±РѕРєСЃРµ Р›РёРґРµСЂС‹ РїСЂРѕРґР°Р¶');
+define('MAX_DISPLAY_ALSO_PURCHASED_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ РІ Р±РѕРєСЃРµ РќР°С€Рё РїРѕРєСѓРїР°С‚РµР»Рё С‚Р°РєР¶Рµ Р·Р°РєР°Р·Р°Р»Рё');
+define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ, РІС‹РІРѕРґРёРјС‹С… РІ Р±РѕРєСЃРµ РСЃС‚РѕСЂРёСЏ Р·Р°РєР°Р·РѕРІ');
+define('MAX_DISPLAY_ORDER_HISTORY_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РєР°Р·РѕРІ, РІС‹РІРѕРґРёРјС‹С… РЅР° СЃС‚СЂР°РЅРёС†Рµ РСЃС‚РѕСЂРёСЏ Р·Р°РєР°Р·РѕРІ');
+define('MAX_DISPLAY_FEATURED_PRODUCTS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РІ Р±РѕРєСЃРµ Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('MAX_DISPLAY_FEATURED_PRODUCTS_LISTING_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ Р РµРєРѕРјРµРЅРґСѓРµРјС‹С… С‚РѕРІР°СЂРѕРІ');
+
+// РљР°СЂС‚РёРЅРєРё
+
+define('SMALL_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ С€РёСЂРёРЅСѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ С€РёСЂРёРЅС‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('SMALL_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('HEADING_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ С€РёСЂРёРЅСѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ С€РёСЂРёРЅС‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('HEADING_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('SUBCATEGORY_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ С€РёСЂРёРЅСѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ С€РёСЂРёРЅС‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('SUBCATEGORY_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('CONFIG_CALCULATE_IMAGE_SIZE_DESC', 'Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РїСЂРѕСЃС‚Рѕ СЃРјРѕС‚СЂРёС‚ РїРµСЂРµРјРµРЅРЅС‹Рµ, СѓРєР°Р·Р°РЅРЅС‹Рµ РІС‹С€Рµ Рё СЃР¶РёРјР°РµС‚ РєР°СЂС‚РёРЅРєСѓ РґРѕ СѓРєР°Р·Р°РЅРЅС‹С… СЂР°Р·РјРµСЂРѕРІ, СЌС‚Рѕ РЅРµ Р·РЅР°С‡РёС‚, С‡С‚Рѕ С„РёР·РёС‡РµСЃРєРёР№ СЂР°Р·РјРµСЂ РєР°СЂС‚РёРЅРєРё СѓРјРµРЅСЊС€РёС‚СЃСЏ, РїСЂРѕРёСЃС…РѕРґРёС‚ РїСЂРёРЅСѓРґРёС‚РµР»СЊРЅС‹Р№ РІС‹РІРѕРґ РєР°СЂС‚РёРЅРєРё РѕРїСЂРµРґРµР»С‘РЅРЅРѕРіРѕ СЂР°Р·РјРµСЂР°. Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ СЃС‚Р°РІРёС‚СЊ Р·РЅР°С‡РµРЅРёРµ false');
+define('IMAGE_REQUIRED_DESC', 'РќРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ РїРѕРёСЃРєР° РѕС€РёР±РѕРє, РІ СЃР»СѓС‡Р°Рµ, РµСЃР»Рё РєР°СЂС‚РёРЅРєР° РЅРµ РІС‹РІРѕРґРёС‚СЃСЏ.');
+define('ULTIMATE_ADDITIONAL_IMAGES_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ РІРєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ РјРѕРґСѓР»СЊ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РєР°СЂС‚РёРЅРѕРє РґР»СЏ С‚РѕРІР°СЂР°.');
+define('ULT_THUMB_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ С€РёСЂРёРЅСѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ С€РёСЂРёРЅС‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('ULT_THUMB_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('MEDIUM_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ С€РёСЂРёРЅСѓ Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ С€РёСЂРёРЅС‹ Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('MEDIUM_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РІС‹СЃРѕС‚Сѓ Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё. РћРіСЂР°РЅРёС‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('LARGE_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР° РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ С€РёСЂРёРЅСѓ РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР°. РћРіСЂР°РЅРёС‡РµРЅРёРµ С€РёСЂРёРЅС‹ РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР° РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+define('LARGE_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР° РІ РїРёРєСЃРµР»Р°С…. РћСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РёР»Рё РїРѕСЃС‚Р°РІСЊС‚Рµ 0, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР°. РћРіСЂР°РЅРёС‡РµРЅРёРµ РІС‹СЃРѕС‚С‹ РєР°СЂС‚РёРЅРєРё РґР»СЏ pop-up РѕРєРЅР° РЅРµ Р·РЅР°С‡РёС‚ С„РёР·РёС‡РµСЃРєРѕРіРѕ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂР°Р·РјРµСЂРѕРІ РєР°СЂС‚РёРЅРєРё.');
+
+// Р”Р°РЅРЅС‹Рµ РїРѕРєСѓРїР°С‚РµР»СЏ
+
+define('ACCOUNT_GENDER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ РџРѕР» РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_DOB_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_COMPANY_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ РљРѕРјРїР°РЅРёСЏ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_SUBURB_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ Р Р°Р№РѕРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_STATE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ Р РµРіРёРѕРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_STREET_ADDRESS_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ РђРґСЂРµСЃ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_CITY_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ Р“РѕСЂРѕРґ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_POSTCODE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ РџРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_COUNTRY_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ РЎС‚СЂР°РЅР° РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_TELE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ РўРµР»РµС„РѕРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_FAX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ Р¤Р°РєСЃ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+define('ACCOUNT_NEWS_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕР»Рµ Р Р°СЃСЃС‹Р»РєР° РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅРµ Рё РІ Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРµ');
+
+// Р”РѕСЃС‚Р°РІРєР°/СѓРїР°РєРѕРІРєР°
+
+define('SHIPPING_ORIGIN_COUNTRY_DESC', 'РЎС‚СЂР°РЅР°, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РјР°РіР°Р·РёРЅ. РќРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ РЅРµРєРѕС‚РѕСЂС‹С… РјРѕРґСѓР»РµР№ РґРѕСЃС‚Р°РІРєРё.');
+define('SHIPPING_ORIGIN_ZIP_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ РјР°РіР°Р·РёРЅР°. РќРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ РЅРµРєРѕС‚РѕСЂС‹С… РјРѕРґСѓР»РµР№ РґРѕСЃС‚Р°РІРєРё.');
+define('SHIPPING_MAX_WEIGHT_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РІРµСЃ РґРѕСЃС‚Р°РІРєРё, СЃРІС‹С€Рµ РєРѕС‚РѕСЂРѕРіРѕ Р·Р°РєР°Р·С‹ РЅРµ РґРѕСЃС‚Р°РІР»СЏСЋС‚СЃСЏ. РќРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ РЅРµРєРѕС‚РѕСЂС‹С… РјРѕРґСѓР»РµР№ РґРѕСЃС‚Р°РІРєРё.');
+define('SHIPPING_BOX_WEIGHT_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ РІРµСЃ СѓРїР°РєРѕРІРєРё.');
+define('SHIPPING_BOX_PADDING_DESC', 'Р”РѕСЃС‚Р°РІРєР° Р·Р°РєР°Р·РѕРІ, РІРµСЃ РєРѕС‚РѕСЂС‹С… Р±РѕР»СЊС€Рµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РІ РїРµСЂРµРјРµРЅРЅРѕР№ РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РІРµСЃ РґРѕСЃС‚Р°РІРєРё, СѓРІРµР»РёС‡РёРІР°РµС‚СЃСЏ РЅР° СѓРєР°Р·Р°РЅРЅС‹Р№ РїСЂРѕС†РµРЅС‚. Р•СЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ СѓРІРµР»РёС‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ РЅР° 10%, РїРёС€РёС‚Рµ - 10');
+define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_DESC', 'Р’С‹ С…РѕС‚РёС‚Рµ СЂР°Р·СЂРµС€РёС‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РјРѕРґСѓР»СЏ Р±РµСЃРїР»Р°С‚РЅРѕР№ РґРѕСЃС‚Р°РІРєРё?');
+define('MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_OVER_DESC', 'Р—Р°РєР°Р·С‹, СЃРІС‹С€Рµ СЃСѓРјРјС‹, СѓРєР°Р·Р°РЅРЅРѕР№ РґР°РЅРЅРѕР№ РїРѕР»Рµ, Р±СѓРґСѓС‚ РґРѕСЃС‚Р°РІР»СЏС‚СЊСЃСЏ Р±РµСЃРїР»Р°С‚РЅРѕ.');
+define('MODULE_ORDER_TOTAL_SHIPPING_DESTINATION_DESC', 'national - Р·Р°РєР°Р·С‹ РёР· СЃС‚СЂР°РЅС‹ РЅР°С…РѕР¶РґРµРЅРёСЏ РјР°РіР°Р·РёРЅР°(РїРµСЂРµРјРµРЅРЅР°СЏ РЎС‚СЂР°РЅР° РјР°РіР°Р·РёРЅР°), international - Р·Р°РєР°Р·С‹ РёР· Р»СЋР±РѕР№ СЃС‚СЂР°РЅС‹, РєСЂРѕРјРµ СЃС‚СЂР°РЅС‹ РЅР°С…РѕР¶РґРµРЅРёСЏ РјР°РіР°Р·РёРЅР°, РµСЃР»Рё both - С‚РѕРіРґР° РІСЃРµ Р·Р°РєР°Р·С‹. РџСЂРё СѓСЃР»РѕРІРёРё, С‡С‚Рѕ СЃСѓРјРјР° Р·Р°РєР°Р·С‹ РІС‹С€Рµ СЃСѓРјРјС‹, СѓРєР°Р·Р°РЅРЅРѕР№ РІ РїРµСЂРµРјРµРЅРЅРѕР№ РІС‹С€Рµ.');
+define('SHOW_SHIPPING_ESTIMATOR_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРїРѕСЃРѕР±Р°С… Рё СЃС‚РѕРёРјРѕСЃС‚Рё РґРѕСЃС‚Р°РІРєРё РІ РєРѕСЂР·РёРЅРµ?<br>true - РїРѕРєР°Р·С‹РІР°С‚СЊ.<br>false - РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ.');
+define('SHOW_XSELL_CART_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРѕРїСѓС‚СЃС‚РІСѓСЋС‰РёРµ РІ РєРѕСЂР·РёРЅРµ?<br>true - РїРѕРєР°Р·С‹РІР°С‚СЊ.<br>false - РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ.');
+
+// Р’С‹РІРѕРґ С‚РѕРІР°СЂР°
+
+define('PRODUCT_LISTING_DISPLAY_STYLE_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ РІС‹Р±СЂР°С‚СЊ, РІ РєР°РєРѕРј С„РѕСЂРјР°С‚Рµ РІС‹РІРѕРґРёС‚СЊ С‚РѕРІР°СЂ, РІ РІРёРґРµ С‚Р°Р±Р»РёС†С‹ - list, Р»РёР±Рѕ РІ СЃС‚РѕР»Р±РµС† - columns.');
+define('PRODUCT_LIST_IMAGE_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР°, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РєР°СЂС‚РёРЅРєР° Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РєР°СЂС‚РёРЅРєР° Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_COL_NUM_DESC', 'Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР° С‚РѕР»СЊРєРѕ РµСЃР»Рё РІ РєР°С‡РµСЃС‚РІРµ РІС‹РІРѕРґР° С‚РѕРІР°СЂР° РІС‹Р±СЂР°РЅ РІС‹РІРѕРґ С‚РѕРІР°СЂР° РІ СЃС‚РѕР»Р±РµС† - columns. Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ, РєР°РєРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° Р±СѓРґРµС‚ РІС‹РІРѕРґРёС‚СЊСЃСЏ РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ.');
+define('PRODUCT_LIST_MANUFACTURER_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_MODEL_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_NAME_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_PRICE_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_QUANTITY_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_WEIGHT_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_BUY_NOW_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ.');
+define('PRODUCT_LIST_FILTER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р±РѕРєСЃ(drop-down) РјРµРЅСЋ, СЃ РїРѕРјРѕС‰СЊСЋ РєРѕС‚РѕСЂРѕРіРѕ РјРѕР¶РЅРѕ СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ С‚РѕРІР°СЂ РІ РєР°РєРѕР№-Р»РёР±Рѕ РєР°С‚РµРіРѕСЂРёРё РјР°РіР°Р·РёРЅР° РїРѕ РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЋ.');
+define('PREV_NEXT_BAR_LOCATION_DESC', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ РЅР°РІРёРіР°С†РёРё РЎР»РµРґСѓСЋС‰Р°СЏ/РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р° (1-РІРµСЂС…, 2-РЅРёР·, 3-РІРµСЂС…+РЅРёР·)');
+define('PRODUCT_LIST_INFO_DESC', 'Р•СЃР»Рё Р’С‹ СѓРєР°Р¶РёС‚Рµ 0, С‚РѕРіРґР° РєСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РЅРµ Р±СѓРґРµС‚, РµСЃР»Рё 1-99 - РєСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ, РЅРѕ С‚РѕР»СЊРєРѕ РµСЃР»Рё РєСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ Р±С‹Р»Рѕ РґРѕР±Р°РІР»РµРЅРѕ РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё С‚РѕРІР°СЂР°.');
+define('PRODUCT_SORT_ORDER_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ Р’Р°С€РµРј РјР°РіР°Р·РёРЅРµ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ. 0 - Р·РЅР°С‡РёС‚ РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РґР°РЅРЅРѕРµ РїРѕР»Рµ');
+
+// РЎРєР»Р°Рґ
+
+define('STOCK_CHECK_DESC', 'РџСЂРѕРІРµСЂСЏС‚СЊ, РµСЃС‚СЊ Р»Рё РЅРµРѕР±С…РѕРґРёРјРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°');
+define('STOCK_LIMITED_DESC', 'Р’С‹С‡РёС‚Р°С‚СЊ СЃРѕ СЃРєР»Р°РґР° С‚Рѕ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РєРѕС‚РѕСЂРѕРµ Р±СѓРґРµС‚ Р·Р°РєР°Р·С‹РІР°С‚СЊСЃСЏ РІ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ');
+define('STOCK_ALLOW_CHECKOUT_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РїРѕРєСѓРїР°С‚РµР»СЏРј РѕС„РѕСЂРјР»СЏС‚СЊ Р·Р°РєР°Р·, РґР°Р¶Рµ РµСЃР»Рё РЅР° СЃРєР»Р°РґРµ РЅРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕРіРѕ РєРѕР»РёС‡РµСЃС‚РІР° РµРґРёРЅРёС† Р·Р°РєР°Р·С‹РІР°РµРјРѕРіРѕ С‚РѕРІР°СЂР°');
+define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕРєСѓРїР°С‚РµР»СЋ РјР°СЂРєРµСЂ РЅР°РїСЂРѕС‚РёРІ С‚РѕРІР°СЂР° РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°, РµСЃР»Рё РЅР° СЃРєР»Р°РґРµ РЅРµС‚ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ РєРѕР»РёС‡РµСЃС‚РІР° РµРґРёРЅРёС† Р·Р°РєР°Р·С‹РІР°РµРјРѕРіРѕ С‚РѕРІР°СЂР°');
+define('STOCK_REORDER_LEVEL_DESC', 'Р•СЃР»Рё РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ РјРµРЅСЊС€Рµ, С‡РµРј СѓРєР°Р·Р°РЅРЅРѕРµ С‡РёСЃР»Рѕ РІ РґР°РЅРЅРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№, С‚Рѕ РІ РєРѕСЂР·РёРЅРµ РІС‹РІРѕРґРёС‚СЃСЏ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ Рѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕРј РєРѕР»РёС‡РµСЃС‚РІРµ С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ РґР»СЏ РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РєР°Р·Р°.');
+
+// Р›РѕРіРё
+
+define('STORE_PAGE_PARSE_TIME_DESC', 'РҐСЂР°РЅРёС‚СЊ РІСЂРµРјСЏ, Р·Р°С‚СЂР°С‡РµРЅРЅРѕРµ РЅР° РіРµРЅРµСЂР°С†РёСЋ(РїР°СЂСЃРёРЅРі) СЃС‚СЂР°РЅРёС† РјР°РіР°Р·РёРЅР°.');
+define('STORE_PAGE_PARSE_TIME_LOG_DESC', 'РџРѕР»РЅС‹Р№ РїСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё Рё С„Р°Р№Р»Р°, РІ РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ Р·Р°РїРёСЃС‹РІР°С‚СЊСЃСЏ Р»РѕРі РїР°СЂСЃРёРЅРіР° СЃС‚СЂР°РЅРёС†.');
+define('STORE_PARSE_DATE_TIME_FORMAT_DESC', 'Р¤РѕСЂРјР°С‚ РґР°С‚С‹');
+define('DISPLAY_PAGE_PARSE_TIME_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІСЂРµРјСЏ РїР°СЂСЃРёРЅРіР° СЃС‚СЂР°РЅРёС†С‹ РІ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ (РѕРїС†РёСЏ РЎРѕС…СЂР°РЅСЏС‚СЊ РІСЂРµРјСЏ РїР°СЂСЃРёРЅРіР° СЃС‚СЂР°РЅРёС† РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІРєР»СЋС‡РµРЅР°)');
+define('STORE_DB_TRANSACTIONS_DESC', 'РЎРѕС…СЂР°РЅСЏС‚СЊ РІСЃРµ Р·Р°РїСЂРѕСЃС‹ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С… РІ С„Р°Р№Р»Рµ, СѓРєР°Р·Р°РЅРЅРѕРј РІ РїРµСЂРµРјРµРЅРЅРѕР№ Р”РёСЂРµРєС‚РѕСЂРёСЏ С…СЂР°РЅРµРЅРёРµ Р»РѕРіРѕРІ (С‚РѕР»СЊРєРѕ РґР»СЏ PHP4 Рё РІС‹С€Рµ)');
+
+// РљСЌС€
+
+define('USE_CACHE_DESC', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєСЌС€РёСЂРѕРІР°РЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё.');
+define('DIR_FS_CACHE_DESC', 'Р”РёСЂРµРєС‚РѕСЂРёСЏ, РєСѓРґР° Р±СѓРґСѓС‚ Р·Р°РїРёСЃС‹РІР°С‚СЊСЃСЏ Рё СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ РєСЌС€-С„Р°Р№Р»С‹.');
+
+// РќР°СЃС‚СЂРѕР№РєР° E-Mail
+
+define('EMAIL_TRANSPORT_DESC', 'РЈРєР°Р¶РёС‚Рµ, РєР°РєРѕР№ СЃРїРѕСЃРѕР± РѕС‚РїСЂР°РІРєРё РїРёСЃРµРј РёР· РјР°РіР°Р·РёРЅР° Р±СѓРґРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ. Р”Р»СЏ СЃРµСЂРІРµСЂРѕРІ, СЂР°Р±РѕС‚Р°СЋС‰РёС… РїРѕРґ СѓРїСЂР°РІР»РµРЅРёРµРј Windows РёР»Рё MacOS РЅРµРѕР±С…РѕРґРёРјРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ SMTP РґР»СЏ РѕС‚РїСЂР°РІРєРё РїРёСЃРµРј.');
+define('EMAIL_LINEFEED_DESC', 'РСЃРїРѕР»СЊР·СѓРµРјР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЃРёРјРІРѕР»РѕРІ РґР»СЏ СЂР°Р·РґРµР»РµРЅРёСЏ Р·Р°РіРѕР»РѕРІРєРѕРІ РІ РїРёСЃСЊРјРµ.');
+define('EMAIL_USE_HTML_DESC', 'РћС‚РїСЂР°РІР»СЏС‚СЊ РїРёСЃСЊРјР° РёР· РјР°РіР°Р·РёРЅР° РІ HTML С„РѕСЂРјР°С‚Рµ.');
+define('ENTRY_EMAIL_ADDRESS_CHECK_DESC', 'РџСЂРѕРІРµСЂСЏС‚СЊ, РІРµСЂРЅС‹Рµ Р»Рё e-mail Р°РґСЂРµСЃР° СѓРєР°Р·С‹РІР°СЋС‚СЃСЏ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РІ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ. Р”Р»СЏ РїСЂРѕРІРµСЂРєРё РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ DNS.');
+define('SEND_EMAILS_DESC', 'РћС‚РїСЂР°РІР»СЏС‚СЊ РїРёСЃСЊРјР° РёР· РјР°РіР°Р·РёРЅР°.');
+
+// РЎРєР°С‡РёРІР°РЅРёРµ
+
+define('DOWNLOAD_ENABLED_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ С„СѓРЅРєС†РёСЋ СЃРєР°С‡РёРІР°РЅРёСЏ С‚РѕРІР°СЂРѕРІ.');
+define('DOWNLOAD_BY_REDIRECT_DESC', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїРµСЂРµРЅР°РїСЂР°РІР»РµРЅРёРµ РІ Р±СЂР°СѓР·РµСЂРµ РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ С‚РѕРІР°СЂР°. Р”Р»СЏ РЅРµ Unix СЃРёСЃС‚РµРј(Windows, Mac OS Рё С‚.Рґ.) РґРѕР»Р¶РЅРѕ СЃС‚РѕСЏС‚СЊ false.');
+define('DOWNLOAD_MAX_DAYS_DESC', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№, РІ С‚РµС‡РµРЅРёРµ РєРѕС‚РѕСЂС‹С… РїРѕРєСѓРїР°С‚РµР»СЊ РјРѕР¶РµС‚ СЃРєР°С‡Р°С‚СЊ СЃРІРѕР№ С‚РѕРІР°СЂ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚РѕРіРґР° СЃСЂРѕРє СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ СЃСЃС‹Р»РєРё РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ РѕРіСЂР°РЅРёС‡РµРЅ РЅРµ Р±СѓРґРµС‚.');
+define('DOWNLOAD_MAX_COUNT_DESC', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРєР°С‡РёРІР°РЅРёР№ РґР»СЏ РѕРґРЅРѕРіРѕ С‚РѕРІР°СЂР°. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚РѕРіРґР° РЅРёРєР°РєРёС… РѕРіСЂР°РЅРёС‡РµРЅРёР№ РїРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ СЃРєР°С‡РёРІР°РЅРёР№ РЅРµ Р±СѓРґРµС‚.');
+define('DOWNLOADS_ORDERS_STATUS_UPDATED_VALUE_DESC', 'РљР°РєРѕР№ ID РЅРѕРјРµСЂ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р° СЃР±СЂР°СЃС‹РІР°РµС‚ РїРµСЂРµРјРµРЅРЅС‹Рµ РЎСЂРѕРє СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ СЃСЃС‹Р»РєРё РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ (РґРЅРµР№) Рё РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРєР°С‡РёРІР°РЅРёР№ - РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ Р”РѕСЃС‚Р°РІР»СЏРµС‚СЃСЏ (id РєРѕРґ 4).');
+define('DOWNLOADS_CONTROLLER_ON_HOLD_MSG_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ, РєРѕС‚РѕСЂРѕРµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅРѕ РєР»РёРµРЅС‚Сѓ, РІ СЃР»СѓС‡Р°Рµ, РµСЃР»Рё РѕРЅ Р·Р°С…РѕС‡РµС‚ СЃРєР°С‡Р°С‚СЊ РµС‰С‘ РЅРµРѕРїР»Р°С‡РµРЅРЅС‹Р№ С‚РѕРІР°СЂ.');
+define('DOWNLOADS_CONTROLLER_ORDERS_STATUS_DESC', 'РЎРєР°С‡РёРІР°РЅРёРµ С„Р°Р№Р»Р° (С„Р°Р№Р»РѕРІ) Р±СѓРґРµС‚ СЂР°Р·СЂРµС€РµРЅРѕ С‚РѕР»СЊРєРѕ РІ СЃР»СѓС‡Р°Рµ, РµСЃР»Рё Р·Р°РєР°Р· Р±СѓРґРµС‚ РёРјРµС‚СЊ СѓРєР°Р·Р°РЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ (Р° РёРјРµРЅРЅРѕ id РєРѕРґ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р°). РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃРєР°С‡РёРІР°РЅРёРµ СЂР°Р·СЂРµС€РµРЅРѕ РґР»СЏ Р·Р°РєР°Р·РѕРІ СЃРѕ СЃС‚Р°С‚СѓСЃРѕРј Р¶РґС‘Рј РѕРїР»Р°С‚С‹ (id РєРѕРґ 2).');
+
+// GZip РљРѕРјРїСЂРµСЃСЃРёСЏ
+
+define('GZIP_COMPRESSION_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ HTTP GZip РєРѕРјРїСЂРµСЃСЃРёСЋ.');
+define('GZIP_LEVEL_DESC', 'Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ СѓСЂРѕРІРµРЅСЊ РєРѕРјРїСЂРµСЃСЃРёРё РѕС‚ 0 РґРѕ 9 (0 = РјРёРЅРёРјСѓРј, 9 = РјР°РєСЃРёРјСѓРј).');
+
+// РЎРµСЃСЃРёРё
+
+define('SESSION_WRITE_DIRECTORY_DESC', 'Р•СЃР»Рё СЃРµСЃСЃРёРё С…СЂР°РЅСЏС‚СЃСЏ РІ С„Р°Р№Р»Р°С…, С‚Рѕ Р·РґРµСЃСЊ РЅРµРѕР±С…РѕРґРёРјРѕ СѓРєР°Р·Р°С‚СЊ РїРѕР»РЅС‹Р№ РїСѓС‚СЊ РґРѕ РїР°РїРєРё, РІ РєРѕС‚РѕСЂРѕР№ Р±СѓРґСѓС‚ С…СЂР°РЅРёС‚СЊСЃСЏ С„Р°Р№Р»С‹ СЃРµСЃСЃРёР№.');
+define('SESSION_FORCE_COOKIE_USE_DESC', 'РџСЂРёРЅСѓРґРёС‚РµР»СЊРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРµСЃСЃРёРё, С‚РѕР»СЊРєРѕ РєРѕРіРґР° РІ Р±СЂР°СѓР·РµСЂРµ Р°РєС‚РёРІРёСЂРѕРІР°РЅС‹ cookies.');
+define('SESSION_CHECK_SSL_SESSION_ID_DESC', 'РџСЂРѕРІРµСЂСЏС‚СЊ  SSL_SESSION_ID РїСЂРё РєР°Р¶РґРѕРј РѕР±СЂР°С‰РµРЅРёРё Рє СЃС‚СЂР°РЅРёС†Рµ, Р·Р°С‰РёС‰С‘РЅРЅРѕР№ РїСЂРѕС‚РѕРєРѕР»РѕРј HTTPS.');
+define('SESSION_CHECK_USER_AGENT_DESC', 'РџСЂРѕРІРµСЂСЏС‚СЊ РїРµСЂРµРјРµРЅРЅСѓСЋ Р±СЂР°Р·СѓСЂР° user agent РїСЂРё РєР°Р¶РґРѕРј РѕР±СЂР°С‰РµРЅРёРё Рє СЃС‚СЂР°РЅРёС†Р°Рј РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°.');
+define('SESSION_CHECK_IP_ADDRESS_DESC', 'РџСЂРѕРІРµСЂСЏС‚СЊ IP Р°РґСЂРµСЃР° РєР»РёРµРЅС‚РѕРІ РїСЂРё РєР°Р¶РґРѕРј РѕР±СЂР°С‰РµРЅРёРё Рє СЃС‚СЂР°РЅРёС†Р°Рј РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°.');
+define('SESSION_BLOCK_SPIDERS_DESC', 'РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ СЃРµСЃСЃРёСЋ РІ Р°РґСЂРµСЃРµ РїСЂРё РѕР±СЂР°С‰РµРЅРёРё Рє СЃС‚Р°РЅРёС†Р°Рј РјР°РіР°Р·РёРЅР° РёР·РІРµСЃС‚РЅС‹С… РїРѕРёСЃРєРѕРІС‹С… РїР°СѓРєРѕРІ. РЎРїРёСЃРѕРє РёР·РІРµСЃС‚РЅС‹С… РїР°СѓРєРѕРІ РЅР°С…РѕРґРёС‚СЃСЏ РІ С„Р°Р№Р»Рµ includes/spiders.txt.');
+define('SESSION_RECREATE_DESC', 'Р’РѕСЃСЃРѕР·РґР°РІР°С‚СЊ СЃРµСЃСЃРёСЋ РґР»СЏ РіРµРЅРµСЂР°С†РёРё РЅРѕРІРѕРіРѕ ID РєРѕРґР° СЃРµСЃСЃРёРё РїСЂРё РІС…РѕРґРµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅРѕРіРѕ РїРѕРєСѓРїР°С‚РµР»СЏ РІ РјР°РіР°Р·РёРЅ, Р»РёР±Рѕ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РЅРѕРІРѕРіРѕ РїРѕРєСѓРїР°С‚РµР»СЏ (РўРѕР»СЊРєРѕ РґР»СЏ PHP 4.1 Рё РІС‹С€Рµ).');
+
+// HTML Р РµРґР°РєС‚РѕСЂ
+
+define('HTML_AREA_WYSIWYG_DISABLE_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РґР»СЏ РїРѕР»СЏ РћРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР° РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё/СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё С‚РѕРІР°СЂР°<br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_DISABLE_JPSY_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ<br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ<br>Р”Р°РЅРЅС‹Р№ РјРѕРґСѓР»СЊ СЂР°Р±РѕС‚Р°РµС‚ СЃ Р±СЂР°СѓР·РµСЂРѕРј Internet Explorer 5.5 Рё РІС‹С€Рµ. Р•СЃР»Рё Р’Р°Рј РЅРµ РЅСЂР°РІРёС‚СЃСЏ РґР°РЅРЅС‹Р№ РјРѕРґСѓР»СЊ, РјРѕР¶РµС‚Рµ РµРіРѕ РІС‹РєР»СЋС‡РёС‚СЊ, РїРѕСЃС‚Р°РІРёРІ Disable Рё РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё РєР°СЂС‚РёРЅРѕРє Рє С‚РѕРІР°СЂСѓ Р±СѓРґРµС‚ Р±РѕР»РµРµ РїСЂРѕСЃС‚РѕР№ РІР°СЂРёР°РЅС‚ СЃ РєРЅРѕРїРєРѕ');
+define('HTML_AREA_WYSIWYG_BASIC_PD_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('HTML_AREA_WYSIWYG_WIDTH_DESC', 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 505)');
+define('HTML_AREA_WYSIWYG_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 240)');
+define('HTML_AREA_WYSIWYG_DISABLE_EMAIL_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_EMAIL_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.');
+define('EMAIL_AREA_WYSIWYG_WIDTH_DESC', 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 505)');
+define('EMAIL_AREA_WYSIWYG_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 140)');
+define('HTML_AREA_WYSIWYG_DISABLE_NEWSLETTER_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_NEWSLETTER_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('NEWSLETTER_EMAIL_WYSIWYG_WIDTH_DESC', 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 505)');
+define('NEWSLETTER_EMAIL_WYSIWYG_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 140)');
+define('HTML_AREA_WYSIWYG_DISABLE_DEFINE_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_DEFINE_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('HTML_AREA_WYSIWYG_DISABLE_ARTICLES_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_ARTICLES_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('HTML_AREA_WYSIWYG_DISABLE_FAQDESK_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_FAQDESK_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('HTML_AREA_WYSIWYG_DISABLE_NEWSDESK_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_NEWSDESK_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('HTML_AREA_WYSIWYG_DISABLE_INFOPAGES_DESC', 'Enable - Р’РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ <br>Disable - Р’С‹РєР»СЋС‡РёС‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ.');
+define('HTML_AREA_WYSIWYG_BASIC_INFOPAGES_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br> Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Medium - РќРµС‡С‚Рѕ СЃСЂРµРґРЅРµРµ РјРµР¶РґСѓ Basic Рё Advanced.');
+define('DEFINE_MAINPAGE_WYSIWYG_WIDTH_DESC', 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 505)');
+define('DEFINE_MAINPAGE_WYSIWYG_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 140)');
+define('HTML_AREA_WYSIWYG_FONT_TYPE_DESC', 'РЁСЂРёС„С‚ РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°.');
+define('HTML_AREA_WYSIWYG_FONT_SIZE_DESC', 'Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р° РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°.');
+define('HTML_AREA_WYSIWYG_FONT_COLOUR_DESC', 'Р¦РІРµС‚ С€СЂРёС„С‚Р° РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°.<br>Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ Р»РёР±Рѕ РєРѕРґ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ #FFFFFF, Р»РёР±Рѕ РЅР°Р·РІР°РЅРёРµ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ black.');
+define('HTML_AREA_WYSIWYG_BG_COLOUR_DESC', 'Р¦РІРµС‚ С„РѕРЅР° РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°.<br>Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ Р»РёР±Рѕ РєРѕРґ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ #FFFFFF, Р»РёР±Рѕ РЅР°Р·РІР°РЅРёРµ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ black.');
+define('HTML_AREA_WYSIWYG_DEBUG_DESC', 'РЎР»РµРґРёС‚СЊ Р·Р° РіРµРЅРµСЂРёСЂСѓРµРјС‹Рј HTML-РєРѕРґРѕРј, С‚.Рµ. Р’С‹ РјРѕР¶РµС‚Рµ РІРёРґРµС‚СЊ, РєР°РєРѕР№ HTML-РєРѕРґ СЃРѕР·РґР°С‘С‚СЃСЏ РїСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё HTML СЂРµРґР°РєС‚РѕСЂР°.<p>0 - РћС‚РєР»СЋС‡РёС‚СЊ.<br>1 - Р’РєР»СЋС‡РёС‚СЊ<br>РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃС‚РѕРёС‚ 0');
+
+// РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°
+
+define('AFFILIATE_EMAIL_ADDRESS_DESC', 'E-Mail РђРґСЂРµСЃ РџР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјС‹');
+define('AFFILIATE_PERCENT_DESC', 'РџСЂРѕС†РµРЅС‚ РѕС‚ СЃСѓРјРјС‹ РѕРїР»Р°С‡РµРЅРЅРѕРіРѕ Р·Р°РєР°Р·Р°, РЅР°С‡РёСЃР»СЏРµРјС‹Р№ РїР°СЂС‚РЅС‘СЂР°Рј');
+define('AFFILIATE_THRESHOLD_DESC', 'РњРёРЅРёРјР°Р»СЊРЅР°СЏ СЃСѓРјРјР° РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РєРѕРјРёСЃСЃРёРё Рє РѕРїР»Р°С‚Рµ');
+define('AFFILIATE_COOKIE_LIFETIME_DESC', 'Р’СЂРµРјСЏ (РІ СЃРµРєСѓРЅРґР°С…) С…СЂР°РЅРµРЅРёСЏ cookies. Р•СЃР»Рё РїРѕСЃРµС‚РёС‚РµР»СЊ СЃ РѕРґРЅРѕРіРѕ IP Р°РґСЂРµСЃР° СЃРґРµР»Р°Р» РєР»РёРє РёР»Рё РїРѕРєСѓРїРєСѓ, Рё РєРѕРјРёСЃСЃРёСЏ СЃ РµРіРѕ РїРѕРєСѓРїРєРё Р±С‹Р»Р° Р·Р°С‡С‚РµРЅР° РїР°СЂС‚РЅС‘СЂСѓ, С‚Рѕ РІ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р· РєР»РёРєРё Рё РїСЂРѕРґР°Р¶Рё СЃ СЌС‚РѕРіРѕ IP Р±СѓРґСѓС‚ Р·Р°СЃС‡РёС‚С‹РІР°С‚СЃСЊСЏ С‚РѕР»СЊРєРѕ С‡РµСЂРµР· 7200 СЃРµРєСѓРЅРґ (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).');
+define('AFFILIATE_BILLING_TIME_DESC', 'РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃС‚РѕРёС‚ 30, СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ СЃС‡РµС‚Р° РґР»СЏ РѕРїР»Р°С‚С‹ РєРѕРјРёСЃСЃРёР№ РїР°СЂС‚РЅС‘СЂР°Рј РІС‹РїРёСЃС‹РІР°СЋС‚СЃСЏ СЂР°Р· РІ РјРµСЃСЏС†');
+define('AFFILIATE_PAYMENT_ORDER_MIN_STATUS_DESC', 'РќРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РєРѕРјРёСЃСЃРёСЏ РїР°СЂС‚РЅС‘СЂР°Рј РЅР°С‡РёСЃР»СЏР»Р°СЃСЊ С‚РѕР»СЊРєРѕ Р·Р° РѕРїР»Р°С‡РµРЅРЅС‹Рµ Р·Р°РєР°Р·С‹, СЃС‚Р°С‚СѓСЃ ID - 3 РёР»Рё РІС‹С€Рµ. РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃС‚РѕРёС‚ 3 (Р’С‹РїРѕР»РЅСЏРµС‚СЃСЏ), С‚.Рµ. Р·Р°РєР°Р· СѓР¶Рµ РѕРїР»Р°С‡РµРЅ Рё РєРѕРјРёСЃСЃРёСЏ РїР°СЂС‚РЅС‘СЂР°Рј РЅР°С‡РёСЃР»СЏРµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р·Р° РѕРїР»Р°С‡РµРЅРЅС‹Рµ Р·Р°РєР°Р·С‹.');
+define('AFFILIATE_USE_CHECK_DESC', 'РћРїР»Р°С‚Р° РїР°СЂС‚РЅС‘СЂСЃРєРёС… РєРѕРјРёСЃСЃРёР№ С‡РµСЂРµР· WebMoney. РџСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїР°СЂС‚РЅС‘СЂ СѓРєР°Р·С‹РІР°РµС‚ СЃРІРѕРё РґР°РЅРЅС‹Рµ РІ WebMoney.<br>true - Р’РєР»СЋС‡РµРЅРѕ<br>false - Р’С‹РєР»СЋС‡РµРЅРѕ');
+define('AFFILIATE_USE_PAYPAL_DESC', 'РћРїР»Р°С‚Р° С‡РµСЂРµР· СЃРёСЃС‚РµРјСѓ PayPal.<br>true - Р’РєР»СЋС‡РµРЅРѕ<br>false - Р’С‹РєР»СЋС‡РµРЅРѕ');
+define('AFFILIATE_USE_BANK_DESC', 'РћРїР»Р°С‚Р° РїР°СЂС‚РЅС‘СЂСЃРєРёС… РєРѕРјРёСЃСЃРёР№ С‡РµСЂРµР· Р±Р°РЅРє.<br>true - Р’РєР»СЋС‡РµРЅРѕ<br>false - Р’С‹РєР»СЋС‡РµРЅРѕ');
+define('AFFILATE_INDIVIDUAL_PERCENTAGE_DESC', 'РџРѕР·РІРѕР»СЏРµС‚ СѓРєР°Р·С‹РІР°С‚СЊ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ РїСЂРѕС†РµРЅС‚РЅС‹ РєРѕРјРёСЃСЃРёРё РґР»СЏ РїР°СЂС‚РЅС‘СЂРѕРІ. РќР°РїСЂРёРјРµСЂ, РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃС‚РѕРёС‚ 10% СЃ РїСЂРѕРґР°Р¶Рё РґР»СЏ РІСЃРµС… Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїР°СЂС‚РЅС‘СЂРѕРІ, Р° Р’С‹ РјРѕР¶РµС‚Рµ РЅР°РёР±РѕР»РµРµ СѓСЃРїРµС€РЅС‹Рј РїР°СЂС‚РЅС‘СЂР°Рј РґР°РІР°С‚СЊ РєРѕРјРёСЃСЃРёСЋ 15% СЃ РїСЂРѕРґР°Р¶Рё.');
+define('AFFILATE_USE_TIER_DESC', 'РџР°СЂС‚РЅС‘СЂС‹, Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РІС€РёРµСЃСЏ С‡РµСЂРµР· СЃРµР±СЏ РЅРѕРІС‹С… РїР°СЂС‚РЅС‘СЂРѕРІ, РјРѕРіСѓС‚ РїРѕР»СѓС‡Р°С‚СЊ РєРѕРјРёСЃСЃРёСЋ Р·Р° Р·Р°РєР°Р·С‹, РѕС„РѕСЂРјР»РµРЅРЅС‹Рµ С‡РµСЂРµР· РїР°СЂС‚РЅС‘СЂРѕРІ, РєРѕС‚РѕСЂС‹С… РѕРЅ РїСЂРёРІС‘Р» РІ РјР°РіР°Р·РёРЅ.');
+define('AFFILIATE_TIER_LEVELS_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ СѓСЂРѕРІРЅРµР№, РєРѕС‚РѕСЂРѕРµ СѓС‡РёС‚С‹РІР°СЋС‚СЃСЏ РїСЂРё СѓС‡С‘С‚Рµ РєРѕРјРёСЃСЃРёРё.');
+define('AFFILIATE_TIER_PERCENTAGE_DESC', 'РџСЂРѕС†РµРЅС‚С‹ РєРѕРјРёСЃСЃРёРё РґР»СЏ РєР°Р¶РґРѕРіРѕ РёР· СѓСЂРѕРІРЅРµР№.<br>РџСЂРёРјРµСЂ: 8.00;5.00;1.00');
+
+// РњРѕРґСѓР»СЊ Dynamic MoPics
+
+define('IN_IMAGE_BIGIMAGES_DESC', 'РљР°С‚Р°Р»РѕРі, РіРґРµ Р±СѓРґСѓС‚ С…СЂР°РЅРёС‚СЊСЃСЏ Р±РѕР»СЊС€РёРµ РєР°СЂС‚РёРЅРєРё.');
+define('IN_IMAGE_THUMBS_DESC', 'РљР°С‚Р°Р»РѕРі, РєСѓРґР° Р±СѓРґСѓС‚ Р·Р°РїРёСЃС‹РІР°С‚СЊСЃСЏ РјР°Р»РµРЅСЊРєРёРµ РєР°СЂС‚РёРЅРєРё, Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РіРµРЅРµСЂРёСЂСѓРµРјС‹Рµ РёР· Р±РѕР»СЊС€С… РєР°СЂС‚РёРЅРѕРє.');
+define('MAIN_THUMB_IN_SUBDIR_DESC', 'РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ true.');
+define('THUMBS_PER_ROW_DESC', 'РЎРєРѕР»СЊРєРѕ РєР°СЂС‚РёРЅРѕРє РґРѕР»Р¶РЅРѕ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ.');
+define('MORE_PICS_EXT_DESC', 'Р”Р°РЅРЅС‹Р№ РїСЂРµС„РёРєСЃ Р±СѓРґРµС‚ РґРѕР±Р°РІР»РµРЅ Рє РѕСЂРёРіРёРЅР°Р»СЊРЅРѕРјСѓ РЅР°Р·РІР°РЅРёСЋ С„Р°Р№Р»Р° РєР°СЂС‚РёРЅРєРё. РњРѕР¶РЅРѕ РѕСЃС‚Р°РІРёС‚СЊ РґР°РЅРЅРѕРµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІР»СЏС‚СЊ РєР°РєРёС…-Р»РёР±Рѕ РїСЂРµС„РёРєСЃРѕРІ Рє РѕСЂРёРіРёРЅР°Р»СЊРЅРѕРјСѓ РЅР°Р·РІР°РЅРёСЋ С„Р°Р№Р»Р°.');
+define('BIG_PIC_EXT_DESC', 'Р”Р°РЅРЅС‹Р№ РїСЂРµС„РёРєСЃ Р±СѓРґРµС‚ РґРѕР±Р°РІР»РµРЅ Рє РѕСЂРёРіРёРЅР°Р»СЊРЅРѕРјСѓ РЅР°Р·РІР°РЅРёСЋ С„Р°Р№Р»Р° Р±РѕР»СЊС€РѕР№ РєР°СЂС‚РёРЅРєРё. РњРѕР¶РЅРѕ РѕСЃС‚Р°РІРёС‚СЊ РґР°РЅРЅРѕРµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІР»СЏС‚СЊ РєР°РєРёС…-Р»РёР±Рѕ РїСЂРµС„РёРєСЃРѕРІ Рє РѕСЂРёРіРёРЅР°Р»СЊРЅРѕРјСѓ РЅР°Р·РІР°РЅРёСЋ С„Р°Р№Р»Р°.');
+define('THUMB_IMAGE_TYPE_DESC', 'РўРёРї РіРµРЅРµСЂРёСЂСѓРµРјС‹С… РєР°СЂС‚РёРЅРѕРє.');
+define('BIG_IMAGE_TYPE_DESC', 'РўРёРї Р±РѕР»СЊС€РёС… РєР°СЂС‚РёРЅРѕРє');
+
+// РўРµС…. РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ
+
+define('DOWN_FOR_MAINTENANCE_DESC', 'РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ. Р•СЃР»Рё РІРєР»СЋС‡РµРЅРѕ, С‚Рѕ РІ РјР°РіР°Р·РёРЅРµ РЅРµР»СЊР·СЏ Р±СѓРґРµС‚ РґРµР»Р°С‚СЊ Р·Р°РєР°Р·С‹ Рё Р±СѓРґРµС‚ РІС‹РІРµРґРµРЅРѕ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ Рѕ РїСЂРѕРІРµРґРµРЅРёРё С‚РµС…РЅРёС‡РµСЃРєРѕРіРѕ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ РјР°РіР°Р·РёРЅР°.<br>true - Р’РєР»СЋС‡РµРЅРѕ<br>false - Р’С‹РєР»СЋС‡РµРЅРѕ');
+define('DOWN_FOR_MAINTENANCE_FILENAME_DESC', 'Р¤Р°Р№Р», РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅ РІ РјР°РіР°Р·РёРЅРµ, РµСЃР»Рё РІРєР»СЋС‡РµРЅРѕ РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ РјР°РіР°Р·РёРЅР°. РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ - down_for_maintenance.php');
+define('DOWN_FOR_MAINTENANCE_HEADER_OFF_DESC', 'РџСЂРё РІРєР»СЋС‡С‘РЅРЅРѕРј С‚РµС…РЅРёС‡РµСЃРєРѕРј РѕР±СЃР»СѓР¶РёРІР°РЅРёРё Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РїСЂРµС‚РёС‚СЊ РїРѕРєР°Р·С‹РІР°С‚СЊ С€Р°РїРєСѓ РјР°РіР°Р·РёРЅР°<br>true - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ<Br>false - РџРѕРєР°Р·С‹РІР°С‚СЊ');
+define('DOWN_FOR_MAINTENANCE_COLUMN_LEFT_OFF_DESC', 'РџСЂРё РІРєР»СЋС‡С‘РЅРЅРѕРј С‚РµС…РЅРёС‡РµСЃРєРѕРј РѕР±СЃР»СѓР¶РёРІР°РЅРёРё Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РїСЂРµС‚РёС‚СЊ РїРѕРєР°Р·С‹РІР°С‚СЊ Р»РµРІСѓСЋ РєРѕР»РѕРЅРєСѓ РјР°РіР°Р·РёРЅР°<br>true - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ<Br>false - РџРѕРєР°Р·С‹РІР°С‚СЊ');
+define('DOWN_FOR_MAINTENANCE_COLUMN_RIGHT_OFF_DESC', 'РџСЂРё РІРєР»СЋС‡С‘РЅРЅРѕРј С‚РµС…РЅРёС‡РµСЃРєРѕРј РѕР±СЃР»СѓР¶РёРІР°РЅРёРё Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РїСЂРµС‚РёС‚СЊ РїРѕРєР°Р·С‹РІР°С‚СЊ РїСЂР°РІСѓСЋ РєРѕР»РѕРЅРєСѓ РјР°РіР°Р·РёРЅР°<br>true - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ<Br>false - РџРѕРєР°Р·С‹РІР°С‚СЊ');
+define('DOWN_FOR_MAINTENANCE_FOOTER_OFF_DESC', 'РџСЂРё РІРєР»СЋС‡С‘РЅРЅРѕРј С‚РµС…РЅРёС‡РµСЃРєРѕРј РѕР±СЃР»СѓР¶РёРІР°РЅРёРё Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РїСЂРµС‚РёС‚СЊ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РјР°РіР°Р·РёРЅР°<br>true - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ<Br>false - РџРѕРєР°Р·С‹РІР°С‚СЊ');
+define('DOWN_FOR_MAINTENANCE_PRICES_OFF_DESC', 'РџСЂРё РІРєР»СЋС‡С‘РЅРЅРѕРј С‚РµС…РЅРёС‡РµСЃРєРѕРј РѕР±СЃР»СѓР¶РёРІР°РЅРёРё Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РїСЂРµС‚РёС‚СЊ РїРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ РЅР° С‚РѕРІР°СЂС‹ РІ РјР°РіР°Р·РёРЅРµ<br>true - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ<Br>false - РџРѕРєР°Р·С‹РІР°С‚СЊ');
+define('EXCLUDE_ADMIN_IP_FOR_MAINTENANCE_DESC', 'Р”Р»СЏ СѓРєР°Р·Р°РЅРЅРѕРіРѕ IP Р°РґСЂРµСЃР° РјР°РіР°Р·РёРЅ Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРµРЅ РґР°Р¶Рµ РїСЂРё РІРєР»СЋС‡С‘РЅРЅРѕРј СЂРµР¶РёРјРµ РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ. РћР±С‹С‡РЅРѕ Р·РґРµСЃСЊ СѓРєР°Р·С‹РІР°РµС‚ IP Р°РґСЂРµСЃ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° РјР°РіР°Р·РёРЅР°.');
+define('WARN_BEFORE_DOWN_FOR_MAINTENANCE_DESC', 'РџСЂРµРґСѓРїСЂРµР¶РґР°С‚СЊ РїРѕСЃРµС‚РёС‚РµР»РµР№ РїРµСЂРµРґ СѓС…РѕРґРѕРј РЅР° С‚РµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ. Р•СЃР»Рё С‚РµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ СѓР¶Рµ РІРєР»СЋС‡РµРЅРѕ, С‚Рѕ РґР°РЅРЅР°СЏ РѕРїС†РёСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ РІ false.');
+define('PERIOD_BEFORE_DOWN_FOR_MAINTENANCE_DESC', 'РЈРєР°Р¶РёС‚Рµ С‚РµРєСЃС‚ СѓРІРµРґРѕРјР»РµРЅРёСЏ.');
+define('DISPLAY_MAINTENANCE_TIME_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РґР°С‚Сѓ Р°РєС‚РёРІР°С†РёРё СЂРµР¶РёРјР° РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ.');
+define('DISPLAY_MAINTENANCE_PERIOD_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІ С‚РµС‡РµРЅРёРµ РєР°РєРѕРіРѕ РІСЂРµРјРµРЅРё РјР°РіР°Р·РёРЅ Р±СѓРґРµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ РІ СЂРµР¶РёРјРµ РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ.');
+define('TEXT_MAINTENANCE_PERIOD_TIME_DESC', 'РЈРєР°Р¶РёС‚Рµ РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹ РјР°РіР°Р·РёРЅР° РІ СЂРµР¶РёРјРµ РўРµС…РЅРёС‡РµСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ');
+
+// Р‘С‹СЃС‚СЂРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ
+
+define('GUEST_ON_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РїРѕРєСѓРїР°С‚РµР»СЏРј Р±С‹СЃС‚СЂРѕ РѕС„РѕСЂРјР»СЏС‚СЊ Р·Р°РєР°Р·.');
+
+// РЎСЃС‹Р»РєРё
+
+define('ENABLE_LINKS_COUNT_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµС…РѕРґРѕРІ РїРѕ СЃСЃС‹Р»РєРµ.');
+define('ENABLE_SPIDER_FRIENDLY_LINKS_DESC', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєРѕСЂРѕС‚РєРёРµ URL Р°РґСЂРµСЃР°.');
+define('LINKS_IMAGE_WIDTH_DESC', 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё СЃСЃС‹Р»РєРё.');
+define('LINKS_IMAGE_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё СЃСЃС‹Р»РєРё.');
+define('LINK_LIST_IMAGE_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ РЅРµ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ.');
+define('LINK_LIST_URL_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ РЅРµ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ.');
+define('LINK_LIST_TITLE_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ РЅРµ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ.');
+define('LINK_LIST_DESCRIPTION_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ РЅРµ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ.');
+define('LINK_LIST_COUNT_DESC', 'РЈРєР°Р¶РёС‚Рµ РїРѕСЂСЏРґРѕРє РІС‹РІРѕРґР° РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ, С‚.Рµ. РІРІРµРґРёС‚Рµ С†РёС„СЂСѓ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 1, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ Р±СѓРґРµС‚ СЃР»РµРІР° РЅР° РїРµСЂРІРѕРј РјРµСЃС‚Рµ, РµСЃР»Рё 2, С‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅР° РїРѕСЃР»Рµ(РїСЂР°РІРµРµ) РїРѕР»СЏ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1 Рё С‚.Рґ. Р•СЃР»Рё СѓРєР°Р¶РёС‚Рµ 0, С‚Рѕ РґР°РЅРЅРѕРµ РїРѕР»Рµ РЅРµ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ.');
+define('ENTRY_LINKS_TITLE_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_URL_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_DESCRIPTION_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ.');
+define('ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ.');
+define('LINKS_CHECK_PHRASE_DESC', 'РўРµРєСЃС‚ (РѕР±С‹С‡РЅРѕ Р°РґСЂРµСЃ РјР°РіР°Р·РёРЅР°), РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РёСЃРєР°С‚СЊСЃСЏ РїСЂРё РїСЂРѕРІРµСЂРєРµ СЃСЃС‹Р»РєРё. РќРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РЅР° СЃР°Р№С‚Рµ, РґРѕР±Р°РІР»РµРЅРЅРѕРј РІ РєР°С‚Р°Р»РѕРі СЃСЃС‹Р»РѕРє, СѓСЃС‚Р°РЅРѕРІР»РµРЅР° СЃСЃС‹Р»РєР° РЅР° Р’Р°С€ РјР°РіР°Р·РёРЅ.');
+
+// РћР±РЅРѕРІР»РµРЅРёРµ РїСЂР°Р№СЃР°
+
+define('DISPLAY_MODEL_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР°');
+define('MODIFY_MODEL_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР°');
+define('MODIFY_NAME_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('DISPLAY_STATUT_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚Р°С‚СѓСЃ С‚РѕРІР°СЂР°');
+define('DISPLAY_WEIGHT_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РІРµСЃ С‚РѕРІР°СЂР°');
+define('DISPLAY_QUANTITY_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°');
+define('DISPLAY_SORT_ORDER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё');
+define('DISPLAY_ORDER_MIN_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РјРёРЅРёРјСѓРј РґР»СЏ Р·Р°РєР°Р·Р°');
+define('DISPLAY_ORDER_UNITS_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ С€Р°Рі');
+define('DISPLAY_IMAGE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ С‚РѕРІР°СЂР°');
+define('DISPLAY_XML_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РѕРЅРєСѓ XML');
+define('MODIFY_MANUFACTURER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ С‚РѕРІР°СЂР°');
+define('MODIFY_TAX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі');
+define('DISPLAY_TVA_OVER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ СЃ РЅР°Р»РѕРіР°РјРё');
+define('DISPLAY_TVA_UP_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ С†РµРЅС‹ СЃ РЅР°Р»РѕРіР°РјРё РїСЂРё РёР·РјРµРЅРµРЅРёРё С†РµРЅС‹');
+define('DISPLAY_PREVIEW_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° РѕРїРёСЃР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('DISPLAY_EDIT_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('DISPLAY_MANUFACTURER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ');
+define('DISPLAY_TAX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі');
+define('ACTIVATE_COMMERCIAL_MARGIN_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ/РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РјР°СЃСЃРѕРІРѕРіРѕ  РёР·РјРµРЅРµРЅРёСЏ С†РµРЅ');
+
+// РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹
+
+define('MAX_DISPLAY_WISHLIST_PRODUCTS_DESC' , 'РЎРєРѕР»СЊРєРѕ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ?');
+define('MAX_DISPLAY_WISHLIST_BOX_DESC' , 'РЎРєРѕР»СЊРєРѕ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РїРѕРєР°Р·С‹РІР°С‚СЊ РІ Р±РѕРєСЃРµ РґРѕ С‚РѕРіРѕ, РєР°Рє СЃРїРёСЃРѕРє РёР·РјРµРЅРёС‚СЃСЏ РЅР° СЃС‡С‘С‚С‡РёРє?');
+define('DISPLAY_WISHLIST_EMAILS_DESC' , 'РЎРєРѕР»СЊРєРѕ РІРѕР·РјРѕР¶РЅС‹С… e-mail Р°РґСЂРµСЃРѕРІ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР° СЃС‚СЂР°РЅРёС†Рµ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ?');
+define('WISHLIST_REDIRECT_DESC' , 'Р’РѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР° СЃС‚СЂР°РЅРёС†Сѓ РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР° РїРѕСЃР»Рµ РґРѕР±Р°РІР»РµРЅРёСЏ С‚РѕРІР°СЂР° РІ РѕС‚Р»РѕР¶РµРЅРЅС‹Рµ?');
+
+// РљСЌС€ СЃС‚СЂР°РЅРёС†
+
+define('ENABLE_PAGE_CACHE_DESC' , 'Р Р°Р·СЂРµС€РёС‚СЊ РєСЌС€РёСЂРѕРІР°РЅРёРµ СЃС‚СЂР°РЅРёС†? Р”Р°РЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РїРѕРјРѕРіР°РµС‚ СЃРЅРёР·РёС‚СЊ РЅР°РіСЂСѓР·РєСѓ РЅР° СЃРµСЂРІРµСЂ Рё СѓСЃРєРѕСЂРёС‚СЊ Р·Р°РіСЂСѓР·РєСѓ СЃС‚СЂР°РЅРёС†.');
+define('PAGE_CACHE_LIFETIME_DESC' , 'РљР°Рє РґРѕР»РіРѕ РєСЌС€РёСЂРѕРІР°С‚СЊ СЃС‚СЂР°РЅРёС†С‹ (РІ РјРёРЅСѓС‚Р°С…)?');
+define('PAGE_CACHE_DEBUG_MODE_DESC' , 'Р’РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё (РІРЅРёР·Сѓ СЃС‚СЂР°РЅРёС†С‹)? РќРµ РІРєР»СЋС‡Р°Р№С‚Рµ РґР°РЅРЅСѓСЋ РѕРїС†РёСЋ РЅР° СЂР°Р±РѕС‚Р°СЋС‰РёС… РјР°РіР°Р·РёРЅР°С…! Р’С‹ РјРѕР¶РµС‚Рµ РІРєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё РїСЂРѕСЃС‚Рѕ РґРѕР±Р°РІРёРІ Рє URL Р°РґСЂРµСЃСѓ РїР°СЂР°РјРµС‚СЂ ?debug=1');
+define('PAGE_CACHE_DISABLE_PARAMETERS_DESC' , 'Р’ РЅРµРєРѕС‚РѕСЂС‹С… СЃР»СѓС‡Р°СЏС… (РЅР°РїСЂРёРјРµСЂ, РїСЂРё РІРєР»СЋС‡С‘РЅРЅС‹С… РєРѕСЂРѕС‚РєРёС… Р°РґСЂРµСЃР°С…) РёР»Рё РїСЂРё Р±РѕР»СЊС€РѕРј РєРѕР»РёС‡РµСЃС‚РІРµ РїР°СЂС‚РЅС‘СЂРѕРІ РјРѕР¶РµС‚ РїСЂРёРІРµСЃС‚Рё Рє С‡СЂРµР·РјРµСЂРЅРѕРјСѓ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЋ РґРёСЃРєРѕРІРѕРіРѕ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР°.');
+define('PAGE_CACHE_DELETE_FILES_DESC' , 'Р•СЃР»Рё СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ РІ true, С‚Рѕ РїСЂРё Р»СЋР±РѕРј СЃР»РµРґСѓСЋС‰РµРј РїСЂРѕСЃРјРѕС‚СЂРµ Р»СЋР±РѕР№ СЃС‚СЂР°РЅРёС†С‹ РІ РєР°С‚Р°Р»РѕРіРµ, РІСЃРµ РєСЌС€ С„Р°Р№Р»С‹ Р±СѓРґСѓС‚ СѓРґР°Р»РµРЅС‹, РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РІРµСЂРЅРёС‚Рµ false.');
+define('PAGE_CACHE_UPDATE_CONFIG_FILES_DESC' , 'Р•СЃР»Рё Сѓ Р’Р°СЃ СѓСЃС‚Р°РЅРѕРІР»РµРЅ РјРѕРґСѓР»СЊ configuration cache, СѓРєР°Р¶РёС‚Рµ РїРѕР»РЅС‹Р№ (Р°Р±СЃРѕР»СЋС‚РЅС‹Р№) РїСѓС‚СЊ РґРѕ С„Р°Р№Р»Р° РѕР±РЅРѕРІР»РµРЅРёСЏ.');
+
+// РЇРЅРґРµРєСЃ РјР°СЂРєРµС‚
+
+define('YML_NAME_DESC' , 'РќР°Р·РІР°РЅРёРµ РјР°РіР°Р·РёРЅР° РґР»СЏ РЇРЅРґРµРєСЃ-РњР°СЂРєРµС‚. Р•СЃР»Рё РїРѕР»Рµ РїСѓСЃС‚РѕРµ, С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ STORE_NAME.');
+define('YML_COMPANY_DESC' , 'РќР°Р·РІР°РЅРёРµ РєРѕРјРїР°РЅРёРё РґР»СЏ РЇРЅРґРµРєСЃ-РњР°СЂРєРµС‚. Р•СЃР»Рё РїРѕР»Рµ РїСѓСЃС‚РѕРµ, С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ STORE_OWNER.');
+define('YML_DELIVERYINCLUDED_DESC' , 'Р”РѕСЃС‚Р°РІРєР° РІРєР»СЋС‡РµРЅР° РІ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°?');
+define('YML_AVAILABLE_DESC' , 'РўРѕРІР°СЂ РІ РЅР°Р»РёС‡РёРё РёР»Рё РїРѕРґ Р·Р°РєР°Р·?');
+define('YML_AUTH_USER_DESC' , 'Р›РѕРіРёРЅ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє YML');
+define('YML_AUTH_PW_DESC' , 'РџР°СЂРѕР»СЊ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє YML');
+define('YML_REFERER_DESC' , 'Р”РѕР±Р°РІРёС‚СЊ РІ Р°РґСЂРµСЃ С‚РѕРІР°СЂР° РїР°СЂР°РјРµС‚СЂ СЃ СЃСЃС‹Р»РєРѕР№ РЅР° User agent РёР»Рё ip?');
+define('YML_STRIP_TAGS_DESC' , 'РЈР±РёСЂР°С‚СЊ html-С‚РµРіРё РІ СЃС‚СЂРѕРєР°С…?');
+define('YML_UTF8_DESC' , 'РџРµСЂРµРєРѕРґРёСЂРѕРІР°С‚СЊ РІ UTF-8?');
+define('YML_SALES_NOTES_DESC' , 'РўРµРєСЃС‚ РґР»СЏ С‚СЌРіР° sales_notes');
+
+// РЎРїРёСЃРѕРє РєР°С‚РµРіРѕСЂРёР№ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ
+
+define('BRWCAT_ENABLE_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РїСЂРѕСЃРјРѕС‚СЂ РєР°С‚РµРіРѕСЂРёР№');
+define('BRWCAT_ICON_MODE_TITLE' , 'РљР°СЂС‚РёРЅРєРё РєР°С‚РµРіРѕСЂРёР№');
+define('BRWCAT_SUBCAT_MODE_TITLE' , 'РЎСЃС‹Р»РєРё РЅР° РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
+define('BRWCAT_ICONS_PER_ROW_TITLE' , 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРґРєР°С‚РµРіРѕСЂРёР№ РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ');
+define('BRWCAT_SUBCAT_BULLET_TITLE' , 'РЎРёРјРІРѕР» РїРµСЂРµРґ РЅР°Р·РІР°РЅРёРµРј РєР°С‚РµРіРѕСЂРёР№');
+define('BRWCAT_SUBCAT_COUNTS_TITLE' , 'РЎС‡РµС‚С‡РёРє РєРѕР»РёС‡РµСЃС‚РІР° С‚РѕРІР°СЂРѕРІ РІ РєР°С‚РµРіРѕСЂРёСЏС…');
+define('BRWCAT_NAME_CASE_TITLE' , 'Р¤РѕСЂРјР°С‚ РІС‹РІРѕРґР° РЅР°Р·РІР°РЅРёР№ РєР°С‚РµРіРѕСЂРёР№');
+
+define('BRWCAT_ENABLE_DESC' , 'РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ РјРѕРґСѓР»СЊ РїСЂРѕСЃРјРѕС‚СЂ РєР°С‚РµРіРѕСЂРёР№.');
+define('BRWCAT_ICON_MODE_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ, РїРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєРё РёР»Рё РЅРµС‚ Рё РµСЃР»Рё РїРѕРєР°Р·С‹РІР°С‚СЊ, С‚Рѕ РєР°Рє:<br><br>Disabled - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ.<br>Text - РќР°Р·РІР°РЅРёРµ Р±РµР· РєР°СЂС‚РёРЅРєРё.<br>Image only - РљР°СЂС‚РёРЅРєР°.<br>Image with caption - РљР°СЂС‚РёРЅРєР° + С‚РµРєСЃС‚.');
+define('BRWCAT_SUBCAT_MODE_DESC' , 'РљР°Рє РїРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° РїРѕРґРєР°С‚РµРіРѕСЂРёРё:<br><br>Off - РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РІРѕРѕР±С‰Рµ.<br>Bottom - РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРЅРёР·Сѓ.<br>Right top - РЎРїСЂР°РІР° СЃРІРµСЂС…Сѓ.<br>Right middle - РЎРїСЂР°РІР° РїРѕСЃРµСЂРµРґРёРЅРµ.<br>Right bottom - РЎРїСЂР°РІР° СЃРЅРёР·Сѓ.');
+define('BRWCAT_ICONS_PER_ROW_DESC' , 'РЎРєРѕР»СЊРєРѕ РїРѕРґРєР°С‚РµРіРѕСЂРёР№ РїРѕРєР°Р·С‹РІР°С‚СЊ РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ:');
+define('BRWCAT_SUBCAT_BULLET_DESC' , 'РЎРёРјРІРѕР», РїРѕРєР°Р·С‹РІР°РµРјС‹Р№ РїРµСЂРµРґ РЅР°Р·РІР°РЅРёРµРј РєР°С‚РµРіРѕСЂРёРё.');
+define('BRWCAT_SUBCAT_COUNTS_DESC' , 'РЎС‡С‘С‚С‡РёРє РєРѕР»РёС‡РµСЃС‚РІР° С‚РѕРІР°СЂР° РІ РєР°С‚РµРіРѕСЂРёСЏС….');
+define('BRWCAT_NAME_CASE_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ, РІ РєР°РєРѕРј С„РѕСЂРјР°С‚Рµ РІС‹РІРѕРґРёС‚СЊ РЅР°Р·РІР°РЅРёСЏ РєР°С‚РµРіРѕСЂРёР№.');
+
+// РЎС‚Р°С‚СЊРё - РќР°СЃС‚СЂРѕР№РєРё 
+
+define('DISPLAY_NEW_ARTICLES_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅРѕРІС‹Рµ СЃС‚Р°С‚СЊРё');
+define('NEW_ARTICLES_DAYS_DISPLAY_TITLE', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№, РІ С‚РµС‡РµРЅРёРµ РєРѕС‚РѕСЂС‹С… СЃС‚Р°С‚СЊСЏ СЃС‡РёС‚Р°РµС‚СЃСЏ РЅРѕРІРѕР№');
+define('MAX_NEW_ARTICLES_PER_PAGE_TITLE', 'РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РЅРѕРІС‹С… СЃС‚Р°С‚РµР№');
+define('DISPLAY_ALL_ARTICLES_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РІСЃРµ СЃС‚Р°С‚СЊРё');
+define('MAX_ARTICLES_PER_PAGE_TITLE', 'РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№ РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('MAX_DISPLAY_UPCOMING_ARTICLES_TITLE', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РіРѕС‚РѕРІСЏС‰РёС…СЃСЏ Рє РїСѓР±Р»РёРєР°С†РёРё СЃС‚Р°С‚РµР№');
+define('ENABLE_ARTICLE_REVIEWS_TITLE', 'Р Р°Р·СЂРµС€РёС‚СЊ РѕС‚Р·С‹РІС‹ Рє СЃС‚Р°С‚СЊСЏРј');
+define('ENABLE_TELL_A_FRIEND_ARTICLE_TITLE', 'Р Р°Р·СЂРµС€РёС‚СЊ С„СѓРЅРєС†РёСЋ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Р·РЅР°РєРѕРјРѕРјСѓ');
+define('MIN_DISPLAY_ARTICLES_XSELL_TITLE', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±РѕРєСЃРµ СЃРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('MAX_DISPLAY_ARTICLES_XSELL_TITLE', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±РѕРєСЃРµ СЃРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('SHOW_ARTICLE_COUNTS_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‡С‘С‚С‡РёРє СЃС‚Р°С‚РµР№');
+define('MAX_DISPLAY_AUTHOR_NAME_LEN_TITLE', 'РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РґР»РёРЅР° РїРѕР»СЏ Р°РІС‚РѕСЂ');
+define('MAX_DISPLAY_AUTHORS_IN_A_LIST_TITLE', 'Р¤РѕСЂРјР°С‚ РІС‹РІРѕРґР° СЃРїРёСЃРєР° Р°РІС‚РѕСЂРѕРІ');
+define('MAX_AUTHORS_LIST_TITLE', 'РђРІС‚РѕСЂС‹ РІ РІРёРґРµ СЂР°Р·РІС‘СЂРЅСѓС‚РѕРіРѕ РјРµРЅСЋ');
+define('DISPLAY_AUTHOR_ARTICLE_LISTING_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р°РІС‚РѕСЂР° РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№');
+define('DISPLAY_TOPIC_ARTICLE_LISTING_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЂР°Р·РґРµР» РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№');
+define('DISPLAY_ABSTRACT_ARTICLE_LISTING_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Meta Description РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№');
+define('DISPLAY_DATE_ADDED_ARTICLE_LISTING_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РґР°С‚Сѓ РґРѕР±Р°РІР»РµРЅРёСЏ РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№');
+define('MAX_ARTICLE_ABSTRACT_LENGTH_TITLE', 'РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РґР»РёРЅР° РїРѕР»СЏ Meta Description');
+define('ARTICLE_LIST_FILTER_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂ Р Р°Р·РґРµР»/РђРІС‚РѕСЂС‹');
+define('ARTICLE_PREV_NEXT_BAR_LOCATION_TITLE', 'Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РЅР°РІРёРіР°С†РёРё РЎР»РµРґСѓСЋС‰Р°СЏ/РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°');
+define('ARTICLE_WYSIWYG_ENABLE_TITLE', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РґР»СЏ РЅР°РїРёСЃР°РЅРёСЏ СЃС‚Р°С‚РµР№?');
+define('ARTICLE_MANAGER_WYSIWYG_BASIC_TITLE', 'Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_WIDTH_TITLE', 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_HEIGHT_TITLE', 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_FONT_TYPE_TITLE', 'РЁСЂРёС„С‚, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_FONT_SIZE_TITLE', 'Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°, РёСЃРїРѕР»СЊР·СѓРµРјРѕРіРѕ РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_FONT_COLOUR_TITLE', 'Р¦РІРµС‚ С€СЂРёС„С‚Р°, РёСЃРїРѕР»СЊР·СѓРµРјРѕРіРѕ РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_BG_COLOUR_TITLE', 'Р¦РІРµС‚ С„РѕРЅР° РІ РёРЅС‚РµСЂС„РµР№СЃРµ HTML СЂРµРґР°РєС‚РѕСЂР°');
+define('ARTICLE_MANAGER_WYSIWYG_DEBUG_TITLE', 'Р Р°Р·СЂРµС€РёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё?');
+
+define('DISPLAY_NEW_ARTICLES_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅРѕРІС‹Рµ СЃС‚Р°С‚СЊРё РІ Р±РѕРєСЃРµ СЃС‚Р°С‚СЊРё?');
+define('NEW_ARTICLES_DAYS_DISPLAY_DESC', 'РљР°РєРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№ РїРѕСЃР»Рµ РґРѕР±Р°РІР»РµРЅРёСЏ, СЃС‚Р°С‚СЊСЏ СЃС‡РёС‚Р°РµС‚СЃСЏ РЅРѕРІРѕР№ Рё РѕС‚РѕР±СЂР°Р¶Р°С‚РµСЃСЏ РЅР° СЃС‚СЂР°РЅРёС†Рµ РЅРѕРІС‹Рµ СЃС‚Р°С‚СЊРё.');
+define('MAX_NEW_ARTICLES_PER_PAGE_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№, РІС‹РІРѕРґРёРјС‹С… РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РЅРѕРІС‹С… СЃС‚Р°С‚РµР№.');
+define('DISPLAY_ALL_ARTICLES_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РІСЃРµ СЃС‚Р°С‚СЊРё РІ Р±РѕРєСЃРµ СЃС‚Р°С‚СЊРё?');
+define('MAX_ARTICLES_PER_PAGE_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№, РІС‹РІРѕРґРёРјС‹С… РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ.');
+define('MAX_DISPLAY_UPCOMING_ARTICLES_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№, РІС‹РІРѕРґРёРјС‹С… РІ Р±Р»РѕРєРµ РіРѕС‚РѕРІСЏС‚СЃСЏ Рє РїСѓР±Р»РёРєР°С†РёРё');
+define('ENABLE_ARTICLE_REVIEWS_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РїРѕСЃРµС‚РёС‚РµР»СЏРј РѕСЃС‚Р°РІР»СЏС‚СЊ СЃРІРѕРё РѕС‚Р·С‹РІС‹ Рѕ СЃС‚Р°С‚СЊСЏС….');
+define('ENABLE_TELL_A_FRIEND_ARTICLE_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РїРѕСЃРµС‚РёС‚РµР»СЏРј РёСЃРїРѕР»СЊР·РѕРІС‚СЊ С„СѓРЅРєС†РёСЋ Р Р°СЃСЃРєР°Р·Р°С‚СЊ Р·РЅР°РєРѕРјРѕРјСѓ.');
+define('MIN_DISPLAY_ARTICLES_XSELL_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±РѕРєСЃРµ СЃРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹.');
+define('MAX_DISPLAY_ARTICLES_XSELL_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РІС‹РІРѕРґРёРјРѕРіРѕ РІ Р±РѕРєСЃРµ СЃРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹.');
+define('SHOW_ARTICLE_COUNTS_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№ РІ РєР°Р¶РґРѕР№ СЂР°Р·РґРµР»Рµ.');
+define('MAX_DISPLAY_AUTHOR_NAME_LEN_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ, РІС‹РІРѕРґРёРјС‹С… РІ Р±РѕРєСЃРµ Р°РІС‚РѕСЂС‹.');
+define('MAX_DISPLAY_AUTHORS_IN_A_LIST_DESC', 'Р•СЃР»Рё С‡РёСЃР»Рѕ Р°РІС‚РѕСЂРѕРІ РјРµРЅСЊС€Рµ СѓРєР°Р·Р°РЅРЅРѕР№ С†РёС„СЂС‹, С‚РѕРіРґР° РІ Р±РѕРєСЃРµ Р°РІС‚РѕСЂС‹ РІС‹РІРѕРґРёС‚СЃСЏ РїСЂРѕСЃС‚РѕР№ СЃРїРёСЃРѕРє, РµСЃР»Рё С‡РёСЃР»Рѕ Р°РІС‚РѕСЂРѕРІ Р±РѕР»СЊС€Рµ СѓРєР°Р·Р°РЅРЅРѕР№ С†РёС„СЂС‹, С‚РѕРіСЂР° РІС‹РІРѕРґРёС‚СЃСЏ drop-down СЃРїРёСЃРѕРє Р°РІС‚РѕСЂРѕРІ.');
+define('MAX_AUTHORS_LIST_DESC', 'Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё Р±РѕРєСЃР° Р°РІС‚РѕСЂС‹, РµСЃР»Рё СѓРєР°Р·Р°РЅР° С†РёС„СЂР° 1, С‚Рѕ СЃРїРёСЃРѕРє Р°РІС‚РѕСЂРѕРІ РІС‹РІРѕРґРёС‚СЃСЏ РІ РІРёРґРµ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРіРѕ drop-down СЃРїРёСЃРєР°. Р•СЃР»Рё СѓРєР°Р·Р°РЅР° Р»СЋР±Р°СЏ РґСЂСѓРіР°СЏ С†РёС„СЂР°, С‚Рѕ РІС‹РІРѕРґРёС‚СЃСЏ С‚РѕР»СЊРєРѕ X РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ РІ РІРёРґРµ СЂР°Р·РІС‘СЂРЅСѓС‚РѕРіРѕ РјРµРЅСЋ.');
+define('DISPLAY_AUTHOR_ARTICLE_LISTING_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р°РІС‚РѕСЂР° РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№?');
+define('DISPLAY_TOPIC_ARTICLE_LISTING_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЂР°Р·РґРµР» РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№?');
+define('DISPLAY_ABSTRACT_ARTICLE_LISTING_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Meta Description РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№?');
+define('DISPLAY_DATE_ADDED_ARTICLE_LISTING_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РґР°С‚Сѓ РґРѕР±Р°РІР»РµРЅРёСЏ РІ СЃРїРёСЃРєРµ СЃС‚Р°С‚РµР№?');
+define('MAX_ARTICLE_ABSTRACT_LENGTH_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РїРѕР»СЏ Meta Description.');
+define('ARTICLE_LIST_FILTER_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂ Р Р°Р·РґРµР»/РђРІС‚РѕСЂС‹?');
+define('ARTICLE_PREV_NEXT_BAR_LOCATION_DESC', 'Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РЅР°РІРёРіР°С†РёРё РЎР»РµРґСѓСЋС‰Р°СЏ/РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°<br><br>top - РІРµСЂС…<br>bottom - РЅРёР·<br>both - (РІРµСЂС…+РЅРёР·)');
+define('ARTICLE_WYSIWYG_ENABLE_DESC', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ РґР»СЏ РЅР°РїРёСЃР°РЅРёСЏ СЃС‚Р°С‚РµР№?');
+define('ARTICLE_MANAGER_WYSIWYG_BASIC_DESC', 'Basic - РџСЂРѕСЃС‚РѕР№ HTML СЂРµРґР°РєС‚РѕСЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.<br>Advanced - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ HTML СЂРµРґР°РєС‚РѕСЂ, РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№.');
+define('ARTICLE_MANAGER_WYSIWYG_WIDTH_DESC', 'РЁРёСЂРёРЅР° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 605)');
+define('ARTICLE_MANAGER_WYSIWYG_HEIGHT_DESC', 'Р’С‹СЃРѕС‚Р° HTML СЂРµРґР°РєС‚РѕСЂР° РІ РїРёРєСЃРµР»Р°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: 300)');
+define('ARTICLE_MANAGER_WYSIWYG_FONT_TYPE_DESC', 'РЁСЂРёС„С‚ РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°.');
+define('ARTICLE_MANAGER_WYSIWYG_FONT_SIZE_DESC', 'Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р° РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°.');
+define('ARTICLE_MANAGER_WYSIWYG_FONT_COLOUR_DESC', 'Р¦РІРµС‚ С€СЂРёС„С‚Р° РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°. Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ Р»РёР±Рѕ РєРѕРґ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ #FFFFFF, Р»РёР±Рѕ РЅР°Р·РІР°РЅРёРµ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ black.');
+define('ARTICLE_MANAGER_WYSIWYG_BG_COLOUR_DESC', 'Р¦РІРµС‚ С„РѕРЅР° РёРЅС‚РµСЂС„РµР№СЃР° HTML СЂРµРґР°РєС‚РѕСЂР°, РЅРёРєР°Рє РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРјРё РґР°РЅРЅС‹РјРё, РєРѕС‚РѕСЂС‹Рµ Р’С‹ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ HTML СЂРµРґР°РєС‚РѕСЂР°. Р’С‹ РјРѕР¶РµС‚Рµ СѓРєР°Р·Р°С‚СЊ Р»РёР±Рѕ РєРѕРґ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ #FFFFFF, Р»РёР±Рѕ РЅР°Р·РІР°РЅРёРµ С†РІРµС‚Р°, РЅР°РїСЂРёРјРµСЂ black.');
+define('ARTICLE_MANAGER_WYSIWYG_DEBUG_DESC', 'РЎР»РµРґРёС‚СЊ Р·Р° РіРµРЅРµСЂРёСЂСѓРµРјС‹Рј HTML-РєРѕРґРѕРј, С‚.Рµ. Р’С‹ РјРѕР¶РµС‚Рµ РІРёРґРµС‚СЊ, РєР°РєРѕР№ HTML-РєРѕРґ СЃРѕР·РґР°С‘С‚СЃСЏ РїСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё HTML СЂРµРґР°РєС‚РѕСЂР°.<br><br>0 - РћС‚РєР»СЋС‡РёС‚СЊ.<br>1 - Р’РєР»СЋС‡РёС‚СЊ<br>РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃС‚РѕРёС‚ 0');
+
+// РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»РµР№
+
+define('DIR_FS_CIP_TITLE' , 'Р”РёСЂРµРєС‚РѕСЂРёСЏ СЃ РјРѕРґСѓР»СЏРјРё');
+define('DIR_FS_CIP_DESC' , 'Р”РёСЂРµРєС‚РѕСЂРёСЏ, РіРґРµ Р±СѓРґСѓС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ Р°СЂС…РёРІС‹ СЃ РјРѕРґСѓР»СЏРјРё');
+define('ALLOW_SQL_BACKUP_TITLE' , 'Р”РµР»Р°С‚СЊ СЂРµР·РµСЂРІРЅСѓСЋ РєРѕРїРёСЋ Р±Р°Р·С‹ РґР°РЅРЅС‹С… РїРµСЂРµРґ СѓСЃС‚Р°РЅРѕРІРєРѕР№ РЅРѕРІРѕРіРѕ РјРѕРґСѓР»СЏ');
+define('ALLOW_SQL_BACKUP_DESC' , 'Р•СЃР»Рё Р±Р°Р·Р° РґР°РЅРЅС‹С… Р±РѕР»СЊС€Р°СЏ, Р»СѓС‡С€Рµ РїРѕСЃС‚Р°РІРёС‚СЊ false.');
+define('ALLOW_SQL_RESTORE_TITLE' , 'Р’РѕСЃСЃС‚Р°РЅР°РІР»РёРІР°С‚СЊ СЂРµР·РµСЂРІРЅСѓСЋ РєРѕРїРёСЋ Р±Р°Р·С‹ РґР°РЅРЅС‹С… РїСЂРё СѓРґР°Р»РµРЅРёРё РјРѕРґСѓР»СЏ');
+define('ALLOW_SQL_RESTORE_DESC' , 'РЎС‚Р°РІСЊС‚Рµ true С‚РѕР»СЊРєРѕ РґР»СЏ РѕС‚Р»Р°РґРєРё Рё РµСЃР»Рё Р’С‹ С‚РѕС‡РЅРѕ Р·РЅР°РµС‚Рµ, РєР°Рє Рё РґР»СЏ С‡РµРіРѕ СЂР°Р±РѕС‚Р°РµС‚ РґР°РЅРЅР°СЏ РѕРїС†РёСЏ.');
+define('ALLOW_FILES_BACKUP_TITLE' , 'Р”РµР»Р°С‚СЊ СЂРµР·РµСЂРІРЅС‹Рµ РєРѕРїРёРё С„Р°Р№Р»РѕРІ РїРµСЂРµРґ СѓСЃС‚Р°РЅРѕРІРєРѕР№ РЅРѕРІРѕРіРѕ РјРѕРґСѓР»СЏ');
+define('ALLOW_FILES_BACKUP_DESC' , 'РЎРѕС…СЂР°РЅСЏСЋС‚СЃСЏ С‚РѕР»СЊРєРѕ С„Р°Р№Р»С‹, РєРѕС‚РѕСЂС‹Рµ РёР·РјРµРЅСЏРµС‚ СѓСЃС‚Р°РЅРѕРІС‰РёРє РјРѕРґСѓР»РµР№, СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РїРѕСЃС‚Р°РІРёС‚СЊ true.');
+define('ALLOW_FILES_RESTORE_TITLE' , 'Р’РѕСЃСЃС‚Р°РЅР°РІР»РёРІР°С‚СЊ СЂРµР·РµСЂРІРЅС‹Рµ РєРѕРїРёРё С„Р°Р№Р»РѕРІ РїСЂРё СѓРґР°Р»РµРЅРёРё РјРѕРґСѓР»СЏ');
+define('ALLOW_FILES_RESTORE_DESC' , 'РЎС‚Р°РІСЊС‚Рµ true С‚РѕР»СЊРєРѕ РґР»СЏ РѕС‚Р»Р°РґРєРё Рё РµСЃР»Рё Р’С‹ С‚РѕС‡РЅРѕ Р·РЅР°РµС‚Рµ, РєР°Рє Рё РґР»СЏ С‡РµРіРѕ СЂР°Р±РѕС‚Р°РµС‚ РґР°РЅРЅР°СЏ РѕРїС†РёСЏ.');
+define('ALLOW_OVERWRITE_MODIFIED_TITLE' , 'Р Р°Р·СЂРµС€РёС‚СЊ РїРµСЂРµР·Р°РїРёСЃС‹РІР°С‚СЊ СѓР¶Рµ РёР·РјРµРЅС‘РЅРЅС‹Рµ С„Р°Р№Р»С‹');
+define('ALLOW_OVERWRITE_MODIFIED_DESC' , 'Р•СЃР»Рё true, С‚Рѕ СѓСЃС‚Р°РЅРѕРІС‰РёРє РјРѕРґСѓР»РµР№ РїРµСЂРµР·Р°РїРёС€РµС‚ СѓР¶Рµ РёР·РјРµРЅС‘РЅРЅС‹Р№ РїСЂРё СѓСЃС‚Р°РЅРѕРІРєРµ РґСЂСѓРіРѕРіРѕ РјРѕРґСѓР»СЏ С„Р°Р№Р». РЎС‚Р°РІСЊС‚Рµ true С‚РѕР»СЊРєРѕ РґР»СЏ РѕС‚Р»Р°РґРєРё Рё РµСЃР»Рё Р’С‹ С‚РѕС‡РЅРѕ Р·РЅР°РµС‚Рµ, РєР°Рє Рё РґР»СЏ С‡РµРіРѕ СЂР°Р±РѕС‚Р°РµС‚ РґР°РЅРЅР°СЏ РѕРїС†РёСЏ.');
+define('TEXT_LINK_FORUM_TITLE' , 'РЎСЃС‹Р»РєР° РЅР° С„РѕСЂСѓРј');
+define('TEXT_LINK_FORUM_DESC' , 'РЎСЃС‹Р»РєР° РЅР° С„РѕСЂСѓРј РїРѕРґРґРµР¶РєРё');
+define('TEXT_LINK_CONTR_TITLE' , 'РЎСЃС‹Р»РєР° РЅР° РєР°С‚Р°Р»РѕРі СЃ РјРѕРґСѓР»СЏРјРё');
+define('TEXT_LINK_CONTR_DESC' , 'URL РєР°С‚Р°Р»РѕРіР° СЃ РґРѕСЃС‚СѓРїРЅС‹РјРё РјРѕРґСѓР»СЏРјРё РґР»СЏ РјР°РіР°Р·РёРЅР°.');
+define('ALWAYS_DISPLAY_REMOVE_BUTTON_TITLE' , 'Р’СЃРµРіРґР° РїРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєСѓ СѓРґР°Р»РёС‚СЊ');
+define('ALWAYS_DISPLAY_REMOVE_BUTTON_DESC' , 'РџРѕСЃС‚Р°РІСЊС‚Рµ true Рё РєРЅРѕРїРєР° СѓРґР°Р»РёС‚СЊ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РЅР°РїСЂРѕС‚РёРІ РєР°Р¶РґРѕРіРѕ РјРѕРґСѓР»СЏ, РІРЅРµ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РѕРіРѕ, СѓСЃС‚Р°РЅРѕРІР»РµРЅ РѕРЅ РёР»Рё РЅРµС‚.');
+define('ALWAYS_DISPLAY_INSTALL_BUTTON_TITLE' , 'Р’СЃРµРіРґР° РїРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєСѓ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ');
+define('ALWAYS_DISPLAY_INSTALL_BUTTON_DESC' , 'РџРѕСЃС‚Р°РІСЊС‚Рµ true Рё РєРЅРѕРїРєР° СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р±СѓРґРµС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РЅР°РїСЂРѕС‚РёРІ РєР°Р¶РґРѕРіРѕ РјРѕРґСѓР»СЏ, РІРЅРµ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РѕРіРѕ, СѓСЃС‚Р°РЅРѕРІР»РµРЅ РѕРЅ РёР»Рё РЅРµС‚.');
+define('SHOW_PACK_BUTTONS_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєРё Р°СЂС…РёРІРёСЂРѕРІР°С‚СЊ/СЂР°Р·Р°СЂС…РёРІРёСЂРѕРІР°С‚СЊ');
+define('SHOW_PACK_BUTTONS_DESC' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ - true, РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ - false.');
+define('SHOW_PERMISSIONS_COLUMN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РѕРЅРєСѓ РїСЂР°РІР° РґРѕСЃС‚СѓРїР°');
+define('SHOW_PERMISSIONS_COLUMN_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ true Рё РІ СЃРїРёСЃРєРµ РјРѕРґСѓР»РµР№ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РєРѕР»РѕРЅРєР° РїСЂР°РІР° РґРѕСЃС‚СѓРїР°.');
+define('SHOW_USER_GROUP_COLUMN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РѕРЅРєСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ/РіСЂСѓРїРїР°');
+define('SHOW_USER_GROUP_COLUMN_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ true Рё РІ СЃРїРёСЃРєРµ РјРѕРґСѓР»РµР№ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РєРѕР»РѕРЅРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ/РіСЂСѓРїРїР°.');
+define('SHOW_UPLOADER_COLUMN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РѕРЅРєСѓ Р°РІС‚РѕСЂ РјРѕРґСѓР»СЏ');
+define('SHOW_UPLOADER_COLUMN_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ true Рё РІ СЃРїРёСЃРєРµ РјРѕРґСѓР»РµР№ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РєРѕР»РѕРЅРєР° Р°РІС‚РѕСЂ РјРѕРґСѓР»СЏ.');
+define('SHOW_UPLOADED_COLUMN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РѕРЅРєСѓ РґР°С‚Р°');
+define('SHOW_UPLOADED_COLUMN_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ true Рё РІ СЃРїРёСЃРєРµ РјРѕРґСѓР»РµР№ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РєРѕР»РѕРЅРєР° РґР°С‚Р°.');
+define('SHOW_SIZE_COLUMN_TITLE' , 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РѕРЅРєСѓ СЂР°Р·РјРµСЂ');
+define('SHOW_SIZE_COLUMN_DESC' , 'Р’С‹Р±РµСЂРёС‚Рµ true Рё РІ СЃРїРёСЃРєРµ РјРѕРґСѓР»РµР№ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РєРѕР»РѕРЅРєР° СЂР°Р·РјРµСЂ.');
+define('USE_LOG_SYSTEM_TITLE' , 'Р’РµСЃС‚Рё Р»РѕРі');
+define('USE_LOG_SYSTEM_DESC' , 'Р•СЃР»Рё true, С‚Рѕ РІСЃС‘ РґРµР№СЃС‚РІРёСЏ СѓСЃС‚Р°РЅРѕРІС‰РёРєР° РјРѕРґСѓР»РµР№ Р±СѓРґСѓС‚ Р·Р°РїРёСЃС‹РІР°С‚СЊСЃСЏ РІ РїР°РїРєСѓ backups.');
+define('MAX_UPLOADED_FILESIZE_TITLE' , 'РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ Р·Р°РіСЂСѓР¶Р°РµРјС‹С… CIP РјРѕРґСѓР»РµР№');
+define('MAX_UPLOADED_FILESIZE_DESC' , 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ Р°СЂС…РёРІРѕРІ, РєРѕС‚РѕСЂС‹Рµ Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РіСЂСѓР¶Р°С‚СЊ С‡РµСЂРµР· Р±СЂР°СѓР·РµСЂ РІ СѓСЃС‚Р°РЅРѕРІС‰РёРєРµ РјРѕРґСѓР»РµР№.');
+
+define('MAX_QTY_IN_CART_TITLE' , 'РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РІ РєРѕСЂР·РёРЅРµ');
+define('MAX_QTY_IN_CART_DESC' , 'РњР°РєСЃРёРјР°Р»СЊРЅРѕ РІРѕР·РјРѕР¶РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°, РєРѕС‚РѕСЂРѕРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РґРѕР±Р°РІР»РµРЅРѕ РІ РєРѕСЂР·РёРЅСѓ (0 - Р±РµР· РѕРіСЂР°РЅРёС‡РµРЅРёР№)');
+
+// Р РµРґР°РєС‚РѕСЂ Р·Р°РєР°Р·РѕРІ
+
+define('ORDER_EDITOR_PAYMENT_DROPDOWN_TITLE','РџРѕРєР°Р·С‹РІР°С‚СЊ dropdown РјРµРЅСЋ СЃ РјРѕРґСѓР»СЏРјРё РѕРїР»Р°С‚С‹?');
+define('ORDER_EDITOR_PAYMENT_DROPDOWN_DESC','РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РІ РІРёРґРµ drop-down РјРµРЅСЋ (true), Р»РёР±Рѕ РІ РІРёРґРµ input РїРѕР»СЏ (false).');
+define('ORDER_EDITOR_USE_SPPC_TITLE','РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РјРѕРґСѓР»СЏ SPPC (РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІС‹РєР»СЋС‡РµРЅРѕ)?');
+define('ORDER_EDITOR_USE_SPPC_DESC','Р”Р°РЅРЅР°СЏ РѕРїС†РёСЏ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІС‹РєР»СЋС‡РµРЅР°, С‚.Рє. РЅР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РјРѕРґСѓР»СЊ SPPC РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ.');
+define('ORDER_EDITOR_USE_AJAX_TITLE','РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Ajax РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё Р·Р°РєР°Р·Р°?');
+define('ORDER_EDITOR_USE_AJAX_DESC','Р•СЃР»Рё Р’Р°С€ Р±СЂР°СѓР·РµСЂ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ JavaScript, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ false.');
+define('ORDER_EDITOR_CREDIT_CARD_TITLE','Р’С‹Р±РµСЂРё СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРѕР№');
+define('ORDER_EDITOR_CREDIT_CARD_DESC','Р РµРґР°РєС‚РѕСЂ Р·Р°РєР°Р·РѕРІ РІС‹РІРµРґРµС‚ РїРѕР»СЏ РґР»СЏ СѓРєР°Р·Р°РЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РєР°СЂС‚РѕС‡РєРµ РєРѕРіРґР° Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅ СѓРєР°Р·Р°РЅРЅС‹Р№ РІ РЅР°СЃС‚СЂРѕР№РєРµ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹.');
+
+define('MAX_REVIEWS_TITLE','РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р·С‹РІРѕРІ РЅР° СЃС‚СЂР°РЅРёС†Рµ РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°');
+define('MAX_REVIEWS_DESC','РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р·С‹РІРѕРІ, РѕС‚РѕР±СЂР°Р¶Р°РµРјС‹С… РЅР° СЃС‚СЂР°РЅРёС†Рµ РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°.');
+
+define('ENABLE_TABS_TITLE','Р Р°Р·СЂРµС€РёС‚СЊ Р·Р°РєР»Р°РґРєРё РІ Р°РґРјРёРЅРєРµ');
+define('ENABLE_TABS_DESC','РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р·Р°РєР»Р°РґРєРё РІ Р°РґРјРёРЅРєРµ РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё/СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё РєР°С‚РµРіРѕСЂРёР№, С‚РѕРІР°СЂРѕРІ, РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё Р·Р°РєР°Р·РѕРІ.');
+
+define('MASTER_PASS_TITLE','РњР°СЃС‚РµСЂ РїР°СЂРѕР»СЊ');
+define('MASTER_PASS_DESC','РЎ РґР°РЅРЅС‹Рј РїР°СЂРѕР»РµРј Р’С‹ СЃРјРѕР¶РµС‚Рµ РІС…РѕРґРёС‚СЊ РІ РјР°РіР°Р·РёРЅ РїРѕРґ Р»СЋР±С‹Рј РєР»РёРµРЅС‚РѕРј, СѓРєР°Р·С‹РІР°СЏ РїСЂРё РІС…РѕРґРµ email РєР»РёРµРЅС‚Р° Рё РјР°СЃС‚РµСЂ РїР°СЂРѕР»СЊ');
+
+define('OPTIONS_AS_IMAGES_ENABLED_TITLE','РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРѕРґСѓР»СЊ РєР°СЂС‚РёРЅРѕРє Р°С‚СЂРёР±СѓС‚РѕРІ?');
+define('OPTIONS_AS_IMAGES_ENABLED_DESC','РҐРѕС‚РёС‚Рµ СЂР°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ?');
+define('OPTIONS_IMAGES_NUMBER_PER_ROW_TITLE','Р§РёСЃР»Рѕ РєР°СЂС‚РёРЅРѕРє РІ РѕРґРЅРѕРј СЂСЏРґСѓ');
+define('OPTIONS_IMAGES_NUMBER_PER_ROW_DESC','Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ РґР»РёРЅСѓ СЂСЏРґР° РєР°СЂС‚РёРЅРѕРє');
+define('OPTIONS_IMAGES_WIDTH_TITLE','РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё Р°С‚СЂРёР±СѓС‚Р°');
+define('OPTIONS_IMAGES_WIDTH_DESC','РЈРєР°Р¶РёС‚Рµ С€РёСЂРёРЅС‹ РєР°СЂС‚РёРЅРєРё Р°С‚СЂРёР±СѓС‚Р°.');
+define('OPTIONS_IMAGES_HEIGHT_TITLE','Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё Р°С‚СЂРёР±СѓС‚Р°');
+define('OPTIONS_IMAGES_HEIGHT_DESC','РЈРєР°Р¶РёС‚Рµ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё Р°С‚СЂРёР±СѓС‚Р°.');
+define('OPTIONS_IMAGES_CLICK_ENLARGE_TITLE','РЈРІРµР»РёС‡РµРЅРёРµ РєР»РёРєРѕРј');
+define('OPTIONS_IMAGES_CLICK_ENLARGE_DESC','РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ С„СѓРЅРєС†РёСЋ СѓРІРµР»РёС‡РµРЅРёСЏ РєР°СЂС‚РёРЅРєРё РєР»РёРєРѕРј РјС‹С€РєРё?');
+
+define('SET_BOX_CATEGORIES_TITLE', 'Р Р°Р·РґРµР»С‹');
+define('SET_BOX_INFORMATION_TITLE', 'РРЅС„РѕСЂРјР°С†РёСЏ');
+define('SET_BOX_MANUFACTURERS_TITLE', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ');
+define('SET_BOX_LATESTNEWS_TITLE', 'РќРѕРІРѕСЃС‚Рё');
+define('SET_BOX_SEARCH_TITLE', 'РџРѕРёСЃРє');
+define('SET_BOX_WHATSNEW_TITLE', 'РќРѕРІРёРЅРєРё');
+define('SET_BOX_FEATURED_TITLE', 'Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ');
+define('SET_BOX_SHOP_BY_PRICE_TITLE', 'РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С†РµРЅРµ');
+define('SET_BOX_ARTICLES_TITLE', 'РЎС‚Р°С‚СЊРё');
+define('SET_BOX_AUTHORS_TITLE', 'РђРІС‚РѕСЂС‹');
+define('SET_BOX_LINKS_TITLE', 'РЎСЃС‹Р»РєРё');
+define('SET_BOX_CART_TITLE', 'РљРѕСЂР·РёРЅР°');
+define('SET_BOX_DOWNLOADS_TITLE', 'РњРѕРё Р·Р°РіСЂСѓР·РєРё');
+define('SET_BOX_HELP_TITLE', 'РљРѕРЅСЃСѓР»СЊС‚Р°РЅС‚');
+define('SET_BOX_LOGIN_TITLE', 'Р’С…РѕРґ');
+define('SET_BOX_WISHLIST_TITLE', 'РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('SET_BOX_AFFILIATE_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°');
+define('SET_BOX_FAQ_TITLE', 'Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹ - РєР°С‚РµРіРѕСЂРёРё');
+define('SET_BOX_FAQ_LATEST_TITLE', 'РџРѕСЃР»РµРґРЅРёРµ РІРѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹');
+define('SET_BOX_POLLS_TITLE', 'РћРїСЂРѕСЃС‹');
+define('SET_BOX_MANUFACTURERS_INFO_TITLE', 'РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїСЂРѕРёР·РІРѕРґРёС‚РµР»Рµ');
+define('SET_BOX_ORDER_HISTORY_TITLE', 'РРЅС„РѕСЂРјР°С†РёСЏ Рѕ Р·Р°РєР°Р·Р°С…');
+define('SET_BOX_BESTSELLERS_TITLE', 'Р›СѓС‡С€РёРµ С‚РѕРІР°СЂС‹');
+define('SET_BOX_NOTIFICATIONS_TITLE', 'РЈРІРµРґРѕРјР»РµРЅРёСЏ');
+define('SET_BOX_SET_BOX_TELL_A_FRIEND_TITLE', 'Р Р°СЃСЃРєР°Р·Р°С‚СЊ РґСЂСѓРіСѓ');
+define('SET_BOX_SPECIALS_TITLE', 'РЎРєРёРґРєРё');
+define('SET_BOX_REVIEWS_TITLE', 'РћС‚Р·С‹РІС‹');
+define('SET_BOX_LANGUAGES_TITLE', 'РЇР·С‹РєРё');
+define('SET_BOX_CURRENCIES_TITLE', 'Р’Р°Р»СЋС‚С‹');
+
+define('SET_BOX_CATEGORIES_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_INFORMATION_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_MANUFACTURERS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_LATESTNEWS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_SEARCH_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_WHATSNEW_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_FEATURED_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_SHOP_BY_PRICE_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_ARTICLES_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_AUTHORS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_LINKS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_CART_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_DOWNLOADS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_HELP_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_LOGIN_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_WISHLIST_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_AFFILIATE_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_FAQ_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_FAQ_LATEST_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_POLLS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_MANUFACTURERS_INFO_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_ORDER_HISTORY_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_BESTSELLERS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_NOTIFICATIONS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_SET_BOX_TELL_A_FRIEND_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_SPECIALS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_REVIEWS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_LANGUAGES_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
+define('SET_BOX_CURRENCIES_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
 
 //Products Specifications
 
-define('SPECIFICATIONS_PRODUCTS_HEAD_TITLE', '<b>Страница карточки товара</b>');
-define('SPECIFICATIONS_PRODUCTS_HEAD_DESC', 'Страница карточки товара');
-define('SPECIFICATIONS_MINIMUM_PRODUCTS_TITLE', 'Минимум спецификаций у товара');
-define('SPECIFICATIONS_MINIMUM_PRODUCTS_DESC', 'Минимальное количество спецификаций, которое должно быть у товара, необходимое для отображение бокса спецификаций на странице карточки товара');
-define('SPECIFICATIONS_SHOW_NAME_PRODUCTS_TITLE', 'Показывать название спецификации');
-define('SPECIFICATIONS_SHOW_NAME_PRODUCTS_DESC', 'Показывать название спецификации в боксе');
-define('SPECIFICATIONS_SHOW_TITLE_PRODUCTS_TITLE', 'Показывать заголовок спецификации');
-define('SPECIFICATIONS_SHOW_TITLE_PRODUCTS_DESC', 'Показывать заголовок спецификации в боксе');
-define('SPECIFICATIONS_BOX_FRAME_STYLE_TITLE', 'Стиль бокса спецификаций');
-define('SPECIFICATIONS_BOX_FRAME_STYLE_DESC', 'Показывать спецификации в стандартном боксе (Stock), в простом боксе (Simple), без бокса (Plain), либо в виде закладок (Tabs)');
-define('SPECIFICATIONS_REVIEWS_TAB_TITLE', 'Показывать закладку отзывы');
-define('SPECIFICATIONS_REVIEWS_TAB_DESC', 'Показывать закладку отзывы');
-define('SPECIFICATIONS_MAX_REVIEWS_TITLE', 'Максимум отзывов в закладке');
-define('SPECIFICATIONS_MAX_REVIEWS_DESC', 'Максимальное количество отзывов, отображаемых в закладке отзывы');
-define('SPECIFICATIONS_QUESTION_TAB_TITLE', 'Показывать закладку задать вопрос о товаре');
-define('SPECIFICATIONS_QUESTION_TAB_DESC', 'Показывать закладку задать вопрос о товаре');
+define('SPECIFICATIONS_PRODUCTS_HEAD_TITLE', '<b>РЎС‚СЂР°РЅРёС†Р° РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°</b>');
+define('SPECIFICATIONS_PRODUCTS_HEAD_DESC', 'РЎС‚СЂР°РЅРёС†Р° РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_MINIMUM_PRODUCTS_TITLE', 'РњРёРЅРёРјСѓРј СЃРїРµС†РёС„РёРєР°С†РёР№ Сѓ С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_MINIMUM_PRODUCTS_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРїРµС†РёС„РёРєР°С†РёР№, РєРѕС‚РѕСЂРѕРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Сѓ С‚РѕРІР°СЂР°, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±РѕРєСЃР° СЃРїРµС†РёС„РёРєР°С†РёР№ РЅР° СЃС‚СЂР°РЅРёС†Рµ РєР°СЂС‚РѕС‡РєРё С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_SHOW_NAME_PRODUCTS_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё');
+define('SPECIFICATIONS_SHOW_NAME_PRODUCTS_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ СЃРїРµС†РёС„РёРєР°С†РёРё РІ Р±РѕРєСЃРµ');
+define('SPECIFICATIONS_SHOW_TITLE_PRODUCTS_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РіРѕР»РѕРІРѕРє СЃРїРµС†РёС„РёРєР°С†РёРё');
+define('SPECIFICATIONS_SHOW_TITLE_PRODUCTS_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РіРѕР»РѕРІРѕРє СЃРїРµС†РёС„РёРєР°С†РёРё РІ Р±РѕРєСЃРµ');
+define('SPECIFICATIONS_BOX_FRAME_STYLE_TITLE', 'РЎС‚РёР»СЊ Р±РѕРєСЃР° СЃРїРµС†РёС„РёРєР°С†РёР№');
+define('SPECIFICATIONS_BOX_FRAME_STYLE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРїРµС†РёС„РёРєР°С†РёРё РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРј Р±РѕРєСЃРµ (Stock), РІ РїСЂРѕСЃС‚РѕРј Р±РѕРєСЃРµ (Simple), Р±РµР· Р±РѕРєСЃР° (Plain), Р»РёР±Рѕ РІ РІРёРґРµ Р·Р°РєР»Р°РґРѕРє (Tabs)');
+define('SPECIFICATIONS_REVIEWS_TAB_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РєР»Р°РґРєСѓ РѕС‚Р·С‹РІС‹');
+define('SPECIFICATIONS_REVIEWS_TAB_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РєР»Р°РґРєСѓ РѕС‚Р·С‹РІС‹');
+define('SPECIFICATIONS_MAX_REVIEWS_TITLE', 'РњР°РєСЃРёРјСѓРј РѕС‚Р·С‹РІРѕРІ РІ Р·Р°РєР»Р°РґРєРµ');
+define('SPECIFICATIONS_MAX_REVIEWS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р·С‹РІРѕРІ, РѕС‚РѕР±СЂР°Р¶Р°РµРјС‹С… РІ Р·Р°РєР»Р°РґРєРµ РѕС‚Р·С‹РІС‹');
+define('SPECIFICATIONS_QUESTION_TAB_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РєР»Р°РґРєСѓ Р·Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ Рѕ С‚РѕРІР°СЂРµ');
+define('SPECIFICATIONS_QUESTION_TAB_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РєР»Р°РґРєСѓ Р·Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ Рѕ С‚РѕРІР°СЂРµ');
 
-define('SPECIFICATIONS_COMPARISON_HEAD_TITLE', '<b>Страница сравнения</b>');
-define('SPECIFICATIONS_COMPARISON_HEAD_DESC', 'Страница сравнения');
-define('SPECIFICATIONS_MINIMUM_COMPARISON_TITLE', 'Минимум спецификаций для сравнения');
-define('SPECIFICATIONS_MINIMUM_COMPARISON_DESC', 'Минимальное количество спецификаций, которое должно быть у товара, необходимое для возможности сравнения');
-define('SPECIFICATIONS_COMP_LINK_TITLE', 'Ссылка сравнения на начальной странице');
-define('SPECIFICATIONS_COMP_LINK_DESC', 'Показывать ссылку сравнения на начальной странице');
-define('SPECIFICATIONS_COMP_TABLE_ROW_TITLE', 'Рядов в таблице сравнения');
-define('SPECIFICATIONS_COMP_TABLE_ROW_DESC', 'Количество рядов в таблице сравнения');
-define('SPECIFICATIONS_BOX_COMPARISON_TITLE', 'Показывать сравнение');
-define('SPECIFICATIONS_BOX_COMPARISON_DESC', 'Показывать таблицу сравнения на отдельной странице');
-define('SPECIFICATIONS_BOX_COMP_INDEX_TITLE', 'Сравнение на начальной странице');
-define('SPECIFICATIONS_BOX_COMP_INDEX_DESC', 'Показывать таблицу сравнения на начальной странице вместо страницы списка товара');
-define('SPECIFICATIONS_COMP_SUFFIX_TITLE', 'Суффикс сравнения в заголовке');
-define('SPECIFICATIONS_COMP_SUFFIX_DESC', 'Показывать суффикс в заголовке таблицы сравнения');
-define('SPECIFICATIONS_COMPARISON_STYLE_TITLE', 'Стиль бокса спецификаций');
-define('SPECIFICATIONS_COMPARISON_STYLE_DESC', 'Показывать спецификации в стандартном боксе (Stock), в простом боксе (Simple), либо без бокса (Plain)');
-define('SPECIFICATIONS_COMBO_MFR_TITLE', 'Показывать производителя');
-define('SPECIFICATIONS_COMBO_MFR_DESC', 'Показывать производителя (0 = не показывать, 1-9 = порядок сортировки)');
-define('SPECIFICATIONS_COMBO_WEIGHT_TITLE', 'Показывать вес');
-define('SPECIFICATIONS_COMBO_WEIGHT_DESC', 'Показывать вес (0 = не показывать, 1-9 = порядок сортировки)');
-define('SPECIFICATIONS_COMBO_PRICE_TITLE', 'Показывать стоимость');
-define('SPECIFICATIONS_COMBO_PRICE_DESC', 'Показывать стоимость (0 = не показывать, 1-9 = порядок сортировки)');
-define('SPECIFICATIONS_COMBO_MODEL_TITLE', 'Показывать код товара');
-define('SPECIFICATIONS_COMBO_MODEL_DESC', 'Показывать код товара (0 = не показывать, 1-9 = порядок сортировки)');
-define('SPECIFICATIONS_COMBO_IMAGE_TITLE', 'Показывать картинку товара');
-define('SPECIFICATIONS_COMBO_IMAGE_DESC', 'Показывать картинку товара (0 = не показывать, 1-9 = порядок сортировки)');
-define('SPECIFICATIONS_COMBO_NAME_TITLE', 'Показывать название товара');
-define('SPECIFICATIONS_COMBO_NAME_DESC', 'Показывать название товара (0 = не показывать, 1-9 = порядок сортировки)');
-define('SPECIFICATIONS_COMBO_BUY_NOW_TITLE', 'Показывать кнопку купить сейчас');
-define('SPECIFICATIONS_COMBO_BUY_NOW_DESC', 'Показывать кнопку купить сейчас (0 = не показывать, 1-9 = порядок сортировки)');
+define('SPECIFICATIONS_COMPARISON_HEAD_TITLE', '<b>РЎС‚СЂР°РЅРёС†Р° СЃСЂР°РІРЅРµРЅРёСЏ</b>');
+define('SPECIFICATIONS_COMPARISON_HEAD_DESC', 'РЎС‚СЂР°РЅРёС†Р° СЃСЂР°РІРЅРµРЅРёСЏ');
+define('SPECIFICATIONS_MINIMUM_COMPARISON_TITLE', 'РњРёРЅРёРјСѓРј СЃРїРµС†РёС„РёРєР°С†РёР№ РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ');
+define('SPECIFICATIONS_MINIMUM_COMPARISON_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРїРµС†РёС„РёРєР°С†РёР№, РєРѕС‚РѕСЂРѕРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Сѓ С‚РѕРІР°СЂР°, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё СЃСЂР°РІРЅРµРЅРёСЏ');
+define('SPECIFICATIONS_COMP_LINK_TITLE', 'РЎСЃС‹Р»РєР° СЃСЂР°РІРЅРµРЅРёСЏ РЅР° РЅР°С‡Р°Р»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('SPECIFICATIONS_COMP_LINK_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ СЃСЂР°РІРЅРµРЅРёСЏ РЅР° РЅР°С‡Р°Р»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('SPECIFICATIONS_COMP_TABLE_ROW_TITLE', 'Р СЏРґРѕРІ РІ С‚Р°Р±Р»РёС†Рµ СЃСЂР°РІРЅРµРЅРёСЏ');
+define('SPECIFICATIONS_COMP_TABLE_ROW_DESC', 'РљРѕР»РёС‡РµСЃС‚РІРѕ СЂСЏРґРѕРІ РІ С‚Р°Р±Р»РёС†Рµ СЃСЂР°РІРЅРµРЅРёСЏ');
+define('SPECIFICATIONS_BOX_COMPARISON_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЂР°РІРЅРµРЅРёРµ');
+define('SPECIFICATIONS_BOX_COMPARISON_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ СЃСЂР°РІРЅРµРЅРёСЏ РЅР° РѕС‚РґРµР»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('SPECIFICATIONS_BOX_COMP_INDEX_TITLE', 'РЎСЂР°РІРЅРµРЅРёРµ РЅР° РЅР°С‡Р°Р»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('SPECIFICATIONS_BOX_COMP_INDEX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ СЃСЂР°РІРЅРµРЅРёСЏ РЅР° РЅР°С‡Р°Р»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ РІРјРµСЃС‚Рѕ СЃС‚СЂР°РЅРёС†С‹ СЃРїРёСЃРєР° С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_COMP_SUFFIX_TITLE', 'РЎСѓС„С„РёРєСЃ СЃСЂР°РІРЅРµРЅРёСЏ РІ Р·Р°РіРѕР»РѕРІРєРµ');
+define('SPECIFICATIONS_COMP_SUFFIX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСѓС„С„РёРєСЃ РІ Р·Р°РіРѕР»РѕРІРєРµ С‚Р°Р±Р»РёС†С‹ СЃСЂР°РІРЅРµРЅРёСЏ');
+define('SPECIFICATIONS_COMPARISON_STYLE_TITLE', 'РЎС‚РёР»СЊ Р±РѕРєСЃР° СЃРїРµС†РёС„РёРєР°С†РёР№');
+define('SPECIFICATIONS_COMPARISON_STYLE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРїРµС†РёС„РёРєР°С†РёРё РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРј Р±РѕРєСЃРµ (Stock), РІ РїСЂРѕСЃС‚РѕРј Р±РѕРєСЃРµ (Simple), Р»РёР±Рѕ Р±РµР· Р±РѕРєСЃР° (Plain)');
+define('SPECIFICATIONS_COMBO_MFR_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ');
+define('SPECIFICATIONS_COMBO_MFR_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
+define('SPECIFICATIONS_COMBO_WEIGHT_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІРµСЃ');
+define('SPECIFICATIONS_COMBO_WEIGHT_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РІРµСЃ (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
+define('SPECIFICATIONS_COMBO_PRICE_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ');
+define('SPECIFICATIONS_COMBO_PRICE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
+define('SPECIFICATIONS_COMBO_MODEL_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_COMBO_MODEL_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕРґ С‚РѕРІР°СЂР° (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
+define('SPECIFICATIONS_COMBO_IMAGE_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_COMBO_IMAGE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ С‚РѕРІР°СЂР° (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
+define('SPECIFICATIONS_COMBO_NAME_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('SPECIFICATIONS_COMBO_NAME_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР° (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
+define('SPECIFICATIONS_COMBO_BUY_NOW_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєСѓ РєСѓРїРёС‚СЊ СЃРµР№С‡Р°СЃ');
+define('SPECIFICATIONS_COMBO_BUY_NOW_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєСѓ РєСѓРїРёС‚СЊ СЃРµР№С‡Р°СЃ (0 = РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, 1-9 = РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё)');
 
-define('SPECIFICATIONS_FILTERS_HEAD_TITLE', '<b>Фильтры товаров</b>');
-define('SPECIFICATIONS_FILTERS_HEAD_DESC', 'Фильтры товаров');
-define('SPECIFICATIONS_FILTERS_MODULE_TITLE', 'Показывать фильтры');
-define('SPECIFICATIONS_FILTERS_MODULE_DESC', 'Показывать фильтры в центральной колонке (основной части страницы)');
-define('SPECIFICATIONS_FILTERS_BOX_TITLE', 'Показывать бокс фильтры');
-define('SPECIFICATIONS_FILTERS_BOX_DESC', 'Показывать сбоку бокс фильтры');
-define('SPECIFICATIONS_FILTER_MINIMUM_TITLE', 'Минимум спецификаций для фильтра');
-define('SPECIFICATIONS_FILTER_MINIMUM_DESC', 'Минимальное количество спецификаций, необходимое для отображения бокса фильтры');
-define('SPECIFICATIONS_FILTER_SUBCATEGORIES_TITLE', 'Фильтры подкатегорий');
-define('SPECIFICATIONS_FILTER_SUBCATEGORIES_DESC', 'Включать подкатегории в результаты фильтрации');
-define('SPECIFICATIONS_FILTER_SHOW_COUNT_TITLE', 'Показывать счётчик товаров в фильтрах');
-define('SPECIFICATIONS_FILTER_SHOW_COUNT_DESC', 'Показывать количество найденных товаров');
-define('SPECIFICATIONS_FILTER_NO_RESULT_TITLE', 'Не найдено товаров при фильтрации');
-define('SPECIFICATIONS_FILTER_NO_RESULT_DESC', 'Что будет отображаться в случае отсутствия найденных товаров при фильтрации.');
-define('SPECIFICATIONS_FILTER_BREADCRUMB_TITLE', 'Показывать навигацию');
-define('SPECIFICATIONS_FILTER_BREADCRUMB_DESC', 'Показывать текущие фильтры в навигации');
-define('SPECIFICATIONS_FILTER_IMAGE_WIDTH_TITLE', 'Ширина картинки фильтров');
-define('SPECIFICATIONS_FILTER_IMAGE_WIDTH_DESC', 'Установите ширину картинки, отображаемой в боксе фильтры.');
-define('SPECIFICATIONS_FILTER_IMAGE_HEIGHT_TITLE', 'Высота картинки фильтров');
-define('SPECIFICATIONS_FILTER_IMAGE_HEIGHT_DESC', 'Установите высоту картинки, отображаемой в боксе фильтры.');
+define('SPECIFICATIONS_FILTERS_HEAD_TITLE', '<b>Р¤РёР»СЊС‚СЂС‹ С‚РѕРІР°СЂРѕРІ</b>');
+define('SPECIFICATIONS_FILTERS_HEAD_DESC', 'Р¤РёР»СЊС‚СЂС‹ С‚РѕРІР°СЂРѕРІ');
+define('SPECIFICATIONS_FILTERS_MODULE_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂС‹');
+define('SPECIFICATIONS_FILTERS_MODULE_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С„РёР»СЊС‚СЂС‹ РІ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ РєРѕР»РѕРЅРєРµ (РѕСЃРЅРѕРІРЅРѕР№ С‡Р°СЃС‚Рё СЃС‚СЂР°РЅРёС†С‹)');
+define('SPECIFICATIONS_FILTERS_BOX_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р±РѕРєСЃ С„РёР»СЊС‚СЂС‹');
+define('SPECIFICATIONS_FILTERS_BOX_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃР±РѕРєСѓ Р±РѕРєСЃ С„РёР»СЊС‚СЂС‹');
+define('SPECIFICATIONS_FILTER_MINIMUM_TITLE', 'РњРёРЅРёРјСѓРј СЃРїРµС†РёС„РёРєР°С†РёР№ РґР»СЏ С„РёР»СЊС‚СЂР°');
+define('SPECIFICATIONS_FILTER_MINIMUM_DESC', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРїРµС†РёС„РёРєР°С†РёР№, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р±РѕРєСЃР° С„РёР»СЊС‚СЂС‹');
+define('SPECIFICATIONS_FILTER_SUBCATEGORIES_TITLE', 'Р¤РёР»СЊС‚СЂС‹ РїРѕРґРєР°С‚РµРіРѕСЂРёР№');
+define('SPECIFICATIONS_FILTER_SUBCATEGORIES_DESC', 'Р’РєР»СЋС‡Р°С‚СЊ РїРѕРґРєР°С‚РµРіРѕСЂРёРё РІ СЂРµР·СѓР»СЊС‚Р°С‚С‹ С„РёР»СЊС‚СЂР°С†РёРё');
+define('SPECIFICATIONS_FILTER_SHOW_COUNT_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЃС‡С‘С‚С‡РёРє С‚РѕРІР°СЂРѕРІ РІ С„РёР»СЊС‚СЂР°С…');
+define('SPECIFICATIONS_FILTER_SHOW_COUNT_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅР°Р№РґРµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ');
+define('SPECIFICATIONS_FILTER_NO_RESULT_TITLE', 'РќРµ РЅР°Р№РґРµРЅРѕ С‚РѕРІР°СЂРѕРІ РїСЂРё С„РёР»СЊС‚СЂР°С†РёРё');
+define('SPECIFICATIONS_FILTER_NO_RESULT_DESC', 'Р§С‚Рѕ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РІ СЃР»СѓС‡Р°Рµ РѕС‚СЃСѓС‚СЃС‚РІРёСЏ РЅР°Р№РґРµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РїСЂРё С„РёР»СЊС‚СЂР°С†РёРё.');
+define('SPECIFICATIONS_FILTER_BREADCRUMB_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°РІРёРіР°С†РёСЋ');
+define('SPECIFICATIONS_FILTER_BREADCRUMB_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ С‚РµРєСѓС‰РёРµ С„РёР»СЊС‚СЂС‹ РІ РЅР°РІРёРіР°С†РёРё');
+define('SPECIFICATIONS_FILTER_IMAGE_WIDTH_TITLE', 'РЁРёСЂРёРЅР° РєР°СЂС‚РёРЅРєРё С„РёР»СЊС‚СЂРѕРІ');
+define('SPECIFICATIONS_FILTER_IMAGE_WIDTH_DESC', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ С€РёСЂРёРЅСѓ РєР°СЂС‚РёРЅРєРё, РѕС‚РѕР±СЂР°Р¶Р°РµРјРѕР№ РІ Р±РѕРєСЃРµ С„РёР»СЊС‚СЂС‹.');
+define('SPECIFICATIONS_FILTER_IMAGE_HEIGHT_TITLE', 'Р’С‹СЃРѕС‚Р° РєР°СЂС‚РёРЅРєРё С„РёР»СЊС‚СЂРѕРІ');
+define('SPECIFICATIONS_FILTER_IMAGE_HEIGHT_DESC', 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РІС‹СЃРѕС‚Сѓ РєР°СЂС‚РёРЅРєРё, РѕС‚РѕР±СЂР°Р¶Р°РµРјРѕР№ РІ Р±РѕРєСЃРµ С„РёР»СЊС‚СЂС‹.');
 
-define('SET_BOX_FILTERS_TITLE', 'Фильтры');
-define('SET_BOX_FILTERS_DESC', 'Включить/выключить бокс.');
+define('SET_BOX_FILTERS_TITLE', 'Р¤РёР»СЊС‚СЂС‹');
+define('SET_BOX_FILTERS_DESC', 'Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ Р±РѕРєСЃ.');
 
-define('EMAIL_SMTP_SERVER_TITLE' , 'SMTP сервер');
-define('EMAIL_SMTP_SERVER_DESC' , 'Укажите smtp сервер, если Вы включили отправку почты через smtp.');
-define('EMAIL_SMTP_PORT_TITLE' , 'SMTP сервер: Порт');
-define('EMAIL_SMTP_PORT_DESC' , 'Установите порт smtp сервера.');
-define('EMAIL_SMTP_AUTH_TITLE' , 'SMTP авторизация');
-define('EMAIL_SMTP_AUTH_DESC' , 'SMTP авторизация.');
-define('EMAIL_SMTP_USERNAME_TITLE' , 'SMTP сервер: Имя пользователя');
-define('EMAIL_SMTP_USERNAME_DESC' , 'Установите имя пользователя для подключения к серверу.');
-define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP сервер: Пароль');
-define('EMAIL_SMTP_PASSWORD_DESC' , 'Установите пароль для подключения к серверу.');
+define('EMAIL_SMTP_SERVER_TITLE' , 'SMTP СЃРµСЂРІРµСЂ');
+define('EMAIL_SMTP_SERVER_DESC' , 'РЈРєР°Р¶РёС‚Рµ smtp СЃРµСЂРІРµСЂ, РµСЃР»Рё Р’С‹ РІРєР»СЋС‡РёР»Рё РѕС‚РїСЂР°РІРєСѓ РїРѕС‡С‚С‹ С‡РµСЂРµР· smtp.');
+define('EMAIL_SMTP_PORT_TITLE' , 'SMTP СЃРµСЂРІРµСЂ: РџРѕСЂС‚');
+define('EMAIL_SMTP_PORT_DESC' , 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РїРѕСЂС‚ smtp СЃРµСЂРІРµСЂР°.');
+define('EMAIL_SMTP_AUTH_TITLE' , 'SMTP Р°РІС‚РѕСЂРёР·Р°С†РёСЏ');
+define('EMAIL_SMTP_AUTH_DESC' , 'SMTP Р°РІС‚РѕСЂРёР·Р°С†РёСЏ.');
+define('EMAIL_SMTP_USERNAME_TITLE' , 'SMTP СЃРµСЂРІРµСЂ: РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ');
+define('EMAIL_SMTP_USERNAME_DESC' , 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє СЃРµСЂРІРµСЂСѓ.');
+define('EMAIL_SMTP_PASSWORD_TITLE' , 'SMTP СЃРµСЂРІРµСЂ: РџР°СЂРѕР»СЊ');
+define('EMAIL_SMTP_PASSWORD_DESC' , 'РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РїР°СЂРѕР»СЊ РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє СЃРµСЂРІРµСЂСѓ.');
 
-define('ENABLE_MAP_TAB_TITLE','Показывать закладку карта на странице заказа');
-define('ENABLE_MAP_TAB_DESC','Включить/Отключить закладку карта на странице заказа.');
-define('MAP_API_KEY_TITLE','Яндекс карты API-Ключ');
-define('MAP_API_KEY_DESC','Укажите Ваш API ключ.');
+define('ENABLE_MAP_TAB_TITLE','РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РєР»Р°РґРєСѓ РєР°СЂС‚Р° РЅР° СЃС‚СЂР°РЅРёС†Рµ Р·Р°РєР°Р·Р°');
+define('ENABLE_MAP_TAB_DESC','Р’РєР»СЋС‡РёС‚СЊ/РћС‚РєР»СЋС‡РёС‚СЊ Р·Р°РєР»Р°РґРєСѓ РєР°СЂС‚Р° РЅР° СЃС‚СЂР°РЅРёС†Рµ Р·Р°РєР°Р·Р°.');
+define('MAP_API_KEY_TITLE','РЇРЅРґРµРєСЃ РєР°СЂС‚С‹ API-РљР»СЋС‡');
+define('MAP_API_KEY_DESC','РЈРєР°Р¶РёС‚Рµ Р’Р°С€ API РєР»СЋС‡.');
 
-define('USE_EMAIL_QUEUE_TITLE','Включить email очередь');
-define('USE_EMAIL_QUEUE_DESC','Отправлять почту через модуль email очередь');
-define('HOLD_EMAIL_QUEUE_TITLE','Блокировать email очередь');
-define('HOLD_EMAIL_QUEUE_DESC','Блокировать все email на отправку');
+define('USE_EMAIL_QUEUE_TITLE','Р’РєР»СЋС‡РёС‚СЊ email РѕС‡РµСЂРµРґСЊ');
+define('USE_EMAIL_QUEUE_DESC','РћС‚РїСЂР°РІР»СЏС‚СЊ РїРѕС‡С‚Сѓ С‡РµСЂРµР· РјРѕРґСѓР»СЊ email РѕС‡РµСЂРµРґСЊ');
+define('HOLD_EMAIL_QUEUE_TITLE','Р‘Р»РѕРєРёСЂРѕРІР°С‚СЊ email РѕС‡РµСЂРµРґСЊ');
+define('HOLD_EMAIL_QUEUE_DESC','Р‘Р»РѕРєРёСЂРѕРІР°С‚СЊ РІСЃРµ email РЅР° РѕС‚РїСЂР°РІРєСѓ');
 
-define('SITE_TIME_ZONE_TITLE', 'Временная зона');
-define('SITE_TIME_ZONE_DESC', 'Временная зона');
+define('SITE_TIME_ZONE_TITLE', 'Р’СЂРµРјРµРЅРЅР°СЏ Р·РѕРЅР°');
+define('SITE_TIME_ZONE_DESC', 'Р’СЂРµРјРµРЅРЅР°СЏ Р·РѕРЅР°');
 
 ?>
