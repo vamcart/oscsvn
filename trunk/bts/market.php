@@ -70,7 +70,7 @@ if (YML_AUTH_USER != "" && YML_AUTH_PW != "") {
 	} 
 }
 
-$charset = (YML_UTF8 == 'true') ? 'utf-8' : CHARSET;
+$charset = (YML_UTF8 == 'true') ? 'windows-1251' : CHARSET;
 
 $manufacturers_array = array();
 
@@ -215,11 +215,12 @@ echo "</offers>\n" .
 		 "</yml_catalog>\n";
 
 	function _clear_string($str) {
+  	global $charset;		
 		if (YML_STRIP_TAGS == 'true') {
 			$str = strip_tags($str);
 		}
 		if (YML_UTF8 == 'true')
-			$str = iconv(CHARSET, "UTF-8", $str);
+			$str = iconv(CHARSET, $charset, $str);
 		return htmlspecialchars($str, ENT_QUOTES);
 	}
 ?>
