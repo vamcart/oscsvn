@@ -37,7 +37,7 @@ $xml = simplexml_load_file($_FILES['xml_file']['tmp_name']);
 
       $categories_id = $category['id'];
       $parent_id = ((!isset($category['parentId'])) ? 0 : $category['parentId']);
-      $categories_name = unhtmlentities(iconv("UTF-8", CHARSET, $category));
+      $categories_name = unhtmlentities($category);
       $categories_description = '';
 
       $categories_query = tep_db_query("select categories_name from " . TABLE_CATEGORIES_DESCRIPTION . " where categories_id = '" . $categories_id . "' and language_id = '".(int)$languages_id."' limit 1");
@@ -65,8 +65,8 @@ $xml = simplexml_load_file($_FILES['xml_file']['tmp_name']);
       $products_price = $product->price;
       $categoryId = $product->categoryId;
       $products_image = substr(strrchr($product->picture, "/"), 1);
-      $products_name = unhtmlentities(iconv("UTF-8", CHARSET, $product->name));
-      $products_description = unhtmlentities(iconv("UTF-8", CHARSET, $product->description));
+      $products_name = unhtmlentities($product->name);
+      $products_description = unhtmlentities($product->description);
       $products_status = 1;
 
       $products_query = tep_db_query("select products_id, products_price from " . TABLE_PRODUCTS . " where products_id = '" . $products_id . "' limit 1");

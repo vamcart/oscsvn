@@ -1,5 +1,91 @@
 <?php
 
+// utf8cp1251 and cp1251toutf8 functions
+
+function Utf8ToWin($fcontents) {
+
+    if (function_exists('iconv')) {
+       return iconv('UTF-8', 'CP1251', $fcontents); 
+    } else {
+
+    $out = $c1 = '';
+    $byte2 = false;
+    for ($c = 0;$c < strlen($fcontents);$c++) {
+        $i = ord($fcontents[$c]);
+        if ($i <= 127) {
+            $out .= $fcontents[$c];
+        }
+        if ($byte2) {
+            $new_c2 = ($c1 & 3) * 64 + ($i & 63);
+            $new_c1 = ($c1 >> 2) & 5;
+            $new_i = $new_c1 * 256 + $new_c2;
+            if ($new_i == 1025) {
+                $out_i = 168;
+            } else {
+                if ($new_i == 1105) {
+                    $out_i = 184;
+                } else {
+                    $out_i = $new_i - 848;
+                }
+            }
+            $out .= chr($out_i);
+            $byte2 = false;
+        }
+        if (($i >> 5) == 6) {
+            $c1 = $i;
+            $byte2 = true;
+        }
+    }
+    return $out;
+
+
+    }
+
+}
+
+function CP1251toUTF8($str){
+
+    if (function_exists('iconv')) {
+       return iconv('CP1251', 'UTF-8', $str); 
+    } else {
+
+static $table = array("\xA8" => "\xD0\x81", 
+"\xB8" => "\xD1\x91", 
+// б�Кб�АаИаНб�КаИаЕ б�ИаМаВаОаЛб�"\xA1" => "\xD0\x8E", 
+"\xA2" => "\xD1\x9E", 
+"\xAA" => "\xD0\x84", 
+"\xAF" => "\xD0\x87", 
+"\xB2" => "\xD0\x86", 
+"\xB3" => "\xD1\x96", 
+"\xBA" => "\xD1\x94", 
+"\xBF" => "\xD1\x97", 
+// б��ВаАб��КаИаЕ б�ИаМаВаОаЛб�"\x8C" => "\xD3\x90", 
+"\x8D" => "\xD3\x96", 
+"\x8E" => "\xD2\xAA", 
+"\x8F" => "\xD3\xB2", 
+"\x9C" => "\xD3\x91", 
+"\x9D" => "\xD3\x97", 
+"\x9E" => "\xD2\xAB", 
+"\x9F" => "\xD3\xB3", 
+);
+return preg_replace('#[\x80-\xFF]#se',
+' "$0" >= "\xF0" ? "\xD1".chr(ord("$0")-0x70) :
+("$0" >= "\xC0" ? "\xD0".chr(ord("$0")-0x30) :
+(isset($table["$0"]) ? $table["$0"] : "")
+)',
+$str
+);
+
+    }
+
+}
+
+// utf8cp1251 and cp1251toutf8 functions
+
+//var_dump($_GET);echo '<br />';
+//var_dump($_POST);echo '<br />';
+//var_dump($_FILES);echo '<br />';
+
 // Current EP Version
 $curver = ' 2.75';
 
@@ -477,6 +563,10 @@ if ( $_POST['download'] == 'stream' or $_POST['download'] == 'tempfile' ){
 	}
     //end froogle
 
+	if ($_POST['export_charset'] == 'cp1251'){
+    $filestring = Utf8ToWin($filestring);
+   }
+   
 	// now either stream it to them or put it in the temp directory
 	if ($_POST['download'] == 'stream'){
 		//*******************************
@@ -578,9 +668,20 @@ if ($_POST['localfile'] or (is_uploaded_file($_FILES['usrfl']['tmp_name']) && $_
 
 	// now we string the entire thing together in case there were carriage returns in the data
 	$newreaded = "";
+
+	if ($_POST['import_charset'] == 'cp1251'){
+	
 	foreach ($readed as $read){
-		$newreaded .= $read;
+	$newreaded .= CP1251toUTF8($read);
 	}
+
+} else {
+
+	foreach ($readed as $read){
+	$newreaded .= $read;
+	}
+
+}
 
 	// now newreaded has the entire file together without the carriage returns.
 	// if for some reason excel put qoutes around our EOREOR, remove them then split into rows
@@ -692,31 +793,50 @@ if (is_uploaded_file($_FILES['usrfl']['tmp_name']) && $_GET['split']==1) {
 
               </div>
 
-              </form>
-          </td>
-          </tr>
-          <tr>
-          <td>
+<span class="smallText">
+				<b><?php echo EASY_LABEL_IMPORT_CHARSET;?></b>
+</span>
+			<select name="import_charset">
+			<option selected value ="cp1251" size="5">cp1251</option>
+			<option value="utf8" size="5">utf8</option>
+			</select>
+			
+			<br>
+			
+							</form>
+
+					</td>
+					</tr>
+					<tr>
+					<td>
 <?php echo tep_draw_form('easypopulate', FILENAME_EASYPOPULATE, 'split=1', 'post', 'enctype="multipart/form-data"') . tep_hide_session_id(); ?>       
 
 
                 <div align = "left">
 <span class="smallText">
-                <br><b><?php echo EASY_SPLIT_EP_FILE;?></b><br>
+								<br><b><?php echo EASY_SPLIT_EP_FILE;?></b><br>
 </span>
-                 <INPUT TYPE="hidden" name="MAX_FILE_SIZE" value="1000000000">
 
-                  <input name="usrfl" type="file" size="50">
-                  <input type="submit" name="buttonsplit" value="<?PHP ECHO EASY_SPLIT;?>">
+	
+								 <INPUT TYPE="hidden" name="MAX_FILE_SIZE" value="1000000000">
 
-              </div>
+									<input name="usrfl" type="file" size="50">
 
-             </form>
+			<select name="import_charset">
+			<option selected value ="cp1251" size="5">cp1251</option>
+			<option value="utf8" size="5">utf8</option>
+			</select>
 
-          </td>
-          </tr>
-          <tr>
-          <td>
+									<span class="button"><button type="submit" name="buttonsplit" value="<?PHP ECHO EASY_SPLIT;?>"><?php echo EASY_SPLIT; ?></button></span>
+
+							</div>
+
+						 </form>
+
+					</td>
+					</tr>
+					<tr>
+					<td>
 
               <p>
                 <div align = "left">
@@ -738,7 +858,12 @@ if (is_uploaded_file($_FILES['usrfl']['tmp_name']) && $_GET['split']==1) {
 				echo tep_draw_pull_down_menu('localfile', $contents, $_POST['localfile']);
 		?>
 </span>
-		                    <input type="submit" name="buttoninsert" value="<?php echo TEXT_INSERT_INTO_DB ; ?>"><br>
+
+			<select name="import_charset">
+			<option selected value ="cp1251" size="5">cp1251</option>
+			<option value="utf8" size="5">utf8</option>
+			</select>
+												<span class="button"><button type="submit" name="buttoninsert" value="<?php echo TEXT_INSERT_INTO_DB ; ?>"><?php echo TEXT_INSERT_INTO_DB; ?></button></span><br>
 
 
               </div>
@@ -753,6 +878,16 @@ if (is_uploaded_file($_FILES['usrfl']['tmp_name']) && $_GET['split']==1) {
 		      <p><b><?php echo EASY_LABEL_CREATE;?></b></p>
 </span>
 <?php echo tep_draw_form('easypopulate', FILENAME_EASYPOPULATE, 'action=export', 'post', 'enctype="multipart/form-data"') . tep_hide_session_id(); ?>       
+<span class="smallText">
+				<b><?php echo EASY_LABEL_EXPORT_CHARSET;?></b>
+</span>
+			<select name="export_charset">
+			<option selected value ="cp1251" size="5">cp1251</option>
+			<option value="utf8" size="5">utf8</option>
+			</select>
+			
+			<br>
+
 <span class="smallText">
         <b><?php echo EASY_LABEL_CREATE_SELECT;?></b>
 </span>
