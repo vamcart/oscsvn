@@ -13,20 +13,20 @@
   define('NUMERIC_DECIMAL_SEPARATOR', '.');
   define('NUMERIC_THOUSANDS_SEPARATOR', ',');
 
-  define('ERROR_DB_NO_SERVER_SELECTED', 'Íå óêàçàí ñåðâåð áàçû äàííûõ.');
-  define('ERROR_DB_NO_DATABASE_SELECTED', 'Íå óêàçàíà áàçà äàííûõ.');
+  define('ERROR_DB_NO_SERVER_SELECTED', 'ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ ÑÐµÑ€Ð²ÐµÑ€ Ð±Ð°Ð·Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ….');
+  define('ERROR_DB_NO_DATABASE_SELECTED', 'ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½Ð° Ð±Ð°Ð·Ð° Ð´Ð°Ð½Ð½Ñ‹Ñ….');
 
-  define('ERROR_SQL_FILE_NONEXISTENT', 'SQL ôàéë îòñóòñòâóåò: %s');
+  define('ERROR_SQL_FILE_NONEXISTENT', 'SQL Ñ„Ð°Ð¹Ð» Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚: %s');
 
-  define('IMAGE_INSTALL', 'Íà÷àòü óñòàíîâêó');
-  define('IMAGE_UPGRADE', 'Îáíîâèòü');
+  define('IMAGE_INSTALL', 'ÐÐ°Ñ‡Ð°Ñ‚ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÑƒ');
+  define('IMAGE_UPGRADE', 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ');
 
-  define('IMAGE_BUTTON_CONTINUE', 'Ïðîäîëæèòü');
-  define('IMAGE_BUTTON_CANCEL', 'Îòìåíèòü');
-  define('IMAGE_BUTTON_BACK', 'Âåðíóòüñÿ');
-  define('IMAGE_BUTTON_RETRY', 'Ïîâòîðèòü');
+  define('IMAGE_BUTTON_CONTINUE', 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ');
+  define('IMAGE_BUTTON_CANCEL', 'ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ');
+  define('IMAGE_BUTTON_BACK', 'Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ');
+  define('IMAGE_BUTTON_RETRY', 'ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÑŒ');
 
-  define('IMAGE_BUTTON_CATALOG', 'Êàòàëîã');
-  define('IMAGE_BUTTON_ADMINISTRATION', 'Àäìèíèñòðàòîðñêàÿ');
+  define('IMAGE_BUTTON_CATALOG', 'ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³');
+  define('IMAGE_BUTTON_ADMINISTRATION', 'ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€ÑÐºÐ°Ñ');
 
 ?>

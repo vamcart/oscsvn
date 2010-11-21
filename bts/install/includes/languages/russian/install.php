@@ -10,93 +10,93 @@
   Released under the GNU General Public License
 */
 
-  define('PAGE_TITLE_INSTALLATION', 'Новая установка');
-  define('TEXT_CUSTOMIZE_INSTALLATION', 'Выберите режим установки магазина:');
+  define('PAGE_TITLE_INSTALLATION', 'РќРѕРІР°СЏ СѓСЃС‚Р°РЅРѕРІРєР°');
+  define('TEXT_CUSTOMIZE_INSTALLATION', 'Р’С‹Р±РµСЂРёС‚Рµ СЂРµР¶РёРј СѓСЃС‚Р°РЅРѕРІРєРё РјР°РіР°Р·РёРЅР°:');
 
-  define('CONFIG_IMPORT_CATALOG_DATABASE', 'Импортировать базу данных:');
-  define('CONFIG_IMPORT_CATALOG_DATABASE_DESCRIPTION', 'Импортировать базу данных при установке');
-  define('CONFIG_IMPORT_CATALOG_DATABASE_DESCRIPTION_LONG', 'При первой установке интернет-магазина данная опция должна быть включена, иначе интернет-магазин работать не будет. Можно не отмечать данную опцию, если Вы хотите только обновить файлы конфигураций (и не трогать существующую базу данных) уже <b>установленного</b> интернет-магазина, например, если изменились пути до файлов и папок.');
+  define('CONFIG_IMPORT_CATALOG_DATABASE', 'РРјРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ Р±Р°Р·Сѓ РґР°РЅРЅС‹С…:');
+  define('CONFIG_IMPORT_CATALOG_DATABASE_DESCRIPTION', 'РРјРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… РїСЂРё СѓСЃС‚Р°РЅРѕРІРєРµ');
+  define('CONFIG_IMPORT_CATALOG_DATABASE_DESCRIPTION_LONG', 'РџСЂРё РїРµСЂРІРѕР№ СѓСЃС‚Р°РЅРѕРІРєРµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР° РґР°РЅРЅР°СЏ РѕРїС†РёСЏ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІРєР»СЋС‡РµРЅР°, РёРЅР°С‡Рµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ СЂР°Р±РѕС‚Р°С‚СЊ РЅРµ Р±СѓРґРµС‚. РњРѕР¶РЅРѕ РЅРµ РѕС‚РјРµС‡Р°С‚СЊ РґР°РЅРЅСѓСЋ РѕРїС†РёСЋ, РµСЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ С‚РѕР»СЊРєРѕ РѕР±РЅРѕРІРёС‚СЊ С„Р°Р№Р»С‹ РєРѕРЅС„РёРіСѓСЂР°С†РёР№ (Рё РЅРµ С‚СЂРѕРіР°С‚СЊ СЃСѓС‰РµСЃС‚РІСѓСЋС‰СѓСЋ Р±Р°Р·Сѓ РґР°РЅРЅС‹С…) СѓР¶Рµ <b>СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕРіРѕ</b> РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°, РЅР°РїСЂРёРјРµСЂ, РµСЃР»Рё РёР·РјРµРЅРёР»РёСЃСЊ РїСѓС‚Рё РґРѕ С„Р°Р№Р»РѕРІ Рё РїР°РїРѕРє.');
 
-  define('CONFIG_AUTOMATIC_CONFIGURATION', 'Автоматическая настройка:');
-  define('CONFIG_AUTOMATIC_CONFIGURATION_DESCRIPTION', 'Автоматическая настройка интернет-магазина');
-  define('CONFIG_AUTOMATIC_CONFIGURATION_DESCRIPTION_LONG', 'Если данная опция включена, то при установке интернет-магазина все пути до файлов и папок будут настраиваться автоматически, Вам нужно будет только указать координаты базы данных MySQL. Рекомендуется <b>включать</b> автоматическую настройку, если Вы устанавливаете интернет-магазин впервые.');
+  define('CONFIG_AUTOMATIC_CONFIGURATION', 'РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ РЅР°СЃС‚СЂРѕР№РєР°:');
+  define('CONFIG_AUTOMATIC_CONFIGURATION_DESCRIPTION', 'РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ РЅР°СЃС‚СЂРѕР№РєР° РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°');
+  define('CONFIG_AUTOMATIC_CONFIGURATION_DESCRIPTION_LONG', 'Р•СЃР»Рё РґР°РЅРЅР°СЏ РѕРїС†РёСЏ РІРєР»СЋС‡РµРЅР°, С‚Рѕ РїСЂРё СѓСЃС‚Р°РЅРѕРІРєРµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР° РІСЃРµ РїСѓС‚Рё РґРѕ С„Р°Р№Р»РѕРІ Рё РїР°РїРѕРє Р±СѓРґСѓС‚ РЅР°СЃС‚СЂР°РёРІР°С‚СЊСЃСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё, Р’Р°Рј РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ С‚РѕР»СЊРєРѕ СѓРєР°Р·Р°С‚СЊ РєРѕРѕСЂРґРёРЅР°С‚С‹ Р±Р°Р·С‹ РґР°РЅРЅС‹С… MySQL. Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ <b>РІРєР»СЋС‡Р°С‚СЊ</b> Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєСѓСЋ РЅР°СЃС‚СЂРѕР№РєСѓ, РµСЃР»Рё Р’С‹ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚Рµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ РІРїРµСЂРІС‹Рµ.');
 
-  define('PAGE_SUBTITLE_DATABASE_IMPORT', 'Импорт базы данных');
-  define('TEXT_ENTER_DATABASE_INFORMATION', 'Пожалуйста, укажите информацию для доступа к базе данных:');
+  define('PAGE_SUBTITLE_DATABASE_IMPORT', 'РРјРїРѕСЂС‚ Р±Р°Р·С‹ РґР°РЅРЅС‹С…');
+  define('TEXT_ENTER_DATABASE_INFORMATION', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СѓРєР°Р¶РёС‚Рµ РёРЅС„РѕСЂРјР°С†РёСЋ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…:');
 
-  define('CONFIG_DATABASE_SERVER', 'Сервер базы данных:');
-  define('CONFIG_DATABASE_SERVER_DESCRIPTION', 'Адрес либо IP-адрес сервера базы данных.');
-  define('CONFIG_DATABASE_SERVER_DESCRIPTION_LONG', 'Обычно сервер базы данных находится по адресу localhost, если Вы не знаете адрес сервера базы данных, свяжитесь со своим хостинг-провайдером.');
+  define('CONFIG_DATABASE_SERVER', 'РЎРµСЂРІРµСЂ Р±Р°Р·С‹ РґР°РЅРЅС‹С…:');
+  define('CONFIG_DATABASE_SERVER_DESCRIPTION', 'РђРґСЂРµСЃ Р»РёР±Рѕ IP-Р°РґСЂРµСЃ СЃРµСЂРІРµСЂР° Р±Р°Р·С‹ РґР°РЅРЅС‹С….');
+  define('CONFIG_DATABASE_SERVER_DESCRIPTION_LONG', 'РћР±С‹С‡РЅРѕ СЃРµСЂРІРµСЂ Р±Р°Р·С‹ РґР°РЅРЅС‹С… РЅР°С…РѕРґРёС‚СЃСЏ РїРѕ Р°РґСЂРµСЃСѓ localhost, РµСЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ Р°РґСЂРµСЃ СЃРµСЂРІРµСЂР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…, СЃРІСЏР¶РёС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРј С…РѕСЃС‚РёРЅРі-РїСЂРѕРІР°Р№РґРµСЂРѕРј.');
 
-  define('CONFIG_DATABASE_USERNAME', 'Имя пользователя:');
-  define('CONFIG_DATABASE_USERNAME_DESCRIPTION', 'Имя пользователя базы данных');
-  define('CONFIG_DATABASE_USERNAME_DESCRIPTION_LONG', 'Имя пользователя, используемое для подключения к базе данных.<br>Если Вы не знаете имя пользователя для доступа к базе данных, свяжитесь со своим хостинг-провайдером.');
-  define('CONFIG_DATABASE_USERNAME_RESTRICTED_DESCRIPTION_LONG', 'Имя пользователя, используемое для подключения к базе данных.<br>Если Вы не знаете имя пользователя для доступа к базе данных, свяжитесь со своим хостинг-провайдером.');
+  define('CONFIG_DATABASE_USERNAME', 'РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:');
+  define('CONFIG_DATABASE_USERNAME_DESCRIPTION', 'РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С…');
+  define('CONFIG_DATABASE_USERNAME_DESCRIPTION_LONG', 'РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ, РёСЃРїРѕР»СЊР·СѓРµРјРѕРµ РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С….<br>Р•СЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…, СЃРІСЏР¶РёС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРј С…РѕСЃС‚РёРЅРі-РїСЂРѕРІР°Р№РґРµСЂРѕРј.');
+  define('CONFIG_DATABASE_USERNAME_RESTRICTED_DESCRIPTION_LONG', 'РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ, РёСЃРїРѕР»СЊР·СѓРµРјРѕРµ РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С….<br>Р•СЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…, СЃРІСЏР¶РёС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРј С…РѕСЃС‚РёРЅРі-РїСЂРѕРІР°Р№РґРµСЂРѕРј.');
 
-  define('CONFIG_DATABASE_PASSWORD', 'Пароль:');
-  define('CONFIG_DATABASE_PASSWORD_DESCRIPTION', 'Пароль доступа к базе данных');
-  define('CONFIG_DATABASE_PASSWORD_DESCRIPTION_LONG', 'Пароль, используемый для подключения к базе данных. <br>Если Вы не знаете пароль для доступа к базе данных, свяжитесь со своим хостинг-провайдером.');
+  define('CONFIG_DATABASE_PASSWORD', 'РџР°СЂРѕР»СЊ:');
+  define('CONFIG_DATABASE_PASSWORD_DESCRIPTION', 'РџР°СЂРѕР»СЊ РґРѕСЃС‚СѓРїР° Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…');
+  define('CONFIG_DATABASE_PASSWORD_DESCRIPTION_LONG', 'РџР°СЂРѕР»СЊ, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…. <br>Р•СЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ РїР°СЂРѕР»СЊ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…, СЃРІСЏР¶РёС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРј С…РѕСЃС‚РёРЅРі-РїСЂРѕРІР°Р№РґРµСЂРѕРј.');
 
-  define('CONFIG_DATABASE_NAME', 'Имя базы данных:');
-  define('CONFIG_DATABASE_NAME_DESCRIPTION', 'Имя базы данных');
-  define('CONFIG_DATABASE_NAME_DESCRIPTION_LONG', 'Имя базы данных, которая будет использоваться для установки интернет-магазина.<br>Если Вы не знаете имя базы данных, свяжитесь со своим хостинг-провайдером.');
+  define('CONFIG_DATABASE_NAME', 'РРјСЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С…:');
+  define('CONFIG_DATABASE_NAME_DESCRIPTION', 'РРјСЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С…');
+  define('CONFIG_DATABASE_NAME_DESCRIPTION_LONG', 'РРјСЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С…, РєРѕС‚РѕСЂР°СЏ Р±СѓРґРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РґР»СЏ СѓСЃС‚Р°РЅРѕРІРєРё РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°.<br>Р•СЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ РёРјСЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С…, СЃРІСЏР¶РёС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРј С…РѕСЃС‚РёРЅРі-РїСЂРѕРІР°Р№РґРµСЂРѕРј.');
 
   define('CONFIG_DATABASE_TABLE_PREFIX', 'Database Table Prefix:');
   define('CONFIG_DATABASE_TABLE_PREFIX_DESCRIPTION', 'Database table prefix');
   define('CONFIG_DATABASE_TABLE_PREFIX_DESCRIPTION_LONG', 'The prefix to use for the database tables created. An example table prefix is \'osc_\' which would create a table name of osc_products.');
 
-  define('CONFIG_DATABASE_PERSISTENT_CONNECTIONS', 'Постоянное подключение:');
+  define('CONFIG_DATABASE_PERSISTENT_CONNECTIONS', 'РџРѕСЃС‚РѕСЏРЅРЅРѕРµ РїРѕРґРєР»СЋС‡РµРЅРёРµ:');
   define('CONFIG_DATABASE_PERSISTENT_CONNECTIONS_DESCRIPTION', '');
-  define('CONFIG_DATABASE_PERSISTENT_CONNECTIONS_DESCRIPTION_LONG', 'Использовать постоянное подключение к базе данных.<br>Рекомендуется <b>не</b> включать данную опцию. Включайте данную опцию, если у Вас выделенный сервер.');
+  define('CONFIG_DATABASE_PERSISTENT_CONNECTIONS_DESCRIPTION_LONG', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїРѕСЃС‚РѕСЏРЅРЅРѕРµ РїРѕРґРєР»СЋС‡РµРЅРёРµ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С….<br>Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ <b>РЅРµ</b> РІРєР»СЋС‡Р°С‚СЊ РґР°РЅРЅСѓСЋ РѕРїС†РёСЋ. Р’РєР»СЋС‡Р°Р№С‚Рµ РґР°РЅРЅСѓСЋ РѕРїС†РёСЋ, РµСЃР»Рё Сѓ Р’Р°СЃ РІС‹РґРµР»РµРЅРЅС‹Р№ СЃРµСЂРІРµСЂ.');
 
   define('CONFIG_DATABASE_CLASS', 'Database Type:');
   define('CONFIG_DATABASE_CLASS_DESCRIPTION', '');
   define('CONFIG_DATABASE_CLASS_DESCRIPTION_LONG', 'The database type to use.<br><br>"Transaction-Safe" database types are recommended however will only be used if the database server supports transactions.');
 
-  define('CONFIG_SESSION_STORAGE', 'Хранить сессии в:');
-  define('CONFIG_SESSION_STORAGE_FILES', 'Файлах');
-  define('CONFIG_SESSION_STORAGE_DATABASE', 'Базе данных');
+  define('CONFIG_SESSION_STORAGE', 'РҐСЂР°РЅРёС‚СЊ СЃРµСЃСЃРёРё РІ:');
+  define('CONFIG_SESSION_STORAGE_FILES', 'Р¤Р°Р№Р»Р°С…');
+  define('CONFIG_SESSION_STORAGE_DATABASE', 'Р‘Р°Р·Рµ РґР°РЅРЅС‹С…');
   define('CONFIG_SESSION_STORAGE_DESCRIPTION', '');
-  define('CONFIG_SESSION_STORAGE_DESCRIPTION_LONG', 'Выберите, где хранить сессии: в файлах или в базе данных.<br>Внимание: Рекомендуется хранить сессии в базе данных, т.к. это наиболее безопасный вариант.');
+  define('CONFIG_SESSION_STORAGE_DESCRIPTION_LONG', 'Р’С‹Р±РµСЂРёС‚Рµ, РіРґРµ С…СЂР°РЅРёС‚СЊ СЃРµСЃСЃРёРё: РІ С„Р°Р№Р»Р°С… РёР»Рё РІ Р±Р°Р·Рµ РґР°РЅРЅС‹С….<br>Р’РЅРёРјР°РЅРёРµ: Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ С…СЂР°РЅРёС‚СЊ СЃРµСЃСЃРёРё РІ Р±Р°Р·Рµ РґР°РЅРЅС‹С…, С‚.Рє. СЌС‚Рѕ РЅР°РёР±РѕР»РµРµ Р±РµР·РѕРїР°СЃРЅС‹Р№ РІР°СЂРёР°РЅС‚.');
 
   define('CONFIG_IMPORT_SAMPLE_DATA', 'Import Sample Data:');
   define('CONFIG_IMPORT_SAMPLE_DATA_DESCRIPTION', '');
   define('CONFIG_IMPORT_SAMPLE_DATA_DESCRIPTION_LONG', 'Insert sample data into the database (recommended for first time installations).');
 
   define('ERROR_UNSUCCESSFUL_DATABASE_TYPE', '<p>The selected database type of <b>%s</b> is not supported by the database server. The database table type will be set back to the default value of <b>%s</b>.</p>');
-  define('ERROR_UNSUCCESSFUL_DATABASE_CONNECTION', '<p>Соединение с базой данных <b>НЕ</b> было установлено.</p><p>Сообщение об ошибке:</p><p class="boxme">%s</p><p>Нажмите <i>Вернуться</i> чтобы исправить допущенные ошибки.</p>
-      <p>Если Вы не знаете информации для доступа к своей базе данных, свяжитесь с Вашим хостинг-провайдером.</p>');
+  define('ERROR_UNSUCCESSFUL_DATABASE_CONNECTION', '<p>РЎРѕРµРґРёРЅРµРЅРёРµ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С… <b>РќР•</b> Р±С‹Р»Рѕ СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ.</p><p>РЎРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ:</p><p class="boxme">%s</p><p>РќР°Р¶РјРёС‚Рµ <i>Р’РµСЂРЅСѓС‚СЊСЃСЏ</i> С‡С‚РѕР±С‹ РёСЃРїСЂР°РІРёС‚СЊ РґРѕРїСѓС‰РµРЅРЅС‹Рµ РѕС€РёР±РєРё.</p>
+      <p>Р•СЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ РёРЅС„РѕСЂРјР°С†РёРё РґР»СЏ РґРѕСЃС‚СѓРїР° Рє СЃРІРѕРµР№ Р±Р°Р·Рµ РґР°РЅРЅС‹С…, СЃРІСЏР¶РёС‚РµСЃСЊ СЃ Р’Р°С€РёРј С…РѕСЃС‚РёРЅРі-РїСЂРѕРІР°Р№РґРµСЂРѕРј.</p>');
 
-  define('TEXT_SUCCESSFUL_DATABASE_CONNECTION', '<p>Соединение с базой данных <b>успешно</b> установлено.</p><p>Продолжайте процедуру установки, далее будут загружены данные интернет-магазина в Вашу базу данных.</p><p>Это важный этап установки магазина, если данные интернет-магазина не будут загружены в базу данных, интернет-магазин работать не будет.</p>');
-  define('TEXT_IMPORT_SQL', '<p>Файл с данными интернет-магазина должен находиться по адресу:</p><p>%s</p>');
+  define('TEXT_SUCCESSFUL_DATABASE_CONNECTION', '<p>РЎРѕРµРґРёРЅРµРЅРёРµ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С… <b>СѓСЃРїРµС€РЅРѕ</b> СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ.</p><p>РџСЂРѕРґРѕР»Р¶Р°Р№С‚Рµ РїСЂРѕС†РµРґСѓСЂСѓ СѓСЃС‚Р°РЅРѕРІРєРё, РґР°Р»РµРµ Р±СѓРґСѓС‚ Р·Р°РіСЂСѓР¶РµРЅС‹ РґР°РЅРЅС‹Рµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР° РІ Р’Р°С€Сѓ Р±Р°Р·Сѓ РґР°РЅРЅС‹С….</p><p>Р­С‚Рѕ РІР°Р¶РЅС‹Р№ СЌС‚Р°Рї СѓСЃС‚Р°РЅРѕРІРєРё РјР°РіР°Р·РёРЅР°, РµСЃР»Рё РґР°РЅРЅС‹Рµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР° РЅРµ Р±СѓРґСѓС‚ Р·Р°РіСЂСѓР¶РµРЅС‹ РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С…, РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ СЂР°Р±РѕС‚Р°С‚СЊ РЅРµ Р±СѓРґРµС‚.</p>');
+  define('TEXT_IMPORT_SQL', '<p>Р¤Р°Р№Р» СЃ РґР°РЅРЅС‹РјРё РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР° РґРѕР»Р¶РµРЅ РЅР°С…РѕРґРёС‚СЊСЃСЏ РїРѕ Р°РґСЂРµСЃСѓ:</p><p>%s</p>');
   define('TEXT_IMPORT_DATA_SAMPLE_SQL', '<p>The sample data file to import must be located and named at:</p><p>%s</p>');
 
-  define('ERROR_UNSUCCESSFUL_DATABASE_IMPORT', '<p>Произошла следующая ошибка:</p><p class="boxme">%s</p>');
+  define('ERROR_UNSUCCESSFUL_DATABASE_IMPORT', '<p>РџСЂРѕРёР·РѕС€Р»Р° СЃР»РµРґСѓСЋС‰Р°СЏ РѕС€РёР±РєР°:</p><p class="boxme">%s</p>');
 
-  define('TEXT_SUCCESSFUL_DATABASE_IMPORT', 'База данных <b>успешно</b> загружена!');
+  define('TEXT_SUCCESSFUL_DATABASE_IMPORT', 'Р‘Р°Р·Р° РґР°РЅРЅС‹С… <b>СѓСЃРїРµС€РЅРѕ</b> Р·Р°РіСЂСѓР¶РµРЅР°!');
 
-  define('PAGE_SUBTITLE_OSCOMMERCE_CONFIGURATION', 'Настройка osCommerce');
-  define('TEXT_ENTER_WEBSERVER_INFORMATION', 'Пожалуйста, укажите информацию о Вашем интернет-магазине:');
+  define('PAGE_SUBTITLE_OSCOMMERCE_CONFIGURATION', 'РќР°СЃС‚СЂРѕР№РєР° osCommerce');
+  define('TEXT_ENTER_WEBSERVER_INFORMATION', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СѓРєР°Р¶РёС‚Рµ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ Р’Р°С€РµРј РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ:');
 
-  define('CONFIG_WWW_ADDRESS', 'WWW Адрес:');
-  define('CONFIG_WWW_ADDRESS_DESCRIPTION', 'Полный адрес интернет-магазина');
-  define('CONFIG_WWW_ADDRESS_DESCRIPTION_LONG', 'Адрес интернет-магазина, например <i>http://www.my-server.com/catalog/</i>');
+  define('CONFIG_WWW_ADDRESS', 'WWW РђРґСЂРµСЃ:');
+  define('CONFIG_WWW_ADDRESS_DESCRIPTION', 'РџРѕР»РЅС‹Р№ Р°РґСЂРµСЃ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°');
+  define('CONFIG_WWW_ADDRESS_DESCRIPTION_LONG', 'РђРґСЂРµСЃ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°, РЅР°РїСЂРёРјРµСЂ <i>http://www.my-server.com/catalog/</i>');
 
-  define('CONFIG_WWW_ROOT_DIRECTORY', 'Директория интернет-магазина:');
-  define('CONFIG_WWW_ROOT_DIRECTORY_DESCRIPTION', 'Путь до директории, где находится интернет-магазин');
-  define('CONFIG_WWW_ROOT_DIRECTORY_DESCRIPTION_LONG', 'Полный путь до директории, где находится интернет-магазин, например <i>/home/myname/public_html/oscommerce/</i><br> В большинстве случаев, Вам не нужно прописывать путь до директории, скрипт установки автоматически определит местонахождение магазина и пропишет путь до директории автоматически.');
+  define('CONFIG_WWW_ROOT_DIRECTORY', 'Р”РёСЂРµРєС‚РѕСЂРёСЏ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°:');
+  define('CONFIG_WWW_ROOT_DIRECTORY_DESCRIPTION', 'РџСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ');
+  define('CONFIG_WWW_ROOT_DIRECTORY_DESCRIPTION_LONG', 'РџРѕР»РЅС‹Р№ РїСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ, РЅР°РїСЂРёРјРµСЂ <i>/home/myname/public_html/oscommerce/</i><br> Р’ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ СЃР»СѓС‡Р°РµРІ, Р’Р°Рј РЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ РїСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё, СЃРєСЂРёРїС‚ СѓСЃС‚Р°РЅРѕРІРєРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕРїСЂРµРґРµР»РёС‚ РјРµСЃС‚РѕРЅР°С…РѕР¶РґРµРЅРёРµ РјР°РіР°Р·РёРЅР° Рё РїСЂРѕРїРёС€РµС‚ РїСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.');
 
-  define('CONFIG_WWW_HTTP_COOKIE_DOMAIN', 'Cookie Домен:');
-  define('CONFIG_WWW_HTTP_COOKIE_DOMAIN_DESCRIPTION', 'Домен, для которого будут записываться cookies');
-  define('CONFIG_WWW_HTTP_COOKIE_DOMAIN_DESCRIPTION_LONG', 'Здесь должен быть указан только домен второго уровня. Например, если интернет-магазин устанавливается в http://www.my-server.com/catalog/ или http://shop.my-server.com или просто http://www.my-server.com, тогда нужно писать <i>my-server.com</i><br> В большинстве случаев, Вам не нужно прописывать домен, скрипт установки автоматически определит домен и пропишет его автоматически.');
+  define('CONFIG_WWW_HTTP_COOKIE_DOMAIN', 'Cookie Р”РѕРјРµРЅ:');
+  define('CONFIG_WWW_HTTP_COOKIE_DOMAIN_DESCRIPTION', 'Р”РѕРјРµРЅ, РґР»СЏ РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґСѓС‚ Р·Р°РїРёСЃС‹РІР°С‚СЊСЃСЏ cookies');
+  define('CONFIG_WWW_HTTP_COOKIE_DOMAIN_DESCRIPTION_LONG', 'Р—РґРµСЃСЊ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅ С‚РѕР»СЊРєРѕ РґРѕРјРµРЅ РІС‚РѕСЂРѕРіРѕ СѓСЂРѕРІРЅСЏ. РќР°РїСЂРёРјРµСЂ, РµСЃР»Рё РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ РІ http://www.my-server.com/catalog/ РёР»Рё http://shop.my-server.com РёР»Рё РїСЂРѕСЃС‚Рѕ http://www.my-server.com, С‚РѕРіРґР° РЅСѓР¶РЅРѕ РїРёСЃР°С‚СЊ <i>my-server.com</i><br> Р’ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ СЃР»СѓС‡Р°РµРІ, Р’Р°Рј РЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ РґРѕРјРµРЅ, СЃРєСЂРёРїС‚ СѓСЃС‚Р°РЅРѕРІРєРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕРїСЂРµРґРµР»РёС‚ РґРѕРјРµРЅ Рё РїСЂРѕРїРёС€РµС‚ РµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.');
 
-  define('CONFIG_WWW_HTTP_COOKIE_PATH', 'Cookie путь:');
-  define('CONFIG_WWW_HTTP_COOKIE_PATH_DESCRIPTION', 'Путь, где будут храниться cookies');
-  define('CONFIG_WWW_HTTP_COOKIE_PATH_DESCRIPTION_LONG', 'Например <i>/catalog/</i><br> В большинстве случаев, Вам не нужно прописывать путь, скрипт установки автоматически определит путь и пропишет его автоматически.');
+  define('CONFIG_WWW_HTTP_COOKIE_PATH', 'Cookie РїСѓС‚СЊ:');
+  define('CONFIG_WWW_HTTP_COOKIE_PATH_DESCRIPTION', 'РџСѓС‚СЊ, РіРґРµ Р±СѓРґСѓС‚ С…СЂР°РЅРёС‚СЊСЃСЏ cookies');
+  define('CONFIG_WWW_HTTP_COOKIE_PATH_DESCRIPTION_LONG', 'РќР°РїСЂРёРјРµСЂ <i>/catalog/</i><br> Р’ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ СЃР»СѓС‡Р°РµРІ, Р’Р°Рј РЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ РїСѓС‚СЊ, СЃРєСЂРёРїС‚ СѓСЃС‚Р°РЅРѕРІРєРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕРїСЂРµРґРµР»РёС‚ РїСѓС‚СЊ Рё РїСЂРѕРїРёС€РµС‚ РµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.');
 
-  define('CONFIG_ENABLE_SSL', 'Использовать SSL:');
+  define('CONFIG_ENABLE_SSL', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ SSL:');
   define('CONFIG_ENABLE_SSL_DESCRIPTION', '');
-  define('CONFIG_ENABLE_SSL_DESCRIPTION_LONG', 'Использовать соединение по безопасному протоколу SSL/HTTPS. Если Вы не знаете, что такое SSL, как настраивать данный протокол, <b>настоятельно</b> рекомендуется <b>не</b> использовать SSL, иначе интернет-магазин работать не будет.');
+  define('CONFIG_ENABLE_SSL_DESCRIPTION_LONG', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРѕРµРґРёРЅРµРЅРёРµ РїРѕ Р±РµР·РѕРїР°СЃРЅРѕРјСѓ РїСЂРѕС‚РѕРєРѕР»Сѓ SSL/HTTPS. Р•СЃР»Рё Р’С‹ РЅРµ Р·РЅР°РµС‚Рµ, С‡С‚Рѕ С‚Р°РєРѕРµ SSL, РєР°Рє РЅР°СЃС‚СЂР°РёРІР°С‚СЊ РґР°РЅРЅС‹Р№ РїСЂРѕС‚РѕРєРѕР», <b>РЅР°СЃС‚РѕСЏС‚РµР»СЊРЅРѕ</b> СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ <b>РЅРµ</b> РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ SSL, РёРЅР°С‡Рµ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ СЂР°Р±РѕС‚Р°С‚СЊ РЅРµ Р±СѓРґРµС‚.');
 
   define('CONFIG_WWW_WORK_DIRECTORY', 'Work Directory:');
   define('CONFIG_WWW_WORK_DIRECTORY_DESCRIPTION', 'The path to store osCommerce work data under (cache, sessions)');
@@ -105,24 +105,24 @@
   define('ERROR_WORK_DIRECTORY_NON_EXISTANT', '<p>The following error has occurred:</p><p><div class="boxMe"><b>The work directory does not exist.</b><br><br>Please perform the following actions:<ul class="boxMe"><li>mkdir %s</li></ul></div></p>');
   define('ERROR_WORK_DIRECTORY_NOT_WRITEABLE', '<p>The following error has occurred:</p><p><div class="boxMe"><b>The work directory cannot be written to by the web server.</b><br><br>Please perform the following actions:<ul class="boxMe"><li>chmod 706 %s</li></ul></div></p><p class="noteBox">If <i>chmod 706</i> does not work, please try <i>chmod 777</i>.</p>');
 
-  define('TEXT_ENTER_SECURE_WEBSERVER_INFORMATION', 'Пожалуйста, укажите информацию о безопасном SSL соединении:');
+  define('TEXT_ENTER_SECURE_WEBSERVER_INFORMATION', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СѓРєР°Р¶РёС‚Рµ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ Р±РµР·РѕРїР°СЃРЅРѕРј SSL СЃРѕРµРґРёРЅРµРЅРёРё:');
 
-  define('CONFIG_WWW_HTTPS_ADDRESS', 'SSL WWW адрес:');
-  define('CONFIG_WWW_HTTPS_ADDRESS_DESCRIPTION', 'Полный SSL Адрес интернет-магазина');
-  define('CONFIG_WWW_HTTPS_ADDRESS_DESCRIPTION_LONG', 'SSL Адрес интернет-магазина, например <i>https://ssl.my-hosting-company.com/my_name/catalog/</i><br> В большинстве случаев, Вам не нужно прописывать адрес, скрипт установки автоматически определит адрес и пропишет его автоматически.');
+  define('CONFIG_WWW_HTTPS_ADDRESS', 'SSL WWW Р°РґСЂРµСЃ:');
+  define('CONFIG_WWW_HTTPS_ADDRESS_DESCRIPTION', 'РџРѕР»РЅС‹Р№ SSL РђРґСЂРµСЃ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°');
+  define('CONFIG_WWW_HTTPS_ADDRESS_DESCRIPTION_LONG', 'SSL РђРґСЂРµСЃ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°, РЅР°РїСЂРёРјРµСЂ <i>https://ssl.my-hosting-company.com/my_name/catalog/</i><br> Р’ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ СЃР»СѓС‡Р°РµРІ, Р’Р°Рј РЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ Р°РґСЂРµСЃ, СЃРєСЂРёРїС‚ СѓСЃС‚Р°РЅРѕРІРєРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕРїСЂРµРґРµР»РёС‚ Р°РґСЂРµСЃ Рё РїСЂРѕРїРёС€РµС‚ РµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.');
 
-  define('CONFIG_WWW_HTTPS_COOKIE_DOMAIN', 'SSL Cookie домен:');
-  define('CONFIG_WWW_HTTPS_COOKIE_DOMAIN_DESCRIPTION', 'Домен, для которого будут записываться cookies');
-  define('CONFIG_WWW_HTTPS_COOKIE_DOMAIN_DESCRIPTION_LONG', 'Здесь должен быть указан только домен второго уровня, например <i>ssl.my-hosting-company.com</i><br> В большинстве случаев, Вам не нужно прописывать домен, скрипт установки автоматически определит домен и пропишет его автоматически.');
+  define('CONFIG_WWW_HTTPS_COOKIE_DOMAIN', 'SSL Cookie РґРѕРјРµРЅ:');
+  define('CONFIG_WWW_HTTPS_COOKIE_DOMAIN_DESCRIPTION', 'Р”РѕРјРµРЅ, РґР»СЏ РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґСѓС‚ Р·Р°РїРёСЃС‹РІР°С‚СЊСЃСЏ cookies');
+  define('CONFIG_WWW_HTTPS_COOKIE_DOMAIN_DESCRIPTION_LONG', 'Р—РґРµСЃСЊ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅ С‚РѕР»СЊРєРѕ РґРѕРјРµРЅ РІС‚РѕСЂРѕРіРѕ СѓСЂРѕРІРЅСЏ, РЅР°РїСЂРёРјРµСЂ <i>ssl.my-hosting-company.com</i><br> Р’ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ СЃР»СѓС‡Р°РµРІ, Р’Р°Рј РЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ РґРѕРјРµРЅ, СЃРєСЂРёРїС‚ СѓСЃС‚Р°РЅРѕРІРєРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕРїСЂРµРґРµР»РёС‚ РґРѕРјРµРЅ Рё РїСЂРѕРїРёС€РµС‚ РµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.');
 
-  define('CONFIG_WWW_HTTPS_COOKIE_PATH', 'SSL Cookie путь:');
-  define('CONFIG_WWW_HTTPS_COOKIE_PATH_DESCRIPTION', 'Путь, где будут храниться cookies');
-  define('CONFIG_WWW_HTTPS_COOKIE_PATH_DESCRIPTION_LONG', 'Например <i>/my_name/catalog/</i><br> В большинстве случаев, Вам не нужно прописывать путь, скрипт установки автоматически определит путь и пропишет его автоматически.');
+  define('CONFIG_WWW_HTTPS_COOKIE_PATH', 'SSL Cookie РїСѓС‚СЊ:');
+  define('CONFIG_WWW_HTTPS_COOKIE_PATH_DESCRIPTION', 'РџСѓС‚СЊ, РіРґРµ Р±СѓРґСѓС‚ С…СЂР°РЅРёС‚СЊСЃСЏ cookies');
+  define('CONFIG_WWW_HTTPS_COOKIE_PATH_DESCRIPTION_LONG', 'РќР°РїСЂРёРјРµСЂ <i>/my_name/catalog/</i><br> Р’ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ СЃР»СѓС‡Р°РµРІ, Р’Р°Рј РЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ РїСѓС‚СЊ, СЃРєСЂРёРїС‚ СѓСЃС‚Р°РЅРѕРІРєРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕРїСЂРµРґРµР»РёС‚ РїСѓС‚СЊ Рё РїСЂРѕРїРёС€РµС‚ РµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.');
 
-  define('ERROR_CONFIG_FILE_NOT_WRITEABLE', '<p>Исправьте следующие ошибки:</p><p><div class="boxMe"><b>Файлы настроек либо отсутствуют, либо установлены неверные права доступа.</b><br><br>Установите права доступа 706 на следующий файл:<ul class="boxMe"><li>cd %sincludes/</li><li>touch configure.php</li><li>chmod 706 configure.php</li></ul></div></p><p class="noteBox">Если <i>chmod 706</i> не выставляется, попробуйте <i>chmod 777</i>.</p><p class="noteBox">В операционной системе Windows вы просто должны убедиться, что данные файлы <b>не</b> имеют атрибут <b>Только для чтения</b>.</p>');
+  define('ERROR_CONFIG_FILE_NOT_WRITEABLE', '<p>РСЃРїСЂР°РІСЊС‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РѕС€РёР±РєРё:</p><p><div class="boxMe"><b>Р¤Р°Р№Р»С‹ РЅР°СЃС‚СЂРѕРµРє Р»РёР±Рѕ РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚, Р»РёР±Рѕ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ РЅРµРІРµСЂРЅС‹Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР°.</b><br><br>РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР° 706 РЅР° СЃР»РµРґСѓСЋС‰РёР№ С„Р°Р№Р»:<ul class="boxMe"><li>cd %sincludes/</li><li>touch configure.php</li><li>chmod 706 configure.php</li></ul></div></p><p class="noteBox">Р•СЃР»Рё <i>chmod 706</i> РЅРµ РІС‹СЃС‚Р°РІР»СЏРµС‚СЃСЏ, РїРѕРїСЂРѕР±СѓР№С‚Рµ <i>chmod 777</i>.</p><p class="noteBox">Р’ РѕРїРµСЂР°С†РёРѕРЅРЅРѕР№ СЃРёСЃС‚РµРјРµ Windows РІС‹ РїСЂРѕСЃС‚Рѕ РґРѕР»Р¶РЅС‹ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РґР°РЅРЅС‹Рµ С„Р°Р№Р»С‹ <b>РЅРµ</b> РёРјРµСЋС‚ Р°С‚СЂРёР±СѓС‚ <b>РўРѕР»СЊРєРѕ РґР»СЏ С‡С‚РµРЅРёСЏ</b>.</p>');
 
-  define('ERROR_CONFIG_ADMIN_FILE_NOT_WRITEABLE', '<p>Исправьте следующие ошибки:</p><p><div class="boxMe"><b>Файлы настроек либо отсутствуют, либо установлены неверные права доступа.</b><br><br>Установите права доступа 706 на следующий файл:<ul class="boxMe"><li>cd %sadmin/includes/</li><li>touch configure.php</li><li>chmod 706 configure.php</li></ul></div></p><p class="noteBox">Если <i>chmod 706</i> не выставляется, попробуйте <i>chmod 777</i>.</p><p class="noteBox">В операционной системе Windows вы просто должны убедиться, что данные файлы <b>не</b> имеют атрибут <b>Только для чтения</b>.</p>');
+  define('ERROR_CONFIG_ADMIN_FILE_NOT_WRITEABLE', '<p>РСЃРїСЂР°РІСЊС‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РѕС€РёР±РєРё:</p><p><div class="boxMe"><b>Р¤Р°Р№Р»С‹ РЅР°СЃС‚СЂРѕРµРє Р»РёР±Рѕ РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚, Р»РёР±Рѕ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ РЅРµРІРµСЂРЅС‹Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР°.</b><br><br>РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР° 706 РЅР° СЃР»РµРґСѓСЋС‰РёР№ С„Р°Р№Р»:<ul class="boxMe"><li>cd %sadmin/includes/</li><li>touch configure.php</li><li>chmod 706 configure.php</li></ul></div></p><p class="noteBox">Р•СЃР»Рё <i>chmod 706</i> РЅРµ РІС‹СЃС‚Р°РІР»СЏРµС‚СЃСЏ, РїРѕРїСЂРѕР±СѓР№С‚Рµ <i>chmod 777</i>.</p><p class="noteBox">Р’ РѕРїРµСЂР°С†РёРѕРЅРЅРѕР№ СЃРёСЃС‚РµРјРµ Windows РІС‹ РїСЂРѕСЃС‚Рѕ РґРѕР»Р¶РЅС‹ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РґР°РЅРЅС‹Рµ С„Р°Р№Р»С‹ <b>РЅРµ</b> РёРјРµСЋС‚ Р°С‚СЂРёР±СѓС‚ <b>РўРѕР»СЊРєРѕ РґР»СЏ С‡С‚РµРЅРёСЏ</b>.</p>');
 
-  define('TEXT_SUCCESSFUL_CONFIGURATION', 'Настройка конфигурационных файлов завершена!');
-  define('TEXT_SUCCESSFUL1_CONFIGURATION', 'Установка интернет-магазина завершена!<br><br>Для входа в администраторскую установлены следующие данные:<br>E-Mail Адрес: <b>admin@localhost.com</b><br>Пароль: <b>admin</b><br>После входа в администраторскую обязательно установите новый e-mail адрес и пароль для входа.<br>');
+  define('TEXT_SUCCESSFUL_CONFIGURATION', 'РќР°СЃС‚СЂРѕР№РєР° РєРѕРЅС„РёРіСѓСЂР°С†РёРѕРЅРЅС‹С… С„Р°Р№Р»РѕРІ Р·Р°РІРµСЂС€РµРЅР°!');
+  define('TEXT_SUCCESSFUL1_CONFIGURATION', 'РЈСЃС‚Р°РЅРѕРІРєР° РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР° Р·Р°РІРµСЂС€РµРЅР°!<br><br>Р”Р»СЏ РІС…РѕРґР° РІ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєСѓСЋ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ СЃР»РµРґСѓСЋС‰РёРµ РґР°РЅРЅС‹Рµ:<br>E-Mail РђРґСЂРµСЃ: <b>admin@localhost.com</b><br>РџР°СЂРѕР»СЊ: <b>admin</b><br>РџРѕСЃР»Рµ РІС…РѕРґР° РІ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєСѓСЋ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚Рµ РЅРѕРІС‹Р№ e-mail Р°РґСЂРµСЃ Рё РїР°СЂРѕР»СЊ РґР»СЏ РІС…РѕРґР°.<br>');
 ?>
