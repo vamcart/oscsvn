@@ -1,2 +1,2 @@
-Счётчики!<br>
-Вставляйте коды счётчиков в файл /templates/Helius-Original/counters.txt
+РЎС‡С‘С‚С‡РёРєРё!<br>
+Р’СЃС‚Р°РІР»СЏР№С‚Рµ РєРѕРґС‹ СЃС‡С‘С‚С‡РёРєРѕРІ РІ С„Р°Р№Р» /templates/Helius/counters.txt
