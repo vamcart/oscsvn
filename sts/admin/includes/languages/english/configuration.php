@@ -20,7 +20,7 @@ define('TEXT_INFO_LAST_MODIFIED', 'Last Modified:');
 define('ERROR_TEMPLATE_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Directory does not writeable. Change permissions.');
 define('ERROR_TEMPLATE_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Directory does not exists.');
 
-// Мой магазин
+// РњРѕР№ РјР°РіР°Р·РёРЅ
 
 define('DEFAULT_TEMPLATE_TITLE', 'Default theme');
 define('STORE_NAME_TITLE', 'Store Name');
@@ -58,7 +58,7 @@ define('ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE_TITLE' , 'Allow attributes in prod
 define('SHOW_SUBCATEGORIES_WHEN_CATEGORIES_HAS_PRODUCTS_TITLE' , 'Show subcategories when category has products');
 define('SHOW_PDF_DATASHEET_TITLE' , 'PDF Datasheet');
 
-// Минимальнаые значения
+// РњРёРЅРёРјР°Р»СЊРЅР°С‹Рµ Р·РЅР°С‡РµРЅРёСЏ
 
 define('ENTRY_FIRST_NAME_MIN_LENGTH_TITLE', 'First Name');
 define('ENTRY_LAST_NAME_MIN_LENGTH_TITLE', 'Last Name');
@@ -79,7 +79,7 @@ define('MIN_DISPLAY_ALSO_PURCHASED_TITLE', 'Also Purchased');
 define('MIN_DISPLAY_XSELL_TITLE', 'X-Sell');
 define('MIN_ORDER_TITLE' , 'Minimum order amount');
 
-// Максимальные значения
+// РњР°РєСЃРёРјР°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ
 
 define('MAX_PROD_ADMIN_SIDE_TITLE' , 'Products per page in admin');
 define('MAX_ADDRESS_BOOK_ENTRIES_TITLE', 'Address Book Entries');
@@ -104,7 +104,7 @@ define('MAX_DISPLAY_ORDER_HISTORY_TITLE', 'Order History');
 define('MAX_DISPLAY_FEATURED_PRODUCTS_TITLE', 'Product Featured Maximum Display');
 define('MAX_DISPLAY_FEATURED_PRODUCTS_LISTING_TITLE', 'Product Featured Display Results');
 
-// Картинки
+// РљР°СЂС‚РёРЅРєРё
 
 define('SMALL_IMAGE_WIDTH_TITLE', 'Small Image Width');
 define('SMALL_IMAGE_HEIGHT_TITLE', 'Small Image Height');
@@ -122,7 +122,7 @@ define('MEDIUM_IMAGE_HEIGHT_TITLE', 'Medium Image Height');
 define('LARGE_IMAGE_WIDTH_TITLE', 'Large Image Width (Pop-up)');
 define('LARGE_IMAGE_HEIGHT_TITLE', 'Large Image Height (Pop-up)');
 
-// Данные покупателя
+// Р”Р°РЅРЅС‹Рµ РїРѕРєСѓРїР°С‚РµР»СЏ
 
 define('ACCOUNT_GENDER_TITLE', 'Gender');
 define('ACCOUNT_DOB_TITLE', 'Date of Birth');
@@ -137,7 +137,7 @@ define('ACCOUNT_TELE_TITLE' , 'Telephone');
 define('ACCOUNT_FAX_TITLE' , 'Fax');
 define('ACCOUNT_NEWS_TITLE' , 'Newsletter');
 
-// Доставка/упаковка
+// Р”РѕСЃС‚Р°РІРєР°/СѓРїР°РєРѕРІРєР°
 
 define('SHIPPING_ORIGIN_COUNTRY_TITLE', 'Country of Origin');
 define('SHIPPING_ORIGIN_ZIP_TITLE', 'Postal Code');
@@ -150,7 +150,7 @@ define('MODULE_ORDER_TOTAL_SHIPPING_DESTINATION_TITLE', 'Provide Free Shipping F
 define('SHOW_SHIPPING_ESTIMATOR_TITLE', 'Shipping Estimator');
 define('SHOW_XSELL_CART', 'Show cross-sell products in cart');
 
-// Вывод товара
+// Р’С‹РІРѕРґ С‚РѕРІР°СЂР°
 
 define('PRODUCT_LISTING_DISPLAY_STYLE_TITLE' , 'Product listing type');
 define('PRODUCT_LIST_IMAGE_TITLE' , 'Display Product Image');
@@ -167,7 +167,7 @@ define('PREV_NEXT_BAR_LOCATION_TITLE', 'Location of Prev/Next Navigation Bar (1-
 define('PRODUCT_LIST_INFO_TITLE' , 'Display short description');
 define('PRODUCT_SORT_ORDER_TITLE' , 'Display sort order');
 
-// Склад
+// РЎРєР»Р°Рґ
 
 define('STOCK_CHECK_TITLE', 'Check stock level');
 define('STOCK_LIMITED_TITLE', 'Subtract stock');
@@ -175,7 +175,7 @@ define('STOCK_ALLOW_CHECKOUT_TITLE', 'Allow Checkout');
 define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_TITLE', 'Mark product out of stock');
 define('STOCK_REORDER_LEVEL_TITLE', 'Stock Re-order level');
 
-// Логи
+// Р›РѕРіРё
 
 define('STORE_PAGE_PARSE_TIME_TITLE', 'Store Page Parse Time');
 define('STORE_PAGE_PARSE_TIME_LOG_TITLE', 'Log Destination');
@@ -183,12 +183,12 @@ define('STORE_PARSE_DATE_TIME_FORMAT_TITLE', 'Log Date Format');
 define('DISPLAY_PAGE_PARSE_TIME_TITLE', 'Display The Page Parse Time');
 define('STORE_DB_TRANSACTIONS_TITLE', 'Store Database Queries');
 
-// Кэш
+// РљСЌС€
 
 define('USE_CACHE_TITLE', 'Use Cache');
 define('DIR_FS_CACHE_TITLE', 'Cache Directory');
 
-// Настройка E-Mail
+// РќР°СЃС‚СЂРѕР№РєР° E-Mail
 
 define('EMAIL_TRANSPORT_TITLE', 'E-Mail Transport Method');
 define('EMAIL_LINEFEED_TITLE', 'E-Mail Linefeeds');
@@ -196,7 +196,7 @@ define('EMAIL_USE_HTML_TITLE', 'Use MIME HTML When Sending Emails');
 define('ENTRY_EMAIL_ADDRESS_CHECK_TITLE', 'Verify E-Mail Addresses Through DNS');
 define('SEND_EMAILS_TITLE', 'Send E-Mails');
 
-// Скачивание
+// РЎРєР°С‡РёРІР°РЅРёРµ
 
 define('DOWNLOAD_ENABLED_TITLE', 'Enable download');
 define('DOWNLOAD_BY_REDIRECT_TITLE', 'Download by redirect');
@@ -206,12 +206,12 @@ define('DOWNLOADS_ORDERS_STATUS_UPDATED_VALUE_TITLE', 'Downloads Controller Upda
 define('DOWNLOADS_CONTROLLER_ON_HOLD_MSG_TITLE', 'Downloads Controller Download on hold message');
 define('DOWNLOADS_CONTROLLER_ORDERS_STATUS_TITLE', 'Downloads Controller Order Status Value');
 
-// GZip Компрессия
+// GZip РљРѕРјРїСЂРµСЃСЃРёСЏ
 
 define('GZIP_COMPRESSION_TITLE', 'Enable GZip Compression');
 define('GZIP_LEVEL_TITLE', 'Compression Level');
 
-// Сессии
+// РЎРµСЃСЃРёРё
 
 define('SESSION_WRITE_DIRECTORY_TITLE', 'Session Directory');
 define('SESSION_FORCE_COOKIE_USE_TITLE', 'Force Cookie Use');
@@ -221,7 +221,7 @@ define('SESSION_CHECK_IP_ADDRESS_TITLE', 'Check IP Address');
 define('SESSION_BLOCK_SPIDERS_TITLE', 'Prevent Spider Sessions');
 define('SESSION_RECREATE_TITLE', 'Recreate Session');
 
-// HTML Редактор
+// HTML Р РµРґР°РєС‚РѕСЂ
 
 define('HTML_AREA_WYSIWYG_DISABLE_TITLE', 'PRODUCT DESCRIPTIONS use TinyMCE?');
 define('HTML_AREA_WYSIWYG_DISABLE_JPSY_TITLE', 'PRODUCT DESCRIPTIONS use JPSY-PHP ULTRA-IMAGES MANAGER?');
@@ -254,7 +254,7 @@ define('HTML_AREA_WYSIWYG_FONT_COLOUR_TITLE', 'GLOBAL - User Interface Font Colo
 define('HTML_AREA_WYSIWYG_BG_COLOUR_TITLE', 'GLOBAL - User Interface Background Colour');
 define('HTML_AREA_WYSIWYG_DEBUG_TITLE', 'GLOBAL - ALLOW DEBUG MODE?');
 
-// Партнёрская программа
+// РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°
 
 define('AFFILIATE_EMAIL_ADDRESS_TITLE', 'E-Mail Address');
 define('AFFILIATE_PERCENT_TITLE', 'Affiliate Pay Per Sale Payment % Rate');
@@ -270,7 +270,7 @@ define('AFFILATE_USE_TIER_TITLE', 'Use Affiliate-tier');
 define('AFFILIATE_TIER_LEVELS_TITLE', 'Number of Tierlevels');
 define('AFFILIATE_TIER_PERCENTAGE_TITLE', 'Percentage Rate for the Tierlevels');
 
-// Модуль Dynamic MoPics
+// РњРѕРґСѓР»СЊ Dynamic MoPics
 
 define('IN_IMAGE_BIGIMAGES_TITLE', 'Big Images Directory');
 define('IN_IMAGE_THUMBS_TITLE', 'Thumbnail Images Directory');
@@ -281,7 +281,7 @@ define('BIG_PIC_EXT_TITLE', 'Main Big Pic Extension');
 define('THUMB_IMAGE_TYPE_TITLE', 'Mo Pics Thumbnail Image Type');
 define('BIG_IMAGE_TYPE_TITLE', 'Mo Pics Big Image Type');
 
-// Тех. обслуживание
+// РўРµС…. РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ
 
 define('DOWN_FOR_MAINTENANCE_TITLE', 'Down for Maintenance: ON/OFF');
 define('DOWN_FOR_MAINTENANCE_FILENAME_TITLE', 'Down for Maintenance: filename');
@@ -297,11 +297,11 @@ define('DISPLAY_MAINTENANCE_TIME_TITLE', 'Display when webmaster has enabled mai
 define('DISPLAY_MAINTENANCE_PERIOD_TITLE', 'Display website maintenance period');
 define('TEXT_MAINTENANCE_PERIOD_TIME_TITLE', 'Website maintenance period');
 
-// Быстрое оформление
+// Р‘С‹СЃС‚СЂРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ
 
 define('GUEST_ON_TITLE' , 'Guests accounts');
 
-// Ссылки
+// РЎСЃС‹Р»РєРё
 
 define('ENABLE_LINKS_COUNT_TITLE' , 'Click Count');
 define('ENABLE_SPIDER_FRIENDLY_LINKS_TITLE' , 'Spider Friendly Links');
@@ -318,7 +318,7 @@ define('ENTRY_LINKS_DESCRIPTION_MIN_LENGTH_TITLE' , 'Link Description Minimum Le
 define('ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH_TITLE' , 'Link Contact Name Minimum Length');
 define('LINKS_CHECK_PHRASE_TITLE' , 'Links Check Phrase');
 
-// Обновление прайса
+// РћР±РЅРѕРІР»РµРЅРёРµ РїСЂР°Р№СЃР°
 
 define('DISPLAY_MODEL_TITLE' , 'Display the model');
 define('MODIFY_MODEL_TITLE' , 'Modify the model');
@@ -341,14 +341,14 @@ define('DISPLAY_PREVIEW_TITLE' , 'Display the link towards the products informat
 define('DISPLAY_EDIT_TITLE' , 'Display the link towards the page where you will be able to edit the product');
 define('ACTIVATE_COMMERCIAL_MARGIN_TITLE' , 'Activate or desactivate the commercial margin');
 
-// Отложенные товары
+// РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹
 
 define('MAX_DISPLAY_WISHLIST_PRODUCTS_TITLE' , 'Max Wish List');
 define('MAX_DISPLAY_WISHLIST_BOX_TITLE' , 'Max Wish List Box');
 define('DISPLAY_WISHLIST_EMAILS_TITLE' , 'Display Emails');
 define('WISHLIST_REDIRECT_TITLE' , 'Wishlist Redirect');
 
-// Кэш страниц
+// РљСЌС€ СЃС‚СЂР°РЅРёС†
 
 define('ENABLE_PAGE_CACHE_TITLE' , 'Enable Page Cache');
 define('PAGE_CACHE_LIFETIME_TITLE' , 'Cache Lifetime');
@@ -357,7 +357,7 @@ define('PAGE_CACHE_DISABLE_PARAMETERS_TITLE' , 'Disable URL Parameters?');
 define('PAGE_CACHE_DELETE_FILES_TITLE' , 'Delete Cache Files?');
 define('PAGE_CACHE_UPDATE_CONFIG_FILES_TITLE' , 'Config Cache Update File?');
 
-// Яндекс маркет
+// РЇРЅРґРµРєСЃ РјР°СЂРєРµС‚
 
 define('YML_NAME_TITLE' , 'Store name');
 define('YML_COMPANY_TITLE' , 'Store owner');
@@ -370,9 +370,9 @@ define('YML_STRIP_TAGS_TITLE' , 'Strip tags');
 define('YML_UTF8_TITLE' , 'Encode to UTF-8');
 define('YML_SALES_NOTES_TITLE' , 'sales_notes tag');
 
-// Описание полей
+// РћРїРёСЃР°РЅРёРµ РїРѕР»РµР№
 
-// Мой магазин
+// РњРѕР№ РјР°РіР°Р·РёРЅ
 
 define('DEFAULT_TEMPLATE_DESC', 'Use this to set the default theme.');
 define('STORE_NAME_DESC', 'The name of my store');
@@ -410,7 +410,7 @@ define('ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE_DESC', 'Enable - true<br>Disable -
 define('SHOW_SUBCATEGORIES_WHEN_CATEGORIES_HAS_PRODUCTS_DESC', 'Show subcategories when category has products.');
 define('SHOW_PDF_DATASHEET_DESC', 'Enable - true<br>Disable - false.');
 
-// Минимальнаые значения
+// РњРёРЅРёРјР°Р»СЊРЅР°С‹Рµ Р·РЅР°С‡РµРЅРёСЏ
 
 define('ENTRY_FIRST_NAME_MIN_LENGTH_DESC', 'Minimum length of first name');
 define('ENTRY_LAST_NAME_MIN_LENGTH_DESC', 'Minimum length of last name');
@@ -431,7 +431,7 @@ define('MIN_DISPLAY_ALSO_PURCHASED_DESC', 'Minimum number of products to display
 define('MIN_DISPLAY_XSELL_DESC', 'Minimum nuber of X-sell products to display');
 define('MIN_ORDER_DESC', 'Minimum order amount.');
 
-// Максимальные значения
+// РњР°РєСЃРёРјР°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ
 
 define('MAX_PROD_ADMIN_SIDE_DESC', 'Maximum products per page in admin');
 define('MAX_ADDRESS_BOOK_ENTRIES_DESC', 'Maximum address book entries a customer is allowed to have');
@@ -456,7 +456,7 @@ define('MAX_DISPLAY_ORDER_HISTORY_DESC', 'Maximum number of orders to display in
 define('MAX_DISPLAY_FEATURED_PRODUCTS_DESC', 'Amount of products to on main page');
 define('MAX_DISPLAY_FEATURED_PRODUCTS_LISTING_DESC', 'Amount of products to list per page');
 
-// Картинки
+// РљР°СЂС‚РёРЅРєРё
 
 define('SMALL_IMAGE_WIDTH_DESC', 'The pixel width of small images');
 define('SMALL_IMAGE_HEIGHT_DESC', 'The pixel height of small images');
@@ -474,7 +474,7 @@ define('MEDIUM_IMAGE_HEIGHT_DESC', 'The pixel height of medium images');
 define('LARGE_IMAGE_WIDTH_DESC', 'The pixel width of large images (Pop-up)<br>(Use 0 for non-specific size)');
 define('LARGE_IMAGE_HEIGHT_DESC', 'The pixel height of large images (Pop-up)<br>(Use 0 for non-specific size)');
 
-// Данные покупателя
+// Р”Р°РЅРЅС‹Рµ РїРѕРєСѓРїР°С‚РµР»СЏ
 
 define('ACCOUNT_GENDER_DESC', 'Display gender in the customers account');
 define('ACCOUNT_DOB_DESC', 'Display date of birth in the customers account');
@@ -489,7 +489,7 @@ define('ACCOUNT_TELE_DESC', 'Display Telephone on the Create Account page');
 define('ACCOUNT_FAX_DESC', 'Display Fax on the Create Account page');
 define('ACCOUNT_NEWS_DESC', 'Display Newsletter on the Create Account page');
 
-// Доставка/упаковка
+// Р”РѕСЃС‚Р°РІРєР°/СѓРїР°РєРѕРІРєР°
 
 define('SHIPPING_ORIGIN_COUNTRY_DESC', 'Select the country of origin to be used in shipping quotes.');
 define('SHIPPING_ORIGIN_ZIP_DESC', 'Enter the Postal Code (ZIP) of the Store to be used in shipping quotes.');
@@ -502,7 +502,7 @@ define('MODULE_ORDER_TOTAL_SHIPPING_DESTINATION_DESC', 'Provide free shipping fo
 define('SHOW_SHIPPING_ESTIMATOR_DESC', 'Show Shipping Estimator on Shopping Cart <br>true= always <br>false= button popup only');
 define('SHOW_XSELL_CART_DESC', 'Show Cross-Sell Products on Shopping Cart');
 
-// Вывод товара
+// Р’С‹РІРѕРґ С‚РѕРІР°СЂР°
 
 define('PRODUCT_LISTING_DISPLAY_STYLE_DESC', 'Choose which Style you would like use to display your products on the Product Listing Pages.<br><br>Whichever style you choose, make sure you configure the appropriate settings for the style of listing you have selected.');
 define('PRODUCT_LIST_IMAGE_DESC', 'Do you want to display the Product Image?');
@@ -519,7 +519,7 @@ define('PREV_NEXT_BAR_LOCATION_DESC', 'Sets the location of the Prev/Next Naviga
 define('PRODUCT_LIST_INFO_DESC', 'Do you want to display the Short Description?');
 define('PRODUCT_SORT_ORDER_DESC', 'Do you want to display the Product Sort Order?');
 
-// Склад
+// РЎРєР»Р°Рґ
 
 define('STOCK_CHECK_DESC', 'Check to see if sufficent stock is available');
 define('STOCK_LIMITED_DESC', 'Subtract product in stock by product orders');
@@ -527,7 +527,7 @@ define('STOCK_ALLOW_CHECKOUT_DESC', 'Allow customer to checkout even if there is
 define('STOCK_MARK_PRODUCT_OUT_OF_STOCK_DESC', 'Display something on screen so customer can see which product has insufficient stock');
 define('STOCK_REORDER_LEVEL_DESC', 'Define when stock needs to be re-ordered');
 
-// Логи
+// Р›РѕРіРё
 
 define('STORE_PAGE_PARSE_TIME_DESC', 'Store the time it takes to parse a page');
 define('STORE_PAGE_PARSE_TIME_LOG_DESC', 'Directory and filename of the page parse time log');
@@ -535,12 +535,12 @@ define('STORE_PARSE_DATE_TIME_FORMAT_DESC', 'The date format');
 define('DISPLAY_PAGE_PARSE_TIME_DESC', 'Display the page parse time (store page parse time must be enabled)');
 define('STORE_DB_TRANSACTIONS_DESC', 'Store the database queries in the page parse time log (PHP4 only)');
 
-// Кэш
+// РљСЌС€
 
 define('USE_CACHE_DESC', 'Use caching features');
 define('DIR_FS_CACHE_DESC', 'The directory where the cached files are saved');
 
-// Настройка E-Mail
+// РќР°СЃС‚СЂРѕР№РєР° E-Mail
 
 define('EMAIL_TRANSPORT_DESC', 'Defines if this server uses a local connection to sendmail or uses an SMTP connection via TCP/IP. Servers running on Windows and MacOS should change this setting to SMTP.');
 define('EMAIL_LINEFEED_DESC', 'Defines the character sequence used to separate mail headers.');
@@ -548,7 +548,7 @@ define('EMAIL_USE_HTML_DESC', 'Send e-mails in HTML format');
 define('ENTRY_EMAIL_ADDRESS_CHECK_DESC', 'Verify e-mail address through a DNS server');
 define('SEND_EMAILS_DESC', 'Send out e-mails');
 
-// Скачивание
+// РЎРєР°С‡РёРІР°РЅРёРµ
 
 define('DOWNLOAD_ENABLED_DESC', 'Enable the products download functions.');
 define('DOWNLOAD_BY_REDIRECT_DESC', 'Use browser redirection for download. Disable on non-Unix systems.');
@@ -558,12 +558,12 @@ define('DOWNLOADS_ORDERS_STATUS_UPDATED_VALUE_DESC', 'What orders_status resets 
 define('DOWNLOADS_CONTROLLER_ON_HOLD_MSG_DESC', 'Downloads Controller Download on hold message');
 define('DOWNLOADS_CONTROLLER_ORDERS_STATUS_DESC', 'Downloads Controller Order Status Value - Default=2');
 
-// GZip Компрессия
+// GZip РљРѕРјРїСЂРµСЃСЃРёСЏ
 
 define('GZIP_COMPRESSION_DESC', 'Enable HTTP GZip compression.');
 define('GZIP_LEVEL_DESC', 'Use this compression level 0-9 (0 = minimum, 9 = maximum).');
 
-// Сессии
+// РЎРµСЃСЃРёРё
 
 define('SESSION_WRITE_DIRECTORY_DESC', 'If sessions are file based, store them in this directory.');
 define('SESSION_FORCE_COOKIE_USE_DESC', 'Force the use of sessions when cookies are only enabled.');
@@ -573,7 +573,7 @@ define('SESSION_CHECK_IP_ADDRESS_DESC', 'Validate the clients IP address on ever
 define('SESSION_BLOCK_SPIDERS_DESC', 'Prevent known spiders from starting a session.');
 define('SESSION_RECREATE_DESC', 'Recreate the session to generate a new session ID when the customer logs on or creates an account (PHP >=4.1 needed).');
 
-// HTML Редактор
+// HTML Р РµРґР°РєС‚РѕСЂ
 
 define('HTML_AREA_WYSIWYG_DISABLE_DESC', 'Enable/Disable TinyMCE box');
 define('HTML_AREA_WYSIWYG_DISABLE_JPSY_DESC', 'Enable/Disable JPSY PHP/WYSIWYG ULTRA-IMAGE MANAGER box');
@@ -606,7 +606,7 @@ define('HTML_AREA_WYSIWYG_FONT_COLOUR_DESC', 'White, Black, C0C0C0, Red, FFFFFF,
 define('HTML_AREA_WYSIWYG_BG_COLOUR_DESC', 'White, Black, C0C0C0, Red, FFFFFF, Yellow, Pink, Blue, Gray, 000000, ect..<br>basically any colour or html colour code!<br>(not saved to product description)');
 define('HTML_AREA_WYSIWYG_DEBUG_DESC', 'Moniter Live-html, It updates as you type in a 2nd field above it.<p>Disable Debug = 0<br>Enable Debug = 1<br>Default = 0 OFF');
 
-// Партнёрская программа
+// РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°
 
 define('AFFILIATE_EMAIL_ADDRESS_DESC', 'The E Mail Address for the Affiliate Programm');
 define('AFFILIATE_PERCENT_DESC', 'Percentage Rate for the Affiliate Program');
@@ -622,7 +622,7 @@ define('AFFILATE_USE_TIER_DESC', 'Multilevel Affiliate provisions');
 define('AFFILIATE_TIER_LEVELS_DESC', 'Number of Tierlevels');
 define('AFFILIATE_TIER_PERCENTAGE_DESC', 'Percent Rates for the tierlevels<br>Example: 8.00;5.00;1.00');
 
-// Модуль Dynamic MoPics
+// РњРѕРґСѓР»СЊ Dynamic MoPics
 
 define('IN_IMAGE_BIGIMAGES_DESC', 'The directory inside catalog/ images where your big images are stored.');
 define('IN_IMAGE_THUMBS_DESC', 'The directory inside catalog/ images where you extra image thumbs are stored.');
@@ -633,7 +633,7 @@ define('BIG_PIC_EXT_DESC', 'This is if you name your main big image like IMAGE_b
 define('THUMB_IMAGE_TYPE_DESC', 'The file type of the mopic thumbnails');
 define('BIG_IMAGE_TYPE_DESC', 'The file type of the mopic big images');
 
-// Тех. обслуживание
+// РўРµС…. РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ
 
 define('DOWN_FOR_MAINTENANCE_DESC', 'Down for Maintenance <br>(true=on false=off)');
 define('DOWN_FOR_MAINTENANCE_FILENAME_DESC', 'Down for Maintenance filename Default=down_for_maintenance.php');
@@ -649,11 +649,11 @@ define('DISPLAY_MAINTENANCE_TIME_DESC', 'Display when Webmaster has enabled main
 define('DISPLAY_MAINTENANCE_PERIOD_DESC', 'Display Website maintenance period <br>(true=on false=off)<br>');
 define('TEXT_MAINTENANCE_PERIOD_TIME_DESC', 'Enter Website Maintenance period (hh:mm)');
 
-// Быстрое оформление
+// Р‘С‹СЃС‚СЂРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ
 
 define('GUEST_ON_DESC', 'Allow Customers to purchase without an account.');
 
-// Ссылки
+// РЎСЃС‹Р»РєРё
 
 define('ENABLE_LINKS_COUNT_DESC', 'Enable links click count.');
 define('ENABLE_SPIDER_FRIENDLY_LINKS_DESC', 'Enable spider friendly links (recommended).');
@@ -670,7 +670,7 @@ define('ENTRY_LINKS_DESCRIPTION_MIN_LENGTH_DESC', 'Minimum length of Link Descri
 define('ENTRY_LINKS_CONTACT_NAME_MIN_LENGTH_DESC', 'Minimum length of Link Contact Name..');
 define('LINKS_CHECK_PHRASE_DESC', 'Phrase to look for when you perform a link check.');
 
-// Обновление прайса
+// РћР±РЅРѕРІР»РµРЅРёРµ РїСЂР°Р№СЃР°
 
 define('DISPLAY_MODEL_DESC', 'Enable/Disable the model displaying');
 define('MODIFY_MODEL_DESC', 'Allow/Disallow the model modification');
@@ -693,14 +693,14 @@ define('DISPLAY_MANUFACTURER_DESC', 'Do you want just display the manufacturer ?
 define('DISPLAY_TAX_DESC', 'Do you want just display the tax ?');
 define('ACTIVATE_COMMERCIAL_MARGIN_DESC', 'Do you want taht the commercial margin be activate or not ?');
 
-// Отложенные товары
+// РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹
 
 define('MAX_DISPLAY_WISHLIST_PRODUCTS_DESC' , 'How many wish list items to show per page on the main wishlist.php file.');
 define('MAX_DISPLAY_WISHLIST_BOX_DESC' , 'How many wish list items to display in the infobox before it changes to a counter.');
 define('DISPLAY_WISHLIST_EMAILS_DESC' , 'How many emails to display when the customer emails their wishlist link.');
 define('WISHLIST_REDIRECT_DESC' , 'Do you want to redirect back to the product_info.php page when a customer adds a product to their wishlist?');
 
-// Кэш страниц
+// РљСЌС€ СЃС‚СЂР°РЅРёС†
 
 define('ENABLE_PAGE_CACHE_DESC' , 'Enable the page cache features to reduce server load and faster page renders?');
 define('PAGE_CACHE_LIFETIME_DESC' , 'How long to cache the pages (in minutes)?');
@@ -709,7 +709,7 @@ define('PAGE_CACHE_DISABLE_PARAMETERS_DESC' , 'In some cases (such as search eng
 define('PAGE_CACHE_DELETE_FILES_DESC' , 'If set to true the next catalog page request will delete all the cache files and then reset this value to false again.');
 define('PAGE_CACHE_UPDATE_CONFIG_FILES_DESC' , 'If you have a configuration cache contribution enter the FULL path to the update file.');
 
-// Яндекс маркет
+// РЇРЅРґРµРєСЃ РјР°СЂРєРµС‚
 
 define('YML_NAME_DESC' , 'Store name for Yandex-Market. STORE_NAME used if this field empty.');
 define('YML_COMPANY_DESC' , 'Store owner for Yandex-Market. STORE_OWNER used if this field empty.');
@@ -722,7 +722,7 @@ define('YML_STRIP_TAGS_DESC' , 'Strip html tags?');
 define('YML_UTF8_DESC' , 'Encode to UTF-8?');
 define('YML_SALES_NOTES_DESC' , 'sales_notes tag value');
 
-// Список категорий на главной странице
+// РЎРїРёСЃРѕРє РєР°С‚РµРіРѕСЂРёР№ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ
 
 define('BRWCAT_ENABLE_TITLE' , 'Enable browse by categories module');
 define('BRWCAT_ICON_MODE_TITLE' , 'Category Icon Mode');
@@ -736,11 +736,11 @@ define('BRWCAT_ENABLE_DESC' , 'Enable browse by categories module');
 define('BRWCAT_ICON_MODE_DESC' , 'Choose between Disabled, Text and Image without or with Caption for Current Level Categories Icons.<br /><b>Note</b>: Image Only mode causes the category name to be displayed on top of its sub-category links.');
 define('BRWCAT_SUBCAT_MODE_DESC' , 'Choose between Disabled, Bottom or Right position of Sub-Category Links.');
 define('BRWCAT_ICONS_PER_ROW_DESC' , 'Choose how many Current Level Categories to display per row.');
-define('BRWCAT_SUBCAT_BULLET_DESC' , 'Select Bullet character to prefix each Sub Category Link.<br /><b>Note</b>: Default bullet is "» ", where the whitespace must be entered has entity &nbsp.');
+define('BRWCAT_SUBCAT_BULLET_DESC' , 'Select Bullet character to prefix each Sub Category Link.<br /><b>Note</b>: Default bullet is "В» ", where the whitespace must be entered has entity &nbsp.');
 define('BRWCAT_SUBCAT_COUNTS_DESC' , 'Define sprintf format to display Sub-Category Products count.<br /><b>Note</b>: Default format is (%s) that causes the products count to be displayed surrounded by parentesis. For more information, read the PHP manual for sprintf function.');
 define('BRWCAT_NAME_CASE_DESC' , 'Choose between same case, upper case, lower case or title case for Current Level Categories Name.');
 
-// Статьи - Настройки 
+// РЎС‚Р°С‚СЊРё - РќР°СЃС‚СЂРѕР№РєРё 
 
 define('DISPLAY_NEW_ARTICLES_TITLE', 'Display New Articles Link');
 define('NEW_ARTICLES_DAYS_DISPLAY_TITLE', 'Number of Days Display New Articles');
@@ -804,7 +804,7 @@ define('ARTICLE_MANAGER_WYSIWYG_FONT_COLOUR_DESC', 'White, Black, C0C0C0, Red, F
 define('ARTICLE_MANAGER_WYSIWYG_BG_COLOUR_DESC', 'White, Black, C0C0C0, Red, FFFFFF, Yellow, Pink, Blue, Gray, 000000, etc...<br>basically any colour or html colour code!<br>(not saved to content)');
 define('ARTICLE_MANAGER_WYSIWYG_DEBUG_DESC', 'Moniter Live-html, It updates as you type in a 2nd field above it.<p>Disable Debug = 0<br>Enable Debug = 1<br>Default = 0 OFF');
 
-// Установка модулей
+// РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»РµР№
 
 define('DIR_FS_CIP_TITLE' , 'Contribution Directory');
 define('DIR_FS_CIP_DESC' , 'Location of contribution files');

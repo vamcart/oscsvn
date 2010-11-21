@@ -14,22 +14,22 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Продажи');
-define('HEADING_TITLE_SEARCH', 'Номер заказа:');
-define('HEADING_TITLE_STATUS', 'Статус:');
-define('TABLE_HEADING_ONLINE', 'Клики');
-define('TABLE_HEADING_AFFILIATE', 'Партнёр');
-define('TABLE_HEADING_DATE', 'Дата');
-define('TABLE_HEADING_PERCENTAGE','Комиссия');
-define('TABLE_HEADING_SALES', 'Сумма');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_ORDER_ID', 'Номер заказа');
-define('TABLE_HEADING_VALUE', 'Стоимость заказа');
-define('TEXT_NO_SALES', 'На данный момент не было ни одной продажи через партнёров');
+define('HEADING_TITLE', 'РџСЂРѕРґР°Р¶Рё');
+define('HEADING_TITLE_SEARCH', 'РќРѕРјРµСЂ Р·Р°РєР°Р·Р°:');
+define('HEADING_TITLE_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('TABLE_HEADING_ONLINE', 'РљР»РёРєРё');
+define('TABLE_HEADING_AFFILIATE', 'РџР°СЂС‚РЅС‘СЂ');
+define('TABLE_HEADING_DATE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_PERCENTAGE','РљРѕРјРёСЃСЃРёСЏ');
+define('TABLE_HEADING_SALES', 'РЎСѓРјРјР°');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_ORDER_ID', 'РќРѕРјРµСЂ Р·Р°РєР°Р·Р°');
+define('TABLE_HEADING_VALUE', 'РЎС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р°');
+define('TEXT_NO_SALES', 'РќР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµ Р±С‹Р»Рѕ РЅРё РѕРґРЅРѕР№ РїСЂРѕРґР°Р¶Рё С‡РµСЂРµР· РїР°СЂС‚РЅС‘СЂРѕРІ');
 
-define('TEXT_DELETED_ORDER_BY_ADMIN', 'Удалён (Администратор)');
-define('TEXT_DISPLAY_NUMBER_OF_SALES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> продаж)');
+define('TEXT_DELETED_ORDER_BY_ADMIN', 'РЈРґР°Р»С‘РЅ (РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ)');
+define('TEXT_DISPLAY_NUMBER_OF_SALES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїСЂРѕРґР°Р¶)');
 
-define('TEXT_INFORMATION_SALES_TOTAL', 'Общая стоимость заказов, оформленных через партнёров:');
-define('TEXT_INFORMATION_AFFILIATE_TOTAL', 'Общая сумма, заработанная партнёрами:');
+define('TEXT_INFORMATION_SALES_TOTAL', 'РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·РѕРІ, РѕС„РѕСЂРјР»РµРЅРЅС‹С… С‡РµСЂРµР· РїР°СЂС‚РЅС‘СЂРѕРІ:');
+define('TEXT_INFORMATION_AFFILIATE_TOTAL', 'РћР±С‰Р°СЏ СЃСѓРјРјР°, Р·Р°СЂР°Р±РѕС‚Р°РЅРЅР°СЏ РїР°СЂС‚РЅС‘СЂР°РјРё:');
 ?>

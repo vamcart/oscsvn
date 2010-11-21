@@ -10,5 +10,5 @@
   Released under the GNU General Public License
 */
 
-define('TEXT_COUNT_CUSTOMERS', 'Êëèåíòû, ïîëó÷àþùèå ðàññûëêó: %s: %s');
+define('TEXT_COUNT_CUSTOMERS', 'ÐšÐ»Ð¸ÐµÐ½Ñ‚Ñ‹, Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÑŽÑ‰Ð¸Ðµ Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ: %s: %s');
 ?>

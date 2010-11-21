@@ -95,7 +95,7 @@ define('ENTRY_NEWSLETTER_NO', 'Unsubscribed');
 define('ENTRY_NEWSLETTER_ERROR', '');
 define('ENTRY_PASSWORD', 'Password:');
 define('ENTRY_PASSWORD_ERROR', '&nbsp;<small><font color="#FF0000">min ' . ENTRY_PASSWORD_MIN_LENGTH . ' chars</font></small>');
-define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Поле Подтвердите пароль должно совпадать с полем Пароль.');
+define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'РџРѕР»Рµ РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ РґРѕР»Р¶РЅРѕ СЃРѕРІРїР°РґР°С‚СЊ СЃ РїРѕР»РµРј РџР°СЂРѕР»СЊ.');
 define('ENTRY_PASSWORD_TEXT', '*');
 define('ENTRY_PASSWORD_CONFIRMATION', 'Password Confirmation:');
 define('ENTRY_PASSWORD_CONFIRMATION_TEXT', '&nbsp;<small><font color="#AABBDD">required</font></small>');

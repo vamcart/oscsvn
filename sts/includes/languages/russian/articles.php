@@ -11,45 +11,45 @@
 */
 
 define('TEXT_MAIN', '');
-define('TABLE_HEADING_NEW_ARTICLES', 'Новые статьи в разделе %s');
-define('TEXT_ARTICLES_SEARCH', 'Поиск в статьях: ');
+define('TABLE_HEADING_NEW_ARTICLES', 'РќРѕРІС‹Рµ СЃС‚Р°С‚СЊРё РІ СЂР°Р·РґРµР»Рµ %s');
+define('TEXT_ARTICLES_SEARCH', 'РџРѕРёСЃРє РІ СЃС‚Р°С‚СЊСЏС…: ');
 
 if ( ($topic_depth == 'articles') || (isset($_GET['authors_id'])) ) {
   define('HEADING_TITLE', $topics['topics_name']);
-  define('TABLE_HEADING_ARTICLES', 'Статьи');
-  define('TABLE_HEADING_AUTHOR', 'Автор');
-  define('TEXT_NO_ARTICLES', 'На данный момент нет статей в данном разделе.');
-  define('TEXT_NO_ARTICLES2', 'На данный момент нет опубликованных статей данным автором.');
-  define('TEXT_NUMBER_OF_ARTICLES', 'Количество статей: ');
-  define('TEXT_SHOW', 'Показать:');
-  define('TEXT_NOW', '\' сейчас');
-  define('TEXT_ALL_TOPICS', 'Все разделы');
-  define('TEXT_ALL_AUTHORS', 'Все авторы');
-  define('TEXT_ARTICLES_BY', 'Статья автора ');
-  define('TEXT_ARTICLES', 'Список статей по дате добавления в порядке убывания:');
-  define('TEXT_DATE_ADDED', 'Опубликовано:');
-  define('TEXT_AUTHOR', 'Автор:');
-  define('TEXT_TOPIC', 'Раздел');
-  define('TEXT_BY', 'Автор:');
-  define('TEXT_READ_MORE', 'Читать далее...');
-  define('TEXT_MORE_INFORMATION', 'Для получения дополнительно информации, посетите <a href="http://%s" target="_blank">сайт автора</a>.');
+  define('TABLE_HEADING_ARTICLES', 'РЎС‚Р°С‚СЊРё');
+  define('TABLE_HEADING_AUTHOR', 'РђРІС‚РѕСЂ');
+  define('TEXT_NO_ARTICLES', 'РќР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµС‚ СЃС‚Р°С‚РµР№ РІ РґР°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ.');
+  define('TEXT_NO_ARTICLES2', 'РќР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµС‚ РѕРїСѓР±Р»РёРєРѕРІР°РЅРЅС‹С… СЃС‚Р°С‚РµР№ РґР°РЅРЅС‹Рј Р°РІС‚РѕСЂРѕРј.');
+  define('TEXT_NUMBER_OF_ARTICLES', 'РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№: ');
+  define('TEXT_SHOW', 'РџРѕРєР°Р·Р°С‚СЊ:');
+  define('TEXT_NOW', '\' СЃРµР№С‡Р°СЃ');
+  define('TEXT_ALL_TOPICS', 'Р’СЃРµ СЂР°Р·РґРµР»С‹');
+  define('TEXT_ALL_AUTHORS', 'Р’СЃРµ Р°РІС‚РѕСЂС‹');
+  define('TEXT_ARTICLES_BY', 'РЎС‚Р°С‚СЊСЏ Р°РІС‚РѕСЂР° ');
+  define('TEXT_ARTICLES', 'РЎРїРёСЃРѕРє СЃС‚Р°С‚РµР№ РїРѕ РґР°С‚Рµ РґРѕР±Р°РІР»РµРЅРёСЏ РІ РїРѕСЂСЏРґРєРµ СѓР±С‹РІР°РЅРёСЏ:');
+  define('TEXT_DATE_ADDED', 'РћРїСѓР±Р»РёРєРѕРІР°РЅРѕ:');
+  define('TEXT_AUTHOR', 'РђРІС‚РѕСЂ:');
+  define('TEXT_TOPIC', 'Р Р°Р·РґРµР»');
+  define('TEXT_BY', 'РђРІС‚РѕСЂ:');
+  define('TEXT_READ_MORE', 'Р§РёС‚Р°С‚СЊ РґР°Р»РµРµ...');
+  define('TEXT_MORE_INFORMATION', 'Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ РёРЅС„РѕСЂРјР°С†РёРё, РїРѕСЃРµС‚РёС‚Рµ <a href="http://%s" target="_blank">СЃР°Р№С‚ Р°РІС‚РѕСЂР°</a>.');
 } elseif ($topic_depth == 'top') {
-  define('HEADING_TITLE', 'Все статьи');
-  define('TEXT_ALL_ARTICLES', 'Список статей по дате добавления в порядке убывания:');
+  define('HEADING_TITLE', 'Р’СЃРµ СЃС‚Р°С‚СЊРё');
+  define('TEXT_ALL_ARTICLES', 'РЎРїРёСЃРѕРє СЃС‚Р°С‚РµР№ РїРѕ РґР°С‚Рµ РґРѕР±Р°РІР»РµРЅРёСЏ РІ РїРѕСЂСЏРґРєРµ СѓР±С‹РІР°РЅРёСЏ:');
   define('TEXT_CURRENT_ARTICLES', '');
-  define('TEXT_UPCOMING_ARTICLES', 'Статьи, которые будут опубликованы в ближайшее время.');
-  define('TEXT_NO_ARTICLES', 'Нет доступных статей.');
-  define('TEXT_DATE_ADDED', 'Опубликовано:');
-  define('TEXT_DATE_EXPECTED', 'Ожидается:');
-  define('TEXT_AUTHOR', 'Автор:');
-  define('TEXT_TOPIC', 'Раздел
+  define('TEXT_UPCOMING_ARTICLES', 'РЎС‚Р°С‚СЊРё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РѕРїСѓР±Р»РёРєРѕРІР°РЅС‹ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.');
+  define('TEXT_NO_ARTICLES', 'РќРµС‚ РґРѕСЃС‚СѓРїРЅС‹С… СЃС‚Р°С‚РµР№.');
+  define('TEXT_DATE_ADDED', 'РћРїСѓР±Р»РёРєРѕРІР°РЅРѕ:');
+  define('TEXT_DATE_EXPECTED', 'РћР¶РёРґР°РµС‚СЃСЏ:');
+  define('TEXT_AUTHOR', 'РђРІС‚РѕСЂ:');
+  define('TEXT_TOPIC', 'Р Р°Р·РґРµР»
   :');
   define('TEXT_BY', 'by');
-  define('TEXT_READ_MORE', 'Читать далее...');
+  define('TEXT_READ_MORE', 'Р§РёС‚Р°С‚СЊ РґР°Р»РµРµ...');
 } elseif ($topic_depth == 'nested') {
-  define('HEADING_TITLE', 'Статьи');
+  define('HEADING_TITLE', 'РЎС‚Р°С‚СЊРё');
 }
 
-  define('HEADING_TITLE', 'Статьи');
+  define('HEADING_TITLE', 'РЎС‚Р°С‚СЊРё');
 
 ?>

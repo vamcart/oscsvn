@@ -10,31 +10,31 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Дополнительные поля покупателей');
+define('HEADING_TITLE', 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ РїРѕРєСѓРїР°С‚РµР»РµР№');
 
-define('TABLE_HEADING_FIELDS', 'Поля');
-define('TABLE_HEADING_ACTION', 'Действия');
+define('TABLE_HEADING_FIELDS', 'РџРѕР»СЏ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёСЏ');
 
-define('TEXT_HEADING_NEW_FIELD', 'Новое поле');
-define('TEXT_HEADING_EDIT_FIELD', 'Изменение поля');
-define('TEXT_HEADING_DELETE_FIELD', 'Удаление поля');
-define('TABLE_HEADING_STATUS','Статус');
+define('TEXT_HEADING_NEW_FIELD', 'РќРѕРІРѕРµ РїРѕР»Рµ');
+define('TEXT_HEADING_EDIT_FIELD', 'РР·РјРµРЅРµРЅРёРµ РїРѕР»СЏ');
+define('TEXT_HEADING_DELETE_FIELD', 'РЈРґР°Р»РµРЅРёРµ РїРѕР»СЏ');
+define('TABLE_HEADING_STATUS','РЎС‚Р°С‚СѓСЃ');
 
 
-define('TEXT_FIELD', 'Поле: ');
-define('TEXT_FIELD_INPUT_TYPE', 'Тип: ');
-define('TEXT_FIELD_INPUT_VALUE', 'Значения полей:<br>(одна строка - один элемент) ');
-define('TEXT_FIELD_REQUIRED_STATUS', 'Обязательно для заполнения: ');
-define('TEXT_FIELD_REQUIRED_EMAIL', 'Поле отправляется в email письмах: ');
-define('TEXT_FIELD_STATUS_EMAIL', 'Отправлять поле по email: ');
-define('TEXT_INPUT_FIELD','Input поле');
-define('TEXT_TEXTAREA_FIELD','Textarea поле');
-define('TEXT_RADIO_FIELD','Radio кнопки');
-define('TEXT_CHECK_FIELD','Checkbox кнопки');
-define('TEXT_DOWN_FIELD','Drop down меню');
-define('TEXT_FIELD_SIZE', 'Минимальное значение: ');
-define('TEXT_NEW_INTRO', 'Заполните форму');
-define('TEXT_EDIT_INTRO', 'Внесите необходимые изменения');
-define('TEXT_FIELD_NAME', 'Название поля: ');
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить данное поле?');
+define('TEXT_FIELD', 'РџРѕР»Рµ: ');
+define('TEXT_FIELD_INPUT_TYPE', 'РўРёРї: ');
+define('TEXT_FIELD_INPUT_VALUE', 'Р—РЅР°С‡РµРЅРёСЏ РїРѕР»РµР№:<br>(РѕРґРЅР° СЃС‚СЂРѕРєР° - РѕРґРёРЅ СЌР»РµРјРµРЅС‚) ');
+define('TEXT_FIELD_REQUIRED_STATUS', 'РћР±СЏР·Р°С‚РµР»СЊРЅРѕ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ: ');
+define('TEXT_FIELD_REQUIRED_EMAIL', 'РџРѕР»Рµ РѕС‚РїСЂР°РІР»СЏРµС‚СЃСЏ РІ email РїРёСЃСЊРјР°С…: ');
+define('TEXT_FIELD_STATUS_EMAIL', 'РћС‚РїСЂР°РІР»СЏС‚СЊ РїРѕР»Рµ РїРѕ email: ');
+define('TEXT_INPUT_FIELD','Input РїРѕР»Рµ');
+define('TEXT_TEXTAREA_FIELD','Textarea РїРѕР»Рµ');
+define('TEXT_RADIO_FIELD','Radio РєРЅРѕРїРєРё');
+define('TEXT_CHECK_FIELD','Checkbox РєРЅРѕРїРєРё');
+define('TEXT_DOWN_FIELD','Drop down РјРµРЅСЋ');
+define('TEXT_FIELD_SIZE', 'РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: ');
+define('TEXT_NEW_INTRO', 'Р—Р°РїРѕР»РЅРёС‚Рµ С„РѕСЂРјСѓ');
+define('TEXT_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_FIELD_NAME', 'РќР°Р·РІР°РЅРёРµ РїРѕР»СЏ: ');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅРѕРµ РїРѕР»Рµ?');
 ?>

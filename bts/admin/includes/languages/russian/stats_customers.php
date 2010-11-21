@@ -10,9 +10,9 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Ëó÷øèå êëèåíòû ïî îáùåé ñóììå çàêàçîâ');
+define('HEADING_TITLE', 'Ð›ÑƒÑ‡ÑˆÐ¸Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñ‹ Ð¿Ð¾ Ð¾Ð±Ñ‰ÐµÐ¹ ÑÑƒÐ¼Ð¼Ðµ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
 
-define('TABLE_HEADING_NUMBER', '¹.');
-define('TABLE_HEADING_CUSTOMERS', 'Êëèåíòû');
-define('TABLE_HEADING_TOTAL_PURCHASED', 'Îáùàÿ ñóììà çàêàçîâ');
+define('TABLE_HEADING_NUMBER', 'â„–.');
+define('TABLE_HEADING_CUSTOMERS', 'ÐšÐ»Ð¸ÐµÐ½Ñ‚Ñ‹');
+define('TABLE_HEADING_TOTAL_PURCHASED', 'ÐžÐ±Ñ‰Ð°Ñ ÑÑƒÐ¼Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
 ?>

@@ -10,9 +10,9 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_TABLE_TEXT_TITLE', 'Òàáëè÷íûé òàðèô');
-define('MODULE_SHIPPING_TABLE_TEXT_DESCRIPTION', 'Òàáëè÷íûé òàðèô');
-define('MODULE_SHIPPING_TABLE_TEXT_WAY', 'Ëó÷øèé ìàðøðóò');
-define('MODULE_SHIPPING_TABLE_TEXT_WEIGHT', 'Âåñ');
-define('MODULE_SHIPPING_TABLE_TEXT_AMOUNT', 'Ñóììà');
+define('MODULE_SHIPPING_TABLE_TEXT_TITLE', 'Ð¢Ð°Ð±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚Ð°Ñ€Ð¸Ñ„');
+define('MODULE_SHIPPING_TABLE_TEXT_DESCRIPTION', 'Ð¢Ð°Ð±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚Ð°Ñ€Ð¸Ñ„');
+define('MODULE_SHIPPING_TABLE_TEXT_WAY', 'Ð›ÑƒÑ‡ÑˆÐ¸Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚');
+define('MODULE_SHIPPING_TABLE_TEXT_WEIGHT', 'Ð’ÐµÑ');
+define('MODULE_SHIPPING_TABLE_TEXT_AMOUNT', 'Ð¡ÑƒÐ¼Ð¼Ð°');
 ?>

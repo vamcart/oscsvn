@@ -12,7 +12,7 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_FREESHIPPER_TEXT_TITLE', 'Áåñïëàòíàÿ äîñòàâêà');
-define('MODULE_SHIPPING_FREESHIPPER_TEXT_DESCRIPTION', 'Áåñïëàòíàÿ äîñòàâêà');
-define('MODULE_SHIPPING_FREESHIPPER_TEXT_WAY', 'Áåñïëàòíàÿ äîñòàâêà');
+define('MODULE_SHIPPING_FREESHIPPER_TEXT_TITLE', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°');
+define('MODULE_SHIPPING_FREESHIPPER_TEXT_DESCRIPTION', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°');
+define('MODULE_SHIPPING_FREESHIPPER_TEXT_WAY', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°');
 ?>

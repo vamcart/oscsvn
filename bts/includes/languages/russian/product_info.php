@@ -10,62 +10,62 @@
   Released under the GNU General Public License
 */
 
-define('TEXT_PRODUCT_NOT_FOUND', 'Товар не найден!');
-define('TEXT_CURRENT_REVIEWS', 'Текущие отзывы:');
-define('TEXT_MORE_INFORMATION', 'Для получения подробной информации посетите <a href="%s" target="blank"><u>сайт</u></a> производителя.');
-define('TEXT_DATE_ADDED', 'Товар был добавлен в наш каталог %s');
-define('TEXT_DATE_AVAILABLE', '<font color="#ff0000">Товар будет в наличии %s</font>');
-define('TEXT_ALSO_PURCHASED_PRODUCTS', 'Посетители, которые заказывают данный товар, также выбирают');
-define('TEXT_PRODUCT_OPTIONS', 'Доступные изменения:');
-define('TEXT_CLICK_TO_ENLARGE', 'Увеличить');
-define('TEXT_XSELL_PRODUCTS', 'Рекомендуем:');
-define('TEXT_NO_MOPICS', 'Временно отсутствует!');
+define('TEXT_PRODUCT_NOT_FOUND', 'РўРѕРІР°СЂ РЅРµ РЅР°Р№РґРµРЅ!');
+define('TEXT_CURRENT_REVIEWS', 'РўРµРєСѓС‰РёРµ РѕС‚Р·С‹РІС‹:');
+define('TEXT_MORE_INFORMATION', 'Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РїРѕРґСЂРѕР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё РїРѕСЃРµС‚РёС‚Рµ <a href="%s" target="blank"><u>СЃР°Р№С‚</u></a> РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ.');
+define('TEXT_DATE_ADDED', 'РўРѕРІР°СЂ Р±С‹Р» РґРѕР±Р°РІР»РµРЅ РІ РЅР°С€ РєР°С‚Р°Р»РѕРі %s');
+define('TEXT_DATE_AVAILABLE', '<font color="#ff0000">РўРѕРІР°СЂ Р±СѓРґРµС‚ РІ РЅР°Р»РёС‡РёРё %s</font>');
+define('TEXT_ALSO_PURCHASED_PRODUCTS', 'РџРѕСЃРµС‚РёС‚РµР»Рё, РєРѕС‚РѕСЂС‹Рµ Р·Р°РєР°Р·С‹РІР°СЋС‚ РґР°РЅРЅС‹Р№ С‚РѕРІР°СЂ, С‚Р°РєР¶Рµ РІС‹Р±РёСЂР°СЋС‚');
+define('TEXT_PRODUCT_OPTIONS', 'Р”РѕСЃС‚СѓРїРЅС‹Рµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_CLICK_TO_ENLARGE', 'РЈРІРµР»РёС‡РёС‚СЊ');
+define('TEXT_XSELL_PRODUCTS', 'Р РµРєРѕРјРµРЅРґСѓРµРј:');
+define('TEXT_NO_MOPICS', 'Р’СЂРµРјРµРЅРЅРѕ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚!');
 
 // begin mod for ProductsProperties v2.01
-define('TEXT_PRODUCTS_PROPERTIES', 'Технические параметры:');
+define('TEXT_PRODUCTS_PROPERTIES', 'РўРµС…РЅРёС‡РµСЃРєРёРµ РїР°СЂР°РјРµС‚СЂС‹:');
 // end mod for ProductsProperties v2.01
 
-define('PRODUCT_ADDED_TO_WISHLIST', 'Товар успешно отложен!');
-define('TEXT_LIMIT_TEXT_AREA', 'Лимит: ');
+define('PRODUCT_ADDED_TO_WISHLIST', 'РўРѕРІР°СЂ СѓСЃРїРµС€РЅРѕ РѕС‚Р»РѕР¶РµРЅ!');
+define('TEXT_LIMIT_TEXT_AREA', 'Р›РёРјРёС‚: ');
 
 // Products Specifications
-  define ('SPECIFICATION_TITLE_PRODUCTS', 'Спецификации:');
-  define ('TEXT_TAB_DESCRIPTION', 'Описание');
-  define ('TEXT_TAB_SPECIFICATIONS', 'Спецификации');
-  define ('TEXT_TAB_1', 'Руководства');
-  define ('TEXT_TAB_2', 'Видео');
-  define ('TEXT_TAB_3', 'Аксессуары');
-  define ('TEXT_TAB_4', 'Разное');
-  define ('TEXT_TAB_5', 'Гарантия');
-  define ('TEXT_TAB_6', 'Доставка');
-  define ('TEXT_TAB_REVIEWS', 'Отзывы');
-  define ('TEXT_TAB_ASK_A_QUESTION', 'Задать вопрос о товаре');
-  define ('TEXT_TAB_DESCRIPTION_HEAD', 'Описание');
-  define ('TEXT_TAB_SPECIFICATIONS_HEAD', 'Спецификации');
-  define ('TEXT_TAB_1_HEAD', 'Руководства');
-  define ('TEXT_TAB_2_HEAD', 'Видео');
-  define ('TEXT_TAB_3_HEAD', 'Аксессуары');
-  define ('TEXT_TAB_4_HEAD', 'Разное');
-  define ('TEXT_TAB_5_HEAD', 'Гарантия');
-  define ('TEXT_TAB_6_HEAD', 'Доставка');
-  define ('TEXT_TAB_REVIEWS_HEAD', 'Отзывы');
-  define ('TEXT_TAB_ASK_A_QUESTION_HEAD', 'Задать вопрос о товаре: %s');
-  define ('TEXT_REVIEW_INVITE', 'Ваш отзыв может быть первым!');
+  define ('SPECIFICATION_TITLE_PRODUCTS', 'РЎРїРµС†РёС„РёРєР°С†РёРё:');
+  define ('TEXT_TAB_DESCRIPTION', 'РћРїРёСЃР°РЅРёРµ');
+  define ('TEXT_TAB_SPECIFICATIONS', 'РЎРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_TAB_1', 'Р СѓРєРѕРІРѕРґСЃС‚РІР°');
+  define ('TEXT_TAB_2', 'Р’РёРґРµРѕ');
+  define ('TEXT_TAB_3', 'РђРєСЃРµСЃСЃСѓР°СЂС‹');
+  define ('TEXT_TAB_4', 'Р Р°Р·РЅРѕРµ');
+  define ('TEXT_TAB_5', 'Р“Р°СЂР°РЅС‚РёСЏ');
+  define ('TEXT_TAB_6', 'Р”РѕСЃС‚Р°РІРєР°');
+  define ('TEXT_TAB_REVIEWS', 'РћС‚Р·С‹РІС‹');
+  define ('TEXT_TAB_ASK_A_QUESTION', 'Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ Рѕ С‚РѕРІР°СЂРµ');
+  define ('TEXT_TAB_DESCRIPTION_HEAD', 'РћРїРёСЃР°РЅРёРµ');
+  define ('TEXT_TAB_SPECIFICATIONS_HEAD', 'РЎРїРµС†РёС„РёРєР°С†РёРё');
+  define ('TEXT_TAB_1_HEAD', 'Р СѓРєРѕРІРѕРґСЃС‚РІР°');
+  define ('TEXT_TAB_2_HEAD', 'Р’РёРґРµРѕ');
+  define ('TEXT_TAB_3_HEAD', 'РђРєСЃРµСЃСЃСѓР°СЂС‹');
+  define ('TEXT_TAB_4_HEAD', 'Р Р°Р·РЅРѕРµ');
+  define ('TEXT_TAB_5_HEAD', 'Р“Р°СЂР°РЅС‚РёСЏ');
+  define ('TEXT_TAB_6_HEAD', 'Р”РѕСЃС‚Р°РІРєР°');
+  define ('TEXT_TAB_REVIEWS_HEAD', 'РћС‚Р·С‹РІС‹');
+  define ('TEXT_TAB_ASK_A_QUESTION_HEAD', 'Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ Рѕ С‚РѕРІР°СЂРµ: %s');
+  define ('TEXT_REVIEW_INVITE', 'Р’Р°С€ РѕС‚Р·С‹РІ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїРµСЂРІС‹Рј!');
   
 
-  define ('FORM_TITLE_CUSTOMER_DETAILS', 'Ваши данные');
-  define ('FORM_FIELD_CUSTOMER_NAME', 'Имя:');
+  define ('FORM_TITLE_CUSTOMER_DETAILS', 'Р’Р°С€Рё РґР°РЅРЅС‹Рµ');
+  define ('FORM_FIELD_CUSTOMER_NAME', 'РРјСЏ:');
   define ('FORM_FIELD_CUSTOMER_EMAIL', 'E-Mail:');
-  define ('FORM_FIELD_MESSAGE', 'Ваш вопрос');
+  define ('FORM_FIELD_MESSAGE', 'Р’Р°С€ РІРѕРїСЂРѕСЃ');
 
-  define ('TEXT_EMAIL_SUCCESSFUL_SENT', 'Ваш вопрос о товаре <b>%s</b> был успешно отправлен.');
+  define ('TEXT_EMAIL_SUCCESSFUL_SENT', 'Р’Р°С€ РІРѕРїСЂРѕСЃ Рѕ С‚РѕРІР°СЂРµ <b>%s</b> Р±С‹Р» СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅ.');
 
-  define ('TEXT_EMAIL_SUBJECT', 'Вопрос от %s');
-  define ('TEXT_EMAIL_INTRO', '%s' . "\n\n" . 'У посетителя %s есть вопрос о товаре: %s [%s.]');
-  define ('TEXT_EMAIL_LINK', 'Ссылка на товар:' . "\n\n" . '%s');
-  define ('TEXT_EMAIL_SIGNATURE', 'С уважением,' . "\n\n" . '%s');
+  define ('TEXT_EMAIL_SUBJECT', 'Р’РѕРїСЂРѕСЃ РѕС‚ %s');
+  define ('TEXT_EMAIL_INTRO', '%s' . "\n\n" . 'РЈ РїРѕСЃРµС‚РёС‚РµР»СЏ %s РµСЃС‚СЊ РІРѕРїСЂРѕСЃ Рѕ С‚РѕРІР°СЂРµ: %s [%s.]');
+  define ('TEXT_EMAIL_LINK', 'РЎСЃС‹Р»РєР° РЅР° С‚РѕРІР°СЂ:' . "\n\n" . '%s');
+  define ('TEXT_EMAIL_SIGNATURE', 'РЎ СѓРІР°Р¶РµРЅРёРµРј,' . "\n\n" . '%s');
 
-  define ('ERROR_FROM_NAME', 'Ошибка: Вы должны указать своё имя.');
-  define ('ERROR_FROM_ADDRESS', 'Ошибка: Вы должны правильно указать email адрес.');
+  define ('ERROR_FROM_NAME', 'РћС€РёР±РєР°: Р’С‹ РґРѕР»Р¶РЅС‹ СѓРєР°Р·Р°С‚СЊ СЃРІРѕС‘ РёРјСЏ.');
+  define ('ERROR_FROM_ADDRESS', 'РћС€РёР±РєР°: Р’С‹ РґРѕР»Р¶РЅС‹ РїСЂР°РІРёР»СЊРЅРѕ СѓРєР°Р·Р°С‚СЊ email Р°РґСЂРµСЃ.');
 
 ?>

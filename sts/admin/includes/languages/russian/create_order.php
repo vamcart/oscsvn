@@ -10,15 +10,15 @@
   Released under the GNU General Public License
   
 */
-define('HEADING_STEP', 'ØÀÃ 1 - Âûáåðèòå ïîêóïàòåëÿ');
-define('HEADING_CREATE', 'Äàííûå ïîêóïàòåëÿ');
+define('HEADING_STEP', 'Ð¨ÐÐ“ 1 - Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('HEADING_CREATE', 'Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
 
-define('TEXT_SELECT_CUST', 'Âûáåðèòå ïîêóïàòåëÿ:');
-define('BUTTON_TEXT_SELECT_CUST', 'Âûáðàòü');
-define('TEXT_OR_BY', 'èëè óêàæèòå ID êîä ïîêóïàòåëÿ:');
-define('BUTTON_TEXT_CHOOSE_CUST', 'Âûáðàòü');
-define('IMAGE_BUTTON_BACK', 'Âåðíóòüñÿ');
-define('IMAGE_BUTTON_CONFIRM', 'Ïîäòâåðäèòü');
-define('TABLE_HEADING_CUSTOMERS_GROUP', 'Âõîäèò â ãðóïïó:');
+define('TEXT_SELECT_CUST', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ:');
+define('BUTTON_TEXT_SELECT_CUST', 'Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ');
+define('TEXT_OR_BY', 'Ð¸Ð»Ð¸ ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ ID ÐºÐ¾Ð´ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ:');
+define('BUTTON_TEXT_CHOOSE_CUST', 'Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ');
+define('IMAGE_BUTTON_BACK', 'Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ');
+define('IMAGE_BUTTON_CONFIRM', 'ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ');
+define('TABLE_HEADING_CUSTOMERS_GROUP', 'Ð’Ñ…Ð¾Ð´Ð¸Ñ‚ Ð² Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ:');
 ?>
 	

@@ -10,37 +10,37 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'RSS каналы');
-define('HEADING_TITLE', 'RSS каналы');
+define('NAVBAR_TITLE', 'RSS РєР°РЅР°Р»С‹');
+define('HEADING_TITLE', 'RSS РєР°РЅР°Р»С‹');
 define('TEXT_INFORMATION', '
 
 
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=news' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=news</a> - Новости.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=articles' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=articles</a> - Статьи.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=categories' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=categories</a> - Категории.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&limit=10</a> - Товары.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&products_id=1' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&products_id=1</a> - Товар с id кодом 1.</a><br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&cPath=28&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&cPath=28&limit=10</a> - Товары в категории (28 это идентификатор категории, идентификаторы можно узнать, к примеру в ?feed=categories, в ссылке категории, т.е. Вы можете показывать товары только из определённых категорий).<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products&limit=10</a> - Новинки.</a><br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers&limit=10</a> - Лучшие товары.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials&limit=10</a> - Скидки.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured&limit=10</a> - Рекомендуемые товары.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming&limit=10</a> - Ожидаемые товары.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=news' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=news</a> - РќРѕРІРѕСЃС‚Рё.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=articles' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=articles</a> - РЎС‚Р°С‚СЊРё.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=categories' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=categories</a> - РљР°С‚РµРіРѕСЂРёРё.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&limit=10</a> - РўРѕРІР°СЂС‹.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&products_id=1' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&products_id=1</a> - РўРѕРІР°СЂ СЃ id РєРѕРґРѕРј 1.</a><br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&cPath=28&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=products&cPath=28&limit=10</a> - РўРѕРІР°СЂС‹ РІ РєР°С‚РµРіРѕСЂРёРё (28 СЌС‚Рѕ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РєР°С‚РµРіРѕСЂРёРё, РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂС‹ РјРѕР¶РЅРѕ СѓР·РЅР°С‚СЊ, Рє РїСЂРёРјРµСЂСѓ РІ ?feed=categories, РІ СЃСЃС‹Р»РєРµ РєР°С‚РµРіРѕСЂРёРё, С‚.Рµ. Р’С‹ РјРѕР¶РµС‚Рµ РїРѕРєР°Р·С‹РІР°С‚СЊ С‚РѕРІР°СЂС‹ С‚РѕР»СЊРєРѕ РёР· РѕРїСЂРµРґРµР»С‘РЅРЅС‹С… РєР°С‚РµРіРѕСЂРёР№).<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products&limit=10</a> - РќРѕРІРёРЅРєРё.</a><br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers&limit=10</a> - Р›СѓС‡С€РёРµ С‚РѕРІР°СЂС‹.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials&limit=10</a> - РЎРєРёРґРєРё.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured&limit=10</a> - Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming&limit=10' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming&limit=10</a> - РћР¶РёРґР°РµРјС‹Рµ С‚РѕРІР°СЂС‹.<br>
 
 <br>
 
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products_random</a> - Случайный товар из новых товаров.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers_random</a> - Случайный товар из лучших товаров.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials_random</a> - Случайный товар из скидок.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured_random</a> - Случайный товар из рекомендуемых товаров.<br>
-<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming_random</a> - Случайный товар из ожидаемых товаров.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=new_products_random</a> - РЎР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ РёР· РЅРѕРІС‹С… С‚РѕРІР°СЂРѕРІ.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=best_sellers_random</a> - РЎР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ РёР· Р»СѓС‡С€РёС… С‚РѕРІР°СЂРѕРІ.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=specials_random</a> - РЎР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ РёР· СЃРєРёРґРѕРє.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=featured_random</a> - РЎР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ РёР· СЂРµРєРѕРјРµРЅРґСѓРµРјС‹С… С‚РѕРІР°СЂРѕРІ.<br>
+<a href="' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming_random' .'">' . HTTP_SERVER . DIR_WS_HTTP_CATALOG . FILENAME_RSS2. '?feed=upcoming_random</a> - РЎР»СѓС‡Р°Р№РЅС‹Р№ С‚РѕРІР°СЂ РёР· РѕР¶РёРґР°РµРјС‹С… С‚РѕРІР°СЂРѕРІ.<br>
 <br />
-<h3>Лимит запросов</h3>
-<p>Обратите внимание на параметр limit.<br />
-Можно выводить, к примеру, не все новинки (rss2.php?feed=new_products), а только 10, просто добавляете параметр limit (rss2.php?feed=new_products&amp;limit=10)</p>
-<h3>Партнёрский ID код</h3>
-<p>Обратите внимание на параметр ref.<br />
-Если у Вас в магазине установлен модуль партнёрской программы, Ваши партнёры могут получать RSS каналы со своим партнёрским кодом, например, партнёр с id кодом 1 может получить список новинок следующим образом rss2.php?feed=new_products&amp;ref=1</p>
+<h3>Р›РёРјРёС‚ Р·Р°РїСЂРѕСЃРѕРІ</h3>
+<p>РћР±СЂР°С‚РёС‚Рµ РІРЅРёРјР°РЅРёРµ РЅР° РїР°СЂР°РјРµС‚СЂ limit.<br />
+РњРѕР¶РЅРѕ РІС‹РІРѕРґРёС‚СЊ, Рє РїСЂРёРјРµСЂСѓ, РЅРµ РІСЃРµ РЅРѕРІРёРЅРєРё (rss2.php?feed=new_products), Р° С‚РѕР»СЊРєРѕ 10, РїСЂРѕСЃС‚Рѕ РґРѕР±Р°РІР»СЏРµС‚Рµ РїР°СЂР°РјРµС‚СЂ limit (rss2.php?feed=new_products&amp;limit=10)</p>
+<h3>РџР°СЂС‚РЅС‘СЂСЃРєРёР№ ID РєРѕРґ</h3>
+<p>РћР±СЂР°С‚РёС‚Рµ РІРЅРёРјР°РЅРёРµ РЅР° РїР°СЂР°РјРµС‚СЂ ref.<br />
+Р•СЃР»Рё Сѓ Р’Р°СЃ РІ РјР°РіР°Р·РёРЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ РјРѕРґСѓР»СЊ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјС‹, Р’Р°С€Рё РїР°СЂС‚РЅС‘СЂС‹ РјРѕРіСѓС‚ РїРѕР»СѓС‡Р°С‚СЊ RSS РєР°РЅР°Р»С‹ СЃРѕ СЃРІРѕРёРј РїР°СЂС‚РЅС‘СЂСЃРєРёРј РєРѕРґРѕРј, РЅР°РїСЂРёРјРµСЂ, РїР°СЂС‚РЅС‘СЂ СЃ id РєРѕРґРѕРј 1 РјРѕР¶РµС‚ РїРѕР»СѓС‡РёС‚СЊ СЃРїРёСЃРѕРє РЅРѕРІРёРЅРѕРє СЃР»РµРґСѓСЋС‰РёРј РѕР±СЂР°Р·РѕРј rss2.php?feed=new_products&amp;ref=1</p>
 ');
 
 ?>

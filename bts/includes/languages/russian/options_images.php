@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-define('TEXT_SELECT_DESIRED', 'Âûáåðèòå èíòåðåñóþùèé Âàñ âàðèàíò');
-define('TEXT_CLICK_IMAGES', 'Äëÿ ïðîñìîòðà íàæìèòå êàðòèíêó.');
+define('TEXT_SELECT_DESIRED', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð½Ñ‚ÐµÑ€ÐµÑÑƒÑŽÑ‰Ð¸Ð¹ Ð’Ð°Ñ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚');
+define('TEXT_CLICK_IMAGES', 'Ð”Ð»Ñ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ.');
 ?>

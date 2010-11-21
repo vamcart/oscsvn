@@ -1,39 +1,39 @@
 <?php
 
-define('HEADING_TITLE', 'Ñîïóòñòâóþùèå òîâàðû');
+define('HEADING_TITLE', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
 
-define('XSELL_FILTERS', 'Ôèëüòð:');
-define('XSELL_CATEGORIES', 'Êàòåãîðèè: ');
-define('XSELL_MANUFACTURERS', 'Ïðîèçâîäèòåëè: ');
+define('XSELL_FILTERS', 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€:');
+define('XSELL_CATEGORIES', 'ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸: ');
+define('XSELL_MANUFACTURERS', 'ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ð¸: ');
 
-define('XSELL_SELECT', 'Âûáðàòü');
+define('XSELL_SELECT', 'Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ');
 
 define('XSELL_PRODUCT_ID', 'ID');
-define('XSELL_PRODUCT_MODEL', 'Êîä òîâàðà');
-define('XSELL_PRODUCT_NAME', 'Íàçâàíèå òîâàðà');
-define('XSELL_PRODUCT_CURRENT', 'Ñîïóòñòâóþùèå òîâàðû');
-define('XSELL_PRODUCT_UPDATE', 'Îáíîâèòü');
+define('XSELL_PRODUCT_MODEL', 'ÐšÐ¾Ð´ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('XSELL_PRODUCT_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('XSELL_PRODUCT_CURRENT', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
+define('XSELL_PRODUCT_UPDATE', 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ');
 
-define('XSELL_EDIT', 'Èçìåíèòü');
-define('XSELL_SORT_ORDER', 'Óñòàíîâèòü ïðèîðèòåò');
+define('XSELL_EDIT', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ');
+define('XSELL_SORT_ORDER', 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð¾Ñ€Ð¸Ñ‚ÐµÑ‚');
 
-define('XSELL_NEW_XSELL', 'Äîáàâèòü íîâûå ñîïóòñòâóþùèå òîâàðû');
-define('XSELL_SORT_ORDER_XSELL', 'Ñîðòèðîâàòü äîáàâëåííûå ñîïóòñòâóþùèå òîâàðû');
-define('XSELL_ADD_NEW', 'Ñîïóòñòâóþùèå òîâàðû äëÿ: ');
+define('XSELL_NEW_XSELL', 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ðµ ÑÐ¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
+define('XSELL_SORT_ORDER_XSELL', 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ ÑÐ¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
+define('XSELL_ADD_NEW', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹ Ð´Ð»Ñ: ');
 
-define('XSELL_PRODUCT_IMAGE', 'Êàðòèíêà òîâàðà');
-define('XSELL_PRODUCT_XSELL', 'Ñîïóòñòâóþùèé òîâàð?');
-define('XSELL_PRODUCT_ITEM_NAME', 'Íàçâàíèå');
-define('XSELL_PRODUCT_PRICE', 'Ñòîèìîñòü');
-define('XSELL_PRODUCT_SORT_ORDER', 'Ïîðÿäîê ñîðòèðîâêè (1=Íàâåðõó)');
+define('XSELL_PRODUCT_IMAGE', 'ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('XSELL_PRODUCT_XSELL', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¹ Ñ‚Ð¾Ð²Ð°Ñ€?');
+define('XSELL_PRODUCT_ITEM_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ');
+define('XSELL_PRODUCT_PRICE', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ');
+define('XSELL_PRODUCT_SORT_ORDER', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ (1=ÐÐ°Ð²ÐµÑ€Ñ…Ñƒ)');
 
-define('XSELL_PRODUCT_ALREADY', 'Ñîïóòñòâóþùèå òîâàðû...');
+define('XSELL_PRODUCT_ALREADY', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹...');
 
-define('XSELL_PRODUCT_XSELL1', 'Ñîïóòñòâóþùèé òîâàð');
-define('XSELL_PRODUCT_ADD', 'Âûáåðèòå ñîïóòñòâóþùèå òîâàðû, îòìåòèâ èõ...');
-define('XSELL_PRODUCT_UPDATED', 'Ñîïóòñòâóþùèå òîâàðû îáíîâëåíû');
-define('XSELL_PRODUCT_BACK', 'Âåðíóòüñÿ ê ñîïóòñòâóþùèì òîâàðàì');
+define('XSELL_PRODUCT_XSELL1', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¹ Ñ‚Ð¾Ð²Ð°Ñ€');
+define('XSELL_PRODUCT_ADD', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹, Ð¾Ñ‚Ð¼ÐµÑ‚Ð¸Ð² Ð¸Ñ…...');
+define('XSELL_PRODUCT_UPDATED', 'Ð¡Ð¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹');
+define('XSELL_PRODUCT_BACK', 'Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ðº ÑÐ¾Ð¿ÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¼ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Ð¼');
 
-define('XSELL_PRODUCT_SUBMIT', 'Îáíîâèòü');
+define('XSELL_PRODUCT_SUBMIT', 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ');
 
 ?>

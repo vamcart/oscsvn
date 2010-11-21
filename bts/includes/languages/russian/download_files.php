@@ -1,14 +1,14 @@
 <?php
 
-define('HEADING_TITLE','Âàøè çàãðóçêè');
-define('HEADING_DOWNLOAD','Âàøè çàãðóçêè:');
-define('TEXT_NO_DOWNLOAD','Íåò äîñòóïíûõ çàãðóçîê.');
-define('TEXT_DOWNLOAD_NUMBER','Íîìåð');
-define('HEADING_DOWNLOAD_HERE','Ññûëêà');
-define('TEXT_DOWNLOAD_HERE','Çàãðóçèòü');
-define('TABLE_HEADING_DOWNLOAD_DATE','Ññûëêà äåéñòâèòåëüíà äî: ');
-define('TABLE_HEADING_DOWNLOAD_COUNT','Îñòàëîñü çàãðóçîê: ');
-define('TEXT_FOOTER_DOWNLOAD','Âñå äîñòóïíûå çàãðóçêè òàêæå ìîæíî íàéòè â ');
-define('TEXT_DOWNLOAD_MY_ACCOUNT','Èñòîðèè çàêàçîâ');
+define('HEADING_TITLE','Ð’Ð°ÑˆÐ¸ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸');
+define('HEADING_DOWNLOAD','Ð’Ð°ÑˆÐ¸ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸:');
+define('TEXT_NO_DOWNLOAD','ÐÐµÑ‚ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ñ… Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº.');
+define('TEXT_DOWNLOAD_NUMBER','ÐÐ¾Ð¼ÐµÑ€');
+define('HEADING_DOWNLOAD_HERE','Ð¡ÑÑ‹Ð»ÐºÐ°');
+define('TEXT_DOWNLOAD_HERE','Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ');
+define('TABLE_HEADING_DOWNLOAD_DATE','Ð¡ÑÑ‹Ð»ÐºÐ° Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð° Ð´Ð¾: ');
+define('TABLE_HEADING_DOWNLOAD_COUNT','ÐžÑÑ‚Ð°Ð»Ð¾ÑÑŒ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº: ');
+define('TEXT_FOOTER_DOWNLOAD','Ð’ÑÐµ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ñ‚Ð°ÐºÐ¶Ðµ Ð¼Ð¾Ð¶Ð½Ð¾ Ð½Ð°Ð¹Ñ‚Ð¸ Ð² ');
+define('TEXT_DOWNLOAD_MY_ACCOUNT','Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²');
 ?>
 

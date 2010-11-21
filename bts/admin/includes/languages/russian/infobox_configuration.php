@@ -11,40 +11,40 @@
 */
 
 
-define('HEADING_TITLE', 'Боксы');
-define('TABLE_HEADING_INFOBOX_FILE_NAME', 'Название');
-define('TABLE_HEADING_ACTIVE', 'Статус');
-define('TABLE_HEADING_KEY', 'Константа');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_COLUMN', 'Расположение');
-define('TABLE_HEADING_SORT_ORDER', 'Позиция');
-define('TABLE_HEADING_TEMPLATE', 'Шаблон');
-define('TABLE_HEADING_FONT_COLOR', 'Цвет заголовка');
+define('HEADING_TITLE', 'Р‘РѕРєСЃС‹');
+define('TABLE_HEADING_INFOBOX_FILE_NAME', 'РќР°Р·РІР°РЅРёРµ');
+define('TABLE_HEADING_ACTIVE', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_KEY', 'РљРѕРЅСЃС‚Р°РЅС‚Р°');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_COLUMN', 'Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ');
+define('TABLE_HEADING_SORT_ORDER', 'РџРѕР·РёС†РёСЏ');
+define('TABLE_HEADING_TEMPLATE', 'РЁР°Р±Р»РѕРЅ');
+define('TABLE_HEADING_FONT_COLOR', 'Р¦РІРµС‚ Р·Р°РіРѕР»РѕРІРєР°');
 
-define('TEXT_INFO_EDIT_INTRO', 'Внесите необходимые изменения');
-define('TEXT_INFO_DATE_ADDED', 'Дата создания:');
-define('TEXT_INFO_LAST_MODIFIED', 'Последние изменения:');
-define('TEXT_INFO_HEADING_NEW_INFOBOX', 'Создать новый бокс');
-define('TEXT_INFO_INSERT_INTRO', 'Для примера выбран файл <b> what\'s_new.php</b>, т.е. бокс новинок.');
-define('TEXT_INFO_DELETE_INTRO', '<P STYLE="color: red; font-weight: bold;">Нажмите удалить, если Вы действительно хотите удалить этот бокс');
-define('TEXT_INFO_HEADING_DELETE_INFOBOX', 'Удалить бокс?');
-define('TEXT_INFO_HEADING_UPDATE_INFOBOX', 'Изменение бокса ');
+define('TEXT_INFO_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_INFO_DATE_ADDED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ:');
+define('TEXT_INFO_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_INFO_HEADING_NEW_INFOBOX', 'РЎРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ Р±РѕРєСЃ');
+define('TEXT_INFO_INSERT_INTRO', 'Р”Р»СЏ РїСЂРёРјРµСЂР° РІС‹Р±СЂР°РЅ С„Р°Р№Р» <b> what\'s_new.php</b>, С‚.Рµ. Р±РѕРєСЃ РЅРѕРІРёРЅРѕРє.');
+define('TEXT_INFO_DELETE_INTRO', '<P STYLE="color: red; font-weight: bold;">РќР°Р¶РјРёС‚Рµ СѓРґР°Р»РёС‚СЊ, РµСЃР»Рё Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚РѕС‚ Р±РѕРєСЃ');
+define('TEXT_INFO_HEADING_DELETE_INFOBOX', 'РЈРґР°Р»РёС‚СЊ Р±РѕРєСЃ?');
+define('TEXT_INFO_HEADING_UPDATE_INFOBOX', 'РР·РјРµРЅРµРЅРёРµ Р±РѕРєСЃР° ');
 
-define('IMAGE_INFOBOX_STATUS_GREEN', 'Слева');
-define('IMAGE_NEW_INFOBOX', 'Добавить новый бокс');
-define('IMAGE_INFOBOX_STATUS_GREEN_LIGHT', 'Поставить бокс слева');
-define('IMAGE_INFOBOX_STATUS_RED', 'Справа');
-define('IMAGE_INFOBOX_STATUS_RED_LIGHT', 'Поставить бокс справа');
+define('IMAGE_INFOBOX_STATUS_GREEN', 'РЎР»РµРІР°');
+define('IMAGE_NEW_INFOBOX', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Р№ Р±РѕРєСЃ');
+define('IMAGE_INFOBOX_STATUS_GREEN_LIGHT', 'РџРѕСЃС‚Р°РІРёС‚СЊ Р±РѕРєСЃ СЃР»РµРІР°');
+define('IMAGE_INFOBOX_STATUS_RED', 'РЎРїСЂР°РІР°');
+define('IMAGE_INFOBOX_STATUS_RED_LIGHT', 'РџРѕСЃС‚Р°РІРёС‚СЊ Р±РѕРєСЃ СЃРїСЂР°РІР°');
 
-define('BOX_HEADING_BOXES', 'Боксы');
+define('BOX_HEADING_BOXES', 'Р‘РѕРєСЃС‹');
 
-define('JS_BOX_HEADING', '* Поле Переменная должно быть заполнено, например BOX_HEADING_WHATS_NEW\n');
-define('JS_INFO_BOX_HEADING', '* Поле Название бокса должно быть заполнено.\n');
-define('JS_BOX_LOCATION', '* Вы должны указать, с какой стороны должен показываться бокс\n');
-define('JS_INFO_BOX_FILENAME', '* Вы должны выбрать имя файла для создаваемого бокса\n');
+define('JS_BOX_HEADING', '* РџРѕР»Рµ РџРµСЂРµРјРµРЅРЅР°СЏ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅРѕ, РЅР°РїСЂРёРјРµСЂ BOX_HEADING_WHATS_NEW\n');
+define('JS_INFO_BOX_HEADING', '* РџРѕР»Рµ РќР°Р·РІР°РЅРёРµ Р±РѕРєСЃР° РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅРѕ.\n');
+define('JS_BOX_LOCATION', '* Р’С‹ РґРѕР»Р¶РЅС‹ СѓРєР°Р·Р°С‚СЊ, СЃ РєР°РєРѕР№ СЃС‚РѕСЂРѕРЅС‹ РґРѕР»Р¶РµРЅ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ Р±РѕРєСЃ\n');
+define('JS_INFO_BOX_FILENAME', '* Р’С‹ РґРѕР»Р¶РЅС‹ РІС‹Р±СЂР°С‚СЊ РёРјСЏ С„Р°Р№Р»Р° РґР»СЏ СЃРѕР·РґР°РІР°РµРјРѕРіРѕ Р±РѕРєСЃР°\n');
 
-define('TEXT_BOX_POSITION','Номер позиции блока');
-define('BUTTON_SAVE','Переставить');
-define('BUTTON_CANCEL','Очистить');
+define('TEXT_BOX_POSITION','РќРѕРјРµСЂ РїРѕР·РёС†РёРё Р±Р»РѕРєР°');
+define('BUTTON_SAVE','РџРµСЂРµСЃС‚Р°РІРёС‚СЊ');
+define('BUTTON_CANCEL','РћС‡РёСЃС‚РёС‚СЊ');
 
 ?>

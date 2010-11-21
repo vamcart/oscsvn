@@ -10,13 +10,13 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE_PROPERTIES_OPTIONS', 'Технические параметры товаров');
-define('HEADING_TITLE_PROPERTIES_VALUE', 'Параметры');
-define('TABLE_HEADING_PROPERTIES_PRODUCT', 'Название товара');
-define('TABLE_HEADING_PROPERTIES_OPTIONS_NAME', 'Параметр');
-define('TABLE_HEADING_PROPERTIES_OPTIONS_VALUE', 'Значение');
-define('TABLE_HEADING_PROPERTIES_ACTION', 'Действие');
+define('HEADING_TITLE_PROPERTIES_OPTIONS', 'РўРµС…РЅРёС‡РµСЃРєРёРµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕРІР°СЂРѕРІ');
+define('HEADING_TITLE_PROPERTIES_VALUE', 'РџР°СЂР°РјРµС‚СЂС‹');
+define('TABLE_HEADING_PROPERTIES_PRODUCT', 'РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('TABLE_HEADING_PROPERTIES_OPTIONS_NAME', 'РџР°СЂР°РјРµС‚СЂ');
+define('TABLE_HEADING_PROPERTIES_OPTIONS_VALUE', 'Р—РЅР°С‡РµРЅРёРµ');
+define('TABLE_HEADING_PROPERTIES_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_WARNING_OF_DELETE', 'Есть товары, связанные с этим параметром. <font color="red">Вы действительно хотите удалить этот параметр?</font>.');
-define('TEXT_OK_TO_DELETE', 'Данный параметр не связан с каким-либо товаром, Вы можете удалить его.');
+define('TEXT_WARNING_OF_DELETE', 'Р•СЃС‚СЊ С‚РѕРІР°СЂС‹, СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ СЌС‚РёРј РїР°СЂР°РјРµС‚СЂРѕРј. <font color="red">Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚РѕС‚ РїР°СЂР°РјРµС‚СЂ?</font>.');
+define('TEXT_OK_TO_DELETE', 'Р”Р°РЅРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ РЅРµ СЃРІСЏР·Р°РЅ СЃ РєР°РєРёРј-Р»РёР±Рѕ С‚РѕРІР°СЂРѕРј, Р’С‹ РјРѕР¶РµС‚Рµ СѓРґР°Р»РёС‚СЊ РµРіРѕ.');
 ?>

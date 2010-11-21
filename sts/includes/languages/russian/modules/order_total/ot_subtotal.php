@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_ORDER_TOTAL_SUBTOTAL_TITLE', 'Стоимость товара');
-  define('MODULE_ORDER_TOTAL_SUBTOTAL_DESCRIPTION', 'Стоимость заказанного товара');
+  define('MODULE_ORDER_TOTAL_SUBTOTAL_TITLE', 'РЎС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°');
+  define('MODULE_ORDER_TOTAL_SUBTOTAL_DESCRIPTION', 'РЎС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР°');
 ?>

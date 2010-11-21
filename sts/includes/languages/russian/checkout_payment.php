@@ -10,22 +10,22 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Îôîðìëåíèå çàêàçà');
-define('NAVBAR_TITLE_2', 'Ñïîñîá îïëàòû çàêàçà');
+define('NAVBAR_TITLE_1', 'ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('NAVBAR_TITLE_2', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°');
 
-define('HEADING_TITLE', 'Ñïîñîá îïëàòû çàêàçà');
+define('HEADING_TITLE', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°');
 
-define('TABLE_HEADING_BILLING_ADDRESS', 'Àäðåñ ïîêóïàòåëÿ');
-define('TEXT_SELECTED_BILLING_DESTINATION', 'Ïîæàëóéñòà, âûáåðèòå àäðåñ èç Âàøåé àäðåñíîé êíèãè. Àäðåñ ïîêóïàòåëÿ íåîáõîäèì â ñëó÷àå ïîòåðè çàêàçà ïðè äîñòàâêå íà àäðåñ, êîòîðûé Âû óêàçàëè ðàíåå.');
-define('TITLE_BILLING_ADDRESS', 'Òåêóùèé àäðåñ:');
+define('TABLE_HEADING_BILLING_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('TEXT_SELECTED_BILLING_DESTINATION', 'ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð°Ð´Ñ€ÐµÑ Ð¸Ð· Ð’Ð°ÑˆÐµÐ¹ Ð°Ð´Ñ€ÐµÑÐ½Ð¾Ð¹ ÐºÐ½Ð¸Ð³Ð¸. ÐÐ´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼ Ð² ÑÐ»ÑƒÑ‡Ð°Ðµ Ð¿Ð¾Ñ‚ÐµÑ€Ð¸ Ð·Ð°ÐºÐ°Ð·Ð° Ð¿Ñ€Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐµ Ð½Ð° Ð°Ð´Ñ€ÐµÑ, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð’Ñ‹ ÑƒÐºÐ°Ð·Ð°Ð»Ð¸ Ñ€Ð°Ð½ÐµÐµ.');
+define('TITLE_BILLING_ADDRESS', 'Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°Ð´Ñ€ÐµÑ:');
 
-define('TABLE_HEADING_PAYMENT_METHOD', 'Ñïîñîá îïëàòû');
-define('TEXT_SELECT_PAYMENT_METHOD', 'Äîñòóïíûå ñïîñîáû îïëàòû çàêàçà.');
-define('TITLE_PLEASE_SELECT', 'Âûáåðèòå ïðåäïî÷òèòåëüíûé ñïîñîá');
-define('TEXT_ENTER_PAYMENT_INFORMATION', 'Íà äàííûé ìîìåíò äîñòóïåí åäèíñòâåííûé ñïîñîá îïëàòû çàêàçà, ïðîäîëæàéòå îôîðìëÿòü çàêàç:');
+define('TABLE_HEADING_PAYMENT_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹');
+define('TEXT_SELECT_PAYMENT_METHOD', 'Ð”Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ ÑÐ¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°.');
+define('TITLE_PLEASE_SELECT', 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´Ð¿Ð¾Ñ‡Ñ‚Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð±');
+define('TEXT_ENTER_PAYMENT_INFORMATION', 'ÐÐ° Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ ÐµÐ´Ð¸Ð½ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°, Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð°Ð¹Ñ‚Ðµ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·:');
 
-define('TABLE_HEADING_COMMENTS', 'Êîììåíòàðèè ê Âàøåìó çàêàçó');
+define('TABLE_HEADING_COMMENTS', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ðº Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°ÐºÐ°Ð·Ñƒ');
 
-define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'Ïðîäîëæèòü îôîðìëåíèå çàêàçà');
-define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Äàëåå Âàì íóæíî áóäåò ïîäòâåðäèòü ñâîé çàêàç.');
+define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Ð”Ð°Ð»ÐµÐµ Ð’Ð°Ð¼ Ð½ÑƒÐ¶Ð½Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ Ð·Ð°ÐºÐ°Ð·.');
 ?>

@@ -6,7 +6,7 @@
 // DEFINITIONS FOR /includes/languages/english/header_tags.php
 
 // Define your email address to appear on all pages
-define('HEAD_REPLY_TAG_ALL','âàø@e-mail');
+define('HEAD_REPLY_TAG_ALL','Ð²Ð°Ñˆ@e-mail');
 
 // For all pages not defined or left blank, and for products not defined
 // These are included unless you set the toggle switch in each section below to OFF ( '0' )
@@ -14,8 +14,8 @@ define('HEAD_REPLY_TAG_ALL','âàø@e-mail');
 // The HEAD_DESC_TAG_ALL is included AFTER the specific one for the page
 // The HEAD_KEY_TAG_ALL is included BEFORE the specific one for the page
 define('HEAD_TITLE_TAG_ALL',STORE_NAME.' ');
-define('HEAD_DESC_TAG_ALL','îïèñàíèå');
-define('HEAD_KEY_TAG_ALL','êëþ÷åâûå ñëîâà');
+define('HEAD_DESC_TAG_ALL','Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ');
+define('HEAD_KEY_TAG_ALL','ÐºÐ»ÑŽÑ‡ÐµÐ²Ñ‹Ðµ ÑÐ»Ð¾Ð²Ð°');
 
 // DEFINE TAGS FOR INDIVIDUAL PAGES
 
@@ -24,8 +24,8 @@ define('HTTA_DEFAULT_ON','1'); // Include HEAD_TITLE_TAG_ALL in Title
 define('HTKA_DEFAULT_ON','1'); // Include HEAD_KEY_TAG_ALL in Keywords
 define('HTDA_DEFAULT_ON','1'); // Include HEAD_DESC_TAG_ALL in Description
 define('HEAD_TITLE_TAG_DEFAULT',STORE_NAME);
-define('HEAD_DESC_TAG_DEFAULT','îïèñàíèå ãëàâíîé ñòðàíèöû');
-define('HEAD_KEY_TAG_DEFAULT','êëþ÷åâûå ñëîâà ãëàâíîé ñòðàíèöû');
+define('HEAD_DESC_TAG_DEFAULT','Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹');
+define('HEAD_KEY_TAG_DEFAULT','ÐºÐ»ÑŽÑ‡ÐµÐ²Ñ‹Ðµ ÑÐ»Ð¾Ð²Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹');
 
 // product_info.php - if left blank in products_description table these values will be used
 define('HTTA_PRODUCT_INFO_ON','1');
@@ -39,38 +39,38 @@ define('HEAD_KEY_TAG_PRODUCT_INFO','');
 define('HTTA_WHATS_NEW_ON','1');
 define('HTKA_WHATS_NEW_ON','1');
 define('HTDA_WHATS_NEW_ON','1');
-define('HEAD_TITLE_TAG_WHATS_NEW','Íîâèíêè');
-define('HEAD_DESC_TAG_WHATS_NEW','íîâèíêè');
-define('HEAD_KEY_TAG_WHATS_NEW','íîâèíêè');
+define('HEAD_TITLE_TAG_WHATS_NEW','ÐÐ¾Ð²Ð¸Ð½ÐºÐ¸');
+define('HEAD_DESC_TAG_WHATS_NEW','Ð½Ð¾Ð²Ð¸Ð½ÐºÐ¸');
+define('HEAD_KEY_TAG_WHATS_NEW','Ð½Ð¾Ð²Ð¸Ð½ÐºÐ¸');
 
 // specials.php
 // If HEAD_KEY_TAG_SPECIALS is left blank, it will build the keywords from the products_names of all products on special
 define('HTTA_SPECIALS_ON','1');
 define('HTKA_SPECIALS_ON','1');
 define('HTDA_SPECIALS_ON','1');
-define('HEAD_TITLE_TAG_SPECIALS','Ñêèäêè');
-define('HEAD_DESC_TAG_SPECIALS','Ñêèäêè');
-define('HEAD_KEY_TAG_SPECIALS','ñêèäêè');
+define('HEAD_TITLE_TAG_SPECIALS','Ð¡ÐºÐ¸Ð´ÐºÐ¸');
+define('HEAD_DESC_TAG_SPECIALS','Ð¡ÐºÐ¸Ð´ÐºÐ¸');
+define('HEAD_KEY_TAG_SPECIALS','ÑÐºÐ¸Ð´ÐºÐ¸');
 
 // product_reviews_info.php and product_reviews.php - if left blank in products_description table these values will be used
 define('HTTA_PRODUCT_REVIEWS_INFO_ON','1');
 define('HTKA_PRODUCT_REVIEWS_INFO_ON','1');
 define('HTDA_PRODUCT_REVIEWS_INFO_ON','1');
-define('HEAD_TITLE_TAG_PRODUCT_REVIEWS_INFO','Îòçûâ î òîâàðå');
-define('HEAD_DESC_TAG_PRODUCT_REVIEWS_INFO','îòçûâû');
-define('HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO','îòçûâû');
+define('HEAD_TITLE_TAG_PRODUCT_REVIEWS_INFO','ÐžÑ‚Ð·Ñ‹Ð² Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ðµ');
+define('HEAD_DESC_TAG_PRODUCT_REVIEWS_INFO','Ð¾Ñ‚Ð·Ñ‹Ð²Ñ‹');
+define('HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO','Ð¾Ñ‚Ð·Ñ‹Ð²Ñ‹');
 
 
-// Óïðàâëåíèå òýãàìè ñòàòåé
+// Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ‚ÑÐ³Ð°Ð¼Ð¸ ÑÑ‚Ð°Ñ‚ÐµÐ¹
 
    // For all pages not defined or left blank, and for articles not defined
    // These are included unless you set the toggle switch in each section below to OFF ( '0' )
    // The HEAD_TITLE_TAG_ALL is included BEFORE the specific one for the page
    // The HEAD_DESC_TAG_ALL is included AFTER the specific one for the page
    // The HEAD_KEY_TAG_ALL is included AFTER the specific one for the page
-   define('HEAD_TITLE_ARTICLE_TAG_ALL','Èíòåðíåò-ìàãàçèí');
-   define('HEAD_DESC_ARTICLE_TAG_ALL','ñòàòüè');
-   define('HEAD_KEY_ARTICLE_TAG_ALL','ñòàòüè');
+   define('HEAD_TITLE_ARTICLE_TAG_ALL','Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½');
+   define('HEAD_DESC_ARTICLE_TAG_ALL','ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+   define('HEAD_KEY_ARTICLE_TAG_ALL','ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
 
 /* End of Indented Section */
 
@@ -80,34 +80,34 @@ define('HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO','îòçûâû');
 define('HTTA_ARTICLES_ON','1'); // Include HEAD_TITLE_TAG_ALL in Title
 define('HTKA_ARTICLES_ON','1'); // Include HEAD_KEY_TAG_ALL in Keywords
 define('HTDA_ARTICLES_ON','1'); // Include HEAD_DESC_TAG_ALL in Description
-define('HEAD_TITLE_TAG_ARTICLES','Ñòàòüè');
-define('HEAD_DESC_TAG_ARTICLES','ñòàòüè');
-define('HEAD_KEY_TAG_ARTICLES','ñòàòüè');
+define('HEAD_TITLE_TAG_ARTICLES','Ð¡Ñ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_DESC_TAG_ARTICLES','ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_KEY_TAG_ARTICLES','ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
 
 // article_info.php - if left blank in articles_description table these values will be used
 define('HTTA_ARTICLE_INFO_ON','1');
 define('HTKA_ARTICLE_INFO_ON','1');
 define('HTDA_ARTICLE_INFO_ON','1');
-define('HEAD_TITLE_TAG_ARTICLE_INFO','Ñòàòüè');
-define('HEAD_DESC_TAG_ARTICLE_INFO','ñòàòüè');
-define('HEAD_KEY_TAG_ARTICLE_INFO','ñòàòüè');
+define('HEAD_TITLE_TAG_ARTICLE_INFO','Ð¡Ñ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_DESC_TAG_ARTICLE_INFO','ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_KEY_TAG_ARTICLE_INFO','ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
 
 // articles_new.php - new articles
 // If HEAD_KEY_TAG_ARTICLES_NEW is left blank, it will build the keywords from the articles_names of all new articles
 define('HTTA_ARTICLES_NEW_ON','1');
 define('HTKA_ARTICLES_NEW_ON','1');
 define('HTDA_ARTICLES_NEW_ON','1');
-define('HEAD_TITLE_TAG_ARTICLES_NEW','Íîâûå ñòàòüè');
-define('HEAD_DESC_TAG_ARTICLES_NEW','íîâûå ñòàòüè');
-define('HEAD_KEY_TAG_ARTICLES_NEW','íîâûå ñòàòüè');
+define('HEAD_TITLE_TAG_ARTICLES_NEW','ÐÐ¾Ð²Ñ‹Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_DESC_TAG_ARTICLES_NEW','Ð½Ð¾Ð²Ñ‹Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_KEY_TAG_ARTICLES_NEW','Ð½Ð¾Ð²Ñ‹Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
 
 // article_reviews_info.php and article_reviews.php - if left blank in articles_description table these values will be used
 define('HTTA_ARTICLE_REVIEWS_INFO_ON','1');
 define('HTKA_ARTICLE_REVIEWS_INFO_ON','1');
 define('HTDA_ARTICLE_REVIEWS_INFO_ON','1');
-define('HEAD_TITLE_TAG_ARTICLE_REVIEWS_INFO','Îòçûâû ñòàòüè');
-define('HEAD_DESC_TAG_ARTICLE_REVIEWS_INFO','îòçûâû ñòàòüè');
-define('HEAD_KEY_TAG_ARTICLE_REVIEWS_INFO','îòçûâû ñòàòüè');
+define('HEAD_TITLE_TAG_ARTICLE_REVIEWS_INFO','ÐžÑ‚Ð·Ñ‹Ð²Ñ‹ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_DESC_TAG_ARTICLE_REVIEWS_INFO','Ð¾Ñ‚Ð·Ñ‹Ð²Ñ‹ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('HEAD_KEY_TAG_ARTICLE_REVIEWS_INFO','Ð¾Ñ‚Ð·Ñ‹Ð²Ñ‹ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
 
 
 ?>

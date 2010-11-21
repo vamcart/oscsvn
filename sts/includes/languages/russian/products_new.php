@@ -10,10 +10,10 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Íîâûå òîâàðû');
-define('HEADING_TITLE', 'Íîâûå òîâàðû');
+define('NAVBAR_TITLE', 'ÐÐ¾Ð²Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
+define('HEADING_TITLE', 'ÐÐ¾Ð²Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹');
 
-define('TEXT_DATE_ADDED', 'Äîáàâëåíî:');
-define('TEXT_MANUFACTURER', 'Ïðîèçâîäèòåëü:');
-define('TEXT_PRICE', 'Öåíà:');
+define('TEXT_DATE_ADDED', 'Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾:');
+define('TEXT_MANUFACTURER', 'ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ:');
+define('TEXT_PRICE', 'Ð¦ÐµÐ½Ð°:');
 ?>

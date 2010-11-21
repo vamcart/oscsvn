@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Свяжитесь с нами');
-define('NAVBAR_TITLE', 'Написать');
-define('TEXT_SUCCESS', 'Ваше сообщение успешно отправлено!');
-define('EMAIL_SUBJECT', 'Сообщение от ' . STORE_NAME);
+define('HEADING_TITLE', 'РЎРІСЏР¶РёС‚РµСЃСЊ СЃ РЅР°РјРё');
+define('NAVBAR_TITLE', 'РќР°РїРёСЃР°С‚СЊ');
+define('TEXT_SUCCESS', 'Р’Р°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ!');
+define('EMAIL_SUBJECT', 'РЎРѕРѕР±С‰РµРЅРёРµ РѕС‚ ' . STORE_NAME);
 
-define('ENTRY_NAME', 'Ваше имя:');
-define('ENTRY_EMAIL', 'E-Mail адрес:');
-define('ENTRY_ENQUIRY', 'Сообщение:');
+define('ENTRY_NAME', 'Р’Р°С€Рµ РёРјСЏ:');
+define('ENTRY_EMAIL', 'E-Mail Р°РґСЂРµСЃ:');
+define('ENTRY_ENQUIRY', 'РЎРѕРѕР±С‰РµРЅРёРµ:');
 
-define('SEND_TO_TEXT', 'Письмо в:');
+define('SEND_TO_TEXT', 'РџРёСЃСЊРјРѕ РІ:');
 //define('SEND_TO_TYPE', 'radio');  //this will create a radio buttons for your contact list
 define('SEND_TO_TYPE', ''); //Change to this for a dropdown menu.
 

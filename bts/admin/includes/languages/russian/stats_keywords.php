@@ -1,25 +1,25 @@
 <?php
 
-define('HEADING_TITLE', 'Поисковые слова: Статистика и замены');
-define('WORD_ENTRY_ORIGINAL', 'Оригинальный запрос:');
-define('WORD_ENTRY_REPLACEMENT', 'Заменяемый запрос:');
-define('KEYWORD_TITLE', 'Запрос');
-define('KEYWORD_TITLE2', 'Количество');
+define('HEADING_TITLE', 'РџРѕРёСЃРєРѕРІС‹Рµ СЃР»РѕРІР°: РЎС‚Р°С‚РёСЃС‚РёРєР° Рё Р·Р°РјРµРЅС‹');
+define('WORD_ENTRY_ORIGINAL', 'РћСЂРёРіРёРЅР°Р»СЊРЅС‹Р№ Р·Р°РїСЂРѕСЃ:');
+define('WORD_ENTRY_REPLACEMENT', 'Р—Р°РјРµРЅСЏРµРјС‹Р№ Р·Р°РїСЂРѕСЃ:');
+define('KEYWORD_TITLE', 'Р—Р°РїСЂРѕСЃ');
+define('KEYWORD_TITLE2', 'РљРѕР»РёС‡РµСЃС‚РІРѕ');
 
-define('SIDEBAR_HEADING', 'Настройки');
-define('SIDEBAR_INFO_1', 'Используйте кнопку Обновить, чтобы увидеть, что ищут посетители в магазине.');
-define('SIDEBAR_INFO_2', 'Чтобы удалить <b>все</b> поисковые запросы, которые делали посетители магазина, нажмите кнопку Удалить');;
-define('SIDEBAR_INFO_3', '<b>Заменяемые слова/запросы</b><br><br>Смотреть заменяемые слова/запросы:');
+define('SIDEBAR_HEADING', 'РќР°СЃС‚СЂРѕР№РєРё');
+define('SIDEBAR_INFO_1', 'РСЃРїРѕР»СЊР·СѓР№С‚Рµ РєРЅРѕРїРєСѓ РћР±РЅРѕРІРёС‚СЊ, С‡С‚РѕР±С‹ СѓРІРёРґРµС‚СЊ, С‡С‚Рѕ РёС‰СѓС‚ РїРѕСЃРµС‚РёС‚РµР»Рё РІ РјР°РіР°Р·РёРЅРµ.');
+define('SIDEBAR_INFO_2', 'Р§С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ <b>РІСЃРµ</b> РїРѕРёСЃРєРѕРІС‹Рµ Р·Р°РїСЂРѕСЃС‹, РєРѕС‚РѕСЂС‹Рµ РґРµР»Р°Р»Рё РїРѕСЃРµС‚РёС‚РµР»Рё РјР°РіР°Р·РёРЅР°, РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ РЈРґР°Р»РёС‚СЊ');;
+define('SIDEBAR_INFO_3', '<b>Р—Р°РјРµРЅСЏРµРјС‹Рµ СЃР»РѕРІР°/Р·Р°РїСЂРѕСЃС‹</b><br><br>РЎРјРѕС‚СЂРµС‚СЊ Р·Р°РјРµРЅСЏРµРјС‹Рµ СЃР»РѕРІР°/Р·Р°РїСЂРѕСЃС‹:');
 
-define('BUTTON_VIEW_WORD_LIST', 'Смотреть слова/запросы');
-define('BUTTON_UPDATE_WORD_LIST', 'Обновить');
-define('BUTTON_SORT_NAME', 'Сортировать по имени');
-define('BUTTON_SORT_TOTAL', 'Сортировать по количеству');
-define('BUTTON_DELETE', 'Удалить');
-define('BUTTON_EDIT_WORD', 'Изменить');
-define('BUTTON_ADD_WORD', 'Добавить слово/запрос');
-define('BUTTON_ADD', 'Добавить');
+define('BUTTON_VIEW_WORD_LIST', 'РЎРјРѕС‚СЂРµС‚СЊ СЃР»РѕРІР°/Р·Р°РїСЂРѕСЃС‹');
+define('BUTTON_UPDATE_WORD_LIST', 'РћР±РЅРѕРІРёС‚СЊ');
+define('BUTTON_SORT_NAME', 'РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ РёРјРµРЅРё');
+define('BUTTON_SORT_TOTAL', 'РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ');
+define('BUTTON_DELETE', 'РЈРґР°Р»РёС‚СЊ');
+define('BUTTON_EDIT_WORD', 'РР·РјРµРЅРёС‚СЊ');
+define('BUTTON_ADD_WORD', 'Р”РѕР±Р°РІРёС‚СЊ СЃР»РѕРІРѕ/Р·Р°РїСЂРѕСЃ');
+define('BUTTON_ADD', 'Р”РѕР±Р°РІРёС‚СЊ');
 
-define('LINK_EDIT', 'Редактировать');
-define('LINK_DELETE', 'Удалить');
+define('LINK_EDIT', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ');
+define('LINK_DELETE', 'РЈРґР°Р»РёС‚СЊ');
 ?>

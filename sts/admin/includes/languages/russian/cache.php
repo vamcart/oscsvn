@@ -10,15 +10,15 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Óïðàâëåíèå Êýøåì');
+define('HEADING_TITLE', 'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐšÑÑˆÐµÐ¼');
 
-define('TABLE_HEADING_CACHE', 'Áëîêè');
-define('TABLE_HEADING_DATE_CREATED', 'Äàòà ñîçäàíèÿ');
-define('TABLE_HEADING_ACTION', 'Äåéñòâèå');
+define('TABLE_HEADING_CACHE', 'Ð‘Ð»Ð¾ÐºÐ¸');
+define('TABLE_HEADING_DATE_CREATED', 'Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ');
+define('TABLE_HEADING_ACTION', 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ');
 
-define('TEXT_FILE_DOES_NOT_EXIST', 'Ôàéë îòñóòñòâóåò');
-define('TEXT_CACHE_DIRECTORY', 'Êýø äèðåêòîðèÿ:');
+define('TEXT_FILE_DOES_NOT_EXIST', 'Ð¤Ð°Ð¹Ð» Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚');
+define('TEXT_CACHE_DIRECTORY', 'ÐšÑÑˆ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ñ:');
 
-define('ERROR_CACHE_DIRECTORY_DOES_NOT_EXIST', 'Îøèáêà: Êýø äèðåêòîðèÿ îòñóòñòâóåò. Óñòàíîâèòå â Íàñòðîéêè->Êýø.');
-define('ERROR_CACHE_DIRECTORY_NOT_WRITEABLE', 'Îøèáêà: Êýø äèðåêòîðèÿ èìååò íåâåðíûå ïðàâà äîñòóïà.');
+define('ERROR_CACHE_DIRECTORY_DOES_NOT_EXIST', 'ÐžÑˆÐ¸Ð±ÐºÐ°: ÐšÑÑˆ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ñ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð² ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸->ÐšÑÑˆ.');
+define('ERROR_CACHE_DIRECTORY_NOT_WRITEABLE', 'ÐžÑˆÐ¸Ð±ÐºÐ°: ÐšÑÑˆ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ñ Ð¸Ð¼ÐµÐµÑ‚ Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹Ðµ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°.');
 ?>

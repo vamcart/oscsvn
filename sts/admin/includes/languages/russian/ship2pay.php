@@ -14,22 +14,22 @@
   http://www.oscommerce.com/community/contributions,1042
 */
 
-define('HEADING_TITLE', 'Доставка-Оплата');
+define('HEADING_TITLE', 'Р”РѕСЃС‚Р°РІРєР°-РћРїР»Р°С‚Р°');
 
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TEXT_DISPLAY_NUMBER_OF_PAYMENTS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> элементов)');
-define('TEXT_INFO_EDIT_INTRO', 'Внесите необходимые изменения');
-define('TEXT_INFO_INSERT_INTRO', 'Укажите данные для нового правила');
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить запись?');
-define('TABLE_HEADING_SHIPMENT', 'Способ доставки');
-define('TABLE_HEADING_ZONE', 'Зона');
-define('TABLE_HEADING_PAYMENTS', 'Разрешённые способы оплаты');
-define('TABLE_HEADING_STATUS','Статус');
-define('TEXT_INFO_PAYMENTS_ALLOWED', 'При выборе способа доставки будут доступны следующие способы оплаты: ');
-define('TEXT_INFO_SHIPMENT', '<b>Способ доставки:</b>');
-define('TEXT_INFO_ZONE', '<b>Зона:</b>');
-define('TEXT_INFO_PAYMENTS', '<b>Разрешённые способы оплаты для выбранного выше способа доставки:</b>');
-define('TEXT_INFO_HEADING_EDIT_SHP2PAY', 'Изменить');
-define('TEXT_INFO_HEADING_NEW_SHP2PAY', 'Добавить');
-define('TEXT_INFO_HEADING_DELETE_SHP2PAY', 'Удалить');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TEXT_DISPLAY_NUMBER_OF_PAYMENTS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЌР»РµРјРµРЅС‚РѕРІ)');
+define('TEXT_INFO_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_INFO_INSERT_INTRO', 'РЈРєР°Р¶РёС‚Рµ РґР°РЅРЅС‹Рµ РґР»СЏ РЅРѕРІРѕРіРѕ РїСЂР°РІРёР»Р°');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ Р·Р°РїРёСЃСЊ?');
+define('TABLE_HEADING_SHIPMENT', 'РЎРїРѕСЃРѕР± РґРѕСЃС‚Р°РІРєРё');
+define('TABLE_HEADING_ZONE', 'Р—РѕРЅР°');
+define('TABLE_HEADING_PAYMENTS', 'Р Р°Р·СЂРµС€С‘РЅРЅС‹Рµ СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹');
+define('TABLE_HEADING_STATUS','РЎС‚Р°С‚СѓСЃ');
+define('TEXT_INFO_PAYMENTS_ALLOWED', 'РџСЂРё РІС‹Р±РѕСЂРµ СЃРїРѕСЃРѕР±Р° РґРѕСЃС‚Р°РІРєРё Р±СѓРґСѓС‚ РґРѕСЃС‚СѓРїРЅС‹ СЃР»РµРґСѓСЋС‰РёРµ СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹: ');
+define('TEXT_INFO_SHIPMENT', '<b>РЎРїРѕСЃРѕР± РґРѕСЃС‚Р°РІРєРё:</b>');
+define('TEXT_INFO_ZONE', '<b>Р—РѕРЅР°:</b>');
+define('TEXT_INFO_PAYMENTS', '<b>Р Р°Р·СЂРµС€С‘РЅРЅС‹Рµ СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹ РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕРіРѕ РІС‹С€Рµ СЃРїРѕСЃРѕР±Р° РґРѕСЃС‚Р°РІРєРё:</b>');
+define('TEXT_INFO_HEADING_EDIT_SHP2PAY', 'РР·РјРµРЅРёС‚СЊ');
+define('TEXT_INFO_HEADING_NEW_SHP2PAY', 'Р”РѕР±Р°РІРёС‚СЊ');
+define('TEXT_INFO_HEADING_DELETE_SHP2PAY', 'РЈРґР°Р»РёС‚СЊ');
 ?>

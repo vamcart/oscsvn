@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Мои данные');
-define('NAVBAR_TITLE_2', 'Адресная книга');
+define('NAVBAR_TITLE_1', 'РњРѕРё РґР°РЅРЅС‹Рµ');
+define('NAVBAR_TITLE_2', 'РђРґСЂРµСЃРЅР°СЏ РєРЅРёРіР°');
 
-define('HEADING_TITLE', 'Моя адресная книга');
+define('HEADING_TITLE', 'РњРѕСЏ Р°РґСЂРµСЃРЅР°СЏ РєРЅРёРіР°');
 
-define('PRIMARY_ADDRESS_TITLE', 'Ваш адрес');
-define('PRIMARY_ADDRESS_DESCRIPTION', 'Данный адрес установлен по умолчанию.<br><br>Он будет использоваться при совершении покупок и любых других действий в нашем магазине.');
+define('PRIMARY_ADDRESS_TITLE', 'Р’Р°С€ Р°РґСЂРµСЃ');
+define('PRIMARY_ADDRESS_DESCRIPTION', 'Р”Р°РЅРЅС‹Р№ Р°РґСЂРµСЃ СѓСЃС‚Р°РЅРѕРІР»РµРЅ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.<br><br>РћРЅ Р±СѓРґРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РїСЂРё СЃРѕРІРµСЂС€РµРЅРёРё РїРѕРєСѓРїРѕРє Рё Р»СЋР±С‹С… РґСЂСѓРіРёС… РґРµР№СЃС‚РІРёР№ РІ РЅР°С€РµРј РјР°РіР°Р·РёРЅРµ.');
 
-define('ADDRESS_BOOK_TITLE', 'Записи адресной книги');
+define('ADDRESS_BOOK_TITLE', 'Р—Р°РїРёСЃРё Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРё');
 
-define('PRIMARY_ADDRESS', '(по умолчанию)');
-define('TEXT_MAXIMUM_ENTRIES', '<font color="#ff0000"><b>ЗАМЕЧАНИЕ:</b></font> Максимальный объем адресной книги - <b>%s</b> записей');
+define('PRIMARY_ADDRESS', '(РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ)');
+define('TEXT_MAXIMUM_ENTRIES', '<font color="#ff0000"><b>Р—РђРњР•Р§РђРќРР•:</b></font> РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РѕР±СЉРµРј Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРё - <b>%s</b> Р·Р°РїРёСЃРµР№');
 ?>

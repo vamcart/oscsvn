@@ -10,20 +10,20 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Содержимое корзины');
-define('HEADING_TITLE', 'Моя корзина');
-define('TABLE_HEADING_REMOVE', 'Удалить');
-define('TABLE_HEADING_QUANTITY', 'Количество');
-define('TABLE_HEADING_MODEL', 'Код товара');
-define('TABLE_HEADING_PRODUCTS', 'Товары');
-define('TABLE_HEADING_TOTAL', 'Стоимость');
-define('TEXT_CART_EMPTY', 'Ваша корзина пуста!');
-define('SUB_TITLE_SUB_TOTAL', 'Общая стоимость:');
-define('SUB_TITLE_TOTAL', 'Итого:');
+define('NAVBAR_TITLE', 'РЎРѕРґРµСЂР¶РёРјРѕРµ РєРѕСЂР·РёРЅС‹');
+define('HEADING_TITLE', 'РњРѕСЏ РєРѕСЂР·РёРЅР°');
+define('TABLE_HEADING_REMOVE', 'РЈРґР°Р»РёС‚СЊ');
+define('TABLE_HEADING_QUANTITY', 'РљРѕР»РёС‡РµСЃС‚РІРѕ');
+define('TABLE_HEADING_MODEL', 'РљРѕРґ С‚РѕРІР°СЂР°');
+define('TABLE_HEADING_PRODUCTS', 'РўРѕРІР°СЂС‹');
+define('TABLE_HEADING_TOTAL', 'РЎС‚РѕРёРјРѕСЃС‚СЊ');
+define('TEXT_CART_EMPTY', 'Р’Р°С€Р° РєРѕСЂР·РёРЅР° РїСѓСЃС‚Р°!');
+define('SUB_TITLE_SUB_TOTAL', 'РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ:');
+define('SUB_TITLE_TOTAL', 'РС‚РѕРіРѕ:');
 
-define('OUT_OF_STOCK_CANT_CHECKOUT', 'Товары, выделенные ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' имеются на нашем складе в недостаточном для Вашего заказа количестве.<br>Пожалуйста, измените количество продуктов выделенных (' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . '), благодарим Вас');
-define('OUT_OF_STOCK_CAN_CHECKOUT', 'Товары, выделенные ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' имеются на нашем складе в недостаточном для Вашего заказа количестве.<br>Тем не менее, Вы можете купить их и проверить количество имеющихся в наличии для поэтапной доставки в процессе выполнения Вашего заказа.');
+define('OUT_OF_STOCK_CANT_CHECKOUT', 'РўРѕРІР°СЂС‹, РІС‹РґРµР»РµРЅРЅС‹Рµ ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' РёРјРµСЋС‚СЃСЏ РЅР° РЅР°С€РµРј СЃРєР»Р°РґРµ РІ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕРј РґР»СЏ Р’Р°С€РµРіРѕ Р·Р°РєР°Р·Р° РєРѕР»РёС‡РµСЃС‚РІРµ.<br>РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РёР·РјРµРЅРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕРґСѓРєС‚РѕРІ РІС‹РґРµР»РµРЅРЅС‹С… (' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . '), Р±Р»Р°РіРѕРґР°СЂРёРј Р’Р°СЃ');
+define('OUT_OF_STOCK_CAN_CHECKOUT', 'РўРѕРІР°СЂС‹, РІС‹РґРµР»РµРЅРЅС‹Рµ ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' РёРјРµСЋС‚СЃСЏ РЅР° РЅР°С€РµРј СЃРєР»Р°РґРµ РІ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕРј РґР»СЏ Р’Р°С€РµРіРѕ Р·Р°РєР°Р·Р° РєРѕР»РёС‡РµСЃС‚РІРµ.<br>РўРµРј РЅРµ РјРµРЅРµРµ, Р’С‹ РјРѕР¶РµС‚Рµ РєСѓРїРёС‚СЊ РёС… Рё РїСЂРѕРІРµСЂРёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РёРјРµСЋС‰РёС…СЃСЏ РІ РЅР°Р»РёС‡РёРё РґР»СЏ РїРѕСЌС‚Р°РїРЅРѕР№ РґРѕСЃС‚Р°РІРєРё РІ РїСЂРѕС†РµСЃСЃРµ РІС‹РїРѕР»РЅРµРЅРёСЏ Р’Р°С€РµРіРѕ Р·Р°РєР°Р·Р°.');
 
-define('TEXT_ALTERNATIVE_CHECKOUT_METHODS', '- ИЛИ -');
+define('TEXT_ALTERNATIVE_CHECKOUT_METHODS', '- РР›Р -');
 
 ?>

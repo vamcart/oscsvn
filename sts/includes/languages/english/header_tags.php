@@ -61,7 +61,7 @@ define('HEAD_DESC_TAG_PRODUCT_REVIEWS_INFO','');
 define('HEAD_KEY_TAG_PRODUCT_REVIEWS_INFO','');
 
 
-// Управление тэгами статей
+// РЈРїСЂР°РІР»РµРЅРёРµ С‚СЌРіР°РјРё СЃС‚Р°С‚РµР№
 
    // For all pages not defined or left blank, and for articles not defined
    // These are included unless you set the toggle switch in each section below to OFF ( '0' )

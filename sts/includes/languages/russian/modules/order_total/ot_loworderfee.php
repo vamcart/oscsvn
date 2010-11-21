@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_ORDER_TOTAL_LOWORDERFEE_TITLE', 'Íèçêàÿ ñòîèìîñòü çàêàçà');
-  define('MODULE_ORDER_TOTAL_LOWORDERFEE_DESCRIPTION', 'Íèçêàÿ ñòîèìîñòü çàêàçà');
+  define('MODULE_ORDER_TOTAL_LOWORDERFEE_TITLE', 'ÐÐ¸Ð·ÐºÐ°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°');
+  define('MODULE_ORDER_TOTAL_LOWORDERFEE_DESCRIPTION', 'ÐÐ¸Ð·ÐºÐ°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°');
 ?>

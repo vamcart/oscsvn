@@ -11,30 +11,30 @@
 */
 
 if ($_GET['origin'] == FILENAME_CHECKOUT_PAYMENT) {
-  define('NAVBAR_TITLE', 'Заказ');
-  define('HEADING_TITLE', 'Сделать заказ легко.');
-  define('TEXT_STEP_BY_STEP', 'Мы поможем оформить заказ шаг за шагом.');
+  define('NAVBAR_TITLE', 'Р—Р°РєР°Р·');
+  define('HEADING_TITLE', 'РЎРґРµР»Р°С‚СЊ Р·Р°РєР°Р· Р»РµРіРєРѕ.');
+  define('TEXT_STEP_BY_STEP', 'РњС‹ РїРѕРјРѕР¶РµРј РѕС„РѕСЂРјРёС‚СЊ Р·Р°РєР°Р· С€Р°Рі Р·Р° С€Р°РіРѕРј.');
 } else {
-  define('NAVBAR_TITLE', 'Вход');
-  define('HEADING_TITLE', 'Добро пожаловать, введите свои данные');
+  define('NAVBAR_TITLE', 'Р’С…РѕРґ');
+  define('HEADING_TITLE', 'Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РІРІРµРґРёС‚Рµ СЃРІРѕРё РґР°РЅРЅС‹Рµ');
   define('TEXT_STEP_BY_STEP', ''); // should be empty
 }
 
-define('HEADING_RETURNING_ADMIN', 'Вход:');
-define('HEADING_PASSWORD_FORGOTTEN', 'Напоминание пароля:');
-define('TEXT_RETURNING_ADMIN', 'Только для администраторов!');
-define('ENTRY_EMAIL_ADDRESS', 'E-Mail адрес:');
-define('ENTRY_PASSWORD', 'Пароль:');
-define('ENTRY_FIRSTNAME', 'Имя:');
-define('IMAGE_BUTTON_LOGIN', 'Войти');
+define('HEADING_RETURNING_ADMIN', 'Р’С…РѕРґ:');
+define('HEADING_PASSWORD_FORGOTTEN', 'РќР°РїРѕРјРёРЅР°РЅРёРµ РїР°СЂРѕР»СЏ:');
+define('TEXT_RETURNING_ADMIN', 'РўРѕР»СЊРєРѕ РґР»СЏ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРІ!');
+define('ENTRY_EMAIL_ADDRESS', 'E-Mail Р°РґСЂРµСЃ:');
+define('ENTRY_PASSWORD', 'РџР°СЂРѕР»СЊ:');
+define('ENTRY_FIRSTNAME', 'РРјСЏ:');
+define('IMAGE_BUTTON_LOGIN', 'Р’РѕР№С‚Рё');
 
-define('TEXT_PASSWORD_FORGOTTEN', 'Забыли пароль?');
+define('TEXT_PASSWORD_FORGOTTEN', 'Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ?');
 
-define('TEXT_LOGIN_ERROR', '<font color="#ff0000"><b>ОШИБКА:</b></font> Неверный email адрес или(и) пароль!');
-define('TEXT_FORGOTTEN_ERROR', '<font color="#ff0000"><b>ОШИБКА:</b></font> Имя и пароль не совпадают!');
-define('TEXT_FORGOTTEN_FAIL', 'Вы пытались войти более 3 раз. В целях безопасности, свяжитесь с администратором для получения пароля на вход.<br>&nbsp;<br>&nbsp;');
-define('TEXT_FORGOTTEN_SUCCESS', 'Новый пароль был отправлен на Ваш email адрес. Проверьте почту и попробуйте войти ещё раз.<br>&nbsp;<br>&nbsp;');
+define('TEXT_LOGIN_ERROR', '<font color="#ff0000"><b>РћРЁРР‘РљРђ:</b></font> РќРµРІРµСЂРЅС‹Р№ email Р°РґСЂРµСЃ РёР»Рё(Рё) РїР°СЂРѕР»СЊ!');
+define('TEXT_FORGOTTEN_ERROR', '<font color="#ff0000"><b>РћРЁРР‘РљРђ:</b></font> РРјСЏ Рё РїР°СЂРѕР»СЊ РЅРµ СЃРѕРІРїР°РґР°СЋС‚!');
+define('TEXT_FORGOTTEN_FAIL', 'Р’С‹ РїС‹С‚Р°Р»РёСЃСЊ РІРѕР№С‚Рё Р±РѕР»РµРµ 3 СЂР°Р·. Р’ С†РµР»СЏС… Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё, СЃРІСЏР¶РёС‚РµСЃСЊ СЃ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РїР°СЂРѕР»СЏ РЅР° РІС…РѕРґ.<br>&nbsp;<br>&nbsp;');
+define('TEXT_FORGOTTEN_SUCCESS', 'РќРѕРІС‹Р№ РїР°СЂРѕР»СЊ Р±С‹Р» РѕС‚РїСЂР°РІР»РµРЅ РЅР° Р’Р°С€ email Р°РґСЂРµСЃ. РџСЂРѕРІРµСЂСЊС‚Рµ РїРѕС‡С‚Сѓ Рё РїРѕРїСЂРѕР±СѓР№С‚Рµ РІРѕР№С‚Рё РµС‰С‘ СЂР°Р·.<br>&nbsp;<br>&nbsp;');
 
-define('ADMIN_EMAIL_SUBJECT', 'Ваш новый пароль!'); 
-define('ADMIN_EMAIL_TEXT', 'Здравствуйте %s,' . "\n\n" . 'Вы можете войти в администраторскую со следующим паролем. После входа с данным паролем, мы рекомендуем изменить пароль на новый!' . "\n\n" . 'Сайт : %s' . "\n" . 'Email: %s' . "\n" . 'Пароль: %s' . "\n\n" . 'Спасибо!' . "\n" . '%s' . "\n\n" . 'Это письмо отправлено автоматически, не нужно на него отвечать!'); 
+define('ADMIN_EMAIL_SUBJECT', 'Р’Р°С€ РЅРѕРІС‹Р№ РїР°СЂРѕР»СЊ!'); 
+define('ADMIN_EMAIL_TEXT', 'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ %s,' . "\n\n" . 'Р’С‹ РјРѕР¶РµС‚Рµ РІРѕР№С‚Рё РІ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєСѓСЋ СЃРѕ СЃР»РµРґСѓСЋС‰РёРј РїР°СЂРѕР»РµРј. РџРѕСЃР»Рµ РІС…РѕРґР° СЃ РґР°РЅРЅС‹Рј РїР°СЂРѕР»РµРј, РјС‹ СЂРµРєРѕРјРµРЅРґСѓРµРј РёР·РјРµРЅРёС‚СЊ РїР°СЂРѕР»СЊ РЅР° РЅРѕРІС‹Р№!' . "\n\n" . 'РЎР°Р№С‚ : %s' . "\n" . 'Email: %s' . "\n" . 'РџР°СЂРѕР»СЊ: %s' . "\n\n" . 'РЎРїР°СЃРёР±Рѕ!' . "\n" . '%s' . "\n\n" . 'Р­С‚Рѕ РїРёСЃСЊРјРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё, РЅРµ РЅСѓР¶РЅРѕ РЅР° РЅРµРіРѕ РѕС‚РІРµС‡Р°С‚СЊ!'); 
 ?>

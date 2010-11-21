@@ -10,30 +10,30 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Статистика продаж');
-define('HEADING_TITLE_STATUS','Статус');
-define('HEADING_TITLE_REPORTED','Дата');
-define('TEXT_ALL_ORDERS', 'Все заказы');
-define('TEXT_NOTHING_FOUND', 'Не было заказов в выбранный период');
-define('TEXT_BUTTON_REPORT_PRINT','Версия для печати');
-define('TEXT_BUTTON_REPORT_FILE','Файл');
-define('TEXT_BUTTON_REPORT_HELP','Помощь');
-define('TEXT_BUTTON_REPORT_PRINT_DESC', 'Показать версию для печати');
-define('TEXT_BUTTON_REPORT_FILE_DESC', 'Скачать отчёт в формате txt, разделители запятые');
-define('TEXT_BUTTON_REPORT_HELP_DESC', 'О данном отчёте');
+define('HEADING_TITLE', 'РЎС‚Р°С‚РёСЃС‚РёРєР° РїСЂРѕРґР°Р¶');
+define('HEADING_TITLE_STATUS','РЎС‚Р°С‚СѓСЃ');
+define('HEADING_TITLE_REPORTED','Р”Р°С‚Р°');
+define('TEXT_ALL_ORDERS', 'Р’СЃРµ Р·Р°РєР°Р·С‹');
+define('TEXT_NOTHING_FOUND', 'РќРµ Р±С‹Р»Рѕ Р·Р°РєР°Р·РѕРІ РІ РІС‹Р±СЂР°РЅРЅС‹Р№ РїРµСЂРёРѕРґ');
+define('TEXT_BUTTON_REPORT_PRINT','Р’РµСЂСЃРёСЏ РґР»СЏ РїРµС‡Р°С‚Рё');
+define('TEXT_BUTTON_REPORT_FILE','Р¤Р°Р№Р»');
+define('TEXT_BUTTON_REPORT_HELP','РџРѕРјРѕС‰СЊ');
+define('TEXT_BUTTON_REPORT_PRINT_DESC', 'РџРѕРєР°Р·Р°С‚СЊ РІРµСЂСЃРёСЋ РґР»СЏ РїРµС‡Р°С‚Рё');
+define('TEXT_BUTTON_REPORT_FILE_DESC', 'РЎРєР°С‡Р°С‚СЊ РѕС‚С‡С‘С‚ РІ С„РѕСЂРјР°С‚Рµ txt, СЂР°Р·РґРµР»РёС‚РµР»Рё Р·Р°РїСЏС‚С‹Рµ');
+define('TEXT_BUTTON_REPORT_HELP_DESC', 'Рћ РґР°РЅРЅРѕРј РѕС‚С‡С‘С‚Рµ');
 define('TEXT_REPORT_DATE_FORMAT', 'j M Y -   g:i a'); // date format string
 //  as specified in php manual here: http://www.php.net/manual/en/function.date.php
-define('TABLE_HEADING_YEAR','Год');
-define('TABLE_HEADING_MONTH', 'Месяц');
-define('TABLE_HEADING_DAYS', 'День');
-define('TABLE_HEADING_INCOME', 'Всего<br>');
-define('TABLE_HEADING_SALES', 'Общая стоимость<br> товара');
-define('TABLE_HEADING_NONTAXED', 'Стоимость<br> товара');
-define('TABLE_HEADING_TAXED', 'Включая<br> налоги');
-define('TABLE_HEADING_TAX_COLL', 'Налоги');
-define('TABLE_HEADING_SHIPHNDL', 'Доставка');
-define('TABLE_HEADING_LOWORDER', 'Низкая<br> стоимость');
-define('TABLE_HEADING_OTHER', 'Сертификаты');  // could be any other extra class value
-define('TABLE_FOOTER_YTD','Год');
-define('TABLE_FOOTER_YEAR','Год');
+define('TABLE_HEADING_YEAR','Р“РѕРґ');
+define('TABLE_HEADING_MONTH', 'РњРµСЃСЏС†');
+define('TABLE_HEADING_DAYS', 'Р”РµРЅСЊ');
+define('TABLE_HEADING_INCOME', 'Р’СЃРµРіРѕ<br>');
+define('TABLE_HEADING_SALES', 'РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ<br> С‚РѕРІР°СЂР°');
+define('TABLE_HEADING_NONTAXED', 'РЎС‚РѕРёРјРѕСЃС‚СЊ<br> С‚РѕРІР°СЂР°');
+define('TABLE_HEADING_TAXED', 'Р’РєР»СЋС‡Р°СЏ<br> РЅР°Р»РѕРіРё');
+define('TABLE_HEADING_TAX_COLL', 'РќР°Р»РѕРіРё');
+define('TABLE_HEADING_SHIPHNDL', 'Р”РѕСЃС‚Р°РІРєР°');
+define('TABLE_HEADING_LOWORDER', 'РќРёР·РєР°СЏ<br> СЃС‚РѕРёРјРѕСЃС‚СЊ');
+define('TABLE_HEADING_OTHER', 'РЎРµСЂС‚РёС„РёРєР°С‚С‹');  // could be any other extra class value
+define('TABLE_FOOTER_YTD','Р“РѕРґ');
+define('TABLE_FOOTER_YEAR','Р“РѕРґ');
 ?>

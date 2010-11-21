@@ -1,16 +1,16 @@
 <?php
 define('NAVBAR_TITLE', 'FAQ');
 define('TEXT_FAQDESK_HEADING', 'FAQ');
-define('TEXT_FAQDESK_DATE', 'Дата: %s');
-define('TEXT_FAQDESK_ANSWER_SHORT', 'Краткий ответ:');
-define('TEXT_FAQDESK_ANSWER_LONG', 'Расширенный ответ:');
-define('TEXT_FAQDESK_LINK_HEADING', 'Дополнительная информация:');
-define('TEXT_FAQDESK_LINK', 'Если Вы хотите получить больше инфомации, зайдите на этот <a href="%s" target="_blank"><u>сайт</u></a>.');
-define('TEXT_NEWS_NOT_FOUND', 'Ни одного FAQ не найдено.');
-define('TEXT_FAQDESK_REVIEWS_HEADING', 'Статистика:');
-define('TEXT_FAQDESK_REVIEWS', 'Комментарии:  ');
-define('TEXT_DATE_ADDED', 'Вопрос был добавлен %s.');
-define('TEXT_CLICK_TO_ENLARGE', 'Увеличить');
-define('TEXT_FAQDESK_VIEWED', 'Просмотров:');
-define('TEXT_FAQDESK_SEARCH', 'Поиск в вопросах: ');
+define('TEXT_FAQDESK_DATE', 'Р”Р°С‚Р°: %s');
+define('TEXT_FAQDESK_ANSWER_SHORT', 'РљСЂР°С‚РєРёР№ РѕС‚РІРµС‚:');
+define('TEXT_FAQDESK_ANSWER_LONG', 'Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ РѕС‚РІРµС‚:');
+define('TEXT_FAQDESK_LINK_HEADING', 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ:');
+define('TEXT_FAQDESK_LINK', 'Р•СЃР»Рё Р’С‹ С…РѕС‚РёС‚Рµ РїРѕР»СѓС‡РёС‚СЊ Р±РѕР»СЊС€Рµ РёРЅС„РѕРјР°С†РёРё, Р·Р°Р№РґРёС‚Рµ РЅР° СЌС‚РѕС‚ <a href="%s" target="_blank"><u>СЃР°Р№С‚</u></a>.');
+define('TEXT_NEWS_NOT_FOUND', 'РќРё РѕРґРЅРѕРіРѕ FAQ РЅРµ РЅР°Р№РґРµРЅРѕ.');
+define('TEXT_FAQDESK_REVIEWS_HEADING', 'РЎС‚Р°С‚РёСЃС‚РёРєР°:');
+define('TEXT_FAQDESK_REVIEWS', 'РљРѕРјРјРµРЅС‚Р°СЂРёРё:  ');
+define('TEXT_DATE_ADDED', 'Р’РѕРїСЂРѕСЃ Р±С‹Р» РґРѕР±Р°РІР»РµРЅ %s.');
+define('TEXT_CLICK_TO_ENLARGE', 'РЈРІРµР»РёС‡РёС‚СЊ');
+define('TEXT_FAQDESK_VIEWED', 'РџСЂРѕСЃРјРѕС‚СЂРѕРІ:');
+define('TEXT_FAQDESK_SEARCH', 'РџРѕРёСЃРє РІ РІРѕРїСЂРѕСЃР°С…: ');
 ?>

@@ -14,56 +14,56 @@
   Released under the GNU General Public License
 */
 
-define('BOX_INFORMATION_AFFILIATE', 'Партнёрская программа');
-define('BOX_HEADING_AFFILIATE', 'Заработай с нами');
-define('BOX_HEADING_AFFILIATE_NEWS', 'Новости');
-define('BOX_AFFILIATE_INFO', 'Информация');
-define('BOX_AFFILIATE_SUMMARY', 'Общая статистика');
-define('BOX_AFFILIATE_ACCOUNT', 'Ваши данные');
-define('BOX_AFFILIATE_CLICKRATE', 'Клики');
-define('BOX_AFFILIATE_PAYMENT', 'Выплаты');
-define('BOX_AFFILIATE_SALES', 'Продажи');
-define('BOX_AFFILIATE_BANNERS', 'Получить HTML-код');
-define('BOX_AFFILIATE_CONTACT', 'Свяжитесь с нами');
+define('BOX_INFORMATION_AFFILIATE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°');
+define('BOX_HEADING_AFFILIATE', 'Р—Р°СЂР°Р±РѕС‚Р°Р№ СЃ РЅР°РјРё');
+define('BOX_HEADING_AFFILIATE_NEWS', 'РќРѕРІРѕСЃС‚Рё');
+define('BOX_AFFILIATE_INFO', 'РРЅС„РѕСЂРјР°С†РёСЏ');
+define('BOX_AFFILIATE_SUMMARY', 'РћР±С‰Р°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР°');
+define('BOX_AFFILIATE_ACCOUNT', 'Р’Р°С€Рё РґР°РЅРЅС‹Рµ');
+define('BOX_AFFILIATE_CLICKRATE', 'РљР»РёРєРё');
+define('BOX_AFFILIATE_PAYMENT', 'Р’С‹РїР»Р°С‚С‹');
+define('BOX_AFFILIATE_SALES', 'РџСЂРѕРґР°Р¶Рё');
+define('BOX_AFFILIATE_BANNERS', 'РџРѕР»СѓС‡РёС‚СЊ HTML-РєРѕРґ');
+define('BOX_AFFILIATE_CONTACT', 'РЎРІСЏР¶РёС‚РµСЃСЊ СЃ РЅР°РјРё');
 define('BOX_AFFILIATE_FAQ', 'FAQ');
-define('BOX_AFFILIATE_LOGIN', 'Войти');
-define('BOX_AFFILIATE_LOGOUT', 'Выйти');
+define('BOX_AFFILIATE_LOGIN', 'Р’РѕР№С‚Рё');
+define('BOX_AFFILIATE_LOGOUT', 'Р’С‹Р№С‚Рё');
 
-define('ENTRY_AFFILIATE_PAYMENT_DETAILS', 'Получатель платежа:');
-define('ENTRY_AFFILIATE_ACCEPT_AGB', 'Вы должны согласиться с <a target="_blank" href="' . tep_href_link(FILENAME_AFFILIATE_TERMS, '', 'SSL') . '">правилами нашей партнёрской программы</a>');
-define('ENTRY_AFFILIATE_AGB_ERROR', ' &nbsp;<small><font color="#FF0000">Вы должны согласиться с правилами нашей партнёрской программы</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_CHECK', 'Номер Вашего Z кошелька:');
+define('ENTRY_AFFILIATE_PAYMENT_DETAILS', 'РџРѕР»СѓС‡Р°С‚РµР»СЊ РїР»Р°С‚РµР¶Р°:');
+define('ENTRY_AFFILIATE_ACCEPT_AGB', 'Р’С‹ РґРѕР»Р¶РЅС‹ СЃРѕРіР»Р°СЃРёС‚СЊСЃСЏ СЃ <a target="_blank" href="' . tep_href_link(FILENAME_AFFILIATE_TERMS, '', 'SSL') . '">РїСЂР°РІРёР»Р°РјРё РЅР°С€РµР№ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјС‹</a>');
+define('ENTRY_AFFILIATE_AGB_ERROR', 'В &nbsp;<small><font color="#FF0000">Р’С‹ РґРѕР»Р¶РЅС‹ СЃРѕРіР»Р°СЃРёС‚СЊСЃСЏ СЃ РїСЂР°РІРёР»Р°РјРё РЅР°С€РµР№ РїР°СЂС‚РЅС‘СЂСЃРєРѕР№ РїСЂРѕРіСЂР°РјРјС‹</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_CHECK', 'РќРѕРјРµСЂ Р’Р°С€РµРіРѕ Z РєРѕС€РµР»СЊРєР°:');
 define('ENTRY_AFFILIATE_PAYMENT_CHECK_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_CHECK_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_PAYPAL', 'Ваш Email в системе PayPal:');
+define('ENTRY_AFFILIATE_PAYMENT_CHECK_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_PAYPAL', 'Р’Р°С€ Email РІ СЃРёСЃС‚РµРјРµ PayPal:');
 define('ENTRY_AFFILIATE_PAYMENT_PAYPAL_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_PAYPAL_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME', 'Название банка:');
+define('ENTRY_AFFILIATE_PAYMENT_PAYPAL_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME', 'РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°:');
 define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME', 'Получатель платежа:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_NAME_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME', 'РџРѕР»СѓС‡Р°С‚РµР»СЊ РїР»Р°С‚РµР¶Р°:');
 define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER', 'Номер счёта:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NAME_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER', 'РќРѕРјРµСЂ СЃС‡С‘С‚Р°:');
 define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER', 'ABA/BSB номер:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_ACCOUNT_NUMBER_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER', 'ABA/BSB РЅРѕРјРµСЂ:');
 define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE', 'SWIFT код:');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_BRANCH_NUMBER_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE', 'SWIFT РєРѕРґ:');
 define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE_TEXT', '');
-define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_COMPANY', 'Организация');
+define('ENTRY_AFFILIATE_PAYMENT_BANK_SWIFT_CODE_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_COMPANY', 'РћСЂРіР°РЅРёР·Р°С†РёСЏ');
 define('ENTRY_AFFILIATE_COMPANY_TEXT', '');
-define('ENTRY_AFFILIATE_COMPANY_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_COMPANY_TAXID', 'ИНН:');
+define('ENTRY_AFFILIATE_COMPANY_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_COMPANY_TAXID', 'РРќРќ:');
 define('ENTRY_AFFILIATE_COMPANY_TAXID_TEXT', '');
-define('ENTRY_AFFILIATE_COMPANY_TAXID_ERROR', '&nbsp;<small><font color="#FF0000">обязательно</font></small>');
-define('ENTRY_AFFILIATE_HOMEPAGE', 'Адрес сайта');
-define('ENTRY_AFFILIATE_HOMEPAGE_TEXT', '&nbsp;<small><font color="#AABBDD">обязательно (http://www)</font></small>');
-define('ENTRY_AFFILIATE_HOMEPAGE_ERROR', '&nbsp;<small><font color="#FF0000">обязательно (http://www)</font></small>');
+define('ENTRY_AFFILIATE_COMPANY_TAXID_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</font></small>');
+define('ENTRY_AFFILIATE_HOMEPAGE', 'РђРґСЂРµСЃ СЃР°Р№С‚Р°');
+define('ENTRY_AFFILIATE_HOMEPAGE_TEXT', '&nbsp;<small><font color="#AABBDD">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ (http://www)</font></small>');
+define('ENTRY_AFFILIATE_HOMEPAGE_ERROR', '&nbsp;<small><font color="#FF0000">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ (http://www)</font></small>');
 
-define('CATEGORY_PAYMENT_DETAILS', 'Укажите Ваши данные в системе WebMoney:');
+define('CATEGORY_PAYMENT_DETAILS', 'РЈРєР°Р¶РёС‚Рµ Р’Р°С€Рё РґР°РЅРЅС‹Рµ РІ СЃРёСЃС‚РµРјРµ WebMoney:');
 
 
 ?>

@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Отзыв о статье');
-define('HEADING_TITLE', 'Оставьте отзыв о статье ');
+define('NAVBAR_TITLE', 'РћС‚Р·С‹РІ Рѕ СЃС‚Р°С‚СЊРµ');
+define('HEADING_TITLE', 'РћСЃС‚Р°РІСЊС‚Рµ РѕС‚Р·С‹РІ Рѕ СЃС‚Р°С‚СЊРµ ');
 
-define('SUB_TITLE_FROM', 'От:');
-define('SUB_TITLE_REVIEW', 'Ваш отзыв:');
-define('SUB_TITLE_RATING', 'Рейтинг:');
+define('SUB_TITLE_FROM', 'РћС‚:');
+define('SUB_TITLE_REVIEW', 'Р’Р°С€ РѕС‚Р·С‹РІ:');
+define('SUB_TITLE_RATING', 'Р РµР№С‚РёРЅРі:');
 
-define('TEXT_NO_HTML', '<small><font color="#ff0000"><b>ЗАМЕЧАНИЕ:</b></font></small>&nbsp;HTML тэги не поддерживаются!');
-define('TEXT_APPROVAL_WARNING', 'Примечание: Ваш отзыв не появится до тех пор, пока он не будет проверен администратором.');
-define('TEXT_BAD', '<small><font color="#ff0000"><b>Хуже!</b></font></small>');
-define('TEXT_GOOD', '<small><font color="#ff0000"><b>Лучше!</b></font></small>');
+define('TEXT_NO_HTML', '<small><font color="#ff0000"><b>Р—РђРњР•Р§РђРќРР•:</b></font></small>&nbsp;HTML С‚СЌРіРё РЅРµ РїРѕРґРґРµСЂР¶РёРІР°СЋС‚СЃСЏ!');
+define('TEXT_APPROVAL_WARNING', 'РџСЂРёРјРµС‡Р°РЅРёРµ: Р’Р°С€ РѕС‚Р·С‹РІ РЅРµ РїРѕСЏРІРёС‚СЃСЏ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РѕРЅ РЅРµ Р±СѓРґРµС‚ РїСЂРѕРІРµСЂРµРЅ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј.');
+define('TEXT_BAD', '<small><font color="#ff0000"><b>РҐСѓР¶Рµ!</b></font></small>');
+define('TEXT_GOOD', '<small><font color="#ff0000"><b>Р›СѓС‡С€Рµ!</b></font></small>');
 
 ?>

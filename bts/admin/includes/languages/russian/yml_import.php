@@ -11,16 +11,16 @@
    Released under the GNU General Public License
    --------------------------------------------------------------*/
 
-define('HEADING_TITLE', 'ßíäåêñ-Ìàðêåò èìïîðò/ýêñïîðò');
+define('HEADING_TITLE', 'Ð¯Ð½Ð´ÐµÐºÑ-ÐœÐ°Ñ€ÐºÐµÑ‚ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚/ÑÐºÑÐ¿Ð¾Ñ€Ñ‚');
 
-define('TEXT_YML_UPDATED', 'Îáíîâëåíî: ');
-define('TEXT_YML_CHANGED', 'Áåç èçìåíåíèé: ');
-define('TEXT_YML_ADDED','Äîáàâëåíî: ');
-define('TEXT_YML_ERROR', 'Ôàéë íå çàãðóæåí');
-define('TEXT_YML_MAX_SIZE', 'Ìàêñèìàëüíûé ðàçìåð ôàéëà:');
-define('TEXT_YML_IMPORT', 'Èìïîðò');
-define('TEXT_YML_EXPORT', 'Ýêñïîðò');
-define('TEXT_YML_CAT_ADDED','Äîáàâëåíî êàòåãîðèé: ');
-define('TEXT_YML_CAT_UPDATED','Îáíîâëåíî êàòåãîðèé: ');
+define('TEXT_YML_UPDATED', 'ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾: ');
+define('TEXT_YML_CHANGED', 'Ð‘ÐµÐ· Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹: ');
+define('TEXT_YML_ADDED','Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾: ');
+define('TEXT_YML_ERROR', 'Ð¤Ð°Ð¹Ð» Ð½Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ¶ÐµÐ½');
+define('TEXT_YML_MAX_SIZE', 'ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ñ„Ð°Ð¹Ð»Ð°:');
+define('TEXT_YML_IMPORT', 'Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚');
+define('TEXT_YML_EXPORT', 'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚');
+define('TEXT_YML_CAT_ADDED','Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¹: ');
+define('TEXT_YML_CAT_UPDATED','ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¹: ');
 
 ?>

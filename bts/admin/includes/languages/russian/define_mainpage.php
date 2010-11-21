@@ -1,5 +1,5 @@
 <?php
 
-define('ERROR_FILE_NOT_WRITEABLE', 'Îøèáêà: Ôàéë /includes/languages/russian/mainpage.php çàùèù¸í îò çàïèñè, óñòàíîâèòå âåðíûå ïðàâà äîñòóïà.');  
+define('ERROR_FILE_NOT_WRITEABLE', 'ÐžÑˆÐ¸Ð±ÐºÐ°: Ð¤Ð°Ð¹Ð» /includes/languages/russian/mainpage.php Ð·Ð°Ñ‰Ð¸Ñ‰Ñ‘Ð½ Ð¾Ñ‚ Ð·Ð°Ð¿Ð¸ÑÐ¸, ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð²ÐµÑ€Ð½Ñ‹Ðµ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°.');  
 
 ?>

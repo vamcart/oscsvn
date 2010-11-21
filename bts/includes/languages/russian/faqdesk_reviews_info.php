@@ -1,14 +1,14 @@
 <?php
 
-define('NAVBAR_TITLE', 'Êîììåíòàðèè');
-define('HEADING_TITLE', 'Êîììåíòàðèè');
+define('NAVBAR_TITLE', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
+define('HEADING_TITLE', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
 define('SUB_TITLE_PRODUCT', 'FAQ:');
-define('SUB_TITLE_FROM', 'Îò:');
-define('SUB_TITLE_DATE', 'Äàòà:');
-define('SUB_TITLE_REVIEW', 'Êîììåíòàðèé:');
-define('SUB_TITLE_RATING', 'Ðåéòèíã:');
-define('TEXT_OF_5_STARS', '%s èç 5 çâ¸çä!');
-define('TEXT_CLICK_TO_ENLARGE', 'Óâåëè÷èòü');
+define('SUB_TITLE_FROM', 'ÐžÑ‚:');
+define('SUB_TITLE_DATE', 'Ð”Ð°Ñ‚Ð°:');
+define('SUB_TITLE_REVIEW', 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹:');
+define('SUB_TITLE_RATING', 'Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³:');
+define('TEXT_OF_5_STARS', '%s Ð¸Ð· 5 Ð·Ð²Ñ‘Ð·Ð´!');
+define('TEXT_CLICK_TO_ENLARGE', 'Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ');
 
 ?>
 

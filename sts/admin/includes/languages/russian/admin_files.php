@@ -10,38 +10,38 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Меню Администраторских Боксов');
+define('HEADING_TITLE', 'РњРµРЅСЋ РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєРёС… Р‘РѕРєСЃРѕРІ');
 
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_BOXES', 'Боксы');
-define('TABLE_HEADING_FILENAME', 'Список файлов');
-define('TABLE_HEADING_GROUPS', 'Группы');
-define('TABLE_HEADING_STATUS', 'Статус');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_BOXES', 'Р‘РѕРєСЃС‹');
+define('TABLE_HEADING_FILENAME', 'РЎРїРёСЃРѕРє С„Р°Р№Р»РѕРІ');
+define('TABLE_HEADING_GROUPS', 'Р“СЂСѓРїРїС‹');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
 
-define('TEXT_COUNT_BOXES', 'Боксы: ');
-define('TEXT_COUNT_FILES', 'Файлы: ');
+define('TEXT_COUNT_BOXES', 'Р‘РѕРєСЃС‹: ');
+define('TEXT_COUNT_FILES', 'Р¤Р°Р№Р»С‹: ');
 
 //categories access
-define('TEXT_INFO_HEADING_DEFAULT_BOXES', 'Имя файла: ');
+define('TEXT_INFO_HEADING_DEFAULT_BOXES', 'РРјСЏ С„Р°Р№Р»Р°: ');
 
-define('TEXT_INFO_DEFAULT_BOXES_INTRO', 'Чтобы бокс был активирован, нажмите на зелёную кнопку, чтобы сделать бокс неактивным(невидимым), нажмите на красную кнопку.<br><br><b>ВНИМАНИЕ:</b> Если Вы отключите бокс, то всё файлы, расположенные в данном боксе также будут не видны!');
-define('TEXT_INFO_DEFAULT_BOXES_INSTALLED', ' Активен');
-define('TEXT_INFO_DEFAULT_BOXES_NOT_INSTALLED', ' Неактивен');
+define('TEXT_INFO_DEFAULT_BOXES_INTRO', 'Р§С‚РѕР±С‹ Р±РѕРєСЃ Р±С‹Р» Р°РєС‚РёРІРёСЂРѕРІР°РЅ, РЅР°Р¶РјРёС‚Рµ РЅР° Р·РµР»С‘РЅСѓСЋ РєРЅРѕРїРєСѓ, С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ Р±РѕРєСЃ РЅРµР°РєС‚РёРІРЅС‹Рј(РЅРµРІРёРґРёРјС‹Рј), РЅР°Р¶РјРёС‚Рµ РЅР° РєСЂР°СЃРЅСѓСЋ РєРЅРѕРїРєСѓ.<br><br><b>Р’РќРРњРђРќРР•:</b> Р•СЃР»Рё Р’С‹ РѕС‚РєР»СЋС‡РёС‚Рµ Р±РѕРєСЃ, С‚Рѕ РІСЃС‘ С„Р°Р№Р»С‹, СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹Рµ РІ РґР°РЅРЅРѕРј Р±РѕРєСЃРµ С‚Р°РєР¶Рµ Р±СѓРґСѓС‚ РЅРµ РІРёРґРЅС‹!');
+define('TEXT_INFO_DEFAULT_BOXES_INSTALLED', ' РђРєС‚РёРІРµРЅ');
+define('TEXT_INFO_DEFAULT_BOXES_NOT_INSTALLED', ' РќРµР°РєС‚РёРІРµРЅ');
 
-define('STATUS_BOX_INSTALLED', 'Активен');
-define('STATUS_BOX_NOT_INSTALLED', 'Неактивен');
-define('STATUS_BOX_REMOVE', 'Выключить');
-define('STATUS_BOX_INSTALL', 'Включить');
+define('STATUS_BOX_INSTALLED', 'РђРєС‚РёРІРµРЅ');
+define('STATUS_BOX_NOT_INSTALLED', 'РќРµР°РєС‚РёРІРµРЅ');
+define('STATUS_BOX_REMOVE', 'Р’С‹РєР»СЋС‡РёС‚СЊ');
+define('STATUS_BOX_INSTALL', 'Р’РєР»СЋС‡РёС‚СЊ');
 
 //files access
-define('TEXT_INFO_HEADING_DEFAULT_FILE', 'Файл: ');
-define('TEXT_INFO_HEADING_DELETE_FILE', 'Подтверждение удаления:');
-define('TEXT_INFO_HEADING_NEW_FILE', 'Добавить файл в бокс');
+define('TEXT_INFO_HEADING_DEFAULT_FILE', 'Р¤Р°Р№Р»: ');
+define('TEXT_INFO_HEADING_DELETE_FILE', 'РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ СѓРґР°Р»РµРЅРёСЏ:');
+define('TEXT_INFO_HEADING_NEW_FILE', 'Р”РѕР±Р°РІРёС‚СЊ С„Р°Р№Р» РІ Р±РѕРєСЃ');
 
-define('TEXT_INFO_DEFAULT_FILE_INTRO', 'Нажмите кнопку <b>добавить</b> и файлы, которые Вы выберите будут добавлены в бокс: ');
-define('TEXT_INFO_DELETE_FILE_INTRO', 'Вы действительно хотите удалить файл <font color="red"><b>%s</b></font> из бокса <b>%s</b>? ');
-define('TEXT_INFO_NEW_FILE_INTRO', 'Убедитесь, что файл, который Вы хотите добавить отсутствует в <font color="red"><b>списке файлов</b></font> слева. Возможно, файл, который Вы хотите добавить, уже есть в списке.');
+define('TEXT_INFO_DEFAULT_FILE_INTRO', 'РќР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ <b>РґРѕР±Р°РІРёС‚СЊ</b> Рё С„Р°Р№Р»С‹, РєРѕС‚РѕСЂС‹Рµ Р’С‹ РІС‹Р±РµСЂРёС‚Рµ Р±СѓРґСѓС‚ РґРѕР±Р°РІР»РµРЅС‹ РІ Р±РѕРєСЃ: ');
+define('TEXT_INFO_DELETE_FILE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ С„Р°Р№Р» <font color="red"><b>%s</b></font> РёР· Р±РѕРєСЃР° <b>%s</b>? ');
+define('TEXT_INFO_NEW_FILE_INTRO', 'РЈР±РµРґРёС‚РµСЃСЊ, С‡С‚Рѕ С„Р°Р№Р», РєРѕС‚РѕСЂС‹Р№ Р’С‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РІ <font color="red"><b>СЃРїРёСЃРєРµ С„Р°Р№Р»РѕРІ</b></font> СЃР»РµРІР°. Р’РѕР·РјРѕР¶РЅРѕ, С„Р°Р№Р», РєРѕС‚РѕСЂС‹Р№ Р’С‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ, СѓР¶Рµ РµСЃС‚СЊ РІ СЃРїРёСЃРєРµ.');
 
-define('TEXT_INFO_NEW_FILE_BOX', 'Текущий бокс: ');
+define('TEXT_INFO_NEW_FILE_BOX', 'РўРµРєСѓС‰РёР№ Р±РѕРєСЃ: ');
 
 ?>

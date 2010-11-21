@@ -10,8 +10,8 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_DISC_TITLE', 'Ñêèäêà íà âûáðàííûé ñïîñîá îïëàòû');
-  define('MODULE_PAYMENT_DISC_DESCRIPTION', 'Ñêèäêà íà âûáðàííûé ñïîñîá îïëàòû');
-  define('DISC_SHIPPING_NOT_INCLUDED', ' [Äîñòàâêà íå ó÷èòûâàåòñÿ]');
-  define('DISC_TAX_NOT_INCLUDED', ' [Íàëîã íå ó÷èòûâàåòñÿ]');
+  define('MODULE_PAYMENT_DISC_TITLE', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð½Ð° Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹');
+  define('MODULE_PAYMENT_DISC_DESCRIPTION', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð½Ð° Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹');
+  define('DISC_SHIPPING_NOT_INCLUDED', ' [Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð½Ðµ ÑƒÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ÑÑ]');
+  define('DISC_TAX_NOT_INCLUDED', ' [ÐÐ°Ð»Ð¾Ð³ Ð½Ðµ ÑƒÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ÑÑ]');
 ?>

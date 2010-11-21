@@ -1,138 +1,138 @@
 <?php
 
-define('HEADING_TITLE', 'Новости');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
-define('HEADING_TITLE_GOTO', 'Перейти:');
+define('HEADING_TITLE', 'РќРѕРІРѕСЃС‚Рё');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
+define('HEADING_TITLE_GOTO', 'РџРµСЂРµР№С‚Рё:');
 
 define('TABLE_HEADING_ID', 'ID');
-define('TABLE_HEADING_CATEGORIES_NEWSDESK', 'Категории/Новости');
-define('TABLE_HEADING_DATE', 'Дата добавления');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_STATUS', 'Статус');
+define('TABLE_HEADING_CATEGORIES_NEWSDESK', 'РљР°С‚РµРіРѕСЂРёРё/РќРѕРІРѕСЃС‚Рё');
+define('TABLE_HEADING_DATE', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
 
-define('IMAGE_NEW_STORY', 'Добавить новость');
+define('IMAGE_NEW_STORY', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕСЃС‚СЊ');
 
-define('TEXT_CATEGORIES', 'Категории:');
-define('TEXT_SUBCATEGORIES', 'Подкатегории:');
-define('TEXT_NEWSDESK', 'Новости:');
-define('TEXT_NEW_NEWSDESK', 'Добавить новость в категорию &quot;%s&quot;');
+define('TEXT_CATEGORIES', 'РљР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_SUBCATEGORIES', 'РџРѕРґРєР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_NEWSDESK', 'РќРѕРІРѕСЃС‚Рё:');
+define('TEXT_NEW_NEWSDESK', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕСЃС‚СЊ РІ РєР°С‚РµРіРѕСЂРёСЋ &quot;%s&quot;');
 
-define('TABLE_HEADING_LATEST_NEWS_HEADLINE', 'Заголовок');
-define('TEXT_NEWS_ITEMS', 'Новости:');
-define('TEXT_INFO_HEADING_DELETE_ITEM', 'Удалить');
-define('TEXT_DELETE_ITEM_INTRO', 'Вы действительно хотите удалить эту новость?');
+define('TABLE_HEADING_LATEST_NEWS_HEADLINE', 'Р—Р°РіРѕР»РѕРІРѕРє');
+define('TEXT_NEWS_ITEMS', 'РќРѕРІРѕСЃС‚Рё:');
+define('TEXT_INFO_HEADING_DELETE_ITEM', 'РЈРґР°Р»РёС‚СЊ');
+define('TEXT_DELETE_ITEM_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚Сѓ РЅРѕРІРѕСЃС‚СЊ?');
 
-define('TEXT_LATEST_NEWS_HEADLINE', 'Заголовок:');
-define('TEXT_NEWSDESK_CONTENT', 'Содержание:');
+define('TEXT_LATEST_NEWS_HEADLINE', 'Р—Р°РіРѕР»РѕРІРѕРє:');
+define('TEXT_NEWSDESK_CONTENT', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ:');
 
-define('IMAGE_NEW_NEWS_ITEM', 'Добавить новость');
+define('IMAGE_NEW_NEWS_ITEM', 'Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕСЃС‚СЊ');
 
-define('TEXT_NEWSDESK_STATUS', 'Статус:');
-define('TEXT_NEWSDESK_DATE_AVAILABLE', 'Дата:');
-define('TEXT_NEWSDESK_AVAILABLE', 'Активна');
-define('TEXT_NEWSDESK_NOT_AVAILABLE', 'Неактивна');
+define('TEXT_NEWSDESK_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
+define('TEXT_NEWSDESK_DATE_AVAILABLE', 'Р”Р°С‚Р°:');
+define('TEXT_NEWSDESK_AVAILABLE', 'РђРєС‚РёРІРЅР°');
+define('TEXT_NEWSDESK_NOT_AVAILABLE', 'РќРµР°РєС‚РёРІРЅР°');
 
-define('TEXT_NEWSDESK_URL', 'URL адрес источника:');
-define('TEXT_NEWSDESK_URL_WITHOUT_HTTP', '<small>(без http://)</small>');
+define('TEXT_NEWSDESK_URL', 'URL Р°РґСЂРµСЃ РёСЃС‚РѕС‡РЅРёРєР°:');
+define('TEXT_NEWSDESK_URL_WITHOUT_HTTP', '<small>(Р±РµР· http://)</small>');
 
-define('TEXT_NEWSDESK_SUMMARY', 'Кратко:');
-define('TEXT_NEWSDESK_CONTENT', 'Содержание:');
-define('TEXT_NEWSDESK_HEADLINE', 'Заголовок:');
+define('TEXT_NEWSDESK_SUMMARY', 'РљСЂР°С‚РєРѕ:');
+define('TEXT_NEWSDESK_CONTENT', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ:');
+define('TEXT_NEWSDESK_HEADLINE', 'Р—Р°РіРѕР»РѕРІРѕРє:');
 
-define('TEXT_NEWSDESK_DATE_AVAILABLE', 'Дата:');
-define('TEXT_NEWSDESK_DATE_ADDED', 'Дата добавления:');
+define('TEXT_NEWSDESK_DATE_AVAILABLE', 'Р”Р°С‚Р°:');
+define('TEXT_NEWSDESK_DATE_ADDED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
 
-define('TEXT_NEWSDESK_ADDED_LINK_HEADER', "Ссылка, которую Вы добавили:");
+define('TEXT_NEWSDESK_ADDED_LINK_HEADER', "РЎСЃС‹Р»РєР°, РєРѕС‚РѕСЂСѓСЋ Р’С‹ РґРѕР±Р°РІРёР»Рё:");
 define('TEXT_NEWSDESK_ADDED_LINK', '<a href="http://%s" target="blank"><u>http://%s</u></a>');
 
-define('TEXT_NEWSDESK_PRICE_INFO', 'Цена:');
-define('TEXT_NEWSDESK_TAX_CLASS', 'Налог:');
-define('TEXT_NEWSDESK_AVERAGE_RATING', 'Средний рейтинг:');
-define('TEXT_NEWSDESK_QUANTITY_INFO', 'Количество:');
-define('TEXT_DATE_ADDED', 'Дата добавления:');
-define('TEXT_DATE_AVAILABLE', 'Дата:');
-define('TEXT_LAST_MODIFIED', 'Последние изменения:');
-define('TEXT_IMAGE_NONEXISTENT', 'КАРТИНКА ОТСУТСТВУЕТ');
-define('TEXT_NO_CHILD_CATEGORIES_OR_story', 'Добавьте новую категорию или новую новость в<br>&nbsp;<br><b>%s</b>');
+define('TEXT_NEWSDESK_PRICE_INFO', 'Р¦РµРЅР°:');
+define('TEXT_NEWSDESK_TAX_CLASS', 'РќР°Р»РѕРі:');
+define('TEXT_NEWSDESK_AVERAGE_RATING', 'РЎСЂРµРґРЅРёР№ СЂРµР№С‚РёРЅРі:');
+define('TEXT_NEWSDESK_QUANTITY_INFO', 'РљРѕР»РёС‡РµСЃС‚РІРѕ:');
+define('TEXT_DATE_ADDED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_DATE_AVAILABLE', 'Р”Р°С‚Р°:');
+define('TEXT_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_IMAGE_NONEXISTENT', 'РљРђР РўРРќРљРђ РћРўРЎРЈРўРЎРўР’РЈР•Рў');
+define('TEXT_NO_CHILD_CATEGORIES_OR_story', 'Р”РѕР±Р°РІСЊС‚Рµ РЅРѕРІСѓСЋ РєР°С‚РµРіРѕСЂРёСЋ РёР»Рё РЅРѕРІСѓСЋ РЅРѕРІРѕСЃС‚СЊ РІ<br>&nbsp;<br><b>%s</b>');
 
-define('TEXT_EDIT_INTRO', 'Внесите необходимые изменения');
-define('TEXT_EDIT_CATEGORIES_ID', 'Код категории:');
-define('TEXT_EDIT_CATEGORIES_NAME', 'Название категории:');
-define('TEXT_EDIT_CATEGORIES_IMAGE', 'Картинка категории:');
-define('TEXT_EDIT_SORT_ORDER', 'Порядок сортировки:');
+define('TEXT_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_EDIT_CATEGORIES_ID', 'РљРѕРґ РєР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_EDIT_CATEGORIES_NAME', 'РќР°Р·РІР°РЅРёРµ РєР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_EDIT_CATEGORIES_IMAGE', 'РљР°СЂС‚РёРЅРєР° РєР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_EDIT_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё:');
 
-define('TEXT_INFO_COPY_TO_INTRO', 'Выберите категорию, в которую Вы хотите скопировать эту новость');
-define('TEXT_INFO_CURRENT_CATEGORIES', 'Категории:');
+define('TEXT_INFO_COPY_TO_INTRO', 'Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ, РІ РєРѕС‚РѕСЂСѓСЋ Р’С‹ С…РѕС‚РёС‚Рµ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ СЌС‚Сѓ РЅРѕРІРѕСЃС‚СЊ');
+define('TEXT_INFO_CURRENT_CATEGORIES', 'РљР°С‚РµРіРѕСЂРёРё:');
 
-define('TEXT_INFO_HEADING_NEW_CATEGORY', 'Новая категория');
-define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Изменить категорию');
-define('TEXT_INFO_HEADING_DELETE_CATEGORY', 'Удалить категорию');
-define('TEXT_INFO_HEADING_MOVE_CATEGORY', 'Переместить категорию');
-define('TEXT_INFO_HEADING_DELETE_NEWS', 'Удалить новость');
-define('TEXT_INFO_HEADING_MOVE_NEWS', 'Переместить новость');
-define('TEXT_INFO_HEADING_COPY_TO', 'Копировать в');
+define('TEXT_INFO_HEADING_NEW_CATEGORY', 'РќРѕРІР°СЏ РєР°С‚РµРіРѕСЂРёСЏ');
+define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'РР·РјРµРЅРёС‚СЊ РєР°С‚РµРіРѕСЂРёСЋ');
+define('TEXT_INFO_HEADING_DELETE_CATEGORY', 'РЈРґР°Р»РёС‚СЊ РєР°С‚РµРіРѕСЂРёСЋ');
+define('TEXT_INFO_HEADING_MOVE_CATEGORY', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ РєР°С‚РµРіРѕСЂРёСЋ');
+define('TEXT_INFO_HEADING_DELETE_NEWS', 'РЈРґР°Р»РёС‚СЊ РЅРѕРІРѕСЃС‚СЊ');
+define('TEXT_INFO_HEADING_MOVE_NEWS', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ РЅРѕРІРѕСЃС‚СЊ');
+define('TEXT_INFO_HEADING_COPY_TO', 'РљРѕРїРёСЂРѕРІР°С‚СЊ РІ');
 
-define('TEXT_DELETE_CATEGORY_INTRO', 'Вы действительно хотите удалить эту категорию?');
-define('TEXT_DELETE_PRODUCT_INTRO', 'Вы действительно хотите удалить эту новость?');
+define('TEXT_DELETE_CATEGORY_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚Сѓ РєР°С‚РµРіРѕСЂРёСЋ?');
+define('TEXT_DELETE_PRODUCT_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚Сѓ РЅРѕРІРѕСЃС‚СЊ?');
 
-define('TEXT_DELETE_WARNING_CHILDS', '<b>Внимание:</b> %s подкатегорий находятся в этой категории!');
-define('TEXT_DELETE_WARNING_NEWSDESK', '<b>Внимание:</b> %s новостей находится в этой категории!');
+define('TEXT_DELETE_WARNING_CHILDS', '<b>Р’РЅРёРјР°РЅРёРµ:</b> %s РїРѕРґРєР°С‚РµРіРѕСЂРёР№ РЅР°С…РѕРґСЏС‚СЃСЏ РІ СЌС‚РѕР№ РєР°С‚РµРіРѕСЂРёРё!');
+define('TEXT_DELETE_WARNING_NEWSDESK', '<b>Р’РЅРёРјР°РЅРёРµ:</b> %s РЅРѕРІРѕСЃС‚РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РІ СЌС‚РѕР№ РєР°С‚РµРіРѕСЂРёРё!');
 
-define('TEXT_MOVE_NEWSDESK_INTRO', 'Выберите категорию, в которую Вы хотите переместить <b>%s</b>');
-define('TEXT_MOVE_CATEGORIES_INTRO', 'Выберите категорию, в которую Вы хотите переместить <b>%s</b>');
-define('TEXT_MOVE', 'Переместить <b>%s</b> в:');
+define('TEXT_MOVE_NEWSDESK_INTRO', 'Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ, РІ РєРѕС‚РѕСЂСѓСЋ Р’С‹ С…РѕС‚РёС‚Рµ РїРµСЂРµРјРµСЃС‚РёС‚СЊ <b>%s</b>');
+define('TEXT_MOVE_CATEGORIES_INTRO', 'Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ, РІ РєРѕС‚РѕСЂСѓСЋ Р’С‹ С…РѕС‚РёС‚Рµ РїРµСЂРµРјРµСЃС‚РёС‚СЊ <b>%s</b>');
+define('TEXT_MOVE', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ <b>%s</b> РІ:');
 
-define('TEXT_NEW_CATEGORY_INTRO', 'Чтобы создать новую категорию, Вы должны заполнить следующую форму');
-define('TEXT_CATEGORIES_NAME', 'Название категории:');
-define('TEXT_CATEGORIES_IMAGE', 'Картинка категории:');
-define('TEXT_SORT_ORDER', 'Порядок сортировки:');
+define('TEXT_NEW_CATEGORY_INTRO', 'Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ РЅРѕРІСѓСЋ РєР°С‚РµРіРѕСЂРёСЋ, Р’С‹ РґРѕР»Р¶РЅС‹ Р·Р°РїРѕР»РЅРёС‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ С„РѕСЂРјСѓ');
+define('TEXT_CATEGORIES_NAME', 'РќР°Р·РІР°РЅРёРµ РєР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_CATEGORIES_IMAGE', 'РљР°СЂС‚РёРЅРєР° РєР°С‚РµРіРѕСЂРёРё:');
+define('TEXT_SORT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё:');
 
-define('EMPTY_CATEGORY', 'Пустая категория');
+define('EMPTY_CATEGORY', 'РџСѓСЃС‚Р°СЏ РєР°С‚РµРіРѕСЂРёСЏ');
 
-define('TEXT_HOW_TO_COPY', 'Способ копирования:');
-define('TEXT_COPY_AS_LINK', 'Ссылка на новость');
-define('TEXT_COPY_AS_DUPLICATE', 'Дублировать новость');
+define('TEXT_HOW_TO_COPY', 'РЎРїРѕСЃРѕР± РєРѕРїРёСЂРѕРІР°РЅРёСЏ:');
+define('TEXT_COPY_AS_LINK', 'РЎСЃС‹Р»РєР° РЅР° РЅРѕРІРѕСЃС‚СЊ');
+define('TEXT_COPY_AS_DUPLICATE', 'Р”СѓР±Р»РёСЂРѕРІР°С‚СЊ РЅРѕРІРѕСЃС‚СЊ');
 
-define('ERROR_CANNOT_LINK_TO_SAME_CATEGORY', 'Ошибка: Нет ссылок на новости в этой же категории.');
-define('ERROR_CATALOG_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Ошибка: Каталог для хранения картинок не доступен для записи, установите соответствующие права доступа: ' . DIR_FS_CATALOG_IMAGES);
-define('ERROR_CATALOG_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Ошибка: Каталог для хранения картинок отсутствует: ' . DIR_FS_CATALOG_IMAGES);
+define('ERROR_CANNOT_LINK_TO_SAME_CATEGORY', 'РћС€РёР±РєР°: РќРµС‚ СЃСЃС‹Р»РѕРє РЅР° РЅРѕРІРѕСЃС‚Рё РІ СЌС‚РѕР№ Р¶Рµ РєР°С‚РµРіРѕСЂРёРё.');
+define('ERROR_CATALOG_IMAGE_DIRECTORY_NOT_WRITEABLE', 'РћС€РёР±РєР°: РљР°С‚Р°Р»РѕРі РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РєР°СЂС‚РёРЅРѕРє РЅРµ РґРѕСЃС‚СѓРїРµРЅ РґР»СЏ Р·Р°РїРёСЃРё, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР°: ' . DIR_FS_CATALOG_IMAGES);
+define('ERROR_CATALOG_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'РћС€РёР±РєР°: РљР°С‚Р°Р»РѕРі РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РєР°СЂС‚РёРЅРѕРє РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚: ' . DIR_FS_CATALOG_IMAGES);
 
-define('TEXT_NEWSDESK_START_DATE', 'Дата:');
-define('TEXT_DATE_FORMAT', 'Формат даты:');
+define('TEXT_NEWSDESK_START_DATE', 'Р”Р°С‚Р°:');
+define('TEXT_DATE_FORMAT', 'Р¤РѕСЂРјР°С‚ РґР°С‚С‹:');
 
-define('TEXT_SHOW_STATUS', 'Статус:');
+define('TEXT_SHOW_STATUS', 'РЎС‚Р°С‚СѓСЃ:');
 
-define('TEXT_DELETE_IMAGE', 'Удалить картинку(и) ?');
-define('TEXT_DELETE_IMAGE_INTRO', 'ВНИМАНИЕ: Удаляя картинку, вы удаляете её не только из новостей, но и с диска!!');
+define('TEXT_DELETE_IMAGE', 'РЈРґР°Р»РёС‚СЊ РєР°СЂС‚РёРЅРєСѓ(Рё) ?');
+define('TEXT_DELETE_IMAGE_INTRO', 'Р’РќРРњРђРќРР•: РЈРґР°Р»СЏСЏ РєР°СЂС‚РёРЅРєСѓ, РІС‹ СѓРґР°Р»СЏРµС‚Рµ РµС‘ РЅРµ С‚РѕР»СЊРєРѕ РёР· РЅРѕРІРѕСЃС‚РµР№, РЅРѕ Рё СЃ РґРёСЃРєР°!!');
 
-define('TEXT_NEWSDESK_STICKY', '"Горячая" новость');
-define('TEXT_NEWSDESK_STICKY_ON', 'Да');
-define('TEXT_NEWSDESK_STICKY_OFF', 'Нет');
-define('TABLE_HEADING_STICKY', '"Горячая" новость');
+define('TEXT_NEWSDESK_STICKY', '"Р“РѕСЂСЏС‡Р°СЏ" РЅРѕРІРѕСЃС‚СЊ');
+define('TEXT_NEWSDESK_STICKY_ON', 'Р”Р°');
+define('TEXT_NEWSDESK_STICKY_OFF', 'РќРµС‚');
+define('TABLE_HEADING_STICKY', '"Р“РѕСЂСЏС‡Р°СЏ" РЅРѕРІРѕСЃС‚СЊ');
 
-define('TEXT_NEWSDESK_IMAGE', 'Картинки:');
+define('TEXT_NEWSDESK_IMAGE', 'РљР°СЂС‚РёРЅРєРё:');
 
-define('TEXT_NEWSDESK_IMAGE_ONE', 'Первая картинка:');
-define('TEXT_NEWSDESK_IMAGE_TWO', 'Вторая картинка:');
-define('TEXT_NEWSDESK_IMAGE_THREE', 'Третья картинка:');
+define('TEXT_NEWSDESK_IMAGE_ONE', 'РџРµСЂРІР°СЏ РєР°СЂС‚РёРЅРєР°:');
+define('TEXT_NEWSDESK_IMAGE_TWO', 'Р’С‚РѕСЂР°СЏ РєР°СЂС‚РёРЅРєР°:');
+define('TEXT_NEWSDESK_IMAGE_THREE', 'РўСЂРµС‚СЊСЏ РєР°СЂС‚РёРЅРєР°:');
 
-define('TEXT_NEWSDESK_IMAGE_SUBTITLE', 'Укажите название первой картинки:');
-define('TEXT_NEWSDESK_IMAGE_SUBTITLE_TWO', 'Укажите название второй картинки:');
-define('TEXT_NEWSDESK_IMAGE_SUBTITLE_THREE', 'Укажите название третьей картинки:');
+define('TEXT_NEWSDESK_IMAGE_SUBTITLE', 'РЈРєР°Р¶РёС‚Рµ РЅР°Р·РІР°РЅРёРµ РїРµСЂРІРѕР№ РєР°СЂС‚РёРЅРєРё:');
+define('TEXT_NEWSDESK_IMAGE_SUBTITLE_TWO', 'РЈРєР°Р¶РёС‚Рµ РЅР°Р·РІР°РЅРёРµ РІС‚РѕСЂРѕР№ РєР°СЂС‚РёРЅРєРё:');
+define('TEXT_NEWSDESK_IMAGE_SUBTITLE_THREE', 'РЈРєР°Р¶РёС‚Рµ РЅР°Р·РІР°РЅРёРµ С‚СЂРµС‚СЊРµР№ РєР°СЂС‚РёРЅРєРё:');
 
-define('TEXT_NEWSDESK_IMAGE_PREVIEW_ONE', 'Первая картинка:');
-define('TEXT_NEWSDESK_IMAGE_PREVIEW_TWO', 'Вторая картинка:');
-define('TEXT_NEWSDESK_IMAGE_PREVIEW_THREE', 'Третья картинка:');
+define('TEXT_NEWSDESK_IMAGE_PREVIEW_ONE', 'РџРµСЂРІР°СЏ РєР°СЂС‚РёРЅРєР°:');
+define('TEXT_NEWSDESK_IMAGE_PREVIEW_TWO', 'Р’С‚РѕСЂР°СЏ РєР°СЂС‚РёРЅРєР°:');
+define('TEXT_NEWSDESK_IMAGE_PREVIEW_THREE', 'РўСЂРµС‚СЊСЏ РєР°СЂС‚РёРЅРєР°:');
 
-define('TEXT_INFO_HEADING_MOVE_PRODUCT', 'Переместить:');
+define('TEXT_INFO_HEADING_MOVE_PRODUCT', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ:');
 
-define('TEXT_PRODUCTS_IMAGE_REMOVE_SHORT', 'Удалить картинку, оставив файл картинки на сервере');
-define('TEXT_PRODUCTS_IMAGE_DELETE_SHORT', 'Удалить картинку вместе с файлом');
+define('TEXT_PRODUCTS_IMAGE_REMOVE_SHORT', 'РЈРґР°Р»РёС‚СЊ РєР°СЂС‚РёРЅРєСѓ, РѕСЃС‚Р°РІРёРІ С„Р°Р№Р» РєР°СЂС‚РёРЅРєРё РЅР° СЃРµСЂРІРµСЂРµ');
+define('TEXT_PRODUCTS_IMAGE_DELETE_SHORT', 'РЈРґР°Р»РёС‚СЊ РєР°СЂС‚РёРЅРєСѓ РІРјРµСЃС‚Рµ СЃ С„Р°Р№Р»РѕРј');
 
-define('TEXT_NEWSDESK_ENABLE', '1 = Активна.');
-define('TEXT_NEWSDESK_DISABLE', '0 = Неактивна.');
+define('TEXT_NEWSDESK_ENABLE', '1 = РђРєС‚РёРІРЅР°.');
+define('TEXT_NEWSDESK_DISABLE', '0 = РќРµР°РєС‚РёРІРЅР°.');
 
-define('TEXT_NEWSDESK_DATA', 'Данные');
-define('TEXT_NEWSDESK_IMAGES', 'Картинки');
+define('TEXT_NEWSDESK_DATA', 'Р”Р°РЅРЅС‹Рµ');
+define('TEXT_NEWSDESK_IMAGES', 'РљР°СЂС‚РёРЅРєРё');
 
 ?>

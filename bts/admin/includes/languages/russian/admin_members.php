@@ -11,105 +11,105 @@
 */
 
 if ($_GET['gID']) {
-  define('HEADING_TITLE', 'Группы');
+  define('HEADING_TITLE', 'Р“СЂСѓРїРїС‹');
 } elseif ($_GET['gPath']) {
-  define('HEADING_TITLE', 'Настройка группы');
+  define('HEADING_TITLE', 'РќР°СЃС‚СЂРѕР№РєР° РіСЂСѓРїРїС‹');
 } else {
-  define('HEADING_TITLE', 'Администраторы');
+  define('HEADING_TITLE', 'РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂС‹');
 }
 
-define('TEXT_COUNT_GROUPS', 'Группы: ');
+define('TEXT_COUNT_GROUPS', 'Р“СЂСѓРїРїС‹: ');
 
-define('TABLE_HEADING_NAME', 'Имя');
-define('TABLE_HEADING_EMAIL', 'Email Адрес');
-define('TABLE_HEADING_PASSWORD', 'Пароль');
-define('TABLE_HEADING_CONFIRM', 'Подтвердить пароль');
-define('TABLE_HEADING_GROUPS', 'Группа');
-define('TABLE_HEADING_CREATED', 'Дата создания');
-define('TABLE_HEADING_MODIFIED', 'Последние изменения');
-define('TABLE_HEADING_LOGDATE', 'Последний вход');
-define('TABLE_HEADING_LOGNUM', 'Количество входов');
-define('TABLE_HEADING_LOG_NUM', 'Количество входов');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_NAME', 'РРјСЏ');
+define('TABLE_HEADING_EMAIL', 'Email РђРґСЂРµСЃ');
+define('TABLE_HEADING_PASSWORD', 'РџР°СЂРѕР»СЊ');
+define('TABLE_HEADING_CONFIRM', 'РџРѕРґС‚РІРµСЂРґРёС‚СЊ РїР°СЂРѕР»СЊ');
+define('TABLE_HEADING_GROUPS', 'Р“СЂСѓРїРїР°');
+define('TABLE_HEADING_CREATED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ');
+define('TABLE_HEADING_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TABLE_HEADING_LOGDATE', 'РџРѕСЃР»РµРґРЅРёР№ РІС…РѕРґ');
+define('TABLE_HEADING_LOGNUM', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РІС…РѕРґРѕРІ');
+define('TABLE_HEADING_LOG_NUM', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РІС…РѕРґРѕРІ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TABLE_HEADING_GROUPS_NAME', 'Название группы');
-define('TABLE_HEADING_GROUPS_DEFINE', 'Боксы и файлы, доступные для данной группы');
-define('TABLE_HEADING_GROUPS_GROUP', 'Группа');
-define('TABLE_HEADING_GROUPS_CATEGORIES', 'Доступные файлы и боксы');
+define('TABLE_HEADING_GROUPS_NAME', 'РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹');
+define('TABLE_HEADING_GROUPS_DEFINE', 'Р‘РѕРєСЃС‹ Рё С„Р°Р№Р»С‹, РґРѕСЃС‚СѓРїРЅС‹Рµ РґР»СЏ РґР°РЅРЅРѕР№ РіСЂСѓРїРїС‹');
+define('TABLE_HEADING_GROUPS_GROUP', 'Р“СЂСѓРїРїР°');
+define('TABLE_HEADING_GROUPS_CATEGORIES', 'Р”РѕСЃС‚СѓРїРЅС‹Рµ С„Р°Р№Р»С‹ Рё Р±РѕРєСЃС‹');
 
 
-define('TEXT_INFO_HEADING_DEFAULT', 'Администратор ');
-define('TEXT_INFO_HEADING_DELETE', 'Удалить доступ ');
-define('TEXT_INFO_HEADING_EDIT', 'Изменить группу / ');
-define('TEXT_INFO_HEADING_NEW', 'Новый администратор ');
+define('TEXT_INFO_HEADING_DEFAULT', 'РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ ');
+define('TEXT_INFO_HEADING_DELETE', 'РЈРґР°Р»РёС‚СЊ РґРѕСЃС‚СѓРї ');
+define('TEXT_INFO_HEADING_EDIT', 'РР·РјРµРЅРёС‚СЊ РіСЂСѓРїРїСѓ / ');
+define('TEXT_INFO_HEADING_NEW', 'РќРѕРІС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ ');
 
-define('TEXT_INFO_DEFAULT_INTRO', 'Группа');
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить <nobr><b>%s</b></nobr> из <nobr>Администраторов?</nobr>');
-define('TEXT_INFO_DELETE_INTRO_NOT', 'Вы не можете удалить группу <nobr>%s!</nobr>');
-define('TEXT_INFO_EDIT_INTRO', 'Права доступа к боксам и файлам: ');
+define('TEXT_INFO_DEFAULT_INTRO', 'Р“СЂСѓРїРїР°');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ <nobr><b>%s</b></nobr> РёР· <nobr>РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРІ?</nobr>');
+define('TEXT_INFO_DELETE_INTRO_NOT', 'Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ СѓРґР°Р»РёС‚СЊ РіСЂСѓРїРїСѓ <nobr>%s!</nobr>');
+define('TEXT_INFO_EDIT_INTRO', 'РџСЂР°РІР° РґРѕСЃС‚СѓРїР° Рє Р±РѕРєСЃР°Рј Рё С„Р°Р№Р»Р°Рј: ');
 
-define('TEXT_INFO_FULLNAME', 'Имя: ');
-define('TEXT_INFO_FIRSTNAME', 'Имя: ');
-define('TEXT_INFO_LASTNAME', 'Фамилия: ');
-define('TEXT_INFO_EMAIL', 'Email Адрес: ');
-define('TEXT_INFO_PASSWORD', 'Пароль: ');
-define('TEXT_INFO_CONFIRM', 'Подтвердите Пароль: ');
-define('TEXT_INFO_CREATED', 'Запись создана: ');
-define('TEXT_INFO_MODIFIED', 'Последние изменения: ');
-define('TEXT_INFO_LOGDATE', 'Последний вход: ');
-define('TEXT_INFO_LOGNUM', 'Количество входов: ');
-define('TEXT_INFO_GROUP', 'Группа: ');
-define('TEXT_INFO_ERROR', '<font color="red">Введённый Email уже зарегистрирован! Попробуйте указать другой адрес.</font>');
+define('TEXT_INFO_FULLNAME', 'РРјСЏ: ');
+define('TEXT_INFO_FIRSTNAME', 'РРјСЏ: ');
+define('TEXT_INFO_LASTNAME', 'Р¤Р°РјРёР»РёСЏ: ');
+define('TEXT_INFO_EMAIL', 'Email РђРґСЂРµСЃ: ');
+define('TEXT_INFO_PASSWORD', 'РџР°СЂРѕР»СЊ: ');
+define('TEXT_INFO_CONFIRM', 'РџРѕРґС‚РІРµСЂРґРёС‚Рµ РџР°СЂРѕР»СЊ: ');
+define('TEXT_INFO_CREATED', 'Р—Р°РїРёСЃСЊ СЃРѕР·РґР°РЅР°: ');
+define('TEXT_INFO_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ: ');
+define('TEXT_INFO_LOGDATE', 'РџРѕСЃР»РµРґРЅРёР№ РІС…РѕРґ: ');
+define('TEXT_INFO_LOGNUM', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РІС…РѕРґРѕРІ: ');
+define('TEXT_INFO_GROUP', 'Р“СЂСѓРїРїР°: ');
+define('TEXT_INFO_ERROR', '<font color="red">Р’РІРµРґС‘РЅРЅС‹Р№ Email СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ! РџРѕРїСЂРѕР±СѓР№С‚Рµ СѓРєР°Р·Р°С‚СЊ РґСЂСѓРіРѕР№ Р°РґСЂРµСЃ.</font>');
 
-define('JS_ALERT_FIRSTNAME',        '- Вы не указали своё Имя. \n');
-define('JS_ALERT_LASTNAME',         '- Вы не указали свою Фамилию. \n');
-define('JS_ALERT_EMAIL',            '- Вы не указали свой Email адрес. \n');
-define('JS_ALERT_EMAIL_FORMAT',     '- Вы неправильно написали Email адрес! \n');
-define('JS_ALERT_EMAIL_USED',       '- Введённый Email адрес уже зарегистрирован! \n');
-define('JS_ALERT_LEVEL', '- Вы не указали группу \n');
+define('JS_ALERT_FIRSTNAME',        '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕС‘ РРјСЏ. \n');
+define('JS_ALERT_LASTNAME',         '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕСЋ Р¤Р°РјРёР»РёСЋ. \n');
+define('JS_ALERT_EMAIL',            '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕР№ Email Р°РґСЂРµСЃ. \n');
+define('JS_ALERT_EMAIL_FORMAT',     '- Р’С‹ РЅРµРїСЂР°РІРёР»СЊРЅРѕ РЅР°РїРёСЃР°Р»Рё Email Р°РґСЂРµСЃ! \n');
+define('JS_ALERT_EMAIL_USED',       '- Р’РІРµРґС‘РЅРЅС‹Р№ Email Р°РґСЂРµСЃ СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ! \n');
+define('JS_ALERT_LEVEL', '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё РіСЂСѓРїРїСѓ \n');
 
-define('ADMIN_EMAIL_SUBJECT', 'Новый администратор');
-define('ADMIN_EMAIL_TEXT', 'Здравствуйте, %s!' . "\n\n" . 'Вы можете заходить в админку со следущим паролем. После того как Вы зайдёте в админку, мы настоятельно Вам рекомендуем изменить свой пароль!' . "\n\n" . 'Сайт: %s' . "\n" . 'Email: %s' . "\n" . 'Пароль: %s' . "\n\n" . 'Спасибо!' . "\n" . '%s' . "\n\n" . 'Это письмо отправлено автоматически, не нужно на него отвечать!'); 
-define('ADMIN_EMAIL_EDIT_SUBJECT', 'Ваша информация изменена администратором');
-define('ADMIN_EMAIL_EDIT_TEXT', 'Здравствуйте, %s!' . "\n\n" . 'Ваша информация изменена администратором.' . "\n\n" . 'Сайт: %s' . "\n" . 'Email: %s' . "\n" . 'Пароль: %s' . "\n\n" . 'Спасибо!' . "\n" . '%s' . "\n\n" . 'Это письмо отправлено автоматически, не нужно на него отвечать!'); 
+define('ADMIN_EMAIL_SUBJECT', 'РќРѕРІС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ');
+define('ADMIN_EMAIL_TEXT', 'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, %s!' . "\n\n" . 'Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°С…РѕРґРёС‚СЊ РІ Р°РґРјРёРЅРєСѓ СЃРѕ СЃР»РµРґСѓС‰РёРј РїР°СЂРѕР»РµРј. РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє Р’С‹ Р·Р°Р№РґС‘С‚Рµ РІ Р°РґРјРёРЅРєСѓ, РјС‹ РЅР°СЃС‚РѕСЏС‚РµР»СЊРЅРѕ Р’Р°Рј СЂРµРєРѕРјРµРЅРґСѓРµРј РёР·РјРµРЅРёС‚СЊ СЃРІРѕР№ РїР°СЂРѕР»СЊ!' . "\n\n" . 'РЎР°Р№С‚: %s' . "\n" . 'Email: %s' . "\n" . 'РџР°СЂРѕР»СЊ: %s' . "\n\n" . 'РЎРїР°СЃРёР±Рѕ!' . "\n" . '%s' . "\n\n" . 'Р­С‚Рѕ РїРёСЃСЊРјРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё, РЅРµ РЅСѓР¶РЅРѕ РЅР° РЅРµРіРѕ РѕС‚РІРµС‡Р°С‚СЊ!'); 
+define('ADMIN_EMAIL_EDIT_SUBJECT', 'Р’Р°С€Р° РёРЅС„РѕСЂРјР°С†РёСЏ РёР·РјРµРЅРµРЅР° Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј');
+define('ADMIN_EMAIL_EDIT_TEXT', 'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, %s!' . "\n\n" . 'Р’Р°С€Р° РёРЅС„РѕСЂРјР°С†РёСЏ РёР·РјРµРЅРµРЅР° Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј.' . "\n\n" . 'РЎР°Р№С‚: %s' . "\n" . 'Email: %s' . "\n" . 'РџР°СЂРѕР»СЊ: %s' . "\n\n" . 'РЎРїР°СЃРёР±Рѕ!' . "\n" . '%s' . "\n\n" . 'Р­С‚Рѕ РїРёСЃСЊРјРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё, РЅРµ РЅСѓР¶РЅРѕ РЅР° РЅРµРіРѕ РѕС‚РІРµС‡Р°С‚СЊ!'); 
 
-define('TEXT_INFO_HEADING_DEFAULT_GROUPS', 'Группа ');
-define('TEXT_INFO_HEADING_DELETE_GROUPS', 'Удалить группу ');
+define('TEXT_INFO_HEADING_DEFAULT_GROUPS', 'Р“СЂСѓРїРїР° ');
+define('TEXT_INFO_HEADING_DELETE_GROUPS', 'РЈРґР°Р»РёС‚СЊ РіСЂСѓРїРїСѓ ');
 
-define('TEXT_INFO_DEFAULT_GROUPS_INTRO', '<b>ВНИМАНИЕ:</b><li><b>изменить:</b> изменение названия группы.</li><li><b>удалить:</b> удаление группы.</li><li><b>доступ к файлам:</b> настройка доступа к боксам и файлам.</li>');
-define('TEXT_INFO_DELETE_GROUPS_INTRO', 'Удаляя данную группу, Вы также удаляете всех администраторов, находящихся в этой группе. Вы действительно хотите удалить группу <nobr><b>%s</b>?</nobr>');
-define('TEXT_INFO_DELETE_GROUPS_INTRO_NOT', 'Вы не можете удалить данную группу!');
-define('TEXT_INFO_GROUPS_INTRO', 'Дайте название новой группе, затем нажмите кнопку "далее".');
+define('TEXT_INFO_DEFAULT_GROUPS_INTRO', '<b>Р’РќРРњРђРќРР•:</b><li><b>РёР·РјРµРЅРёС‚СЊ:</b> РёР·РјРµРЅРµРЅРёРµ РЅР°Р·РІР°РЅРёСЏ РіСЂСѓРїРїС‹.</li><li><b>СѓРґР°Р»РёС‚СЊ:</b> СѓРґР°Р»РµРЅРёРµ РіСЂСѓРїРїС‹.</li><li><b>РґРѕСЃС‚СѓРї Рє С„Р°Р№Р»Р°Рј:</b> РЅР°СЃС‚СЂРѕР№РєР° РґРѕСЃС‚СѓРїР° Рє Р±РѕРєСЃР°Рј Рё С„Р°Р№Р»Р°Рј.</li>');
+define('TEXT_INFO_DELETE_GROUPS_INTRO', 'РЈРґР°Р»СЏСЏ РґР°РЅРЅСѓСЋ РіСЂСѓРїРїСѓ, Р’С‹ С‚Р°РєР¶Рµ СѓРґР°Р»СЏРµС‚Рµ РІСЃРµС… Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРІ, РЅР°С…РѕРґСЏС‰РёС…СЃСЏ РІ СЌС‚РѕР№ РіСЂСѓРїРїРµ. Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РіСЂСѓРїРїСѓ <nobr><b>%s</b>?</nobr>');
+define('TEXT_INFO_DELETE_GROUPS_INTRO_NOT', 'Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅСѓСЋ РіСЂСѓРїРїСѓ!');
+define('TEXT_INFO_GROUPS_INTRO', 'Р”Р°Р№С‚Рµ РЅР°Р·РІР°РЅРёРµ РЅРѕРІРѕР№ РіСЂСѓРїРїРµ, Р·Р°С‚РµРј РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ "РґР°Р»РµРµ".');
 
-define('TEXT_INFO_HEADING_GROUPS', 'Новая группа');
-define('TEXT_INFO_GROUPS_NAME', ' <b>Название группы:</b><br>Введите название новой группы, затем нажмите кнопку "Далее".<br>');
-define('TEXT_INFO_GROUPS_NAME_FALSE', '<font color="red"><b>ОШИБКА:</b> Название группы должно состоять минимум из 2 символов!</font>');
-define('TEXT_INFO_GROUPS_NAME_USED', '<font color="red"><b>ОШИБКА:</b> Введённое название группы уже есть, попробуйте назвать группу по-другому!</font>');
-define('TEXT_INFO_GROUPS_LEVEL', 'Группа: ');
-define('TEXT_INFO_GROUPS_BOXES', '<b>Права доступа к боксам:</b><br>Разграничение доступа к боксам.');
-define('TEXT_INFO_GROUPS_BOXES_INCLUDE', 'Добавить файл в бокс: ');
+define('TEXT_INFO_HEADING_GROUPS', 'РќРѕРІР°СЏ РіСЂСѓРїРїР°');
+define('TEXT_INFO_GROUPS_NAME', ' <b>РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹:</b><br>Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РЅРѕРІРѕР№ РіСЂСѓРїРїС‹, Р·Р°С‚РµРј РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ "Р”Р°Р»РµРµ".<br>');
+define('TEXT_INFO_GROUPS_NAME_FALSE', '<font color="red"><b>РћРЁРР‘РљРђ:</b> РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹ РґРѕР»Р¶РЅРѕ СЃРѕСЃС‚РѕСЏС‚СЊ РјРёРЅРёРјСѓРј РёР· 2 СЃРёРјРІРѕР»РѕРІ!</font>');
+define('TEXT_INFO_GROUPS_NAME_USED', '<font color="red"><b>РћРЁРР‘РљРђ:</b> Р’РІРµРґС‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹ СѓР¶Рµ РµСЃС‚СЊ, РїРѕРїСЂРѕР±СѓР№С‚Рµ РЅР°Р·РІР°С‚СЊ РіСЂСѓРїРїСѓ РїРѕ-РґСЂСѓРіРѕРјСѓ!</font>');
+define('TEXT_INFO_GROUPS_LEVEL', 'Р“СЂСѓРїРїР°: ');
+define('TEXT_INFO_GROUPS_BOXES', '<b>РџСЂР°РІР° РґРѕСЃС‚СѓРїР° Рє Р±РѕРєСЃР°Рј:</b><br>Р Р°Р·РіСЂР°РЅРёС‡РµРЅРёРµ РґРѕСЃС‚СѓРїР° Рє Р±РѕРєСЃР°Рј.');
+define('TEXT_INFO_GROUPS_BOXES_INCLUDE', 'Р”РѕР±Р°РІРёС‚СЊ С„Р°Р№Р» РІ Р±РѕРєСЃ: ');
 
-define('TEXT_INFO_HEADING_EDIT_GROUP', 'Изменить название группы');
-define('TEXT_INFO_EDIT_GROUP_INTRO', 'Вы можете изменить название данной группы на новое, укажите новое название и нажмите кнопку <b>сохранить</b>');
+define('TEXT_INFO_HEADING_EDIT_GROUP', 'РР·РјРµРЅРёС‚СЊ РЅР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹');
+define('TEXT_INFO_EDIT_GROUP_INTRO', 'Р’С‹ РјРѕР¶РµС‚Рµ РёР·РјРµРЅРёС‚СЊ РЅР°Р·РІР°РЅРёРµ РґР°РЅРЅРѕР№ РіСЂСѓРїРїС‹ РЅР° РЅРѕРІРѕРµ, СѓРєР°Р¶РёС‚Рµ РЅРѕРІРѕРµ РЅР°Р·РІР°РЅРёРµ Рё РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ <b>СЃРѕС…СЂР°РЅРёС‚СЊ</b>');
 
 // BOF: KategorienAdmin / OLISWISS
-define('TEXT_INFO_CATEGORIEACCESS','Доступ:');
-define('TEXT_RIGHTS_CNEW','Создавать категории');
-define('TEXT_RIGHTS_CEDIT','Изменять категории');
-define('TEXT_RIGHTS_CMOVE','Перемещать категории');
-define('TEXT_RIGHTS_CDELETE','Удалять категории');
-define('TEXT_RIGHTS_PNEW','Создавать товары');
-define('TEXT_RIGHTS_PEDIT','Изменять товары');
-define('TEXT_RIGHTS_PMOVE','Перемещать товары');
-define('TEXT_RIGHTS_PCOPY','Копировать товары');
-define('TEXT_RIGHTS_PDELETE','Удалять товары');
-define('TEXT_RIGHTS_ID','ID код');
+define('TEXT_INFO_CATEGORIEACCESS','Р”РѕСЃС‚СѓРї:');
+define('TEXT_RIGHTS_CNEW','РЎРѕР·РґР°РІР°С‚СЊ РєР°С‚РµРіРѕСЂРёРё');
+define('TEXT_RIGHTS_CEDIT','РР·РјРµРЅСЏС‚СЊ РєР°С‚РµРіРѕСЂРёРё');
+define('TEXT_RIGHTS_CMOVE','РџРµСЂРµРјРµС‰Р°С‚СЊ РєР°С‚РµРіРѕСЂРёРё');
+define('TEXT_RIGHTS_CDELETE','РЈРґР°Р»СЏС‚СЊ РєР°С‚РµРіРѕСЂРёРё');
+define('TEXT_RIGHTS_PNEW','РЎРѕР·РґР°РІР°С‚СЊ С‚РѕРІР°СЂС‹');
+define('TEXT_RIGHTS_PEDIT','РР·РјРµРЅСЏС‚СЊ С‚РѕРІР°СЂС‹');
+define('TEXT_RIGHTS_PMOVE','РџРµСЂРµРјРµС‰Р°С‚СЊ С‚РѕРІР°СЂС‹');
+define('TEXT_RIGHTS_PCOPY','РљРѕРїРёСЂРѕРІР°С‚СЊ С‚РѕРІР°СЂС‹');
+define('TEXT_RIGHTS_PDELETE','РЈРґР°Р»СЏС‚СЊ С‚РѕРІР°СЂС‹');
+define('TEXT_RIGHTS_ID','ID РєРѕРґ');
 // EOF: KategorienAdmin / OLISWISS
 
-define('TEXT_INFO_HEADING_DEFINE', 'Настройка группы');
+define('TEXT_INFO_HEADING_DEFINE', 'РќР°СЃС‚СЂРѕР№РєР° РіСЂСѓРїРїС‹');
 if ($_GET['gPath'] == 1) {
-  define('TEXT_INFO_DEFINE_INTRO', '<b>%s :</b><br>Вы не можете изменять доступ к боксам и файлам для этой группы.<br><br>');
+  define('TEXT_INFO_DEFINE_INTRO', '<b>%s :</b><br>Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ РёР·РјРµРЅСЏС‚СЊ РґРѕСЃС‚СѓРї Рє Р±РѕРєСЃР°Рј Рё С„Р°Р№Р»Р°Рј РґР»СЏ СЌС‚РѕР№ РіСЂСѓРїРїС‹.<br><br>');
 } else {
-  define('TEXT_INFO_DEFINE_INTRO', '<b>%s :</b><br>Вы можете установить либо снять доступ к боксам и файлам для данной группы. Нажмите внизу кнопку  <b>сохранить</b> для сохранения внесённых изменений.<br><br>');
+  define('TEXT_INFO_DEFINE_INTRO', '<b>%s :</b><br>Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р»РёР±Рѕ СЃРЅСЏС‚СЊ РґРѕСЃС‚СѓРї Рє Р±РѕРєСЃР°Рј Рё С„Р°Р№Р»Р°Рј РґР»СЏ РґР°РЅРЅРѕР№ РіСЂСѓРїРїС‹. РќР°Р¶РјРёС‚Рµ РІРЅРёР·Сѓ РєРЅРѕРїРєСѓ  <b>СЃРѕС…СЂР°РЅРёС‚СЊ</b> РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІРЅРµСЃС‘РЅРЅС‹С… РёР·РјРµРЅРµРЅРёР№.<br><br>');
 }
 ?>

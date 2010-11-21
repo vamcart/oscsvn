@@ -14,16 +14,16 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Партнёрская программа');
-define('HEADING_TITLE', 'Партнёрская программа - Клики');
+define('NAVBAR_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°');
+define('HEADING_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР° - РљР»РёРєРё');
 
-define('TABLE_HEADING_DATE', 'Дата');
-define('TABLE_HEADING_REFFERED', 'Откуда');
-define('TABLE_HEADING_IP', 'IP Адрес');
-define('TABLE_HEADING_BROWSER', 'Браузер');
-define('TABLE_HEADING_CLICKED_PRODUCT', 'Товар или Страница');
+define('TABLE_HEADING_DATE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_REFFERED', 'РћС‚РєСѓРґР°');
+define('TABLE_HEADING_IP', 'IP РђРґСЂРµСЃ');
+define('TABLE_HEADING_BROWSER', 'Р‘СЂР°СѓР·РµСЂ');
+define('TABLE_HEADING_CLICKED_PRODUCT', 'РўРѕРІР°СЂ РёР»Рё РЎС‚СЂР°РЅРёС†Р°');
 
-define('TEXT_AFFILIATE_HEADER', 'Всего кликов с Вашего сайта:');
-define('TEXT_NO_CLICKS', 'Ни одного клика с Вашего сайта ещё не было.');
-define('TEXT_DISPLAY_NUMBER_OF_CLICKS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> кликов)');
+define('TEXT_AFFILIATE_HEADER', 'Р’СЃРµРіРѕ РєР»РёРєРѕРІ СЃ Р’Р°С€РµРіРѕ СЃР°Р№С‚Р°:');
+define('TEXT_NO_CLICKS', 'РќРё РѕРґРЅРѕРіРѕ РєР»РёРєР° СЃ Р’Р°С€РµРіРѕ СЃР°Р№С‚Р° РµС‰С‘ РЅРµ Р±С‹Р»Рѕ.');
+define('TEXT_DISPLAY_NUMBER_OF_CLICKS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РєР»РёРєРѕРІ)');
 ?>

@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Регистрация клиента');
-define('HEADING_TITLE', 'Регистрация клиента');
-define('HEADING_NEW', 'Оформление заказа');
-define('TEXT_ORIGIN_LOGIN', '<font color="#FF0000"><small><b>ВНИМАНИЕ:</b></font></small> Если Вы уже зарегистрированы на нашем сайте, введите, пожалуйста, Ваш логин и пароль <a href="%s"><u>здесь</u></a>.');
-define('TEXT_VISITOR_CART', '<font color="#FF0000"><b> Чтобы быстро оформить заказ, нужна следующая информация.</b></font>');
-define('TEXT_RETURN_CUSTOMER', '<font color="#FF0000">Уже зарегистрированы? Войдите со своими данными!</font>');
-define('NAVBAR_NEW_TITLE', 'Оформление заказа');
-define('TEXT_PRIVACY', '<font color="#FF0000"><b>Заполните форму и нажмите кнопку "продолжить". </b>');
+define('NAVBAR_TITLE', 'Р РµРіРёСЃС‚СЂР°С†РёСЏ РєР»РёРµРЅС‚Р°');
+define('HEADING_TITLE', 'Р РµРіРёСЃС‚СЂР°С†РёСЏ РєР»РёРµРЅС‚Р°');
+define('HEADING_NEW', 'РћС„РѕСЂРјР»РµРЅРёРµ Р·Р°РєР°Р·Р°');
+define('TEXT_ORIGIN_LOGIN', '<font color="#FF0000"><small><b>Р’РќРРњРђРќРР•:</b></font></small> Р•СЃР»Рё Р’С‹ СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅС‹ РЅР° РЅР°С€РµРј СЃР°Р№С‚Рµ, РІРІРµРґРёС‚Рµ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, Р’Р°С€ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ <a href="%s"><u>Р·РґРµСЃСЊ</u></a>.');
+define('TEXT_VISITOR_CART', '<font color="#FF0000"><b> Р§С‚РѕР±С‹ Р±С‹СЃС‚СЂРѕ РѕС„РѕСЂРјРёС‚СЊ Р·Р°РєР°Р·, РЅСѓР¶РЅР° СЃР»РµРґСѓСЋС‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ.</b></font>');
+define('TEXT_RETURN_CUSTOMER', '<font color="#FF0000">РЈР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅС‹? Р’РѕР№РґРёС‚Рµ СЃРѕ СЃРІРѕРёРјРё РґР°РЅРЅС‹РјРё!</font>');
+define('NAVBAR_NEW_TITLE', 'РћС„РѕСЂРјР»РµРЅРёРµ Р·Р°РєР°Р·Р°');
+define('TEXT_PRIVACY', '<font color="#FF0000"><b>Р—Р°РїРѕР»РЅРёС‚Рµ С„РѕСЂРјСѓ Рё РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ "РїСЂРѕРґРѕР»Р¶РёС‚СЊ". </b>');
 
-define('IMAGE_BUTTON_CONTINUE', 'Продолжить');
+define('IMAGE_BUTTON_CONTINUE', 'РџСЂРѕРґРѕР»Р¶РёС‚СЊ');
 
-define('CATEGORY_EXTRA_FIELDS','Дополнительная информация');
+define('CATEGORY_EXTRA_FIELDS','Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ');
 
 ?>

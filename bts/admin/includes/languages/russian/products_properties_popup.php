@@ -10,11 +10,11 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE_PROPERTIES', 'Òåõíè÷åñêèå ïàðàìåòðû');
-define('TABLE_HEADING_PROPERTIES_PRODUCT_NO', 'Êîä òîâàðà');
-define('TABLE_HEADING_PROPERTIES_PRODUCT', 'Íàçâàíèå òîâàðà');
-define('TABLE_HEADING_PROPERTIES_OPTIONS_NAME', 'Ïàðàìåòð');
-define('TABLE_HEADING_PROPERTIES_OPTIONS_VALUE', 'Çíà÷åíèå');
-define('TABLE_HEADING_PROPERTIES_OPTIONS_SORT', 'Ïîðÿäîê ñîðòèðîâêè');
-define('TABLE_HEADING_PROPERTIES_ACTION', 'Äåéñòâèå');
+define('HEADING_TITLE_PROPERTIES', 'Ð¢ÐµÑ…Ð½Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹');
+define('TABLE_HEADING_PROPERTIES_PRODUCT_NO', 'ÐšÐ¾Ð´ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('TABLE_HEADING_PROPERTIES_PRODUCT', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°');
+define('TABLE_HEADING_PROPERTIES_OPTIONS_NAME', 'ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€');
+define('TABLE_HEADING_PROPERTIES_OPTIONS_VALUE', 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ');
+define('TABLE_HEADING_PROPERTIES_OPTIONS_SORT', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸');
+define('TABLE_HEADING_PROPERTIES_ACTION', 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ');
 ?>

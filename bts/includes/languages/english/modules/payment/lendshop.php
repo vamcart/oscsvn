@@ -12,7 +12,7 @@
 
   define('MODULE_PAYMENT_LENDSHOP_TEXT_TITLE', 'LendShop.Ru');
   define('MODULE_PAYMENT_LENDSHOP_TEXT_PUBLIC_TITLE', 'LendShop.Ru');
-  define('MODULE_PAYMENT_LENDSHOP_TEXT_DESCRIPTION', 'Ïîñëå íàæàòèÿ êíîïêè Ïîäòâåðäèòü çàêàç Âû ïåðåéä¸òå íà ñàéò ïëàò¸æíîé ñèñòåìû äëÿ îïëàòû çàêàçà, ïîñëå îïëàòû Âàø çàêàç áóäåò âûïîëíåí.');
-  define('MODULE_PAYMENT_LENDSHOP_TEXT_ADMIN_DESCRIPTION', 'Ìîäóëü îïëàòû LendShop.Ru.');
+  define('MODULE_PAYMENT_LENDSHOP_TEXT_DESCRIPTION', 'ÐŸÐ¾ÑÐ»Ðµ Ð½Ð°Ð¶Ð°Ñ‚Ð¸Ñ ÐºÐ½Ð¾Ð¿ÐºÐ¸ ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð· Ð’Ñ‹ Ð¿ÐµÑ€ÐµÐ¹Ð´Ñ‘Ñ‚Ðµ Ð½Ð° ÑÐ°Ð¹Ñ‚ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð´Ð»Ñ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°, Ð¿Ð¾ÑÐ»Ðµ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð’Ð°Ñˆ Ð·Ð°ÐºÐ°Ð· Ð±ÑƒÐ´ÐµÑ‚ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½.');
+  define('MODULE_PAYMENT_LENDSHOP_TEXT_ADMIN_DESCRIPTION', 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ LendShop.Ru.');
 
 ?>

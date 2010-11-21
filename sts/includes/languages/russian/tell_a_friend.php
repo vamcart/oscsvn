@@ -10,32 +10,32 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Сообщите другу');
+define('NAVBAR_TITLE', 'РЎРѕРѕР±С‰РёС‚Рµ РґСЂСѓРіСѓ');
 
-define('HEADING_TITLE', 'Сообщите другу о \'%s\'');
+define('HEADING_TITLE', 'РЎРѕРѕР±С‰РёС‚Рµ РґСЂСѓРіСѓ Рѕ \'%s\'');
 
-define('FORM_TITLE_CUSTOMER_DETAILS', 'Подробнее о Вас');
-define('FORM_TITLE_FRIEND_DETAILS', 'Ваши друзья (детали)');
-define('FORM_TITLE_FRIEND_MESSAGE', 'Ваше сообщение');
+define('FORM_TITLE_CUSTOMER_DETAILS', 'РџРѕРґСЂРѕР±РЅРµРµ Рѕ Р’Р°СЃ');
+define('FORM_TITLE_FRIEND_DETAILS', 'Р’Р°С€Рё РґСЂСѓР·СЊСЏ (РґРµС‚Р°Р»Рё)');
+define('FORM_TITLE_FRIEND_MESSAGE', 'Р’Р°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ');
 
-define('FORM_FIELD_CUSTOMER_NAME', 'Ваше имя:');
-define('FORM_FIELD_CUSTOMER_EMAIL', 'Ваш Email адрес:');
-define('FORM_FIELD_FRIEND_NAME', 'Имя Вашего друга:');
-define('FORM_FIELD_FRIEND_EMAIL', 'Email адрес Вашего друга:');
+define('FORM_FIELD_CUSTOMER_NAME', 'Р’Р°С€Рµ РёРјСЏ:');
+define('FORM_FIELD_CUSTOMER_EMAIL', 'Р’Р°С€ Email Р°РґСЂРµСЃ:');
+define('FORM_FIELD_FRIEND_NAME', 'РРјСЏ Р’Р°С€РµРіРѕ РґСЂСѓРіР°:');
+define('FORM_FIELD_FRIEND_EMAIL', 'Email Р°РґСЂРµСЃ Р’Р°С€РµРіРѕ РґСЂСѓРіР°:');
 
-define('TEXT_EMAIL_SUCCESSFUL_SENT', 'Ваше письмо о <b>%s</b> успешно отправлено <b>%s</b>.');
+define('TEXT_EMAIL_SUCCESSFUL_SENT', 'Р’Р°С€Рµ РїРёСЃСЊРјРѕ Рѕ <b>%s</b> СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ <b>%s</b>.');
 
-define('TEXT_EMAIL_SUBJECT', 'Ваш друг %s рекомендует Вам...');
-define('TEXT_EMAIL_INTRO', 'Привет %s!' . "\n\n" . 'Ваш друг, %s, рекомендует Вам посмотреть %s в магазине %s.');
-define('TEXT_EMAIL_LINK', 'Чтобы посмотреть этот товар, щелкните, пожалуйста, на ссылку ниже или скопируйте и вставьте ссылку в Ваш браузер:' . "\n\n" . '%s');
-define('TEXT_EMAIL_LINK_ARTICLE', 'Чтобы посмотреть эту статью, щелкните, пожалуйста, на ссылку ниже или скопируйте и вставьте ссылку в Ваш браузер:' . "\n\n" . '%s');
-define('TEXT_EMAIL_SIGNATURE', 'С уважением,' . "\n\n" . '%s');
+define('TEXT_EMAIL_SUBJECT', 'Р’Р°С€ РґСЂСѓРі %s СЂРµРєРѕРјРµРЅРґСѓРµС‚ Р’Р°Рј...');
+define('TEXT_EMAIL_INTRO', 'РџСЂРёРІРµС‚ %s!' . "\n\n" . 'Р’Р°С€ РґСЂСѓРі, %s, СЂРµРєРѕРјРµРЅРґСѓРµС‚ Р’Р°Рј РїРѕСЃРјРѕС‚СЂРµС‚СЊ %s РІ РјР°РіР°Р·РёРЅРµ %s.');
+define('TEXT_EMAIL_LINK', 'Р§С‚РѕР±С‹ РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЌС‚РѕС‚ С‚РѕРІР°СЂ, С‰РµР»РєРЅРёС‚Рµ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅР° СЃСЃС‹Р»РєСѓ РЅРёР¶Рµ РёР»Рё СЃРєРѕРїРёСЂСѓР№С‚Рµ Рё РІСЃС‚Р°РІСЊС‚Рµ СЃСЃС‹Р»РєСѓ РІ Р’Р°С€ Р±СЂР°СѓР·РµСЂ:' . "\n\n" . '%s');
+define('TEXT_EMAIL_LINK_ARTICLE', 'Р§С‚РѕР±С‹ РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЌС‚Сѓ СЃС‚Р°С‚СЊСЋ, С‰РµР»РєРЅРёС‚Рµ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅР° СЃСЃС‹Р»РєСѓ РЅРёР¶Рµ РёР»Рё СЃРєРѕРїРёСЂСѓР№С‚Рµ Рё РІСЃС‚Р°РІСЊС‚Рµ СЃСЃС‹Р»РєСѓ РІ Р’Р°С€ Р±СЂР°СѓР·РµСЂ:' . "\n\n" . '%s');
+define('TEXT_EMAIL_SIGNATURE', 'РЎ СѓРІР°Р¶РµРЅРёРµРј,' . "\n\n" . '%s');
 
-define('ERROR_TO_NAME', 'Ошибка: Вы забыли указать имя Вашего друга.');
-define('ERROR_TO_ADDRESS', 'Ошибка: E-mail адрес Вашего друга неверный.');
-define('ERROR_FROM_NAME', 'Ошибка: Укажите своё имя.');
-define('ERROR_FROM_ADDRESS', 'Ошибка: Ваш e-mail адрес неверный.');
+define('ERROR_TO_NAME', 'РћС€РёР±РєР°: Р’С‹ Р·Р°Р±С‹Р»Рё СѓРєР°Р·Р°С‚СЊ РёРјСЏ Р’Р°С€РµРіРѕ РґСЂСѓРіР°.');
+define('ERROR_TO_ADDRESS', 'РћС€РёР±РєР°: E-mail Р°РґСЂРµСЃ Р’Р°С€РµРіРѕ РґСЂСѓРіР° РЅРµРІРµСЂРЅС‹Р№.');
+define('ERROR_FROM_NAME', 'РћС€РёР±РєР°: РЈРєР°Р¶РёС‚Рµ СЃРІРѕС‘ РёРјСЏ.');
+define('ERROR_FROM_ADDRESS', 'РћС€РёР±РєР°: Р’Р°С€ e-mail Р°РґСЂРµСЃ РЅРµРІРµСЂРЅС‹Р№.');
 
-define('ENTRY_CAPTCHA', 'Укажите код на картинке:');
+define('ENTRY_CAPTCHA', 'РЈРєР°Р¶РёС‚Рµ РєРѕРґ РЅР° РєР°СЂС‚РёРЅРєРµ:');
 
 ?>

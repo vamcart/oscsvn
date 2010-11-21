@@ -10,8 +10,8 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_QTY_DISCOUNT_TITLE', 'Ñêèäêà');
-  define('MODULE_QTY_DISCOUNT_DESCRIPTION', 'Ñêèäêà â çàâèñèìîñòè îò êîëè÷åñòâà êóïëåííîãî òîâàðà.');
-  define('SHIPPING_NOT_INCLUDED', ' [Äîñòàâêà íå âêëþ÷åíà]');
-  define('TAX_NOT_INCLUDED', ' [Íàëîã íå âêëþ÷¸í]');
+  define('MODULE_QTY_DISCOUNT_TITLE', 'Ð¡ÐºÐ¸Ð´ÐºÐ°');
+  define('MODULE_QTY_DISCOUNT_DESCRIPTION', 'Ð¡ÐºÐ¸Ð´ÐºÐ° Ð² Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¾Ñ‚ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð° ÐºÑƒÐ¿Ð»ÐµÐ½Ð½Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°.');
+  define('SHIPPING_NOT_INCLUDED', ' [Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°]');
+  define('TAX_NOT_INCLUDED', ' [ÐÐ°Ð»Ð¾Ð³ Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡Ñ‘Ð½]');
 ?>

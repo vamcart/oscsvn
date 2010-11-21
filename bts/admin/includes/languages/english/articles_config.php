@@ -20,7 +20,7 @@ define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
 define('TEXT_INFO_DATE_ADDED', 'Date Added:');
 define('TEXT_INFO_LAST_MODIFIED', 'Last Modified:');
 
-// Статьи - Настройки 
+// РЎС‚Р°С‚СЊРё - РќР°СЃС‚СЂРѕР№РєРё 
 
 define('DISPLAY_NEW_ARTICLES_TITLE', 'Display New Articles Link');
 define('NEW_ARTICLES_DAYS_DISPLAY_TITLE', 'Number of Days Display New Articles');

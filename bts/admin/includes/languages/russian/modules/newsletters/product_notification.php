@@ -10,15 +10,15 @@
   Released under the GNU General Public License
 */
 
-define('TEXT_COUNT_CUSTOMERS', 'Êëèåíòû, ïîëó÷àþùèå ðàññûëêó: %s');
-define('TEXT_PRODUCTS', 'Òîâàðû');
-define('TEXT_SELECTED_PRODUCTS', 'Âûáðàííûå Òîâàðû');
+define('TEXT_COUNT_CUSTOMERS', 'ÐšÐ»Ð¸ÐµÐ½Ñ‚Ñ‹, Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÑŽÑ‰Ð¸Ðµ Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ: %s');
+define('TEXT_PRODUCTS', 'Ð¢Ð¾Ð²Ð°Ñ€Ñ‹');
+define('TEXT_SELECTED_PRODUCTS', 'Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ðµ Ð¢Ð¾Ð²Ð°Ñ€Ñ‹');
 
-define('JS_PLEASE_SELECT_PRODUCTS', 'Ïîæàëóéñòà, âûáåðèòå òîâàðû.');
+define('JS_PLEASE_SELECT_PRODUCTS', 'ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹.');
 
-define('BUTTON_GLOBAL', 'Ãëîáàëüíî');
+define('BUTTON_GLOBAL', 'Ð“Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½Ð¾');
 define('BUTTON_SELECT', '>>>');
 define('BUTTON_UNSELECT', '<<<');
-define('BUTTON_SUBMIT', 'Ïîäòâåðäèòü');
-define('BUTTON_CANCEL', 'Îòìåíà');
+define('BUTTON_SUBMIT', 'ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ');
+define('BUTTON_CANCEL', 'ÐžÑ‚Ð¼ÐµÐ½Ð°');
 ?>

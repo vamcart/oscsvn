@@ -11,6 +11,6 @@
 */
 
   define('MODULE_PAYMENT_EGOLD_TEXT_TITLE', 'E-Gold');
-  define('MODULE_PAYMENT_EGOLD_TEXT_DESCRIPTION', 'Наши данные в системе E-Gold:<br><br>Номер нашего эккаунта: &nbsp;&nbsp;&nbsp;<b>' . MODULE_PAYMENT_EGOLD_1 . '</b><br><br>Заказ будет отправлен сразу после получения перевода');
-  define('MODULE_PAYMENT_EGOLD_TEXT_EMAIL_FOOTER', "Наши данные в системе E-Gold:\n\nНомер нашего эккаунта: " . MODULE_PAYMENT_EGOLD_1 . "\n\nЗаказ будет отправлен сразу после получения перевода");
+  define('MODULE_PAYMENT_EGOLD_TEXT_DESCRIPTION', 'РќР°С€Рё РґР°РЅРЅС‹Рµ РІ СЃРёСЃС‚РµРјРµ E-Gold:<br><br>РќРѕРјРµСЂ РЅР°С€РµРіРѕ СЌРєРєР°СѓРЅС‚Р°: &nbsp;&nbsp;&nbsp;<b>' . MODULE_PAYMENT_EGOLD_1 . '</b><br><br>Р—Р°РєР°Р· Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ СЃСЂР°Р·Сѓ РїРѕСЃР»Рµ РїРѕР»СѓС‡РµРЅРёСЏ РїРµСЂРµРІРѕРґР°');
+  define('MODULE_PAYMENT_EGOLD_TEXT_EMAIL_FOOTER', "РќР°С€Рё РґР°РЅРЅС‹Рµ РІ СЃРёСЃС‚РµРјРµ E-Gold:\n\nРќРѕРјРµСЂ РЅР°С€РµРіРѕ СЌРєРєР°СѓРЅС‚Р°: " . MODULE_PAYMENT_EGOLD_1 . "\n\nР—Р°РєР°Р· Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ СЃСЂР°Р·Сѓ РїРѕСЃР»Рµ РїРѕР»СѓС‡РµРЅРёСЏ РїРµСЂРµРІРѕРґР°");
 ?>

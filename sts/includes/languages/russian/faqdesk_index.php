@@ -1,23 +1,23 @@
 <?php
-define('NAVBAR_TITLE', 'Разделы FAQ');
-define('TABLE_HEADING_CATEGORY', 'Разделы');
-define('TABLE_HEADING_SUBCATEGORY', 'Подразделы');
-define('TABLE_HEADING_TOPICS', 'Содержание');
+define('NAVBAR_TITLE', 'Р Р°Р·РґРµР»С‹ FAQ');
+define('TABLE_HEADING_CATEGORY', 'Р Р°Р·РґРµР»С‹');
+define('TABLE_HEADING_SUBCATEGORY', 'РџРѕРґСЂР°Р·РґРµР»С‹');
+define('TABLE_HEADING_TOPICS', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ');
 
-define('TABLE_HEADING_ARTICLE_NAME', 'Вопрос');
-define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'Краткий ответ');
-define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'Расширенный ответ');
-define('TABLE_HEADING_DATE_AVAILABLE', 'Дата');
+define('TABLE_HEADING_ARTICLE_NAME', 'Р’РѕРїСЂРѕСЃ');
+define('TABLE_HEADING_ARTICLE_SHORTTEXT', 'РљСЂР°С‚РєРёР№ РѕС‚РІРµС‚');
+define('TABLE_HEADING_ARTICLE_DESCRIPTION', 'Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ РѕС‚РІРµС‚');
+define('TABLE_HEADING_DATE_AVAILABLE', 'Р”Р°С‚Р°');
 
-define('TEXT_NO_ARTICLES', 'В данном разделе пока нет ни одного FAQ.');
+define('TEXT_NO_ARTICLES', 'Р’ РґР°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ РїРѕРєР° РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ FAQ.');
 
-define('TEXT_NUMBER_OF_ARTICLES', 'Количество: ');
-define('TEXT_SHOW', '<b>Просмотром:</b>');
+define('TEXT_NUMBER_OF_ARTICLES', 'РљРѕР»РёС‡РµСЃС‚РІРѕ: ');
+define('TEXT_SHOW', '<b>РџСЂРѕСЃРјРѕС‚СЂРѕРј:</b>');
 
-define('HEADING_TITLE', 'Разделы FAQ');
+define('HEADING_TITLE', 'Р Р°Р·РґРµР»С‹ FAQ');
 
-define('FAQ_TEXT_FIELD_REQUIRED', 'Введите необходимый текст');
-define('FAQ_BOX_CATEGORIES_CHOOSE', 'Выберите раздел');
+define('FAQ_TEXT_FIELD_REQUIRED', 'Р’РІРµРґРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Р№ С‚РµРєСЃС‚');
+define('FAQ_BOX_CATEGORIES_CHOOSE', 'Р’С‹Р±РµСЂРёС‚Рµ СЂР°Р·РґРµР»');
 
 ?>
 

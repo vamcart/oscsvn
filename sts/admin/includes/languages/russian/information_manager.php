@@ -10,52 +10,52 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Èíôîðìàöèîííûå ñòðàíèöû');
-define('HEADING_TITLE_SEARCH', 'Ïîèñê:');
+define('HEADING_TITLE', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹');
+define('HEADING_TITLE_SEARCH', 'ÐŸÐ¾Ð¸ÑÐº:');
 
-define('TABLE_HEADING_ID', 'Êîä');
-define('TABLE_HEADING_INFORMATION_PAGES', 'Èíôîðìàöèîííûå ñòðàíèöû');
-define('TABLE_HEADING_ACTION', 'Äåéñòâèå');
-define('TABLE_HEADING_STATUS', 'Ñòàòóñ');
+define('TABLE_HEADING_ID', 'ÐšÐ¾Ð´');
+define('TABLE_HEADING_INFORMATION_PAGES', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹');
+define('TABLE_HEADING_ACTION', 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ');
+define('TABLE_HEADING_STATUS', 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ');
 
-define('TEXT_NEW_PAGE', 'Äîáàâëåíèå íîâîé ñòðàíèöû â &quot;%s&quot;');
-define('TEXT_PAGES', 'Âñåãî ñòðàíèö:');
-define('TEXT_DATE_ADDED', 'Äàòà äîáàâëåíèÿ:');
-define('TEXT_LAST_MODIFIED', 'Ïîñëåäíåå èçìåíåíèå:');
-define('TEXT_IMAGE_NONEXISTENT', 'ÍÅÒ ÊÀÐÒÈÍÊÈ');
-define('TEXT_PAGE_DATE_ADDED', 'Ñòðàíèöà áûëà äîáàâëåíà %s.');
+define('TEXT_NEW_PAGE', 'Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ð² &quot;%s&quot;');
+define('TEXT_PAGES', 'Ð’ÑÐµÐ³Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†:');
+define('TEXT_DATE_ADDED', 'Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ:');
+define('TEXT_LAST_MODIFIED', 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½ÐµÐµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ:');
+define('TEXT_IMAGE_NONEXISTENT', 'ÐÐ•Ð¢ ÐšÐÐ Ð¢Ð˜ÐÐšÐ˜');
+define('TEXT_PAGE_DATE_ADDED', 'Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð±Ñ‹Ð»Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð° %s.');
 
-define('TEXT_DELETE_IMAGE', 'Óäàëèòü ïðåäûäóùóþ êàðòèíêó?');
+define('TEXT_DELETE_IMAGE', 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÑƒÑŽ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ?');
 
-define('TEXT_EDIT_SORT_ORDER', 'Ïîðÿäîê ñîðòèðîâêè:');
-define('TEXT_EDIT_STATUS', 'Ñòàòóñ');
+define('TEXT_EDIT_SORT_ORDER', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:');
+define('TEXT_EDIT_STATUS', 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ');
 
-define('TEXT_INFO_COPY_TO_INTRO', 'Âû äåéñòâèòåëüíî õîòèòå ñêîïèðîâàòü äàííóþ ñòðàíèöó?');
-define('TEXT_INFO_CURRENT_INFORMATION', 'Âûáðàííàÿ äëÿ êîïèðîâàíèÿ ñòðàíèöà:');
+define('TEXT_INFO_COPY_TO_INTRO', 'Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð´Ð°Ð½Ð½ÑƒÑŽ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ?');
+define('TEXT_INFO_CURRENT_INFORMATION', 'Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð°Ñ Ð´Ð»Ñ ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°:');
 
-define('TEXT_INFO_HEADING_DELETE_PAGE', 'Óäàëèòü ñòðàíèöó');
-define('TEXT_INFO_HEADING_COPY_TO', 'Êîïèðîâàòü â');
+define('TEXT_INFO_HEADING_DELETE_PAGE', 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ');
+define('TEXT_INFO_HEADING_COPY_TO', 'ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð²');
 
-define('TEXT_DELETE_PAGE_INTRO', 'Âû äåéñòâèòåëüíî õîòèòå óäàëèòü äàííóþ ñòðàíèöó?');
+define('TEXT_DELETE_PAGE_INTRO', 'Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½ÑƒÑŽ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ?');
 
-define('TEXT_SORT_ORDER', 'Ïîðÿäîê ñîðòèðîâêè:');
+define('TEXT_SORT_ORDER', 'ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:');
 
-define('TEXT_PAGES_STATUS', 'Ñòàòóñ ñòðàíèöû:');
-define('TEXT_PAGE_AVAILABLE', 'Àêòèâíà');
-define('TEXT_PAGE_NOT_AVAILABLE', 'Íåàêòèâíà');
-define('TEXT_PAGES_NAME', 'Íàçâàíèå ñòðàíèöû:');
-define('TEXT_PAGES_DESCRIPTION', 'Îïèñàíèå ñòðàíèöû:');
-define('TEXT_PAGES_IMAGE', 'Êàðòèíêà ñòðàíèöû:');
-define('TEXT_NONE', '--íåò--');
+define('TEXT_PAGES_STATUS', 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹:');
+define('TEXT_PAGE_AVAILABLE', 'ÐÐºÑ‚Ð¸Ð²Ð½Ð°');
+define('TEXT_PAGE_NOT_AVAILABLE', 'ÐÐµÐ°ÐºÑ‚Ð¸Ð²Ð½Ð°');
+define('TEXT_PAGES_NAME', 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹:');
+define('TEXT_PAGES_DESCRIPTION', 'ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹:');
+define('TEXT_PAGES_IMAGE', 'ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹:');
+define('TEXT_NONE', '--Ð½ÐµÑ‚--');
 
-define('EMPTY_INFOPAGE', 'Íåò ñòðàíèö');
-define('TEXT_NO_CHILD_INFORMATION_OR_PAGES', 'Íåò íè îäíîé ñòðàíèöû.');
-define('IMAGE_NEW_PAGE', 'Äîáàâèòü ñòðàíèöó');
+define('EMPTY_INFOPAGE', 'ÐÐµÑ‚ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†');
+define('TEXT_NO_CHILD_INFORMATION_OR_PAGES', 'ÐÐµÑ‚ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹.');
+define('IMAGE_NEW_PAGE', 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ');
 
-define('ERROR_CATALOG_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Îøèáêà: Êàòàëîã ñ êàðòèíêàìè çàùèù¸í îò çàïèñè, óñòàíîâèòå ïðàâà äîñòóïà íà çàïèñü äëÿ äèðåêòîðèè: ' . DIR_FS_CATALOG_IMAGES);
-define('ERROR_CATALOG_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Îøèáêà: Êàòàëîã ñ êàðòèíêàìè íå íàéäåí: ' . DIR_FS_CATALOG_IMAGES);
+define('ERROR_CATALOG_IMAGE_DIRECTORY_NOT_WRITEABLE', 'ÐžÑˆÐ¸Ð±ÐºÐ°: ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³ Ñ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°Ð¼Ð¸ Ð·Ð°Ñ‰Ð¸Ñ‰Ñ‘Ð½ Ð¾Ñ‚ Ð·Ð°Ð¿Ð¸ÑÐ¸, ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ð½Ð° Ð·Ð°Ð¿Ð¸ÑÑŒ Ð´Ð»Ñ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ð¸: ' . DIR_FS_CATALOG_IMAGES);
+define('ERROR_CATALOG_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'ÐžÑˆÐ¸Ð±ÐºÐ°: ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³ Ñ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°Ð¼Ð¸ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½: ' . DIR_FS_CATALOG_IMAGES);
 
-define('TEXT_INFOPAGES_DATA', 'Äàííûå');
-define('TEXT_INFOPAGES_IMAGE', 'Êàðòèíêà');
+define('TEXT_INFOPAGES_DATA', 'Ð”Ð°Ð½Ð½Ñ‹Ðµ');
+define('TEXT_INFOPAGES_IMAGE', 'ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°');
 
 ?>

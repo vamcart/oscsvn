@@ -14,23 +14,23 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Ïàðòí¸ðñêàÿ ïðîãðàììà');
-define('HEADING_TITLE', 'Ïàðòí¸ðñêàÿ ïðîãðàììà - Ðåãèñòðàöèÿ');
+define('NAVBAR_TITLE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ°Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°');
+define('HEADING_TITLE', 'ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ°Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° - Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ');
 
-define('MAIL_AFFILIATE_SUBJECT', 'Ðåãèñòðàöèÿ â ïàðòí¸ðñêîé ïðîãðàììå!');
-define('MAIL_AFFILIATE_HEADER', 'Óâàæàåìûé ïàðòí¸ð,
+define('MAIL_AFFILIATE_SUBJECT', 'Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ð² Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ¾Ð¹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ðµ!');
+define('MAIL_AFFILIATE_HEADER', 'Ð£Ð²Ð°Ð¶Ð°ÐµÐ¼Ñ‹Ð¹ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€,
 
-áëàãîäàðèì Âàñ çà ó÷àñòèå â íàøåé ïàðòí¸ðñêîé ïðîãðàììå, íàäååìñÿ, ÷òî íàøå ñîòðóäíè÷åñòâî áóäåò âçàèìîâûãîäíûì è äîëãîñðî÷íûì.
+Ð±Ð»Ð°Ð³Ð¾Ð´Ð°Ñ€Ð¸Ð¼ Ð’Ð°Ñ Ð·Ð° ÑƒÑ‡Ð°ÑÑ‚Ð¸Ðµ Ð² Ð½Ð°ÑˆÐµÐ¹ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÐºÐ¾Ð¹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ðµ, Ð½Ð°Ð´ÐµÐµÐ¼ÑÑ, Ñ‡Ñ‚Ð¾ Ð½Ð°ÑˆÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð²Ð·Ð°Ð¸Ð¼Ð¾Ð²Ñ‹Ð³Ð¾Ð´Ð½Ñ‹Ð¼ Ð¸ Ð´Ð¾Ð»Ð³Ð¾ÑÑ€Ð¾Ñ‡Ð½Ñ‹Ð¼.
 
-Èíôîðìàöèÿ:
+Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ:
 ***********************
 
 ');
-define('MAIL_AFFILIATE_ID', 'Âàø ID: ');
-define('MAIL_AFFILIATE_USERNAME', 'Âàø Email äëÿ âõîäà: ');
-define('MAIL_AFFILIATE_PASSWORD', 'Âàø ïàðîëü: ');
-define('MAIL_AFFILIATE_LINK', 'Ññûëêà äëÿ âõîäà â ñèñòåìó:');
-define('MAIL_AFFILIATE_FOOTER', 'Óäà÷è!
+define('MAIL_AFFILIATE_ID', 'Ð’Ð°Ñˆ ID: ');
+define('MAIL_AFFILIATE_USERNAME', 'Ð’Ð°Ñˆ Email Ð´Ð»Ñ Ð²Ñ…Ð¾Ð´Ð°: ');
+define('MAIL_AFFILIATE_PASSWORD', 'Ð’Ð°Ñˆ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ');
+define('MAIL_AFFILIATE_LINK', 'Ð¡ÑÑ‹Ð»ÐºÐ° Ð´Ð»Ñ Ð²Ñ…Ð¾Ð´Ð° Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ:');
+define('MAIL_AFFILIATE_FOOTER', 'Ð£Ð´Ð°Ñ‡Ð¸!
 
-Èíòåðíåò-ìàãàçèí');
+Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½');
 ?>

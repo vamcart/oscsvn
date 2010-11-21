@@ -80,14 +80,14 @@ define('ERROR_ORDER_DOES_NOT_EXIST', 'Error: Order does not exist.');
 define('SUCCESS_ORDER_UPDATED', 'Success: Order has been successfully updated.');
 define('WARNING_ORDER_NOT_UPDATED', 'Warning: Nothing to change. The order was not updated.');
 // denuz
-define('TABLE_HEADING_ORDER_NETTO', 'Нетто');
+define('TABLE_HEADING_ORDER_NETTO', 'РќРµС‚С‚Рѕ');
 define('TABLE_HEADING_ORDER_NUMBER', 'Order number');
-define('TABLE_HEADING_ORDER_MARJA', 'Маржа');
-define('TITLE_ORDER_NETTO', 'Нетто:');
-define('TITLE_ORDER_MARJA', 'Маржа:');
+define('TABLE_HEADING_ORDER_MARJA', 'РњР°СЂР¶Р°');
+define('TITLE_ORDER_NETTO', 'РќРµС‚С‚Рѕ:');
+define('TITLE_ORDER_MARJA', 'РњР°СЂР¶Р°:');
 define('TEXT_TOTAL', 'Total: ');
-define('TEXT_NETTO', 'Нетто: ');
-define('TEXT_MARJA', 'Маржа: ');
+define('TEXT_NETTO', 'РќРµС‚С‚Рѕ: ');
+define('TEXT_MARJA', 'РњР°СЂР¶Р°: ');
 // eof denuz
 define('EMAIL_TEXT_CUSTOMER_NAME', 'Customer:');
 define('EMAIL_TEXT_CUSTOMER_EMAIL_ADDRESS', 'Email:');

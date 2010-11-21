@@ -1,21 +1,21 @@
 <?php
-define('HEADING_TITLE_1', 'Ïîèñê â ñòàòüÿõ');
-define('ARTICLE_SEARCH_TITLE', 'Ðåçóëüòàòû ïîèñêà');
+define('HEADING_TITLE_1', 'ÐŸÐ¾Ð¸ÑÐº Ð² ÑÑ‚Ð°Ñ‚ÑŒÑÑ…');
+define('ARTICLE_SEARCH_TITLE', 'Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¿Ð¾Ð¸ÑÐºÐ°');
 
 
-define('NAVBAR_TITLE_1', 'Ïîèñê â ñòàòüÿõ');
-define('NAVBAR_TITLE_2', 'Ñòàòüè, ñîîòâåòñòâóþùèå Âàøåìó çàïðîñó');
-define('TABLE_HEADING_ARTICLES', 'Ñòàòüÿ');
+define('NAVBAR_TITLE_1', 'ÐŸÐ¾Ð¸ÑÐº Ð² ÑÑ‚Ð°Ñ‚ÑŒÑÑ…');
+define('NAVBAR_TITLE_2', 'Ð¡Ñ‚Ð°Ñ‚ÑŒÐ¸, ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ');
+define('TABLE_HEADING_ARTICLES', 'Ð¡Ñ‚Ð°Ñ‚ÑŒÑ');
 
 
-define('TEXT_ARTICLE_NAME' , 'Íàçâàíèå ñòàòüè');
-define('TEXT_ARTICLE_EXCERPT' , 'Îòðûâîê èç ñòàòüè');
-define('TEXT_ARTICLE_LINK' , 'Ññûëêà');
+define('TEXT_ARTICLE_NAME' , 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('TEXT_ARTICLE_EXCERPT' , 'ÐžÑ‚Ñ€Ñ‹Ð²Ð¾Ðº Ð¸Ð· ÑÑ‚Ð°Ñ‚ÑŒÐ¸');
+define('TEXT_ARTICLE_LINK' , 'Ð¡ÑÑ‹Ð»ÐºÐ°');
 
 
-define('TEXT_NO_ARTICLES', 'Íå íàéäåíî íè îäíîé ñòàòüè, ñîîòâåòñòâóþùåé Âàøåìó çàïðîñó.');
+define('TEXT_NO_ARTICLES', 'ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð¹ ÑÑ‚Ð°Ñ‚ÑŒÐ¸, ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ¹ Ð’Ð°ÑˆÐµÐ¼Ñƒ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ.');
  
 
-define('ERROR_INPUT', '×òî èñêàòü.');
-define('ERROR_INVALID_KEYWORDS', 'Íåâåðíûå êëþ÷åâûå ñëîâà.');
+define('ERROR_INPUT', 'Ð§Ñ‚Ð¾ Ð¸ÑÐºÐ°Ñ‚ÑŒ.');
+define('ERROR_INVALID_KEYWORDS', 'ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ðµ ÐºÐ»ÑŽÑ‡ÐµÐ²Ñ‹Ðµ ÑÐ»Ð¾Ð²Ð°.');
 ?>

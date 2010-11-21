@@ -10,32 +10,32 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Менеджер Почтовых Рассылок');
+define('HEADING_TITLE', 'РњРµРЅРµРґР¶РµСЂ РџРѕС‡С‚РѕРІС‹С… Р Р°СЃСЃС‹Р»РѕРє');
 
-define('TABLE_HEADING_NEWSLETTERS', 'Письма');
-define('TABLE_HEADING_SIZE', 'Размер');
-define('TABLE_HEADING_MODULE', 'Модуль');
-define('TABLE_HEADING_SENT', 'Отправлено');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_ACTION', 'Действие');
+define('TABLE_HEADING_NEWSLETTERS', 'РџРёСЃСЊРјР°');
+define('TABLE_HEADING_SIZE', 'Р Р°Р·РјРµСЂ');
+define('TABLE_HEADING_MODULE', 'РњРѕРґСѓР»СЊ');
+define('TABLE_HEADING_SENT', 'РћС‚РїСЂР°РІР»РµРЅРѕ');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
 
-define('TEXT_NEWSLETTER_MODULE', 'Модуль:');
-define('TEXT_NEWSLETTER_TITLE', 'Тема:');
-define('TEXT_NEWSLETTER_CONTENT', 'Содержание:');
+define('TEXT_NEWSLETTER_MODULE', 'РњРѕРґСѓР»СЊ:');
+define('TEXT_NEWSLETTER_TITLE', 'РўРµРјР°:');
+define('TEXT_NEWSLETTER_CONTENT', 'РЎРѕРґРµСЂР¶Р°РЅРёРµ:');
 
-define('TEXT_NEWSLETTER_DATE_ADDED', 'Дата Добавления:');
-define('TEXT_NEWSLETTER_DATE_SENT', 'Дата Отправки:');
+define('TEXT_NEWSLETTER_DATE_ADDED', 'Р”Р°С‚Р° Р”РѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_NEWSLETTER_DATE_SENT', 'Р”Р°С‚Р° РћС‚РїСЂР°РІРєРё:');
 
-define('TEXT_COUNT_CUSTOMERS_RECEIVE', 'Клиенты, получающие рассылку:');
+define('TEXT_COUNT_CUSTOMERS_RECEIVE', 'РљР»РёРµРЅС‚С‹, РїРѕР»СѓС‡Р°СЋС‰РёРµ СЂР°СЃСЃС‹Р»РєСѓ:');
 
-define('TEXT_INFO_DELETE_INTRO', 'Вы действительно хотите удалить это письмо?');
+define('TEXT_INFO_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚Рѕ РїРёСЃСЊРјРѕ?');
 
-define('TEXT_PLEASE_WAIT', 'Пожалуйста, подождите .. письма отправляются  ..<br><br>Пожалуйста, не прерывайте этот процесс!');
-define('TEXT_FINISHED_SENDING_EMAILS', 'Отправка писем успешно завершена!');
+define('TEXT_PLEASE_WAIT', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРґРѕР¶РґРёС‚Рµ .. РїРёСЃСЊРјР° РѕС‚РїСЂР°РІР»СЏСЋС‚СЃСЏ  ..<br><br>РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ РїСЂРµСЂС‹РІР°Р№С‚Рµ СЌС‚РѕС‚ РїСЂРѕС†РµСЃСЃ!');
+define('TEXT_FINISHED_SENDING_EMAILS', 'РћС‚РїСЂР°РІРєР° РїРёСЃРµРј СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°!');
 
-define('ERROR_NEWSLETTER_TITLE', 'Ошибка: Тема обязательна');
-define('ERROR_NEWSLETTER_MODULE', 'Ошибка: Модуль обязателен');
-define('ERROR_REMOVE_UNLOCKED_NEWSLETTER', 'Ошибка: Пожалуйста, заблокируйте информационное письмо перед удалением этого.');
-define('ERROR_EDIT_UNLOCKED_NEWSLETTER', 'Ошибка: Пожалуйста, заблокируйте информационное письмо перед редактированием этого.');
-define('ERROR_SEND_UNLOCKED_NEWSLETTER', 'Ошибка: Пожалуйста, заблокируйте информационное письмо перед отправкой этого.');
+define('ERROR_NEWSLETTER_TITLE', 'РћС€РёР±РєР°: РўРµРјР° РѕР±СЏР·Р°С‚РµР»СЊРЅР°');
+define('ERROR_NEWSLETTER_MODULE', 'РћС€РёР±РєР°: РњРѕРґСѓР»СЊ РѕР±СЏР·Р°С‚РµР»РµРЅ');
+define('ERROR_REMOVE_UNLOCKED_NEWSLETTER', 'РћС€РёР±РєР°: РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°Р±Р»РѕРєРёСЂСѓР№С‚Рµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ РїРёСЃСЊРјРѕ РїРµСЂРµРґ СѓРґР°Р»РµРЅРёРµРј СЌС‚РѕРіРѕ.');
+define('ERROR_EDIT_UNLOCKED_NEWSLETTER', 'РћС€РёР±РєР°: РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°Р±Р»РѕРєРёСЂСѓР№С‚Рµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ РїРёСЃСЊРјРѕ РїРµСЂРµРґ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµРј СЌС‚РѕРіРѕ.');
+define('ERROR_SEND_UNLOCKED_NEWSLETTER', 'РћС€РёР±РєР°: РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°Р±Р»РѕРєРёСЂСѓР№С‚Рµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ РїРёСЃСЊРјРѕ РїРµСЂРµРґ РѕС‚РїСЂР°РІРєРѕР№ СЌС‚РѕРіРѕ.');
 ?>

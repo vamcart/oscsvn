@@ -10,24 +10,24 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Îôîðìëåíèå çàêàçà');
-define('NAVBAR_TITLE_2', 'Ïîäòâåðäèòü');
+define('NAVBAR_TITLE_1', 'ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('NAVBAR_TITLE_2', 'ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ');
 
-define('HEADING_TITLE', 'Ïîäòâåðæäåíèå çàêàçà!');
+define('HEADING_TITLE', 'ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°!');
 
-define('HEADING_DELIVERY_ADDRESS', 'Àäðåñ äîñòàâêè');
-define('HEADING_SHIPPING_METHOD', 'Ñïîñîá äîñòàâêè');
-define('HEADING_PRODUCTS', 'Òîâàð');
-define('HEADING_TAX', 'Íàëîãè');
-define('HEADING_TOTAL', 'Ñóììà');
-define('HEADING_BILLING_INFORMATION', 'Èíôîðìàöèÿ îá îïëàòå çàêàçà');
-define('HEADING_BILLING_ADDRESS', 'Àäðåñ ïîêóïàòåëÿ');
-define('HEADING_PAYMENT_METHOD', 'Ñïîñîá îïëàòû');
-define('HEADING_PAYMENT_INFORMATION', 'Èíôîðìàöèÿ îá îïëàòå');
-define('HEADING_ORDER_COMMENTS', 'Âàøè êîììåíòàðèè');
+define('HEADING_DELIVERY_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('HEADING_SHIPPING_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸');
+define('HEADING_PRODUCTS', 'Ð¢Ð¾Ð²Ð°Ñ€');
+define('HEADING_TAX', 'ÐÐ°Ð»Ð¾Ð³Ð¸');
+define('HEADING_TOTAL', 'Ð¡ÑƒÐ¼Ð¼Ð°');
+define('HEADING_BILLING_INFORMATION', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('HEADING_BILLING_ADDRESS', 'ÐÐ´Ñ€ÐµÑ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ');
+define('HEADING_PAYMENT_METHOD', 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹');
+define('HEADING_PAYMENT_INFORMATION', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ');
+define('HEADING_ORDER_COMMENTS', 'Ð’Ð°ÑˆÐ¸ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸');
 
-define('TEXT_EDIT', 'Èçìåíèòü');
+define('TEXT_EDIT', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ');
 
-define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'Ïðîäîëæèòü îôîðìëåíèå çàêàçà');
-define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Äëÿ çàâåðøåíèÿ ïðîöåäóðû îôîðìëåíèÿ çàêàçà, Âû äîëæíû ïîäòâåðäèòü ñâîé çàêàç.');
+define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°');
+define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', 'Ð”Ð»Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ Ð¿Ñ€Ð¾Ñ†ÐµÐ´ÑƒÑ€Ñ‹ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð°, Ð’Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ Ð·Ð°ÐºÐ°Ð·.');
 ?>

@@ -7,45 +7,45 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_WISHLIST', 'Отложенные товары');
-define('HEADING_TITLE', 'Отложенные товары');
-define('HEADING_TITLE2', 'Отложенные товары');
-define('BOX_TEXT_PRICE', 'Стоимость');
-define('BOX_TEXT_PRODUCT', 'Название');
-define('BOX_TEXT_IMAGE', 'Картинка');
-define('BOX_TEXT_SELECT', 'Выберите');
+define('NAVBAR_TITLE_WISHLIST', 'РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('HEADING_TITLE', 'РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('HEADING_TITLE2', 'РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('BOX_TEXT_PRICE', 'РЎС‚РѕРёРјРѕСЃС‚СЊ');
+define('BOX_TEXT_PRODUCT', 'РќР°Р·РІР°РЅРёРµ');
+define('BOX_TEXT_IMAGE', 'РљР°СЂС‚РёРЅРєР°');
+define('BOX_TEXT_SELECT', 'Р’С‹Р±РµСЂРёС‚Рµ');
 
-define('BOX_TEXT_VIEW', 'Показать');
-define('BOX_TEXT_HELP', 'Помощь');
-define('BOX_WISHLIST_EMPTY', 'Всего отложенных товаров: 0');
-define('BOX_TEXT_NO_ITEMS', 'Нет отложенных товаров.');
+define('BOX_TEXT_VIEW', 'РџРѕРєР°Р·Р°С‚СЊ');
+define('BOX_TEXT_HELP', 'РџРѕРјРѕС‰СЊ');
+define('BOX_WISHLIST_EMPTY', 'Р’СЃРµРіРѕ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ: 0');
+define('BOX_TEXT_NO_ITEMS', 'РќРµС‚ РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ.');
 
-define('TEXT_NAME', 'Имя: ');
+define('TEXT_NAME', 'РРјСЏ: ');
 define('TEXT_EMAIL', 'Email: ');
-define('TEXT_YOUR_NAME', 'Ваше имя: ');
-define('TEXT_YOUR_EMAIL', 'Ваш email: ');
-define('TEXT_MESSAGE', 'Сообщение: ');
-define('TEXT_ITEM_IN_CART', 'Товар в корзине');
-define('TEXT_ITEM_NOT_AVAILABLE', 'Товар более недоступен');
-define('TEXT_DISPLAY_NUMBER_OF_WISHLIST', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> отложенных товаров.)');
-define('WISHLIST_EMAIL_TEXT', 'Вы можете отправить информацию о товарах, которые Вы отложили, своим друзьям и знакомым.');
-define('WISHLIST_EMAIL_TEXT_GUEST', 'Вы можете отправить информацию о товарах, которые Вы отложили, своим друзьям и знакомым.');
-define('WISHLIST_EMAIL_SUBJECT', 'отправил Вам сообщение');  //Customers name will be automatically added to the beginning of this.
-define('WISHLIST_SENT', 'Отложенные товары успешно отправлены.');
+define('TEXT_YOUR_NAME', 'Р’Р°С€Рµ РёРјСЏ: ');
+define('TEXT_YOUR_EMAIL', 'Р’Р°С€ email: ');
+define('TEXT_MESSAGE', 'РЎРѕРѕР±С‰РµРЅРёРµ: ');
+define('TEXT_ITEM_IN_CART', 'РўРѕРІР°СЂ РІ РєРѕСЂР·РёРЅРµ');
+define('TEXT_ITEM_NOT_AVAILABLE', 'РўРѕРІР°СЂ Р±РѕР»РµРµ РЅРµРґРѕСЃС‚СѓРїРµРЅ');
+define('TEXT_DISPLAY_NUMBER_OF_WISHLIST', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ.)');
+define('WISHLIST_EMAIL_TEXT', 'Р’С‹ РјРѕР¶РµС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ С‚РѕРІР°СЂР°С…, РєРѕС‚РѕСЂС‹Рµ Р’С‹ РѕС‚Р»РѕР¶РёР»Рё, СЃРІРѕРёРј РґСЂСѓР·СЊСЏРј Рё Р·РЅР°РєРѕРјС‹Рј.');
+define('WISHLIST_EMAIL_TEXT_GUEST', 'Р’С‹ РјРѕР¶РµС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ С‚РѕРІР°СЂР°С…, РєРѕС‚РѕСЂС‹Рµ Р’С‹ РѕС‚Р»РѕР¶РёР»Рё, СЃРІРѕРёРј РґСЂСѓР·СЊСЏРј Рё Р·РЅР°РєРѕРјС‹Рј.');
+define('WISHLIST_EMAIL_SUBJECT', 'РѕС‚РїСЂР°РІРёР» Р’Р°Рј СЃРѕРѕР±С‰РµРЅРёРµ');  //Customers name will be automatically added to the beginning of this.
+define('WISHLIST_SENT', 'РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹ СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅС‹.');
 define('WISHLIST_EMAIL_LINK', '
 
-Список отложенных товаров посетителя $from_name:
+РЎРїРёСЃРѕРє РѕС‚Р»РѕР¶РµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РїРѕСЃРµС‚РёС‚РµР»СЏ $from_name:
 $link
 
-Спасибо, ' . STORE_NAME); //$from_name = Customers name  $link = public wishlist link
+РЎРїР°СЃРёР±Рѕ, ' . STORE_NAME); //$from_name = Customers name  $link = public wishlist link
 
-define('WISHLIST_EMAIL_GUEST', 'Спасибо, ' . STORE_NAME);
+define('WISHLIST_EMAIL_GUEST', 'РЎРїР°СЃРёР±Рѕ, ' . STORE_NAME);
 
-define('ERROR_YOUR_NAME' , 'Укажите Ваше имя.');
-define('ERROR_YOUR_EMAIL' , 'Укажите Ваш email.');
-define('ERROR_VALID_EMAIL' , 'Укажите верные email адреса.');
-define('ERROR_ONE_EMAIL' , 'Вы должны как минимум указать одно имя и один email адрес.');
-define('ERROR_ENTER_EMAIL' , 'Укажите email адрес.');
-define('ERROR_ENTER_NAME' , 'Укажите имена получателей.');
-define('ERROR_MESSAGE', 'Добавьте сообщение.');
+define('ERROR_YOUR_NAME' , 'РЈРєР°Р¶РёС‚Рµ Р’Р°С€Рµ РёРјСЏ.');
+define('ERROR_YOUR_EMAIL' , 'РЈРєР°Р¶РёС‚Рµ Р’Р°С€ email.');
+define('ERROR_VALID_EMAIL' , 'РЈРєР°Р¶РёС‚Рµ РІРµСЂРЅС‹Рµ email Р°РґСЂРµСЃР°.');
+define('ERROR_ONE_EMAIL' , 'Р’С‹ РґРѕР»Р¶РЅС‹ РєР°Рє РјРёРЅРёРјСѓРј СѓРєР°Р·Р°С‚СЊ РѕРґРЅРѕ РёРјСЏ Рё РѕРґРёРЅ email Р°РґСЂРµСЃ.');
+define('ERROR_ENTER_EMAIL' , 'РЈРєР°Р¶РёС‚Рµ email Р°РґСЂРµСЃ.');
+define('ERROR_ENTER_NAME' , 'РЈРєР°Р¶РёС‚Рµ РёРјРµРЅР° РїРѕР»СѓС‡Р°С‚РµР»РµР№.');
+define('ERROR_MESSAGE', 'Р”РѕР±Р°РІСЊС‚Рµ СЃРѕРѕР±С‰РµРЅРёРµ.');
 ?>

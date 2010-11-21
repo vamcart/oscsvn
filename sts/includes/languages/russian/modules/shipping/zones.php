@@ -10,10 +10,10 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_ZONES_TEXT_TITLE', 'Òàðèôû äëÿ çîíû');
-define('MODULE_SHIPPING_ZONES_TEXT_DESCRIPTION', 'çîíàëüíûé áàçîâûé òàðèô');
-define('MODULE_SHIPPING_ZONES_TEXT_WAY', 'Äîñòàâêà äî');
-define('MODULE_SHIPPING_ZONES_TEXT_UNITS', 'Êã.');
-define('MODULE_SHIPPING_ZONES_INVALID_ZONE', 'Äëÿ âûáðàííîé ñòðàíû íåò âîçìîæíîñòè äîñòàâêè ');
-define('MODULE_SHIPPING_ZONES_UNDEFINED_RATE', 'Ñòîèìîñòü ïåðåñûëêè ñåé÷àñ íå ìîæåò áûòü îïðåäåëåíà ');
+define('MODULE_SHIPPING_ZONES_TEXT_TITLE', 'Ð¢Ð°Ñ€Ð¸Ñ„Ñ‹ Ð´Ð»Ñ Ð·Ð¾Ð½Ñ‹');
+define('MODULE_SHIPPING_ZONES_TEXT_DESCRIPTION', 'Ð·Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð±Ð°Ð·Ð¾Ð²Ñ‹Ð¹ Ñ‚Ð°Ñ€Ð¸Ñ„');
+define('MODULE_SHIPPING_ZONES_TEXT_WAY', 'Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð´Ð¾');
+define('MODULE_SHIPPING_ZONES_TEXT_UNITS', 'ÐšÐ³.');
+define('MODULE_SHIPPING_ZONES_INVALID_ZONE', 'Ð”Ð»Ñ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ñ‹ Ð½ÐµÑ‚ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ ');
+define('MODULE_SHIPPING_ZONES_UNDEFINED_RATE', 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÑÑ‹Ð»ÐºÐ¸ ÑÐµÐ¹Ñ‡Ð°Ñ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð° ');
 ?>

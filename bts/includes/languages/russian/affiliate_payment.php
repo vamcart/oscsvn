@@ -14,16 +14,16 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Партнёрская программа');
-define('HEADING_TITLE', 'Партнёрская программа - Выплаты');
+define('NAVBAR_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°');
+define('HEADING_TITLE', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР° - Р’С‹РїР»Р°С‚С‹');
 
-define('TEXT_AFFILIATE_HEADER', 'Всего выплат:');
+define('TEXT_AFFILIATE_HEADER', 'Р’СЃРµРіРѕ РІС‹РїР»Р°С‚:');
 
-define('TABLE_HEADING_DATE', 'Дата');
-define('TABLE_HEADING_PAYMENT', 'Сумма');
-define('TABLE_HEADING_STATUS', 'Статус');
-define('TABLE_HEADING_PAYMENT_ID','Код');
-define('TEXT_DISPLAY_NUMBER_OF_PAYMENTS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> выплат)');
-define('TEXT_INFORMATION_PAYMENT_TOTAL', 'Всего:');
-define('TEXT_NO_PAYMENTS', 'Ни одной выплаты ещё не было .');
+define('TABLE_HEADING_DATE', 'Р”Р°С‚Р°');
+define('TABLE_HEADING_PAYMENT', 'РЎСѓРјРјР°');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_PAYMENT_ID','РљРѕРґ');
+define('TEXT_DISPLAY_NUMBER_OF_PAYMENTS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РІС‹РїР»Р°С‚)');
+define('TEXT_INFORMATION_PAYMENT_TOTAL', 'Р’СЃРµРіРѕ:');
+define('TEXT_NO_PAYMENTS', 'РќРё РѕРґРЅРѕР№ РІС‹РїР»Р°С‚С‹ РµС‰С‘ РЅРµ Р±С‹Р»Рѕ .');
 ?>

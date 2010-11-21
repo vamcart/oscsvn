@@ -10,74 +10,74 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Настройка шаблонов');
-define('TABLE_HEADING_TEMPLATE', 'Название');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_ACTIVE', 'Статус');
-define('TABLE_HEADING_DISPLAY_COLUMN_RIGHT', 'Показывать правую колонку?');
-define('TABLE_HEADING_DISPLAY_COLUMN_LEFT', 'Показывать левую колонку?');
+define('HEADING_TITLE', 'РќР°СЃС‚СЂРѕР№РєР° С€Р°Р±Р»РѕРЅРѕРІ');
+define('TABLE_HEADING_TEMPLATE', 'РќР°Р·РІР°РЅРёРµ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_ACTIVE', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_DISPLAY_COLUMN_RIGHT', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂР°РІСѓСЋ РєРѕР»РѕРЅРєСѓ?');
+define('TABLE_HEADING_DISPLAY_COLUMN_LEFT', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р»РµРІСѓСЋ РєРѕР»РѕРЅРєСѓ?');
 
-define('TEXT_ALLOW_CATEGORY_DESCRIPTIONS', 'Показывать описание категорий');
+define('TEXT_ALLOW_CATEGORY_DESCRIPTIONS', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РѕРїРёСЃР°РЅРёРµ РєР°С‚РµРіРѕСЂРёР№');
 
-define('TEXT_COLUMN_LEFT_WIDTH', 'Ширина левой колонки');
-define('TEXT_COLUMN_RIGHT_WIDTH', 'Ширина правой колонки');
+define('TEXT_COLUMN_LEFT_WIDTH', 'РЁРёСЂРёРЅР° Р»РµРІРѕР№ РєРѕР»РѕРЅРєРё');
+define('TEXT_COLUMN_RIGHT_WIDTH', 'РЁРёСЂРёРЅР° РїСЂР°РІРѕР№ РєРѕР»РѕРЅРєРё');
 
-define('TEXT_DATE_ADDED', 'Дата добавления:');
-define('TEXT_DELETE_IMAGE', 'Удалить картинку шаблона?');
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить данный шаблон?');
+define('TEXT_DATE_ADDED', 'Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_DELETE_IMAGE', 'РЈРґР°Р»РёС‚СЊ РєР°СЂС‚РёРЅРєСѓ С€Р°Р±Р»РѕРЅР°?');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ С€Р°Р±Р»РѕРЅ?');
 
-define('TEXT_EDIT_INTRO', 'Внесите необходимые изменения');
+define('TEXT_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
 
-define('TEXT_HEADER', '<b>Шапка:</b>');
-define('TEXT_HEADING_DELETE_TEMPLATE', 'Удаление шаблона');
-define('TEXT_HEADING_EDIT_TEMPLATE', 'Изменение шаблона');
-define('TEXT_HEADING_NEW_TEMPLATE', 'Новый шаблон');
+define('TEXT_HEADER', '<b>РЁР°РїРєР°:</b>');
+define('TEXT_HEADING_DELETE_TEMPLATE', 'РЈРґР°Р»РµРЅРёРµ С€Р°Р±Р»РѕРЅР°');
+define('TEXT_HEADING_EDIT_TEMPLATE', 'РР·РјРµРЅРµРЅРёРµ С€Р°Р±Р»РѕРЅР°');
+define('TEXT_HEADING_NEW_TEMPLATE', 'РќРѕРІС‹Р№ С€Р°Р±Р»РѕРЅ');
 
-define('TEXT_INCLUDE_CART_IN_HEADER', 'Показывать корзину в шапке?');
-define('TEXT_INCLUDE_COLUMN_LEFT', 'Показывать левую колонку?');
-define('TEXT_INCLUDE_COLUMN_RIGHT', 'Показывать правую колонку?');
-define('TEXT_INCLUDE_HEADER_LINK_BUTTONS', 'Показывать кнопки в шапке?');
-define('TEXT_INCLUDE_LANGUAGES_IN_HEADER', 'Показывать языковой бокс в шапке?');
-define('TEXT_INCLUDE_MAIN_TABLE_BORDER', 'Показывать рамку главной  таблицы?');
-define('TEXT_INFO_EDIT_INTRO', 'Внесите необходимые изменения');
-define('TEXT_INFOBOX_BORDER_WIDTH_LEFT', 'Ширина рамки слева');
-define('TEXT_INFOBOX_BORDER_WIDTH_RIGHT', 'Ширина рамки справа');
+define('TEXT_INCLUDE_CART_IN_HEADER', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕСЂР·РёРЅСѓ РІ С€Р°РїРєРµ?');
+define('TEXT_INCLUDE_COLUMN_LEFT', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р»РµРІСѓСЋ РєРѕР»РѕРЅРєСѓ?');
+define('TEXT_INCLUDE_COLUMN_RIGHT', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂР°РІСѓСЋ РєРѕР»РѕРЅРєСѓ?');
+define('TEXT_INCLUDE_HEADER_LINK_BUTTONS', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРЅРѕРїРєРё РІ С€Р°РїРєРµ?');
+define('TEXT_INCLUDE_LANGUAGES_IN_HEADER', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЏР·С‹РєРѕРІРѕР№ Р±РѕРєСЃ РІ С€Р°РїРєРµ?');
+define('TEXT_INCLUDE_MAIN_TABLE_BORDER', 'РџРѕРєР°Р·С‹РІР°С‚СЊ СЂР°РјРєСѓ РіР»Р°РІРЅРѕР№  С‚Р°Р±Р»РёС†С‹?');
+define('TEXT_INFO_EDIT_INTRO', 'Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_INFOBOX_BORDER_WIDTH_LEFT', 'РЁРёСЂРёРЅР° СЂР°РјРєРё СЃР»РµРІР°');
+define('TEXT_INFOBOX_BORDER_WIDTH_RIGHT', 'РЁРёСЂРёРЅР° СЂР°РјРєРё СЃРїСЂР°РІР°');
 
-define('TEXT_LEFT_COLUMN', '<b>Левая колонка</b>');
-define('TEXT_RIGHT_COLUMN', '<b>Правая колонка</b>');
-define('TEXT_TEMPLATE', 'Шаблон:');
+define('TEXT_LEFT_COLUMN', '<b>Р›РµРІР°СЏ РєРѕР»РѕРЅРєР°</b>');
+define('TEXT_RIGHT_COLUMN', '<b>РџСЂР°РІР°СЏ РєРѕР»РѕРЅРєР°</b>');
+define('TEXT_TEMPLATE', 'РЁР°Р±Р»РѕРЅ:');
 
-define('TEXT_LAST_MODIFIED', 'Последние изменения:');
+define('TEXT_LAST_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
 
-define('TEXT_IMAGE_NONEXISTENT', 'КАРТИНКА ОТСУТСТВУЕТ');
-define('TEXT_YES', 'да');
-define('TEXT_NO', 'нет');
-define('TEXT_NEW_INTRO', 'Заполните следующую форму');
+define('TEXT_IMAGE_NONEXISTENT', 'РљРђР РўРРќРљРђ РћРўРЎРЈРўРЎРўР’РЈР•Рў');
+define('TEXT_YES', 'РґР°');
+define('TEXT_NO', 'РЅРµС‚');
+define('TEXT_NEW_INTRO', 'Р—Р°РїРѕР»РЅРёС‚Рµ СЃР»РµРґСѓСЋС‰СѓСЋ С„РѕСЂРјСѓ');
 
-define('TEXT_TEMPLATE_NAME', 'Название шаблона:  ');
-define('TEXT_TEMPLATE_IMAGE', 'Картинка шаблона:  ');
+define('TEXT_TEMPLATE_NAME', 'РќР°Р·РІР°РЅРёРµ С€Р°Р±Р»РѕРЅР°:  ');
+define('TEXT_TEMPLATE_IMAGE', 'РљР°СЂС‚РёРЅРєР° С€Р°Р±Р»РѕРЅР°:  ');
 
-define('TEXT_TEMPLATE_CELLPADDING_MAIN', 'Величина тэга cellpadding главной таблицы');
-define('TEXT_TEMPLATE_CELLPADDING_LEFT', 'Величина тэга cellpadding левой колонки');
-define('TEXT_TEMPLATE_CELLPADDING_RIGHT', 'Величина тэга cellpadding правой колонки');
-define('TEXT_TEMPLATE_CELLPADDING_SUB', 'Величина тэга cellpadding таблицы');
+define('TEXT_TEMPLATE_CELLPADDING_MAIN', 'Р’РµР»РёС‡РёРЅР° С‚СЌРіР° cellpadding РіР»Р°РІРЅРѕР№ С‚Р°Р±Р»РёС†С‹');
+define('TEXT_TEMPLATE_CELLPADDING_LEFT', 'Р’РµР»РёС‡РёРЅР° С‚СЌРіР° cellpadding Р»РµРІРѕР№ РєРѕР»РѕРЅРєРё');
+define('TEXT_TEMPLATE_CELLPADDING_RIGHT', 'Р’РµР»РёС‡РёРЅР° С‚СЌРіР° cellpadding РїСЂР°РІРѕР№ РєРѕР»РѕРЅРєРё');
+define('TEXT_TEMPLATE_CELLPADDING_SUB', 'Р’РµР»РёС‡РёРЅР° С‚СЌРіР° cellpadding С‚Р°Р±Р»РёС†С‹');
 
-define('TEXT_SITE_WIDTH', 'Ширина сайта');
+define('TEXT_SITE_WIDTH', 'РЁРёСЂРёРЅР° СЃР°Р№С‚Р°');
 
-define('TEXT_MOVE_RIGHT', 'Переместить в правую колонку');
-define('TEXT_MOVE_LEFT', 'Переместить в левую колонку');
+define('TEXT_MOVE_RIGHT', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ РІ РїСЂР°РІСѓСЋ РєРѕР»РѕРЅРєСѓ');
+define('TEXT_MOVE_LEFT', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ РІ Р»РµРІСѓСЋ РєРѕР»РѕРЅРєСѓ');
 
-define('TEXT_MAINPAGE_MODULES', '<b>Выберите модули для главной страницы</b>');
-define('TEXT_SHOW_CUSTOMER_GREETING', 'Показывать приветствие на главной странице?');
-define('TEXT_SHOW_ORIGINAL_PAGE_HEADERS', 'Показывать навигацию и крупные синие заголовки в шапке?');
+define('TEXT_MAINPAGE_MODULES', '<b>Р’С‹Р±РµСЂРёС‚Рµ РјРѕРґСѓР»Рё РґР»СЏ РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹</b>');
+define('TEXT_SHOW_CUSTOMER_GREETING', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРёРІРµС‚СЃС‚РІРёРµ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ?');
+define('TEXT_SHOW_ORIGINAL_PAGE_HEADERS', 'РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°РІРёРіР°С†РёСЋ Рё РєСЂСѓРїРЅС‹Рµ СЃРёРЅРёРµ Р·Р°РіРѕР»РѕРІРєРё РІ С€Р°РїРєРµ?');
 
 
-define('TEXT_TABLE_CELL_PADDING', '<b>Тэг cellpadding таблицы</b>');
-define('TEXT_OTHER', '<b>Разное</b>');
-define('TEXT_MAINPAGE_MODULES', '<b>Выберите, какие модули показывать на главной странице</b>');
+define('TEXT_TABLE_CELL_PADDING', '<b>РўСЌРі cellpadding С‚Р°Р±Р»РёС†С‹</b>');
+define('TEXT_OTHER', '<b>Р Р°Р·РЅРѕРµ</b>');
+define('TEXT_MAINPAGE_MODULES', '<b>Р’С‹Р±РµСЂРёС‚Рµ, РєР°РєРёРµ РјРѕРґСѓР»Рё РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ</b>');
 
-define('TEXT_TEMPLATE_BOX_COPY', 'Копировать боксы из:');
+define('TEXT_TEMPLATE_BOX_COPY', 'РљРѕРїРёСЂРѕРІР°С‚СЊ Р±РѕРєСЃС‹ РёР·:');
 
-define('ERROR_DIRECTORY_NOT_WRITEABLE', 'Ошибка: Директория защищена от записи, установите верные права доступа на директорию: %s');
-define('ERROR_DIRECTORY_DOES_NOT_EXIST', 'Ошибка: Директория отсутствует: %s');
+define('ERROR_DIRECTORY_NOT_WRITEABLE', 'РћС€РёР±РєР°: Р”РёСЂРµРєС‚РѕСЂРёСЏ Р·Р°С‰РёС‰РµРЅР° РѕС‚ Р·Р°РїРёСЃРё, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ РІРµСЂРЅС‹Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР° РЅР° РґРёСЂРµРєС‚РѕСЂРёСЋ: %s');
+define('ERROR_DIRECTORY_DOES_NOT_EXIST', 'РћС€РёР±РєР°: Р”РёСЂРµРєС‚РѕСЂРёСЏ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚: %s');
 ?>

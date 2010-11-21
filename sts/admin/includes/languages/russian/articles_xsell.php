@@ -10,20 +10,20 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Связанные со статьями товары');
+define('HEADING_TITLE', 'РЎРІСЏР·Р°РЅРЅС‹Рµ СЃРѕ СЃС‚Р°С‚СЊСЏРјРё С‚РѕРІР°СЂС‹');
 
-define('HEADING_ARTICLE_NAME', 'Статья');
-define('HEADING_CROSS_ASSOCIATION', 'Связанные товары');
-define('HEADING_CROSS_SELL_ACTIONS', 'Действие');
-define('HEADING_PRODUCT_NAME', 'Название товара');
-define('HEADING_PRODUCT_ORDER', 'Порядок сортировки (1=На самом верху)');
+define('HEADING_ARTICLE_NAME', 'РЎС‚Р°С‚СЊСЏ');
+define('HEADING_CROSS_ASSOCIATION', 'РЎРІСЏР·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('HEADING_CROSS_SELL_ACTIONS', 'Р”РµР№СЃС‚РІРёРµ');
+define('HEADING_PRODUCT_NAME', 'РќР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°');
+define('HEADING_PRODUCT_ORDER', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё (1=РќР° СЃР°РјРѕРј РІРµСЂС…Сѓ)');
 
-define('TEXT_DATABASE_UPDATED', 'База данных обновлена.');
-define('TEXT_NO_DELETE', 'невозможно удалить');
-define('TEXT_NO_INSERT', 'невозможно записать данные в базу данных');
-define('TEXT_NO_UPDATE', 'невозможно обновить базу данных');
+define('TEXT_DATABASE_UPDATED', 'Р‘Р°Р·Р° РґР°РЅРЅС‹С… РѕР±РЅРѕРІР»РµРЅР°.');
+define('TEXT_NO_DELETE', 'РЅРµРІРѕР·РјРѕР¶РЅРѕ СѓРґР°Р»РёС‚СЊ');
+define('TEXT_NO_INSERT', 'РЅРµРІРѕР·РјРѕР¶РЅРѕ Р·Р°РїРёСЃР°С‚СЊ РґР°РЅРЅС‹Рµ РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С…');
+define('TEXT_NO_UPDATE', 'РЅРµРІРѕР·РјРѕР¶РЅРѕ РѕР±РЅРѕРІРёС‚СЊ Р±Р°Р·Сѓ РґР°РЅРЅС‹С…');
 
-define('TEXT_LINK_MAIN_PAGE', '<a href="%s">Вернуться</a>.');
-define('TEXT_LINK_SORT_PRODUCTS', '<a href="%s">Нажмите здесь</a> чтобы изменить порядок сортировки связанных товаров.');
+define('TEXT_LINK_MAIN_PAGE', '<a href="%s">Р’РµСЂРЅСѓС‚СЊСЃСЏ</a>.');
+define('TEXT_LINK_SORT_PRODUCTS', '<a href="%s">РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ</a> С‡С‚РѕР±С‹ РёР·РјРµРЅРёС‚СЊ РїРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё СЃРІСЏР·Р°РЅРЅС‹С… С‚РѕРІР°СЂРѕРІ.');
 
 ?>

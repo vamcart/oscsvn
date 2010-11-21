@@ -1,6 +1,6 @@
 <?php
 
-define('HEADING_TITLE','Ïðàéñ-ëèñò (HTML)');
-define('TITLE_PRICE','Ïðàéñ-ëèñò (HTML)');
+define('HEADING_TITLE','ÐŸÑ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚ (HTML)');
+define('TITLE_PRICE','ÐŸÑ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚ (HTML)');
 
 ?>

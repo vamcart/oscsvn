@@ -10,17 +10,17 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Вход');
-define('NAVBAR_TITLE_2', 'Восстановление пароля');
+define('NAVBAR_TITLE_1', 'Р’С…РѕРґ');
+define('NAVBAR_TITLE_2', 'Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ РїР°СЂРѕР»СЏ');
 
-define('HEADING_TITLE', 'Я забыл свой пароль!');
+define('HEADING_TITLE', 'РЇ Р·Р°Р±С‹Р» СЃРІРѕР№ РїР°СЂРѕР»СЊ!');
 
-define('TEXT_MAIN', 'Если Вы забыли свой пароль, введите e-mail адрес, который Вы указывали при регистрации в магазине и мы отправим новый парoль на указанный e-mail.');
+define('TEXT_MAIN', 'Р•СЃР»Рё Р’С‹ Р·Р°Р±С‹Р»Рё СЃРІРѕР№ РїР°СЂРѕР»СЊ, РІРІРµРґРёС‚Рµ e-mail Р°РґСЂРµСЃ, РєРѕС‚РѕСЂС‹Р№ Р’С‹ СѓРєР°Р·С‹РІР°Р»Рё РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РІ РјР°РіР°Р·РёРЅРµ Рё РјС‹ РѕС‚РїСЂР°РІРёРј РЅРѕРІС‹Р№ РїР°СЂoР»СЊ РЅР° СѓРєР°Р·Р°РЅРЅС‹Р№ e-mail.');
 
-define('TEXT_NO_EMAIL_ADDRESS_FOUND', '<font color="#ff0000"><b>Ошибка:</b></font> E-Mail адрес не соответствует Вашей учетной записи, попробуйте ещё раз.');
+define('TEXT_NO_EMAIL_ADDRESS_FOUND', '<font color="#ff0000"><b>РћС€РёР±РєР°:</b></font> E-Mail Р°РґСЂРµСЃ РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ Р’Р°С€РµР№ СѓС‡РµС‚РЅРѕР№ Р·Р°РїРёСЃРё, РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.');
 
-define('EMAIL_PASSWORD_REMINDER_SUBJECT', STORE_NAME . ' - Ваш пароль');
-define('EMAIL_PASSWORD_REMINDER_BODY', 'Запрос на получение нового пароля был получен от ' . $_SERVER['REMOTE_ADDR'] . '.' . "\n\n" . 'Ваш новый пароль в \'' . STORE_NAME . '\' :' . "\n\n" . '   %s' . "\n\n");
+define('EMAIL_PASSWORD_REMINDER_SUBJECT', STORE_NAME . ' - Р’Р°С€ РїР°СЂРѕР»СЊ');
+define('EMAIL_PASSWORD_REMINDER_BODY', 'Р—Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ РЅРѕРІРѕРіРѕ РїР°СЂРѕР»СЏ Р±С‹Р» РїРѕР»СѓС‡РµРЅ РѕС‚ ' . $_SERVER['REMOTE_ADDR'] . '.' . "\n\n" . 'Р’Р°С€ РЅРѕРІС‹Р№ РїР°СЂРѕР»СЊ РІ \'' . STORE_NAME . '\' :' . "\n\n" . '   %s' . "\n\n");
 
-define('SUCCESS_PASSWORD_SENT', 'Выполнено: Ваш новый пароль отправлен Вам по e-mail.');
+define('SUCCESS_PASSWORD_SENT', 'Р’С‹РїРѕР»РЅРµРЅРѕ: Р’Р°С€ РЅРѕРІС‹Р№ РїР°СЂРѕР»СЊ РѕС‚РїСЂР°РІР»РµРЅ Р’Р°Рј РїРѕ e-mail.');
 ?>

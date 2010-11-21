@@ -10,124 +10,124 @@
   Released under the GNU General Public License
 */
 
-define('TITLE_PRINT_ORDER', 'СЧЕТ');
-define('TITLE_PRINT_ORDER_NUM', '№ ЗАКАЗА:');
+define('TITLE_PRINT_ORDER', 'РЎР§Р•Рў');
+define('TITLE_PRINT_ORDER_NUM', 'в„– Р—РђРљРђР—Рђ:');
 define('TITLE_PRINT_NUMBER_TEXT', ' ');
 
-define('TABLE_HEADING_INN', 'ИНН');
-define('TABLE_HEADING_CONTNUM', 'Счет №');
-define('TABLE_HEADING_BIK', 'БИК');
-define('TABLE_HEADING_NUM', '№');
-define('TABLE_HEADING_OT', 'от');
-define('TABLE_HEADING_SUMMA', 'К оплате:');
-define('TABLE_HEADING_COMMENTS', 'Коментарии');
-define('TABLE_HEADING_PRODUCTS_MODEL', 'Артикул	');
-define('TABLE_HEADING_PRODUCTS_CONT', 'Кол-во');
-define('TABLE_HEADING_PRODUCTS', 'Товар');
-define('TABLE_HEADING_TAX', 'НДС');
-define('TABLE_HEADING_PRICE_EXCLUDING_TAX', 'Цена за ед.<br> без НДС');
-define('TABLE_HEADING_PRICE_INCLUDING_TAX', 'Цена за ед с НДС');
-define('TABLE_HEADING_TOTAL_EXCLUDING_TAX', 'Сумма без НДС');
-define('TABLE_HEADING_TOTAL_INCLUDING_TAX', 'Сумма с НДС');
+define('TABLE_HEADING_INN', 'РРќРќ');
+define('TABLE_HEADING_CONTNUM', 'РЎС‡РµС‚ в„–');
+define('TABLE_HEADING_BIK', 'Р‘РРљ');
+define('TABLE_HEADING_NUM', 'в„–');
+define('TABLE_HEADING_OT', 'РѕС‚');
+define('TABLE_HEADING_SUMMA', 'Рљ РѕРїР»Р°С‚Рµ:');
+define('TABLE_HEADING_COMMENTS', 'РљРѕРјРµРЅС‚Р°СЂРёРё');
+define('TABLE_HEADING_PRODUCTS_MODEL', 'РђСЂС‚РёРєСѓР»	');
+define('TABLE_HEADING_PRODUCTS_CONT', 'РљРѕР»-РІРѕ');
+define('TABLE_HEADING_PRODUCTS', 'РўРѕРІР°СЂ');
+define('TABLE_HEADING_TAX', 'РќР”РЎ');
+define('TABLE_HEADING_PRICE_EXCLUDING_TAX', 'Р¦РµРЅР° Р·Р° РµРґ.<br> Р±РµР· РќР”РЎ');
+define('TABLE_HEADING_PRICE_INCLUDING_TAX', 'Р¦РµРЅР° Р·Р° РµРґ СЃ РќР”РЎ');
+define('TABLE_HEADING_TOTAL_EXCLUDING_TAX', 'РЎСѓРјРјР° Р±РµР· РќР”РЎ');
+define('TABLE_HEADING_TOTAL_INCLUDING_TAX', 'РЎСѓРјРјР° СЃ РќР”РЎ');
 
-define('IMAGE_BUTTON_PRINT', 'Печать');
+define('IMAGE_BUTTON_PRINT', 'РџРµС‡Р°С‚СЊ');
 
-define('ENTRY_EXT_DA', 'ПОСТАВЩИК:');
-define('ENTRY_EXT_DA_1', 'Получатель');
-define('ENTRY_EXT_DA_2', 'Банк получателя');
+define('ENTRY_EXT_DA', 'РџРћРЎРўРђР’Р©РРљ:');
+define('ENTRY_EXT_DA_1', 'РџРѕР»СѓС‡Р°С‚РµР»СЊ');
+define('ENTRY_EXT_DA_2', 'Р‘Р°РЅРє РїРѕР»СѓС‡Р°С‚РµР»СЏ');
 
-define('ENTRY_EXT_DA_3', 'Сбербанк России г. Москва');
+define('ENTRY_EXT_DA_3', 'РЎР±РµСЂР±Р°РЅРє Р РѕСЃСЃРёРё Рі. РњРѕСЃРєРІР°');
 
-define('ENTRY_OBR_DA', 'Образец заполнения платежного поручения:');
-define('ENTRY_SOLD_TO', 'ПЛАТЕЛЬЩИК:');
-define('ENTRY_SOLD_TO_1', 'ПРЕДСТАВИТЕЛЬ ПЛАТЕЛЬЩИКА:');
-define('ENTRY_SOLD_TO_2', 'ТЕЛЕФОНЫ:');
-define('ENTRY_SOLD_TO_INN', 'ИНН');
-define('ENTRY_SOLD_TO_KPP', 'КПП');
-define('ENTRY_SOLD_TO_OGRN', 'ОГРН');
-define('ENTRY_SOLD_TO_OKPO', 'ОКПО');
-define('ENTRY_SOLD_TO_RS', 'Р/с');
-define('ENTRY_SOLD_TO_BANK_NAME', 'Банк');
-define('ENTRY_SOLD_TO_BIK', 'БИК');
-define('ENTRY_SOLD_TO_KS', 'К/с');
-define('ENTRY_SHIP_TO', 'ГРУЗОПОЛУЧАТЕЛЬ:');
-define('ENTRY_PAYMENT_METHOD', 'Форма оплаты:');
-define('ENTRY_BOSS', 'Руководитель:');
+define('ENTRY_OBR_DA', 'РћР±СЂР°Р·РµС† Р·Р°РїРѕР»РЅРµРЅРёСЏ РїР»Р°С‚РµР¶РЅРѕРіРѕ РїРѕСЂСѓС‡РµРЅРёСЏ:');
+define('ENTRY_SOLD_TO', 'РџР›РђРўР•Р›Р¬Р©РРљ:');
+define('ENTRY_SOLD_TO_1', 'РџР Р•Р”РЎРўРђР’РРўР•Р›Р¬ РџР›РђРўР•Р›Р¬Р©РРљРђ:');
+define('ENTRY_SOLD_TO_2', 'РўР•Р›Р•Р¤РћРќР«:');
+define('ENTRY_SOLD_TO_INN', 'РРќРќ');
+define('ENTRY_SOLD_TO_KPP', 'РљРџРџ');
+define('ENTRY_SOLD_TO_OGRN', 'РћР“Р Рќ');
+define('ENTRY_SOLD_TO_OKPO', 'РћРљРџРћ');
+define('ENTRY_SOLD_TO_RS', 'Р /СЃ');
+define('ENTRY_SOLD_TO_BANK_NAME', 'Р‘Р°РЅРє');
+define('ENTRY_SOLD_TO_BIK', 'Р‘РРљ');
+define('ENTRY_SOLD_TO_KS', 'Рљ/СЃ');
+define('ENTRY_SHIP_TO', 'Р“Р РЈР—РћРџРћР›РЈР§РђРўР•Р›Р¬:');
+define('ENTRY_PAYMENT_METHOD', 'Р¤РѕСЂРјР° РѕРїР»Р°С‚С‹:');
+define('ENTRY_BOSS', 'Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ:');
 
 define('ENTRY_BOSS_NOME', MODULE_PAYMENT_RUS_SCHET_9);
 
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_1', MODULE_PAYMENT_RUS_SCHET_1);  // Банк
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_2', MODULE_PAYMENT_RUS_SCHET_2);  // Счет получателя
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_3', MODULE_PAYMENT_RUS_SCHET_3);  // БИК
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_4', MODULE_PAYMENT_RUS_SCHET_4);  // Счет банка
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_5', MODULE_PAYMENT_RUS_SCHET_5);  // КПП
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_6', MODULE_PAYMENT_RUS_SCHET_6);  // Получатель
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_7', MODULE_PAYMENT_RUS_SCHET_7);  // ИНН
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_1', MODULE_PAYMENT_RUS_SCHET_1);  // Р‘Р°РЅРє
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_2', MODULE_PAYMENT_RUS_SCHET_2);  // РЎС‡РµС‚ РїРѕР»СѓС‡Р°С‚РµР»СЏ
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_3', MODULE_PAYMENT_RUS_SCHET_3);  // Р‘РРљ
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_4', MODULE_PAYMENT_RUS_SCHET_4);  // РЎС‡РµС‚ Р±Р°РЅРєР°
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_5', MODULE_PAYMENT_RUS_SCHET_5);  // РљРџРџ
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_6', MODULE_PAYMENT_RUS_SCHET_6);  // РџРѕР»СѓС‡Р°С‚РµР»СЊ
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_7', MODULE_PAYMENT_RUS_SCHET_7);  // РРќРќ
 
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_8','<font color=red>Оплата производится в рублях по курсу ЦБ РФ на день покупки</font><br>После оплаты заказа обязательно сообщите нам по электронной почте о факте оплаты или позвоните по тел. В сообщении укажите дату и сумму оплаты, номер заказа, ФИО и номер платежного документа. Оригиналы счета, счет-фактуры и накладных будут предоставлены при получении товара или высланы по почте.');
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_8','<font color=red>РћРїР»Р°С‚Р° РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ РІ СЂСѓР±Р»СЏС… РїРѕ РєСѓСЂСЃСѓ Р¦Р‘ Р Р¤ РЅР° РґРµРЅСЊ РїРѕРєСѓРїРєРё</font><br>РџРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЃРѕРѕР±С‰РёС‚Рµ РЅР°Рј РїРѕ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚Рµ Рѕ С„Р°РєС‚Рµ РѕРїР»Р°С‚С‹ РёР»Рё РїРѕР·РІРѕРЅРёС‚Рµ РїРѕ С‚РµР». Р’ СЃРѕРѕР±С‰РµРЅРёРё СѓРєР°Р¶РёС‚Рµ РґР°С‚Сѓ Рё СЃСѓРјРјСѓ РѕРїР»Р°С‚С‹, РЅРѕРјРµСЂ Р·Р°РєР°Р·Р°, Р¤РРћ Рё РЅРѕРјРµСЂ РїР»Р°С‚РµР¶РЅРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р°. РћСЂРёРіРёРЅР°Р»С‹ СЃС‡РµС‚Р°, СЃС‡РµС‚-С„Р°РєС‚СѓСЂС‹ Рё РЅР°РєР»Р°РґРЅС‹С… Р±СѓРґСѓС‚ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅС‹ РїСЂРё РїРѕР»СѓС‡РµРЅРёРё С‚РѕРІР°СЂР° РёР»Рё РІС‹СЃР»Р°РЅС‹ РїРѕ РїРѕС‡С‚Рµ.');
 
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_9','<font color=red>ВНИМАНИЕ!</font> Оплата данного предварительного счета означает согласие с условиями поставки товара. Счет действителен в течение 3-х банковских дней с момента выписки. По истечении срока действия счета оплату производить строго по уведомлению.');
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_9','<font color=red>Р’РќРРњРђРќРР•!</font> РћРїР»Р°С‚Р° РґР°РЅРЅРѕРіРѕ РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ СЃС‡РµС‚Р° РѕР·РЅР°С‡Р°РµС‚ СЃРѕРіР»Р°СЃРёРµ СЃ СѓСЃР»РѕРІРёСЏРјРё РїРѕСЃС‚Р°РІРєРё С‚РѕРІР°СЂР°. РЎС‡РµС‚ РґРµР№СЃС‚РІРёС‚РµР»РµРЅ РІ С‚РµС‡РµРЅРёРµ 3-С… Р±Р°РЅРєРѕРІСЃРєРёС… РґРЅРµР№ СЃ РјРѕРјРµРЅС‚Р° РІС‹РїРёСЃРєРё. РџРѕ РёСЃС‚РµС‡РµРЅРёРё СЃСЂРѕРєР° РґРµР№СЃС‚РІРёСЏ СЃС‡РµС‚Р° РѕРїР»Р°С‚Сѓ РїСЂРѕРёР·РІРѕРґРёС‚СЊ СЃС‚СЂРѕРіРѕ РїРѕ СѓРІРµРґРѕРјР»РµРЅРёСЋ.');
 
-define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_10', MODULE_PAYMENT_RUS_SCHET_8); // Адрес получателя
+define('MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_10', MODULE_PAYMENT_RUS_SCHET_8); // РђРґСЂРµСЃ РїРѕР»СѓС‡Р°С‚РµР»СЏ
 
-define('text_zero', 'ноль');
-define('text_three', 'три');
-define('text_four', 'четыре');
-define('text_five', 'пять');
-define('text_six', 'шесть');
-define('text_seven', 'семь');
-define('text_eight', 'восемь');
-define('text_nine', 'девять');
-define('text_ten', 'десять');
-define('text_eleven', 'одинадцать');
-define('text_twelve', 'двенадцать');
-define('text_thirteen', 'тринадцать');
-define('text_fourteen', 'четырнадцать');
-define('text_fifteen', 'пятнадцать');
-define('text_sixteen', 'шестнадцать');
-define('text_seventeen', 'семнадцать');
-define('text_eighteen', 'восемнадцать');
-define('text_nineteen', 'девятнадцать');
-define('text_twenty', 'двадцать');
-define('text_thirty', 'тридцать');
-define('text_forty', 'сорок');
-define('text_fifty', 'пятьдесят');
-define('text_sixty', 'шестьдесят');
-define('text_seventy', 'семьдесят');
-define('text_eighty', 'восемьдесят');
-define('text_ninety', 'девяносто');
-define('text_hundred', 'сто');
-define('text_two_hundred', 'двести');
-define('text_three_hundred', 'триста');
-define('text_four_hundred', 'четыреста');
-define('text_five_hundred', 'пятьсот');
-define('text_six_hundred', 'шестьсот');
-define('text_seven_hundred', 'семьсот');
-define('text_eight_hundred', 'восемьсот');
-define('text_nine_hundred', 'девятьсот');
-define('text_penny', 'копейки');
-define('text_kopecks', 'копеек');
-define('text_single_kopek', 'одна копейка');
-define('text_two_penny', 'две копейки');
-define('text_ruble', 'рубля');
-define('text_rubles', 'рублей');
-define('text_one_ruble', 'один рубль');
-define('text_two_rubles', 'два рубля');
-define('text_thousands', 'тысячи');
-define('text_thousand', 'тысяч');
-define('text_one_thousand', 'одна тысяча');
-define('text_two_thousand', 'две тысячи');
-define('text_million', 'миллиона');
-define('text_millions', 'миллионов');
-define('text_one_million', 'один миллион');
-define('text_two_million', 'два миллиона');
-define('text_billion', 'миллиарда');
-define('text_billions', 'миллиардов');
-define('text_one_billion', 'один миллиард');
-define('text_two_billion', 'два миллиарда');
-define('text_trillion', 'триллиона');
-define('text_trillions', 'триллионов');
-define('text_one_trillion', 'один триллион');
-define('text_two_trillion', 'два триллиона');
+define('text_zero', 'РЅРѕР»СЊ');
+define('text_three', 'С‚СЂРё');
+define('text_four', 'С‡РµС‚С‹СЂРµ');
+define('text_five', 'РїСЏС‚СЊ');
+define('text_six', 'С€РµСЃС‚СЊ');
+define('text_seven', 'СЃРµРјСЊ');
+define('text_eight', 'РІРѕСЃРµРјСЊ');
+define('text_nine', 'РґРµРІСЏС‚СЊ');
+define('text_ten', 'РґРµСЃСЏС‚СЊ');
+define('text_eleven', 'РѕРґРёРЅР°РґС†Р°С‚СЊ');
+define('text_twelve', 'РґРІРµРЅР°РґС†Р°С‚СЊ');
+define('text_thirteen', 'С‚СЂРёРЅР°РґС†Р°С‚СЊ');
+define('text_fourteen', 'С‡РµС‚С‹СЂРЅР°РґС†Р°С‚СЊ');
+define('text_fifteen', 'РїСЏС‚РЅР°РґС†Р°С‚СЊ');
+define('text_sixteen', 'С€РµСЃС‚РЅР°РґС†Р°С‚СЊ');
+define('text_seventeen', 'СЃРµРјРЅР°РґС†Р°С‚СЊ');
+define('text_eighteen', 'РІРѕСЃРµРјРЅР°РґС†Р°С‚СЊ');
+define('text_nineteen', 'РґРµРІСЏС‚РЅР°РґС†Р°С‚СЊ');
+define('text_twenty', 'РґРІР°РґС†Р°С‚СЊ');
+define('text_thirty', 'С‚СЂРёРґС†Р°С‚СЊ');
+define('text_forty', 'СЃРѕСЂРѕРє');
+define('text_fifty', 'РїСЏС‚СЊРґРµСЃСЏС‚');
+define('text_sixty', 'С€РµСЃС‚СЊРґРµСЃСЏС‚');
+define('text_seventy', 'СЃРµРјСЊРґРµСЃСЏС‚');
+define('text_eighty', 'РІРѕСЃРµРјСЊРґРµСЃСЏС‚');
+define('text_ninety', 'РґРµРІСЏРЅРѕСЃС‚Рѕ');
+define('text_hundred', 'СЃС‚Рѕ');
+define('text_two_hundred', 'РґРІРµСЃС‚Рё');
+define('text_three_hundred', 'С‚СЂРёСЃС‚Р°');
+define('text_four_hundred', 'С‡РµС‚С‹СЂРµСЃС‚Р°');
+define('text_five_hundred', 'РїСЏС‚СЊСЃРѕС‚');
+define('text_six_hundred', 'С€РµСЃС‚СЊСЃРѕС‚');
+define('text_seven_hundred', 'СЃРµРјСЊСЃРѕС‚');
+define('text_eight_hundred', 'РІРѕСЃРµРјСЊСЃРѕС‚');
+define('text_nine_hundred', 'РґРµРІСЏС‚СЊСЃРѕС‚');
+define('text_penny', 'РєРѕРїРµР№РєРё');
+define('text_kopecks', 'РєРѕРїРµРµРє');
+define('text_single_kopek', 'РѕРґРЅР° РєРѕРїРµР№РєР°');
+define('text_two_penny', 'РґРІРµ РєРѕРїРµР№РєРё');
+define('text_ruble', 'СЂСѓР±Р»СЏ');
+define('text_rubles', 'СЂСѓР±Р»РµР№');
+define('text_one_ruble', 'РѕРґРёРЅ СЂСѓР±Р»СЊ');
+define('text_two_rubles', 'РґРІР° СЂСѓР±Р»СЏ');
+define('text_thousands', 'С‚С‹СЃСЏС‡Рё');
+define('text_thousand', 'С‚С‹СЃСЏС‡');
+define('text_one_thousand', 'РѕРґРЅР° С‚С‹СЃСЏС‡Р°');
+define('text_two_thousand', 'РґРІРµ С‚С‹СЃСЏС‡Рё');
+define('text_million', 'РјРёР»Р»РёРѕРЅР°');
+define('text_millions', 'РјРёР»Р»РёРѕРЅРѕРІ');
+define('text_one_million', 'РѕРґРёРЅ РјРёР»Р»РёРѕРЅ');
+define('text_two_million', 'РґРІР° РјРёР»Р»РёРѕРЅР°');
+define('text_billion', 'РјРёР»Р»РёР°СЂРґР°');
+define('text_billions', 'РјРёР»Р»РёР°СЂРґРѕРІ');
+define('text_one_billion', 'РѕРґРёРЅ РјРёР»Р»РёР°СЂРґ');
+define('text_two_billion', 'РґРІР° РјРёР»Р»РёР°СЂРґР°');
+define('text_trillion', 'С‚СЂРёР»Р»РёРѕРЅР°');
+define('text_trillions', 'С‚СЂРёР»Р»РёРѕРЅРѕРІ');
+define('text_one_trillion', 'РѕРґРёРЅ С‚СЂРёР»Р»РёРѕРЅ');
+define('text_two_trillion', 'РґРІР° С‚СЂРёР»Р»РёРѕРЅР°');
 
 ?>

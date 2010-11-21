@@ -10,30 +10,30 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Ìîè äàííûå');
-define('NAVBAR_TITLE_2', 'Àäðåñíàÿ êíèãà');
+define('NAVBAR_TITLE_1', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+define('NAVBAR_TITLE_2', 'ÐÐ´Ñ€ÐµÑÐ½Ð°Ñ ÐºÐ½Ð¸Ð³Ð°');
 
-define('NAVBAR_TITLE_ADD_ENTRY', 'Íîâàÿ çàïèñü');
-define('NAVBAR_TITLE_MODIFY_ENTRY', 'Èçìåíèòü çàïèñü');
-define('NAVBAR_TITLE_DELETE_ENTRY', 'Óäàëèòü çàïèñü');
+define('NAVBAR_TITLE_ADD_ENTRY', 'ÐÐ¾Ð²Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ');
+define('NAVBAR_TITLE_MODIFY_ENTRY', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð·Ð°Ð¿Ð¸ÑÑŒ');
+define('NAVBAR_TITLE_DELETE_ENTRY', 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð·Ð°Ð¿Ð¸ÑÑŒ');
 
-define('HEADING_TITLE_ADD_ENTRY', 'Íîâàÿ çàïèñü');
-define('HEADING_TITLE_MODIFY_ENTRY', 'Èçìåíèòü çàïèñü');
-define('HEADING_TITLE_DELETE_ENTRY', 'Óäàëèòü çàïèñü');
+define('HEADING_TITLE_ADD_ENTRY', 'ÐÐ¾Ð²Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ');
+define('HEADING_TITLE_MODIFY_ENTRY', 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð·Ð°Ð¿Ð¸ÑÑŒ');
+define('HEADING_TITLE_DELETE_ENTRY', 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð·Ð°Ð¿Ð¸ÑÑŒ');
 
-define('DELETE_ADDRESS_TITLE', 'Óäàëèòü àäðåñ');
-define('DELETE_ADDRESS_DESCRIPTION', 'Âû äåéñòâèòåëüíî õîòèòå óäàëèòü âûáðàííûå àäðåñà èç àäðåñíîé êíèãè?');
+define('DELETE_ADDRESS_TITLE', 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ');
+define('DELETE_ADDRESS_DESCRIPTION', 'Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ðµ Ð°Ð´Ñ€ÐµÑÐ° Ð¸Ð· Ð°Ð´Ñ€ÐµÑÐ½Ð¾Ð¹ ÐºÐ½Ð¸Ð³Ð¸?');
 
-define('NEW_ADDRESS_TITLE', 'Íîâàÿ çàïèñü');
+define('NEW_ADDRESS_TITLE', 'ÐÐ¾Ð²Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ');
 
-define('SELECTED_ADDRESS', 'Âûáðàííûé àäðåñ');
-define('SET_AS_PRIMARY', 'Ñäåëàòü ïî óìîë÷àíèþ.');
+define('SELECTED_ADDRESS', 'Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ');
+define('SET_AS_PRIMARY', 'Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ.');
 
-define('SUCCESS_ADDRESS_BOOK_ENTRY_DELETED', 'Âûáðàííûé àäðåñ óäàë¸í èç àäðåñíîé êíèãè.');
-define('SUCCESS_ADDRESS_BOOK_ENTRY_UPDATED', 'Âàøà àäðåñíàÿ êíèãà îáíîâëåíà.');
+define('SUCCESS_ADDRESS_BOOK_ENTRY_DELETED', 'Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ ÑƒÐ´Ð°Ð»Ñ‘Ð½ Ð¸Ð· Ð°Ð´Ñ€ÐµÑÐ½Ð¾Ð¹ ÐºÐ½Ð¸Ð³Ð¸.');
+define('SUCCESS_ADDRESS_BOOK_ENTRY_UPDATED', 'Ð’Ð°ÑˆÐ° Ð°Ð´Ñ€ÐµÑÐ½Ð°Ñ ÐºÐ½Ð¸Ð³Ð° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð°.');
 
-define('WARNING_PRIMARY_ADDRESS_DELETION', 'Àäðåñ, óñòàíîâëåííûé ïî óìîë÷àíèþ íå ìîæåò áûòü óäàë¸í. Óñòàíîâèòå ñòàòóñ ïî óìîë÷àíèþ íà äðóãîé àäðåñ è ïîïðîáóéòå åù¸ ðàç.');
+define('WARNING_PRIMARY_ADDRESS_DELETION', 'ÐÐ´Ñ€ÐµÑ, ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ‹Ð¹ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ ÑƒÐ´Ð°Ð»Ñ‘Ð½. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð½Ð° Ð´Ñ€ÑƒÐ³Ð¾Ð¹ Ð°Ð´Ñ€ÐµÑ Ð¸ Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ñ‘ Ñ€Ð°Ð·.');
 
-define('ERROR_NONEXISTING_ADDRESS_BOOK_ENTRY', 'Àäðåñíàÿ êíèãà íå íàéäåíà.');
-define('ERROR_ADDRESS_BOOK_FULL', 'Âàøà àäðåñíàÿ êíèãà ïîëíîñòüþ çàïîëíåíà. Óäàëèòå íåíóæíûé Âàì àäðåñ è òîëüêî ïîñëå ýòîãî Âû ñìîæåòå äîáàâèòü íîâûé àäðåñ.');
+define('ERROR_NONEXISTING_ADDRESS_BOOK_ENTRY', 'ÐÐ´Ñ€ÐµÑÐ½Ð°Ñ ÐºÐ½Ð¸Ð³Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.');
+define('ERROR_ADDRESS_BOOK_FULL', 'Ð’Ð°ÑˆÐ° Ð°Ð´Ñ€ÐµÑÐ½Ð°Ñ ÐºÐ½Ð¸Ð³Ð° Ð¿Ð¾Ð»Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð°. Ð£Ð´Ð°Ð»Ð¸Ñ‚Ðµ Ð½ÐµÐ½ÑƒÐ¶Ð½Ñ‹Ð¹ Ð’Ð°Ð¼ Ð°Ð´Ñ€ÐµÑ Ð¸ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¿Ð¾ÑÐ»Ðµ ÑÑ‚Ð¾Ð³Ð¾ Ð’Ñ‹ ÑÐ¼Ð¾Ð¶ÐµÑ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ.');
 ?>

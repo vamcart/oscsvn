@@ -10,44 +10,44 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Администратор');
+define('HEADING_TITLE', 'РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ');
 
-define('TABLE_HEADING_ACCOUNT', 'Мои данные');
+define('TABLE_HEADING_ACCOUNT', 'РњРѕРё РґР°РЅРЅС‹Рµ');
 
-define('TEXT_INFO_FULLNAME', '<b>Имя: </b>');
-define('TEXT_INFO_FIRSTNAME', '<b>Имя: </b>');
-define('TEXT_INFO_LASTNAME', '<b>Фамилия: </b>');
-define('TEXT_INFO_EMAIL', '<b>Email Адрес: </b>');
-define('TEXT_INFO_PASSWORD', '<b>Пароль: </b>');
-define('TEXT_INFO_PASSWORD_HIDDEN', '-Скрыт-');
-define('TEXT_INFO_PASSWORD_CONFIRM', '<b>Подтвердите пароль: </b>');
-define('TEXT_INFO_CREATED', '<b>Запись создана: </b>');
-define('TEXT_INFO_LOGDATE', '<b>Последний вход: </b>');
-define('TEXT_INFO_LOGNUM', '<b>Количество входов: </b>');
-define('TEXT_INFO_GROUP', '<b>Группа: </b>');
-define('TEXT_INFO_ERROR', '<font color="red">Данный Email адрес уже зарегистрирован! Попробуйте ещё раз.</font>');
-define('TEXT_INFO_MODIFIED', 'Последние изменения: ');
+define('TEXT_INFO_FULLNAME', '<b>РРјСЏ: </b>');
+define('TEXT_INFO_FIRSTNAME', '<b>РРјСЏ: </b>');
+define('TEXT_INFO_LASTNAME', '<b>Р¤Р°РјРёР»РёСЏ: </b>');
+define('TEXT_INFO_EMAIL', '<b>Email РђРґСЂРµСЃ: </b>');
+define('TEXT_INFO_PASSWORD', '<b>РџР°СЂРѕР»СЊ: </b>');
+define('TEXT_INFO_PASSWORD_HIDDEN', '-РЎРєСЂС‹С‚-');
+define('TEXT_INFO_PASSWORD_CONFIRM', '<b>РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ: </b>');
+define('TEXT_INFO_CREATED', '<b>Р—Р°РїРёСЃСЊ СЃРѕР·РґР°РЅР°: </b>');
+define('TEXT_INFO_LOGDATE', '<b>РџРѕСЃР»РµРґРЅРёР№ РІС…РѕРґ: </b>');
+define('TEXT_INFO_LOGNUM', '<b>РљРѕР»РёС‡РµСЃС‚РІРѕ РІС…РѕРґРѕРІ: </b>');
+define('TEXT_INFO_GROUP', '<b>Р“СЂСѓРїРїР°: </b>');
+define('TEXT_INFO_ERROR', '<font color="red">Р”Р°РЅРЅС‹Р№ Email Р°РґСЂРµСЃ СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ! РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.</font>');
+define('TEXT_INFO_MODIFIED', 'РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ: ');
 
-define('TEXT_INFO_HEADING_DEFAULT', 'Изменить данные ');
-define('TEXT_INFO_HEADING_CONFIRM_PASSWORD', 'Введите пароль ');
-define('TEXT_INFO_INTRO_CONFIRM_PASSWORD', 'Пароль:');
-define('TEXT_INFO_INTRO_CONFIRM_PASSWORD_ERROR', '<font color="red"><b>ОШИБКА:</b> неверный пароль!</font>');
-define('TEXT_INFO_INTRO_DEFAULT', 'Нажмите кнопку <b>изменить</b> для редактирования данных.');
+define('TEXT_INFO_HEADING_DEFAULT', 'РР·РјРµРЅРёС‚СЊ РґР°РЅРЅС‹Рµ ');
+define('TEXT_INFO_HEADING_CONFIRM_PASSWORD', 'Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ ');
+define('TEXT_INFO_INTRO_CONFIRM_PASSWORD', 'РџР°СЂРѕР»СЊ:');
+define('TEXT_INFO_INTRO_CONFIRM_PASSWORD_ERROR', '<font color="red"><b>РћРЁРР‘РљРђ:</b> РЅРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ!</font>');
+define('TEXT_INFO_INTRO_DEFAULT', 'РќР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ <b>РёР·РјРµРЅРёС‚СЊ</b> РґР»СЏ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ РґР°РЅРЅС‹С….');
 define('TEXT_INFO_INTRO_DEFAULT_FIRST_TIME', '');
-define('TEXT_INFO_INTRO_DEFAULT_FIRST', '<br><b>ВНИМАНИЕ:</b><br>Здравствуйте, <b>%s</b>, мы рекомендуем Вам изменить email адрес (<font color="red">admin@localhost</font>) и пароль!');
-define('TEXT_INFO_INTRO_EDIT_PROCESS', 'Все поля формы обязательны для заполнения. Нажмите кнопку "сохранить" для сохранения внесённых изменений.');
+define('TEXT_INFO_INTRO_DEFAULT_FIRST', '<br><b>Р’РќРРњРђРќРР•:</b><br>Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, <b>%s</b>, РјС‹ СЂРµРєРѕРјРµРЅРґСѓРµРј Р’Р°Рј РёР·РјРµРЅРёС‚СЊ email Р°РґСЂРµСЃ (<font color="red">admin@localhost</font>) Рё РїР°СЂРѕР»СЊ!');
+define('TEXT_INFO_INTRO_EDIT_PROCESS', 'Р’СЃРµ РїРѕР»СЏ С„РѕСЂРјС‹ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ. РќР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ "СЃРѕС…СЂР°РЅРёС‚СЊ" РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІРЅРµСЃС‘РЅРЅС‹С… РёР·РјРµРЅРµРЅРёР№.');
 
-define('JS_ALERT_FIRSTNAME',        '- Вы не указали своё Имя. \n');
-define('JS_ALERT_LASTNAME',         '- Вы не указали свою Фамилию. \n');
-define('JS_ALERT_EMAIL',            '- Вы не указали свой Email адрес. \n');
-define('JS_ALERT_PASSWORD',         '- Вы не указали свой Пароль. \n');
-define('JS_ALERT_FIRSTNAME_LENGTH', '- Поле Имя должно содержать как минимум символов: ');
-define('JS_ALERT_LASTNAME_LENGTH',  '- Поле Фамилия должно содержать как минимум символов: ');
-define('JS_ALERT_PASSWORD_LENGTH',  '- Поле Пароль должно содержать как минимум символов: ');
-define('JS_ALERT_EMAIL_FORMAT',     '- Вы неправильно написали Email адрес! \n');
-define('JS_ALERT_EMAIL_USED',       '- Введённый Email адрес уже зарегистрирован! \n');
-define('JS_ALERT_PASSWORD_CONFIRM', '- Вы не ввели пароль в поле Подтвердите пароль! \n');
+define('JS_ALERT_FIRSTNAME',        '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕС‘ РРјСЏ. \n');
+define('JS_ALERT_LASTNAME',         '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕСЋ Р¤Р°РјРёР»РёСЋ. \n');
+define('JS_ALERT_EMAIL',            '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕР№ Email Р°РґСЂРµСЃ. \n');
+define('JS_ALERT_PASSWORD',         '- Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕР№ РџР°СЂРѕР»СЊ. \n');
+define('JS_ALERT_FIRSTNAME_LENGTH', '- РџРѕР»Рµ РРјСЏ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј СЃРёРјРІРѕР»РѕРІ: ');
+define('JS_ALERT_LASTNAME_LENGTH',  '- РџРѕР»Рµ Р¤Р°РјРёР»РёСЏ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј СЃРёРјРІРѕР»РѕРІ: ');
+define('JS_ALERT_PASSWORD_LENGTH',  '- РџРѕР»Рµ РџР°СЂРѕР»СЊ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј СЃРёРјРІРѕР»РѕРІ: ');
+define('JS_ALERT_EMAIL_FORMAT',     '- Р’С‹ РЅРµРїСЂР°РІРёР»СЊРЅРѕ РЅР°РїРёСЃР°Р»Рё Email Р°РґСЂРµСЃ! \n');
+define('JS_ALERT_EMAIL_USED',       '- Р’РІРµРґС‘РЅРЅС‹Р№ Email Р°РґСЂРµСЃ СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ! \n');
+define('JS_ALERT_PASSWORD_CONFIRM', '- Р’С‹ РЅРµ РІРІРµР»Рё РїР°СЂРѕР»СЊ РІ РїРѕР»Рµ РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ! \n');
 
-define('ADMIN_EMAIL_SUBJECT', 'Ваши данные изменены!');
-define('ADMIN_EMAIL_TEXT', 'Здравствуйте, %s!' . "\n\n" . 'Ваша информация успешно изменена. Если Вы не изменяли свою информацию, обязательно свяжитесь с администратором, возможно, кто-то пытается получить доступ к Вашей информации!!' . "\n\n" . 'Сайт: %s' . "\n" . 'Email: %s' . "\n" . 'Пароль: %s' . "\n\n" . 'Спасибо!' . "\n" . '%s' . "\n\n" . 'Это письмо отправлено автоматически, не нужно на него отвечать!'); 
+define('ADMIN_EMAIL_SUBJECT', 'Р’Р°С€Рё РґР°РЅРЅС‹Рµ РёР·РјРµРЅРµРЅС‹!');
+define('ADMIN_EMAIL_TEXT', 'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, %s!' . "\n\n" . 'Р’Р°С€Р° РёРЅС„РѕСЂРјР°С†РёСЏ СѓСЃРїРµС€РЅРѕ РёР·РјРµРЅРµРЅР°. Р•СЃР»Рё Р’С‹ РЅРµ РёР·РјРµРЅСЏР»Рё СЃРІРѕСЋ РёРЅС„РѕСЂРјР°С†РёСЋ, РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЃРІСЏР¶РёС‚РµСЃСЊ СЃ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј, РІРѕР·РјРѕР¶РЅРѕ, РєС‚Рѕ-С‚Рѕ РїС‹С‚Р°РµС‚СЃСЏ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃС‚СѓРї Рє Р’Р°С€РµР№ РёРЅС„РѕСЂРјР°С†РёРё!!' . "\n\n" . 'РЎР°Р№С‚: %s' . "\n" . 'Email: %s' . "\n" . 'РџР°СЂРѕР»СЊ: %s' . "\n\n" . 'РЎРїР°СЃРёР±Рѕ!' . "\n" . '%s' . "\n\n" . 'Р­С‚Рѕ РїРёСЃСЊРјРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё, РЅРµ РЅСѓР¶РЅРѕ РЅР° РЅРµРіРѕ РѕС‚РІРµС‡Р°С‚СЊ!'); 
 ?>

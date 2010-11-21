@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Îòçûâû');
-define('HEADING_TITLE', 'Âû õîòèòå ÷òî-íèáóäü äîáàâèòü?');
-define('TEXT_OF_5_STARS', '%s èç 5 çâåçä!');
+define('NAVBAR_TITLE', 'ÐžÑ‚Ð·Ñ‹Ð²Ñ‹');
+define('HEADING_TITLE', 'Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ñ‡Ñ‚Ð¾-Ð½Ð¸Ð±ÑƒÐ´ÑŒ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ?');
+define('TEXT_OF_5_STARS', '%s Ð¸Ð· 5 Ð·Ð²ÐµÐ·Ð´!');
 ?>

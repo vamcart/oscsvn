@@ -10,14 +10,14 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Ìîè äàííûå');
-define('NAVBAR_TITLE_2', 'Ðàññûëêà');
+define('NAVBAR_TITLE_1', 'ÐœÐ¾Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ');
+define('NAVBAR_TITLE_2', 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°');
 
-define('HEADING_TITLE', 'Ðàññûëêà');
+define('HEADING_TITLE', 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°');
 
-define('MY_NEWSLETTERS_TITLE', 'Ðàññûëêà');
-define('MY_NEWSLETTERS_GENERAL_NEWSLETTER', 'Íîâîñòè ìàãàçèíà');
-define('MY_NEWSLETTERS_GENERAL_NEWSLETTER_DESCRIPTION', 'Íîâîñòè ìàãàçèíà, íîâèíêè ìàãàçèíà, ñêèäêè è äðóãèå íîâîñòè.');
+define('MY_NEWSLETTERS_TITLE', 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°');
+define('MY_NEWSLETTERS_GENERAL_NEWSLETTER', 'ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°');
+define('MY_NEWSLETTERS_GENERAL_NEWSLETTER_DESCRIPTION', 'ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°, Ð½Ð¾Ð²Ð¸Ð½ÐºÐ¸ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°, ÑÐºÐ¸Ð´ÐºÐ¸ Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ðµ Ð½Ð¾Ð²Ð¾ÑÑ‚Ð¸.');
 
-define('SUCCESS_NEWSLETTER_UPDATED', 'Èíôîðìàöèÿ î Âàøåé ðàññûëêå îáíîâëåíà.');
+define('SUCCESS_NEWSLETTER_UPDATED', 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð’Ð°ÑˆÐµÐ¹ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐµ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð°.');
 ?>

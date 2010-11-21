@@ -10,47 +10,47 @@
   Released under the GNU General Public License
 */
 
-define('TOP_BAR_TITLE', 'Опросы');
-define('HEADING_TITLE', 'Опросы');
+define('TOP_BAR_TITLE', 'РћРїСЂРѕСЃС‹');
+define('HEADING_TITLE', 'РћРїСЂРѕСЃС‹');
 
-define('TABLE_HEADING_ID', 'Код');
-define('TABLE_HEADING_TITLE', 'Название опроса');
-define('TABLE_HEADING_VOTES', 'Голосов');
-define('TABLE_HEADING_CREATED', 'Дата создания');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_PUBLIC', 'Общедоступный опрос');
-define('TABLE_HEADING_OPEN', 'Статус');
-define('TABLE_HEADING_CONFIGURATION_TITLE','Заголовок');
-define('TABLE_HEADING_CONFIGURATION_VALUE','Значение');
-define('TEXT_DISPLAY_NUMBER_OF_POLLS', 'Количество опросов:');
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить данный опрос?');
-define('TEXT_INFO_DESCRIPTION','Описание:');
-define('TEXT_INFO_DATE_ADDED','Дата добавления:');
-define('TEXT_INFO_LAST_MODIFIED','Последние изменения:');
-define('TEXT_INFO_EDIT_INTRO','Внесите необходимые изменения');
-define('TEXT_POLL_TITLE', 'Название опроса');
-define('TEXT_POLL_CATEGORY', 'Выберите категорию');
-define('TEXT_OPTION', 'Вариант ответа');
-define('IMAGE_NEW_POLL', 'Новый опрос');
-define('_ALT_REOPEN','Активировать опрос');
-define('_ALT_CLOSE','Закрыть опрос');
-define('_ALT_PUBLIC','Сделать опрос общедоступным');
-define('_ALT_PRIVATE','Сделать опрос доступным только для зарегистрированных посетителей');
+define('TABLE_HEADING_ID', 'РљРѕРґ');
+define('TABLE_HEADING_TITLE', 'РќР°Р·РІР°РЅРёРµ РѕРїСЂРѕСЃР°');
+define('TABLE_HEADING_VOTES', 'Р“РѕР»РѕСЃРѕРІ');
+define('TABLE_HEADING_CREATED', 'Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_PUBLIC', 'РћР±С‰РµРґРѕСЃС‚СѓРїРЅС‹Р№ РѕРїСЂРѕСЃ');
+define('TABLE_HEADING_OPEN', 'РЎС‚Р°С‚СѓСЃ');
+define('TABLE_HEADING_CONFIGURATION_TITLE','Р—Р°РіРѕР»РѕРІРѕРє');
+define('TABLE_HEADING_CONFIGURATION_VALUE','Р—РЅР°С‡РµРЅРёРµ');
+define('TEXT_DISPLAY_NUMBER_OF_POLLS', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РѕРїСЂРѕСЃРѕРІ:');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Р№ РѕРїСЂРѕСЃ?');
+define('TEXT_INFO_DESCRIPTION','РћРїРёСЃР°РЅРёРµ:');
+define('TEXT_INFO_DATE_ADDED','Р”Р°С‚Р° РґРѕР±Р°РІР»РµРЅРёСЏ:');
+define('TEXT_INFO_LAST_MODIFIED','РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ:');
+define('TEXT_INFO_EDIT_INTRO','Р’РЅРµСЃРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёР·РјРµРЅРµРЅРёСЏ');
+define('TEXT_POLL_TITLE', 'РќР°Р·РІР°РЅРёРµ РѕРїСЂРѕСЃР°');
+define('TEXT_POLL_CATEGORY', 'Р’С‹Р±РµСЂРёС‚Рµ РєР°С‚РµРіРѕСЂРёСЋ');
+define('TEXT_OPTION', 'Р’Р°СЂРёР°РЅС‚ РѕС‚РІРµС‚Р°');
+define('IMAGE_NEW_POLL', 'РќРѕРІС‹Р№ РѕРїСЂРѕСЃ');
+define('_ALT_REOPEN','РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ РѕРїСЂРѕСЃ');
+define('_ALT_CLOSE','Р—Р°РєСЂС‹С‚СЊ РѕРїСЂРѕСЃ');
+define('_ALT_PUBLIC','РЎРґРµР»Р°С‚СЊ РѕРїСЂРѕСЃ РѕР±С‰РµРґРѕСЃС‚СѓРїРЅС‹Рј');
+define('_ALT_PRIVATE','РЎРґРµР»Р°С‚СЊ РѕРїСЂРѕСЃ РґРѕСЃС‚СѓРїРЅС‹Рј С‚РѕР»СЊРєРѕ РґР»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїРѕСЃРµС‚РёС‚РµР»РµР№');
 
-define('DISPLAY_POLL_HOW_TITLE', 'Какой опрос показывать');
-define('DISPLAY_POLL_ID_TITLE', 'ID Опроса');
-define('SHOW_POLL_COMMENTS_TITLE', 'Разрешить отзывы');
-define('SHOW_NOPOLL_TITLE', 'Показывать бокс опросов даже если нет опросов');
-define('POLL_SPAM_TITLE', 'Разрешить голосовать несколько раз');
-define('MAX_DISPLAY_NEW_COMMENTS_TITLE', 'Количество отзывов на странице');
+define('DISPLAY_POLL_HOW_TITLE', 'РљР°РєРѕР№ РѕРїСЂРѕСЃ РїРѕРєР°Р·С‹РІР°С‚СЊ');
+define('DISPLAY_POLL_ID_TITLE', 'ID РћРїСЂРѕСЃР°');
+define('SHOW_POLL_COMMENTS_TITLE', 'Р Р°Р·СЂРµС€РёС‚СЊ РѕС‚Р·С‹РІС‹');
+define('SHOW_NOPOLL_TITLE', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р±РѕРєСЃ РѕРїСЂРѕСЃРѕРІ РґР°Р¶Рµ РµСЃР»Рё РЅРµС‚ РѕРїСЂРѕСЃРѕРІ');
+define('POLL_SPAM_TITLE', 'Р Р°Р·СЂРµС€РёС‚СЊ РіРѕР»РѕСЃРѕРІР°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р·');
+define('MAX_DISPLAY_NEW_COMMENTS_TITLE', 'РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р·С‹РІРѕРІ РЅР° СЃС‚СЂР°РЅРёС†Рµ');
 
-define('DISPLAY_POLL_HOW_DESC', 'Какие опросы показывать в боксе.<br>0 = Случайный<br>1 = Самый последний<br>2 = Самый популярный<br>3 = Указанный ниже опрос в поле ID Опроса');
-define('DISPLAY_POLL_ID_DESC', 'Если Вы в переменной Показывать опрос указали 3, то здесь необходимо указать ID код опроса, который будет показан.');
-define('SHOW_POLL_COMMENTS_DESC', 'Разрешить оставлять отзывы к опросу?<br>0 = Запретить<br>1 = Разрешить');
-define('SHOW_NOPOLL_DESC', 'Показывать бокс опросов, даже если ни одного опроса на данный момент не проводится.<br>0 = Не показывать<br>1 = Показывать');
-define('POLL_SPAM_DESC', 'Разрешить голосовать одному человеку несколько раз в одном и том же опросе.<br>0 = Не разрешать (рекомендуется)<br>1 = разрешить');
-define('MAX_DISPLAY_NEW_COMMENTS_DESC', 'Максимальное количество отзывов на странице');
+define('DISPLAY_POLL_HOW_DESC', 'РљР°РєРёРµ РѕРїСЂРѕСЃС‹ РїРѕРєР°Р·С‹РІР°С‚СЊ РІ Р±РѕРєСЃРµ.<br>0 = РЎР»СѓС‡Р°Р№РЅС‹Р№<br>1 = РЎР°РјС‹Р№ РїРѕСЃР»РµРґРЅРёР№<br>2 = РЎР°РјС‹Р№ РїРѕРїСѓР»СЏСЂРЅС‹Р№<br>3 = РЈРєР°Р·Р°РЅРЅС‹Р№ РЅРёР¶Рµ РѕРїСЂРѕСЃ РІ РїРѕР»Рµ ID РћРїСЂРѕСЃР°');
+define('DISPLAY_POLL_ID_DESC', 'Р•СЃР»Рё Р’С‹ РІ РїРµСЂРµРјРµРЅРЅРѕР№ РџРѕРєР°Р·С‹РІР°С‚СЊ РѕРїСЂРѕСЃ СѓРєР°Р·Р°Р»Рё 3, С‚Рѕ Р·РґРµСЃСЊ РЅРµРѕР±С…РѕРґРёРјРѕ СѓРєР°Р·Р°С‚СЊ ID РєРѕРґ РѕРїСЂРѕСЃР°, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїРѕРєР°Р·Р°РЅ.');
+define('SHOW_POLL_COMMENTS_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РѕСЃС‚Р°РІР»СЏС‚СЊ РѕС‚Р·С‹РІС‹ Рє РѕРїСЂРѕСЃСѓ?<br>0 = Р—Р°РїСЂРµС‚РёС‚СЊ<br>1 = Р Р°Р·СЂРµС€РёС‚СЊ');
+define('SHOW_NOPOLL_DESC', 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р±РѕРєСЃ РѕРїСЂРѕСЃРѕРІ, РґР°Р¶Рµ РµСЃР»Рё РЅРё РѕРґРЅРѕРіРѕ РѕРїСЂРѕСЃР° РЅР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµ РїСЂРѕРІРѕРґРёС‚СЃСЏ.<br>0 = РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ<br>1 = РџРѕРєР°Р·С‹РІР°С‚СЊ');
+define('POLL_SPAM_DESC', 'Р Р°Р·СЂРµС€РёС‚СЊ РіРѕР»РѕСЃРѕРІР°С‚СЊ РѕРґРЅРѕРјСѓ С‡РµР»РѕРІРµРєСѓ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р· РІ РѕРґРЅРѕРј Рё С‚РѕРј Р¶Рµ РѕРїСЂРѕСЃРµ.<br>0 = РќРµ СЂР°Р·СЂРµС€Р°С‚СЊ (СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ)<br>1 = СЂР°Р·СЂРµС€РёС‚СЊ');
+define('MAX_DISPLAY_NEW_COMMENTS_DESC', 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚Р·С‹РІРѕРІ РЅР° СЃС‚СЂР°РЅРёС†Рµ');
 
-define('TEXT_POLLS_CATEGORY','Данные');
+define('TEXT_POLLS_CATEGORY','Р”Р°РЅРЅС‹Рµ');
 
 ?>

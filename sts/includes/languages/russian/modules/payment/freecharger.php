@@ -12,7 +12,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_FREECHARGER_TEXT_TITLE', 'Áåñïëàòíàÿ çàãðóçêà');
-  define('MODULE_PAYMENT_FREECHARGER_TEXT_DESCRIPTION', 'Èñïîëüçóåòñÿ äëÿ áåñïëàòíûõ âèðòóàëüíûõ òîâàðîâ');
-  define('MODULE_PAYMENT_FREECHARGER_TEXT_EMAIL_FOOTER', 'Áåñïëàòíàÿ çàãðóçêà');
+  define('MODULE_PAYMENT_FREECHARGER_TEXT_TITLE', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°');
+  define('MODULE_PAYMENT_FREECHARGER_TEXT_DESCRIPTION', 'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð´Ð»Ñ Ð±ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ñ‹Ñ… Ð²Ð¸Ñ€Ñ‚ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²');
+  define('MODULE_PAYMENT_FREECHARGER_TEXT_EMAIL_FOOTER', 'Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°');
 ?>

@@ -10,13 +10,13 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_CC_TEXT_TITLE', 'Кредитная карточка');
-  define('MODULE_PAYMENT_CC_TEXT_DESCRIPTION', 'Информация о кредитной карточке для теста:<br><br>Номер карточки: 4111111111111111<br>Действительна до: Любая дата');
-  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_TYPE', 'Тип кредитной карточки:');
-  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_OWNER', 'Владелец кредитной карточки:');
-  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_NUMBER', 'Номер кредитной карточки:');
-  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_EXPIRES', 'Действительна до:');
-  define('MODULE_PAYMENT_CC_TEXT_JS_CC_OWNER', '* Имя владельца кредитной карточки должно содержать по крайней мере ' . CC_OWNER_MIN_LENGTH . ' символов.\n');
-  define('MODULE_PAYMENT_CC_TEXT_JS_CC_NUMBER', '* Номер кредитной карточки должен содержать по крайней мере ' . CC_NUMBER_MIN_LENGTH . ' символов.\n');
-  define('MODULE_PAYMENT_CC_TEXT_ERROR', 'Данные введены неправильно!');
+  define('MODULE_PAYMENT_CC_TEXT_TITLE', 'РљСЂРµРґРёС‚РЅР°СЏ РєР°СЂС‚РѕС‡РєР°');
+  define('MODULE_PAYMENT_CC_TEXT_DESCRIPTION', 'РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРµ РґР»СЏ С‚РµСЃС‚Р°:<br><br>РќРѕРјРµСЂ РєР°СЂС‚РѕС‡РєРё: 4111111111111111<br>Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґРѕ: Р›СЋР±Р°СЏ РґР°С‚Р°');
+  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_TYPE', 'РўРёРї РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё:');
+  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_OWNER', 'Р’Р»Р°РґРµР»РµС† РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё:');
+  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_NUMBER', 'РќРѕРјРµСЂ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё:');
+  define('MODULE_PAYMENT_CC_TEXT_CREDIT_CARD_EXPIRES', 'Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅР° РґРѕ:');
+  define('MODULE_PAYMENT_CC_TEXT_JS_CC_OWNER', '* РРјСЏ РІР»Р°РґРµР»СЊС†Р° РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ ' . CC_OWNER_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+  define('MODULE_PAYMENT_CC_TEXT_JS_CC_NUMBER', '* РќРѕРјРµСЂ РєСЂРµРґРёС‚РЅРѕР№ РєР°СЂС‚РѕС‡РєРё РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ ' . CC_NUMBER_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+  define('MODULE_PAYMENT_CC_TEXT_ERROR', 'Р”Р°РЅРЅС‹Рµ РІРІРµРґРµРЅС‹ РЅРµРїСЂР°РІРёР»СЊРЅРѕ!');
 ?>

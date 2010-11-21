@@ -1,48 +1,48 @@
 <?php
 
-define('HEADING_TITLE', 'Группы');
-define('HEADING_TITLE_SEARCH', 'Поиск:');
+define('HEADING_TITLE', 'Р“СЂСѓРїРїС‹');
+define('HEADING_TITLE_SEARCH', 'РџРѕРёСЃРє:');
 
-define('TABLE_HEADING_NAME', 'Название');
+define('TABLE_HEADING_NAME', 'РќР°Р·РІР°РЅРёРµ');
 
-define('TABLE_HEADING_DISCOUNT', 'Скидка для группы');
-define('TABLE_HEADING_PRICE', 'Цена товара для группы');
-define('TABLE_HEADING_ACTION', 'Действие');
-define('TABLE_HEADING_ACCUMULATED_LIMIT', 'Накопительный предел');
+define('TABLE_HEADING_DISCOUNT', 'РЎРєРёРґРєР° РґР»СЏ РіСЂСѓРїРїС‹');
+define('TABLE_HEADING_PRICE', 'Р¦РµРЅР° С‚РѕРІР°СЂР° РґР»СЏ РіСЂСѓРїРїС‹');
+define('TABLE_HEADING_ACTION', 'Р”РµР№СЃС‚РІРёРµ');
+define('TABLE_HEADING_ACCUMULATED_LIMIT', 'РќР°РєРѕРїРёС‚РµР»СЊРЅС‹Р№ РїСЂРµРґРµР»');
 
-define('ENTRY_GROUPS_NAME', 'Название группы:');
-define('ENTRY_DEFAULT_DISCOUNT', 'Скидка для группы:');
-define('ENTRY_PRICE', 'Цена');
-define('ENTRY_ACCUMULATED_LIMIT', 'Накопительный предел:');
-define('ENTRY_DEFAULT_PRICE', 'Цена для группы:');
+define('ENTRY_GROUPS_NAME', 'РќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹:');
+define('ENTRY_DEFAULT_DISCOUNT', 'РЎРєРёРґРєР° РґР»СЏ РіСЂСѓРїРїС‹:');
+define('ENTRY_PRICE', 'Р¦РµРЅР°');
+define('ENTRY_ACCUMULATED_LIMIT', 'РќР°РєРѕРїРёС‚РµР»СЊРЅС‹Р№ РїСЂРµРґРµР»:');
+define('ENTRY_DEFAULT_PRICE', 'Р¦РµРЅР° РґР»СЏ РіСЂСѓРїРїС‹:');
 
-define('TEXT_DELETE_INTRO', 'Вы действительно хотите удалить данную группу?');
-define('TEXT_INFO_HEADING_DELETE_GROUP', 'Удалить группу');
+define('TEXT_DELETE_INTRO', 'Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅСѓСЋ РіСЂСѓРїРїСѓ?');
+define('TEXT_INFO_HEADING_DELETE_GROUP', 'РЈРґР°Р»РёС‚СЊ РіСЂСѓРїРїСѓ');
 
-define('ERROR_CUSTOMERS_GROUPS_NAME', 'Пожалуйста, введите название группы');
-define('ENTRY_ORDERS_STATUS', 'Накопительные статусы:');
+define('ERROR_CUSTOMERS_GROUPS_NAME', 'РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹');
+define('ENTRY_ORDERS_STATUS', 'РќР°РєРѕРїРёС‚РµР»СЊРЅС‹Рµ СЃС‚Р°С‚СѓСЃС‹:');
 
 // add for color groups start
-define('ENTRY_COLOR_BAR', 'Цвет группы:');
-define('GROUP_COLOR_BAR', 'Цвет группы');
+define('ENTRY_COLOR_BAR', 'Р¦РІРµС‚ РіСЂСѓРїРїС‹:');
+define('GROUP_COLOR_BAR', 'Р¦РІРµС‚ РіСЂСѓРїРїС‹');
 //add for color groups end
 
 // add for SPPC shipment and payment module start 
 
-define('ENTRY_GROUP_PAYMENT_SET', 'Установить модули оплаты для группы');
-define('ENTRY_GROUP_PAYMENT_DEFAULT', 'Использовать стандартные настройки');
-define('ENTRY_PAYMENT_SET_EXPLAIN', 'Если Вы выбираете <b>Установить модули оплаты для группы</b>, но не выбираете ни одного модуля, будут действительны стандартные настройки.');
-define('ENTRY_PAYMENT_SET_EXPLAIN2', 'Отметье те модули, которые будут <b><font color="red">доступны</font></b> данной группе при оформлении заказа.');
+define('ENTRY_GROUP_PAYMENT_SET', 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РѕРїР»Р°С‚С‹ РґР»СЏ РіСЂСѓРїРїС‹');
+define('ENTRY_GROUP_PAYMENT_DEFAULT', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё');
+define('ENTRY_PAYMENT_SET_EXPLAIN', 'Р•СЃР»Рё Р’С‹ РІС‹Р±РёСЂР°РµС‚Рµ <b>РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РѕРїР»Р°С‚С‹ РґР»СЏ РіСЂСѓРїРїС‹</b>, РЅРѕ РЅРµ РІС‹Р±РёСЂР°РµС‚Рµ РЅРё РѕРґРЅРѕРіРѕ РјРѕРґСѓР»СЏ, Р±СѓРґСѓС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё.');
+define('ENTRY_PAYMENT_SET_EXPLAIN2', 'РћС‚РјРµС‚СЊРµ С‚Рµ РјРѕРґСѓР»Рё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ <b><font color="red">РґРѕСЃС‚СѓРїРЅС‹</font></b> РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°.');
 
-define('ENTRY_GROUP_SHIPPING_SET', 'Установить модули доставки для группы');
-define('ENTRY_GROUP_SHIPPING_DEFAULT', 'Использовать стандартные настройки');
-define('ENTRY_SHIPPING_SET_EXPLAIN', 'Если Вы выбираете <b>Установить модули доставки для группы</b>, но не выбираете ни одного модуля, будут действительны стандартные настройки.');
-define('ENTRY_SHIPPING_SET_EXPLAIN2', 'Отметье те модули, которые будут <b><font color="red">доступны</font></b> данной группе при оформлении заказа.');
+define('ENTRY_GROUP_SHIPPING_SET', 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РґРѕСЃС‚Р°РІРєРё РґР»СЏ РіСЂСѓРїРїС‹');
+define('ENTRY_GROUP_SHIPPING_DEFAULT', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё');
+define('ENTRY_SHIPPING_SET_EXPLAIN', 'Р•СЃР»Рё Р’С‹ РІС‹Р±РёСЂР°РµС‚Рµ <b>РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»Рё РґРѕСЃС‚Р°РІРєРё РґР»СЏ РіСЂСѓРїРїС‹</b>, РЅРѕ РЅРµ РІС‹Р±РёСЂР°РµС‚Рµ РЅРё РѕРґРЅРѕРіРѕ РјРѕРґСѓР»СЏ, Р±СѓРґСѓС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё.');
+define('ENTRY_SHIPPING_SET_EXPLAIN2', 'РћС‚РјРµС‚СЊРµ С‚Рµ РјРѕРґСѓР»Рё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ <b><font color="red">РґРѕСЃС‚СѓРїРЅС‹</font></b> РґР°РЅРЅРѕР№ РіСЂСѓРїРїРµ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°.');
 
 // add for SPPC shipment and payment module end
 
 
 //add for Minimum group price to order start		
-define('ENTRY_GROUP_MIN_PRICE', 'Минимальная стоимость заказа для группы:');
+define('ENTRY_GROUP_MIN_PRICE', 'РњРёРЅРёРјР°Р»СЊРЅР°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р° РґР»СЏ РіСЂСѓРїРїС‹:');
 // add for Minimum group price to order end	
 ?>
