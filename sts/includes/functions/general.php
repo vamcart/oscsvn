@@ -225,8 +225,8 @@ function tep_redirect($url) {
   function tep_break_string($string, $len, $break_char = '-') {
     $l = 0;
     $output = '';
-    for ($i=0, $n=strlen($string); $i<$n; $i++) {
-      $char = substr($string, $i, 1);
+    for ($i=0, $n=utf8_strlen($string); $i<$n; $i++) {
+      $char = utf8_substr($string, $i, 1);
       if ($char != ' ') {
         $l++;
       } else {
