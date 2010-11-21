@@ -93,7 +93,7 @@ table_image_border_top(false, false, $header_text);
             <td align="right" valign="middle" class="main"><?php echo '<a href="' . tep_href_link(FILENAME_PRODUCTS_NEW, tep_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $best_sellers['products_id']) . '">' . tep_template_image_button('button_in_cart.gif', IMAGE_BUTTON_IN_CART) . '</a>'; ?></td>
           </tr>
           <tr>
-            <td colspüan="3"><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+            <td colspÑŒan="3"><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
           </tr>
 <?php
     }

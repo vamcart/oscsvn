@@ -49,7 +49,7 @@ if (SITE_WIDTH!='100%') {
 ?>
             <table width="100%" border="0" cellspacing="0" cellpadding="6">
   <tr>
-        <td height="80" bgcolor="#ffffff" background="<?php echo DIR_WS_TEMPLATES . TEMPLATE_NAME;?>/images/bg_cat4.gif"><a href="index.php"><img src="<?php echo DIR_WS_TEMPLATES . TEMPLATE_NAME;?>/images/oscommerce.gif" border="0" alt="Èíòåðíåò-ìàãàçèí"></a></td>
+        <td height="80" bgcolor="#ffffff" background="<?php echo DIR_WS_TEMPLATES . TEMPLATE_NAME;?>/images/bg_cat4.gif"><a href="index.php"><img src="<?php echo DIR_WS_TEMPLATES . TEMPLATE_NAME;?>/images/oscommerce.gif" border="0" alt="Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½"></a></td>
         <td align="right" height="80" bgcolor="#ffffff" background="<?php echo DIR_WS_TEMPLATES . TEMPLATE_NAME;?>/images/bg_cat4.gif">
 
 <?php
@@ -104,7 +104,7 @@ if (DOWN_FOR_MAINTENANCE =='false') {
 </td>
 </tr>
 <tr><td bgcolor="black" height="1" colspan="2"></td></tr>
-<!-- /Çàêëàäêè, ñòàðòîâàÿ ñòðàíèöà -->
+<!-- /Ð—Ð°ÐºÐ»Ð°Ð´ÐºÐ¸, ÑÑ‚Ð°Ñ€Ñ‚Ð¾Ð²Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° -->
 </table>
 <?php
  }

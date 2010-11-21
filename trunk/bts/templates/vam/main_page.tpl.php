@@ -27,10 +27,10 @@ basename($javascript)); } ?>
 <?php require(DIR_WS_INCLUDES . 'warnings.php'); ?>
 <!-- warning_eof //-->
 
-<!-- Êîíòåéíåğ -->
+<!-- ĞšĞ¾Ğ½Ñ‚ĞµĞ¹Ğ½ĞµÑ€ -->
 <div id="container">
 
-<!-- Øàïêà -->
+<!-- Ğ¨Ğ°Ğ¿ĞºĞ° -->
 <div id="header">
 
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
@@ -56,7 +56,7 @@ basename($javascript)); } ?>
 <b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b>
 
 </div>
-<!-- /Øàïêà -->
+<!-- /Ğ¨Ğ°Ğ¿ĞºĞ° -->
 
 <div id="menu">
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
@@ -74,17 +74,17 @@ basename($javascript)); } ?>
 <b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b>
 </div>
 
-<!-- Íàâèãàöèÿ -->
+<!-- ĞĞ°Ğ²Ğ¸Ğ³Ğ°Ñ†Ğ¸Ñ -->
 <div id="navigation">
 <span><?php echo $breadcrumb->trail(' &raquo; '); ?></span>
 </div>
-<!-- /Íàâèãàöèÿ -->
+<!-- /ĞĞ°Ğ²Ğ¸Ğ³Ğ°Ñ†Ğ¸Ñ -->
 
 <div class="outer">
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
 <div class="outer-page">
 
-<!-- Öåíòğ -->
+<!-- Ğ¦ĞµĞ½Ñ‚Ñ€ -->
 <div id="wrapper">
 <div id="content">
 
@@ -99,23 +99,23 @@ basename($content_template))) {
 
 </div>
 </div>
-<!-- /Öåíòğ -->
+<!-- /Ğ¦ĞµĞ½Ñ‚Ñ€ -->
 
-<!-- Ëåâàÿ êîëîíêà -->
+<!-- Ğ›ĞµĞ²Ğ°Ñ ĞºĞ¾Ğ»Ğ¾Ğ½ĞºĞ° -->
 <div id="left">
 
 <?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
 
 </div>
-<!-- /Ëåâàÿ êîëîíêà -->
+<!-- /Ğ›ĞµĞ²Ğ°Ñ ĞºĞ¾Ğ»Ğ¾Ğ½ĞºĞ° -->
 
-<!-- Ïğàâàÿ êîëîíêà -->
+<!-- ĞŸÑ€Ğ°Ğ²Ğ°Ñ ĞºĞ¾Ğ»Ğ¾Ğ½ĞºĞ° -->
 <div id="right">
 
 <?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
 
 </div>
-<!-- /Ïğàâàÿ êîëîíêà -->
+<!-- /ĞŸÑ€Ğ°Ğ²Ğ°Ñ ĞºĞ¾Ğ»Ğ¾Ğ½ĞºĞ° -->
 
 <div class="clear-left">
 </div>
@@ -127,7 +127,7 @@ basename($content_template))) {
 <div class="outer">
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
 <div class="outer-page">
-<!-- Íèç -->
+<!-- ĞĞ¸Ğ· -->
 <div id="footer">
 <p>
 <?php require(DIR_WS_TEMPLATES . TEMPLATE_NAME . '/counters.txt'); ?>
@@ -143,13 +143,13 @@ basename($content_template))) {
 <?php } ?>
 </p>
 </div>
-<!-- /Íèç -->
+<!-- /ĞĞ¸Ğ· -->
 </div>
 <b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b>
 </div>
 
 </div>
-<!-- /Êîíòåéíåğ -->
+<!-- /ĞšĞ¾Ğ½Ñ‚ĞµĞ¹Ğ½ĞµÑ€ -->
 
 </body>
 </html>
