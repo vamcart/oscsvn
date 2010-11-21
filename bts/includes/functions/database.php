@@ -22,12 +22,7 @@
     if ($$link){
       @mysql_select_db($database);
       @mysql_query("SET SQL_MODE= ''");
-      //@mysql_query("SET NAMES 'cp1251'");
-//      if (defined('DB_CHARACTER_SET')) {
-//        $db_character_set = DB_CHARACTER_SET;
-//        if (preg_match('~^\w+$~', $db_character_set) === 1)
-//          @mysql_query("SET NAMES '$db_character_set' COLLATE '". $db_character_set ."_general_ci'");
-//      }
+      @mysql_query("SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
     }
 //***VB***
 

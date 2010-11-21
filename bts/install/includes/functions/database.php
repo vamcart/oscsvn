@@ -22,6 +22,9 @@
 
     $$link = @mysql_connect($server, $username, $password) or $db_error = mysql_error();
 
+      @mysql_query("SET SQL_MODE= ''");
+      @mysql_query("SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
+
     return $$link;
   }
 
