@@ -76,6 +76,8 @@ if (defined('DIR_WS_INCLUDES') === false) header('Location: install');
 // customization for the design layout
 define('BOX_WIDTH', 125); // how wide the boxes should be in pixels (default: 125)
 
+  require(DIR_WS_FUNCTIONS . 'vam_mb_utf8.inc.php');
+
 // include the database functions
   require(DIR_WS_FUNCTIONS . 'database.php');
 

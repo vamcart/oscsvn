@@ -59,6 +59,8 @@ if (!isset($PHP_SELF)) $PHP_SELF = (isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_
   define('CURRENCY_SERVER_PRIMARY', 'cbr');
   define('CURRENCY_SERVER_BACKUP', 'xe');
 
+  require(DIR_WS_FUNCTIONS . 'vam_mb_utf8.inc.php');
+
 // include the database functions
   require(DIR_WS_FUNCTIONS . 'database.php');
 
