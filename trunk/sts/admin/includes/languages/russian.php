@@ -12,41 +12,41 @@
 
 //Admin begin
 // header text in includes/header.php
-define('HEADER_TITLE_ACCOUNT', 'Мой эккаунт');
-define('HEADER_TITLE_LOGOFF', 'Выход');
+define('HEADER_TITLE_ACCOUNT', 'РњРѕР№ СЌРєРєР°СѓРЅС‚');
+define('HEADER_TITLE_LOGOFF', 'Р’С‹С…РѕРґ');
 
 // Admin Account
-define('BOX_HEADING_MY_ACCOUNT', 'Мой эккаунт');
+define('BOX_HEADING_MY_ACCOUNT', 'РњРѕР№ СЌРєРєР°СѓРЅС‚');
 
 // configuration box text in includes/boxes/administrator.php
-define('BOX_HEADING_ADMINISTRATOR', 'Администраторы');
-define('BOX_ADMINISTRATOR_MEMBERS', 'Группы пользователей');
-define('BOX_ADMINISTRATOR_MEMBER', 'Пользователи');
-define('BOX_ADMINISTRATOR_BOXES', 'Права доступа');
-define('BOX_ADMINISTRATOR_ACCOUNT_UPDATE', 'Обновить информацию о себе');
+define('BOX_HEADING_ADMINISTRATOR', 'РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂС‹');
+define('BOX_ADMINISTRATOR_MEMBERS', 'Р“СЂСѓРїРїС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№');
+define('BOX_ADMINISTRATOR_MEMBER', 'РџРѕР»СЊР·РѕРІР°С‚РµР»Рё');
+define('BOX_ADMINISTRATOR_BOXES', 'РџСЂР°РІР° РґРѕСЃС‚СѓРїР°');
+define('BOX_ADMINISTRATOR_ACCOUNT_UPDATE', 'РћР±РЅРѕРІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРµР±Рµ');
 
 // images
-define('IMAGE_FILE_PERMISSION', 'Права доступа');
-define('IMAGE_GROUPS', 'Список групп');
-define('IMAGE_INSERT_FILE', 'Добавить файл');
-define('IMAGE_MEMBERS', 'Список пользователей');
-define('IMAGE_NEW_GROUP', 'Добавить группы');
-define('IMAGE_NEW_MEMBER', 'Добавить пользователя');
-define('IMAGE_NEXT', 'Далее');
+define('IMAGE_FILE_PERMISSION', 'РџСЂР°РІР° РґРѕСЃС‚СѓРїР°');
+define('IMAGE_GROUPS', 'РЎРїРёСЃРѕРє РіСЂСѓРїРї');
+define('IMAGE_INSERT_FILE', 'Р”РѕР±Р°РІРёС‚СЊ С„Р°Р№Р»');
+define('IMAGE_MEMBERS', 'РЎРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№');
+define('IMAGE_NEW_GROUP', 'Р”РѕР±Р°РІРёС‚СЊ РіСЂСѓРїРїС‹');
+define('IMAGE_NEW_MEMBER', 'Р”РѕР±Р°РІРёС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ');
+define('IMAGE_NEXT', 'Р”Р°Р»РµРµ');
 
 // constants for use in tep_prev_next_display function
-define('TEXT_DISPLAY_NUMBER_OF_FILENAMES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> файлов)');
-define('TEXT_DISPLAY_NUMBER_OF_MEMBERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> пользователей)');
+define('TEXT_DISPLAY_NUMBER_OF_FILENAMES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> С„Р°Р№Р»РѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_MEMBERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№)');
 //Admin end
 
 // look in your $PATH_LOCALE/locale directory for available locales..
 // on RedHat6.0 I used 'en_US'
 // on FreeBSD 4.0 I use 'en_US.ISO_8859-1'
 // this may not work under win32 environments..
-setlocale(LC_TIME, 'ru_RU.CP1251');
+setlocale(LC_TIME, 'ru_RU.UTF-8');
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
 //define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
-define('DATE_FORMAT_LONG', '%d %B %Y г.'); // this is used for strftime()
+define('DATE_FORMAT_LONG', '%d %B %Y Рі.'); // this is used for strftime()
 define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
 define('PHP_DATE_TIME_FORMAT', 'd/m/Y H:i:s'); // this is used for date()
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
@@ -69,317 +69,317 @@ function tep_date_raw($date, $reverse = false) {
 define('HTML_PARAMS','dir="ltr" lang="ru"');
 
 // charset for web pages and emails
-define('CHARSET', 'windows-1251');
+define('CHARSET', 'utf-8');
 
 // page title
-define('TITLE', 'Администрирование');
+define('TITLE', 'РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ');
 
 // header text in includes/header.php
-define('HEADER_TITLE_TOP', 'Администрирование');
-define('HEADER_TITLE_SUPPORT_SITE', 'Сайт поддержки');
-define('HEADER_TITLE_ONLINE_CATALOG', 'Каталог');
-define('HEADER_TITLE_ADMINISTRATION', 'Администрирование');
+define('HEADER_TITLE_TOP', 'РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ');
+define('HEADER_TITLE_SUPPORT_SITE', 'РЎР°Р№С‚ РїРѕРґРґРµСЂР¶РєРё');
+define('HEADER_TITLE_ONLINE_CATALOG', 'РљР°С‚Р°Р»РѕРі');
+define('HEADER_TITLE_ADMINISTRATION', 'РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ');
 define('HEADER_TITLE_CHAINREACTION', 'osCommerce');
 define('HEADER_TITLE_PHESIS', 'Loaded6');
 // MaxiDVD Added Line For WYSIWYG HTML Area: BOF
-define('BOX_CATALOG_DEFINE_MAINPAGE', 'Изменить главную страницу');
+define('BOX_CATALOG_DEFINE_MAINPAGE', 'РР·РјРµРЅРёС‚СЊ РіР»Р°РІРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ');
 // MaxiDVD Added Line For WYSIWYG HTML Area: EOF
 
 
 // text for gender
-define('MALE', 'Мужчина');
-define('FEMALE', 'Женщина');
+define('MALE', 'РњСѓР¶С‡РёРЅР°');
+define('FEMALE', 'Р–РµРЅС‰РёРЅР°');
 
 // text for date of birth example
 define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
 
 // configuration box text in includes/boxes/configuration.php
-define('BOX_HEADING_CONFIGURATION', 'Настройки');
-define('BOX_CONFIGURATION_MYSTORE', 'Магазин');
-define('BOX_CONFIGURATION_LOGGING', 'Логи');
-define('BOX_CONFIGURATION_CACHE', 'Кэш');
+define('BOX_HEADING_CONFIGURATION', 'РќР°СЃС‚СЂРѕР№РєРё');
+define('BOX_CONFIGURATION_MYSTORE', 'РњР°РіР°Р·РёРЅ');
+define('BOX_CONFIGURATION_LOGGING', 'Р›РѕРіРё');
+define('BOX_CONFIGURATION_CACHE', 'РљСЌС€');
 
 // modules box text in includes/boxes/modules.php
-define('BOX_HEADING_MODULES', 'Модули');
-define('BOX_MODULES_PAYMENT', 'Оплата');
-define('BOX_MODULES_SHIPPING', 'Доставка');
-define('BOX_MODULES_ORDER_TOTAL', 'Заказ итого');
+define('BOX_HEADING_MODULES', 'РњРѕРґСѓР»Рё');
+define('BOX_MODULES_PAYMENT', 'РћРїР»Р°С‚Р°');
+define('BOX_MODULES_SHIPPING', 'Р”РѕСЃС‚Р°РІРєР°');
+define('BOX_MODULES_ORDER_TOTAL', 'Р—Р°РєР°Р· РёС‚РѕРіРѕ');
 define('BOX_MODULES_STS', 'STS');
 
 // categories box text in includes/boxes/catalog.php
-define('BOX_HEADING_CATALOG', 'Каталог');
-define('BOX_CATALOG_CATEGORIES_PRODUCTS', 'Категории/Товары');
-define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES', 'Атрибуты - Настройка');
-define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES_NEW', 'Атрибуты - Установка');
-define('BOX_CATALOG_MANUFACTURERS', 'Производители');
-define('BOX_CATALOG_REVIEWS', 'Отзывы');
-define('BOX_CATALOG_SPECIALS', 'Скидки');
-define('BOX_CATALOG_PRODUCTS_EXPECTED', 'Ожидаемые товары'); 
-define('BOX_CATALOG_EASYPOPULATE', 'Excel импорт/экспорт');
+define('BOX_HEADING_CATALOG', 'РљР°С‚Р°Р»РѕРі');
+define('BOX_CATALOG_CATEGORIES_PRODUCTS', 'РљР°С‚РµРіРѕСЂРёРё/РўРѕРІР°СЂС‹');
+define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES', 'РђС‚СЂРёР±СѓС‚С‹ - РќР°СЃС‚СЂРѕР№РєР°');
+define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES_NEW', 'РђС‚СЂРёР±СѓС‚С‹ - РЈСЃС‚Р°РЅРѕРІРєР°');
+define('BOX_CATALOG_MANUFACTURERS', 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»Рё');
+define('BOX_CATALOG_REVIEWS', 'РћС‚Р·С‹РІС‹');
+define('BOX_CATALOG_SPECIALS', 'РЎРєРёРґРєРё');
+define('BOX_CATALOG_PRODUCTS_EXPECTED', 'РћР¶РёРґР°РµРјС‹Рµ С‚РѕРІР°СЂС‹'); 
+define('BOX_CATALOG_EASYPOPULATE', 'Excel РёРјРїРѕСЂС‚/СЌРєСЃРїРѕСЂС‚');
 
-define('BOX_CATALOG_SALEMAKER', 'Массовые скидки');
+define('BOX_CATALOG_SALEMAKER', 'РњР°СЃСЃРѕРІС‹Рµ СЃРєРёРґРєРё');
 
 // customers box text in includes/boxes/customers.php
-define('BOX_HEADING_CUSTOMERS', 'Клиенты');
-define('BOX_CUSTOMERS_CUSTOMERS', 'Клиенты');
-define('BOX_CUSTOMERS_ORDERS', 'Заказы');
-define('BOX_CUSTOMERS_EDIT_ORDERS', 'Редактировать заказы');
+define('BOX_HEADING_CUSTOMERS', 'РљР»РёРµРЅС‚С‹');
+define('BOX_CUSTOMERS_CUSTOMERS', 'РљР»РёРµРЅС‚С‹');
+define('BOX_CUSTOMERS_ORDERS', 'Р—Р°РєР°Р·С‹');
+define('BOX_CUSTOMERS_EDIT_ORDERS', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ Р·Р°РєР°Р·С‹');
 
 
 // taxes box text in includes/boxes/taxes.php
-define('BOX_HEADING_LOCATION_AND_TAXES', 'Места / Налоги');
-define('BOX_TAXES_COUNTRIES', 'Страны');
-define('BOX_TAXES_ZONES', 'Регионы');
-define('BOX_TAXES_GEO_ZONES', 'Налоговые зоны');
-define('BOX_TAXES_TAX_CLASSES', 'Типы налогов');
-define('BOX_TAXES_TAX_RATES', 'Ставки налогов');
+define('BOX_HEADING_LOCATION_AND_TAXES', 'РњРµСЃС‚Р° / РќР°Р»РѕРіРё');
+define('BOX_TAXES_COUNTRIES', 'РЎС‚СЂР°РЅС‹');
+define('BOX_TAXES_ZONES', 'Р РµРіРёРѕРЅС‹');
+define('BOX_TAXES_GEO_ZONES', 'РќР°Р»РѕРіРѕРІС‹Рµ Р·РѕРЅС‹');
+define('BOX_TAXES_TAX_CLASSES', 'РўРёРїС‹ РЅР°Р»РѕРіРѕРІ');
+define('BOX_TAXES_TAX_RATES', 'РЎС‚Р°РІРєРё РЅР°Р»РѕРіРѕРІ');
 
 // reports box text in includes/boxes/reports.php
-define('BOX_HEADING_REPORTS', 'Отчёты');
-define('BOX_REPORTS_PRODUCTS_VIEWED', 'Просмотренные товары');
-define('BOX_REPORTS_PRODUCTS_PURCHASED', 'Заказанные товары');
-define('BOX_REPORTS_ORDERS_TOTAL', 'Лучшие клиенты');
+define('BOX_HEADING_REPORTS', 'РћС‚С‡С‘С‚С‹');
+define('BOX_REPORTS_PRODUCTS_VIEWED', 'РџСЂРѕСЃРјРѕС‚СЂРµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('BOX_REPORTS_PRODUCTS_PURCHASED', 'Р—Р°РєР°Р·Р°РЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('BOX_REPORTS_ORDERS_TOTAL', 'Р›СѓС‡С€РёРµ РєР»РёРµРЅС‚С‹');
 
 // tools text in includes/boxes/tools.php
-define('BOX_HEADING_TOOLS', 'Инструменты');
-define('BOX_TOOLS_BACKUP', 'Резервное копирование БД');
-define('BOX_TOOLS_BANNER_MANAGER', 'Менеджер баннеров');
-define('BOX_TOOLS_CACHE', 'Контроль кэша');
-define('BOX_TOOLS_DEFINE_LANGUAGE', 'Языковые файлы');
-define('BOX_TOOLS_FILE_MANAGER', 'Файловый менеджер');
-define('BOX_TOOLS_MAIL', 'Отправить Email');
-define('BOX_TOOLS_NEWSLETTER_MANAGER', 'Менеджер почтовых рассылок');
-define('BOX_TOOLS_SERVER_INFO', 'Информация о сервере');
-define('BOX_TOOLS_WHOS_ONLINE', 'Кто в онлайне');
+define('BOX_HEADING_TOOLS', 'РРЅСЃС‚СЂСѓРјРµРЅС‚С‹');
+define('BOX_TOOLS_BACKUP', 'Р РµР·РµСЂРІРЅРѕРµ РєРѕРїРёСЂРѕРІР°РЅРёРµ Р‘Р”');
+define('BOX_TOOLS_BANNER_MANAGER', 'РњРµРЅРµРґР¶РµСЂ Р±Р°РЅРЅРµСЂРѕРІ');
+define('BOX_TOOLS_CACHE', 'РљРѕРЅС‚СЂРѕР»СЊ РєСЌС€Р°');
+define('BOX_TOOLS_DEFINE_LANGUAGE', 'РЇР·С‹РєРѕРІС‹Рµ С„Р°Р№Р»С‹');
+define('BOX_TOOLS_FILE_MANAGER', 'Р¤Р°Р№Р»РѕРІС‹Р№ РјРµРЅРµРґР¶РµСЂ');
+define('BOX_TOOLS_MAIL', 'РћС‚РїСЂР°РІРёС‚СЊ Email');
+define('BOX_TOOLS_NEWSLETTER_MANAGER', 'РњРµРЅРµРґР¶РµСЂ РїРѕС‡С‚РѕРІС‹С… СЂР°СЃСЃС‹Р»РѕРє');
+define('BOX_TOOLS_SERVER_INFO', 'РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃРµСЂРІРµСЂРµ');
+define('BOX_TOOLS_WHOS_ONLINE', 'РљС‚Рѕ РІ РѕРЅР»Р°Р№РЅРµ');
 
 // localizaion box text in includes/boxes/localization.php
-define('BOX_HEADING_LOCALIZATION', 'Локализация');
-define('BOX_LOCALIZATION_CURRENCIES', 'Валюты');
-define('BOX_LOCALIZATION_LANGUAGES', 'Языки');
-define('BOX_LOCALIZATION_ORDERS_STATUS', 'Статусы заказов');
+define('BOX_HEADING_LOCALIZATION', 'Р›РѕРєР°Р»РёР·Р°С†РёСЏ');
+define('BOX_LOCALIZATION_CURRENCIES', 'Р’Р°Р»СЋС‚С‹');
+define('BOX_LOCALIZATION_LANGUAGES', 'РЇР·С‹РєРё');
+define('BOX_LOCALIZATION_ORDERS_STATUS', 'РЎС‚Р°С‚СѓСЃС‹ Р·Р°РєР°Р·РѕРІ');
 
 // infobox box text in includes/boxes/info_boxes.php
-define('BOX_HEADING_BOXES', 'Управление боксами');
-define('BOX_HEADING_TEMPLATE_CONFIGURATION', 'Настройка шаблонов');
-define('BOX_HEADING_DESIGN_CONTROLS', 'Шаблоны');
+define('BOX_HEADING_BOXES', 'РЈРїСЂР°РІР»РµРЅРёРµ Р±РѕРєСЃР°РјРё');
+define('BOX_HEADING_TEMPLATE_CONFIGURATION', 'РќР°СЃС‚СЂРѕР№РєР° С€Р°Р±Р»РѕРЅРѕРІ');
+define('BOX_HEADING_DESIGN_CONTROLS', 'РЁР°Р±Р»РѕРЅС‹');
 
 // VJ Links Manager v1.00 begin
 // links manager box text in includes/boxes/links.php
-define('BOX_HEADING_LINKS', 'Ссылки');
-define('BOX_LINKS_LINKS', 'Ссылки');
-define('BOX_LINKS_LINK_CATEGORIES', 'Категории');
-define('BOX_LINKS_LINKS_CONTACT', 'Обратная связь');
+define('BOX_HEADING_LINKS', 'РЎСЃС‹Р»РєРё');
+define('BOX_LINKS_LINKS', 'РЎСЃС‹Р»РєРё');
+define('BOX_LINKS_LINK_CATEGORIES', 'РљР°С‚РµРіРѕСЂРёРё');
+define('BOX_LINKS_LINKS_CONTACT', 'РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ');
 // VJ Links Manager v1.00 end
 
 // javascript messages
-define('JS_ERROR', 'При заполнении формы Вы допустили ошибки!\nСделайте, пожалуйста, следующие исправления:\n\n');
+define('JS_ERROR', 'РџСЂРё Р·Р°РїРѕР»РЅРµРЅРёРё С„РѕСЂРјС‹ Р’С‹ РґРѕРїСѓСЃС‚РёР»Рё РѕС€РёР±РєРё!\nРЎРґРµР»Р°Р№С‚Рµ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, СЃР»РµРґСѓСЋС‰РёРµ РёСЃРїСЂР°РІР»РµРЅРёСЏ:\n\n');
 
-define('JS_OPTIONS_VALUE_PRICE', '* Новый атрибут товара дожен иметь цену\n');
-define('JS_OPTIONS_VALUE_PRICE_PREFIX', '* Новый атрибут товара дожен иметь ценовой префикс\n');
+define('JS_OPTIONS_VALUE_PRICE', '* РќРѕРІС‹Р№ Р°С‚СЂРёР±СѓС‚ С‚РѕРІР°СЂР° РґРѕР¶РµРЅ РёРјРµС‚СЊ С†РµРЅСѓ\n');
+define('JS_OPTIONS_VALUE_PRICE_PREFIX', '* РќРѕРІС‹Р№ Р°С‚СЂРёР±СѓС‚ С‚РѕРІР°СЂР° РґРѕР¶РµРЅ РёРјРµС‚СЊ С†РµРЅРѕРІРѕР№ РїСЂРµС„РёРєСЃ\n');
 
-define('JS_PRODUCTS_NAME', '* Для нового товара должно быть указано наименование\n');
-define('JS_PRODUCTS_DESCRIPTION', '* Для нового товара должно быть указано описание\n');
-define('JS_PRODUCTS_PRICE', '* Для нового товара должна быть указана цена\n');
-define('JS_PRODUCTS_WEIGHT', '* Для нового товара должен быть указан вес\n');
-define('JS_PRODUCTS_QUANTITY', '* Для нового товара должно быть указано количество\n');
-define('JS_PRODUCTS_MODEL', '* Для нового товара должен быть указан код товара\n');
-define('JS_PRODUCTS_IMAGE', '* Для нового товара должна быть картинка\n');
+define('JS_PRODUCTS_NAME', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅРѕ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ\n');
+define('JS_PRODUCTS_DESCRIPTION', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅРѕ РѕРїРёСЃР°РЅРёРµ\n');
+define('JS_PRODUCTS_PRICE', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ СѓРєР°Р·Р°РЅР° С†РµРЅР°\n');
+define('JS_PRODUCTS_WEIGHT', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅ РІРµСЃ\n');
+define('JS_PRODUCTS_QUANTITY', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅРѕ РєРѕР»РёС‡РµСЃС‚РІРѕ\n');
+define('JS_PRODUCTS_MODEL', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓРєР°Р·Р°РЅ РєРѕРґ С‚РѕРІР°СЂР°\n');
+define('JS_PRODUCTS_IMAGE', '* Р”Р»СЏ РЅРѕРІРѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєР°СЂС‚РёРЅРєР°\n');
 
-define('JS_SPECIALS_PRODUCTS_PRICE', '* Для этого товара должна быть установлена новая цена\n');
+define('JS_SPECIALS_PRODUCTS_PRICE', '* Р”Р»СЏ СЌС‚РѕРіРѕ С‚РѕРІР°СЂР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ СѓСЃС‚Р°РЅРѕРІР»РµРЅР° РЅРѕРІР°СЏ С†РµРЅР°\n');
 
-define('JS_GENDER', '* Поле \'Пол\' должно быть выбрано.\n');
-define('JS_FIRST_NAME', '* Поле \'Имя\' должно содержать не менее ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' символов.\n');
-define('JS_LAST_NAME', '* Поле \'Фамилия\' должно содержать не менее ' . ENTRY_LAST_NAME_MIN_LENGTH . ' символов.\n');
-define('JS_DOB', '* Поле \'День рождения\' должно иметь формат: xx/xx/xxxx (день/месяц/год).\n');
-define('JS_EMAIL_ADDRESS', '* Поле \'E-Mail адрес\' должно содержать не менее ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' символов.\n');
-define('JS_ADDRESS', '* Поле \'Адрес\' должно содержать не менее ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' символов.\n');
-define('JS_POST_CODE', '* Поле \'Индекс\' должно содержать не менее ' . ENTRY_POSTCODE_MIN_LENGTH . ' символов.\n');
-define('JS_CITY', '* Поле \'Город\' должно содержать не менее ' . ENTRY_CITY_MIN_LENGTH . ' символов.\n');
-define('JS_STATE', '* Поле \'Регион\' должно быть выбрано.\n');
-define('JS_STATE_SELECT', '-- Выберите выше --');
-define('JS_ZONE', '* Поле \'Регион\' должно соответствовать выбраной стране.');
-define('JS_COUNTRY', '* Поле \'Страна\' дожно быть заполнено.\n');
-define('JS_TELEPHONE', '* Поле \'Телефон\' должно содержать не менее ' . ENTRY_TELEPHONE_MIN_LENGTH . ' символов.\n');
-define('JS_PASSWORD', '* Поля \'Пароль\' и \'Подтверждение\' должны совпадать и содержать не менее ' . ENTRY_PASSWORD_MIN_LENGTH . ' символов.\n');
+define('JS_GENDER', '* РџРѕР»Рµ \'РџРѕР»\' РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІС‹Р±СЂР°РЅРѕ.\n');
+define('JS_FIRST_NAME', '* РџРѕР»Рµ \'РРјСЏ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_LAST_NAME', '* РџРѕР»Рµ \'Р¤Р°РјРёР»РёСЏ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_LAST_NAME_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_DOB', '* РџРѕР»Рµ \'Р”РµРЅСЊ СЂРѕР¶РґРµРЅРёСЏ\' РґРѕР»Р¶РЅРѕ РёРјРµС‚СЊ С„РѕСЂРјР°С‚: xx/xx/xxxx (РґРµРЅСЊ/РјРµСЃСЏС†/РіРѕРґ).\n');
+define('JS_EMAIL_ADDRESS', '* РџРѕР»Рµ \'E-Mail Р°РґСЂРµСЃ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_ADDRESS', '* РџРѕР»Рµ \'РђРґСЂРµСЃ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_POST_CODE', '* РџРѕР»Рµ \'РРЅРґРµРєСЃ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_POSTCODE_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_CITY', '* РџРѕР»Рµ \'Р“РѕСЂРѕРґ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_CITY_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_STATE', '* РџРѕР»Рµ \'Р РµРіРёРѕРЅ\' РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІС‹Р±СЂР°РЅРѕ.\n');
+define('JS_STATE_SELECT', '-- Р’С‹Р±РµСЂРёС‚Рµ РІС‹С€Рµ --');
+define('JS_ZONE', '* РџРѕР»Рµ \'Р РµРіРёРѕРЅ\' РґРѕР»Р¶РЅРѕ СЃРѕРѕС‚РІРµС‚СЃС‚РІРѕРІР°С‚СЊ РІС‹Р±СЂР°РЅРѕР№ СЃС‚СЂР°РЅРµ.');
+define('JS_COUNTRY', '* РџРѕР»Рµ \'РЎС‚СЂР°РЅР°\' РґРѕР¶РЅРѕ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅРѕ.\n');
+define('JS_TELEPHONE', '* РџРѕР»Рµ \'РўРµР»РµС„РѕРЅ\' РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_TELEPHONE_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
+define('JS_PASSWORD', '* РџРѕР»СЏ \'РџР°СЂРѕР»СЊ\' Рё \'РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ\' РґРѕР»Р¶РЅС‹ СЃРѕРІРїР°РґР°С‚СЊ Рё СЃРѕРґРµСЂР¶Р°С‚СЊ РЅРµ РјРµРЅРµРµ ' . ENTRY_PASSWORD_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ.\n');
 
-define('JS_ORDER_DOES_NOT_EXIST', 'Заказ номер %s не найден!');
+define('JS_ORDER_DOES_NOT_EXIST', 'Р—Р°РєР°Р· РЅРѕРјРµСЂ %s РЅРµ РЅР°Р№РґРµРЅ!');
 
-define('CATEGORY_PERSONAL', 'Персональный');
-define('CATEGORY_ADDRESS', 'Адрес');
-define('CATEGORY_CONTACT', 'Для контакта');
-define('CATEGORY_COMPANY', 'Компания');
-define('CATEGORY_OPTIONS', 'Рассылка');
-define('DISCOUNT_OPTIONS', 'Скидки');
+define('CATEGORY_PERSONAL', 'РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№');
+define('CATEGORY_ADDRESS', 'РђРґСЂРµСЃ');
+define('CATEGORY_CONTACT', 'Р”Р»СЏ РєРѕРЅС‚Р°РєС‚Р°');
+define('CATEGORY_COMPANY', 'РљРѕРјРїР°РЅРёСЏ');
+define('CATEGORY_OPTIONS', 'Р Р°СЃСЃС‹Р»РєР°');
+define('DISCOUNT_OPTIONS', 'РЎРєРёРґРєРё');
 
-define('ENTRY_GENDER', 'Пол:');
-define('ENTRY_GENDER_ERROR', '&nbsp;<span class="errorText">обязательно</span>');
-define('ENTRY_FIRST_NAME', 'Имя:');
-define('ENTRY_FIRST_NAME_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' символов</span>');
-define('ENTRY_LAST_NAME', 'Фамилия:');
-define('ENTRY_LAST_NAME_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_LAST_NAME_MIN_LENGTH . ' символов</span>');
-define('ENTRY_DATE_OF_BIRTH', 'Дата рождения:');
-define('ENTRY_DATE_OF_BIRTH_ERROR', '&nbsp;<span class="errorText">(пример 21/05/1970)</span>');
-define('ENTRY_EMAIL_ADDRESS', 'E-Mail Адрес:');
-define('ENTRY_EMAIL_ADDRESS_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' символов</span>');
-define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', '&nbsp;<span class="errorText">Вы ввели неверный email адрес!</span>');
-define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', '&nbsp;<span class="errorText">Данный email адрес уже зарегистрирован!</span>');
-define('ENTRY_COMPANY', 'Название компании:');
+define('ENTRY_GENDER', 'РџРѕР»:');
+define('ENTRY_GENDER_ERROR', '&nbsp;<span class="errorText">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</span>');
+define('ENTRY_FIRST_NAME', 'РРјСЏ:');
+define('ENTRY_FIRST_NAME_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_LAST_NAME', 'Р¤Р°РјРёР»РёСЏ:');
+define('ENTRY_LAST_NAME_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_LAST_NAME_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_DATE_OF_BIRTH', 'Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ:');
+define('ENTRY_DATE_OF_BIRTH_ERROR', '&nbsp;<span class="errorText">(РїСЂРёРјРµСЂ 21/05/1970)</span>');
+define('ENTRY_EMAIL_ADDRESS', 'E-Mail РђРґСЂРµСЃ:');
+define('ENTRY_EMAIL_ADDRESS_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', '&nbsp;<span class="errorText">Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ email Р°РґСЂРµСЃ!</span>');
+define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', '&nbsp;<span class="errorText">Р”Р°РЅРЅС‹Р№ email Р°РґСЂРµСЃ СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ!</span>');
+define('ENTRY_COMPANY', 'РќР°Р·РІР°РЅРёРµ РєРѕРјРїР°РЅРёРё:');
 define('ENTRY_COMPANY_ERROR', '');
-define('ENTRY_STREET_ADDRESS', 'Адрес:');
-define('ENTRY_STREET_ADDRESS_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' символов</span>');
-define('ENTRY_SUBURB', 'Район:');
+define('ENTRY_STREET_ADDRESS', 'РђРґСЂРµСЃ:');
+define('ENTRY_STREET_ADDRESS_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_SUBURB', 'Р Р°Р№РѕРЅ:');
 define('ENTRY_SUBURB_ERROR', '');
-define('ENTRY_POST_CODE', 'Индекс:');
-define('ENTRY_POST_CODE_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_POSTCODE_MIN_LENGTH . ' символов</span>');
-define('ENTRY_CITY', 'Город:');
-define('ENTRY_CITY_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_CITY_MIN_LENGTH . ' символов</span>');
-define('ENTRY_STATE', 'Регион:');
-define('ENTRY_STATE_ERROR', '&nbsp;<span class="errorText">обязательно</span>');
-define('ENTRY_COUNTRY', 'Страна:');
+define('ENTRY_POST_CODE', 'РРЅРґРµРєСЃ:');
+define('ENTRY_POST_CODE_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_POSTCODE_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_CITY', 'Р“РѕСЂРѕРґ:');
+define('ENTRY_CITY_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_CITY_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_STATE', 'Р РµРіРёРѕРЅ:');
+define('ENTRY_STATE_ERROR', '&nbsp;<span class="errorText">РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</span>');
+define('ENTRY_COUNTRY', 'РЎС‚СЂР°РЅР°:');
 define('ENTRY_COUNTRY_ERROR', '');
-define('ENTRY_TELEPHONE_NUMBER', 'Телефон:');
-define('ENTRY_TELEPHONE_NUMBER_ERROR', '&nbsp;<span class="errorText">минимум ' . ENTRY_TELEPHONE_MIN_LENGTH . ' символов</span>');
-define('ENTRY_FAX_NUMBER', 'Факс:');
+define('ENTRY_TELEPHONE_NUMBER', 'РўРµР»РµС„РѕРЅ:');
+define('ENTRY_TELEPHONE_NUMBER_ERROR', '&nbsp;<span class="errorText">РјРёРЅРёРјСѓРј ' . ENTRY_TELEPHONE_MIN_LENGTH . ' СЃРёРјРІРѕР»РѕРІ</span>');
+define('ENTRY_FAX_NUMBER', 'Р¤Р°РєСЃ:');
 define('ENTRY_FAX_NUMBER_ERROR', '');
-define('ENTRY_NEWSLETTER', 'Получать рассылку:');
-define('ENTRY_NEWSLETTER_YES', 'Подписан');
-define('ENTRY_NEWSLETTER_NO', 'Не подписан');
+define('ENTRY_NEWSLETTER', 'РџРѕР»СѓС‡Р°С‚СЊ СЂР°СЃСЃС‹Р»РєСѓ:');
+define('ENTRY_NEWSLETTER_YES', 'РџРѕРґРїРёСЃР°РЅ');
+define('ENTRY_NEWSLETTER_NO', 'РќРµ РїРѕРґРїРёСЃР°РЅ');
 define('ENTRY_NEWSLETTER_ERROR', '');
 
 // images
-define('IMAGE_ANI_SEND_EMAIL', 'Отправить E-Mail');
-define('IMAGE_BACK', 'Назад');
-define('IMAGE_BACKUP', 'Рез. копия');
-define('IMAGE_CANCEL', 'Отменить');
-define('IMAGE_CONFIRM', 'Подтвердить');
-define('IMAGE_COPY', 'Копировать');
-define('IMAGE_COPY_TO', 'Копировать в');
-define('IMAGE_DETAILS', 'Настроить');
-define('IMAGE_DELETE', 'Удалить');
-define('IMAGE_EDIT', 'Редактировать');
+define('IMAGE_ANI_SEND_EMAIL', 'РћС‚РїСЂР°РІРёС‚СЊ E-Mail');
+define('IMAGE_BACK', 'РќР°Р·Р°Рґ');
+define('IMAGE_BACKUP', 'Р РµР·. РєРѕРїРёСЏ');
+define('IMAGE_CANCEL', 'РћС‚РјРµРЅРёС‚СЊ');
+define('IMAGE_CONFIRM', 'РџРѕРґС‚РІРµСЂРґРёС‚СЊ');
+define('IMAGE_COPY', 'РљРѕРїРёСЂРѕРІР°С‚СЊ');
+define('IMAGE_COPY_TO', 'РљРѕРїРёСЂРѕРІР°С‚СЊ РІ');
+define('IMAGE_DETAILS', 'РќР°СЃС‚СЂРѕРёС‚СЊ');
+define('IMAGE_DELETE', 'РЈРґР°Р»РёС‚СЊ');
+define('IMAGE_EDIT', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ');
 define('IMAGE_EMAIL', 'Email');
-define('IMAGE_FILE_MANAGER', 'Менеджер файлов');
-define('IMAGE_ICON_STATUS_GREEN', 'Активный');
-define('IMAGE_ICON_STATUS_GREEN_LIGHT', 'Активизировать');
-define('IMAGE_ICON_STATUS_RED', 'Неактивный');
-define('IMAGE_ICON_STATUS_RED_LIGHT', 'Сделать неактивным');
-define('IMAGE_ICON_INFO', 'Информационные страницы');
-define('IMAGE_INSERT', 'Добавить');
-define('IMAGE_LOCK', 'Замок');
-define('IMAGE_MODULE_INSTALL', 'Установить модуль');
-define('IMAGE_MODULE_REMOVE', 'Удалить модуль');
-define('IMAGE_MOVE', 'Переместить');
-define('IMAGE_NEW_BANNER', 'Новый баннер');
-define('IMAGE_NEW_CATEGORY', 'Новая категория');
-define('IMAGE_NEW_COUNTRY', 'Новая страна');
-define('IMAGE_NEW_CURRENCY', 'Новая валюта'); 
-define('IMAGE_NEW_FILE', 'Новый файл');
-define('IMAGE_NEW_FOLDER', 'Новая папка');
-define('IMAGE_NEW_LANGUAGE', 'Новый язык');
-define('IMAGE_NEW_NEWSLETTER', 'Новое письмо новостей');
-define('IMAGE_NEW_PRODUCT', 'Новый товар');
-define('IMAGE_NEW_SALE', 'Новая распродажа');
-define('IMAGE_NEW_TAX_CLASS', 'Новый налог'); 
-define('IMAGE_NEW_TAX_RATE', 'Новая ставка налога');
-define('IMAGE_NEW_TAX_ZONE', 'Новая налоговая зона');
-define('IMAGE_NEW_ZONE', 'Новая зона');
-define('IMAGE_ORDERS', 'Заказы');
-define('IMAGE_ORDERS_INVOICE', 'Счёт-фактура');
-define('IMAGE_ORDERS_PACKINGSLIP', 'Накладная');
-define('IMAGE_PREVIEW', 'Предпросмотр');
-define('IMAGE_RESTORE', 'Восстановить');
-define('IMAGE_RESET', 'Сброс');
-define('IMAGE_SAVE', 'Сохранить');
-define('IMAGE_SEARCH', 'Искать');
-define('IMAGE_SELECT', 'Выбрать');
-define('IMAGE_SEND', 'Отправить');
-define('IMAGE_SEND_EMAIL', 'Отправить Email');
-define('IMAGE_UNLOCK', 'Разблокировать');
-define('IMAGE_UPDATE', 'Обновить');
-define('IMAGE_UPDATE_CURRENCIES', 'Скорректировать курсы валют');
-define('IMAGE_UPLOAD', 'Загрузить');
-define('TEXT_IMAGE_NONEXISTENT', 'Нет картинки'); 
+define('IMAGE_FILE_MANAGER', 'РњРµРЅРµРґР¶РµСЂ С„Р°Р№Р»РѕРІ');
+define('IMAGE_ICON_STATUS_GREEN', 'РђРєС‚РёРІРЅС‹Р№');
+define('IMAGE_ICON_STATUS_GREEN_LIGHT', 'РђРєС‚РёРІРёР·РёСЂРѕРІР°С‚СЊ');
+define('IMAGE_ICON_STATUS_RED', 'РќРµР°РєС‚РёРІРЅС‹Р№');
+define('IMAGE_ICON_STATUS_RED_LIGHT', 'РЎРґРµР»Р°С‚СЊ РЅРµР°РєС‚РёРІРЅС‹Рј');
+define('IMAGE_ICON_INFO', 'РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ СЃС‚СЂР°РЅРёС†С‹');
+define('IMAGE_INSERT', 'Р”РѕР±Р°РІРёС‚СЊ');
+define('IMAGE_LOCK', 'Р—Р°РјРѕРє');
+define('IMAGE_MODULE_INSTALL', 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»СЊ');
+define('IMAGE_MODULE_REMOVE', 'РЈРґР°Р»РёС‚СЊ РјРѕРґСѓР»СЊ');
+define('IMAGE_MOVE', 'РџРµСЂРµРјРµСЃС‚РёС‚СЊ');
+define('IMAGE_NEW_BANNER', 'РќРѕРІС‹Р№ Р±Р°РЅРЅРµСЂ');
+define('IMAGE_NEW_CATEGORY', 'РќРѕРІР°СЏ РєР°С‚РµРіРѕСЂРёСЏ');
+define('IMAGE_NEW_COUNTRY', 'РќРѕРІР°СЏ СЃС‚СЂР°РЅР°');
+define('IMAGE_NEW_CURRENCY', 'РќРѕРІР°СЏ РІР°Р»СЋС‚Р°'); 
+define('IMAGE_NEW_FILE', 'РќРѕРІС‹Р№ С„Р°Р№Р»');
+define('IMAGE_NEW_FOLDER', 'РќРѕРІР°СЏ РїР°РїРєР°');
+define('IMAGE_NEW_LANGUAGE', 'РќРѕРІС‹Р№ СЏР·С‹Рє');
+define('IMAGE_NEW_NEWSLETTER', 'РќРѕРІРѕРµ РїРёСЃСЊРјРѕ РЅРѕРІРѕСЃС‚РµР№');
+define('IMAGE_NEW_PRODUCT', 'РќРѕРІС‹Р№ С‚РѕРІР°СЂ');
+define('IMAGE_NEW_SALE', 'РќРѕРІР°СЏ СЂР°СЃРїСЂРѕРґР°Р¶Р°');
+define('IMAGE_NEW_TAX_CLASS', 'РќРѕРІС‹Р№ РЅР°Р»РѕРі'); 
+define('IMAGE_NEW_TAX_RATE', 'РќРѕРІР°СЏ СЃС‚Р°РІРєР° РЅР°Р»РѕРіР°');
+define('IMAGE_NEW_TAX_ZONE', 'РќРѕРІР°СЏ РЅР°Р»РѕРіРѕРІР°СЏ Р·РѕРЅР°');
+define('IMAGE_NEW_ZONE', 'РќРѕРІР°СЏ Р·РѕРЅР°');
+define('IMAGE_ORDERS', 'Р—Р°РєР°Р·С‹');
+define('IMAGE_ORDERS_INVOICE', 'РЎС‡С‘С‚-С„Р°РєС‚СѓСЂР°');
+define('IMAGE_ORDERS_PACKINGSLIP', 'РќР°РєР»Р°РґРЅР°СЏ');
+define('IMAGE_PREVIEW', 'РџСЂРµРґРїСЂРѕСЃРјРѕС‚СЂ');
+define('IMAGE_RESTORE', 'Р’РѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ');
+define('IMAGE_RESET', 'РЎР±СЂРѕСЃ');
+define('IMAGE_SAVE', 'РЎРѕС…СЂР°РЅРёС‚СЊ');
+define('IMAGE_SEARCH', 'РСЃРєР°С‚СЊ');
+define('IMAGE_SELECT', 'Р’С‹Р±СЂР°С‚СЊ');
+define('IMAGE_SEND', 'РћС‚РїСЂР°РІРёС‚СЊ');
+define('IMAGE_SEND_EMAIL', 'РћС‚РїСЂР°РІРёС‚СЊ Email');
+define('IMAGE_UNLOCK', 'Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ');
+define('IMAGE_UPDATE', 'РћР±РЅРѕРІРёС‚СЊ');
+define('IMAGE_UPDATE_CURRENCIES', 'РЎРєРѕСЂСЂРµРєС‚РёСЂРѕРІР°С‚СЊ РєСѓСЂСЃС‹ РІР°Р»СЋС‚');
+define('IMAGE_UPLOAD', 'Р—Р°РіСЂСѓР·РёС‚СЊ');
+define('TEXT_IMAGE_NONEXISTENT', 'РќРµС‚ РєР°СЂС‚РёРЅРєРё'); 
 
-define('ICON_CROSS', 'Недействительно');
-define('ICON_CURRENT_FOLDER', 'Текущая директория');
-define('ICON_DELETE', 'Удалить');
-define('ICON_ERROR', 'Ошибка:');
-define('ICON_FILE', 'Файл');
-define('ICON_FILE_DOWNLOAD', 'Загрузка');
-define('ICON_FOLDER', 'Папка');
-define('ICON_LOCKED', 'Заблокировать');
-define('ICON_PREVIOUS_LEVEL', 'Предыдущий уровень');
-define('ICON_PREVIEW', 'Редактировать');
-define('ICON_STATISTICS', 'Статистика');
-define('ICON_SUCCESS', 'Выполнено');
-define('ICON_TICK', 'Истина');
-define('ICON_UNLOCKED', 'Разблокировать');
-define('ICON_WARNING', 'ВНИМАНИЕ');
+define('ICON_CROSS', 'РќРµРґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ');
+define('ICON_CURRENT_FOLDER', 'РўРµРєСѓС‰Р°СЏ РґРёСЂРµРєС‚РѕСЂРёСЏ');
+define('ICON_DELETE', 'РЈРґР°Р»РёС‚СЊ');
+define('ICON_ERROR', 'РћС€РёР±РєР°:');
+define('ICON_FILE', 'Р¤Р°Р№Р»');
+define('ICON_FILE_DOWNLOAD', 'Р—Р°РіСЂСѓР·РєР°');
+define('ICON_FOLDER', 'РџР°РїРєР°');
+define('ICON_LOCKED', 'Р—Р°Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ');
+define('ICON_PREVIOUS_LEVEL', 'РџСЂРµРґС‹РґСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ');
+define('ICON_PREVIEW', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ');
+define('ICON_STATISTICS', 'РЎС‚Р°С‚РёСЃС‚РёРєР°');
+define('ICON_SUCCESS', 'Р’С‹РїРѕР»РЅРµРЅРѕ');
+define('ICON_TICK', 'РСЃС‚РёРЅР°');
+define('ICON_UNLOCKED', 'Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ');
+define('ICON_WARNING', 'Р’РќРРњРђРќРР•');
 
 // constants for use in tep_prev_next_display function
-define('TEXT_RESULT_PAGE', 'Страница %s из %d');
+define('TEXT_RESULT_PAGE', 'РЎС‚СЂР°РЅРёС†Р° %s РёР· %d');
 
-define('TEXT_DISPLAY_NUMBER_OF_BANNERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> баннеров)');
-define('TEXT_DISPLAY_NUMBER_OF_COUNTRIES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> стран)');
-define('TEXT_DISPLAY_NUMBER_OF_CUSTOMERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> клиентов)');
-define('TEXT_DISPLAY_NUMBER_OF_CURRENCIES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> валют)');
-define('TEXT_DISPLAY_NUMBER_OF_LANGUAGES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> языковых модулей)');
-define('TEXT_DISPLAY_NUMBER_OF_MANUFACTURERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> производителей)');
-define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> рассылок)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> заказов)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> статуса)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> позиций)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_EXPECTED', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> ожидаемых товаров)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> отзывов о товарах)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> специальных предложений)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_CLASSES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> типов налогов)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_ZONES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> налоговых зон)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_RATES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> ставок налогов)');
-define('TEXT_DISPLAY_NUMBER_OF_ZONES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> зон)');
-define('TEXT_DISPLAY_NUMBER_OF_NEWS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> новостей)');
-define('TEXT_DISPLAY_NUMBER_OF_FAQS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> вопросов)');
+define('TEXT_DISPLAY_NUMBER_OF_BANNERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р±Р°РЅРЅРµСЂРѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_COUNTRIES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃС‚СЂР°РЅ)');
+define('TEXT_DISPLAY_NUMBER_OF_CUSTOMERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РєР»РёРµРЅС‚РѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_CURRENCIES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РІР°Р»СЋС‚)');
+define('TEXT_DISPLAY_NUMBER_OF_LANGUAGES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЏР·С‹РєРѕРІС‹С… РјРѕРґСѓР»РµР№)');
+define('TEXT_DISPLAY_NUMBER_OF_MANUFACTURERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№)');
+define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЂР°СЃСЃС‹Р»РѕРє)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р·Р°РєР°Р·РѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃС‚Р°С‚СѓСЃР°)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїРѕР·РёС†РёР№)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_EXPECTED', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РѕР¶РёРґР°РµРјС‹С… С‚РѕРІР°СЂРѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РѕС‚Р·С‹РІРѕРІ Рѕ С‚РѕРІР°СЂР°С…)');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃРїРµС†РёР°Р»СЊРЅС‹С… РїСЂРµРґР»РѕР¶РµРЅРёР№)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_CLASSES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> С‚РёРїРѕРІ РЅР°Р»РѕРіРѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_ZONES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РЅР°Р»РѕРіРѕРІС‹С… Р·РѕРЅ)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_RATES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> СЃС‚Р°РІРѕРє РЅР°Р»РѕРіРѕРІ)');
+define('TEXT_DISPLAY_NUMBER_OF_ZONES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р·РѕРЅ)');
+define('TEXT_DISPLAY_NUMBER_OF_NEWS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РЅРѕРІРѕСЃС‚РµР№)');
+define('TEXT_DISPLAY_NUMBER_OF_FAQS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РІРѕРїСЂРѕСЃРѕРІ)');
 
-define('PREVNEXT_BUTTON_PREV', 'Предыдущая');
-define('PREVNEXT_BUTTON_NEXT', 'Следующая');
+define('PREVNEXT_BUTTON_PREV', 'РџСЂРµРґС‹РґСѓС‰Р°СЏ');
+define('PREVNEXT_BUTTON_NEXT', 'РЎР»РµРґСѓСЋС‰Р°СЏ');
 
-define('TEXT_DEFAULT', 'по умолчанию');
-define('TEXT_SET_DEFAULT', 'Установить по умолчанию');
-define('TEXT_FIELD_REQUIRED', '&nbsp;<span class="fieldRequired">* Обязательно</span>');
+define('TEXT_DEFAULT', 'РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ');
+define('TEXT_SET_DEFAULT', 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ');
+define('TEXT_FIELD_REQUIRED', '&nbsp;<span class="fieldRequired">* РћР±СЏР·Р°С‚РµР»СЊРЅРѕ</span>');
 
-define('ERROR_NO_DEFAULT_CURRENCY_DEFINED', 'Ошибка: К настоящему времени ни одна валюта не была установлена по умолчанию. Пожалуйста, установите одну из них в: Локализация -> Валюта');
+define('ERROR_NO_DEFAULT_CURRENCY_DEFINED', 'РћС€РёР±РєР°: Рљ РЅР°СЃС‚РѕСЏС‰РµРјСѓ РІСЂРµРјРµРЅРё РЅРё РѕРґРЅР° РІР°Р»СЋС‚Р° РЅРµ Р±С‹Р»Р° СѓСЃС‚Р°РЅРѕРІР»РµРЅР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ РѕРґРЅСѓ РёР· РЅРёС… РІ: Р›РѕРєР°Р»РёР·Р°С†РёСЏ -> Р’Р°Р»СЋС‚Р°');
 
-define('TEXT_CACHE_CATEGORIES', 'Бокс Категорий');
-define('TEXT_CACHE_MANUFACTURERS', 'Бокс Производителей');
-define('TEXT_CACHE_ALSO_PURCHASED', 'Также Модули Покупок'); 
+define('TEXT_CACHE_CATEGORIES', 'Р‘РѕРєСЃ РљР°С‚РµРіРѕСЂРёР№');
+define('TEXT_CACHE_MANUFACTURERS', 'Р‘РѕРєСЃ РџСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№');
+define('TEXT_CACHE_ALSO_PURCHASED', 'РўР°РєР¶Рµ РњРѕРґСѓР»Рё РџРѕРєСѓРїРѕРє'); 
 
-define('TEXT_NONE', '--нет--');
-define('TEXT_TOP', 'Начало');
+define('TEXT_NONE', '--РЅРµС‚--');
+define('TEXT_TOP', 'РќР°С‡Р°Р»Рѕ');
 
-define('ERROR_DESTINATION_DOES_NOT_EXIST', 'Ошибка: Каталог не существует.');
-define('ERROR_DESTINATION_NOT_WRITEABLE', 'Ошибка: Каталог защищён от записи, установите необходимые права доступа.');
-define('ERROR_FILE_NOT_SAVED', 'Ошибка: Файл не был загружен.');
-define('ERROR_FILETYPE_NOT_ALLOWED', 'Ошибка: Нельзя закачивать файлы данного типа.');
-define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Выполнено: Файл успешно загружен.');
-define('WARNING_NO_FILE_UPLOADED', 'Предупреждение: Ни одного файла не загружено.');
-define('WARNING_FILE_UPLOADS_DISABLED', 'Предупреждение: Опция загрузки файлов отключена в конфигурационном файле php.ini.');
+define('ERROR_DESTINATION_DOES_NOT_EXIST', 'РћС€РёР±РєР°: РљР°С‚Р°Р»РѕРі РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚.');
+define('ERROR_DESTINATION_NOT_WRITEABLE', 'РћС€РёР±РєР°: РљР°С‚Р°Р»РѕРі Р·Р°С‰РёС‰С‘РЅ РѕС‚ Р·Р°РїРёСЃРё, СѓСЃС‚Р°РЅРѕРІРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РїСЂР°РІР° РґРѕСЃС‚СѓРїР°.');
+define('ERROR_FILE_NOT_SAVED', 'РћС€РёР±РєР°: Р¤Р°Р№Р» РЅРµ Р±С‹Р» Р·Р°РіСЂСѓР¶РµРЅ.');
+define('ERROR_FILETYPE_NOT_ALLOWED', 'РћС€РёР±РєР°: РќРµР»СЊР·СЏ Р·Р°РєР°С‡РёРІР°С‚СЊ С„Р°Р№Р»С‹ РґР°РЅРЅРѕРіРѕ С‚РёРїР°.');
+define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Р’С‹РїРѕР»РЅРµРЅРѕ: Р¤Р°Р№Р» СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅ.');
+define('WARNING_NO_FILE_UPLOADED', 'РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ: РќРё РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р° РЅРµ Р·Р°РіСЂСѓР¶РµРЅРѕ.');
+define('WARNING_FILE_UPLOADS_DISABLED', 'РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ: РћРїС†РёСЏ Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»РѕРІ РѕС‚РєР»СЋС‡РµРЅР° РІ РєРѕРЅС„РёРіСѓСЂР°С†РёРѕРЅРЅРѕРј С„Р°Р№Р»Рµ php.ini.');
 
-define('BOX_CATALOG_XSELL_PRODUCTS', 'Сопутствующие товары');
+define('BOX_CATALOG_XSELL_PRODUCTS', 'РЎРѕРїСѓС‚СЃС‚РІСѓСЋС‰РёРµ С‚РѕРІР°СЂС‹');
 
-define('IMAGE_BUTTON_PRINT_ORDER', 'Версия для печати');
+define('IMAGE_BUTTON_PRINT_ORDER', 'Р’РµСЂСЃРёСЏ РґР»СЏ РїРµС‡Р°С‚Рё');
 
  // X-Sell
 REQUIRE(DIR_WS_LANGUAGES . 'add_ccgvdc_russian.php');
 
 // BOF: Lango Added for print order MOD
-define('IMAGE_BUTTON_PRINT', 'Печатать');
+define('IMAGE_BUTTON_PRINT', 'РџРµС‡Р°С‚Р°С‚СЊ');
 // EOF: Lango Added for print order MOD
 
 // BOF: Lango Added for Featured product MOD
-  define('BOX_CATALOG_FEATURED', 'Рекомендуемые товары');
+  define('BOX_CATALOG_FEATURED', 'Р РµРєРѕРјРµРЅРґСѓРµРјС‹Рµ С‚РѕРІР°СЂС‹');
 // EOF: Lango Added for Featured product MOD
 
 // BOF: Lango Added for Sales Stats MOD
-define('BOX_REPORTS_MONTHLY_SALES', 'Статистика продаж');
+define('BOX_REPORTS_MONTHLY_SALES', 'РЎС‚Р°С‚РёСЃС‚РёРєР° РїСЂРѕРґР°Р¶');
 // EOF: Lango Added for Sales Stats MOD
 
 // BOF: Lango Added for template MOD
@@ -387,14 +387,14 @@ define('BOX_REPORTS_MONTHLY_SALES', 'Статистика продаж');
 require(DIR_WS_LANGUAGES . $language . '/' . 'attributes_sorter.php');
 
 //BEGIN Dynamic information pages unlimited
-define('BOX_HEADING_INFORMATION', 'Информационные страницы');
-define('BOX_INFORMATION', 'Страницы');
+define('BOX_HEADING_INFORMATION', 'РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ СЃС‚СЂР°РЅРёС†С‹');
+define('BOX_INFORMATION', 'РЎС‚СЂР°РЅРёС†С‹');
 //END Dynamic information pages unlimited
 
-	define('BOX_REPORTS_RECOVER_CART_SALES', 'Незавершённые заказы');
-	define('BOX_TOOLS_RECOVER_CART', 'Незавершённые заказы');
+	define('BOX_REPORTS_RECOVER_CART_SALES', 'РќРµР·Р°РІРµСЂС€С‘РЅРЅС‹Рµ Р·Р°РєР°Р·С‹');
+	define('BOX_TOOLS_RECOVER_CART', 'РќРµР·Р°РІРµСЂС€С‘РЅРЅС‹Рµ Р·Р°РєР°Р·С‹');
 
-  define('BOX_TOOLS_KEYWORDS', 'Поисковые запросы');
+  define('BOX_TOOLS_KEYWORDS', 'РџРѕРёСЃРєРѕРІС‹Рµ Р·Р°РїСЂРѕСЃС‹');
 
 // RJW Begin Meta Tags Code
   define('TEXT_META_TITLE', 'Meta Title');
@@ -403,179 +403,179 @@ define('BOX_INFORMATION', 'Страницы');
 // RJW End Meta Tags Code
 
 // Article Manager
-define('BOX_HEADING_ARTICLES', 'Статьи');
-define('BOX_TOPICS_ARTICLES', 'Статьи/Разделы');
-define('BOX_ARTICLES_CONFIG', 'Настройка');
-define('BOX_ARTICLES_AUTHORS', 'Авторы');
-define('BOX_ARTICLES_REVIEWS', 'Отзывы'); 
-define('BOX_ARTICLES_XSELL', 'Товары-Статьи');
-define('IMAGE_NEW_TOPIC', 'Новый раздел');
-define('IMAGE_NEW_ARTICLE', 'Новая статья');
-define('TEXT_DISPLAY_NUMBER_OF_AUTHORS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> авторов)'); 
+define('BOX_HEADING_ARTICLES', 'РЎС‚Р°С‚СЊРё');
+define('BOX_TOPICS_ARTICLES', 'РЎС‚Р°С‚СЊРё/Р Р°Р·РґРµР»С‹');
+define('BOX_ARTICLES_CONFIG', 'РќР°СЃС‚СЂРѕР№РєР°');
+define('BOX_ARTICLES_AUTHORS', 'РђРІС‚РѕСЂС‹');
+define('BOX_ARTICLES_REVIEWS', 'РћС‚Р·С‹РІС‹'); 
+define('BOX_ARTICLES_XSELL', 'РўРѕРІР°СЂС‹-РЎС‚Р°С‚СЊРё');
+define('IMAGE_NEW_TOPIC', 'РќРѕРІС‹Р№ СЂР°Р·РґРµР»');
+define('IMAGE_NEW_ARTICLE', 'РќРѕРІР°СЏ СЃС‚Р°С‚СЊСЏ');
+define('TEXT_DISPLAY_NUMBER_OF_AUTHORS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р°РІС‚РѕСЂРѕРІ)'); 
 
 //TotalB2B start
-define('BOX_CUSTOMERS_GROUPS', 'Группы');
-define('BOX_MANUDISCOUNT', 'Скидка на товары одного производителя');
+define('BOX_CUSTOMERS_GROUPS', 'Р“СЂСѓРїРїС‹');
+define('BOX_MANUDISCOUNT', 'РЎРєРёРґРєР° РЅР° С‚РѕРІР°СЂС‹ РѕРґРЅРѕРіРѕ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ');
 //TotalB2B end
 
 // add for Group minimum price to order start		
-define('GROUP_MIN_PRICE', 'Минимальная стоимость заказа группы');
+define('GROUP_MIN_PRICE', 'РњРёРЅРёРјР°Р»СЊРЅР°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р° РіСЂСѓРїРїС‹');
 // add for Group minimum price to order end
 
 // add for color groups start
-define('GROUP_COLOR_BAR', 'Цвет группы');
+define('GROUP_COLOR_BAR', 'Р¦РІРµС‚ РіСЂСѓРїРїС‹');
 // add for color groups end
 //TotalB2B end
-define('BOX_CATALOG_QUICK_UPDATES', 'Обновление прайса');
+define('BOX_CATALOG_QUICK_UPDATES', 'РћР±РЅРѕРІР»РµРЅРёРµ РїСЂР°Р№СЃР°');
 
-define('IMAGE_PROPERTIES_POPUP_ADD_CHANGE_DELETE', 'Изменить/удалить тех. параметры');
-define('IMAGE_PROPERTIES_POPUP_ADD', 'Добавить тех. параметры');
-define('IMAGE_PROPERTIES', 'Тех. параметры');
+define('IMAGE_PROPERTIES_POPUP_ADD_CHANGE_DELETE', 'РР·РјРµРЅРёС‚СЊ/СѓРґР°Р»РёС‚СЊ С‚РµС…. РїР°СЂР°РјРµС‚СЂС‹');
+define('IMAGE_PROPERTIES_POPUP_ADD', 'Р”РѕР±Р°РІРёС‚СЊ С‚РµС…. РїР°СЂР°РјРµС‚СЂС‹');
+define('IMAGE_PROPERTIES', 'РўРµС…. РїР°СЂР°РјРµС‚СЂС‹');
 
 // polls box text in includes/boxes/polls.php
 
-define('BOX_HEADING_POLLS', 'Опросы');
-define('BOX_POLLS_POLLS', 'Опросы');
-define('BOX_POLLS_CONFIG','Настройки');
+define('BOX_HEADING_POLLS', 'РћРїСЂРѕСЃС‹');
+define('BOX_POLLS_POLLS', 'РћРїСЂРѕСЃС‹');
+define('BOX_POLLS_CONFIG','РќР°СЃС‚СЂРѕР№РєРё');
 
-define('BOX_INDEX_GIFTVOUCHERS', 'Сертификаты / Купоны');
+define('BOX_INDEX_GIFTVOUCHERS', 'РЎРµСЂС‚РёС„РёРєР°С‚С‹ / РљСѓРїРѕРЅС‹');
 
-define('BOX_REPORTS_SALES_REPORT2', 'Статистика продаж 2');
-define('BOX_REPORTS_SALES_REPORT', 'Статистика продаж 3');
-define('BOX_REPORTS_CUSTOMERS_ORDERS', 'Статистика клиентов');
+define('BOX_REPORTS_SALES_REPORT2', 'РЎС‚Р°С‚РёСЃС‚РёРєР° РїСЂРѕРґР°Р¶ 2');
+define('BOX_REPORTS_SALES_REPORT', 'РЎС‚Р°С‚РёСЃС‚РёРєР° РїСЂРѕРґР°Р¶ 3');
+define('BOX_REPORTS_CUSTOMERS_ORDERS', 'РЎС‚Р°С‚РёСЃС‚РёРєР° РєР»РёРµРЅС‚РѕРІ');
 
-define('TEXT_NEW_ATTRIBUTE_EDIT', 'Редактировать атрибуты товара');
+define('TEXT_NEW_ATTRIBUTE_EDIT', 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ Р°С‚СЂРёР±СѓС‚С‹ С‚РѕРІР°СЂР°');
 
-define('CONFIGURATION_GROUP_1', 'Мой магазин');
-define('CONFIGURATION_GROUP_2', 'Минимальные значения');
-define('CONFIGURATION_GROUP_3', 'Максимальные значения');
-define('CONFIGURATION_GROUP_4', 'Картинки');
-define('CONFIGURATION_GROUP_5', 'Данные покупателя');
-define('CONFIGURATION_GROUP_6', 'Установленные модули');
-define('CONFIGURATION_GROUP_7', 'Доставка/Упаковка');
-define('CONFIGURATION_GROUP_8', 'Вывод товара');
-define('CONFIGURATION_GROUP_9', 'Склад');
-define('CONFIGURATION_GROUP_10', 'Логи');
-define('CONFIGURATION_GROUP_11', 'Кэш');
-define('CONFIGURATION_GROUP_12', 'Настройка E-Mail');
-define('CONFIGURATION_GROUP_13', 'Скачивание');
-define('CONFIGURATION_GROUP_14', 'GZip Компрессия');
-define('CONFIGURATION_GROUP_15', 'Сессии');
-define('CONFIGURATION_GROUP_112', 'HTML редактор');
-define('CONFIGURATION_GROUP_900', 'Партнёрская программа');
-define('CONFIGURATION_GROUP_16', 'Тех. обслуживание');
-define('CONFIGURATION_GROUP_40', 'Быстрое оформление');
-define('CONFIGURATION_GROUP_901', 'Ссылки');
-define('CONFIGURATION_GROUP_300', 'Обновление прайса');
-define('CONFIGURATION_GROUP_12954', 'Отложенные товары');
-define('CONFIGURATION_GROUP_26229', 'Кэш страниц');
-define('CONFIGURATION_GROUP_26230', 'Яндекс-Маркет');
-define('CONFIGURATION_GROUP_401', 'Список категорий на главной странице');
-define('CONFIGURATION_GROUP_160', 'Установщик модулей');
-define('CONFIGURATION_GROUP_72', 'Редактор заказов');
-define('CONFIGURATION_GROUP_735', 'Картинки атрибутов');
-define('CONFIGURATION_GROUP_736', 'Боксы');
-define('CONFIGURATION_GROUP_1610', 'Спецификации товаров');
+define('CONFIGURATION_GROUP_1', 'РњРѕР№ РјР°РіР°Р·РёРЅ');
+define('CONFIGURATION_GROUP_2', 'РњРёРЅРёРјР°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ');
+define('CONFIGURATION_GROUP_3', 'РњР°РєСЃРёРјР°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ');
+define('CONFIGURATION_GROUP_4', 'РљР°СЂС‚РёРЅРєРё');
+define('CONFIGURATION_GROUP_5', 'Р”Р°РЅРЅС‹Рµ РїРѕРєСѓРїР°С‚РµР»СЏ');
+define('CONFIGURATION_GROUP_6', 'РЈСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Рµ РјРѕРґСѓР»Рё');
+define('CONFIGURATION_GROUP_7', 'Р”РѕСЃС‚Р°РІРєР°/РЈРїР°РєРѕРІРєР°');
+define('CONFIGURATION_GROUP_8', 'Р’С‹РІРѕРґ С‚РѕРІР°СЂР°');
+define('CONFIGURATION_GROUP_9', 'РЎРєР»Р°Рґ');
+define('CONFIGURATION_GROUP_10', 'Р›РѕРіРё');
+define('CONFIGURATION_GROUP_11', 'РљСЌС€');
+define('CONFIGURATION_GROUP_12', 'РќР°СЃС‚СЂРѕР№РєР° E-Mail');
+define('CONFIGURATION_GROUP_13', 'РЎРєР°С‡РёРІР°РЅРёРµ');
+define('CONFIGURATION_GROUP_14', 'GZip РљРѕРјРїСЂРµСЃСЃРёСЏ');
+define('CONFIGURATION_GROUP_15', 'РЎРµСЃСЃРёРё');
+define('CONFIGURATION_GROUP_112', 'HTML СЂРµРґР°РєС‚РѕСЂ');
+define('CONFIGURATION_GROUP_900', 'РџР°СЂС‚РЅС‘СЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР°');
+define('CONFIGURATION_GROUP_16', 'РўРµС…. РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ');
+define('CONFIGURATION_GROUP_40', 'Р‘С‹СЃС‚СЂРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ');
+define('CONFIGURATION_GROUP_901', 'РЎСЃС‹Р»РєРё');
+define('CONFIGURATION_GROUP_300', 'РћР±РЅРѕРІР»РµРЅРёРµ РїСЂР°Р№СЃР°');
+define('CONFIGURATION_GROUP_12954', 'РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С‚РѕРІР°СЂС‹');
+define('CONFIGURATION_GROUP_26229', 'РљСЌС€ СЃС‚СЂР°РЅРёС†');
+define('CONFIGURATION_GROUP_26230', 'РЇРЅРґРµРєСЃ-РњР°СЂРєРµС‚');
+define('CONFIGURATION_GROUP_401', 'РЎРїРёСЃРѕРє РєР°С‚РµРіРѕСЂРёР№ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ');
+define('CONFIGURATION_GROUP_160', 'РЈСЃС‚Р°РЅРѕРІС‰РёРє РјРѕРґСѓР»РµР№');
+define('CONFIGURATION_GROUP_72', 'Р РµРґР°РєС‚РѕСЂ Р·Р°РєР°Р·РѕРІ');
+define('CONFIGURATION_GROUP_735', 'РљР°СЂС‚РёРЅРєРё Р°С‚СЂРёР±СѓС‚РѕРІ');
+define('CONFIGURATION_GROUP_736', 'Р‘РѕРєСЃС‹');
+define('CONFIGURATION_GROUP_1610', 'РЎРїРµС†РёС„РёРєР°С†РёРё С‚РѕРІР°СЂРѕРІ');
 
-define('FAQDESK_LISTING_DB', 'Настройки вывода');
-define('FAQDESK_SETTINGS_DB', 'Общие настройки');
-define('FAQDESK_REVIEWS_DB', 'Настройка отзывов');
-define('FAQDESK_STICKY_DB', 'Настройка "горячих" вопросов');
-define('FAQDESK_OTHER_DB', 'Другие настройки');
+define('FAQDESK_LISTING_DB', 'РќР°СЃС‚СЂРѕР№РєРё РІС‹РІРѕРґР°');
+define('FAQDESK_SETTINGS_DB', 'РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё');
+define('FAQDESK_REVIEWS_DB', 'РќР°СЃС‚СЂРѕР№РєР° РѕС‚Р·С‹РІРѕРІ');
+define('FAQDESK_STICKY_DB', 'РќР°СЃС‚СЂРѕР№РєР° "РіРѕСЂСЏС‡РёС…" РІРѕРїСЂРѕСЃРѕРІ');
+define('FAQDESK_OTHER_DB', 'Р”СЂСѓРіРёРµ РЅР°СЃС‚СЂРѕР№РєРё');
 
-define('NEWSDESK_LISTING_DB', 'Настройки вывода');
-define('NEWSDESK_SETTINGS_DB', 'Общие настройки');
-define('NEWSDESK_REVIEWS_DB', 'Настройка отзывов');
-define('NEWSDESK_STICKY_DB', 'Настройка "горячих" новостей');
+define('NEWSDESK_LISTING_DB', 'РќР°СЃС‚СЂРѕР№РєРё РІС‹РІРѕРґР°');
+define('NEWSDESK_SETTINGS_DB', 'РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё');
+define('NEWSDESK_REVIEWS_DB', 'РќР°СЃС‚СЂРѕР№РєР° РѕС‚Р·С‹РІРѕРІ');
+define('NEWSDESK_STICKY_DB', 'РќР°СЃС‚СЂРѕР№РєР° "РіРѕСЂСЏС‡РёС…" РЅРѕРІРѕСЃС‚РµР№');
 
-define('ATTRIBUTES_COPY_TEXT1', ' Внимание: Нельзя скопировать атрибуты из товара номер ');
-define('ATTRIBUTES_COPY_TEXT2', ' в товар номер');
-define('ATTRIBUTES_COPY_TEXT3', '. Ничего не скопировано.');
-define('ATTRIBUTES_COPY_TEXT4', ' Внимание: Нет атрибутов для копирования из товара номер ');
-define('ATTRIBUTES_COPY_TEXT5', ' в товар ');
-define('ATTRIBUTES_COPY_TEXT6', '. Ничего не скопировано.');
-define('ATTRIBUTES_COPY_TEXT7', ' Внимание: Товар с номером ');
-define('ATTRIBUTES_COPY_TEXT8', ' не найден. Либо Вы не указали номер товара, либо указанный товар не существует. Ничего не скопировано.');
+define('ATTRIBUTES_COPY_TEXT1', ' Р’РЅРёРјР°РЅРёРµ: РќРµР»СЊР·СЏ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ Р°С‚СЂРёР±СѓС‚С‹ РёР· С‚РѕРІР°СЂР° РЅРѕРјРµСЂ ');
+define('ATTRIBUTES_COPY_TEXT2', ' РІ С‚РѕРІР°СЂ РЅРѕРјРµСЂ');
+define('ATTRIBUTES_COPY_TEXT3', '. РќРёС‡РµРіРѕ РЅРµ СЃРєРѕРїРёСЂРѕРІР°РЅРѕ.');
+define('ATTRIBUTES_COPY_TEXT4', ' Р’РЅРёРјР°РЅРёРµ: РќРµС‚ Р°С‚СЂРёР±СѓС‚РѕРІ РґР»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ РёР· С‚РѕРІР°СЂР° РЅРѕРјРµСЂ ');
+define('ATTRIBUTES_COPY_TEXT5', ' РІ С‚РѕРІР°СЂ ');
+define('ATTRIBUTES_COPY_TEXT6', '. РќРёС‡РµРіРѕ РЅРµ СЃРєРѕРїРёСЂРѕРІР°РЅРѕ.');
+define('ATTRIBUTES_COPY_TEXT7', ' Р’РЅРёРјР°РЅРёРµ: РўРѕРІР°СЂ СЃ РЅРѕРјРµСЂРѕРј ');
+define('ATTRIBUTES_COPY_TEXT8', ' РЅРµ РЅР°Р№РґРµРЅ. Р›РёР±Рѕ Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё РЅРѕРјРµСЂ С‚РѕРІР°СЂР°, Р»РёР±Рѕ СѓРєР°Р·Р°РЅРЅС‹Р№ С‚РѕРІР°СЂ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚. РќРёС‡РµРіРѕ РЅРµ СЃРєРѕРїРёСЂРѕРІР°РЅРѕ.');
 
 //include('includes/languages/english_support.php');
 
 // BOF FlyOpenair: Extra Product Price
-define('BOX_EXTRA_PRODUCT_PRICE', 'Наценки');
-define('EXTRA_PRODUCT_PRICE_ID_TITLE', 'Система наценок');
-define('EXTRA_PRODUCT_PRICE_ID_DESC', 'Включение и выключение модуля системы наценок');
+define('BOX_EXTRA_PRODUCT_PRICE', 'РќР°С†РµРЅРєРё');
+define('EXTRA_PRODUCT_PRICE_ID_TITLE', 'РЎРёСЃС‚РµРјР° РЅР°С†РµРЅРѕРє');
+define('EXTRA_PRODUCT_PRICE_ID_DESC', 'Р’РєР»СЋС‡РµРЅРёРµ Рё РІС‹РєР»СЋС‡РµРЅРёРµ РјРѕРґСѓР»СЏ СЃРёСЃС‚РµРјС‹ РЅР°С†РµРЅРѕРє');
 // EOF FlyOpenair: Extra Product Price
 
 define('BOX_TITLE_VAM', 'osCommerce');
-define('VAM_LINK_TITLE', 'Что такое osCommerce VaM Edition');
-define('VAM_LINK_FORUM', 'Форум поддержки');
-define('VAM_LINK_BUGTRACKER', 'Найди ошибку');
-define('VAM_LINK_MANUAL', 'Руководство пользователя osCommerce VaM Edition');
-define('VAM_LINK_MODULES', 'Модули');
-define('VAM_LINK_TEMPLATES', 'Шаблоны');
-define('VAM_LINK_SERVICES', 'Услуги');
+define('VAM_LINK_TITLE', 'Р§С‚Рѕ С‚Р°РєРѕРµ osCommerce VaM Edition');
+define('VAM_LINK_FORUM', 'Р¤РѕСЂСѓРј РїРѕРґРґРµСЂР¶РєРё');
+define('VAM_LINK_BUGTRACKER', 'РќР°Р№РґРё РѕС€РёР±РєСѓ');
+define('VAM_LINK_MANUAL', 'Р СѓРєРѕРІРѕРґСЃС‚РІРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ osCommerce VaM Edition');
+define('VAM_LINK_MODULES', 'РњРѕРґСѓР»Рё');
+define('VAM_LINK_TEMPLATES', 'РЁР°Р±Р»РѕРЅС‹');
+define('VAM_LINK_SERVICES', 'РЈСЃР»СѓРіРё');
 
-define('TEXT_IMAGE_OVERWRITE_WARNING','Внимание: Имя файла было изменено, но не перезаписано ');          
+define('TEXT_IMAGE_OVERWRITE_WARNING','Р’РЅРёРјР°РЅРёРµ: РРјСЏ С„Р°Р№Р»Р° Р±С‹Р»Рѕ РёР·РјРµРЅРµРЅРѕ, РЅРѕ РЅРµ РїРµСЂРµР·Р°РїРёСЃР°РЅРѕ ');          
 
-define('BOX_MODULES_SHIP2PAY', 'Доставка-Оплата');
-define('BROWSE_BY_CATEGORIES_TITLE', 'Просмотр категорий');
+define('BOX_MODULES_SHIP2PAY', 'Р”РѕСЃС‚Р°РІРєР°-РћРїР»Р°С‚Р°');
+define('BROWSE_BY_CATEGORIES_TITLE', 'РџСЂРѕСЃРјРѕС‚СЂ РєР°С‚РµРіРѕСЂРёР№');
 
 include('includes/languages/russian_newsdesk.php');
 include('includes/languages/russian_faqdesk.php');
 include('includes/languages/order_edit_russian.php');
 
-define('BOX_TOOLS_EXTRA_FIELDS_MANAGER','Дополнительные поля покупателей');
-define('ENTRY_EXTRA_FIELDS_ERROR','Поле %s должно содержать как минимум %d символов');
-define('TEXT_DISPLAY_NUMBER_OF_FIELDS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> полей)');
+define('BOX_TOOLS_EXTRA_FIELDS_MANAGER','Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ РїРѕРєСѓРїР°С‚РµР»РµР№');
+define('ENTRY_EXTRA_FIELDS_ERROR','РџРѕР»Рµ %s РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј %d СЃРёРјРІРѕР»РѕРІ');
+define('TEXT_DISPLAY_NUMBER_OF_FIELDS', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РїРѕР»РµР№)');
 
 // START: Product Extra Fields
-define('BOX_CATALOG_PRODUCTS_EXTRA_FIELDS', 'Дополнительные поля товаров');
+define('BOX_CATALOG_PRODUCTS_EXTRA_FIELDS', 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ С‚РѕРІР°СЂРѕРІ');
 // END: Product Extra Fields
 
-define('CIP_TITLE','Установка модулей');
-define('BOX_CONTRIB_INSTALLER', 'Установка модулей');
+define('CIP_TITLE','РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»РµР№');
+define('BOX_CONTRIB_INSTALLER', 'РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»РµР№');
 
-define('TEXT_OTHER', 'Другой');         
+define('TEXT_OTHER', 'Р”СЂСѓРіРѕР№');         
 
-define('TEXT_INDEX_LANGUAGE','Язык: ');
-define('TEXT_SUMMARY_CUSTOMERS','Покупатели');
-define('TEXT_SUMMARY_ORDERS','Заказы');
-define('TEXT_SUMMARY_PRODUCTS','Товары');
-define('TEXT_SUMMARY_HELP','Помощь');
-define('TEXT_SUMMARY_STAT','Статистика');
+define('TEXT_INDEX_LANGUAGE','РЇР·С‹Рє: ');
+define('TEXT_SUMMARY_CUSTOMERS','РџРѕРєСѓРїР°С‚РµР»Рё');
+define('TEXT_SUMMARY_ORDERS','Р—Р°РєР°Р·С‹');
+define('TEXT_SUMMARY_PRODUCTS','РўРѕРІР°СЂС‹');
+define('TEXT_SUMMARY_HELP','РџРѕРјРѕС‰СЊ');
+define('TEXT_SUMMARY_STAT','РЎС‚Р°С‚РёСЃС‚РёРєР°');
 
-define('TABLE_HEADING_HELP', 'Помощь');
+define('TABLE_HEADING_HELP', 'РџРѕРјРѕС‰СЊ');
 
-define('TABLE_HEADING_CUSTOMERS', 'Последние покупатели');
-define('TABLE_HEADING_LASTNAME', 'Фамилия');
-define('TABLE_HEADING_FIRSTNAME', 'Имя');
-define('TABLE_HEADING_DATE', 'Дата');
+define('TABLE_HEADING_CUSTOMERS', 'РџРѕСЃР»РµРґРЅРёРµ РїРѕРєСѓРїР°С‚РµР»Рё');
+define('TABLE_HEADING_LASTNAME', 'Р¤Р°РјРёР»РёСЏ');
+define('TABLE_HEADING_FIRSTNAME', 'РРјСЏ');
+define('TABLE_HEADING_DATE', 'Р”Р°С‚Р°');
 
-define('TABLE_HEADING_ORDERS', 'Последние заказы');
-define('TABLE_HEADING_CUSTOMER', 'Покупатель');
-define('TABLE_HEADING_NUMBER', 'Номер');
-define('TABLE_HEADING_ORDER_TOTAL', 'Сумма');
-define('TABLE_HEADING_STATUS', 'Статус');
+define('TABLE_HEADING_ORDERS', 'РџРѕСЃР»РµРґРЅРёРµ Р·Р°РєР°Р·С‹');
+define('TABLE_HEADING_CUSTOMER', 'РџРѕРєСѓРїР°С‚РµР»СЊ');
+define('TABLE_HEADING_NUMBER', 'РќРѕРјРµСЂ');
+define('TABLE_HEADING_ORDER_TOTAL', 'РЎСѓРјРјР°');
+define('TABLE_HEADING_STATUS', 'РЎС‚Р°С‚СѓСЃ');
 
-define('TABLE_HEADING_SUMMARY_PRODUCTS', 'Последние товары');
-define('TABLE_HEADING_PRODUCT_NAME', 'Товары');
-define('TABLE_HEADING_PRODUCT_PRICE', 'Стоимость');
+define('TABLE_HEADING_SUMMARY_PRODUCTS', 'РџРѕСЃР»РµРґРЅРёРµ С‚РѕРІР°СЂС‹');
+define('TABLE_HEADING_PRODUCT_NAME', 'РўРѕРІР°СЂС‹');
+define('TABLE_HEADING_PRODUCT_PRICE', 'РЎС‚РѕРёРјРѕСЃС‚СЊ');
 
-define('BOX_CATEGORY_SPECIALS', 'Категории со скидками');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIAL_CATEGORY', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> категорий со скидками)');
+define('BOX_CATEGORY_SPECIALS', 'РљР°С‚РµРіРѕСЂРёРё СЃРѕ СЃРєРёРґРєР°РјРё');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIAL_CATEGORY', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> РєР°С‚РµРіРѕСЂРёР№ СЃРѕ СЃРєРёРґРєР°РјРё)');
 
 //Options as Images Mod
 
-define('BOX_CATALOG_OPTIONS_IMAGES', 'Картинки атрибутов');
+define('BOX_CATALOG_OPTIONS_IMAGES', 'РљР°СЂС‚РёРЅРєРё Р°С‚СЂРёР±СѓС‚РѕРІ');
 
-define('BOX_CATALOG_CATEGORIES_PRODUCTS_MULTI', 'Массовое удаление/копирование/перемещение товаров.');
+define('BOX_CATALOG_CATEGORIES_PRODUCTS_MULTI', 'РњР°СЃСЃРѕРІРѕРµ СѓРґР°Р»РµРЅРёРµ/РєРѕРїРёСЂРѕРІР°РЅРёРµ/РїРµСЂРµРјРµС‰РµРЅРёРµ С‚РѕРІР°СЂРѕРІ.');
 
 // Products Specifications
-define('BOX_CATALOG_PRODUCTS_SPECIFICATIONS', 'Спецификации товаров');
+define('BOX_CATALOG_PRODUCTS_SPECIFICATIONS', 'РЎРїРµС†РёС„РёРєР°С†РёРё С‚РѕРІР°СЂРѕРІ');
 
-define('BOX_EMAIL_QUEUE', 'Очередь email');
+define('BOX_EMAIL_QUEUE', 'РћС‡РµСЂРµРґСЊ email');
          
-define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> записей)');
+define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'РџРѕРєР°Р·Р°РЅРѕ <b>%d</b> - <b>%d</b> (РІСЃРµРіРѕ <b>%d</b> Р·Р°РїРёСЃРµР№)');
          
-define('BOX_YML_IMPORT', 'Я-маркет импорт/экспорт');
+define('BOX_YML_IMPORT', 'РЇ-РјР°СЂРєРµС‚ РёРјРїРѕСЂС‚/СЌРєСЃРїРѕСЂС‚');
          
 ?>

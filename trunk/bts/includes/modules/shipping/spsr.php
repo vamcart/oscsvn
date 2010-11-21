@@ -131,7 +131,7 @@
 		if ($xmlstring->PayTariff)
 			{
 			$find_symbols = array(chr(160),'р.',' '); //вместо пробела в стоимости доставки cpcr.ru использует симовл с ascii кодом 160.
-			$cost = ceil(str_replace(',','.',str_replace($find_symbols,'',iconv("UTF-8","windows-1251", $xmlstring->Total))));
+			$cost = ceil(str_replace(',','.',str_replace($find_symbols,'',$xmlstring->Total)));
 			$title .= 'ƒоставка в '.$order->delivery['city'].', '.$order->delivery['state'];
 			if ($cost>0) {$title .= '<input type="hidden" name="cost" value="'.$cost.'">';}			
 			}
@@ -156,9 +156,9 @@
 				{
 				foreach ($xmlstring->Error->ToCity->City as $city_value)
 					{		
-					$title .= "<input type=radio name=error_tocity value=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" onChange=\"this.form.submit()\">".iconv("UTF-8","windows-1251",$city_value->CityName).", ".iconv("UTF-8","windows-1251",$city_value->RegionName)."<br>";
+					$title .= "<input type=radio name=error_tocity value=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" onChange=\"this.form.submit()\">".$city_value->CityName.", ".$city_value->RegionName."<br>";
 					//начало код дл€ унификации с калькул€тором
-					echo "<input type=hidden name=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" value=\"".iconv("UTF-8","windows-1251",$city_value->CityName).", ".iconv("UTF-8","windows-1251",$city_value->RegionName)."\">";	
+					echo "<input type=hidden name=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" value=\"".$city_value->CityName.", ".$city_value->RegionName."\">";	
 					//конец код дл€ унификации с калькул€тором						
 					}
 				}

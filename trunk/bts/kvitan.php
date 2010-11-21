@@ -26,29 +26,29 @@ require(DIR_WS_CLASSES . 'order.php');
     tep_redirect(tep_href_link(FILENAME_DEFAULT, '', 'SSL'));
   }
 
-/*error_log("Квитанция заказ ".$order);
-error_log("Квитанция корзина ".$cart->count_contents());
-error_log("Квитанция заказ всего " .$order->info['total']);
-error_log("Квитанция заказ доставка страна " . $order->delivery['country']);
-error_log("Квитанция заказ доставка name " . $order->delivery['name']);
-error_log("Квитанция заказ доставка street_address " . $order->delivery['street_address']);
-error_log("Квитанция заказ доставка city  " . $order->delivery['city']);
-error_log("Квитанция заказ доставка postcode " . $order->delivery['postcode']);
-error_log("Квитанция заказ покупатель name " . $order->customer['customers_name']);
-error_log("Квитанция заказ покупатель city " . $order->customer['city']);
-error_log("Это cart ---------------------", 0);
+/*error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· ".$order);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ РєРѕСЂР·РёРЅР° ".$cart->count_contents());
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РІСЃРµРіРѕ " .$order->info['total']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РґРѕСЃС‚Р°РІРєР° СЃС‚СЂР°РЅР° " . $order->delivery['country']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РґРѕСЃС‚Р°РІРєР° name " . $order->delivery['name']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РґРѕСЃС‚Р°РІРєР° street_address " . $order->delivery['street_address']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РґРѕСЃС‚Р°РІРєР° city  " . $order->delivery['city']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РґРѕСЃС‚Р°РІРєР° postcode " . $order->delivery['postcode']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РїРѕРєСѓРїР°С‚РµР»СЊ name " . $order->customer['customers_name']);
+error_log("РљРІРёС‚Р°РЅС†РёСЏ Р·Р°РєР°Р· РїРѕРєСѓРїР°С‚РµР»СЊ city " . $order->customer['city']);
+error_log("Р­С‚Рѕ cart ---------------------", 0);
       while ( list( $key, $val ) = each($cart) ) {
          error_log("$key => $val", 0);
          }
-error_log("Это order delivery ---------------------", 0);
+error_log("Р­С‚Рѕ order delivery ---------------------", 0);
       while ( list( $key, $val ) = each($order->delivery) ) {
          error_log("$key => $val", 0);
          }
-error_log("Это shipping ---------------------", 0);
+error_log("Р­С‚Рѕ shipping ---------------------", 0);
       while ( list( $key, $val ) = each($shipping) ) {
          error_log("$key => $val", 0);
          }
-error_log("Это order_total ---------------------", 0);
+error_log("Р­С‚Рѕ order_total ---------------------", 0);
       while ( list( $key, $val ) = each($order_total)) {
          error_log("$key => $val", 0);
          }*/
@@ -59,24 +59,25 @@ $FIO = $order->delivery['name'];
 
 $Adress = $payment_info['name'] . "<br />" . $payment_info['address']; 
 $total = $order->info['total'];
-//$total = number_format( $order->info['total'] * $currencies->get_value('RUR'), $currencies->get_decimal_places('RUR')) . " руб.";
-//error_log("Это FIO ". $FIO, 0);
+//$total = number_format( $order->info['total'] * $currencies->get_value('RUR'), $currencies->get_decimal_places('RUR')) . " СЂСѓР±.";
+//error_log("Р­С‚Рѕ FIO ". $FIO, 0);
 $date = date("d-m-Y");
-//error_log("Это дата ". $date, 0);
+//error_log("Р­С‚Рѕ РґР°С‚Р° ". $date, 0);
 
-//'Название банка', 'MODULE_PAYMENT_RUS_BANK_1'
-//'Расчетный счет', 'MODULE_PAYMENT_RUS_BANK_2'
-//'БИК', 'MODULE_PAYMENT_RUS_BANK_3'
-//'Кор./счет', 'MODULE_PAYMENT_RUS_BANK_4'
-//'ИНН', 'MODULE_PAYMENT_RUS_BANK_5'
-//'Получатель', 'MODULE_PAYMENT_RUS_BANK_6'
-//'КПП', 'MODULE_PAYMENT_RUS_BANK_7'
+//'РќР°Р·РІР°РЅРёРµ Р±Р°РЅРєР°', 'MODULE_PAYMENT_RUS_BANK_1'
+//'Р Р°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚', 'MODULE_PAYMENT_RUS_BANK_2'
+//'Р‘РРљ', 'MODULE_PAYMENT_RUS_BANK_3'
+//'РљРѕСЂ./СЃС‡РµС‚', 'MODULE_PAYMENT_RUS_BANK_4'
+//'РРќРќ', 'MODULE_PAYMENT_RUS_BANK_5'
+//'РџРѕР»СѓС‡Р°С‚РµР»СЊ', 'MODULE_PAYMENT_RUS_BANK_6'
+//'РљРџРџ', 'MODULE_PAYMENT_RUS_BANK_7'
 
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML dir=ltr lang=ru><HEAD><TITLE>Квитанция на оплату для  <?php echo $FIO ?></TITLE>
-<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<HTML dir=ltr lang=ru><head>
+<TITLE>РљРІРёС‚Р°РЅС†РёСЏ РЅР° РѕРїР»Р°С‚Сѓ РґР»СЏ  <?php echo $FIO ?></TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
 <META content="MSHTML 5.00.3700.6699" name=GENERATOR>
 <style type="text/css">
 BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 12px;} .ramka {BORDER-RIGHT: black 1px dotted ; BORDER-TOP: black 1px dotted; BORDER-LEFT: black 1px dotted ; BORDER-BOTTOM: black 1px dotted ;} .line {BORDER-LEFT: black 1px solid;} .n6 { 	FONT-SIZE: 7pt; FONT-FAMILY: "Verdana", "Arial Cyr", Arial, Helvetica } .t10 { 	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: "Times New Roman", Times, serif } .t11 { 	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: "Times New Roman", Times, serif } .n7 { 	FONT-SIZE: 7pt; FONT-FAMILY: "Arial Cyr", Arial, Helvetica } .b12 { 	FONT-WEIGHT: bold; FONT-SIZE: 12pt; BORDER-LEFT-COLOR: black; BORDER-BOTTOM-WIDTH: thin; BORDER-BOTTOM-COLOR: black; CURSOR: hand; BORDER-TOP-COLOR: black; FONT-FAMILY: "Arial Cyr", Arial, Helvetica; BORDER-RIGHT-COLOR: black } .b10 { 	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-WEIGHT: normal; FONT-SIZE: 10pt; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: "Verdana", "Arial Cyr", Arial, Helvetica } .n10 { 	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-WEIGHT: normal; FONT-SIZE: 10pt; BORDER-LEFT: black 0px solid; CURSOR: hand; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: "Arial Cyr", Arial, Helvetica } .b10i { 	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BORDER-LEFT: black 0px solid; CURSOR: hand; BORDER-BOTTOM: black 1px solid; FONT-STYLE: italic; FONT-FAMILY: "Arial Cyr", Arial, Helvetica } .t10n { 	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: "Times New Roman", Times, serif } .n10_ { 	FONT-WEIGHT: normal; FONT-SIZE: 10pt; BORDER-LEFT-COLOR: black; BORDER-BOTTOM-COLOR: #000000; CURSOR: hand; BORDER-TOP-COLOR: black; FONT-FAMILY: "Arial Cyr", Arial, Helvetica; BORDER-RIGHT-COLOR: black } .n10_a { 	FONT-WEIGHT: normal; FONT-SIZE: 10pt; BORDER-LEFT-COLOR: black; BORDER-BOTTOM-COLOR: #000000; CURSOR: hand; BORDER-TOP-COLOR: black; FONT-FAMILY: "Arial Cyr", Arial, Helvetica; TEXT-ALIGN: justify; BORDER-RIGHT-COLOR: black } .c10n { 	FONT-SIZE: 11pt; FONT-FAMILY: "Courier New", Courier, mono } .c10b { 	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: "Courier New", Courier, mono } .c7n { 	FONT-SIZE: 7pt; FONT-FAMILY: "Courier New", Courier, mono } .n7_ { 	FONT-SIZE: 7pt; FONT-FAMILY: "Arial Cyr", Arial, Helvetica; TEXT-ALIGN: justify } 
@@ -93,7 +94,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
           <td valign="top" width="140"> 
             <div align="right"><img src="images/pixel_trans.gif" width="1" height="5"><br>
 
-              <b>ИЗВЕЩЕНИЕ&nbsp;&nbsp;</b></div>
+              <b>РР—Р’Р•Р©Р•РќРР•&nbsp;&nbsp;</b></div>
           </td>
 <!-- start 1-->
           <td class=line rowspan=2><img src="images/pixel_trans.gif" width="1" height="1"></td>
@@ -108,7 +109,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
               </tr>
               <tr> 
                 <td height="10" class="n6" valign="top" colspan="3"> 
-                  <div align="center">(наименование получателя платежа)</div>
+                  <div align="center">(РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                 </td>
               </tr>
               <tr> 
@@ -117,7 +118,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
 
                 </td>
                 <td valign="bottom"> 
-                  <div align="center">№</div>
+                  <div align="center">в„–</div>
                 </td>
                 <td class="b10" valign="bottom"> 
                   <div align="center"><?php echo MODULE_PAYMENT_RUS_BANK_2 ?></div>
@@ -125,12 +126,12 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
               </tr>
               <tr> 
                 <td valign="top" class="n6"> 
-                  <div align="center">(ИНН/КПП получателя платежа)</div>
+                  <div align="center">(РРќРќ/РљРџРџ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
 
                 </td>
                 <td valign="top" class="n6">&nbsp;</td>
                 <td valign="top" class="n6"> 
-                  <div align="center">(номер р/с получателя платежа)</div>
+                  <div align="center">(РЅРѕРјРµСЂ СЂ/СЃ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                 </td>
               </tr>
               <tr> 
@@ -141,7 +142,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
               </tr>
               <tr> 
                 <td valign="top" class="n6" colspan="3"> 
-                  <div align="center">(наименование банка получателя платежа)</div>
+                  <div align="center">(РЅР°РёРјРµРЅРѕРІР°РЅРёРµ Р±Р°РЅРєР° РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                 </td>
               </tr>
               <tr> 
@@ -149,10 +150,10 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                   <table width="100%" border="0" cellspacing="0" cellpadding="1">
 
                     <tr> 
-                      <td>БИК</td>
+                      <td>Р‘РРљ</td>
                       <td class="b10"><?php echo MODULE_PAYMENT_RUS_BANK_3 ?></td>
                       <td> 
-                        <div align="center">№</div>
+                        <div align="center">в„–</div>
                       </td>
                       <td> 
                         <div align="center" class="b10"><?php echo MODULE_PAYMENT_RUS_BANK_4 ?></div>
@@ -164,7 +165,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
                       <td valign="top" class="n6"> 
-                        <div align="center">(номер к/с банка получателя платежа)</div>
+                        <div align="center">(РЅРѕРјРµСЂ Рє/СЃ Р±Р°РЅРєР° РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                       </td>
 
                     </tr>
@@ -175,7 +176,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                 <td colspan="3" height="15"> 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" height="15">
                       <tr> 
-                        <td align="left" width="90">Плательщик:</td>
+                        <td align="left" width="90">РџР»Р°С‚РµР»СЊС‰РёРє:</td>
                         <td class="b10"><?php echo $Adress ?></td>
 
                       </tr>
@@ -187,7 +188,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                 <td colspan="3" height="15">
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr> 
-                      <td align="left" width="50">Адрес:</td>
+                      <td align="left" width="50">РђРґСЂРµСЃ:</td>
 
                       <td class="b10">&nbsp;</td>
                     </tr>
@@ -197,7 +198,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
 /-->
               <tr> 
                 <td colspan="3"> 
-                  <div align="left">Назначение платежа:<br><?php echo MODULE_PAYMENT_RUS_BANK_8 . MODULE_PAYMENT_RUS_BANK_ORDER_NUMBER . $_GET['order_id']; ?></div>
+                  <div align="left">РќР°Р·РЅР°С‡РµРЅРёРµ РїР»Р°С‚РµР¶Р°:<br><?php echo MODULE_PAYMENT_RUS_BANK_8 . MODULE_PAYMENT_RUS_BANK_ORDER_NUMBER . $_GET['order_id']; ?></div>
                 </td>
 
               </tr>
@@ -207,7 +208,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                     <table width="100%" border="0" cellspacing="2" cellpadding="0">
                       <tr> 
                         <td> 
-                          <div align="right">Сумма платежа: </div>
+                          <div align="right">РЎСѓРјРјР° РїР»Р°С‚РµР¶Р°: </div>
                         </td>
                         <td> 
                           <div align="center"><b><?php echo $total ?></b></div>
@@ -217,17 +218,17 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                           <div align="center">&nbsp;&nbsp;</div>
                         </td>
                         <td> 
-                          <div align="center"><b>&nbsp;</b>коп.</div>
+                          <div align="center"><b>&nbsp;</b>РєРѕРї.</div>
                         </td>
 /-->
                       </tr>
                       <tr> 
                         <td> 
-                          <div align="left">Плательщик: ____________ (подпись) 
+                          <div align="left">РџР»Р°С‚РµР»СЊС‰РёРє: ____________ (РїРѕРґРїРёСЃСЊ) 
                           </div>
                         </td>
                         <td> 
-                          <div align="center">Дата:</div>
+                          <div align="center">Р”Р°С‚Р°:</div>
                         </td>
 
                         <td colspan="3">
@@ -254,7 +255,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
 <!-- end 1-->
         </tr>
         <tr> 
-          <td valign="bottom" width="180">Кассир<br>
+          <td valign="bottom" width="180">РљР°СЃСЃРёСЂ<br>
             <img src="images/pixel_trans.gif" width="1" height="8"> </td>
         </tr>
       </table>
@@ -276,7 +277,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
               </tr>
               <tr> 
                 <td height="10" class="n6" valign="top" colspan="3"> 
-                  <div align="center">(наименование получателя платежа)</div>
+                  <div align="center">(РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                 </td>
               </tr>
               <tr> 
@@ -285,7 +286,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
 
                 </td>
                 <td valign="bottom"> 
-                  <div align="center">№</div>
+                  <div align="center">в„–</div>
                 </td>
                 <td class="b10" valign="bottom"> 
                   <div align="center"><?php echo MODULE_PAYMENT_RUS_BANK_2 ?></div>
@@ -293,12 +294,12 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
               </tr>
               <tr> 
                 <td valign="top" class="n6"> 
-                  <div align="center">(ИНН/КПП получателя платежа)</div>
+                  <div align="center">(РРќРќ/РљРџРџ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
 
                 </td>
                 <td valign="top" class="n6">&nbsp;</td>
                 <td valign="top" class="n6"> 
-                  <div align="center">(номер р/с получателя платежа)</div>
+                  <div align="center">(РЅРѕРјРµСЂ СЂ/СЃ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                 </td>
               </tr>
               <tr> 
@@ -309,7 +310,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
               </tr>
               <tr> 
                 <td valign="top" class="n6" colspan="3"> 
-                  <div align="center">(наименование банка получателя платежа)</div>
+                  <div align="center">(РЅР°РёРјРµРЅРѕРІР°РЅРёРµ Р±Р°РЅРєР° РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                 </td>
               </tr>
               <tr> 
@@ -317,10 +318,10 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                   <table width="100%" border="0" cellspacing="0" cellpadding="1">
 
                     <tr> 
-                      <td>БИК</td>
+                      <td>Р‘РРљ</td>
                       <td class="b10"><?php echo MODULE_PAYMENT_RUS_BANK_3 ?></td>
                       <td> 
-                        <div align="center">№</div>
+                        <div align="center">в„–</div>
                       </td>
                       <td> 
                         <div align="center" class="b10"><?php echo MODULE_PAYMENT_RUS_BANK_4 ?></div>
@@ -332,7 +333,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
                       <td valign="top" class="n6"> 
-                        <div align="center">(номер к/с банка получателя платежа)</div>
+                        <div align="center">(РЅРѕРјРµСЂ Рє/СЃ Р±Р°РЅРєР° РїРѕР»СѓС‡Р°С‚РµР»СЏ РїР»Р°С‚РµР¶Р°)</div>
                       </td>
 
                     </tr>
@@ -343,7 +344,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                 <td colspan="3" height="15"> 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" height="15">
                       <tr> 
-                        <td align="left" width="90">Плательщик:</td>
+                        <td align="left" width="90">РџР»Р°С‚РµР»СЊС‰РёРє:</td>
                         <td class="b10"><?php echo $Adress ?></td>
 
                       </tr>
@@ -355,7 +356,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                 <td colspan="3" height="15">
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr> 
-                      <td align="left" width="50">Адрес:</td>
+                      <td align="left" width="50">РђРґСЂРµСЃ:</td>
 
                       <td class="b10">&nbsp;</td>
                     </tr>
@@ -365,7 +366,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
 /-->
               <tr> 
                 <td colspan="3"> 
-                  <div align="left">Назначение платежа:<br><?php echo MODULE_PAYMENT_RUS_BANK_8 . MODULE_PAYMENT_RUS_BANK_ORDER_NUMBER . $_GET['order_id']; ?></div>
+                  <div align="left">РќР°Р·РЅР°С‡РµРЅРёРµ РїР»Р°С‚РµР¶Р°:<br><?php echo MODULE_PAYMENT_RUS_BANK_8 . MODULE_PAYMENT_RUS_BANK_ORDER_NUMBER . $_GET['order_id']; ?></div>
                 </td>
 
               </tr>
@@ -375,7 +376,7 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                     <table width="100%" border="0" cellspacing="2" cellpadding="0">
                       <tr> 
                         <td> 
-                          <div align="right">Сумма платежа: </div>
+                          <div align="right">РЎСѓРјРјР° РїР»Р°С‚РµР¶Р°: </div>
                         </td>
                         <td> 
                           <div align="center"><b><?php echo $total ?></b></div>
@@ -385,17 +386,17 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
                           <div align="center">&nbsp;&nbsp;</div>
                         </td>
                         <td> 
-                          <div align="center"><b>&nbsp;</b>коп.</div>
+                          <div align="center"><b>&nbsp;</b>РєРѕРї.</div>
                         </td>
 /-->
                       </tr>
                       <tr> 
                         <td> 
-                          <div align="left">Плательщик: ____________ (подпись) 
+                          <div align="left">РџР»Р°С‚РµР»СЊС‰РёРє: ____________ (РїРѕРґРїРёСЃСЊ) 
                           </div>
                         </td>
                         <td> 
-                          <div align="center">Дата:</div>
+                          <div align="center">Р”Р°С‚Р°:</div>
                         </td>
 
                         <td colspan="3">
@@ -423,8 +424,8 @@ BODY {FONT-FAMILY: Verdana, "Arial", sans-serif; FONT-SIZE: 10px;} TABLE {FONT-F
         </tr>
         <tr> 
           <td valign="bottom" width="180"> 
-            <p align="right"><b>КВИТАНЦИЯ</b>&nbsp;&nbsp;</p>
-            <p>Кассир<br>
+            <p align="right"><b>РљР’РРўРђРќР¦РРЇ</b>&nbsp;&nbsp;</p>
+            <p>РљР°СЃСЃРёСЂ<br>
               <img src="images/pixel_trans.gif" width="1" height="8"> </p>
           </td>
         </tr>
