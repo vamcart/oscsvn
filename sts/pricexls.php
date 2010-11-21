@@ -4,9 +4,16 @@
     require_once('Worksheet.php');
     require_once('Workbook.php'); 
 
+function tep_iconv($text) {
 
+    if (function_exists('iconv')) {
+       return iconv('UTF-8', 'WINDOWS-1251', $text); 
+    } else {
+      return $text;
+    }
+  }
 
-// åñòü ó ãðóïïû ïðîäóêòû?
+// ÐµÑÑ‚ÑŒ Ñƒ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹?
 // group have products?
 function check_products($id_group){
 	$products_price_query = tep_db_query("select products_to_categories.products_id FROM products_to_categories where products_to_categories.categories_id = ".$id_group." LIMIT 0,1");
@@ -16,7 +23,7 @@ function check_products($id_group){
 	return false;
 }
 
-// âûâîäèì ñïèñîê ïðîäóêòîâ îïðåäåëåííîé ãðóïïû $id_group
+// Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑÐ¿Ð¸ÑÐ¾Ðº Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð² Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½Ð¾Ð¹ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ $id_group
 // list products determined group
 function get_products($id_group,$count){
 	global $currencies;
@@ -36,13 +43,13 @@ function get_products($id_group,$count){
 	//TotalB2B start & TotalB2B start
 
 	if ($new_price = tep_get_products_special_price($products_price['products_id'])) {
-     $products_price['products_price'] = $new_price; // Îáû÷íàÿ öåíà
-     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Ñïåö. öåíà
-	  $cell = $currencies->display_price_nodiscount($products_price['products_price'], tep_get_tax_rate($products_price['products_tax_class_id']));
+     $products_price['products_price'] = $new_price; // ÐžÐ±Ñ‹Ñ‡Ð½Ð°Ñ Ñ†ÐµÐ½Ð°
+     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Ð¡Ð¿ÐµÑ†. Ñ†ÐµÐ½Ð°
+	  $cell = tep_iconv($currencies->display_price_nodiscount($products_price['products_price'], tep_get_tax_rate($products_price['products_tax_class_id'])));
     } else {
-     $products_price['products_price'] = $new_price; // Îáû÷íàÿ öåíà
-     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Ñïåö. öåíà
-	  $cell = $currencies->display_price($products_price['specials_new_products_price'], tep_get_tax_rate($products_price['products_tax_class_id']));
+     $products_price['products_price'] = $new_price; // ÐžÐ±Ñ‹Ñ‡Ð½Ð°Ñ Ñ†ÐµÐ½Ð°
+     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Ð¡Ð¿ÐµÑ†. Ñ†ÐµÐ½Ð°
+	  $cell = tep_iconv($currencies->display_price($products_price['specials_new_products_price'], tep_get_tax_rate($products_price['products_tax_class_id'])));
     }
 
 
@@ -64,7 +71,7 @@ function get_products($id_group,$count){
 			$model = "[".$products_price['products_model']."]";
 		$worksheet1->write_string($count, 0, "",$formatg);
 		$worksheet1->write_string($count, 1, $model,$formatg);
-		$worksheet1->write_string($count, 2, ereg_replace("&quot;","\"",ereg_replace("&#39","'",$products_price['products_name'])),$formatg);
+		$worksheet1->write_string($count, 2, preg_replace("/&quot;/","\"",preg_replace("/&#39/","'",tep_iconv($products_price['products_name']))),$formatg);
 		$worksheet1->write_string($count, 3, $quantity,$formatp);
 		$worksheet1->write_string($count, 4, $cell ,$formatp);
 		$count++;
@@ -72,7 +79,7 @@ function get_products($id_group,$count){
 	return $count-1;
 }
 
-// ðåêóðñèâíàÿ ôóíêöèÿ, ïîëó÷àåò ãðóïïû ïî ïîðÿäêó
+// Ñ€ÐµÐºÑƒÑ€ÑÐ¸Ð²Ð½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ, Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾ Ð¿Ð¾Ñ€ÑÐ´ÐºÑƒ
 // get all groups
 function get_group($id_parent,$position){
 	global $workbook;
@@ -97,7 +104,7 @@ categories.sort_order");
 			$count++;
 		}
 		if(check_products($groups_price['categories_id']) || $position == 0){
-			$worksheet1->write_string($count, $position, $str.$groups_price['categories_name'],$formatot);
+			$worksheet1->write_string($count, $position, $str.tep_iconv($groups_price['categories_name']),$formatot);
 			if($position == 0){
 				$worksheet1->write_string($count, 2, "",$formatg);
 			}
@@ -109,12 +116,12 @@ categories.sort_order");
 			$count--;
 		}
 		$count++;
-		get_group($groups_price['categories_id'],$position+1); // ñëåäóþùàÿ ãðóïïà
+		get_group($groups_price['categories_id'],$position+1); // ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð°Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ð°
 	}
 }
 
   $workbook = new Workbook(FILE_NAME_PRICE.".xls");
-  $worksheet1 =&$workbook->add_worksheet('Ïðàéñ-ëèñò');
+  $worksheet1 =&$workbook->add_worksheet('ÐŸÑ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚');
       
   $formatot =& $workbook->add_format();
   $formatot->set_size(10);
