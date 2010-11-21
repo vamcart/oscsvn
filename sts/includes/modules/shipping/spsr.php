@@ -1,11 +1,11 @@
 <?php
 /*
-  Модуль доставки "СПСР Экспресс"
+  РњРѕРґСѓР»СЊ РґРѕСЃС‚Р°РІРєРё "РЎРџРЎР  Р­РєСЃРїСЂРµСЃСЃ"
   $Id: spsr.php, v 1.06 19/01/09
-  Автор: Родионовский Роман, spmob@mail.ru
-  Спасибо за помощь Александру Меновщикову aka VAM
+  РђРІС‚РѕСЂ: Р РѕРґРёРѕРЅРѕРІСЃРєРёР№ Р РѕРјР°РЅ, spmob@mail.ru
+  РЎРїР°СЃРёР±Рѕ Р·Р° РїРѕРјРѕС‰СЊ РђР»РµРєСЃР°РЅРґСЂСѓ РњРµРЅРѕРІС‰РёРєРѕРІСѓ aka VAM
   
-	  Разработан на основе:
+	  Р Р°Р·СЂР°Р±РѕС‚Р°РЅ РЅР° РѕСЃРЅРѕРІРµ:
 	  $Id: pickup.php,v 1.40 2003/02/05 22:41:52 hpdl Exp $
 	
 	  osCommerce, Open Source E-Commerce Solutions
@@ -53,21 +53,21 @@
         $check = tep_db_fetch_array($check_query);
 		$own_zone_id = $check['configuration_value'];	
 	
-	//переключатель Доставка по своему городу
+	//РїРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ Р”РѕСЃС‚Р°РІРєР° РїРѕ СЃРІРѕРµРјСѓ РіРѕСЂРѕРґСѓ
 	if (($this->enabled == true) && (MODULE_SHIPPING_SPSR_OWN_CITY_DELIVERY == 'False')){		         		        
 		if (strtolower(MODULE_SHIPPING_SPSR_FROM_CITY) == strtolower($order->delivery['city'])){				
 			$this->enabled = false;
 		}
 	}
 			
-	//Переключатель Доставка по своему региону
+	//РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ Р”РѕСЃС‚Р°РІРєР° РїРѕ СЃРІРѕРµРјСѓ СЂРµРіРёРѕРЅСѓ
 	if (($this->enabled == true) && (MODULE_SHIPPING_SPSR_OWN_REGION_DELIVERY == 'False'))	{		         		
 		if ($own_zone_id == $order->delivery['zone_id']){				
 			$this->enabled = false;
 		}
 	}
 	
-	//отключение доставки для отдельных городов
+	//РѕС‚РєР»СЋС‡РµРЅРёРµ РґРѕСЃС‚Р°РІРєРё РґР»СЏ РѕС‚РґРµР»СЊРЅС‹С… РіРѕСЂРѕРґРѕРІ
 	if (($this->enabled == true) && (MODULE_SHIPPING_SPSR_DISABLE_CITIES !== '')){		         		        
 		$disabled_cities = explode(',',MODULE_SHIPPING_SPSR_DISABLE_CITIES);
 		foreach ($disabled_cities as $cityvalue){			
@@ -93,15 +93,15 @@
       }
       	
 
-		//вытаскиваем Region ID города назначения базы
+		//РІС‹С‚Р°СЃРєРёРІР°РµРј Region ID РіРѕСЂРѕРґР° РЅР°Р·РЅР°С‡РµРЅРёСЏ Р±Р°Р·С‹
 		$region_id = tep_get_spsr_zone_id($order->delivery['zone_id']);
 		
-		//вытаскиваем свой Region ID из базы
+		//РІС‹С‚Р°СЃРєРёРІР°РµРј СЃРІРѕР№ Region ID РёР· Р±Р°Р·С‹
 		$own_cpcr_id = tep_get_spsr_zone_id($order->delivery['zone_id']);
 
-	//oscommerce дважды запрашивает цену доставки c cpcr.ru - до подтверждения цены доставки (для показа пользователю) и после подтверждения цены доставки (нажатие кнопки "Продолжить"). Х.з. почему, видимо так работает oscommerce. Чтобы не запрашивать дважды кешируем $cost в hidden поле cost.
+	//oscommerce РґРІР°Р¶РґС‹ Р·Р°РїСЂР°С€РёРІР°РµС‚ С†РµРЅСѓ РґРѕСЃС‚Р°РІРєРё c cpcr.ru - РґРѕ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ С†РµРЅС‹ РґРѕСЃС‚Р°РІРєРё (РґР»СЏ РїРѕРєР°Р·Р° РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ) Рё РїРѕСЃР»Рµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ С†РµРЅС‹ РґРѕСЃС‚Р°РІРєРё (РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё "РџСЂРѕРґРѕР»Р¶РёС‚СЊ"). РҐ.Р·. РїРѕС‡РµРјСѓ, РІРёРґРёРјРѕ С‚Р°Рє СЂР°Р±РѕС‚Р°РµС‚ oscommerce. Р§С‚РѕР±С‹ РЅРµ Р·Р°РїСЂР°С€РёРІР°С‚СЊ РґРІР°Р¶РґС‹ РєРµС€РёСЂСѓРµРј $cost РІ hidden РїРѕР»Рµ cost.
 	if (!isset($_POST['cost'])) {		 		
-		//составление запроса стоимости доставки
+		//СЃРѕСЃС‚Р°РІР»РµРЅРёРµ Р·Р°РїСЂРѕСЃР° СЃС‚РѕРёРјРѕСЃС‚Рё РґРѕСЃС‚Р°РІРєРё
 		if(isset($_POST['error_tocity']))
 			{
 			$request='http://cpcr.ru/cgi-bin/postxml.pl?TariffCompute&FromRegion='.$own_cpcr_id.'|0&FromCityName='.MODULE_SHIPPING_SPSR_FROM_CITY.'&Weight='. $shipping_weight .'&Nature='.MODULE_SHIPPING_SPSR_NATURE.'&Amount=0&Country=209|0&ToCity='.$_POST['error_tocity'];
@@ -111,7 +111,7 @@
 			$request='http://cpcr.ru/cgi-bin/postxml.pl?TariffCompute&FromRegion='.$own_cpcr_id.'|0&FromCityName='.MODULE_SHIPPING_SPSR_FROM_CITY.'&Weight='. $shipping_weight .'&Nature='.MODULE_SHIPPING_SPSR_NATURE.'&Amount=0&Country=209|0&ToRegion='.$region_id.'|0&ToCityName='.$order->delivery['city'];
 			}
 		
-		//проверки связи с сервером
+		//РїСЂРѕРІРµСЂРєРё СЃРІСЏР·Рё СЃ СЃРµСЂРІРµСЂРѕРј
 		$server_link = false;
 		
 		$file_headers = @get_headers($request);
@@ -119,88 +119,88 @@
 			$server_link = true;
 		}
 	
-		//Запрос стоимости с cpcr.ru
+		//Р—Р°РїСЂРѕСЃ СЃС‚РѕРёРјРѕСЃС‚Рё СЃ cpcr.ru
 		if ($server_link==true){
 			$xmlstring= simplexml_load_file($request);
 		}else{
-			$title = "<font color=red>Нет связи с сервером cpcr.ru, стоимость доставки не определена.</font>";
+			$title = "<font color=red>РќРµС‚ СЃРІСЏР·Рё СЃ СЃРµСЂРІРµСЂРѕРј cpcr.ru, СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё РЅРµ РѕРїСЂРµРґРµР»РµРЅР°.</font>";
 			$cost = 0;
 		}
 
-		//получение цены доставки
+		//РїРѕР»СѓС‡РµРЅРёРµ С†РµРЅС‹ РґРѕСЃС‚Р°РІРєРё
 		if ($xmlstring->PayTariff)
 			{
-			$find_symbols = array(chr(160),'р.',' '); //вместо пробела в стоимости доставки cpcr.ru использует симовл с ascii кодом 160.
-			$cost = ceil(str_replace(',','.',str_replace($find_symbols,'',iconv("UTF-8","windows-1251", $xmlstring->Total))));
-			$title .= 'Доставка в '.$order->delivery['city'].', '.$order->delivery['state'];
+			$find_symbols = array(chr(160),'СЂ.',' '); //РІРјРµСЃС‚Рѕ РїСЂРѕР±РµР»Р° РІ СЃС‚РѕРёРјРѕСЃС‚Рё РґРѕСЃС‚Р°РІРєРё cpcr.ru РёСЃРїРѕР»СЊР·СѓРµС‚ СЃРёРјРѕРІР» СЃ ascii РєРѕРґРѕРј 160.
+			$cost = ceil(str_replace(',','.',str_replace($find_symbols,'',$xmlstring->Total)));
+			$title .= 'Р”РѕСЃС‚Р°РІРєР° РІ '.$order->delivery['city'].', '.$order->delivery['state'];
 			if ($cost>0) {$title .= '<input type="hidden" name="cost" value="'.$cost.'">';}			
 			}
-	//если $cost уже был определен
+	//РµСЃР»Рё $cost СѓР¶Рµ Р±С‹Р» РѕРїСЂРµРґРµР»РµРЅ
 	}else{
 		$cost = $_POST['cost'];
-		$title .= 'Доставка в '.$order->delivery['city'].', '.$order->delivery['state'];
+		$title .= 'Р”РѕСЃС‚Р°РІРєР° РІ '.$order->delivery['city'].', '.$order->delivery['state'];
 		if ($cost>0) {$title .= '<input type="hidden" name="cost" value="'.$cost.'">';}	
 	}			
 		
-		//Обработка ошибки Город не найден
+		//РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё Р“РѕСЂРѕРґ РЅРµ РЅР°Р№РґРµРЅ
 		if ($xmlstring->Error->ToCity && $server_link == true)
 			{
-			$title .= "<font color=red>Ошибка, город \"".$order->delivery['city']."\" не найден. Либо в названии города допущена ошибка, либо в данный город СПСР доставку не производит.</font><br>";
+			$title .= "<font color=red>РћС€РёР±РєР°, РіРѕСЂРѕРґ \"".$order->delivery['city']."\" РЅРµ РЅР°Р№РґРµРЅ. Р›РёР±Рѕ РІ РЅР°Р·РІР°РЅРёРё РіРѕСЂРѕРґР° РґРѕРїСѓС‰РµРЅР° РѕС€РёР±РєР°, Р»РёР±Рѕ РІ РґР°РЅРЅС‹Р№ РіРѕСЂРѕРґ РЎРџРЎР  РґРѕСЃС‚Р°РІРєСѓ РЅРµ РїСЂРѕРёР·РІРѕРґРёС‚.</font><br>";
 			}
 		
-			//Уточнение названия города, для получения City_Id c сервера cpcr.ru
+			//РЈС‚РѕС‡РЅРµРЅРёРµ РЅР°Р·РІР°РЅРёСЏ РіРѕСЂРѕРґР°, РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ City_Id c СЃРµСЂРІРµСЂР° cpcr.ru
 		if (!$xmlstring->Error->ToCity->City->CityName=='')
 			{
-			$title .= "<font color=red>Пожалуйста уточните название вашего города:</font><br>";
+			$title .= "<font color=red>РџРѕР¶Р°Р»СѓР№СЃС‚Р° СѓС‚РѕС‡РЅРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РІР°С€РµРіРѕ РіРѕСЂРѕРґР°:</font><br>";
 			if ($xmlstring->Error->ToCity->City)
 				{
 				foreach ($xmlstring->Error->ToCity->City as $city_value)
 					{		
-					$title .= "<input type=radio name=error_tocity value=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" onChange=\"this.form.submit()\">".iconv("UTF-8","windows-1251",$city_value->CityName).", ".iconv("UTF-8","windows-1251",$city_value->RegionName)."<br>";
-					//начало код для унификации с калькулятором
-					echo "<input type=hidden name=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" value=\"".iconv("UTF-8","windows-1251",$city_value->CityName).", ".iconv("UTF-8","windows-1251",$city_value->RegionName)."\">";	
-					//конец код для унификации с калькулятором						
+					$title .= "<input type=radio name=error_tocity value=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" onChange=\"this.form.submit()\">".$city_value->CityName.", ".$city_value->RegionName."<br>";
+					//РЅР°С‡Р°Р»Рѕ РєРѕРґ РґР»СЏ СѓРЅРёС„РёРєР°С†РёРё СЃ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂРѕРј
+					echo "<input type=hidden name=\"".$city_value->City_Id."|".$city_value->City_Owner_Id."\" value=\"".$city_value->CityName.", ".$city_value->RegionName."\">";	
+					//РєРѕРЅРµС† РєРѕРґ РґР»СЏ СѓРЅРёС„РёРєР°С†РёРё СЃ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂРѕРј						
 					}
 				}
 			}
 			
-		//Обработка ошибки Веса
+		//РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё Р’РµСЃР°
 		if ($xmlstring->Error->Weight)
 			{
-			$title .= "<br><font color=red>Ошибка! Неправильный формат веса</font>";
+			$title .= "<br><font color=red>РћС€РёР±РєР°! РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ С„РѕСЂРјР°С‚ РІРµСЃР°</font>";
 			}
 		
-		//Оюработка ошибки Оценочной стоимости	
+		//РћСЋСЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё РћС†РµРЅРѕС‡РЅРѕР№ СЃС‚РѕРёРјРѕСЃС‚Рё	
 		if ($xmlstring->Error->Amount)
 			{
-			$title .= "<br><font color=red>Ошибка! Неправильный формат оценочной стоимости</font>";
+			$title .= "<br><font color=red>РћС€РёР±РєР°! РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ С„РѕСЂРјР°С‚ РѕС†РµРЅРѕС‡РЅРѕР№ СЃС‚РѕРёРјРѕСЃС‚Рё</font>";
 			}
 		if (!isset($own_cpcr_id))
 			{
-			$title .= "<br><font color=red>Ошибка! Вы не выбрали зону! (Администрирование>Настройки>My store>Zone)</font>";
+			$title .= "<br><font color=red>РћС€РёР±РєР°! Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё Р·РѕРЅСѓ! (РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ>РќР°СЃС‚СЂРѕР№РєРё>My store>Zone)</font>";
 			}
 			
-		//Обработка ошибки Mutex Wait Timeout
+		//РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё Mutex Wait Timeout
 		if ($xmlstring->Error['Type']=='Mutex' & $xmlstring->Error['SubType']=='Wait Timeout')  {
-			$title .= "<br><font color=red>Ошибка! cpcr.ru не вернул ответ на запрос. Попробуйте обновить страницу.</font>";
+			$title .= "<br><font color=red>РћС€РёР±РєР°! cpcr.ru РЅРµ РІРµСЂРЅСѓР» РѕС‚РІРµС‚ РЅР° Р·Р°РїСЂРѕСЃ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РѕР±РЅРѕРІРёС‚СЊ СЃС‚СЂР°РЅРёС†Сѓ.</font>";
 		}
 		
-		//Обработка ошибки ComputeTariff CalcError
+		//РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё ComputeTariff CalcError
 		if ($xmlstring->Error['Type']=='ComputeTariff' & $xmlstring->Error['SubType']=='CalcError')  {
-			$title .= "<br><font color=red>Ошибка! Ошибка вычисления стоимости доставки.</font>";
+			$title .= "<br><font color=red>РћС€РёР±РєР°! РћС€РёР±РєР° РІС‹С‡РёСЃР»РµРЅРёСЏ СЃС‚РѕРёРјРѕСЃС‚Рё РґРѕСЃС‚Р°РІРєРё.</font>";
 		}		
 		
-		//Обработка ошибки Command Unknown
+		//РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё Command Unknown
 		if ($xmlstring->Error['Type']=='Command' & $xmlstring->Error['SubType']=='Unknown')  {
-			$title .= "<br><font color=red>Ошибка! Неизвестная команда.</font>";
+			$title .= "<br><font color=red>РћС€РёР±РєР°! РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРѕРјР°РЅРґР°.</font>";
 		}
 		
-		//Обработка ошибки Unknown Unknown (прочие ошибки)
+		//РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РєРё Unknown Unknown (РїСЂРѕС‡РёРµ РѕС€РёР±РєРё)
 		if ($xmlstring->Error['Type'])  {
-			$title .= "<br><font color=red>Неизвестная ошибка, попробуйте позже.</font>";
+			$title .= "<br><font color=red>РќРµРёР·РІРµСЃС‚РЅР°СЏ РѕС€РёР±РєР°, РїРѕРїСЂРѕР±СѓР№С‚Рµ РїРѕР·Р¶Рµ.</font>";
 		}		
 		
-		//Отображдение отладочной информации
+		//РћС‚РѕР±СЂР°Р¶РґРµРЅРёРµ РѕС‚Р»Р°РґРѕС‡РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё
 		if(MODULE_SHIPPING_SPSR_DEBUG=='True')
 			{
 			$title .= "<br>".'$own_zone_id='.$own_zone_id."<br>".
@@ -236,19 +236,19 @@
     }
 
    function install() {
- 		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Включить СПСР-Экспресс?', 'MODULE_SHIPPING_SPSR_STATUS', 'True', 'Вы хотите включить модуль Доставка СПСР-Экспресс?', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Город отправителя', 'MODULE_SHIPPING_SPSR_FROM_CITY', 'Санкт-Петербург', 'Название города, откуда осуществляется отправка', '6', '0', now())");
+ 		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р’РєР»СЋС‡РёС‚СЊ РЎРџРЎР -Р­РєСЃРїСЂРµСЃСЃ?', 'MODULE_SHIPPING_SPSR_STATUS', 'True', 'Р’С‹ С…РѕС‚РёС‚Рµ РІРєР»СЋС‡РёС‚СЊ РјРѕРґСѓР»СЊ Р”РѕСЃС‚Р°РІРєР° РЎРџРЎР -Р­РєСЃРїСЂРµСЃСЃ?', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Р“РѕСЂРѕРґ РѕС‚РїСЂР°РІРёС‚РµР»СЏ', 'MODULE_SHIPPING_SPSR_FROM_CITY', 'РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі', 'РќР°Р·РІР°РЅРёРµ РіРѕСЂРѕРґР°, РѕС‚РєСѓРґР° РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РѕС‚РїСЂР°РІРєР°', '6', '0', now())");
 		
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Отключить для городов', 'MODULE_SHIPPING_SPSR_DISABLE_CITIES', '', 'Города, для которых этот способ доставки не показывать, через запятую', '6', '0', now())");
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('РћС‚РєР»СЋС‡РёС‚СЊ РґР»СЏ РіРѕСЂРѕРґРѕРІ', 'MODULE_SHIPPING_SPSR_DISABLE_CITIES', '', 'Р“РѕСЂРѕРґР°, РґР»СЏ РєРѕС‚РѕСЂС‹С… СЌС‚РѕС‚ СЃРїРѕСЃРѕР± РґРѕСЃС‚Р°РІРєРё РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊ, С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ', '6', '0', now())");
 		
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Включить доставку по своему городу?', 'MODULE_SHIPPING_SPSR_OWN_CITY_DELIVERY', 'True', '', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Включить доставку по своему региону?', 'MODULE_SHIPPING_SPSR_OWN_REGION_DELIVERY', 'True', '', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Вес товара по умолчанию', 'MODULE_SHIPPING_SPSR_DEFAULT_SHIPPING_WEIGHT', '0.7', 'Если вес товара не установлен, то используем вес по умолчанию', '6', '0', now())");		
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Вид отправления', 'MODULE_SHIPPING_SPSR_NATURE', '3', 'Вид отправления (число):<br>1 - документы<br>2 - мобильные телефоны<br>3 - бытовая и оргтехника<br>4 - ценные бумаги<br>5 - ювелирные изделия<br>6 - косметика<br>7 - одежда и текстильные изд.<br>8 – другое<br>', '6', '0', now())");
-		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Включить режим отладки', 'MODULE_SHIPPING_SPSR_DEBUG', 'False', 'Будет выводится отладочная информация', '6', '0','tep_cfg_select_option(array(\'True\', \'False\'),', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Налог', 'MODULE_SHIPPING_SPSR_TAX_CLASS', '0', 'Использовать налог.', '6', '0', 'tep_get_tax_class_title', 'tep_cfg_pull_down_tax_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона', 'MODULE_SHIPPING_SPSR_ZONE', '0', 'Если выбрана зона, то данный модуль доставки будет виден только покупателям из выбранной зоны.', '6', '0', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки', 'MODULE_SHIPPING_SPSR_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '0', now())");
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р’РєР»СЋС‡РёС‚СЊ РґРѕСЃС‚Р°РІРєСѓ РїРѕ СЃРІРѕРµРјСѓ РіРѕСЂРѕРґСѓ?', 'MODULE_SHIPPING_SPSR_OWN_CITY_DELIVERY', 'True', '', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р’РєР»СЋС‡РёС‚СЊ РґРѕСЃС‚Р°РІРєСѓ РїРѕ СЃРІРѕРµРјСѓ СЂРµРіРёРѕРЅСѓ?', 'MODULE_SHIPPING_SPSR_OWN_REGION_DELIVERY', 'True', '', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Р’РµСЃ С‚РѕРІР°СЂР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ', 'MODULE_SHIPPING_SPSR_DEFAULT_SHIPPING_WEIGHT', '0.7', 'Р•СЃР»Рё РІРµСЃ С‚РѕРІР°СЂР° РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ, С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµРј РІРµСЃ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ', '6', '0', now())");		
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order,  date_added) values ('Р’РёРґ РѕС‚РїСЂР°РІР»РµРЅРёСЏ', 'MODULE_SHIPPING_SPSR_NATURE', '3', 'Р’РёРґ РѕС‚РїСЂР°РІР»РµРЅРёСЏ (С‡РёСЃР»Рѕ):<br>1 - РґРѕРєСѓРјРµРЅС‚С‹<br>2 - РјРѕР±РёР»СЊРЅС‹Рµ С‚РµР»РµС„РѕРЅС‹<br>3 - Р±С‹С‚РѕРІР°СЏ Рё РѕСЂРіС‚РµС…РЅРёРєР°<br>4 - С†РµРЅРЅС‹Рµ Р±СѓРјР°РіРё<br>5 - СЋРІРµР»РёСЂРЅС‹Рµ РёР·РґРµР»РёСЏ<br>6 - РєРѕСЃРјРµС‚РёРєР°<br>7 - РѕРґРµР¶РґР° Рё С‚РµРєСЃС‚РёР»СЊРЅС‹Рµ РёР·Рґ.<br>8 вЂ“ РґСЂСѓРіРѕРµ<br>', '6', '0', now())");
+		tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р’РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё', 'MODULE_SHIPPING_SPSR_DEBUG', 'False', 'Р‘СѓРґРµС‚ РІС‹РІРѕРґРёС‚СЃСЏ РѕС‚Р»Р°РґРѕС‡РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ', '6', '0','tep_cfg_select_option(array(\'True\', \'False\'),', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('РќР°Р»РѕРі', 'MODULE_SHIPPING_SPSR_TAX_CLASS', '0', 'РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РЅР°Р»РѕРі.', '6', '0', 'tep_get_tax_class_title', 'tep_cfg_pull_down_tax_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Р—РѕРЅР°', 'MODULE_SHIPPING_SPSR_ZONE', '0', 'Р•СЃР»Рё РІС‹Р±СЂР°РЅР° Р·РѕРЅР°, С‚Рѕ РґР°РЅРЅС‹Р№ РјРѕРґСѓР»СЊ РґРѕСЃС‚Р°РІРєРё Р±СѓРґРµС‚ РІРёРґРµРЅ С‚РѕР»СЊРєРѕ РїРѕРєСѓРїР°С‚РµР»СЏРј РёР· РІС‹Р±СЂР°РЅРЅРѕР№ Р·РѕРЅС‹.', '6', '0', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё', 'MODULE_SHIPPING_SPSR_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '0', now())");
     }
 
     function remove() {
