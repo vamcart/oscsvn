@@ -7,7 +7,7 @@
 
 				switch ($report_type) {
 
-// Количество заказов по статусам
+// РЎС‚Р°С‚РёСЃС‚РёРєР° Р·Р°РєР°Р·РѕРІ РїРѕ РїРµСЂРёРѕРґР°Рј
 
 					case 'orders' :
 
@@ -28,7 +28,7 @@
     $report = 2;
   }
 
-    $report_desc = tep_iconv_utf(REPORT_TYPE_MONTHLY);
+    $report_desc = REPORT_TYPE_MONTHLY;
 
   require(DIR_WS_CLASSES . 'sales_report.php');
   $report = new sales_report(4, $startDate, $endDate, $sales_report_filter);
@@ -48,7 +48,7 @@ $data_sum[] = number_format($report->info[$i]['sum'],0,'','');
 $data_date = array();
 for ($i = 0; $i < $report->size; $i++) { 
 
-$data_date[] = tep_iconv_utf($report->info[$i]['text']);
+$data_date[] = $report->info[$i]['text'];
 									
 }
 
@@ -57,13 +57,13 @@ $g->bg_colour = '0xFFFFFF';
 $g->x_grid_colour = '0xd8d8d8';
 $g->y_grid_colour = '0xd8d8d8';
 
-$g->title( tep_iconv_utf(HEADING_TITLE) . ': ' . $report_desc, '{font-size: 18px;}' );
+$g->title( HEADING_TITLE . ': ' . $report_desc, '{font-size: 18px;}' );
 
 $g->set_data( $data_sum );
-$g->bar( 60, '#ff9900', tep_iconv_utf(TEXT_TOTAL_SUMM), 12 );
+$g->bar( 60, '#ff9900', TEXT_TOTAL_SUMM, 12 );
 
 $g->set_data( $data_count );
-$g->line_hollow( 3, 4, '#0077cc', tep_iconv_utf(TEXT_NUMBER_OF_ORDERS), 12 );
+$g->line_hollow( 3, 4, '#0077cc', TEXT_NUMBER_OF_ORDERS, 12 );
 
 $g->attach_to_y_right_axis(2);
 
@@ -76,9 +76,9 @@ echo $g->render();
 
 						break;
 
-// /Количество заказов по статусам
+// /ГЉГ®Г«ГЁб№«ГҐГ±ГІГўГ® Г§Г ГЄГ Г§Г®Гў ГЇГ® Г±ГІГ ГІГіГ±Г Г¬
 
-// Статистика заказов по периодам
+// Г‘ГІГ ГІГЁГ±ГІГЁГЄГ  Г§Г ГЄГ Г§Г®Гў ГЇГ® ГЇГҐЕµГЁГ®Г¤Г Г¬
 
 					default :
 
@@ -100,15 +100,15 @@ echo $g->render();
   }
 
   if ($report == 1) {
-    $report_desc = tep_iconv_utf(REPORT_TYPE_HOURLY);
+    $report_desc = REPORT_TYPE_HOURLY;
   } else if ($report == 2) {
-    $report_desc = tep_iconv_utf(REPORT_TYPE_DAILY);
+    $report_desc = REPORT_TYPE_DAILY;
   } else if ($report == 3) {
-    $report_desc = tep_iconv_utf(REPORT_TYPE_WEEKLY);
+    $report_desc = REPORT_TYPE_WEEKLY;
   } else if ($report == 4) {
-    $report_desc = tep_iconv_utf(REPORT_TYPE_MONTHLY);
+    $report_desc = REPORT_TYPE_MONTHLY;
   } else if ($report == 5) {
-    $report_desc = tep_iconv_utf(REPORT_TYPE_YEARLY);
+    $report_desc = REPORT_TYPE_YEARLY;
   }
 
   // check start and end Date
@@ -149,7 +149,7 @@ $data_sum[] = number_format($report->info[$i]['sum'],0,'','');
 $data_date = array();
 for ($i = 0; $i < $report->size; $i++) { 
 
-$data_date[] = tep_iconv_utf($report->info[$i]['text']);
+$data_date[] = $report->info[$i]['text'];
 									
 }
 
@@ -160,13 +160,13 @@ $g->bg_colour = '0xFFFFFF';
 $g->x_grid_colour = '0xd8d8d8';
 $g->y_grid_colour = '0xd8d8d8';
 
-$g->title( tep_iconv_utf(HEADING_TITLE) . ': ' . $report_desc, '{font-size: 18px;}' );
+$g->title( HEADING_TITLE . ': ' . $report_desc, '{font-size: 18px;}' );
 
 $g->set_data( $data_count );
-$g->line_hollow( 3, 4, '0x0077cc', tep_iconv_utf(TEXT_NUMBER_OF_ORDERS), 12 );
+$g->line_hollow( 3, 4, '0x0077cc', TEXT_NUMBER_OF_ORDERS, 12 );
 
 $g->set_data( $data_sum );
-$g->line_dot( 3, 4, '0xff9900', tep_iconv_utf(TEXT_TOTAL_SUMM), 12 );
+$g->line_dot( 3, 4, '0xff9900', TEXT_TOTAL_SUMM, 12 );
 
 //
 // Attach the second data line (Free Ram) to the right axis:
@@ -189,7 +189,7 @@ echo $g->render();
 
 						break;
 
-// /Статистика заказов по периодам
+// /РЎС‚Р°С‚РёСЃС‚РёРєР° Р·Р°РєР°Р·РѕРІ РїРѕ РїРµСЂРёРѕРґР°Рј
 
 }
 

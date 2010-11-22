@@ -183,9 +183,9 @@
     }
 
 	function unicode2win($str, $charset = 'UTF-8') {
-		if (function_exists('iconv') && 'UTF-8' != strtoupper($charset)) {
-			$str = iconv("UTF-8", $charset, $str);
-		}
+		//if (function_exists('iconv') && 'UTF-8' != strtoupper($charset)) {
+			//$str = iconv("UTF-8", $charset, $str);
+		//}
 	return $str;
 }
 

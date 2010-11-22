@@ -33,11 +33,7 @@
   $graph->SetUseTTF(1);
   $graph->SetTitleFontSize('10');
 
-if (function_exists('iconv')) {
-  $graph->SetTitle(iconv('cp1251','UTF-8',sprintf(TEXT_BANNERS_YEARLY_STATISTICS, $banner['banners_title'])));
-} else {
   $graph->SetTitle(sprintf(TEXT_BANNERS_YEARLY_STATISTICS, $banner['banners_title']));
-}
 
   $graph->SetBackgroundColor('white'); 
 

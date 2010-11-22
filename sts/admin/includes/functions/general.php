@@ -1993,20 +1993,20 @@ require(DIR_WS_FUNCTIONS . 'downloads_controller.php');
 
 function tep_iconv($text) {
 
-    if (function_exists('iconv')) {
-       return iconv('UTF-8', CHARSET, $text); 
-    } else {
+    //if (function_exists('iconv')) {
+       //return iconv('UTF-8', CHARSET, $text); 
+    //} else {
       return $text;
-    }
+    //}
   }
 
 function tep_iconv_utf($text) {
 
-    if (function_exists('iconv')) {
-       return iconv(CHARSET, 'UTF-8', $text); 
-    } else {
+    //if (function_exists('iconv')) {
+       //return iconv(CHARSET, 'UTF-8', $text); 
+    //} else {
       return $text;
-    }
+    //}
   }
 
   //////create a pull down for all payment installed payment methods for Order Editor configuration
