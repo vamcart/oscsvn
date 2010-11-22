@@ -41,7 +41,7 @@
    
   //1.  Update most the orders table
   if ($action == 'update_order_field') {
-	  tep_db_query("UPDATE " . TABLE_ORDERS . " SET " . $_GET['field'] . " = '" . tep_db_input(tep_db_prepare_input(tep_iconv($_GET['new_value']))) . "' WHERE orders_id = '" . $_GET['oID'] . "'");
+	  tep_db_query("UPDATE " . TABLE_ORDERS . " SET " . $_GET['field'] . " = '" . tep_db_input(tep_db_prepare_input($_GET['new_value'])) . "' WHERE orders_id = '" . $_GET['oID'] . "'");
 	  
 	  //generate responseText
 	  echo $_GET['field'];
@@ -77,7 +77,7 @@
 			} //end if ($_GET['new_value'] != $orders_product_info['products_quantity']){
 		}//end if ($_GET['field'] = 'products_quantity'
 		
-	  tep_db_query("UPDATE " . TABLE_ORDERS_PRODUCTS . " SET " . $_GET['field'] . " = '" . tep_db_input(tep_db_prepare_input(tep_iconv($_GET['new_value']))) . "' WHERE orders_products_id = '" . $_GET['pid'] . "' AND orders_id = '" . $_GET['oID'] . "'");
+	  tep_db_query("UPDATE " . TABLE_ORDERS_PRODUCTS . " SET " . $_GET['field'] . " = '" . tep_db_input(tep_db_prepare_input($_GET['new_value'])) . "' WHERE orders_products_id = '" . $_GET['pid'] . "' AND orders_id = '" . $_GET['oID'] . "'");
 	
 	
 	
@@ -107,7 +107,7 @@ if ($action == 'update_product_value_field') {
     //4.  Update the orders_products_attributes table 
 if ($action == 'update_attributes_field') {
 	  
-	  tep_db_query("UPDATE " . TABLE_ORDERS_PRODUCTS_ATTRIBUTES . " SET " . $_GET['field'] . " = '" . tep_db_input(tep_db_prepare_input(tep_iconv($_GET['new_value']))) . "' WHERE orders_products_attributes_id = '" . $_GET['aid'] . "' AND orders_products_id = '" . $_GET['pid'] . "' AND orders_id = '" . $_GET['oID'] . "'");
+	  tep_db_query("UPDATE " . TABLE_ORDERS_PRODUCTS_ATTRIBUTES . " SET " . $_GET['field'] . " = '" . tep_db_input(tep_db_prepare_input$_GET['new_value'])) . "' WHERE orders_products_attributes_id = '" . $_GET['aid'] . "' AND orders_products_id = '" . $_GET['pid'] . "' AND orders_id = '" . $_GET['oID'] . "'");
 	  
 	  if (isset($_GET['final_price'])) {
 	    
@@ -194,7 +194,7 @@ if ($action == 'update_downloads') {
   //9. Update the orders_status_history table
   if ($action == 'update_comment') {
       
-	  tep_db_query("UPDATE " . TABLE_ORDERS_STATUS_HISTORY . " SET comments = '" . tep_db_input(tep_db_prepare_input(tep_iconv($_GET['comment']))) . "' WHERE orders_status_history_id = '" . $_GET['cID'] . "' AND orders_id = '" . $_GET['oID'] . "'");
+	  tep_db_query("UPDATE " . TABLE_ORDERS_STATUS_HISTORY . " SET comments = '" . tep_db_input(tep_db_prepare_input($_GET['comment'])) . "' WHERE orders_status_history_id = '" . $_GET['cID'] . "' AND orders_id = '" . $_GET['oID'] . "'");
 	  
 	  //generate responseText
 	  echo TABLE_ORDERS_STATUS_HISTORY;
@@ -367,7 +367,7 @@ if ($action == 'update_downloads') {
 				 
         for ($i=0, $n=sizeof($new_order_totals); $i<$n; $i++) {
           $sql_data_array = array('orders_id' => $oID,
-                                  'title' => tep_iconv($new_order_totals[$i]['title']),
+                                  'title' => $new_order_totals[$i]['title'],
                                   'text' => $new_order_totals[$i]['text'],
                                   'value' => $new_order_totals[$i]['value'], 
                                   'class' => $new_order_totals[$i]['code'], 
@@ -557,7 +557,7 @@ if ($action == 'update_downloads') {
 			if (isset($_GET['notify']) && ($_GET['notify'] == 'true')) {
 			  $notify_comments = '';
 			  if (isset($_GET['notify_comments']) && ($_GET['notify_comments'] == 'true')) {
-			    $notify_comments = sprintf(EMAIL_TEXT_COMMENTS_UPDATE, tep_iconv($_GET['comments'])) . "\n\n";
+			    $notify_comments = sprintf(EMAIL_TEXT_COMMENTS_UPDATE, $_GET['comments']) . "\n\n";
 			  }
 			  $email = STORE_NAME . "\n" .
 			           EMAIL_SEPARATOR . "\n" . 
@@ -577,7 +577,7 @@ if ($action == 'update_downloads') {
 				'" . tep_db_input($_GET['status']) . "', 
 				now(), 
 				" . tep_db_input($customer_notified) . ", 
-				'" . tep_db_input(tep_db_prepare_input(tep_iconv($_GET['comments'])))  . "')");
+				'" . tep_db_input(tep_db_prepare_input($_GET['comments']))  . "')");
 			}
 
 ?>
@@ -880,8 +880,8 @@ if (tep_db_num_rows($orders_history_query)) {
 					$email_order .= EMAIL_TEXT_FOOTER . "\n\n";
 				  }
       
-	  //code for plain text emails which changes the € sign to EUR, otherwise the email will show ? instead of €
-      $email_order = str_replace("€","EUR",$email_order);
+	  //code for plain text emails which changes the Â€ sign to EUR, otherwise the email will show ? instead of Â€
+      $email_order = str_replace("Â€","EUR",$email_order);
 	  $email_order = str_replace("&nbsp;"," ",$email_order);
 
 	  //code which replaces the <br> tags within EMAIL_TEXT_PAYMENT_INFO and EMAIL_TEXT_FOOTER with the proper \n

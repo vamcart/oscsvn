@@ -41,12 +41,8 @@
   $graph->SetPlotBorderType('left');
   $graph->SetTitleFontSize('10');
 
-if (function_exists('iconv')) {
-  $graph->SetTitle(iconv('cp1251','UTF-8',sprintf(TEXT_BANNERS_DAILY_STATISTICS, $banner['banners_title'], strftime('%B', mktime(0,0,0,$month)), $year)));
-} else {
   $graph->SetTitle(sprintf(TEXT_BANNERS_DAILY_STATISTICS, $banner['banners_title'], strftime('%B', mktime(0,0,0,$month)), $year));
-}
-  
+
   $graph->SetBackgroundColor('white');
 
   $graph->SetVertTickPosition('plotleft');

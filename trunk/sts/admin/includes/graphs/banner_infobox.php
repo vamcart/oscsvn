@@ -39,11 +39,7 @@
   $graph->SetUseTTF(1);
   $graph->SetTitleFontSize('10');
 
-if (function_exists('iconv')) {
-  $graph->SetTitle(iconv('cp1251','UTF-8',TEXT_BANNERS_LAST_3_DAYS));
-} else {
   $graph->SetTitle(TEXT_BANNERS_LAST_3_DAYS);
-}
 
   $graph->SetDataValues($stats);
   $graph->SetDataColors(array('blue','red'),array('blue', 'red'));
