@@ -280,7 +280,7 @@
 
       $process_button_string = tep_draw_hidden_field('LMI_PAYMENT_NO', substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1)) .
                                tep_draw_hidden_field('LMI_PAYEE_PURSE', $purse) .
-                               tep_draw_hidden_field('LMI_PAYMENT_DESC', 'Заказ номер: ' . substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1) . ', покупатель номер: ' . $customer_id) .
+                               tep_draw_hidden_field('LMI_PAYMENT_DESC', substr($cart_webmoney_id, strpos($cart_webmoney_id, '-')+1)) .
                                tep_draw_hidden_field('LMI_PAYMENT_AMOUNT', $order_sum) .
                                tep_draw_hidden_field('LMI_SIM_MODE', '0');
 
@@ -410,11 +410,11 @@
         }
       }
 
-      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
 
 // send emails to other people
       if (SEND_EXTRA_ORDER_EMAILS_TO != '') {
-        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
       }
 
 // load the after_process function from the payment modules
@@ -452,13 +452,13 @@
 
     function install() {
 
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты WebMoney', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_STATUS', 'True', 'Разрешить модуль оплаты WebMoney?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш WM ID', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ID', '', 'Укажите Ваш WM идентификатор.', '6', '4', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш WMR кошелёк', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_WMR', '', 'Укажите Ваш WMR кошелёк.', '6', '5', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '6', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '7', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Секретный ключ', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SECRET_KEY', '0', 'В данной опции укажите Ваш ключ, указанный в опции Secret Key на сайте WebMoney Merchant.', '6', '8', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('ЕґГ Г§ЕµГҐГёГЁГІГј Г¬Г®Г¤ГіГ«Гј Г®ГЇГ«Г ГІГ» WebMoney', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_STATUS', 'True', 'ЕґГ Г§ЕµГҐГёГЁГІГј Г¬Г®Г¤ГіГ«Гј Г®ГЇГ«Г ГІГ» WebMoney?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Г‚Г Гё WM ID', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ID', '', 'Г“ГЄГ Г¦ГЁГІГҐ Г‚Г Гё WM ГЁГ¤ГҐГ­ГІГЁГґГЁГЄГ ГІГ®Еµ.', '6', '4', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Г‚Г Гё WMR ГЄГ®ГёГҐГ«бєЃГЄ', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_WMR', '', 'Г“ГЄГ Г¦ГЁГІГҐ Г‚Г Гё WMR ГЄГ®ГёГҐГ«бєЃГЄ.', '6', '5', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ГЏГ®ЕµГїГ¤Г®ГЄ Г±Г®ЕµГІГЁЕµГ®ГўГЄГЁ.', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SORT_ORDER', '0', 'ГЏГ®ЕµГїГ¤Г®ГЄ Г±Г®ЕµГІГЁЕµГ®ГўГЄГЁ Г¬Г®Г¤ГіГ«Гї.', '6', '6', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Г‡Г®Г­Г  Г®ГЇГ«Г ГІГ»', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ZONE', '0', 'Г…Г±Г«ГЁ ГўГ»ГЎЕµГ Г­Г  Г§Г®Г­Г , Г¤Г Г­Г­Г»Г© Г¬Г®Г¤ГіГ«Гј Г®ГЇГ«Г ГІГ» ГЎГіГ¤ГҐГІ Г¤Г®Г±ГІГіГЇГҐГ­ ГІГ®Г«ГјГЄГ® ГЇГ®ГЄГіГЇГ ГІГҐГ«ГїГ¬ ГЁГ§ ГіГЄГ Г§Г Г­Г­Г®Г© Г§Г®Г­Г».', '6', '7', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Г‘ГҐГЄЕµГҐГІГ­Г»Г© ГЄГ«Е·б№«', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_SECRET_KEY', '0', 'Г‚ Г¤Г Г­Г­Г®Г© Г®ГЇГ¶ГЁГЁ ГіГЄГ Г¦ГЁГІГҐ Г‚Г Гё ГЄГ«Е·б№«, ГіГЄГ Г§Г Г­Г­Г»Г© Гў Г®ГЇГ¶ГЁГЁ Secret Key Г­Г  Г±Г Г©ГІГҐ WebMoney Merchant.', '6', '8', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Г“ГЄГ Г¦ГЁГІГҐ Г®ГЇГ«Г б№«ГҐГ­Г­Г»Г© Г±ГІГ ГІГіГ± Г§Г ГЄГ Г§Г ', 'MODULE_PAYMENT_WEBMONEY_MERCHANT_ORDER_STATUS_ID', '0', 'Г“ГЄГ Г¦ГЁГІГҐ Г®ГЇГ«Г б№«ГҐГ­Г­Г»Г© Г±ГІГ ГІГіГ± Г§Г ГЄГ Г§Г ', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
 
     function remove() {
