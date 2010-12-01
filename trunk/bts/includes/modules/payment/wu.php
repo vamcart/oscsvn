@@ -66,12 +66,12 @@
     }
 
     function install() {
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Western Union', 'MODULE_PAYMENT_WU_STATUS', '1', 'Вы хотите использовать модуль Western Union? 1 - да, 0 - нет', '6', '1', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Имя', 'MODULE_PAYMENT_WU_1', 'Ivan', 'First Name', '6', '1', now());");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Фамилия', 'MODULE_PAYMENT_WU_2', 'Ivanov', 'Last Name', '6', '1', now());");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Город', 'MODULE_PAYMENT_WU_3', 'Moscow', 'City', '6', '1', now());");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Страна', 'MODULE_PAYMENT_WU_4', 'Russia', 'Country', '6', '1', now());");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_WU_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '0', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Western Union', 'MODULE_PAYMENT_WU_STATUS', '1', 'Р’С‹ С…РѕС‚РёС‚Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРѕРґСѓР»СЊ Western Union? 1 - РґР°, 0 - РЅРµС‚', '6', '1', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РРјСЏ', 'MODULE_PAYMENT_WU_1', 'Ivan', 'First Name', '6', '1', now());");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Р¤Р°РјРёР»РёСЏ', 'MODULE_PAYMENT_WU_2', 'Ivanov', 'Last Name', '6', '1', now());");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Р“РѕСЂРѕРґ', 'MODULE_PAYMENT_WU_3', 'Moscow', 'City', '6', '1', now());");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РЎС‚СЂР°РЅР°', 'MODULE_PAYMENT_WU_4', 'Russia', 'Country', '6', '1', now());");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё.', 'MODULE_PAYMENT_WU_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '0', now())");
    }
 
     function remove() {

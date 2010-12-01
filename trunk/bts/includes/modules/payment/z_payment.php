@@ -195,10 +195,6 @@
 
           $insert_id = tep_db_insert_id();
 
-			$customer_notification = (SEND_EMAILS == 'true') ? '1' : '0';
-			$sql_data_array = array ('orders_id' => $insert_id, 'orders_status_id' => $order->info['order_status'], 'date_added' => 'now()', 'customer_notified' => $customer_notification, 'comments' => $order->info['comments']);
-			tep_db_perform(TABLE_ORDERS_STATUS_HISTORY, $sql_data_array);
-
           for ($i=0, $n=sizeof($order_totals); $i<$n; $i++) {
             $sql_data_array = array('orders_id' => $insert_id,
                                     'title' => $order_totals[$i]['title'],
@@ -286,7 +282,7 @@
 
       $process_button_string = tep_draw_hidden_field('LMI_PAYMENT_NO', substr($cart_zpayment_id, strpos($cart_zpayment_id, '-')+1)) .
                                tep_draw_hidden_field('LMI_PAYEE_PURSE', $purse) .
-                               tep_draw_hidden_field('LMI_PAYMENT_DESC', 'Заказ номер: ' . substr($cart_zpayment_id, strpos($cart_zpayment_id, '-')+1) . ', покупатель номер: ' . $customer_id) .
+                               tep_draw_hidden_field('LMI_PAYMENT_DESC', 'Р—Р°РєР°Р· РЅРѕРјРµСЂ: ' . substr($cart_zpayment_id, strpos($cart_zpayment_id, '-')+1) . ', РїРѕРєСѓРїР°С‚РµР»СЊ РЅРѕРјРµСЂ: ' . $customer_id) .
                                tep_draw_hidden_field('LMI_PAYMENT_AMOUNT', $order_sum) .
                                tep_draw_hidden_field('CLIENT_MAIL', $order->customer['email_address']) .
                                tep_draw_hidden_field('LMI_SIM_MODE', '0');
@@ -442,11 +438,11 @@
         }
       }
 
-      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
 
 // send emails to other people
       if (SEND_EXTRA_ORDER_EMAILS_TO != '') {
-        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
       }
 
 // load the after_process function from the payment modules
@@ -484,12 +480,12 @@
 
     function install() {
 
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты Z-Payment', 'MODULE_PAYMENT_Z_PAYMENT_STATUS', 'True', 'Разрешить модуль оплаты Z-Payment?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID номер магазина в Z-Payment', 'MODULE_PAYMENT_Z_PAYMENT_ID', '', 'Укажите id номер Вашего магазина.', '6', '4', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_Z_PAYMENT_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '7', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_Z_PAYMENT_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '8', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите статус заказа, ожидающий оплаты', 'MODULE_PAYMENT_Z_PAYMENT_PREPARE_ORDER_STATUS_ID', '0', 'Укажите статус заказа, ожидающий оплаты', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_Z_PAYMENT_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '10', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ Z-Payment', 'MODULE_PAYMENT_Z_PAYMENT_STATUS', 'True', 'Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ Z-Payment?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID РЅРѕРјРµСЂ РјР°РіР°Р·РёРЅР° РІ Z-Payment', 'MODULE_PAYMENT_Z_PAYMENT_ID', '', 'РЈРєР°Р¶РёС‚Рµ id РЅРѕРјРµСЂ Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР°.', '6', '4', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё.', 'MODULE_PAYMENT_Z_PAYMENT_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '7', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Р—РѕРЅР° РѕРїР»Р°С‚С‹', 'MODULE_PAYMENT_Z_PAYMENT_ZONE', '0', 'Р•СЃР»Рё РІС‹Р±СЂР°РЅР° Р·РѕРЅР°, РґР°РЅРЅС‹Р№ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРµРЅ С‚РѕР»СЊРєРѕ РїРѕРєСѓРїР°С‚РµР»СЏРј РёР· СѓРєР°Р·Р°РЅРЅРѕР№ Р·РѕРЅС‹.', '6', '8', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('РЈРєР°Р¶РёС‚Рµ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°, РѕР¶РёРґР°СЋС‰РёР№ РѕРїР»Р°С‚С‹', 'MODULE_PAYMENT_Z_PAYMENT_PREPARE_ORDER_STATUS_ID', '0', 'РЈРєР°Р¶РёС‚Рµ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°, РѕР¶РёРґР°СЋС‰РёР№ РѕРїР»Р°С‚С‹', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('РЈРєР°Р¶РёС‚Рµ РѕРїР»Р°С‡РµРЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°', 'MODULE_PAYMENT_Z_PAYMENT_ORDER_STATUS_ID', '0', 'РЈРєР°Р¶РёС‚Рµ РѕРїР»Р°С‡РµРЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°', '6', '10', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
 
     function remove() {
