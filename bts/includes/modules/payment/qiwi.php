@@ -194,10 +194,6 @@
 
           $insert_id = tep_db_insert_id();
 
-			$customer_notification = (SEND_EMAILS == 'true') ? '1' : '0';
-			$sql_data_array = array ('orders_id' => $insert_id, 'orders_status_id' => $order->info['order_status'], 'date_added' => 'now()', 'customer_notified' => $customer_notification, 'comments' => $order->info['comments']);
-			tep_db_perform(TABLE_ORDERS_STATUS_HISTORY, $sql_data_array);
-
           for ($i=0, $n=sizeof($order_totals); $i<$n; $i++) {
             $sql_data_array = array('orders_id' => $insert_id,
                                     'title' => $order_totals[$i]['title'],
@@ -271,33 +267,33 @@
           tep_session_register('cart_qiwi_id');
         }
 
-// Выписываем qiwi счёт для покупателя
+// Р’С‹РїРёСЃС‹РІР°РµРј qiwi СЃС‡С‘С‚ РґР»СЏ РїРѕРєСѓРїР°С‚РµР»СЏ
 
         if ($insert_order == true) {
         	
         require_once(DIR_WS_CLASSES . 'nusoap/nusoap.php');
 
-			$client = new nusoap_client("https://mobw.ru/services/ishop", false); // создаем клиента для отправки запроса на QIWI
+			$client = new nusoap_client("https://mobw.ru/services/ishop", false); // СЃРѕР·РґР°РµРј РєР»РёРµРЅС‚Р° РґР»СЏ РѕС‚РїСЂР°РІРєРё Р·Р°РїСЂРѕСЃР° РЅР° QIWI
 			$error = $client->getError();
 			
 			//if ( !empty($error) ) {
-			// обрабатываем возможные ошибки и в случае их возникновения откатываем транзакцию в своей системе
+			// РѕР±СЂР°Р±Р°С‚С‹РІР°РµРј РІРѕР·РјРѕР¶РЅС‹Рµ РѕС€РёР±РєРё Рё РІ СЃР»СѓС‡Р°Рµ РёС… РІРѕР·РЅРёРєРЅРѕРІРµРЅРёСЏ РѕС‚РєР°С‚С‹РІР°РµРј С‚СЂР°РЅР·Р°РєС†РёСЋ РІ СЃРІРѕРµР№ СЃРёСЃС‚РµРјРµ
 			//echo -1;
 			//exit();
 			//}
 			
 			$client->useHTTPPersistentConnection();
 			
-			// Параметры для передачи данных о платеже:
-			// login - Ваш ID в системе QIWI
-			// password - Ваш пароль
-			// user - Телефон покупателя (10 символов, например 916820XXXX)
-			// amount - Сумма платежа в рублях
-			// comment - Комментарий, который пользователь увидит в своем личном кабинете или платежном автомате
-			// txn - Наш внутренний уникальный номер транзакции
-			// lifetime - Время жизни платежа до его автоматической отмены
-			// alarm - Оповещать ли клиента через СМС или звонком о выписанном счете
-			// create - 0 - только для зарегистрированных пользователей QIWI, 1 - для всех
+			// РџР°СЂР°РјРµС‚СЂС‹ РґР»СЏ РїРµСЂРµРґР°С‡Рё РґР°РЅРЅС‹С… Рѕ РїР»Р°С‚РµР¶Рµ:
+			// login - Р’Р°С€ ID РІ СЃРёСЃС‚РµРјРµ QIWI
+			// password - Р’Р°С€ РїР°СЂРѕР»СЊ
+			// user - РўРµР»РµС„РѕРЅ РїРѕРєСѓРїР°С‚РµР»СЏ (10 СЃРёРјРІРѕР»РѕРІ, РЅР°РїСЂРёРјРµСЂ 916820XXXX)
+			// amount - РЎСѓРјРјР° РїР»Р°С‚РµР¶Р° РІ СЂСѓР±Р»СЏС…
+			// comment - РљРѕРјРјРµРЅС‚Р°СЂРёР№, РєРѕС‚РѕСЂС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СѓРІРёРґРёС‚ РІ СЃРІРѕРµРј Р»РёС‡РЅРѕРј РєР°Р±РёРЅРµС‚Рµ РёР»Рё РїР»Р°С‚РµР¶РЅРѕРј Р°РІС‚РѕРјР°С‚Рµ
+			// txn - РќР°С€ РІРЅСѓС‚СЂРµРЅРЅРёР№ СѓРЅРёРєР°Р»СЊРЅС‹Р№ РЅРѕРјРµСЂ С‚СЂР°РЅР·Р°РєС†РёРё
+			// lifetime - Р’СЂРµРјСЏ Р¶РёР·РЅРё РїР»Р°С‚РµР¶Р° РґРѕ РµРіРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕР№ РѕС‚РјРµРЅС‹
+			// alarm - РћРїРѕРІРµС‰Р°С‚СЊ Р»Рё РєР»РёРµРЅС‚Р° С‡РµСЂРµР· РЎРњРЎ РёР»Рё Р·РІРѕРЅРєРѕРј Рѕ РІС‹РїРёСЃР°РЅРЅРѕРј СЃС‡РµС‚Рµ
+			// create - 0 - С‚РѕР»СЊРєРѕ РґР»СЏ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ QIWI, 1 - РґР»СЏ РІСЃРµС…
 			$params = array(
 			'login' => MODULE_PAYMENT_QIWI_ID,
 			'password' => MODULE_PAYMENT_QIWI_SECRET_KEY,
@@ -310,7 +306,7 @@
 			'create' => 1
 			);
 			
-			// собственно запрос:
+			// СЃРѕР±СЃС‚РІРµРЅРЅРѕ Р·Р°РїСЂРѕСЃ:
 			$result = $client->call('createBill', $params, "http://server.ishop.mw.ru/");
 			
 			//if ($client->fault) {
@@ -463,11 +459,11 @@
         }
       }
 
-      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
 
 // send emails to other people
       if (SEND_EXTRA_ORDER_EMAILS_TO != '') {
-        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
       }
 
 // load the after_process function from the payment modules
@@ -505,12 +501,12 @@
 
     function install() {
 
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты Киви', 'MODULE_PAYMENT_QIWI_STATUS', 'True', 'Разрешить модуль оплаты Киви?', '6', '1', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID номер магазина', 'MODULE_PAYMENT_QIWI_ID', '', 'Укажите ID номер Вашего магазина.', '6', '2', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_QIWI_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '3', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_QIWI_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '4', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Пароль', 'MODULE_PAYMENT_QIWI_SECRET_KEY', '0', 'В данной опции укажите пароль Вашего магазина на http://ishop.qiwi.ru.', '6', '5', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_QIWI_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '6', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ РљРёРІРё', 'MODULE_PAYMENT_QIWI_STATUS', 'True', 'Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ РљРёРІРё?', '6', '1', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID РЅРѕРјРµСЂ РјР°РіР°Р·РёРЅР°', 'MODULE_PAYMENT_QIWI_ID', '', 'РЈРєР°Р¶РёС‚Рµ ID РЅРѕРјРµСЂ Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР°.', '6', '2', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё.', 'MODULE_PAYMENT_QIWI_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '3', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Р—РѕРЅР° РѕРїР»Р°С‚С‹', 'MODULE_PAYMENT_QIWI_ZONE', '0', 'Р•СЃР»Рё РІС‹Р±СЂР°РЅР° Р·РѕРЅР°, РґР°РЅРЅС‹Р№ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРµРЅ С‚РѕР»СЊРєРѕ РїРѕРєСѓРїР°С‚РµР»СЏРј РёР· СѓРєР°Р·Р°РЅРЅРѕР№ Р·РѕРЅС‹.', '6', '4', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџР°СЂРѕР»СЊ', 'MODULE_PAYMENT_QIWI_SECRET_KEY', '0', 'Р’ РґР°РЅРЅРѕР№ РѕРїС†РёРё СѓРєР°Р¶РёС‚Рµ РїР°СЂРѕР»СЊ Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР° РЅР° http://ishop.qiwi.ru.', '6', '5', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('РЈРєР°Р¶РёС‚Рµ РѕРїР»Р°С‡РµРЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°', 'MODULE_PAYMENT_QIWI_ORDER_STATUS_ID', '0', 'РЈРєР°Р¶РёС‚Рµ РѕРїР»Р°С‡РµРЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°', '6', '6', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
 
     function remove() {
