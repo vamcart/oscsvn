@@ -5,7 +5,7 @@
     osCommerce, Open Source E-Commerce Solutions
     http://www.oscommerce.com
 
-    Copyright © 2003 osCommerce
+    Copyright Â© 2003 osCommerce
 
     Released under the GNU General Public License
 
@@ -148,7 +148,7 @@
             tep_draw_hidden_field('x_amount', number_format($cOrderTotal, 2, '.', '')) .
             tep_draw_hidden_field('x_invoice_num', date('YmdHis')) .
             tep_draw_hidden_field('demo', $demo) .
-            tep_draw_hidden_field('fixed', 'Y') . // If you set this parameter equal to Y, it will disable the following objects on the checkout page: “Save Changes” button, quantity selector data field, “Continue Shopping” button
+            tep_draw_hidden_field('fixed', 'Y') . // If you set this parameter equal to Y, it will disable the following objects on the checkout page: â€œSave Changesâ€ button, quantity selector data field, â€œContinue Shoppingâ€ button
             tep_draw_hidden_field('id_type', '1') . // corresponds with c_prod parameter. '1' for vendor_product_id, '2' for assigned_product_id
             tep_draw_hidden_field('x_first_name', $order->customer['firstname']) .
             tep_draw_hidden_field('x_last_name', $order->customer['lastname']) .

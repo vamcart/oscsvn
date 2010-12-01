@@ -283,7 +283,7 @@
                                tep_draw_hidden_field('CallbackURL', tep_href_link(FILENAME_CHECKOUT_PROCESS, '', 'SSL')) .
                                tep_draw_hidden_field('Payment', 'hanza2') .
                                tep_draw_hidden_field('Country', $order->customer['country']['iso_code_2']) .
-                               tep_draw_hidden_field('PayText', 'Заказ номер: ' . substr($cart_webtopay_id, strpos($cart_webtopay_id, '-')+1) . ', покупатель номер: ' . $customer_id);
+                               tep_draw_hidden_field('PayText', 'Р—Р°РєР°Р· РЅРѕРјРµСЂ: ' . substr($cart_webtopay_id, strpos($cart_webtopay_id, '-')+1) . ', РїРѕРєСѓРїР°С‚РµР»СЊ РЅРѕРјРµСЂ: ' . $customer_id);
 
       return $process_button_string;
     }
@@ -436,11 +436,11 @@
         }
       }
 
-      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+      tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
 
 // send emails to other people
       if (SEND_EXTRA_ORDER_EMAILS_TO != '') {
-        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' №' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+        tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' в„–' . $order_id, $email_order, STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
       }
 
 // load the after_process function from the payment modules
@@ -478,12 +478,12 @@
 
     function install() {
 
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты WebToPay', 'MODULE_PAYMENT_WEBTOPAY_STATUS', 'True', 'Разрешить модуль оплаты WebToPay?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID номер магазина в WebToPay', 'MODULE_PAYMENT_WEBTOPAY_ID', '', 'Укажите id номер Вашего магазина.', '6', '4', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_WEBTOPAY_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '7', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_WEBTOPAY_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '8', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите статус заказа, ожидающий оплаты', 'MODULE_PAYMENT_WEBTOPAY_PREPARE_ORDER_STATUS_ID', '0', 'Укажите статус заказа, ожидающий оплаты', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_WEBTOPAY_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '10', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ WebToPay', 'MODULE_PAYMENT_WEBTOPAY_STATUS', 'True', 'Р Р°Р·СЂРµС€РёС‚СЊ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ WebToPay?', '6', '3', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID РЅРѕРјРµСЂ РјР°РіР°Р·РёРЅР° РІ WebToPay', 'MODULE_PAYMENT_WEBTOPAY_ID', '', 'РЈРєР°Р¶РёС‚Рµ id РЅРѕРјРµСЂ Р’Р°С€РµРіРѕ РјР°РіР°Р·РёРЅР°.', '6', '4', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё.', 'MODULE_PAYMENT_WEBTOPAY_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '7', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Р—РѕРЅР° РѕРїР»Р°С‚С‹', 'MODULE_PAYMENT_WEBTOPAY_ZONE', '0', 'Р•СЃР»Рё РІС‹Р±СЂР°РЅР° Р·РѕРЅР°, РґР°РЅРЅС‹Р№ РјРѕРґСѓР»СЊ РѕРїР»Р°С‚С‹ Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРµРЅ С‚РѕР»СЊРєРѕ РїРѕРєСѓРїР°С‚РµР»СЏРј РёР· СѓРєР°Р·Р°РЅРЅРѕР№ Р·РѕРЅС‹.', '6', '8', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('РЈРєР°Р¶РёС‚Рµ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°, РѕР¶РёРґР°СЋС‰РёР№ РѕРїР»Р°С‚С‹', 'MODULE_PAYMENT_WEBTOPAY_PREPARE_ORDER_STATUS_ID', '0', 'РЈРєР°Р¶РёС‚Рµ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°, РѕР¶РёРґР°СЋС‰РёР№ РѕРїР»Р°С‚С‹', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('РЈРєР°Р¶РёС‚Рµ РѕРїР»Р°С‡РµРЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°', 'MODULE_PAYMENT_WEBTOPAY_ORDER_STATUS_ID', '0', 'РЈРєР°Р¶РёС‚Рµ РѕРїР»Р°С‡РµРЅРЅС‹Р№ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°', '6', '10', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
 
     function remove() {

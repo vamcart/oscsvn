@@ -66,9 +66,9 @@
     }
 
     function install() {
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Оплата через систему Яндекс-Деньги', 'MODULE_PAYMENT_YANDEX_STATUS', '1', 'Вы хотите использовать модуль Оплата через систему Яндекс-Деньги? 1 - да, 0 - нет', '6', '1', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Номер Вашего счёта в системе Яндекс-Деньги', 'MODULE_PAYMENT_YANDEX_1', '11111111111', 'Введите номер Вашего счёта в системе Яндекс-Деньги.', '6', '1', now());");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_YANDEX_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '0', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РћРїР»Р°С‚Р° С‡РµСЂРµР· СЃРёСЃС‚РµРјСѓ РЇРЅРґРµРєСЃ-Р”РµРЅСЊРіРё', 'MODULE_PAYMENT_YANDEX_STATUS', '1', 'Р’С‹ С…РѕС‚РёС‚Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРѕРґСѓР»СЊ РћРїР»Р°С‚Р° С‡РµСЂРµР· СЃРёСЃС‚РµРјСѓ РЇРЅРґРµРєСЃ-Р”РµРЅСЊРіРё? 1 - РґР°, 0 - РЅРµС‚', '6', '1', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РќРѕРјРµСЂ Р’Р°С€РµРіРѕ СЃС‡С‘С‚Р° РІ СЃРёСЃС‚РµРјРµ РЇРЅРґРµРєСЃ-Р”РµРЅСЊРіРё', 'MODULE_PAYMENT_YANDEX_1', '11111111111', 'Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Р’Р°С€РµРіРѕ СЃС‡С‘С‚Р° РІ СЃРёСЃС‚РµРјРµ РЇРЅРґРµРєСЃ-Р”РµРЅСЊРіРё.', '6', '1', now());");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё.', 'MODULE_PAYMENT_YANDEX_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '0', now())");
    }
 
     function remove() {

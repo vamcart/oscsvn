@@ -66,9 +66,9 @@
     }
 
     function install() {
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Оплата через систему EGOLD', 'MODULE_PAYMENT_EGOLD_STATUS', '1', 'Вы хотите использовать модуль Оплата через систему EGOLD? 1 - да, 0 - нет', '6', '1', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш EGold Идентификатор', 'MODULE_PAYMENT_EGOLD_1', '11111111', 'Введите Ваш EGold ID', '6', '1', now());");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_EGOLD_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '0', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РћРїР»Р°С‚Р° С‡РµСЂРµР· СЃРёСЃС‚РµРјСѓ EGOLD', 'MODULE_PAYMENT_EGOLD_STATUS', '1', 'Р’С‹ С…РѕС‚РёС‚Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРѕРґСѓР»СЊ РћРїР»Р°С‚Р° С‡РµСЂРµР· СЃРёСЃС‚РµРјСѓ EGOLD? 1 - РґР°, 0 - РЅРµС‚', '6', '1', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Р’Р°С€ EGold РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ', 'MODULE_PAYMENT_EGOLD_1', '11111111', 'Р’РІРµРґРёС‚Рµ Р’Р°С€ EGold ID', '6', '1', now());");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё.', 'MODULE_PAYMENT_EGOLD_SORT_ORDER', '0', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '0', now())");
    }
 
     function remove() {
