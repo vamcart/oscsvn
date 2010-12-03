@@ -181,6 +181,7 @@ tep_redirect(tep_href_link(FILENAME_INFOBOX_CONFIGURATION, 'gID=' . $_GET['gID']
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
@@ -388,20 +389,20 @@ $count_left_active++;
               </tr>
               <tr>
                 <td colspan="4" class="infoBoxContent" width="100%" align="center">
-                <font color="red">Поля формы, отмеченные * обязательны для заполнения</font> </td>
+                <font color="red">РџРѕР»СЏ С„РѕСЂРјС‹, РѕС‚РјРµС‡РµРЅРЅС‹Рµ * РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ</font> </td>
               </tr>
               <tr>
                 <td class="infoBoxContent" width="30%" align="center">
 <?php
 
-      echo '<br><b>Имя файла</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=filename') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('infobox_file_name',$cInfo->infobox_file_name,'size="20"','true');
+      echo '<br><b>РРјСЏ С„Р°Р№Р»Р°</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=filename') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('infobox_file_name',$cInfo->infobox_file_name,'size="20"','true');
 ?>
                 </td>
 
                 <td class="infoBoxContent" width="30%" align="center">
 <!--
 <?php
-	echo '<br><b>Название</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=heading') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('box_heading',$cInfo->box_heading,'size="25"','true');
+	echo '<br><b>РќР°Р·РІР°РЅРёРµ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=heading') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('box_heading',$cInfo->box_heading,'size="25"','true');
 ?>
 -->                
                 </td>
@@ -410,26 +411,26 @@ $count_left_active++;
                 </td>
                 <td class="infoBoxContent" width="20%" align="center">
 <?php
-      echo '<br><b>Расположение</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=column') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('left', 'right'),$cInfo->display_in_column,'column') . '</b><br>';
+      echo '<br><b>Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=column') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('left', 'right'),$cInfo->display_in_column,'column') . '</b><br>';
 ?>
 </td>
                     </tr>
               <tr>
                 <td class="infoBoxContent" width="30%" align="center">
 <?php
-      echo '<br><b>Порядок сортировки</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=position') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('location',$cInfo->location,'size=3');
+      echo '<br><b>РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=position') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('location',$cInfo->location,'size=3');
 ?>
  </td>
                 <td colspan="2" class="infoBoxContent" width="40%" align="center">
 <?php
-      echo '<br><b>Переменная</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=define') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('infobox_define',$cInfo->infobox_define,'size="35"','true');
+      echo '<br><b>РџРµСЂРµРјРµРЅРЅР°СЏ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=define') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('infobox_define',$cInfo->infobox_define,'size="35"','true');
 ?>
 
  </td>
                 <td class="infoBoxContent" width="30%" align="center">
 <?php
 
-      echo '<br><b>Активировать бокс</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=active') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('yes', 'no'),$cInfo->infobox_display,'active') . '</b><br><br>';
+      echo '<br><b>РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ Р±РѕРєСЃ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=active') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('yes', 'no'),$cInfo->infobox_display,'active') . '</b><br><br>';
 
 ?>
 </td>
@@ -475,7 +476,7 @@ case 'new':
 
               <tr>
                 <td colspan="4" class="infoBoxContent" width="100%" align="center">
-<font color="red">Поля формы, отмеченные * обязательны для заполения</font>
+<font color="red">РџРѕР»СЏ С„РѕСЂРјС‹, РѕС‚РјРµС‡РµРЅРЅС‹Рµ * РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РµРЅРёСЏ</font>
 </td>
                     </tr>
               <tr>
@@ -499,13 +500,13 @@ case 'new':
         closedir($handle); 
      }
 
-      echo '<br><b>Имя файла</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=filename') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_pull_down_menu('infobox_file_name',$dirs_array,'', "style='width:150;'", 'true');
+      echo '<br><b>РРјСЏ С„Р°Р№Р»Р°</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=filename') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_pull_down_menu('infobox_file_name',$dirs_array,'', "style='width:150;'", 'true');
 ?>
  </td>
                 <td class="infoBoxContent" width="30%" align="center">
 <!--
 <?php
-	echo '<br><b>Название</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=heading') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('box_heading','Example','size="30"','true');
+	echo '<br><b>РќР°Р·РІР°РЅРёРµ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=heading') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('box_heading','Example','size="30"','true');
 ?>
 -->
  </td>
@@ -514,25 +515,25 @@ case 'new':
  </td>
                 <td class="infoBoxContent" width="20%" align="center">
 <?php
-      echo '<br><b>Расположение</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=column') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('left', 'right'),'left','column') . '</b><br>';
+      echo '<br><b>Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=column') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('left', 'right'),'left','column') . '</b><br>';
 ?>
 </td>
                     </tr>
               <tr>
                 <td class="infoBoxContent" width="30%" align="center">
 <?php
-      echo '<br><b>Порядок сортировки</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=position') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('location',$totInf_boxes,'size=3');
+      echo '<br><b>РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=position') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('location',$totInf_boxes,'size=3');
 ?>
  </td>
                 <td colspan="2" class="infoBoxContent" width="40%" align="center">
 <?php
-      echo '<br><b>Константа бокса в языковом файле</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=define') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('infobox_define','BOX_HEADING_EXAMPLE','size="35"','true');
+      echo '<br><b>РљРѕРЅСЃС‚Р°РЅС‚Р° Р±РѕРєСЃР° РІ СЏР·С‹РєРѕРІРѕРј С„Р°Р№Р»Рµ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=define') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_draw_input_field('infobox_define','BOX_HEADING_EXAMPLE','size="35"','true');
 ?>
  </td>
                 <td class="infoBoxContent" width="30%" align="center">
 <?php
 
-      echo '<br><b>Активировать бокс</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=active') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('yes', 'no'),'yes','active') . '</b><br>';
+      echo '<br><b>РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ Р±РѕРєСЃ</b><br><a href="javascript:popupWindow(\'' . tep_href_link(FILENAME_POPUP_INFOBOX_HELP,'action=active') . '\')">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a> ' . tep_cfg_select_option_infobox(array('yes', 'no'),'yes','active') . '</b><br>';
 ?>
 </td>
                     </tr>
@@ -613,12 +614,12 @@ default:
         if (tep_not_null($cInfo->last_modified)) $contents[] = array('align' => 'center','text' => TEXT_INFO_LAST_MODIFIED . ' ' . tep_date_short($cInfo->last_modified));
        
 		If ($cInfo->include_column_left == 'yes' && $count_left_active == 0) {
-			$contents[] = array('align' => 'center','text' => '<font color="red" size="4">ВНИМАНИЕ: Нет боксов в левой колонке</font>');
+			$contents[] = array('align' => 'center','text' => '<font color="red" size="4">Р’РќРРњРђРќРР•: РќРµС‚ Р±РѕРєСЃРѕРІ РІ Р»РµРІРѕР№ РєРѕР»РѕРЅРєРµ</font>');
 		}
 		If ($cInfo->include_column_right == 'yes' && $count_right_active == 0) {
-			$contents[] = array('align' => 'center','text' => '<font color="red" size="4">ВНИМАНИЕ: Нет боксов в правой колонке</font>');
+			$contents[] = array('align' => 'center','text' => '<font color="red" size="4">Р’РќРРњРђРќРР•: РќРµС‚ Р±РѕРєСЃРѕРІ РІ РїСЂР°РІРѕР№ РєРѕР»РѕРЅРєРµ</font>');
 		}
-        $contents[] = array('align' => 'center','text' => '<br>Всего <br>'. $count_left_active . ' активных боксов в левой колонке и <br>'. $count_right_active . ' активных боксов в правой колонке');
+        $contents[] = array('align' => 'center','text' => '<br>Р’СЃРµРіРѕ <br>'. $count_left_active . ' Р°РєС‚РёРІРЅС‹С… Р±РѕРєСЃРѕРІ РІ Р»РµРІРѕР№ РєРѕР»РѕРЅРєРµ Рё <br>'. $count_right_active . ' Р°РєС‚РёРІРЅС‹С… Р±РѕРєСЃРѕРІ РІ РїСЂР°РІРѕР№ РєРѕР»РѕРЅРєРµ');
       break;
   }
 
