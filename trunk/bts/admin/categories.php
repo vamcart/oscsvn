@@ -1379,7 +1379,7 @@ function popupPropertiesWindow(url) {
 <?php
     for ($i=0; $i<sizeof($languages); $i++) {
 ?>
-<!-- êàòåãîðèè -->
+<!-- ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ -->
         <div id="tab<?php echo $i; ?>">
           <table border="0" class="main">
 
@@ -1438,7 +1438,7 @@ function popupPropertiesWindow(url) {
           </table>
         </div>
 <?php } ?>
-<!-- /êàòåãîðèè -->
+<!-- /ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ -->
 
 <!-- info -->
         <div id="data">
@@ -1464,7 +1464,7 @@ function popupPropertiesWindow(url) {
         </div>
 <!-- info -->
 
-<!-- êàðòèíêà -->
+<!-- ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° -->
         <div id="images">
           <table border="0">
           
@@ -1939,7 +1939,7 @@ function updateNet(products_price_t) {
         </div>
 
 <?php for ($i = 0, $n = sizeof($languages); $i < $n; $i++) { ?>
-<!-- êàòåãîðèè -->
+<!-- ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ -->
         <div id="tab<?php echo $i; ?>">
           <table border="0" class="main">
 
@@ -2430,7 +2430,7 @@ updateGross('products_price');
           </table>
         </div>
 
-<!-- ñïåöèôèêàöèÿ -->
+<!-- ÑÐ¿ÐµÑ†Ð¸Ñ„Ð¸ÐºÐ°Ñ†Ð¸Ñ -->
         <div id="specs">
           <table border="0" class="main">
 
@@ -2882,7 +2882,7 @@ updateGross('products_price');
         <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
           <script language="JavaScript"> 
-<!-- Ìàñêèðóåìñÿ! 
+<!-- ÐœÐ°ÑÐºÐ¸Ñ€ÑƒÐµÐ¼ÑÑ! 
 function yesqw() 
 { 
 var response = confirm('<?php echo TEXT_DELETE_CONFIRM; ?>'); 
@@ -2893,7 +2893,7 @@ return true;
 else {return false;}
 } 
 
-// Ñíèìàåì ìàñêèðîâêó. --> 
+// Ð¡Ð½Ð¸Ð¼Ð°ÐµÐ¼ Ð¼Ð°ÑÐºÐ¸Ñ€Ð¾Ð²ÐºÑƒ. --> 
 </script>
           
             <td valign="top"><form name="emailForm" action="?action=delete_category_confirm&cPath=<?php echo $_GET['cPath'] ?>" method="post" onSubmit="return yesqw();" >
