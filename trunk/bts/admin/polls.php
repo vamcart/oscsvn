@@ -78,18 +78,6 @@
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 <script language="javascript" src="includes/general.js"></script>
-<?php
-  if (ENABLE_TABS == 'true') { 
-?>
-		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
-		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
-			});
-		</script>
-<?php } ?>
 </head>
 <?php
 ?>
@@ -126,6 +114,16 @@
 <tr><td>
 <br /> 
 <?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?>&nbsp;<?php echo '<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'cID')) . 'info=' . $_GET['cID'], 'NONSSL') . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
+
+<?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>
       
 <div id="tabs">
 
@@ -178,7 +176,7 @@
         <td class="main"><?php echo TEXT_POLL_CATEGORY; ?>&nbsp;</td>
 <?php 
 $categories = tep_get_category_tree();
-$categories[0]['text'] = 'Р’СЃРµ РєР°С‚РµРіРѕСЂРёРё';
+$categories[0]['text'] = 'Все категории';
 ?>
         <td><?php echo tep_draw_pull_down_menu('cPath', $categories, 0 ); ?></td>
       </tr>
@@ -304,6 +302,16 @@ echo '            <td width="25%" valign="top">' . "\n";
 <tr><td>
 <br /> 
 <?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?>&nbsp;<?php echo '<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'cID')) . 'info=' . $_GET['cID'], 'NONSSL') . '">' . tep_image(DIR_WS_IMAGES . 'button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
+
+<?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>
 
 <div id="tabs">
 
@@ -486,7 +494,7 @@ $categories[0]['text'] = 'All Categories';
         $contents[] = array('align' => 'center', 'text' => '<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'info', 'x', 'y')) . 'action=edit&cID=' . $poInfo->pollID, 'NONSSL') . '">' . tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a>&nbsp;<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'info', 'x', 'y')) . 'action=confirm&info=' . $poInfo->pollID, 'NONSSL') . '">' . tep_image_button('button_delete.gif', IMAGE_DELETE) . '</a>                      &nbsp;<a href="' . tep_href_link('pollbooth.php', 'op=results&pollid=' . $poInfo->pollID, 'NONSSL') . '">' . tep_image_button('button_preview.gif', IMAGE_PREVIEW) . '</a>');
 }
 if ($poll_query_numrows==0){
-	$contents[] = array('align' => 'center', 'text' => 'РќРµС‚ РЅРё РѕРґРЅРѕРіРѕ РѕРїСЂРѕСЃР°');
+	$contents[] = array('align' => 'center', 'text' => 'Нет ни одного опроса');
 }
 if ($form) $contents[] = array('text' => '</form>');
 

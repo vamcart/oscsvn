@@ -1192,6 +1192,7 @@ $go_back_to=$REQUEST_URI;
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
@@ -1240,7 +1241,6 @@ tinyMCE.init({
   if (SPECIFICATIONS_BOX_FRAME_STYLE == 'Tabs') {
 ?>
   <link href="includes/style_tabs.css" rel="stylesheet" type="text/css">
-  <script language="javascript" type="text/javascript" src="includes/functions/jquery-1.3.2.min.js"></script> 
   <script language="javascript" type="text/javascript">
     $(document).ready(function(){  
       initTabs({ fx: { opacity: 'toggle', duration: 'fast' } });  
@@ -1262,18 +1262,6 @@ tinyMCE.init({
 // End Products Specifications
 ?>
 <script language="javascript" src="includes/general.js"></script>
-<?php
-  if (ENABLE_TABS == 'true') { 
-?>
-		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
-		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
-			});
-		</script>
-<?php } ?>
 <script language="javascript"><!--
 function popupWindow1(url) {
   window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=900,height=600')
@@ -1361,6 +1349,16 @@ function popupPropertiesWindow(url) {
 <?php echo tep_draw_form('new_category', FILENAME_CATEGORIES, 'cPath=' . $cPath . '&cID=' . $_GET['cID'] . '&action=new_category_preview', 'post', 'enctype="multipart/form-data"'); ?>
 
 <?php echo tep_draw_hidden_field('categories_date_added', (($cInfo->date_added) ? $cInfo->date_added : date('Y-m-d'))) . tep_draw_hidden_field('parent_id', $cInfo->parent_id) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&cID=' . $_GET['cID']) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
+
+<?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>              
               
 <div id="tabs">
 
@@ -1379,7 +1377,7 @@ function popupPropertiesWindow(url) {
 <?php
     for ($i=0; $i<sizeof($languages); $i++) {
 ?>
-<!-- категории -->
+<!-- êàòåãîŵèè -->
         <div id="tab<?php echo $i; ?>">
           <table border="0" class="main">
 
@@ -1438,7 +1436,7 @@ function popupPropertiesWindow(url) {
           </table>
         </div>
 <?php } ?>
-<!-- /категории -->
+<!-- /êàòåãîŵèè -->
 
 <!-- info -->
         <div id="data">
@@ -1464,7 +1462,7 @@ function popupPropertiesWindow(url) {
         </div>
 <!-- info -->
 
-<!-- картинка -->
+<!-- êàŵòèíêà -->
         <div id="images">
           <table border="0">
           
@@ -1807,6 +1805,16 @@ function updateNet(products_price_t) {
         <td>
 
 <?php echo tep_draw_hidden_field('products_date_added', (tep_not_null($pInfo->products_date_added) ? $pInfo->products_date_added : date('Y-m-d'))) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . (isset($_GET['pID']) ? '&pID=' . $_GET['pID'] : '')) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
+
+<?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>
         
 <div id="tabs">
 
@@ -1939,7 +1947,7 @@ function updateNet(products_price_t) {
         </div>
 
 <?php for ($i = 0, $n = sizeof($languages); $i < $n; $i++) { ?>
-<!-- категории -->
+<!-- êàòåãîŵèè -->
         <div id="tab<?php echo $i; ?>">
           <table border="0" class="main">
 
@@ -2430,7 +2438,7 @@ updateGross('products_price');
           </table>
         </div>
 
-<!-- спецификация -->
+<!-- ñïåöèôèêàöèÿ -->
         <div id="specs">
           <table border="0" class="main">
 
@@ -2882,7 +2890,7 @@ updateGross('products_price');
         <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
           <script language="JavaScript"> 
-<!-- Маскируемся! 
+<!-- Ìàñêèŵóåìñÿ! 
 function yesqw() 
 { 
 var response = confirm('<?php echo TEXT_DELETE_CONFIRM; ?>'); 
@@ -2893,7 +2901,7 @@ return true;
 else {return false;}
 } 
 
-// Снимаем маскировку. --> 
+// Ñíèìàåì ìàñêèŵîâêó. --> 
 </script>
           
             <td valign="top"><form name="emailForm" action="?action=delete_category_confirm&cPath=<?php echo $_GET['cPath'] ?>" method="post" onSubmit="return yesqw();" >

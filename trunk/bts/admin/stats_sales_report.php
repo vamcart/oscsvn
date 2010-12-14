@@ -88,18 +88,6 @@
 <meta http-equiv="content-type" content="text/html; charset=CP1251">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title> 
-<?php
-  if (ENABLE_TABS == 'true') { 
-?>
-		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
-		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
-			});
-		</script>
-<?php } ?>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
@@ -150,6 +138,16 @@
 					</td>
 				</tr>
 			</table>
+
+<?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>
 			
 <div id="tabs">
 				
