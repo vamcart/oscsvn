@@ -70,6 +70,9 @@
   if (tep_admin_check_boxes('localization.php') == true) {
     require(DIR_WS_BOXES . 'localization.php');
   } 
+  if (tep_admin_check_boxes('design_controls.php') == true) {
+    require(DIR_WS_BOXES . 'design_controls.php');
+  }
    if (tep_admin_check_boxes('links.php') == true) {
     require(DIR_WS_BOXES . 'links.php');
   }
