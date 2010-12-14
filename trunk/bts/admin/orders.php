@@ -124,7 +124,7 @@ if (isset($_POST['submit'])){
 // EOF: WebMakers.com Added: Downloads Controller
             $email = STORE_NAME . "\n" . EMAIL_SEPARATOR . "\n" . EMAIL_TEXT_ORDER_NUMBER . ' ' . $oID . "\n" . EMAIL_TEXT_INVOICE_URL . ' ' . tep_catalog_href_link(FILENAME_CATALOG_ACCOUNT_HISTORY_INFO, 'order_id=' . $oID, 'SSL') . "\n" . EMAIL_TEXT_DATE_ORDERED . ' ' . tep_date_long($check_status['date_purchased']) . "\n\n" . $notify_comments . sprintf(EMAIL_TEXT_STATUS_UPDATE, $orders_status_array[$status]);
 
-            tep_mail($check_status['customers_name'], $check_status['customers_email_address'], EMAIL_TEXT_SUBJECT . ' №' . tep_db_input($oID), nl2br($email), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+            tep_mail($check_status['customers_name'], $check_status['customers_email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . tep_db_input($oID), nl2br($email), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
 
             $customer_notified = '1';
           }
@@ -512,13 +512,13 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
     			?>
     <script type="text/javascript">
 
-        // Флаг, обозачающий произошла ли ошибка при загрузке API
+        // Р¤Р»Р°Рі, РѕР±РѕР·Р°С‡Р°СЋС‰РёР№ РїСЂРѕРёР·РѕС€Р»Р° Р»Рё РѕС€РёР±РєР° РїСЂРё Р·Р°РіСЂСѓР·РєРµ API
         var flagApiFault = 0;
 			
-        // Функция для обработки ошибок при загрузке API
+        // Р¤СѓРЅРєС†РёСЏ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё РѕС€РёР±РѕРє РїСЂРё Р·Р°РіСЂСѓР·РєРµ API
         function apifault (err) {
-            // Создание обработчика для события window.onLoad
-            // Отображаем сообщение об ошибке в контейнере над картой
+            // РЎРѕР·РґР°РЅРёРµ РѕР±СЂР°Р±РѕС‚С‡РёРєР° РґР»СЏ СЃРѕР±С‹С‚РёСЏ window.onLoad
+            // РћС‚РѕР±СЂР°Р¶Р°РµРј СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ РІ РєРѕРЅС‚РµР№РЅРµСЂРµ РЅР°Рґ РєР°СЂС‚РѕР№
             window.onload = function () {
                 var errorContainer = document.getElementById("error");
                 errorContainer.innerHTML = "<?php echo MAP_API_KEY_ERROR; ?> \"" + err + "\"";
@@ -536,9 +536,9 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
 			
 			
         if (!flagApiFault) {
-        // Создает обработчик события window.onLoad
+        // РЎРѕР·РґР°РµС‚ РѕР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ window.onLoad
         YMaps.jQuery(function () {
-            // Создает экземпляр карты и привязывает его к созданному контейнеру
+            // РЎРѕР·РґР°РµС‚ СЌРєР·РµРјРїР»СЏСЂ РєР°СЂС‚С‹ Рё РїСЂРёРІСЏР·С‹РІР°РµС‚ РµРіРѕ Рє СЃРѕР·РґР°РЅРЅРѕРјСѓ РєРѕРЅС‚РµР№РЅРµСЂСѓ
             var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
 
                     map.addControl(new YMaps.TypeControl());
@@ -550,7 +550,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
             
             map.addOverlay(geocoder);
 				
-            // По завершению геокодирования инициализируем карту первым результатом
+            // РџРѕ Р·Р°РІРµСЂС€РµРЅРёСЋ РіРµРѕРєРѕРґРёСЂРѕРІР°РЅРёСЏ РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РєР°СЂС‚Сѓ РїРµСЂРІС‹Рј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
             YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
                 if (geocoder.length()) {
                     map.setBounds(geocoder.get(0).getBounds());
