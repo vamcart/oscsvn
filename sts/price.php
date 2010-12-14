@@ -70,7 +70,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
   				<tr>
     				<td>
 <?php 
-// есть у группы продукты?
+// РµСЃС‚СЊ Сѓ РіСЂСѓРїРїС‹ РїСЂРѕРґСѓРєС‚С‹?
 // group have products?
 function check_products($id_group){
 	$products_price_query = tep_db_query("select products_to_categories.products_id FROM products_to_categories where products_to_categories.categories_id = ".$id_group." LIMIT 0,1");
@@ -80,7 +80,7 @@ function check_products($id_group){
 	return false;
 }
 
-// выводим список продуктов определенной группы $id_group
+// РІС‹РІРѕРґРёРј СЃРїРёСЃРѕРє РїСЂРѕРґСѓРєС‚РѕРІ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РіСЂСѓРїРїС‹ $id_group
 // list products determined group
 function get_products($id_group){
 	global $currencies;
@@ -108,12 +108,12 @@ function get_products($id_group){
 
 	if ($new_price = tep_get_products_special_price($products_price['products_id'])) {
     $col = "#FFEAEA";
-     $products_price['products_price'] = $new_price; // Обычная цена
-     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Спец. цена
+     $products_price['products_price'] = $new_price; // РћР±С‹С‡РЅР°СЏ С†РµРЅР°
+     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // РЎРїРµС†. С†РµРЅР°
 	  $cell = $currencies->display_price_nodiscount($products_price['products_price'], tep_get_tax_rate($products_price['products_tax_class_id']));
     } else {
-     $products_price['products_price'] = $new_price; // Обычная цена
-     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Спец. цена
+     $products_price['products_price'] = $new_price; // РћР±С‹С‡РЅР°СЏ С†РµРЅР°
+     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // РЎРїРµС†. С†РµРЅР°
 	  $cell = $currencies->display_price($products_price['specials_new_products_price'], tep_get_tax_rate($products_price['products_tax_class_id']));
     }
 
@@ -141,7 +141,7 @@ function get_products($id_group){
 	}
 }
 
-// рекурсивная функция, получает группы по порядку
+// СЂРµРєСѓСЂСЃРёРІРЅР°СЏ С„СѓРЅРєС†РёСЏ, РїРѕР»СѓС‡Р°РµС‚ РіСЂСѓРїРїС‹ РїРѕ РїРѕСЂСЏРґРєСѓ
 // get all groups
 function get_group($id_parent,$position){
 global $languages_id;
@@ -158,13 +158,13 @@ categories.sort_order");
 		$class = "productListing-heading";
 		if($position == 0) {
 			$class = "headerNavigation";
-			print "<tr><td colspan=\"4\" width=\"1000\" class=\"boxText\">&nbsp;</td></tr>"; // пустая строка
+			print "<tr><td colspan=\"4\" width=\"1000\" class=\"boxText\">&nbsp;</td></tr>"; // РїСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР°
 		}
 		if(check_products($groups_price['categories_id']) || $position == 0){
 			print "<tr><td colspan=\"4\" width=\"1000\" class=\"infoBoxHeading\"><font color=\"black\">".$str.$groups_price['categories_name']."</font></td></tr>";
 			get_products($groups_price['categories_id']);
 		}
-		get_group($groups_price['categories_id'],$position+1); // следующая группа
+		get_group($groups_price['categories_id'],$position+1); // СЃР»РµРґСѓСЋС‰Р°СЏ РіСЂСѓРїРїР°
 	}
 }
 ?>

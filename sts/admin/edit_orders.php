@@ -659,8 +659,8 @@
 					$email_order .= EMAIL_TEXT_FOOTER . "\n\n";
 				  }
 
-      //code for plain text emails which changes the € sign to EUR, otherwise the email will show ? instead of €
-      $email_order = str_replace("€","EUR",$email_order);
+      //code for plain text emails which changes the Ð‚ sign to EUR, otherwise the email will show ? instead of Ð‚
+      $email_order = str_replace("Ð‚","EUR",$email_order);
 	  $email_order = str_replace("&nbsp;"," ",$email_order);
 
 	  //code which replaces the <br> tags within EMAIL_TEXT_PAYMENT_INFO and EMAIL_TEXT_FOOTER with the proper \n
@@ -751,7 +751,7 @@
 <script type="text/javascript">
 
 /***********************************************
-* Cool DHTML tooltip script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Cool DHTML tooltip script- Â© Dynamic Drive DHTML code library (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
 * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
 ***********************************************/

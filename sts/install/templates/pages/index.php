@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-  $languages_array = array(array('id' => 'russian', 'text' => 'Русский'),
+  $languages_array = array(array('id' => 'russian', 'text' => 'Р СѓСЃСЃРєРёР№'),
                            array('id' => 'english', 'text' => 'English'));
 ?>
 

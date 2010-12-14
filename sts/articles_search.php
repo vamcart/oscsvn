@@ -93,7 +93,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 	               <tr>
 	                 <td valign="middle" align="center" valign="top" width="33%"class="main"><a href="<?php echo FILENAME_ARTICLE_INFO; ?>?articles_id=<?php echo $results['articles_id'] ?>"><?php echo $results['articles_name'] ?></a></td>
 	                 <td valign="middle" align="center" valign="top" class="main"><?php echo $article_ex; ?> ...</td>
-	                 <td valign="middle" align="center" valign="top" class="main"><a href="<?php echo FILENAME_ARTICLE_INFO; ?>?articles_id=<?php echo $results['articles_id'] ?>">Перейти к данной статье</a></td>
+	                 <td valign="middle" align="center" valign="top" class="main"><a href="<?php echo FILENAME_ARTICLE_INFO; ?>?articles_id=<?php echo $results['articles_id'] ?>">РџРµСЂРµР№С‚Рё Рє РґР°РЅРЅРѕР№ СЃС‚Р°С‚СЊРµ</a></td>
 		           </tr>
 
 		  

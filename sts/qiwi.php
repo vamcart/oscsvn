@@ -20,17 +20,17 @@ $server->service($HTTP_RAW_POST_DATA);
 
 function updateBill($login, $password, $txn, $status) {
 
-//обработка возможных ошибок авторизации
+//РѕР±СЂР°Р±РѕС‚РєР° РІРѕР·РјРѕР¶РЅС‹С… РѕС€РёР±РѕРє Р°РІС‚РѕСЂРёР·Р°С†РёРё
 if ( $login != MODULE_PAYMENT_QIWI_ID )
 return 150;
 
 if ( !empty($password) && $password != strtoupper(md5($txn.strtoupper(md5(MODULE_PAYMENT_QIWI_SECRET_KEY)))) )
 return 150;
 
-// получаем номер заказа
+// РїРѕР»СѓС‡Р°РµРј РЅРѕРјРµСЂ Р·Р°РєР°Р·Р°
 $transaction = intval($txn);
 
-// меняем статус заказа при условии оплаты счёта
+// РјРµРЅСЏРµРј СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р° РїСЂРё СѓСЃР»РѕРІРёРё РѕРїР»Р°С‚С‹ СЃС‡С‘С‚Р°
 if ( $status == 60 ) {
 	
   $sql_data_array = array('orders_status' => MODULE_PAYMENT_QIWI_ORDER_STATUS_ID);
@@ -43,7 +43,7 @@ if ( $status == 60 ) {
                           'comments' => 'QIWI accepted this order payment');
   tep_db_perform('orders_status_history', $sql_data_arrax);
 
-// Отправляем письмо клиенту и админу о смене статуса заказа
+// РћС‚РїСЂР°РІР»СЏРµРј РїРёСЃСЊРјРѕ РєР»РёРµРЅС‚Сѓ Рё Р°РґРјРёРЅСѓ Рѕ СЃРјРµРЅРµ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р°
 
 	require_once(DIR_WS_CLASSES . 'order.php');
   

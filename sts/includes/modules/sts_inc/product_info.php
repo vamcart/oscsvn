@@ -34,14 +34,14 @@ STS v4.1 by Rigadin (rigadin@osc-help.net)
     //TotalB2B end
 
 	if ($new_price = tep_get_products_special_price($product_info['products_id'])) {
-     $product_info['products_price'] = $new_price; // Ξαϋχνΰÿ φενΰ
-     $product_info['specials_new_products_price'] = tep_xppp_getproductprice($product_info['products_id']); // Ροεφ. φενΰ
+     $product_info['products_price'] = $new_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $product_info['specials_new_products_price'] = tep_xppp_getproductprice($product_info['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
 	  $template_pinfo['regularprice'] = '<s>' . $currencies->display_price_nodiscount($product_info['specials_new_products_price'], tep_get_tax_rate($product_info['products_tax_class_id'])) . '</s>&nbsp;<span class="productSpecialPrice">' . 
                                            $currencies->display_price_nodiscount($product_info['products_price'], tep_get_tax_rate($product_info['products_tax_class_id'])) . '</span>';
      $template_pinfo['specialprice'] = '';
     } else {
-     $product_info['products_price'] = $new_price; // Ξαϋχνΰÿ φενΰ
-     $product_info['specials_new_products_price'] = tep_xppp_getproductprice($product_info['products_id']); // Ροεφ. φενΰ
+     $product_info['products_price'] = $new_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $product_info['specials_new_products_price'] = tep_xppp_getproductprice($product_info['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
      $template_pinfo['regularprice'] = $currencies->display_price($product_info['specials_new_products_price'], tep_get_tax_rate($product_info['products_tax_class_id']));
      $template_pinfo['specialprice'] = '';
     }

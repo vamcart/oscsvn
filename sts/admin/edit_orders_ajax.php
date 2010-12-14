@@ -880,8 +880,8 @@ if (tep_db_num_rows($orders_history_query)) {
 					$email_order .= EMAIL_TEXT_FOOTER . "\n\n";
 				  }
       
-	  //code for plain text emails which changes the  sign to EUR, otherwise the email will show ? instead of 
-      $email_order = str_replace("","EUR",$email_order);
+	  //code for plain text emails which changes the ВЂ sign to EUR, otherwise the email will show ? instead of ВЂ
+      $email_order = str_replace("ВЂ","EUR",$email_order);
 	  $email_order = str_replace("&nbsp;"," ",$email_order);
 
 	  //code which replaces the <br> tags within EMAIL_TEXT_PAYMENT_INFO and EMAIL_TEXT_FOOTER with the proper \n

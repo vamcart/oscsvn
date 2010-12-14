@@ -18,14 +18,14 @@ require_once 'Jare/Typograph/Tof.php';
 class Jare_Typograph_Tof_Punctmark extends Jare_Typograph_Tof
 {
 	/**
-	 * Базовые параметры тофа
+	 * Р‘Р°Р·РѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕС„Р°
 	 *
 	 * @var array
 	 */
 	protected $_baseParam = array( 
 	 	'auto_comma' => array(
 	 		'_disable'		=> false,
-	 		'pattern' 		=> '/([a-zа-я])(\s|&nbsp;)(но|а)(\s|&nbsp;)/iu',
+	 		'pattern' 		=> '/([a-zР°-СЏ])(\s|&nbsp;)(РЅРѕ|Р°)(\s|&nbsp;)/iu',
 	 		'replacement' 	=> '\1,\2\3\4'), 
 		'punctuation_marks_limit' => array(
 			'_disable'		=> false,
@@ -44,7 +44,7 @@ class Jare_Typograph_Tof_Punctmark extends Jare_Typograph_Tof
 			'replacement' 	=> '\1\2&rsquo;\3'),
 		'fix_pmarks' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/([a-zа-я0-9])(\!|\.|\?){2}(\s|$|\<)/i',
+			'pattern' 		=> '/([a-zР°-СЏ0-9])(\!|\.|\?){2}(\s|$|\<)/i',
 			'replacement' 	=> '\1\2\3'),
 		'fix_brackets' => array(
 			'_disable'		=> false,
@@ -52,7 +52,7 @@ class Jare_Typograph_Tof_Punctmark extends Jare_Typograph_Tof
 		);
 	
 	/**
-	 * Расстановка многоточия вместо трех и двух точек
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° РјРЅРѕРіРѕС‚РѕС‡РёСЏ РІРјРµСЃС‚Рѕ С‚СЂРµС… Рё РґРІСѓС… С‚РѕС‡РµРє
 	 *
 	 * @return 	void
 	 */
@@ -62,7 +62,7 @@ class Jare_Typograph_Tof_Punctmark extends Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Удаление лишних пробелов внутри скобок
+	 * РЈРґР°Р»РµРЅРёРµ Р»РёС€РЅРёС… РїСЂРѕР±РµР»РѕРІ РІРЅСѓС‚СЂРё СЃРєРѕР±РѕРє
 	 *
 	 * @return 	void
 	 */

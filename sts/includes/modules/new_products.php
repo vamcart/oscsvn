@@ -67,8 +67,8 @@ function NewProductsModuleListingTemplate($url,$pid,$description,$manufacturer,$
 	//TotalB2B start & TotalB2B start
 
 	if ($new_price = tep_get_products_special_price($new_products['products_id'])) {
-     $new_products['products_price'] = $new_price; // Ξαϋχνΰÿ φενΰ
-     $new_products['specials_new_products_price'] = tep_xppp_getproductprice($new_products['products_id']); // Ροεφ. φενΰ
+     $new_products['products_price'] = $new_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $new_products['specials_new_products_price'] = tep_xppp_getproductprice($new_products['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
 
 // STS New Products Module Templates Start
 
@@ -94,8 +94,8 @@ function NewProductsModuleListingTemplate($url,$pid,$description,$manufacturer,$
 
 
     } else {
-     $new_products['products_price'] = $new_price; // Ξαϋχνΰÿ φενΰ
-     $new_products['specials_new_products_price'] = tep_xppp_getproductprice($new_products['products_id']); // Ροεφ. φενΰ
+     $new_products['products_price'] = $new_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $new_products['specials_new_products_price'] = tep_xppp_getproductprice($new_products['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
 
 // STS New Products Module Templates Start
 

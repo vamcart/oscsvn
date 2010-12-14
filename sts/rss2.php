@@ -320,7 +320,7 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 	}
 
 /////////////////////////////////////////////////////////////////////////////
-// ðåêóðñèâíàÿ ôóíêöèÿ, ïîëó÷àåò êàòåãîðèè êàòàëîãà â èåðàðõèè ïî ïîðÿäêó
+// Ñ€ÐµÐºÑƒÑ€ÑÐ¸Ð²Ð½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ, Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð° Ð² Ð¸ÐµÑ€Ð°Ñ€Ñ…Ð¸Ð¸ Ð¿Ð¾ Ð¿Ð¾Ñ€ÑÐ´ÐºÑƒ
 // get all groups
 function tep_rss_category_tree($id_parent=0, $cPath='', $limit = null){
 	global $db, $rss;
@@ -349,7 +349,7 @@ function tep_rss_category_tree($id_parent=0, $cPath='', $limit = null){
 			tep_rss_category_tree($groups_cat['categories_id'],
 									(tep_not_null($cPath) ?
 										$cPath . '_' . $groups_cat['categories_id'] :
-										$groups_cat['categories_id']), $limit); // ñëåäóþùàÿ ãðóïïà
+										$groups_cat['categories_id']), $limit); // ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð°Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ð°
 		}
 //		$groups_cat->MoveNext();
 	}

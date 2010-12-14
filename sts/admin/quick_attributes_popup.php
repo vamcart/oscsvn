@@ -13,7 +13,7 @@ $currencies = new currencies();
 <html <?php echo HTML_PARAMS; ?>>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<title><?php echo 'Текущие атрибуты товара'; ?></title>
+<title><?php echo 'РўРµРєСѓС‰РёРµ Р°С‚СЂРёР±СѓС‚С‹ С‚РѕРІР°СЂР°'; ?></title>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
@@ -27,12 +27,12 @@ $currencies = new currencies();
 <table border="0" width="80%" align="center">
 <tr><td colspan="2"><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td></tr>
 <tr>
-  <td class="main" align="left">Номер товара: <b><?php echo $_GET['look_it_up'];?></b></td>
+  <td class="main" align="left">РќРѕРјРµСЂ С‚РѕРІР°СЂР°: <b><?php echo $_GET['look_it_up'];?></b></td>
   <td class="main" align="center"><?php echo tep_image(DIR_WS_CATALOG_IMAGES . $product_info['products_image'],'', SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT);?></td>
 </tr>
 <tr>
   <td class="main" align="left"><?php echo $product_info['products_name'];?></td>
-  <td class="main" align="center">Код товара: <?php echo $product_info['products_model'];?></td>
+  <td class="main" align="center">РљРѕРґ С‚РѕРІР°СЂР°: <?php echo $product_info['products_model'];?></td>
 </tr>
 <tr>
   <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
@@ -52,14 +52,14 @@ $currencies = new currencies();
       $products_attributes = '0';
       echo '<table border="0" cellpadding="0" cellspacing"0">';
       echo '<tr><td class="main" colspan="2">';
-      echo '<FONT color="FF0000"><b>' . 'У данного товара на данный момент нет ни одного атрибута!' . '</b></FONT>';
+      echo '<FONT color="FF0000"><b>' . 'РЈ РґР°РЅРЅРѕРіРѕ С‚РѕРІР°СЂР° РЅР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ Р°С‚СЂРёР±СѓС‚Р°!' . '</b></FONT>';
       echo '</td></tr></table>';
     }
     if ($products_attributes == '1') {
       $products_options_name = tep_db_query("select distinct popt.products_options_id, popt.products_options_name, popt.products_options_sort_order from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_ATTRIBUTES . " patrib where patrib.products_id='" . $_GET['look_it_up'] . "' and patrib.options_id = popt.products_options_id and popt.language_id = '" . $languages_id . "'" . " order by popt.products_options_sort_order");
       echo '<table border="0" cellpadding="0" cellspacing"0">';
       echo '<tr><td class="main" colspan="2">';
-      echo '<b>' . 'Текущие атрибуты товара:' . '</b>';
+      echo '<b>' . 'РўРµРєСѓС‰РёРµ Р°С‚СЂРёР±СѓС‚С‹ С‚РѕРІР°СЂР°:' . '</b>';
       echo '</td></tr>';
       echo '<tr><td colspan="2">' . tep_draw_separator('pixel_trans.gif', '1', '10') . '</td></tr>';
       while ($products_options_name_values = tep_db_fetch_array($products_options_name)) {
@@ -86,7 +86,7 @@ $currencies = new currencies();
 
 <BR><BR>
 <center>
-<a href="javascript:window.close()">[ Закрыть окно ]</a>
+<a href="javascript:window.close()">[ Р—Р°РєСЂС‹С‚СЊ РѕРєРЅРѕ ]</a>
 </center>
 <BR><BR>
 

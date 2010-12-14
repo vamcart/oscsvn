@@ -350,17 +350,17 @@ $order_total_modules->apply_credit();//ICW ADDED FOR CREDIT CLASS SYSTEM
   }
 
   if (USE_EMAIL_QUEUE == 'true') {
-    tep_store_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' №' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+    tep_store_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
   } else {
-    tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' №' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
+    tep_mail($order->customer['firstname'] . ' ' . $order->customer['lastname'], $order->customer['email_address'], EMAIL_TEXT_SUBJECT . ' в„–' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
   }
 
 // send emails to other people
   if (SEND_EXTRA_ORDER_EMAILS_TO != '') {
   if (USE_EMAIL_QUEUE == 'true') {
-      tep_store_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' №' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
+      tep_store_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' в„–' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS);
     } else {
-    tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' №' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
+    tep_mail('', SEND_EXTRA_ORDER_EMAILS_TO, EMAIL_TEXT_SUBJECT . ' в„–' . $insert_id . ' - ' . strftime(DATE_FORMAT_LONG), nl2br($email_order), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
     }
   }
 
