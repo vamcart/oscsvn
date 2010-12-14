@@ -66,7 +66,7 @@ class Sypex_Dumper {
 		$this->try = false;
 		$this->virtualize = false;
 		$this->cron_mode = false;
-		// РџСЂРѕРІРµСЂСЏРµРј Р°РІС‚РѕСЂРёР·Р°С†РёСЋ Рё РґРµР»Р°РµРј РєРѕРЅРЅРµРєС‚ Рє Р±Р°Р·Рµ
+		// Проверяем авторизацию и делаем коннект к базе
 		if(empty($this->CFG['my_user'])){
 			$this->CFG['my_host'] = 'localhost';
 			$this->CFG['my_port'] = 3306;
@@ -75,20 +75,20 @@ class Sypex_Dumper {
 			$this->CFG['my_comp'] = 0;
 			$this->CFG['my_db'] = '';
 		}
-		if ($args) { // РєРѕРЅСЃРѕР»СЊРЅС‹Р№ СЂРµР¶РёРј
+		if ($args) { // консольный режим
 		    foreach($args AS $key => $arg){
 		        if (preg_match("/^-([hupoj])=(.*?)$/", $arg, $m)){
 		            switch ($m[1]) {
-		                case 'h': $this->CFG['my_host'] = $m[2]; break; // С…РѕСЃС‚
-		                case 'o': $this->CFG['my_port'] = $m[2]; break; // РїРѕСЂС‚
-		                case 'u': $this->CFG['my_user'] = $m[2]; break; // Р»РѕРіРёРЅ
-		                case 'p': $this->CFG['my_pass'] = $m[2]; break; // РїР°СЂРѕР»СЊ
-		                case 'j': $this->CFG['sjob'] = $m[2]; break; // job-С„Р°Р№Р»
+		                case 'h': $this->CFG['my_host'] = $m[2]; break; // хост
+		                case 'o': $this->CFG['my_port'] = $m[2]; break; // порт
+		                case 'u': $this->CFG['my_user'] = $m[2]; break; // логин
+		                case 'p': $this->CFG['my_pass'] = $m[2]; break; // пароль
+		                case 'j': $this->CFG['sjob'] = $m[2]; break; // job-файл
 		            }
 		        }
 		    }
 		    set_time_limit($CFG['time_cron']);
-		    // Р—Р°РіСЂСѓР¶Р°РµРј РєРѕРЅС„РёРі С„Р°Р№Р», РµСЃР»Рё РЅСѓР¶РЅРѕ
+		    // Загружаем конфиг файл, если нужно
 		    $auth = $this->connect();
 		    if($auth && !empty($this->CFG['sjob'])){
 				$this->ajax($this->loadJob($this->CFG['sjob']));
@@ -99,7 +99,7 @@ class Sypex_Dumper {
 		    else echo 'Auth error';
 		    exit;
 		}
-		elseif(!empty($this->CFG['auth'])){ // РђРІС‚РѕСЂРёР·Р°С†РёСЏ
+		elseif(!empty($this->CFG['auth'])){ // Авторизация
 			$auth = false;
 			$sfile = 'ses.php';
 			
@@ -196,7 +196,7 @@ class Sypex_Dumper {
 		return V_MYSQL ? true: false;
 	}
 	function main(){
-   		// РўСѓР»Р±Р°СЂ
+   		// Тулбар
 		$this->VAR['toolbar'] = sxd_php2json(
 			array(
 				array('backup', $this->LNG['tbar_backup'], 1, 3),
@@ -471,7 +471,7 @@ class Sypex_Dumper {
 			$this->addLog($this->LNG['not_found_rtl']);
 			exit;
 		}
-		// TODO: РїСЂРѕРІРµСЂРёС‚СЊ СѓРґР°Р»РµРЅРёРµ РєРѕРґРёСЂРѕРІРєРё
+		// TODO: проверить удаление кодировки
 		//$this->rtl[6] = '';
 		fseek($this->fh_rtl, 0);
 		$this->rtl[1] = time();
@@ -483,7 +483,7 @@ class Sypex_Dumper {
 	function addRestoreJob($job) {
 		$this->closeConnect();
 		$this->JOB = $job;
-		// РЎРѕР·РґР°РµРј СЃРїРёСЃРѕРє РѕР±СЉРµРєС‚РѕРІ Рё С„РёР»СЊС‚СЂ
+		// Создаем список объектов и фильтр
 		$filter = $object = array();
    		$this->createFilters($this->JOB['obj'], $filter, $object);
 		
@@ -646,11 +646,11 @@ class Sypex_Dumper {
 							}
 							if(!empty($this->JOB['autoinc'])) $q = preg_replace("/AUTO_INCREMENT=\d+/", "AUTO_INCREMENT=1", $q);
 						}
-						// Р”РѕСЃС‚Р°РµРј РёРјРµРЅР° РїРѕР»РµР№ С‚Р°Р±Р»РёС†С‹
+						// Достаем имена полей таблицы
 						$fields = $this->JOB['strategy'] > 0 && preg_match_all('/^\s+(`.+?`) /m', $q, $f, PREG_PATTERN_ORDER) ? '(' . implode(',', $f[1]) . ')' : '';
 					}
 					break;
-				case '#': // РљРѕРјР°РЅРґС‹ РґР»СЏ РґР°РјРїРµСЂР°
+				case '#': // Команды для дампера
 					if (preg_match("/\#\t(TC|TD|VI|PR|FU|TR|EV)`(.+?)`(([^_]+?)_.+?)?$/", $q, $m)) {
 						//if(!empty($tab)) $enable_index[] = $tab;
 						$this->setNames($this->JOB['correct'] == 1 && !empty($this->JOB['charset']) ? $this->JOB['charset'] : empty($m[3]) ? '' : $m[3]);
@@ -715,7 +715,7 @@ class Sypex_Dumper {
 			}
 			
 		}
-		// Р’РєР»СЋС‡Р°РµРј РєР»СЋС‡Рё
+		// Включаем ключи
 		$this->addLog($this->LNG['restore_keys']);
 		$this->rtl[4] = 'EK';
 		$this->rtl[5] = '';
@@ -891,10 +891,10 @@ class Sypex_Dumper {
 	}
 	function addBackupJob($job) {
 		$this->closeConnect();
-		// РЎРѕР·РґР°РµРј РЅРѕРІРѕРµ Р·Р°РґР°РЅРёРµ
+		// Создаем новое задание
 		$this->JOB = $job;
 		mysql_select_db($this->JOB['db']);
-		// РЎРѕР·РґР°РµРј СЃРїРёСЃРѕРє РѕР±СЉРµРєС‚РѕРІ Рё С„РёР»СЊС‚СЂ
+		// Создаем список объектов и фильтр
 		$filter = $object = array();
 		$this->createFilters($this->JOB['obj'], $filter, $object);
 		$queries = array(
@@ -954,7 +954,7 @@ class Sypex_Dumper {
 			
 		}
 		if (V_MYSQL > 50014 && (!empty($object['VI']) || !empty($filter['VI']))) {
-			// Р‘СЌРєР°Рї РѕР±Р·РѕСЂРѕРІ, РЅСѓР¶РЅРѕ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ Р·Р°РІРёСЃРёРјС‹Рµ
+			// Бэкап обзоров, нужно отсортировать зависимые
 			$r = mysql_query("SELECT table_name, view_definition /*!50121 , collation_connection */ FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_SCHEMA = '{$this->JOB['db']}'") or sxd_my_error();
 			$views = $dumped = $views_collation = array();
 			$re = "/`{$this->JOB['db']}`.`(.+?)`/";
@@ -1031,39 +1031,39 @@ class Sypex_Dumper {
 					$this->rtl[8] = !empty($n[4]) ? $n[4] : 0;
 				}
 				elseif ($this->rtl[5] != $n[1]) continue;
-				// Р”РµР»Р°РµРј Р±СЌРєР°Рї
+				// Делаем бэкап
 				switch($n[0]){
 					case 'TC':
 					case 'TD': 				
 					case 'TA':
 						$from = '';
 						if ($n[0] == 'TC' || $this->rtl[7] == 0){
-							// Р‘СЌРєР°Рї СЃС‚СЂСѓРєС‚СѓСЂС‹ С‚Р°Р±Р»РёС†С‹
+							// Бэкап структуры таблицы
 							$r = mysql_query("SHOW CREATE TABLE `{$n[1]}`") or sxd_my_error();
 							$item = mysql_fetch_assoc($r);
 						    $fcache .= "#\tTC`{$n[1]}`{$n[2]}\t;\n{$item['Create Table']}\t;\n";
 						    $this->addLog(sprintf($this->LNG['backup_TC'], $n[1]));
 			            	$this->rtl[7] = 0; 
 						    if($n[0] == 'TC' || !$n[4]) break;
-						    // Р‘СЌРєР°РїРёРј РґР°РЅРЅС‹Рµ С‚Р°Р±Р»РёС†С‹
+						    // Бэкапим данные таблицы
 							$fcache .= "#\tTD`{$n[1]}`{$n[2]}\t;\nINSERT INTO `{$n[1]}` VALUES \n";
 						}
 						else {
 							$from = " LIMIT {$this->rtl[7]}, {$this->rtl[8]}";
 							$this->addLog(sprintf("{$this->LNG['backup_TC']} {$this->LNG['continue_from']}", $n[1], $this->rtl[7]));
 						}
-						// РћРїСЂРµРґРµР»СЏРµРј С‚РёРїС‹ РїРѕР»РµР№
+						// Определяем типы полей
 						$notNum = array();
 						$r = mysql_query("SHOW COLUMNS FROM `{$n[1]}`") or sxd_my_error();
 			            $fields = 0;
 			            while($col = mysql_fetch_array($r)) {
-			            	// TODO: РїСЂРѕРІРµСЂРёС‚СЊ С‚РёРїС‹ SET, ENUM Рё BIT
+			            	// TODO: проверить типы SET, ENUM и BIT
             				$notNum[$fields] = preg_match("/^(tinyint|smallint|mediumint|bigint|int|float|double|real|decimal|numeric|year)/", $col['Type']) ? 0 : 1; 
             				$fields++;
 			            }
 			            $time_old = time();
 			            $z = 0;
-			            // Р”РѕСЃС‚Р°РµРј РґР°РЅРЅС‹Рµ
+			            // Достаем данные
 			            $r = mysql_unbuffered_query("SELECT {$no_cache}* FROM `{$n[1]}`{$from}");
 			            while($row = mysql_fetch_row($r)) {
 			            	 if (strlen($fcache) >= 61440) {
@@ -1110,7 +1110,7 @@ class Sypex_Dumper {
 					case 'TR':*/
 					default:
 						if(V_MYSQL < 50121 && $n[0] == 'TR'){
-							// SHOW CREATE TRIGGER РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ РґРѕ MySQL 5.1.21
+							// SHOW CREATE TRIGGER отсутствует до MySQL 5.1.21
 							$r = mysql_query("SELECT * FROM `INFORMATION_SCHEMA`.`TRIGGERS` WHERE `TRIGGER_SCHEMA` = '{$this->JOB['db']}' AND `TRIGGER_NAME` = '{$n[1]}'") or sxd_my_error();
 							$item = mysql_fetch_assoc($r);
 							$fcache .= "#\tTR`{$n[1]}`{$n[2]}\t;\nCREATE TRIGGER `{$item['TRIGGER_NAME']}` {$item['ACTION_TIMING']} {$item['EVENT_MANIPULATION']} ON `{$item['EVENT_OBJECT_TABLE']}` FOR EACH ROW {$item['ACTION_STATEMENT']}\t;\n";
@@ -1140,7 +1140,7 @@ class Sypex_Dumper {
 		if ($this->JOB['del_time'] || $this->JOB['del_count']) {
             $this->addLog($this->LNG['autodelete']);
             $deldate = '';
-            if (!empty($this->JOB['del_time'])){ // РЈРґР°Р»РµРЅРёРµ РїРѕ РґРЅСЏРј
+            if (!empty($this->JOB['del_time'])){ // Удаление по дням
                 $deldate = date("Y-m-d_H-i-s", time() - intval($this->JOB['del_time']) * 86400);
             }
             $deleted = false;
@@ -1158,7 +1158,7 @@ class Sypex_Dumper {
                     }
                 }
                 closedir($dh);
-                // РЎРѕСЂС‚РёСЂСѓРµРј С„Р°Р№Р»С‹ РїРѕ РґР°С‚Рµ Рё СѓРґР°Р»СЏРµРј СЃР°РјС‹Рµ СЃС‚Р°СЂС‹Рµ
+                // Сортируем файлы по дате и удаляем самые старые
                 if (!empty($this->JOB['del_count'])){
                     ksort($files);
                     $file_to_delete = count($files) - $this->JOB['del_count'];
@@ -1269,7 +1269,7 @@ class Sypex_Dumper {
 	}
 	function getObjects($tree, $db_name){
 		mysql_select_db($db_name);
-		// Р”РѕСЃС‚Р°РµРј С‚Р°Р±Р»РёС†С‹
+		// Достаем таблицы
 		$r = mysql_query('SHOW TABLE STATUS');
 		$tab_prefix_last = $tab_prefix = '*';
 		$objects = array('TA' => array(), 'VI' => array(), 'PR' => array(), 'FU' => array(), 'TR' => array(), 'EV' => array());
@@ -1290,7 +1290,7 @@ class Sypex_Dumper {
 					'TRIGGERS'
 				);
 				if(V_MYSQL > 50100) $shows[] = "EVENTS WHERE db='{$db_name}'";
-				// TODO: РџРѕРїСЂР°РІРёС‚СЊ РїСЂРѕРІРµСЂРєСѓ СЃРѕР±С‹С‚РёР№ Рё С‚СЂРёРіРіРµСЂРѕРІ
+				// TODO: Поправить проверку событий и триггеров
 				for($i = 0, $l = count($shows); $i < $l; $i++){
 					$r = mysql_query('SHOW ' . $shows[$i]);
 					if($r && mysql_num_rows($r) > 0) {
@@ -1309,14 +1309,14 @@ class Sypex_Dumper {
 		return $this->formatTree($tree, $objects);
 	}
 	function getFileObjects($tree, $name, $formatTree = true){
-		// Р”РѕСЃС‚Р°РµРј С‚Р°Р±Р»РёС†С‹
+		// Достаем таблицы
 		$objects = array('TA' => array(), 'VI' => array(), 'PR' => array(), 'FU' => array(), 'TR' => array(), 'EV' => array());
 		if(!preg_match('/\.sql(\.(gz|bz2))?$/i', $name, $m)) return '';
 		$name = $this->CFG['backup_path'] . $name;
 		if(!is_readable($name)) {return "sxd.tree.{$tree}.error(sxd.lng('err_fopen'))";}
 		$fp   = $this->openFile($name, 'r');
 		$temp = fread($fp, 60000);
-		// Р¤РѕСЂРјР°С‚ С„Р°Р№Р»Р° Sypex Dumper 2 - SXD20
+		// Формат файла Sypex Dumper 2 - SXD20
 		//if(!preg_match('/^(#SXD20\|.+?)\n#EOH\n/s', $temp, $m)) return "sxd.tree.{$tree}.error(sxd.lng('err_sxd2'));z('restore_savejob').disabled = z('restore_runjob').disabled = true;";
 		if(preg_match('/^(#SXD20\|.+?)\n#EOH\n/s', $temp, $m)){
 			$head = explode("\n", $m[1]);
@@ -1344,7 +1344,7 @@ class Sypex_Dumper {
 			'TR' => array($this->LNG['obj_trigs'], 9), 
 			'EV' => array($this->LNG['obj_events'], 11)
 		);
-		// РќР°С…РѕРґРёРј С‚Р°Р±Р»РёС†С‹ СЃ РїСЂРµС„РёРєСЃР°РјРё
+		// Находим таблицы с префиксами
 		$tab_prefix_last = $tab_prefix = '*';
 		for($i = 0, $l = count($objects['TA']); $i < $l; $i++){
 			$t = $objects['TA'][$i];
@@ -1504,7 +1504,7 @@ function sxd_read_sql($f, &$seek, $ei, $delimiter = "\t;\n"){
 		if(!$r) $l .= $s;
 		$pos = strpos($l, $delimiter);
 		if ($pos !== false) {
-			// Р•СЃС‚СЊ РѕРєРѕРЅС‡Р°РЅРёРµ Р·Р°РїСЂРѕСЃР°
+			// Есть окончание запроса
 			$q = substr($l, 0, $pos);
 			$l = substr($l, $pos+$delim_len);
 			$r = 1;
@@ -1514,7 +1514,7 @@ function sxd_read_sql($f, &$seek, $ei, $delimiter = "\t;\n"){
 		if($ei) {
 			$pos = strrpos($l, "\n");
 			if($pos > 0 && $l{$pos-1} === ',') {
-				// РћРєРѕРЅС‡Р°РЅРёРµ РЅРµ РЅР°Р№РґРµРЅРѕ
+				// Окончание не найдено
 				$q = substr($l, 0, $pos-1);
 				$l = substr($l, $pos+1);
 				$seek = strlen($l);
@@ -1630,8 +1630,8 @@ return <<<HTML
 					<div class="border"><textarea cols="10" rows="3" id="backup_comment"></textarea></div>
 					<div class="caption" style="margin-top:12px;">
 						<fieldset><legend>{$SXD->LNG['del_legend']}</legend>
-						<div class="caption">&nbsp;вЂ“ {$SXD->LNG['del_date']}</div>
-						<div class="caption">&nbsp;вЂ“ {$SXD->LNG['del_count']}</div>
+						<div class="caption">&nbsp;– {$SXD->LNG['del_date']}</div>
+						<div class="caption">&nbsp;– {$SXD->LNG['del_count']}</div>
 						</fieldset>
 					</div>
 				</td>
