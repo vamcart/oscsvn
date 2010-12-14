@@ -51,7 +51,7 @@ if(!empty($_POST['ajax']['job']) && preg_match("/^[\w-]+$/", $_POST['ajax']['job
 			}
 			$log_seek = ftell($lh);
 			echo $log . "sxd.job.log_seek = {$log_seek};";
-			// Р§РёС‚Р°РµРј Р»РѕРі
+			// Читаем лог
 			if($f[4] == 'EOJ') {
 				$pt = $pc = 100; 
 				fclose($lh);
@@ -59,7 +59,7 @@ if(!empty($_POST['ajax']['job']) && preg_match("/^[\w-]+$/", $_POST['ajax']['job
 				if (function_exists('usleep')) usleep(400000);
 				else sleep(1);
 				if($JOB['act'] == 'backup') $f[3] = filesize(file_exists($JOB['file_name']) ? $JOB['file_name'] : $JOB['file_tmp']);
-				// РћР±РЅРѕРІР»СЏРµРј СЃРїРёСЃРѕРє С„Р°Р№Р»РѕРІ
+				// Обновляем список файлов
 				if($JOB['act'] == 'backup') print "sxd.actions.filelist(); z('btn_down').file = '{$JOB['file']}'; z('btn_down').style.display = '';";
 				echo "sxd.timer.set({$f[0]},{$f[1]},{$pt});sxd.progress.current.set({$pc}, 0, {$f[8]}, {$f[8]});sxd.progress.total.set({$pt},{$f[3]});";
 				echo "sxd.log.add({$d},['{$LNG['job_done']}', '{$LNG['js']['records']}: {$f[10]}', '{$LNG['file_size']}: ' + sxd.formatSize({$f[3]},2), '{$LNG['job_time']}: {$f[5]} {$LNG['seconds']}']);sxd.hideLoading();";
