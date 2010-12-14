@@ -243,18 +243,6 @@ tinyMCE.init({
 <script language="javascript" src="includes/menu.js"></script>
 
 <script language="javascript" src="includes/general.js"></script>
-<?php
-  if (ENABLE_TABS == 'true') { 
-?>
-		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
-		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
-			});
-		</script>
-<?php } ?>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
 <div id="spiffycalendar" class="text"></div>
@@ -310,7 +298,18 @@ tinyMCE.init({
         <td>
 
 <?php echo tep_draw_hidden_field('pages_date_added', (($pInfo->pages_date_added) ? $pInfo->pages_date_added : date('Y-m-d'))) . tep_image_submit('button_preview.gif', IMAGE_PREVIEW) . '&nbsp;&nbsp;<a href="' . tep_href_link(FILENAME_INFORMATION, '&pID=' . $_GET['pID']) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>'; ?>
-                
+        
+        <?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>
+
+        
 <div id="tabs">
 
 			<ul>

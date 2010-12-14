@@ -34,50 +34,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <title><?php echo TITLE; ?></title> 
-<?php
-  if (ENABLE_TABS == 'true') { 
-?>
-		<link type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="../jscript/jquery/jquery.js"></script>
-		<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.7.2.custom.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
-			});
-		</script>
-<?php } ?>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
-
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
-
-<tr>
-<td align="left" colspan="2" width="100%" valign="top">
-<br />
-    	<?php 
-        	echo '<a href="#">' . tep_image(DIR_WS_IMAGES . 'oscommerce.gif') . '</a>'; 
-        ?>
-<br /><br />        
-</td>        
-</tr>
-
-<tr>
-<td align="left" colspan="2" width="100%" valign="top">
-
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tr><td bgcolor="black" height="1" colspan=2></td></tr>
-<tr class="headerNavigation" height="25">
-    <td  height="25" background="images/back.gif" class="headerBarContent" align="right" valign="middle"><?php echo '&nbsp;&nbsp;<a href="' . tep_catalog_href_link() . '" class="headerLink">' . HEADER_TITLE_ONLINE_CATALOG . '</a> &nbsp;|&nbsp; <a href="' . tep_href_link(FILENAME_DEFAULT, '', 'NONSSL') . '" class="headerLink">' . HEADER_TITLE_TOP . '</a> &nbsp;|&nbsp; <a href="' . tep_href_link(FILENAME_LOGOFF, '', 'NONSSL') . '" class="headerLink">' . HEADER_TITLE_LOGOFF . '</a>'; ?>&nbsp;&nbsp;
-</td>
-</tr>
-<tr><td bgcolor="black" height="1" colspan="2"></td></tr>
-</table>
-
-</td>        
-</tr>
-
-</table>
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
 <table border="0" width="100%" cellspacing="4" cellpadding="0">
 
@@ -102,6 +64,16 @@
 
 <tr>
     <td align="left" width="100%" valign="top">
+
+<?php
+  if (ENABLE_TABS == 'true') { 
+?>
+		<script type="text/javascript">
+			$(function(){
+				$('#tabs').tabs({ fx: { opacity: 'toggle', duration: 'fast' } });
+			});
+		</script>
+<?php } ?>
 
 <div id="tabs">
 
