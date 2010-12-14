@@ -777,8 +777,8 @@ if (is_uploaded_file($usrfl) && $split==1) {
 
 <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
 
-<p> </p>
-<p> </p><p><br>
+<p>Â </p>
+<p>Â </p><p><br>
 </p></body>
 </html>
 

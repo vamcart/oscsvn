@@ -450,7 +450,7 @@ switch (true) {
 
     break;
 
-// Meta Title для Информационных страниц
+// Meta Title РґР»СЏ РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЃС‚СЂР°РЅРёС†
 
   case ( strstr($_SERVER['PHP_SELF'],'information.php') ):
 

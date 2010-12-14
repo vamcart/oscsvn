@@ -178,7 +178,7 @@
         <td class="main"><?php echo TEXT_POLL_CATEGORY; ?>&nbsp;</td>
 <?php 
 $categories = tep_get_category_tree();
-$categories[0]['text'] = 'Все категории';
+$categories[0]['text'] = 'Р’СЃРµ РєР°С‚РµРіРѕСЂРёРё';
 ?>
         <td><?php echo tep_draw_pull_down_menu('cPath', $categories, 0 ); ?></td>
       </tr>
@@ -486,7 +486,7 @@ $categories[0]['text'] = 'All Categories';
         $contents[] = array('align' => 'center', 'text' => '<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'info', 'x', 'y')) . 'action=edit&cID=' . $poInfo->pollID, 'NONSSL') . '">' . tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a>&nbsp;<a href="' . tep_href_link(FILENAME_POLLS, tep_get_all_get_params(array('action', 'info', 'x', 'y')) . 'action=confirm&info=' . $poInfo->pollID, 'NONSSL') . '">' . tep_image_button('button_delete.gif', IMAGE_DELETE) . '</a>                      &nbsp;<a href="' . tep_href_link('pollbooth.php', 'op=results&pollid=' . $poInfo->pollID, 'NONSSL') . '">' . tep_image_button('button_preview.gif', IMAGE_PREVIEW) . '</a>');
 }
 if ($poll_query_numrows==0){
-	$contents[] = array('align' => 'center', 'text' => 'Нет ни одного опроса');
+	$contents[] = array('align' => 'center', 'text' => 'РќРµС‚ РЅРё РѕРґРЅРѕРіРѕ РѕРїСЂРѕСЃР°');
 }
 if ($form) $contents[] = array('text' => '</form>');
 

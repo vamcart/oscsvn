@@ -31,7 +31,7 @@
   following copyright announcement.
 */
 ?>
-E-Commerce Engine Copyright © 2003-<?php echo date("o"); ?> <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br>
+E-Commerce Engine Copyright В© 2003-<?php echo date("o"); ?> <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br>
 osCommerce provides no warranty and is redistributable under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a><br>
 <a href="http://www.oscommerce.com" target="_blank">Powered by osCommerce</a> <a href="http://kypi.ru" target="_blank">VaM Edition</a><br>
    </td>

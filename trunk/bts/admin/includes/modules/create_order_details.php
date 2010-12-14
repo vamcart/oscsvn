@@ -136,7 +136,7 @@ if ($_GET['Customer'] != 0) {
 
 echo $cust_ret['customers_groups_name'];
 
-} else { echo 'Âûáåðèòå ïîêóïàòåëÿ'; }
+} else { echo 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ'; }
 
 ?>
             

@@ -18,15 +18,15 @@ require_once 'Jare/Typograph/Tof.php';
 class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 {
 	/**
-	 * Защищенные теги
+	 * Р—Р°С‰РёС‰РµРЅРЅС‹Рµ С‚РµРіРё
 	 * 
-	 * @todo привязать к методам из Jare_Typograph_Tool
+	 * @todo РїСЂРёРІСЏР·Р°С‚СЊ Рє РјРµС‚РѕРґР°Рј РёР· Jare_Typograph_Tool
 	 */
 	const BASE64_PARAGRAPH_TAG = 'cA=='; // p
-	const BASE64_BREAKLINE_TAG = 'YnIgLw=='; // br / (с пробелом и слэшем)
+	const BASE64_BREAKLINE_TAG = 'YnIgLw=='; // br / (СЃ РїСЂРѕР±РµР»РѕРј Рё СЃР»СЌС€РµРј)
 	
 	/**
-	 * Базовые параметры тофа
+	 * Р‘Р°Р·РѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕС„Р°
 	 *
 	 * @var array
 	 */
@@ -41,11 +41,11 @@ class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 			'replacement' 	=> '$this->_buildTag($this->_buildTag("&reg;", "small"), "sup")'),		
 		'copy_replace' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/\((c|с)\)\s+/iu', 
+			'pattern' 		=> '/\((c|СЃ)\)\s+/iu', 
 			'replacement' 	=> '&copy;&nbsp;'),
 		'acute_accent' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/(у|е|ы|а|о|э|я|и|ю|ё)\`(\w)/i', 
+			'pattern' 		=> '/(Сѓ|Рµ|С‹|Р°|Рѕ|СЌ|СЏ|Рё|СЋ|С‘)\`(\w)/i', 
 			'replacement' 	=> '\1&#769;\2'),
 		'auto_links' => array(
 			'_disable'		=> false,
@@ -57,7 +57,7 @@ class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 			'replacement' 	=> '"\1" . $this->_buildTag("\2@\3.\4", "a", array("href" => "mailto:\2@\3.\4")) . "\5"'),	
 		'hyphen_nowrap' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/(\&nbsp\;|\s|\>|^)([a-zа-я]+)\-([a-zа-я]+)(\s|\.|\,|\!|\?|\&nbsp\;|\&hellip\;|$)/uie',
+			'pattern' 		=> '/(\&nbsp\;|\s|\>|^)([a-zР°-СЏ]+)\-([a-zР°-СЏ]+)(\s|\.|\,|\!|\?|\&nbsp\;|\&hellip\;|$)/uie',
 			'replacement' 	=> '"\1" . $this->_buildTag("\2-\3", "span", array("style" => "word-spacing:nowrap;")) . "\4"'),	
 		'simple_arrow' => array(
 			'_disable'		=> false,
@@ -76,7 +76,7 @@ class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 		);
 
 	/**
-	 * Объединение IP-адрессов в неразрывные конструкции (IPv4 only)
+	 * РћР±СЉРµРґРёРЅРµРЅРёРµ IP-Р°РґСЂРµСЃСЃРѕРІ РІ РЅРµСЂР°Р·СЂС‹РІРЅС‹Рµ РєРѕРЅСЃС‚СЂСѓРєС†РёРё (IPv4 only)
 	 *
 	 * @param unknown_type $triads
 	 * @return unknown
@@ -102,7 +102,7 @@ class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 	}
 		
 	/**
-	 * Оптическое выравнивание для пунктуации
+	 * РћРїС‚РёС‡РµСЃРєРѕРµ РІС‹СЂР°РІРЅРёРІР°РЅРёРµ РґР»СЏ РїСѓРЅРєС‚СѓР°С†РёРё
 	 *
 	 * @return	void
 	 */
@@ -110,11 +110,11 @@ class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 	{
 		$this->_text = preg_replace('/(\040|\&nbsp\;|\t)\(/ei', '$this->_buildTag("\1", "span", array("style" => "margin-right:0.3em;")) . $this->_buildTag("(", "span", array("style" => "margin-left:-0.3em;"))', $this->_text);
 		$this->_text = preg_replace('/(\n|\r|^)\(/ei', '"\1" . $this->_buildTag("(", "span", array("style" => "margin-left:-0.3em;"))', $this->_text);
-		$this->_text = preg_replace('/([а-яa-z0-9]+)\,(\040+)/iue', '"\1" . $this->_buildTag(",", "span", array("style" => "margin-right:-0.2em;")) . $this->_buildTag(" ", "span", array("style" => "margin-left:0.2em;"))', $this->_text);
+		$this->_text = preg_replace('/([Р°-СЏa-z0-9]+)\,(\040+)/iue', '"\1" . $this->_buildTag(",", "span", array("style" => "margin-right:-0.2em;")) . $this->_buildTag(" ", "span", array("style" => "margin-left:0.2em;"))', $this->_text);
 	}
 
 	/**
-	 * Расстановка защищенных тегов параграфа (<p>...</p>) и переноса строки
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° Р·Р°С‰РёС‰РµРЅРЅС‹С… С‚РµРіРѕРІ РїР°СЂР°РіСЂР°С„Р° (<p>...</p>) Рё РїРµСЂРµРЅРѕСЃР° СЃС‚СЂРѕРєРё
 	 *
 	 * @return  void
 	 */
@@ -131,7 +131,7 @@ class Jare_Typograph_Tof_Etc extends Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Преобразование -> и <- в коды
+	 * РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ -> Рё <- РІ РєРѕРґС‹
 	 *
 	 * @return  void
 	 */

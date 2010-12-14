@@ -19,7 +19,7 @@
 		include "remotetypograf.php";
 		$remoteTypograf = new RemoteTypograf();
 		// $remoteTypograf = new RemoteTypograf ('Windows-1251');
-		print $remoteTypograf->processText ('"Вы все еще кое-как верстаете в "Ворде"? - Тогда мы идем к вам!"');
+		print $remoteTypograf->processText ('"Р’С‹ РІСЃРµ РµС‰Рµ РєРѕРµ-РєР°Рє РІРµСЂСЃС‚Р°РµС‚Рµ РІ "Р’РѕСЂРґРµ"? - РўРѕРіРґР° РјС‹ РёРґРµРј Рє РІР°Рј!"');
 */
 
 class RemoteTypograf

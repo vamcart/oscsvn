@@ -70,9 +70,9 @@
 		<td colspan="2">&nbsp;</td>
 		</tr>
 		<tr>
-<!-- Âûâîä ðåêâèçèòîâ ïîñòàâùèêà (Âàøè ðåêâèçèòû) //-->	
+<!-- Ð’Ñ‹Ð²Ð¾Ð´ Ñ€ÐµÐºÐ²Ð¸Ð·Ð¸Ñ‚Ð¾Ð² Ð¿Ð¾ÑÑ‚Ð°Ð²Ñ‰Ð¸ÐºÐ° (Ð’Ð°ÑˆÐ¸ Ñ€ÐµÐºÐ²Ð¸Ð·Ð¸Ñ‚Ñ‹) //-->	
 		<td colspan="2" align="left" class="main"><strong><?php echo ENTRY_EXT_DA . '&nbsp;' . '&nbsp;' . MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_6 . '&nbsp;' . MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_1 . '<br>' . MODULE_PAYMENT_RUS_SCHET_TEXT_DESCRIPTION_10; ?></strong></td>
-<!-- End Âûâîä ðåêâèçèòîâ ïîñòàâùèêà //-->
+<!-- End Ð’Ñ‹Ð²Ð¾Ð´ Ñ€ÐµÐºÐ²Ð¸Ð·Ð¸Ñ‚Ð¾Ð² Ð¿Ð¾ÑÑ‚Ð°Ð²Ñ‰Ð¸ÐºÐ° //-->
 		</tr>
 		<tr>
 		<td colspan="2">&nbsp;</td>
@@ -87,7 +87,7 @@
 		<td colspan="2"><table width="100%" border="1" bordercolor="#808080" cellpadding="1" cellspacing="1">
 		<tr>
 		<td width="100%">
-<!-- Âûâîä îáðàçöà çàïîëíåíèÿ ïëàòåæíîãî ïîðó÷åíèÿ //-->		
+<!-- Ð’Ñ‹Ð²Ð¾Ð´ Ð¾Ð±Ñ€Ð°Ð·Ñ†Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ñ€ÑƒÑ‡ÐµÐ½Ð¸Ñ //-->		
 <table width="100%" border="0" cellspacing="1" cellpadding="1">
 <tr>
 <td class="titleHeading_2"><?php echo ENTRY_EXT_DA_1; ?></td>
@@ -137,7 +137,7 @@
 <td align="center" class="titleHeading_2"><nobr><?php echo TABLE_HEADING_CONTNUM ?></td>
 </tr>
 </table>
-<!-- End Âûâîä îáðàçöà çàïîëíåíèÿ ïëàòåæíîãî ïîðó÷åíèÿ //-->
+<!-- End Ð’Ñ‹Ð²Ð¾Ð´ Ð¾Ð±Ñ€Ð°Ð·Ñ†Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ñ€ÑƒÑ‡ÐµÐ½Ð¸Ñ //-->
 </td>
 		</tr>
 		<tr>
@@ -284,7 +284,7 @@ require 'includes/summa.php';
 	<!--
 	function myPrint() {
 	  if (window.print) {
-	    if (confirm("Ðàñïå÷àòàòü ñ÷åò?")) {
+	    if (confirm("Ð Ð°ÑÐ¿ÐµÑ‡Ð°Ñ‚Ð°Ñ‚ÑŒ ÑÑ‡ÐµÑ‚?")) {
 	      window.print();
 	    }
 	  }

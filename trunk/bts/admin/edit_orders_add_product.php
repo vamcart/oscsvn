@@ -107,7 +107,7 @@
 			if ($new_price) 
 			{ $product['products_price'] = $new_price['specials_new_products_price']; }
 
-// Спец. цена
+// РЎРїРµС†. С†РµРЅР°
 //Modified 4 VAM           
             if ($new_price = 
 tep_get_products_special_price($add_product_products_id)) 
@@ -117,7 +117,7 @@ $product['products_price']=b2b_display_price($add_product_products_id,$product['
             }
 //End mod 4 VAM
 
-// Спец. цена - скидка
+// РЎРїРµС†. С†РµРЅР° - СЃРєРёРґРєР°
 //Modified 4 VAM           
 //            if ($new_price = 
 //tep_get_products_special_price($add_product_products_id)) 

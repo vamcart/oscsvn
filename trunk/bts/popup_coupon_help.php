@@ -64,7 +64,7 @@ BODY { margin-bottom: 10px; margin-left: 10px; margin-right: 10px; margin-top: 1
     $cats .= '<br>' . $row["categories_name"];
     } 
   }
-  if ($cats=='') $cats = '<br>Нет ограничений';
+  if ($cats=='') $cats = '<br>РќРµС‚ РѕРіСЂР°РЅРёС‡РµРЅРёР№';
   $text_coupon_help .= $cats;
   $text_coupon_help .= '<br><br>' .  TEXT_COUPON_HELP_PRODUCTS;
   $coupon_get=tep_db_query("select restrict_to_products from " . TABLE_COUPONS . "  where coupon_id='".$_GET['cID']."'");
@@ -77,7 +77,7 @@ BODY { margin-bottom: 10px; margin-left: 10px; margin-right: 10px; margin-top: 1
       $prods .= '<br>' . $row["products_name"];
     }
   }
-  if ($prods=='') $prods = '<br>Нет ограничений';
+  if ($prods=='') $prods = '<br>РќРµС‚ РѕРіСЂР°РЅРёС‡РµРЅРёР№';
   $text_coupon_help .= $prods;
 
 
