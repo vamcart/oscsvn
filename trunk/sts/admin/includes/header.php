@@ -16,22 +16,37 @@
 
 ?>
 
-<table border="0" width="100%" height="82" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-  <tr>
-    <td bgcolor="#ffffff">
+<link rel="stylesheet" type="text/css" href="../jscript/jquery/plugins/ui/css/redmond/jquery-ui-1.8.6.css">
+<script type="text/javascript" src="../jscript/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.8.6.min.js"></script>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+<tr>
+<td align="left" colspan="2" width="100%" valign="top">
+<br />
     	<?php 
-       	echo '<a href="#">' . tep_image(DIR_WS_IMAGES . 'oscommerce.gif') . '</a>'; 
+        	echo '<a href="#">' . tep_image(DIR_WS_IMAGES . 'oscommerce.gif') . '</a>'; 
         ?>
-    </td>
-    </tr>
-</table>
+<br /><br />        
+</td>        
+</tr>
+
+<tr>
+<td align="left" colspan="2" width="100%" valign="top">
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr><td bgcolor="black" height="1" colspan=2></td></tr>
 <tr class="headerNavigation" height="25">
-    <td  height="25" background="images/back.gif" class="headerBarContent" align="right" valign="middle"><?php echo '&nbsp;&nbsp;<a href="' . tep_catalog_href_link() . '" class="headerLink">' . HEADER_TITLE_ONLINE_CATALOG . '</a> &nbsp;|&nbsp; <a href="' . tep_href_link(FILENAME_DEFAULT, '', 'NONSSL') . '" class="headerLink">' . HEADER_TITLE_TOP . '</a> &nbsp;|&nbsp; <a href="' . tep_href_link(FILENAME_LOGOFF, '', 'NONSSL') . '" class="headerLink">' . HEADER_TITLE_LOGOFF . '</a>'; ?>&nbsp;&nbsp;</td>
+    <td  height="25" background="images/back.gif" class="headerBarContent" align="right" valign="middle"><?php echo '&nbsp;&nbsp;<a href="' . tep_catalog_href_link() . '" class="headerLink">' . HEADER_TITLE_ONLINE_CATALOG . '</a> &nbsp;|&nbsp; <a href="' . tep_href_link(FILENAME_DEFAULT, '', 'NONSSL') . '" class="headerLink">' . HEADER_TITLE_TOP . '</a> &nbsp;|&nbsp; <a href="' . tep_href_link(FILENAME_LOGOFF, '', 'NONSSL') . '" class="headerLink">' . HEADER_TITLE_LOGOFF . '</a>'; ?>&nbsp;&nbsp;
+</td>
 </tr>
 <tr><td bgcolor="black" height="1" colspan="2"></td></tr>
+</table>
+
+</td>        
+</tr>
+
 </table>
 
 <?php if (MENU_DHTML == true) require(DIR_WS_INCLUDES . 'header_navigation.php'); ?>
