@@ -1,34 +1,33 @@
 <?php
 /*
-  $Id: administrator.php,v 1.2 2003/09/24 13:57:07 wilt Exp $
+  $Id$
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2002 osCommerce
+  Copyright (c) 2010 osCommerce
 
   Released under the GNU General Public License
 */
+
+  $cl_box_groups[] = array(
+    'heading' => BOX_HEADING_ADMINISTRATOR,
+    'apps' => array(
+      array(
+        'code' => FILENAME_ADMIN_MEMBERS,
+        'title' => BOX_ADMINISTRATOR_MEMBERS,
+        'link' => tep_href_link(FILENAME_ADMIN_MEMBERS)
+      ),
+      array(
+        'code' => FILENAME_ADMIN_ACCOUNT,
+        'title' => BOX_ADMINISTRATOR_ACCOUNT_UPDATE,
+        'link' => tep_href_link(FILENAME_ADMIN_ACCOUNT)
+      ),
+      array(
+        'code' => FILENAME_ADMIN_FILES,
+        'title' => BOX_ADMINISTRATOR_BOXES,
+        'link' => tep_href_link(FILENAME_ADMIN_FILES)
+      )
+    )
+  );
 ?>
-<!-- catalog //-->
-          <tr>
-            <td>
-<?php
-  $heading = array();
-  $contents = array();
-
-  $heading[] = array('text'  => BOX_HEADING_ADMINISTRATOR,
-                     'link'  => tep_href_link(FILENAME_ADMIN_MEMBERS, tep_get_all_get_params(array('selected_box')) . 'selected_box=administrator'));
-
-  if ($selected_box == 'administrator' || $menu_dhtml == true) {
-    $contents[] = array('text'  => tep_admin_files_boxes(FILENAME_ADMIN_MEMBERS, BOX_ADMINISTRATOR_MEMBERS) .
-                                   tep_admin_files_boxes(FILENAME_ADMIN_ACCOUNT, BOX_ADMINISTRATOR_ACCOUNT_UPDATE) .
-                                   tep_admin_files_boxes(FILENAME_ADMIN_FILES, BOX_ADMINISTRATOR_BOXES));
-  }
-
-  $box = new box;
-  echo $box->menuBox($heading, $contents);
-?>
-            </td>
-          </tr>
-<!-- catalog_eof //-->
