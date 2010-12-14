@@ -1,24 +1,28 @@
-<!-- polls //-->
-          <tr>
-            <td>
-<?php
-  $heading = array();
-  $contents = array();
-
-  $heading[] = array('align' => 'left',
-                               'text'  => BOX_HEADING_POLLS,
-                     'link'  => tep_href_link(FILENAME_POLLS, 'selected_box=polls')
+<?php
+/*
+  $Id$
 
-                              );
-
-  if ($selected_box == 'polls') {
-    $contents[] = array('align' => 'left',
-                                 'text'  => '<a href="' . tep_href_link(FILENAME_POLLS, 'info=1&action=config', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_POLLS_CONFIG . '</a><BR><a href="' . tep_href_link(FILENAME_POLLS, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_POLLS_POLLS . '</a>'
-                                );
-  }
-  $box = new box;
-  echo $box->menuBox($heading, $contents);
-?>
-            </td>
-          </tr>
-<!-- polls-eof //-->
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2010 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+  $cl_box_groups[] = array(
+    'heading' => BOX_HEADING_POLLS,
+    'apps' => array(
+      array(
+        'code' => FILENAME_POLLS,
+        'title' => BOX_POLLS_POLLS,
+        'link' => tep_href_link(FILENAME_POLLS)
+      ),
+      array(
+        'code' => FILENAME_POLLS,
+        'title' => BOX_POLLS_CONFIG,
+        'link' => tep_href_link(FILENAME_POLLS, 'info=1&action=config', 'NONSSL')
+      )
+    )
+  );
+?>
