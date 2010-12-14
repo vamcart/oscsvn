@@ -274,15 +274,16 @@ div#map #error
 div#tabs
 	{
 		margin: .5em 0 0 0;
-	}  
+	}   	
 	
 #adminAppMenu {
   float: left;
-  width: 150px;
+  width: 220px;
   padding: 5px;
 }
 
 #adminAppMenu h3 {
+	font-size: 12px;
 }
 
 #adminAppMenu ul {
@@ -290,4 +291,4 @@ div#tabs
   margin: -5px 0 -5px -10px;
   padding: 0;
 }
-	 	
+	

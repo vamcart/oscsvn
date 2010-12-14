@@ -278,11 +278,12 @@ div#tabs
 	
 #adminAppMenu {
   float: left;
-  width: 150px;
+  width: 220px;
   padding: 5px;
 }
 
 #adminAppMenu h3 {
+	font-size: 12px;
 }
 
 #adminAppMenu ul {
