@@ -27,10 +27,10 @@ basename($javascript)); } ?>
 <?php require(DIR_WS_INCLUDES . 'warnings.php'); ?>
 <!-- warning_eof //-->
 
-<!-- Контейнер -->
+<!-- РљРѕРЅС‚РµР№РЅРµСЂ -->
 <div id="container">
 
-<!-- Шапка -->
+<!-- РЁР°РїРєР° -->
 <div id="header">
 
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
@@ -56,7 +56,7 @@ basename($javascript)); } ?>
 <b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b>
 
 </div>
-<!-- /Шапка -->
+<!-- /РЁР°РїРєР° -->
 
 <div id="menu">
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
@@ -74,17 +74,17 @@ basename($javascript)); } ?>
 <b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b>
 </div>
 
-<!-- Навигация -->
+<!-- РќР°РІРёРіР°С†РёСЏ -->
 <div id="navigation">
 <span><?php echo $breadcrumb->trail(' &raquo; '); ?></span>
 </div>
-<!-- /Навигация -->
+<!-- /РќР°РІРёРіР°С†РёСЏ -->
 
 <div class="outer">
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
 <div class="outer-page">
 
-<!-- Центр -->
+<!-- Р¦РµРЅС‚СЂ -->
 <div id="wrapper">
 <div id="content">
 
@@ -99,23 +99,23 @@ basename($content_template))) {
 
 </div>
 </div>
-<!-- /Центр -->
+<!-- /Р¦РµРЅС‚СЂ -->
 
-<!-- Левая колонка -->
+<!-- Р›РµРІР°СЏ РєРѕР»РѕРЅРєР° -->
 <div id="left">
 
 <?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
 
 </div>
-<!-- /Левая колонка -->
+<!-- /Р›РµРІР°СЏ РєРѕР»РѕРЅРєР° -->
 
-<!-- Правая колонка -->
+<!-- РџСЂР°РІР°СЏ РєРѕР»РѕРЅРєР° -->
 <div id="right">
 
 <?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
 
 </div>
-<!-- /Правая колонка -->
+<!-- /РџСЂР°РІР°СЏ РєРѕР»РѕРЅРєР° -->
 
 <div class="clear-left">
 </div>
@@ -127,7 +127,7 @@ basename($content_template))) {
 <div class="outer">
 <b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b>
 <div class="outer-page">
-<!-- Низ -->
+<!-- РќРёР· -->
 <div id="footer">
 <p>
 <?php require(DIR_WS_TEMPLATES . TEMPLATE_NAME . '/counters.txt'); ?>
@@ -143,13 +143,13 @@ basename($content_template))) {
 <?php } ?>
 </p>
 </div>
-<!-- /Низ -->
+<!-- /РќРёР· -->
 </div>
 <b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b>
 </div>
 
 </div>
-<!-- /Контейнер -->
+<!-- /РљРѕРЅС‚РµР№РЅРµСЂ -->
 
 </body>
 </html>

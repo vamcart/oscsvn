@@ -39,13 +39,13 @@ $col++;
 
     $featured_products['products_name'] = tep_get_products_name($featured_products['products_id']);
 	if ($featured_price = tep_get_products_special_price($featured_products['products_id'])) {
-     $featured_products['products_price'] = $featured_price; // Ξαϋχνΰÿ φενΰ
-     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Ροεφ. φενΰ
+     $featured_products['products_price'] = $featured_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
 	  echo '<td align="center"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $featured_products['products_image'], $featured_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . $featured_products['products_name'] . '</a><br><s>' . $currencies->display_price_nodiscount($featured_products['specials_featured_products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])) . '</s><br><span class="productSpecialPrice">' . 
                                            $currencies->display_price_nodiscount($featured_products['products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])).'</td>';
     } else {
-     $featured_products['products_price'] = $featured_price; // Ξαϋχνΰÿ φενΰ
-     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Ροεφ. φενΰ
+     $featured_products['products_price'] = $featured_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
 	  echo '<td align="center"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $featured_products['products_image'], $featured_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a><br /><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $featured_products['products_id']) . '">' . $featured_products['products_name'] . '</a><br>' . $currencies->display_price($featured_products['specials_featured_products_price'], tep_get_tax_rate($featured_products['products_tax_class_id'])).'</td>';
     }
 

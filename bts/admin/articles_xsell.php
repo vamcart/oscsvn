@@ -125,11 +125,11 @@
 						}
 					else
 						echo "<td class=\"dataTableContent\">--</td>\n";
-					echo '<td class="dataTableContent"  valign="top">&nbsp;<a href="' . tep_href_link(FILENAME_ARTICLES_XSELL, 'add_related_article_ID=' . $articles_id[$i], 'NONSSL') . '">Добавить/Удалить товар к статье</a></td>';
+					echo '<td class="dataTableContent"  valign="top">&nbsp;<a href="' . tep_href_link(FILENAME_ARTICLES_XSELL, 'add_related_article_ID=' . $articles_id[$i], 'NONSSL') . '">Р”РѕР±Р°РІРёС‚СЊ/РЈРґР°Р»РёС‚СЊ С‚РѕРІР°СЂ Рє СЃС‚Р°С‚СЊРµ</a></td>';
 									
 					if (count($Related_items)>1)
 					{
-					  echo '<td class="dataTableContent" valign="top">&nbsp;<a href="' . tep_href_link(FILENAME_ARTICLES_XSELL, 'sort=1&add_related_article_ID=' . $articles_id[$i], 'NONSSL') . '">Сортировать</a>&nbsp;</td>';
+					  echo '<td class="dataTableContent" valign="top">&nbsp;<a href="' . tep_href_link(FILENAME_ARTICLES_XSELL, 'sort=1&add_related_article_ID=' . $articles_id[$i], 'NONSSL') . '">РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ</a>&nbsp;</td>';
 					} else {
 						echo "<td class=\"dataTableContent\" valign=top align=center>--</td>";
 						}

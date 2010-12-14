@@ -12,7 +12,7 @@
 class Jare_Typograph_Param
 {
 	/**
-	 * Ключи настроек
+	 * РљР»СЋС‡Рё РЅР°СЃС‚СЂРѕРµРє
 	 */
 	const KEY_DISABLE_DEFAULT = '_disable';
 	const KEY_DISABLE_USER = 'user_disable';
@@ -22,23 +22,23 @@ class Jare_Typograph_Param
 	const KEY_POSITION = 'position';
 	
 	/**
-	 * Настройки 
+	 * РќР°СЃС‚СЂРѕР№РєРё 
 	 *
 	 * @var array
 	 */
 	protected $_option = array();
 	
 	/**
-	 * Настройки, которые были заданы по умолчанию при создание экземпляра класса; невозможно изменить
+	 * РќР°СЃС‚СЂРѕР№РєРё, РєРѕС‚РѕСЂС‹Рµ Р±С‹Р»Рё Р·Р°РґР°РЅС‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РїСЂРё СЃРѕР·РґР°РЅРёРµ СЌРєР·РµРјРїР»СЏСЂР° РєР»Р°СЃСЃР°; РЅРµРІРѕР·РјРѕР¶РЅРѕ РёР·РјРµРЅРёС‚СЊ
 	 *
 	 * @var array
 	 */
 	protected $_defaultOption = array();
 	
 	/**
-	 * Конструктор
+	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	 *
-	 * @param 	array $option массив из настроек, которые будут заданы по умолчанию
+	 * @param 	array $option РјР°СЃСЃРёРІ РёР· РЅР°СЃС‚СЂРѕРµРє, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ Р·Р°РґР°РЅС‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	 * @return 	void
 	 */
 	public function __construct($option = array())
@@ -48,7 +48,7 @@ class Jare_Typograph_Param
 	}
 	
 	/**
-	 * Отключение параметра
+	 * РћС‚РєР»СЋС‡РµРЅРёРµ РїР°СЂР°РјРµС‚СЂР°
 	 *
 	 * @param 	bool $status
 	 * @return 	Jare_Typograph_Param
@@ -60,7 +60,7 @@ class Jare_Typograph_Param
 	}
 	
 	/**
-	 * Сброс заданных настроек к тем, которые были заданы при создание экземпляра класса
+	 * РЎР±СЂРѕСЃ Р·Р°РґР°РЅРЅС‹С… РЅР°СЃС‚СЂРѕРµРє Рє С‚РµРј, РєРѕС‚РѕСЂС‹Рµ Р±С‹Р»Рё Р·Р°РґР°РЅС‹ РїСЂРё СЃРѕР·РґР°РЅРёРµ СЌРєР·РµРјРїР»СЏСЂР° РєР»Р°СЃСЃР°
 	 *
 	 * @throws 	Jare_Typograph_Param_Exception
 	 * @return 	Jare_Typograph_Param
@@ -78,7 +78,7 @@ class Jare_Typograph_Param
 	}
 	
 	/**
-	 * Задание настройки
+	 * Р—Р°РґР°РЅРёРµ РЅР°СЃС‚СЂРѕР№РєРё
 	 *
 	 * @param 	string $name
 	 * @param 	string $value
@@ -115,7 +115,7 @@ class Jare_Typograph_Param
 	}
 	
 	/**
-	 * Возврат списка заданных настроек параметра
+	 * Р’РѕР·РІСЂР°С‚ СЃРїРёСЃРєР° Р·Р°РґР°РЅРЅС‹С… РЅР°СЃС‚СЂРѕРµРє РїР°СЂР°РјРµС‚СЂР°
 	 *
 	 * @throws 	Jare_Typograph_Param_Exception
 	 * @return 	array
@@ -140,7 +140,7 @@ class Jare_Typograph_Param
 	}
 	
 	/**
-	 * Получение значения настройки
+	 * РџРѕР»СѓС‡РµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ РЅР°СЃС‚СЂРѕР№РєРё
 	 *
 	 * @param 	string $name
 	 * @throws 	Jare_Typograph_Param_Exception

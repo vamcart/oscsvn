@@ -27,7 +27,7 @@ if (SITE_WIDTH!='100%') {
 ?>
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr class="header">
-    <td valign="middle"><?php echo '<a href="' . tep_href_link(FILENAME_DEFAULT) . '">' . tep_image(DIR_WS_TEMPLATE_IMAGES . 'oscommerce.gif', 'Интернет-магазин') . '</a>'; ?></td>
+    <td valign="middle"><?php echo '<a href="' . tep_href_link(FILENAME_DEFAULT) . '">' . tep_image(DIR_WS_TEMPLATE_IMAGES . 'oscommerce.gif', 'РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ') . '</a>'; ?></td>
     <td align="right" valign="bottom">
 
 <?php if (SHOW_HEADER_LINK_BUTTONS == 'yes'){ ?>

@@ -3,7 +3,7 @@
  * $Id: rpc.php 822 2008-04-28 13:45:03Z spocke $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright Â© 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
 require_once("./includes/general.php");

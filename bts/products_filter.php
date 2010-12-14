@@ -72,9 +72,9 @@
       $$var = $_GET[$var];
       
       // Sanitize variables to prevent hacking
-//     $$var = preg_replace("|([^0-9a-zA-Z‡-ˇ¿-ﬂ])|","", $$var);
+//     $$var = preg_replace("|([^0-9a-zA-Z–∞-—è–ê-–Ø])|","", $$var);
 
-       $$var = preg_replace("|([^0-9a-zA-Z‡-ˇ¿-ﬂ])|","", $$var);
+       $$var = preg_replace("|([^0-9a-zA-Z–∞-—è–ê-–Ø])|","", $$var);
         
       // Get rid of extra values if Select All is selected
       $$var = tep_select_all_override ($$var);

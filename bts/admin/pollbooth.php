@@ -46,7 +46,7 @@ if ($_GET['action']=='do_comment') {
       <tr>
         <td width="100%"><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="pageHeading"><?php echo 'Ðåçóëüòàòû îïðîñà'; ?></td>
+            <td class="pageHeading"><?php echo 'Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¾Ð¿Ñ€Ð¾ÑÐ°'; ?></td>
             <td align="right">&nbsp;</td>
           </tr>
         </table></td>
@@ -152,7 +152,7 @@ switch ($_GET['op']) {
   }
 ?>
                         <tr><td colspan="2" align="center">&nbsp;</td></tr>
-                        <tr><td colspan="2" align="center" class="main"><?php echo 'Âñåãî ãîëîñîâ'?> = <?php echo $sum?></td></tr>
+                        <tr><td colspan="2" align="center" class="main"><?php echo 'Ð’ÑÐµÐ³Ð¾ Ð³Ð¾Ð»Ð¾ÑÐ¾Ð²'?> = <?php echo $sum?></td></tr>
                         <tr><td colspan="2" align="center" class="main"></td></tr>
 <?php
                         break;

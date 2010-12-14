@@ -18,14 +18,14 @@ require_once 'Jare/Typograph/Tof.php';
 class Jare_Typograph_Tof_Dash extends Jare_Typograph_Tof
 {
 	/**
-	 * Базовые параметры тофа
+	 * Р‘Р°Р·РѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕС„Р°
 	 *
 	 * @var array
 	 */
 	protected $_baseParam = array(
 		'mdash' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/([a-zа-я0-9]+|\,|\:|\)|\&raquo\;|\|\")(\040|\t)(\-|\&mdash\;)(\s|$|\<)/u', 
+			'pattern' 		=> '/([a-zР°-СЏ0-9]+|\,|\:|\)|\&raquo\;|\|\")(\040|\t)(\-|\&mdash\;)(\s|$|\<)/u', 
 			'replacement' 	=> '\1&nbsp;&mdash;\4'),
 		'mdash_2' => array(
 			'_disable'		=> false,
@@ -37,11 +37,11 @@ class Jare_Typograph_Tof_Dash extends Jare_Typograph_Tof
 			'replacement' 	=> '\1 &mdash;&nbsp;'),
 		'years' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/(с|по|период|середины|начала|начало|конца|конец|половины|в|между)(\s+|\&nbsp\;)([\d]{4})(-)([\d]{4})(г|гг)?/eui',
+			'pattern' 		=> '/(СЃ|РїРѕ|РїРµСЂРёРѕРґ|СЃРµСЂРµРґРёРЅС‹|РЅР°С‡Р°Р»Р°|РЅР°С‡Р°Р»Рѕ|РєРѕРЅС†Р°|РєРѕРЅРµС†|РїРѕР»РѕРІРёРЅС‹|РІ|РјРµР¶РґСѓ)(\s+|\&nbsp\;)([\d]{4})(-)([\d]{4})(Рі|РіРі)?/eui',
 			'replacement' 	=> '"\1\2" . $this->_buildYears("\3","\5","\4") . "\6"'),
 		'iz_za_pod' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/(\s|\&nbsp\;|\>)(из)(\040|\t|\&nbsp\;)\-?(за|под)([\.\,\!\?\:\;]|\040|\&nbsp\;)/uie',
+			'pattern' 		=> '/(\s|\&nbsp\;|\>)(РёР·)(\040|\t|\&nbsp\;)\-?(Р·Р°|РїРѕРґ)([\.\,\!\?\:\;]|\040|\&nbsp\;)/uie',
 			'replacement' 	=> '("\1" == "&nbsp;" ? " " : "\1") . "\2-\4" . ("\5" == "&nbsp;"? " " : "\5")'),
 		'to_libo_nibud' => array(
 			'_disable'		=> false,
@@ -49,7 +49,7 @@ class Jare_Typograph_Tof_Dash extends Jare_Typograph_Tof
 		);
 
 	/**
-	 * Расстановка короткого тире между годами
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° РєРѕСЂРѕС‚РєРѕРіРѕ С‚РёСЂРµ РјРµР¶РґСѓ РіРѕРґР°РјРё
 	 *
 	 * @param 	string $start
 	 * @param 	string $end
@@ -65,13 +65,13 @@ class Jare_Typograph_Tof_Dash extends Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Расстановка дефиса перед -то, -либо, -нибудь
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° РґРµС„РёСЃР° РїРµСЂРµРґ -С‚Рѕ, -Р»РёР±Рѕ, -РЅРёР±СѓРґСЊ
 	 *
 	 * @return 	void
 	 */
 	protected function _buildToLiboNibud()
 	{
-		$regExpMask = '/(\s|^|\&nbsp\;|\>)(кто|кем|когда|зачем|почему|как|что|чем|где|чего|кого)\-?(\040|\t|\&nbsp\;)\-?(то|либо|нибудь)([\.\,\!\?\;]|\040|\&nbsp\;|$)/ui';
+		$regExpMask = '/(\s|^|\&nbsp\;|\>)(РєС‚Рѕ|РєРµРј|РєРѕРіРґР°|Р·Р°С‡РµРј|РїРѕС‡РµРјСѓ|РєР°Рє|С‡С‚Рѕ|С‡РµРј|РіРґРµ|С‡РµРіРѕ|РєРѕРіРѕ)\-?(\040|\t|\&nbsp\;)\-?(С‚Рѕ|Р»РёР±Рѕ|РЅРёР±СѓРґСЊ)([\.\,\!\?\;]|\040|\&nbsp\;|$)/ui';
 		
 		while( preg_match($regExpMask, $this->_text)) {
 			$this->_text = preg_replace($regExpMask . 'e', '("\1" == "&nbsp;" ? " " : "\1") . "\2-\4" . ("\5" == "&nbsp;"? " " : "\5")', $this->_text);

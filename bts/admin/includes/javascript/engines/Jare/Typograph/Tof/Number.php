@@ -18,7 +18,7 @@ require_once 'Jare/Typograph/Tof.php';
 class Jare_Typograph_Tof_Number extends Jare_Typograph_Tof
 {
 	/**
-	 * Базовые параметры тофа
+	 * Р‘Р°Р·РѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕС„Р°
 	 *
 	 * @var array
 	 */
@@ -28,11 +28,11 @@ class Jare_Typograph_Tof_Number extends Jare_Typograph_Tof
 			'function_link' => '_buildTimesx'),
 		'numeric_sub' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/([a-zа-я0-9])\_([\d]{1,3})([^а-яa-z0-9]|$)/ieu',
+			'pattern' 		=> '/([a-zР°-СЏ0-9])\_([\d]{1,3})([^Р°-СЏa-z0-9]|$)/ieu',
 			'replacement' 	=> '"\1" . $this->_buildTag($this->_buildTag("\2","small"),"sub") . "\3"'),
 		'numeric_sup' => array(
 			'_disable'		=> false,
-			'pattern' 		=> '/([a-zа-я0-9])\^([\d]{1,3})([^а-яa-z0-9]|$)/ieu',
+			'pattern' 		=> '/([a-zР°-СЏ0-9])\^([\d]{1,3})([^Р°-СЏa-z0-9]|$)/ieu',
 			'replacement' 	=> '"\1" . $this->_buildTag($this->_buildTag("\2","small"),"sup") . "\3"'),
 		'simple_fraction' => array(
 			'_disable'		=> true,
@@ -43,7 +43,7 @@ class Jare_Typograph_Tof_Number extends Jare_Typograph_Tof
 		);
 	
 	/**
-	 * Преобразование простых дробей (1/2, 1/4 и 3/4) в HTML-коды
+	 * РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РїСЂРѕСЃС‚С‹С… РґСЂРѕР±РµР№ (1/2, 1/4 Рё 3/4) РІ HTML-РєРѕРґС‹
 	 *
 	 * @return 	void
 	 */
@@ -54,13 +54,13 @@ class Jare_Typograph_Tof_Number extends Jare_Typograph_Tof
 	}
 
 	/**
-	 * Расстановка &times; между числами
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° &times; РјРµР¶РґСѓ С‡РёСЃР»Р°РјРё
 	 *
 	 * @return 	void
 	 */	
 	protected function _buildTimesx()
 	{
-		$regExpMask = '/(\&times\;)?(\d+)(\040*)(x|х)(\040*)(\d+)/u';
+		$regExpMask = '/(\&times\;)?(\d+)(\040*)(x|С…)(\040*)(\d+)/u';
 
 		while(preg_match($regExpMask, $this->_text)) {
 			$this->_text = preg_replace($regExpMask, '\1\2&times;\6', $this->_text);
@@ -68,7 +68,7 @@ class Jare_Typograph_Tof_Number extends Jare_Typograph_Tof
 	}
 
 	/**
-	 * Расстановка простейших математических знаков
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° РїСЂРѕСЃС‚РµР№С€РёС… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… Р·РЅР°РєРѕРІ
 	 *
 	 * @return 	void
 	 */

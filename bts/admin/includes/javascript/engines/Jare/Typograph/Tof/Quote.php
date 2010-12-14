@@ -18,7 +18,7 @@ require_once 'Jare/Typograph/Tof.php';
 class Jare_Typograph_Tof_Quote extends Jare_Typograph_Tof
 {
 	/**
-	 * Типы кавычек
+	 * РўРёРїС‹ РєР°РІС‹С‡РµРє
 	 */
 	const QUOTE_FIRS_OPEN = '&laquo;';
     const QUOTE_FIRS_CLOSE = '&raquo;';
@@ -26,7 +26,7 @@ class Jare_Typograph_Tof_Quote extends Jare_Typograph_Tof
     const QUOTE_CRAWSE_CLOSE = '&ldquo;';
     
 	/**
-	 * Базовые параметры тофа
+	 * Р‘Р°Р·РѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕС„Р°
 	 *
 	 * @var array
 	 */
@@ -47,7 +47,7 @@ class Jare_Typograph_Tof_Quote extends Jare_Typograph_Tof
 		);
 
 	/**
-	 * Расстановка закрывающих кавычек
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° Р·Р°РєСЂС‹РІР°СЋС‰РёС… РєР°РІС‹С‡РµРє
 	 * 
 	 * @return 	void
 	 */
@@ -61,13 +61,13 @@ class Jare_Typograph_Tof_Quote extends Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Расстановка закрывающих кавычек
+	 * Р Р°СЃСЃС‚Р°РЅРѕРІРєР° Р·Р°РєСЂС‹РІР°СЋС‰РёС… РєР°РІС‹С‡РµРє
 	 * 
 	 * @return 	void
 	 */
 	protected function _buildCloseQuote()
 	{
-		$regExpMask = '/([a-zа-я0-9]|\.|\&hellip\;|\!|\?|\>)(\"|\\\")+(\.|\&hellip\;|\;|\:|\?|\!|\,|\s|\)|\<\/|$)/ui';
+		$regExpMask = '/([a-zР°-СЏ0-9]|\.|\&hellip\;|\!|\?|\>)(\"|\\\")+(\.|\&hellip\;|\;|\:|\?|\!|\,|\s|\)|\<\/|$)/ui';
 
 		while(preg_match($regExpMask, $this->_text)) {
 			$this->_text = preg_replace($regExpMask . 'e', '"\1" . self::QUOTE_FIRS_CLOSE . "\3"', $this->_text);
@@ -75,13 +75,13 @@ class Jare_Typograph_Tof_Quote extends Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Оптическое выравнивание открывающей кавычки
+	 * РћРїС‚РёС‡РµСЃРєРѕРµ РІС‹СЂР°РІРЅРёРІР°РЅРёРµ РѕС‚РєСЂС‹РІР°СЋС‰РµР№ РєР°РІС‹С‡РєРё
 	 *
 	 * @return 	void
 	 */
 	protected function _buildOpticalAlignment()
 	{
-		$this->_text = preg_replace('/([a-zа-я\-]{3,})(\040|\&nbsp\;|\t)(\&laquo\;)/uie', '"\1" . $this->_buildTag("\2", "span",array("style" => "margin-right:0.44em;")) . $this->_buildTag("\3", "span", array("style" => "margin-left:-0.44em;"))', $this->_text);
+		$this->_text = preg_replace('/([a-zР°-СЏ\-]{3,})(\040|\&nbsp\;|\t)(\&laquo\;)/uie', '"\1" . $this->_buildTag("\2", "span",array("style" => "margin-right:0.44em;")) . $this->_buildTag("\3", "span", array("style" => "margin-left:-0.44em;"))', $this->_text);
 		$this->_text = preg_replace('/(\n|\r|^)(\&laquo\;)/ei', '"\1" . $this->_buildTag("\2", "span", array("style" => "margin-left:-0.44em;"))', $this->_text);
 	}
 }

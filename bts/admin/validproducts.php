@@ -19,7 +19,7 @@ require('includes/application_top.php');
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<title>Список товаров</title>
+<title>РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ</title>
 <style type="text/css">
 <!--
 h4 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: x-small; text-align: center}
@@ -52,7 +52,7 @@ td {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small}
 <br>
 <table width="550" border="0" cellspacing="1">
 <tr>
-<td align=middle><input type="button" value="Закрыть окно" onClick="window.close()"></td>
+<td align=middle><input type="button" value="Р—Р°РєСЂС‹С‚СЊ РѕРєРЅРѕ" onClick="window.close()"></td>
 </tr></table>
 </body>
 </html>
