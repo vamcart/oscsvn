@@ -1,6 +1,6 @@
 <?php
 /**
- * Класс-обертка для работы с параметрами тофа
+ * РљР»Р°СЃСЃ-РѕР±РµСЂС‚РєР° РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё С‚РѕС„Р°
  * 
  * @see Jare_Typograph_Param
  */
@@ -19,28 +19,28 @@ require_once 'Jare/Typograph/Param.php';
 abstract class Jare_Typograph_Tof
 {
 	/**
-	 * Отключение обработки текста тофом
+	 * РћС‚РєР»СЋС‡РµРЅРёРµ РѕР±СЂР°Р±РѕС‚РєРё С‚РµРєСЃС‚Р° С‚РѕС„РѕРј
 	 *
 	 * @var bool
 	 */
 	protected $_disableParsing = false;
 	
 	/**
-	 * Текст для типографирования
+	 * РўРµРєСЃС‚ РґР»СЏ С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёСЏ
 	 *
 	 * @var string
 	 */
 	protected $_text = '';
 	
 	/**
-	 * Базовые параметры тофа
+	 * Р‘Р°Р·РѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ С‚РѕС„Р°
 	 *
 	 * @var array
 	 */
 	protected $_baseParam = array();
 	
 	/**
-	 * Установка базового параметра
+	 * РЈСЃС‚Р°РЅРѕРІРєР° Р±Р°Р·РѕРІРѕРіРѕ РїР°СЂР°РјРµС‚СЂР°
 	 *
 	 * @param 	string $name
 	 * @param 	Jare_Typograph_Param $param
@@ -53,7 +53,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Получение экземпляра класса базового параметра
+	 * РџРѕР»СѓС‡РµРЅРёРµ СЌРєР·РµРјРїР»СЏСЂР° РєР»Р°СЃСЃР° Р±Р°Р·РѕРІРѕРіРѕ РїР°СЂР°РјРµС‚СЂР°
 	 *
 	 * @param 	string $name
 	 * @throws 	Jare_Typograph_Exception
@@ -71,7 +71,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Установка текста для типографирования
+	 * РЈСЃС‚Р°РЅРѕРІРєР° С‚РµРєСЃС‚Р° РґР»СЏ С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёСЏ
 	 *
 	 * @param 	string $text
 	 * @return 	void
@@ -82,7 +82,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Отключение типографирования текста данным тофом
+	 * РћС‚РєР»СЋС‡РµРЅРёРµ С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёСЏ С‚РµРєСЃС‚Р° РґР°РЅРЅС‹Рј С‚РѕС„РѕРј
 	 *
 	 * @param 	bool $status
 	 * @return 	Jare_Typograph_Tof
@@ -94,7 +94,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Возврат статуса для типографирования данным тофом
+	 * Р’РѕР·РІСЂР°С‚ СЃС‚Р°С‚СѓСЃР° РґР»СЏ С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёСЏ РґР°РЅРЅС‹Рј С‚РѕС„РѕРј
 	 *
 	 * @return 	bool
 	 */
@@ -104,9 +104,9 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Отключение базовых параметров тофа
+	 * РћС‚РєР»СЋС‡РµРЅРёРµ Р±Р°Р·РѕРІС‹С… РїР°СЂР°РјРµС‚СЂРѕРІ С‚РѕС„Р°
 	 *
-	 * @param 	mixed $name массив или строка из названий параметров, которые необходимо отключить
+	 * @param 	mixed $name РјР°СЃСЃРёРІ РёР»Рё СЃС‚СЂРѕРєР° РёР· РЅР°Р·РІР°РЅРёР№ РїР°СЂР°РјРµС‚СЂРѕРІ, РєРѕС‚РѕСЂС‹Рµ РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РєР»СЋС‡РёС‚СЊ
 	 * @return 	Jare_Typograph_Tof
 	 */
 	public function disableBaseParam($name)
@@ -138,7 +138,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Стандартное типографирование текста тофом
+	 * РЎС‚Р°РЅРґР°СЂС‚РЅРѕРµ С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёРµ С‚РµРєСЃС‚Р° С‚РѕС„РѕРј
 	 *
 	 * @throws 	Jare_Typograph_Exception
 	 * @return 	string
@@ -155,13 +155,13 @@ abstract class Jare_Typograph_Tof
 			foreach ($this->_baseParam as $accessKey => $param) {
 				$ignoreParsing = null;
 				
-				// Типографирование параметром отключено или включено пользователем
+				// РўРёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёРµ РїР°СЂР°РјРµС‚СЂРѕРј РѕС‚РєР»СЋС‡РµРЅРѕ РёР»Рё РІРєР»СЋС‡РµРЅРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
 				if (isset($param[Jare_Typograph_Param::KEY_DISABLE_USER])) {
 					$ignoreParsing = (bool) $param[Jare_Typograph_Param::KEY_DISABLE_USER];
 				}
 				
 				if (null === $ignoreParsing) {
-					// Параметр отключен по умолчанию...
+					// РџР°СЂР°РјРµС‚СЂ РѕС‚РєР»СЋС‡РµРЅ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ...
 					if (isset($param[Jare_Typograph_Param::KEY_DISABLE_DEFAULT])) {
 						$ignoreParsing = $param[Jare_Typograph_Param::KEY_DISABLE_DEFAULT];
 					}
@@ -171,7 +171,7 @@ abstract class Jare_Typograph_Tof
 					continue;
 				}
 				
-				// Ссылка на метод класса с правилами типографирования
+				// РЎСЃС‹Р»РєР° РЅР° РјРµС‚РѕРґ РєР»Р°СЃСЃР° СЃ РїСЂР°РІРёР»Р°РјРё С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёСЏ
 				if (!empty($param[Jare_Typograph_Param::KEY_FUNCTION_LINK])) {
 					$methodName = $param[Jare_Typograph_Param::KEY_FUNCTION_LINK];
 					
@@ -184,7 +184,7 @@ abstract class Jare_Typograph_Tof
 					}
 				}
 				
-				// Классическое типографирование регулярными выражениями
+				// РљР»Р°СЃСЃРёС‡РµСЃРєРѕРµ С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёРµ СЂРµРіСѓР»СЏСЂРЅС‹РјРё РІС‹СЂР°Р¶РµРЅРёСЏРјРё
 				$this->_text = preg_replace($param[Jare_Typograph_Param::KEY_PARSE_PATTERN], $param[Jare_Typograph_Param::KEY_PARSE_REPLACE], $this->_text);
 			}
 		}
@@ -195,7 +195,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Метод, который вызывается перед стандартным типографированием текста тофом
+	 * РњРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРµСЂРµРґ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рј С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёРµРј С‚РµРєСЃС‚Р° С‚РѕС„РѕРј
 	 *
 	 * @return 	void
 	 */
@@ -204,7 +204,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Метод, который вызывается после стандартным типографированием текста тофом
+	 * РњРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРѕСЃР»Рµ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рј С‚РёРїРѕРіСЂР°С„РёСЂРѕРІР°РЅРёРµРј С‚РµРєСЃС‚Р° С‚РѕС„РѕРј
 	 *
 	 * @return 	void
 	 */
@@ -213,7 +213,7 @@ abstract class Jare_Typograph_Tof
 	}
 	
 	/**
-	 * Создание защищенного тега с содержимым
+	 * РЎРѕР·РґР°РЅРёРµ Р·Р°С‰РёС‰РµРЅРЅРѕРіРѕ С‚РµРіР° СЃ СЃРѕРґРµСЂР¶РёРјС‹Рј
 	 *
 	 * @see 	Jare_Typograph_Tool::buildSafeTag
 	 * @param 	string $content

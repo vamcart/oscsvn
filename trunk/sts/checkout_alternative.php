@@ -603,7 +603,7 @@ function rowOutEffect1(object) {
       <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <?php echo tep_draw_form('checkout', tep_href_link(FILENAME_CHECKOUT_ALTERNATIVE, '', 'SSL'), 'post','onSubmit="return check_form(checkout);"') . tep_draw_hidden_field('action', 'process'); ?>
 
-<!-- заголовок -->
+<!-- Р·Р°РіРѕР»РѕРІРѕРє -->
         <tr>
         <td valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
@@ -612,7 +612,7 @@ function rowOutEffect1(object) {
           </tr>
         </table></td>
       </tr>
-<!-- /заголовок -->
+<!-- /Р·Р°РіРѕР»РѕРІРѕРє -->
 
 <?php
   if ($messageStack->size('login') > 0) {

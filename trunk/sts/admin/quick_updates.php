@@ -411,7 +411,7 @@ function display_ttc(action, prix, taxe, up){
                     <tr class="dataTableHeadingRow">
                      <td class="dataTableHeadingContent" align="right" valign="middle">
                      <?php if(DISPLAY_STATUT == 'true')echo "<a href=\"" . tep_href_link( FILENAME_QUICK_UPDATES, 'cPath='. $current_category_id .'&sort_by=p.products_status DESC&page=' . $page.'&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer)."\" >".tep_image(DIR_WS_IMAGES . 'icon_arrow_down.gif', 'Desc')."&nbsp;</a></td> " .
-                     "<td class=\"dataTableHeadingContent\" align=\"center\" valign=\"middle\">" . TABLE_HEADING_STATUS . "<br>выкл. / вкл.</td>" .
+                     "<td class=\"dataTableHeadingContent\" align=\"center\" valign=\"middle\">" . TABLE_HEADING_STATUS . "<br>РІС‹РєР». / РІРєР».</td>" .
                      "<td class=\"dataTableHeadingContent\" align=\"left\" valign=\"middle\"><a href=\"" . tep_href_link( FILENAME_QUICK_UPDATES, 'cPath='. $current_category_id .'&sort_by=p.products_status ASC&page=' . $page.'&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer)."\" >&nbsp;".tep_image(DIR_WS_IMAGES . 'icon_arrow_up.gif', 'Asc')."</a></td>" ; ?>
                     </tr>
                   </table>

@@ -11,7 +11,7 @@
 	//   Getting params                                                                                                                                                //
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------------//
 	
-	$xml = simplexml_load_file("php://input", "SimpleXMLElement", LIBXML_NOCDATA); // Ignore CDATA sections — make them as usual text,  returned text is always in UTF-8
+	$xml = simplexml_load_file("php://input", "SimpleXMLElement", LIBXML_NOCDATA); // Ignore CDATA sections вЂ” make them as usual text,  returned text is always in UTF-8
 	
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------------//
 	//   Prepearing replaces for non-typographic areas - Lebedev's typograf can't do it by itself ;)                                                                                                                //
@@ -44,25 +44,25 @@
 		$params = array();
 		$params[] = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 		$params[] = "<preferences>";
-		$params[] = "	<tags delete='0'>1</tags>"; // Теги
-		$params[] = "	<paragraph insert='0'>"; // Абзацы
+		$params[] = "	<tags delete='0'>1</tags>"; // РўРµРіРё
+		$params[] = "	<paragraph insert='0'>"; // РђР±Р·Р°С†С‹
 		$params[] = "		<start><![CDATA[<p>]]></start>";
 		$params[] = "		<end><![CDATA[</p>]]></end>";
 		$params[] = "	</paragraph>";
-		$params[] = "	<newline insert='0'><![CDATA[<br />]]></newline>"; // Переводы строк
-		$params[] = "	<cmsNewLine valid='0' />"; // Переводы строк <p>&nbsp;</p>
-		$params[] = "	<dos-text delete='0' />"; // DOS текст
-		$params[] = "	<nowraped insert='1' nonbsp='0' length='0'>"; // Неразрывные конструкции
+		$params[] = "	<newline insert='0'><![CDATA[<br />]]></newline>"; // РџРµСЂРµРІРѕРґС‹ СЃС‚СЂРѕРє
+		$params[] = "	<cmsNewLine valid='0' />"; // РџРµСЂРµРІРѕРґС‹ СЃС‚СЂРѕРє <p>&nbsp;</p>
+		$params[] = "	<dos-text delete='0' />"; // DOS С‚РµРєСЃС‚
+		$params[] = "	<nowraped insert='1' nonbsp='0' length='0'>"; // РќРµСЂР°Р·СЂС‹РІРЅС‹Рµ РєРѕРЅСЃС‚СЂСѓРєС†РёРё
 		$params[] = "		<start><![CDATA[<nobr>]]></start>";
 		$params[] = "		<end><![CDATA[</nobr>]]></end>";
 		$params[] = "	</nowraped>";
-		$params[] = "	<hanging-punct insert='0' />"; // Висячая пунктуация
-		$params[] = "	<hanging-line delete='0' />"; // Удалять висячие слова
-		$params[] = "	<minus-sign><![CDATA[&ndash;]]></minus-sign>"; // Символ минус
-		$params[] = "	<hyphen insert='0' length='0' />"; // Переносы
-		$params[] = "	<acronym insert='1'></acronym>"; // Акронимы
-		$params[] = "	<symbols type='0' />"; // Вывод символов 0 - буквами 1 - числами
-		$params[] = "	<link target='' class='' />"; // Параметры ссылок
+		$params[] = "	<hanging-punct insert='0' />"; // Р’РёСЃСЏС‡Р°СЏ РїСѓРЅРєС‚СѓР°С†РёСЏ
+		$params[] = "	<hanging-line delete='0' />"; // РЈРґР°Р»СЏС‚СЊ РІРёСЃСЏС‡РёРµ СЃР»РѕРІР°
+		$params[] = "	<minus-sign><![CDATA[&ndash;]]></minus-sign>"; // РЎРёРјРІРѕР» РјРёРЅСѓСЃ
+		$params[] = "	<hyphen insert='0' length='0' />"; // РџРµСЂРµРЅРѕСЃС‹
+		$params[] = "	<acronym insert='1'></acronym>"; // РђРєСЂРѕРЅРёРјС‹
+		$params[] = "	<symbols type='0' />"; // Р’С‹РІРѕРґ СЃРёРјРІРѕР»РѕРІ 0 - Р±СѓРєРІР°РјРё 1 - С‡РёСЃР»Р°РјРё
+		$params[] = "	<link target='' class='' />"; // РџР°СЂР°РјРµС‚СЂС‹ СЃСЃС‹Р»РѕРє
 		$params[] = "</preferences>";
 		$params = implode("", $params);
 		
@@ -107,10 +107,10 @@
 		
 	} else {
 		
-		// 1 — mixedEntities	— буквенными и числовыми кодами (для универсального кода. Совместимо со всеми основыми новыми и старыми браузерами)
-		// 2 — xmlEntities		— только буквенными кодами (хорошо для XML, плохо для старых браузеров)
-		// 3 — htmlEntities		— только числовыми кодами (кому-то нужно. Плохо для старых браузеров)
-		// 4 — noEntities			— готовыми символами (символы выдаются в том виде, в каком их видит в результате читатель)
+		// 1 вЂ” mixedEntities	вЂ” Р±СѓРєРІРµРЅРЅС‹РјРё Рё С‡РёСЃР»РѕРІС‹РјРё РєРѕРґР°РјРё (РґР»СЏ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅРѕРіРѕ РєРѕРґР°. РЎРѕРІРјРµСЃС‚РёРјРѕ СЃРѕ РІСЃРµРјРё РѕСЃРЅРѕРІС‹РјРё РЅРѕРІС‹РјРё Рё СЃС‚Р°СЂС‹РјРё Р±СЂР°СѓР·РµСЂР°РјРё)
+		// 2 вЂ” xmlEntities		вЂ” С‚РѕР»СЊРєРѕ Р±СѓРєРІРµРЅРЅС‹РјРё РєРѕРґР°РјРё (С…РѕСЂРѕС€Рѕ РґР»СЏ XML, РїР»РѕС…Рѕ РґР»СЏ СЃС‚Р°СЂС‹С… Р±СЂР°СѓР·РµСЂРѕРІ)
+		// 3В вЂ” htmlEntities		вЂ” С‚РѕР»СЊРєРѕ С‡РёСЃР»РѕРІС‹РјРё РєРѕРґР°РјРё (РєРѕРјСѓ-С‚Рѕ РЅСѓР¶РЅРѕ. РџР»РѕС…Рѕ РґР»СЏ СЃС‚Р°СЂС‹С… Р±СЂР°СѓР·РµСЂРѕРІ)
+		// 4 вЂ” noEntities			вЂ” РіРѕС‚РѕРІС‹РјРё СЃРёРјРІРѕР»Р°РјРё (СЃРёРјРІРѕР»С‹ РІС‹РґР°СЋС‚СЃСЏ РІ С‚РѕРј РІРёРґРµ, РІ РєР°РєРѕРј РёС… РІРёРґРёС‚ РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ С‡РёС‚Р°С‚РµР»СЊ)
 		
 		require(MCETYPOGRAF_ENGINES . "/remotetypograf.php");
 		

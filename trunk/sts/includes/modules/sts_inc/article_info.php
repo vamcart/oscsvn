@@ -14,7 +14,7 @@ STS v4.1 by Rigadin (rigadin@osc-help.net)
 
 	$articles_id=intval($_GET['articles_id']);
 // Create variables for article ID, added in v4.0.6	
-// —Ú‡Ú¸Ë
+// –°—Ç–∞—Ç—å–∏
   $article_check_query = tep_db_query("select count(*) as total from " . TABLE_ARTICLES . " a, " . TABLE_ARTICLES_DESCRIPTION . " ad where a.articles_status = '1' and a.articles_id = '" . $articles_id . "' and ad.articles_id = a.articles_id and ad.language_id = '" . (int)$languages_id . "'");
   $article_check = tep_db_fetch_array($article_check_query);
 

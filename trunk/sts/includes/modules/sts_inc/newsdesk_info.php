@@ -30,7 +30,7 @@ and pd.newsdesk_id = '" . $newsdesk_id . "' and pd.language_id = '" . $languages
 
 $product_info_values = tep_db_fetch_array($product_info);
 
-// Картинки новостей
+// РљР°СЂС‚РёРЅРєРё РЅРѕРІРѕСЃС‚РµР№
 
 if (($product_info_values['newsdesk_image'] != 'Array') && ($product_info_values['newsdesk_image'] != '')) {
 $insert_image = tep_image(DIR_WS_IMAGES . $product_info_values['newsdesk_image'], $product_info_values['newsdesk_article_name']);

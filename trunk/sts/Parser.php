@@ -466,7 +466,7 @@ class Parser
         {
         return(pack("C", $this->ptg[$token]));
         }
-    elseif(preg_match("/[A-Z0-9À-Ü\.]+/",$token))
+    elseif(preg_match("/[A-Z0-9Ğ-Ğ¬\.]+/",$token))
         {
         return($this->_convert_function($token,$this->_func_args));
         }
@@ -746,7 +746,7 @@ class Parser
                 return($token);
                 }
             // if it's a function call
-            elseif(preg_match("/^[A-Z0-9À-Ü\.]+$/",$token) and ($this->_lookahead == "("))
+            elseif(preg_match("/^[A-Z0-9Ğ-Ğ¬\.]+$/",$token) and ($this->_lookahead == "("))
 
 	        {
 		return($token);
@@ -878,7 +878,7 @@ class Parser
         return($result);
         }
     // if it's a function call
-    elseif (preg_match("/^[A-Z0-9À-Ü\.]+$/",$this->_current_token))
+    elseif (preg_match("/^[A-Z0-9Ğ-Ğ¬\.]+$/",$this->_current_token))
         {
         $result = $this->_func();
         return($result);

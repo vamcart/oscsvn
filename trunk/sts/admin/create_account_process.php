@@ -16,8 +16,8 @@
 
   require('includes/application_top.php');
   
-  define('EMAIL_PASS_1', 'Ваш пароль ');
-  define('EMAIL_PASS_2', ', не забывайте его!' . "\n\n");
+  define('EMAIL_PASS_1', 'Р’Р°С€ РїР°СЂРѕР»СЊ ');
+  define('EMAIL_PASS_2', ', РЅРµ Р·Р°Р±С‹РІР°Р№С‚Рµ РµРіРѕ!' . "\n\n");
 
   require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_CREATE_ACCOUNT_PROCESS);
 

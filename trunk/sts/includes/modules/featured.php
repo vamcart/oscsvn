@@ -62,8 +62,8 @@ function FeaturedProductsModuleListingTemplate($url,$pid,$description,$manufactu
     $num ++; if ($num == 1) { new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_FEATURED_PRODUCTS));}
     $featured_products['products_name'] = tep_get_products_name($featured_products['products_id']);
 	if ($featured_price = tep_get_products_special_price($featured_products['products_id'])) {
-     $featured_products['products_price'] = $featured_price; // Ξαϋχνΰÿ φενΰ
-     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Ροεφ. φενΰ
+     $featured_products['products_price'] = $featured_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
 
 // STS Featured Products Module Templates Start
 
@@ -89,8 +89,8 @@ function FeaturedProductsModuleListingTemplate($url,$pid,$description,$manufactu
 
 
     } else {
-     $featured_products['products_price'] = $featured_price; // Ξαϋχνΰÿ φενΰ
-     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Ροεφ. φενΰ
+     $featured_products['products_price'] = $featured_price; // ΠΠ±Ρ‹Ρ‡Π½Π°Ρ Ρ†ΠµΠ½Π°
+     $featured_products['specials_featured_products_price'] = tep_xppp_getproductprice($featured_products['products_id']); // Π΅ΠΏΠµΡ†. Ρ†ΠµΠ½Π°
      
 // STS Featured Products Module Templates Start
 

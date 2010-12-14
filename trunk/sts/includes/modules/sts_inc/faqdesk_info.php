@@ -30,7 +30,7 @@ and pd.faqdesk_id = '" . $faqdesk_id . "' and pd.language_id = '" . $languages_i
 
 $product_info_values = tep_db_fetch_array($product_info);
 
-// Картинки faq
+// РљР°СЂС‚РёРЅРєРё faq
 
 if (($product_info_values['faqdesk_image'] != 'Array') && ($product_info_values['faqdesk_image'] != '')) {
 $insert_image = tep_image(DIR_WS_IMAGES . $product_info_values['faqdesk_image'], $product_info_values['faqdesk_question']);

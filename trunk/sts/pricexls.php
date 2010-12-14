@@ -13,7 +13,7 @@ function tep_iconv($text) {
     }
   }
 
-// есть у группы продукты?
+// РµСЃС‚СЊ Сѓ РіСЂСѓРїРїС‹ РїСЂРѕРґСѓРєС‚С‹?
 // group have products?
 function check_products($id_group){
 	$products_price_query = tep_db_query("select products_to_categories.products_id FROM products_to_categories where products_to_categories.categories_id = ".$id_group." LIMIT 0,1");
@@ -23,7 +23,7 @@ function check_products($id_group){
 	return false;
 }
 
-// выводим список продуктов определенной группы $id_group
+// РІС‹РІРѕРґРёРј СЃРїРёСЃРѕРє РїСЂРѕРґСѓРєС‚РѕРІ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РіСЂСѓРїРїС‹ $id_group
 // list products determined group
 function get_products($id_group,$count){
 	global $currencies;
@@ -43,12 +43,12 @@ function get_products($id_group,$count){
 	//TotalB2B start & TotalB2B start
 
 	if ($new_price = tep_get_products_special_price($products_price['products_id'])) {
-     $products_price['products_price'] = $new_price; // Обычная цена
-     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Спец. цена
+     $products_price['products_price'] = $new_price; // РћР±С‹С‡РЅР°СЏ С†РµРЅР°
+     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // РЎРїРµС†. С†РµРЅР°
 	  $cell = tep_iconv($currencies->display_price_nodiscount($products_price['products_price'], tep_get_tax_rate($products_price['products_tax_class_id'])));
     } else {
-     $products_price['products_price'] = $new_price; // Обычная цена
-     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // Спец. цена
+     $products_price['products_price'] = $new_price; // РћР±С‹С‡РЅР°СЏ С†РµРЅР°
+     $products_price['specials_new_products_price'] = tep_xppp_getproductprice($products_price['products_id']); // РЎРїРµС†. С†РµРЅР°
 	  $cell = tep_iconv($currencies->display_price($products_price['specials_new_products_price'], tep_get_tax_rate($products_price['products_tax_class_id'])));
     }
 
@@ -79,7 +79,7 @@ function get_products($id_group,$count){
 	return $count-1;
 }
 
-// рекурсивная функция, получает группы по порядку
+// СЂРµРєСѓСЂСЃРёРІРЅР°СЏ С„СѓРЅРєС†РёСЏ, РїРѕР»СѓС‡Р°РµС‚ РіСЂСѓРїРїС‹ РїРѕ РїРѕСЂСЏРґРєСѓ
 // get all groups
 function get_group($id_parent,$position){
 	global $workbook;
@@ -116,12 +116,12 @@ categories.sort_order");
 			$count--;
 		}
 		$count++;
-		get_group($groups_price['categories_id'],$position+1); // следующая группа
+		get_group($groups_price['categories_id'],$position+1); // СЃР»РµРґСѓСЋС‰Р°СЏ РіСЂСѓРїРїР°
 	}
 }
 
   $workbook = new Workbook(FILE_NAME_PRICE.".xls");
-  $worksheet1 =&$workbook->add_worksheet('Прайс-лист');
+  $worksheet1 =&$workbook->add_worksheet('РџСЂР°Р№СЃ-Р»РёСЃС‚');
       
   $formatot =& $workbook->add_format();
   $formatot->set_size(10);
