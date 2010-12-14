@@ -1,40 +1,33 @@
 <?php
 /*
-  $Id: localization.php,v 1.2 2003/09/24 13:57:07 wilt Exp $
+  $Id$
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2002 osCommerce
+  Copyright (c) 2010 osCommerce
 
   Released under the GNU General Public License
 */
+
+  $cl_box_groups[] = array(
+    'heading' => BOX_HEADING_LOCALIZATION,
+    'apps' => array(
+      array(
+        'code' => FILENAME_CURRENCIES,
+        'title' => BOX_LOCALIZATION_CURRENCIES,
+        'link' => tep_href_link(FILENAME_CURRENCIES)
+      ),
+      array(
+        'code' => FILENAME_LANGUAGES,
+        'title' => BOX_LOCALIZATION_LANGUAGES,
+        'link' => tep_href_link(FILENAME_LANGUAGES)
+      ),
+      array(
+        'code' => FILENAME_ORDERS_STATUS,
+        'title' => BOX_LOCALIZATION_ORDERS_STATUS,
+        'link' => tep_href_link(FILENAME_ORDERS_STATUS)
+      )
+    )
+  );
 ?>
-<!-- localization //-->
-          <tr>
-            <td>
-<?php
-  $heading = array();
-  $contents = array();
-
-  $heading[] = array('text'  => BOX_HEADING_LOCALIZATION,
-                     'link'  => tep_href_link(FILENAME_CURRENCIES, 'selected_box=localization'));
-
-  if ($selected_box == 'localization' || $menu_dhtml == true) {
-    $contents[] = array('text'  =>
-//Admin begin
-//                                   '<a href="' . tep_href_link(FILENAME_CURRENCIES, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_LOCALIZATION_CURRENCIES . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_LANGUAGES, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_LOCALIZATION_LANGUAGES . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_ORDERS_STATUS, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_LOCALIZATION_ORDERS_STATUS . '</a>');
-                                   tep_admin_files_boxes(FILENAME_CURRENCIES, BOX_LOCALIZATION_CURRENCIES) .
-                                   tep_admin_files_boxes(FILENAME_LANGUAGES, BOX_LOCALIZATION_LANGUAGES) .
-                                   tep_admin_files_boxes(FILENAME_ORDERS_STATUS, BOX_LOCALIZATION_ORDERS_STATUS));
-//Admin end
-  }
-
-  $box = new box;
-  echo $box->menuBox($heading, $contents);
-?>
-            </td>
-          </tr>
-<!-- localization_eof //-->
