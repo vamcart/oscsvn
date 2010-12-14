@@ -1,29 +1,21 @@
 <?php
 /*
-  $Id: configuration.php,v 1.2 2003/09/24 13:57:07 wilt Exp $
+  $Id$
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2002 osCommerce
+  Copyright (c) 2010 osCommerce
 
   Released under the GNU General Public License
 */
-?>
-<!-- configuration //-->
-          <tr>
-            <td>
-<?php
-  $heading = array();
-  $contents = array();
 
-  $heading[] = array('text'  => BOX_HEADING_CONFIGURATION,
-                     'link'  => tep_href_link(FILENAME_CONFIGURATION, 'gID=1&selected_box=configuration'));
+  $cl_box_groups[] = array(
+    'heading' => BOX_HEADING_CONFIGURATION,
+  );
 
-  if ($selected_box == 'configuration' || $menu_dhtml == true) {
-    $cfg_groups = '';
-    $configuration_groups_query = tep_db_query("select configuration_group_id as cgID, configuration_group_title as cgTitle from " . TABLE_CONFIGURATION_GROUP . " where visible = '1' order by sort_order");
-    while ($configuration_groups = tep_db_fetch_array($configuration_groups_query)) {
+  $configuration_groups_query = tep_db_query("select configuration_group_id as cgID, configuration_group_title as cgTitle from " . TABLE_CONFIGURATION_GROUP . " where visible = '1' order by sort_order");
+  while ($configuration_groups = tep_db_fetch_array($configuration_groups_query)) {
 
 if (!defined('CONFIGURATION_GROUP_' . $configuration_groups['cgID'])) {
 $text = $configuration_groups['cgTitle'];
@@ -31,15 +23,10 @@ $text = $configuration_groups['cgTitle'];
 $text = constant('CONFIGURATION_GROUP_' . $configuration_groups['cgID']);
 }
 
-      $cfg_groups .= '<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $configuration_groups['cgID'], 'NONSSL') . '" class="menuBoxContentLink">' . $text . '</a><br>';
-    }
-
-    $contents[] = array('text'  => $cfg_groups);
+    $cl_box_groups[sizeof($cl_box_groups)-1]['apps'][] = array(
+      'code' => FILENAME_CONFIGURATION,
+      'title' => $text,
+      'link' => tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $configuration_groups['cgID'])
+    );
   }
-
-  $box = new box;
-  echo $box->menuBox($heading, $contents);
 ?>
-            </td>
-          </tr>
-<!-- configuration_eof //-->

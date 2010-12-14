@@ -1,62 +1,103 @@
 <?php
 /*
-  $Id: catalog.php,v 1.2 2003/09/24 13:57:07 wilt Exp $
+  $Id$
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2002 osCommerce
+  Copyright (c) 2010 osCommerce
 
   Released under the GNU General Public License
 */
+
+  $cl_box_groups[] = array(
+    'heading' => BOX_HEADING_CATALOG,
+    'apps' => array(
+      array(
+        'code' => FILENAME_CATEGORIES,
+        'title' => BOX_CATALOG_CATEGORIES_PRODUCTS,
+        'link' => tep_href_link(FILENAME_CATEGORIES)
+      ),
+      array(
+        'code' => FILENAME_PRODUCTS_ATTRIBUTES,
+        'title' => BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES,
+        'link' => tep_href_link(FILENAME_PRODUCTS_ATTRIBUTES)
+      ),
+      array(
+        'code' => FILENAME_NEW_ATTRIBUTE_MANAGER,
+        'title' => BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES_NEW,
+        'link' => tep_href_link(FILENAME_NEW_ATTRIBUTE_MANAGER)
+      ),
+      array(
+        'code' => FILENAME_OPTIONS_IMAGES,
+        'title' => BOX_CATALOG_OPTIONS_IMAGES,
+        'link' => tep_href_link(FILENAME_OPTIONS_IMAGES)
+      ),
+      array(
+        'code' => FILENAME_MANUFACTURERS,
+        'title' => BOX_CATALOG_MANUFACTURERS,
+        'link' => tep_href_link(FILENAME_MANUFACTURERS)
+      ),
+      array(
+        'code' => FILENAME_REVIEWS,
+        'title' => BOX_CATALOG_REVIEWS,
+        'link' => tep_href_link(FILENAME_REVIEWS)
+      ),
+      array(
+        'code' => FILENAME_SPECIALS,
+        'title' => BOX_CATALOG_SPECIALS,
+        'link' => tep_href_link(FILENAME_SPECIALS)
+      ),
+      array(
+        'code' => FILENAME_XSELL_PRODUCTS,
+        'title' => BOX_CATALOG_XSELL_PRODUCTS,
+        'link' => tep_href_link(FILENAME_XSELL_PRODUCTS)
+      ),
+      array(
+        'code' => FILENAME_EASYPOPULATE,
+        'title' => BOX_CATALOG_EASYPOPULATE,
+        'link' => tep_href_link(FILENAME_EASYPOPULATE)
+      ),
+      array(
+        'code' => FILENAME_DEFINE_MAINPAGE,
+        'title' => BOX_CATALOG_DEFINE_MAINPAGE,
+        'link' => tep_href_link(FILENAME_DEFINE_MAINPAGE)
+      ),
+      array(
+        'code' => FILENAME_SALEMAKER,
+        'title' => BOX_CATALOG_SALEMAKER,
+        'link' => tep_href_link(FILENAME_SALEMAKER)
+      ),
+      array(
+        'code' => FILENAME_MANUAL_DISCOUNTS,
+        'title' => BOX_MANUDISCOUNT,
+        'link' => tep_href_link(FILENAME_MANUAL_DISCOUNTS)
+      ),
+      array(
+        'code' => FILENAME_FEATURED,
+        'title' => BOX_CATALOG_FEATURED,
+        'link' => tep_href_link(FILENAME_FEATURED)
+      ),
+      array(
+        'code' => FILENAME_QUICK_UPDATES,
+        'title' => BOX_CATALOG_QUICK_UPDATES,
+        'link' => tep_href_link(FILENAME_QUICK_UPDATES)
+      ),
+      array(
+        'code' => FILENAME_EXTRA_PRODUCT_PRICE,
+        'title' => BOX_EXTRA_PRODUCT_PRICE,
+        'link' => tep_href_link(FILENAME_EXTRA_PRODUCT_PRICE)
+      ),
+      array(
+        'code' => FILENAME_PRODUCTS_SPECIFICATIONS,
+        'title' => BOX_CATALOG_PRODUCTS_SPECIFICATIONS,
+        'link' => tep_href_link(FILENAME_PRODUCTS_SPECIFICATIONS)
+      ),
+      array(
+        'code' => FILENAME_PRODUCTS_EXPECTED,
+        'title' => BOX_CATALOG_PRODUCTS_EXPECTED,
+        'link' => tep_href_link(FILENAME_PRODUCTS_EXPECTED)
+      )
+    )
+  );
 ?>
-<!-- catalog //-->
-          <tr>
-            <td>
-<?php
-  $heading = array();
-  $contents = array();
-
-  $heading[] = array('text'  => BOX_HEADING_CATALOG,
-                     'link'  => tep_href_link(FILENAME_CATEGORIES, 'selected_box=catalog'));
-
-  if ($selected_box == 'catalog' || $menu_dhtml == true) {
-    $contents[] = array('text'  =>
-//Admin begin
-//                                   '<a href="' . tep_href_link(FILENAME_CATEGORIES, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_CATEGORIES_PRODUCTS . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_PRODUCTS_ATTRIBUTES, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_MANUFACTURERS, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_MANUFACTURERS . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_REVIEWS, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_REVIEWS . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_SPECIALS, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_SPECIALS . '</a><br>' .
-//                                   '<a href="' . tep_href_link(FILENAME_PRODUCTS_EXPECTED, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_PRODUCTS_EXPECTED . '</a><br>' .
-                                   // MaxiDVD Added Line For WYSIWYG HTML Area: BOF
-//                                     '<a href="' . tep_href_link(FILENAME_DEFINE_MAINPAGE, '', 'NONSSL') . '" class="menuBoxContentLink">' . BOX_CATALOG_DEFINE_MAINPAGE . '</a>');
-                                   // MaxiDVD Added Line For WYSIWYG HTML Area: EOF
-                                   tep_admin_files_boxes(FILENAME_CATEGORIES, BOX_CATALOG_CATEGORIES_PRODUCTS) .
-                                   tep_admin_files_boxes(FILENAME_PRODUCTS_ATTRIBUTES, BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES) .
-                                   tep_admin_files_boxes(FILENAME_NEW_ATTRIBUTE_MANAGER, BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES_NEW) .
-                                   tep_admin_files_boxes(FILENAME_OPTIONS_IMAGES,  BOX_CATALOG_OPTIONS_IMAGES) .
-                                   tep_admin_files_boxes(FILENAME_MANUFACTURERS, BOX_CATALOG_MANUFACTURERS) .
-                                   tep_admin_files_boxes(FILENAME_REVIEWS, BOX_CATALOG_REVIEWS) .
-                                   tep_admin_files_boxes(FILENAME_SPECIALS, BOX_CATALOG_SPECIALS) .
-				                       tep_admin_files_boxes(FILENAME_XSELL_PRODUCTS, BOX_CATALOG_XSELL_PRODUCTS) .
-				                       tep_admin_files_boxes(FILENAME_EASYPOPULATE, BOX_CATALOG_EASYPOPULATE) .
-    				                    tep_admin_files_boxes(FILENAME_DEFINE_MAINPAGE, BOX_CATALOG_DEFINE_MAINPAGE) .
-                                   tep_admin_files_boxes(FILENAME_SALEMAKER, BOX_CATALOG_SALEMAKER) .
-                                   tep_admin_files_boxes(FILENAME_MANUAL_DISCOUNTS, BOX_MANUDISCOUNT) .
-                                   tep_admin_files_boxes(FILENAME_FEATURED, BOX_CATALOG_FEATURED) .
-                                   tep_admin_files_boxes(FILENAME_QUICK_UPDATES, BOX_CATALOG_QUICK_UPDATES) .
-// BOF FlyOpenair: Extra Product Price
-                                   tep_admin_files_boxes(FILENAME_EXTRA_PRODUCT_PRICE, BOX_EXTRA_PRODUCT_PRICE) .
-// EOF FlyOpenair: Extra Product Price
-                                   tep_admin_files_boxes(FILENAME_PRODUCTS_SPECIFICATIONS, BOX_CATALOG_PRODUCTS_SPECIFICATIONS) .
-                                   tep_admin_files_boxes(FILENAME_PRODUCTS_EXPECTED, BOX_CATALOG_PRODUCTS_EXPECTED));
-//Admin end
-  }
-
-  $box = new box;
-  echo $box->menuBox($heading, $contents);
-?>
-            </td>
-          </tr>
-<!-- catalog_eof //-->
