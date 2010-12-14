@@ -50,8 +50,8 @@
     }
 
     function install() {
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Показывать налог', 'MODULE_ORDER_TOTAL_TAX_STATUS', 'true', 'Вы хотите показывать налог?', '6', '1','tep_cfg_select_option(array(\'true\', \'false\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки', 'MODULE_ORDER_TOTAL_TAX_SORT_ORDER', '3', 'Порядок сортировки модуля.', '6', '2', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі', 'MODULE_ORDER_TOTAL_TAX_STATUS', 'true', 'Р’С‹ С…РѕС‚РёС‚Рµ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р»РѕРі?', '6', '1','tep_cfg_select_option(array(\'true\', \'false\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё', 'MODULE_ORDER_TOTAL_TAX_SORT_ORDER', '3', 'РџРѕСЂСЏРґРѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё РјРѕРґСѓР»СЏ.', '6', '2', now())");
     }
 
     function remove() {
