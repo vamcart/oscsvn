@@ -23,6 +23,8 @@
 // require(DIR_WS_BOXES . 'information.php');
 //DWD Modify End
 
+    $cl_box_groups = array();
+    
   if    (MENU_DHTML != true) {
  define('BOX_WIDTH', 125);
 
@@ -78,9 +80,51 @@
   if (tep_admin_check_boxes('tools.php') == true) {
     require(DIR_WS_BOXES . 'tools.php');
   }
+?>
 
+<div id="adminAppMenu">
 
+<?php
+    foreach ($cl_box_groups as $groups) {
+      echo '<h3><a href="#">' . $groups['heading'] . '</a></h3>' .
+           '<div><ul>';
 
+      foreach ($groups['apps'] as $app) {
+        echo '<li><a href="' . $app['link'] . '">' . $app['title'] . '</a></li>';
+      }
+
+      echo '</ul></div>';
+    }
+?>
+
+</div>
+
+<script type="text/javascript">
+$('#adminAppMenu').accordion({
+  autoHeight: false,
+  icons: {
+    'header': 'ui-icon-plus',
+    'headerSelected': 'ui-icon-minus'
+  }
+
+<?php
+    $counter = 0;
+    foreach ($cl_box_groups as $groups) {
+      foreach ($groups['apps'] as $app) {
+        if ($app['code'] == $PHP_SELF) {
+          echo ',active: ' . $counter;
+          break;
+        }
+      }
+
+      $counter++;
+    }
+?>
+
+});
+</script>
+
+<?php
 //Admin end
 }
 ?>
