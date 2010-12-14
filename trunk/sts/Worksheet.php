@@ -1644,7 +1644,7 @@ class Worksheet extends BIFFwriter
         if (defined $sheet) {
             $link_type |= 0x08;
             $sheet_len  = pack("V", length($sheet) + 0x01);
-            $sheet      = join("\0", split('', $sheet));
+            $sheet      = join("\0", preg_split('', $sheet));
             $sheet     .= "\0\0\0";
     }
         else {
@@ -1665,7 +1665,7 @@ class Worksheet extends BIFFwriter
     
     
         # Store the long dir name as a wchar string (non-null terminated)
-        $dir_long       = join("\0", split('', $dir_long));
+        $dir_long       = join("\0", preg_split('', $dir_long));
         $dir_long       = $dir_long . "\0";
     
     
