@@ -106,7 +106,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
             <td align="right" valign="middle" class="main"><?php echo '<a href="' . tep_href_link(FILENAME_PRODUCTS_NEW, tep_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $best_sellers['products_id']) . '">' . tep_image_button('button_in_cart.gif', IMAGE_BUTTON_IN_CART) . '</a>'; ?></td>
           </tr>
           <tr>
-            <td colspьan="3"><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+            <td colspan="3"><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
           </tr>
 <?php
     }
