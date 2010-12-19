@@ -95,9 +95,9 @@
         $current_category_name = $current_categories['categories_name'];
       } else {
         if (BRWCAT_NAME_CASE == 'upper') {
-          $current_category_name = strtoupper($current_categories['categories_name']);
+          $current_category_name = utf8_strtoupper($current_categories['categories_name']);
         } else if (BRWCAT_NAME_CASE == 'lower') {
-          $current_category_name = strtolower($current_categories['categories_name']);
+          $current_category_name = utf8_strtolower($current_categories['categories_name']);
         } else if (BRWCAT_NAME_CASE == 'title') {
           $current_category_name = ucwords($current_categories['categories_name']);
         } else {
