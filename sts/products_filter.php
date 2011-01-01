@@ -27,7 +27,7 @@
 // Block Robots
 // Set a Robots NoIndex if the sort field is set
   $robots_tag = '';
-  if ( (isset ($_GET['sort'])) || (ereg ('[1-9][ad]', $_GET['sort'])) ) {
+  if ( (isset ($_GET['sort'])) || (preg_match ('/[1-9][ad]/', $_GET['sort'])) ) {
     $robots_tag = '<meta name="robots" content="noindex,follow">';
  }
   
@@ -185,7 +185,7 @@
     }
   } // if ($current_category_id
 
-  if ( (!isset($_GET['sort'])) || (!ereg('^[1-8][ad]$', $_GET['sort'])) || (substr($_GET['sort'], 0, 1) > sizeof($column_list)) ) {
+  if ( (!isset($_GET['sort'])) || (!preg_match('/^[1-8][ad]$/', $_GET['sort'])) || (substr($_GET['sort'], 0, 1) > sizeof($column_list)) ) {
     $_GET['sort'] = 'products_name';
     $listing_sql .= "             order by pd.products_name";
     

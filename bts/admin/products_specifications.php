@@ -1281,7 +1281,7 @@
               break;
         
             default:  // Show everything else by formatting the field name
-              $title_string = ereg_replace ('_', ' ', $row['Field']);
+              $title_string = preg_replace ('/_/', ' ', $row['Field']);
               $title_string = ucwords ($title_string);
               $products_array[] = array ('id' => $row['Field'],
                                          'text' => $title_string
@@ -1317,7 +1317,7 @@
               break;
         
             default:  // Show everything else by formatting the field name
-              $title_string = ereg_replace ('_', ' ', $row['Field']);
+              $title_string = preg_replace ('/_/', ' ', $row['Field']);
               $title_string = ucwords ($title_string);
               $products_array[] = array ('id' => $row['Field'],
                                          'text' => $title_string
