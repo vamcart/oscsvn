@@ -119,12 +119,11 @@ if ($listing_split->number_of_pages > 1) {
         $lc_text = tep_create_sort_heading($_GET['sort'], $col+1, $lc_text);
       }
 
-/* ORIGINAL 213
+/* ORIGINAL 213 */
       $list_box_contents[0][] = array('align' => $lc_align,
                                      'params' => 'class="productListing-heading"',
                                        'text' => '&nbsp;' . $lc_text . '&nbsp;');
-*/
-/* CDS Patch. 4. BOF */
+/* CDS Patch. 4. BOF 
           if ($list_box_contents[0][$column_list_order[$col]]['text'] != '')
           {
             $lc_text = $list_box_contents[0][$column_list_order[$col]]['text'] . ' / ' . $lc_text;
@@ -134,7 +133,7 @@ if ($listing_split->number_of_pages > 1) {
                                                  'text'  => $lc_text == ''?'&nbsp;':$lc_text);
 /* CDS Patch. 4. EOF */
     }
-
+    
     if ($listing_split->number_of_rows > 0) {
       $rows = 0;
       $listing_query = tep_db_query($listing_split->sql_query);
@@ -265,12 +264,11 @@ if (tep_has_product_attributes($listing['products_id'])) {
               break;
           }
 
-/* ORIGINAL 213
+/* ORIGINAL 213 */
           $list_box_contents[$cur_row][] = array('align' => $lc_align,
                                                 'params' => 'class="productListing-data"',
                                                  'text'  => $lc_text);
-*/
-/* CDS Patch. 4. BOF */
+/* CDS Patch. 4. BOF 
           if ($list_box_contents[$cur_row][$column_list_order[$col]]['text'] != '')
           {
             $lc_text = $list_box_contents[$cur_row][$column_list_order[$col]]['text'] . '<br />' . $lc_text;
@@ -278,7 +276,7 @@ if (tep_has_product_attributes($listing['products_id'])) {
           $list_box_contents[$cur_row][$column_list_order[$col]] = array('align' => $lc_align,
                                                 'params' => 'class="productListing-data"',
                                                  'text'  => $lc_text);
-/* CDS Patch. 4. EOF */
+ CDS Patch. 4. EOF */
         }
       }
 
