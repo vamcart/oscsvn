@@ -278,8 +278,9 @@ div#tabs
 	
 #adminAppMenu {
   float: left;
-  width: 220px;
+  width: 190px;
   padding: 5px;
+  margin: 0;
 }
 
 #adminAppMenu h3 {
@@ -288,7 +289,12 @@ div#tabs
 
 #adminAppMenu ul {
   list-style: none;
-  margin: -5px 0 -5px -10px;
+  margin: 0;
   padding: 0;
 }
+
+#adminAppMenu div {
+	padding: 5px;
+	margin: 0;
+}	
 	
