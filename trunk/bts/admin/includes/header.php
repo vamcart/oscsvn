@@ -16,7 +16,7 @@
 
 ?>
 
-<link rel="stylesheet" type="text/css" href="../jscript/jquery/plugins/ui/css/redmond/jquery-ui-1.8.6.css">
+<link rel="stylesheet" type="text/css" href="../jscript/jquery/plugins/ui/css/smoothness/jquery-ui-1.8.7.custom.css">
 <script type="text/javascript" src="../jscript/jquery/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="../jscript/jquery/plugins/ui/jquery-ui-1.8.6.min.js"></script>
 
