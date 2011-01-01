@@ -50,7 +50,7 @@
 // include the list of project database tables
   require(DIR_WS_INCLUDES . 'database_tables.php');
 
-     define('BOX_WIDTH', 220); // how wide the boxes should be in pixels (default: 125)
+     define('BOX_WIDTH', 190); // how wide the boxes should be in pixels (default: 125)
  define('MENU_DHTML', false);
 
 // Define how do we update currency exchange rates
