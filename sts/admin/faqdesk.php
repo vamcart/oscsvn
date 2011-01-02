@@ -465,7 +465,6 @@ tinyMCE.init({
 </head>
 
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
-<div id="spiffycalendar" class="text"></div>
 <!-- header //-->
 <?php require(DIR_WS_INCLUDES . 'header.php'); ?>
 <!-- header_eof //-->
@@ -540,11 +539,8 @@ switch ($pInfo->faqdesk_sticky) {
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ?>
-<link rel="stylesheet" type="text/css" href="includes/javascript/spiffyCal/spiffyCal_v2_1.css">
-<script language="JavaScript" src="includes/javascript/spiffyCal/spiffyCal_v2_1.js"></script>
-<script language="javascript">
-var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "faqdesk_date_available","btnDate1","<?php echo $pInfo->faqdesk_date_available; ?>",scBTNMODE_CUSTOMBLUE);
-</script>
+<link rel="stylesheet" type="text/css" href="includes/javascript/date-picker/css/datepicker.css">
+<script language="JavaScript" src="includes/javascript/date-picker/js/datepicker.js"></script>
 
 	<tr>
 		<td>
@@ -638,7 +634,7 @@ var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "fa
 	<tr>
 		<td class="main" width="25%"><?php echo TEXT_FAQDESK_START_DATE; ?></td>
 		<td class="main">
-<script language="javascript">dateAvailable.writeControl(); dateAvailable.dateFormat="yyyy-MM-dd";</script>
+<?php echo tep_draw_input_field('faqdesk_date_available', $pInfo->faqdesk_date_available, 'size="10" class="format-y-m-d dividor-slash"'); ?>
 		</td>
 	</tr>
 </table>

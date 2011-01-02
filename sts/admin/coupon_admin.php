@@ -165,11 +165,8 @@
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 <script language="javascript" src="includes/menu.js"></script>
 <script language="javascript" src="includes/general.js"></script>
-<link rel="stylesheet" type="text/css" href="includes/javascript/spiffyCal/spiffyCal_v2_1.css">
-<script language="JavaScript" src="includes/javascript/spiffyCal/spiffyCal_v2_1.js"></script>
-<script language="javascript">
-  var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "new_product", "products_date_available","btnDate1","<?php echo $pInfo->products_date_available; ?>",scBTNMODE_CUSTOMBLUE);
-</script>
+<link rel="stylesheet" type="text/css" href="includes/javascript/date-picker/css/datepicker.css">
+<script language="JavaScript" src="includes/javascript/date-picker/js/datepicker.js"></script>
        <script language="JavaScript">
 <!-- Begin
        function init() {
@@ -180,7 +177,6 @@ define('customers_email_address', 'string', 'Customer or Newsletter Group');
 </head>
 <body OnLoad="init()" marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
 
-<div id="spiffycalendar" class="text"></div>
 <!-- header //-->
 <?php require(DIR_WS_INCLUDES . 'header.php'); ?>
 <!-- header_eof //-->

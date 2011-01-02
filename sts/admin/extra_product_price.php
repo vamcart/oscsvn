@@ -127,8 +127,6 @@ define('DISPLAYTTT', 'True');
 <?php
   if ( ($action == 'new') || ($action == 'edit') ) {
 ?>
-<link rel="stylesheet" type="text/css" href="includes/javascript/spiffyCal/spiffyCal_v2_1.css">
-<script language="JavaScript" src="includes/javascript/spiffyCal/spiffyCal_v2_1.js"></script>
 <script language="JavaScript">
 function RowClick(RowValue) {
   for (i=0; i<document.extra_product_price_form.length; i++) {
@@ -197,7 +195,6 @@ function SetCategories() {
 </script>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF" onload="SetCategories();SetFocus();">
-<div id="spiffycalendar" class="text"></div>
 <?php
   } else {
 ?>
@@ -246,10 +243,6 @@ function SetCategories() {
       $sInfo = new objectInfo(array());
     }
 ?>
-<script language="javascript">
-var StartDate = new ctlSpiffyCalendarBox("StartDate", "extra_product_price_form", "start", "btnDate1","<?php echo (($sInfo->extra_product_price_date_start == '0000-00-00') ? '' : tep_date_short($sInfo->extra_product_price_date_start)); ?>",scBTNMODE_CUSTOMBLUE);
-var EndDate = new ctlSpiffyCalendarBox("EndDate", "extra_product_price_form", "end", "btnDate2","<?php echo (($sInfo->extra_product_price_date_end == '0000-00-00') ? '' : tep_date_short($sInfo->extra_product_price_date_end)); ?>",scBTNMODE_CUSTOMBLUE);
-</script>
       <tr><form name="extra_product_price_form" <?php echo 'action="' . tep_href_link(FILENAME_EXTRA_PRODUCT_PRICE, tep_get_all_get_params(array('action', 'info', 'sID')) . 'action=' . $form_action, 'NONSSL') . '"'; ?> method="post"><?php if ($form_action == 'update') echo tep_draw_hidden_field('sID', $_GET['sID']); ?>
         <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
           <tr>

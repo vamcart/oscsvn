@@ -200,7 +200,6 @@ function popupImageWindow(url) {
 //--></script>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
-<div id="spiffycalendar" class="text"></div>
 <!-- header //-->
 <?php require(DIR_WS_INCLUDES . 'header.php'); ?>
 <!-- header_eof //-->
@@ -257,12 +256,8 @@ function popupImageWindow(url) {
       $groups_array[] = array('id' => $groups['banners_group'], 'text' => $groups['banners_group']);
     }
 ?>
-<link rel="stylesheet" type="text/css" href="includes/javascript/spiffyCal/spiffyCal_v2_1.css">
-<script language="JavaScript" src="includes/javascript/spiffyCal/spiffyCal_v2_1.js"></script>
-<script language="javascript">
-  var dateExpires = new ctlSpiffyCalendarBox("dateExpires", "new_banner", "expires_date","btnDate1","<?php echo $bInfo->expires_date; ?>",scBTNMODE_CUSTOMBLUE);
-  var dateScheduled = new ctlSpiffyCalendarBox("dateScheduled", "new_banner", "date_scheduled","btnDate2","<?php echo $bInfo->date_scheduled; ?>",scBTNMODE_CUSTOMBLUE);
-</script>
+<link rel="stylesheet" type="text/css" href="includes/javascript/date-picker/css/datepicker.css">
+<script language="JavaScript" src="includes/javascript/date-picker/js/datepicker.js"></script>
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
       </tr>
@@ -306,14 +301,14 @@ function popupImageWindow(url) {
           </tr>
           <tr>
             <td class="main"><?php echo TEXT_BANNERS_SCHEDULED_AT; ?><br><small>(dd/mm/yyyy)</small></td>
-            <td valign="top" class="main"><script language="javascript">dateScheduled.writeControl(); dateScheduled.dateFormat="dd/MM/yyyy";</script></td>
+            <td valign="top" class="main"><?php echo tep_draw_input_field('date_scheduled', $bInfo->date_scheduled, 'size="10" class="format-d-m-y dividor-slash"'); ?></td>
           </tr>
           <tr>
             <td colspan="2"><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
           </tr>
           <tr>
             <td valign="top" class="main"><?php echo TEXT_BANNERS_EXPIRES_ON; ?><br><small>(dd/mm/yyyy)</small></td>
-            <td class="main"><script language="javascript">dateExpires.writeControl(); dateExpires.dateFormat="dd/MM/yyyy";</script><?php echo TEXT_BANNERS_OR_AT . '<br>' . tep_draw_input_field('expires_impressions', $bInfo->expires_impressions, 'maxlength="7" size="7"') . ' ' . TEXT_BANNERS_IMPRESSIONS; ?></td>
+            <td class="main"><?php echo tep_draw_input_field('expires_date', $bInfo->expires_date, 'size="10" class="format-d-m-y dividor-slash"'); ?><?php echo TEXT_BANNERS_OR_AT . '<br>' . tep_draw_input_field('expires_impressions', $bInfo->expires_impressions, 'maxlength="7" size="7"') . ' ' . TEXT_BANNERS_IMPRESSIONS; ?></td>
           </tr>
         </table></td>
       </tr>
