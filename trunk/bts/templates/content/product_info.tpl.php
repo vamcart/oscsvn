@@ -372,7 +372,7 @@ if (OPTIONS_AS_IMAGES_ENABLED == 'true') include (FILENAME_OPTIONS_IMAGES);
                       FROM ". TABLE_PRODUCTS_EXTRA_FIELDS ." pef
              LEFT JOIN  ". TABLE_PRODUCTS_TO_PRODUCTS_EXTRA_FIELDS ." ptf
             ON ptf.products_extra_fields_id=pef.products_extra_fields_id
-            WHERE ptf.products_id=". (int) $products_id ." and ptf.products_extra_fields_value<>'' and (pef.languages_id='0' or pef.languages_id='".$languages_id."')
+            WHERE ptf.products_id=". (int) $_GET['products_id'] ." and ptf.products_extra_fields_value<>'' and (pef.languages_id='0' or pef.languages_id='".$languages_id."')
             ORDER BY products_extra_fields_order");
 
   while ($extra_fields = tep_db_fetch_array($extra_fields_query)) {
@@ -381,8 +381,8 @@ if (OPTIONS_AS_IMAGES_ENABLED == 'true') include (FILENAME_OPTIONS_IMAGES);
         echo '<tr>
 	  <td>
 	  <table border="0" width="50%" cellspacing="0" cellpadding="2px"><tr>
-      <td class="main" align="left" vallign="middle"><b><font size="1" color="#666666">'.$extra_fields['name'].': </b></font>';
-        echo '<font size="1" color="#666666">' .$extra_fields['value'].'<BR></font> </tr>
+      <td class="main" align="left" vallign="middle"><b>'.$extra_fields['name'].': </b>';
+        echo $extra_fields['value'].'<br /></tr>
       </table>
 	  </td>
       </tr>'; 
