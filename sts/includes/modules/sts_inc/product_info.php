@@ -299,7 +299,7 @@ tep_image_submit('button_in_cart.gif', IMAGE_BUTTON_IN_CART);
                       FROM ". TABLE_PRODUCTS_EXTRA_FIELDS ." pef
              LEFT JOIN  ". TABLE_PRODUCTS_TO_PRODUCTS_EXTRA_FIELDS ." ptf
             ON ptf.products_extra_fields_id=pef.products_extra_fields_id
-            WHERE ptf.products_id=". (int) $products_id ." and ptf.products_extra_fields_value<>'' and (pef.languages_id='0' or pef.languages_id='".$languages_id."')
+            WHERE ptf.products_id=". (int) $_GET['products_id'] ." and ptf.products_extra_fields_value<>'' and (pef.languages_id='0' or pef.languages_id='".$languages_id."')
             ORDER BY products_extra_fields_order");
     
     
