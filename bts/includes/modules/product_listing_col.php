@@ -171,12 +171,31 @@ if ($listing_split->number_of_pages > 1) {
               break;
             case 'PRODUCT_LIST_NAME':
               $lc_align = '';
+
+$extra_fields_text = '';
+$extra_fields_query = tep_db_query("
+					SELECT pef.products_extra_fields_status as status, pef.products_extra_fields_name as name, ptf.products_extra_fields_value as value
+					FROM ". TABLE_PRODUCTS_EXTRA_FIELDS ." pef
+					LEFT JOIN  ". TABLE_PRODUCTS_TO_PRODUCTS_EXTRA_FIELDS ." ptf
+					ON ptf.products_extra_fields_id=pef.products_extra_fields_id
+					WHERE ptf.products_id=". (int) $listing['products_id'] ." and ptf.products_extra_fields_value<>'' and (pef.languages_id='0' or pef.languages_id='".$languages_id."')
+					ORDER BY products_extra_fields_order");
+
+while ($extra_fields = tep_db_fetch_array($extra_fields_query)) {
+if (! $extra_fields['status'])
+continue;
+$extra_fields_text = $extra_fields_text.
+'<br />'.$extra_fields['name'].': ' .
+$extra_fields['value'];
+
+}
+
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
-                ' . tep_get_products_info($listing['products_id']);
+                ' . tep_get_products_info($listing['products_id']) . $extra_fields_text;
               } else {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
-                ' . tep_get_products_info($listing['products_id']);
+                ' . tep_get_products_info($listing['products_id']) . $extra_fields_text;
               }
               break;
             case 'PRODUCT_LIST_MANUFACTURER':
