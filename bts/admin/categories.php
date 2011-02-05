@@ -26,7 +26,7 @@ if (isset($_POST['upd'])) {$_GET['action']='update_category';}
   $action = (isset($_GET['action']) ? $_GET['action'] : '');
 
 // BOF: KategorienAdmin / OLISWISS
-  	$admin_access_query = tep_db_query("select admin_groups_id, admin_cat_access, admin_right_access from " . TABLE_ADMIN . " where admin_id=" . $login_id);
+  	$admin_access_query = tep_db_query("select admin_groups_id, admin_cat_access, admin_right_access from " . TABLE_ADMIN . " where admin_id=" . $_SESSION['login_id']);
 	$admin_access_array = tep_db_fetch_array($admin_access_query);
 	$admin_groups_id = $admin_access_array['admin_groups_id'];
 	$admin_cat_access = $admin_access_array['admin_cat_access'];
@@ -166,7 +166,7 @@ if (isset($_POST['upd'])) {$_GET['action']='update_category';}
 	  array_push($admin_cat_access_array_cats,$categories_id);
 	  $admin_cat_access = implode(",",$admin_cat_access_array_cats);
           $sql_data_array = array('admin_cat_access' => tep_db_prepare_input($admin_cat_access));
-          tep_db_perform(TABLE_ADMIN, $sql_data_array, 'update', 'admin_id = \'' . $login_id . '\'');
+          tep_db_perform(TABLE_ADMIN, $sql_data_array, 'update', 'admin_id = \'' . $_SESSION['login_id'] . '\'');
         }
 // EOF: KategorienAdmin / OLI 
          
@@ -3087,7 +3087,7 @@ echo '              <tr class="dataTableRow" onmouseover="rowOverEffect(this)" o
 
       }
 ?>
-                   <td></td><td class="dataTableContent"><?php if (strstr($admin_right_access,"PDELETE") or $login_id = 1) { ?><input title="<?php echo $products[products_id]." ddd ".$products[categories_id]; ?>"  name="prod_id[<?php echo $products[products_id]; ?>]" type="checkbox"  value="<?php echo $products[categories_id];  ?>" />&nbsp;<?php } echo '<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id'] . '&action=new_product') . '">' . tep_image(DIR_WS_ICONS . 'preview.gif', ICON_PREVIEW) . '</a>&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id']) . '">' . $products['products_name'];  ?></a> </td>
+                   <td></td><td class="dataTableContent"><?php if (strstr($admin_right_access,"PDELETE") or $_SESSION['login_id'] = 1) { ?><input title="<?php echo $products[products_id]." ddd ".$products[categories_id]; ?>"  name="prod_id[<?php echo $products[products_id]; ?>]" type="checkbox"  value="<?php echo $products[categories_id];  ?>" />&nbsp;<?php } echo '<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id'] . '&action=new_product') . '">' . tep_image(DIR_WS_ICONS . 'preview.gif', ICON_PREVIEW) . '</a>&nbsp;<a href="' . tep_href_link(FILENAME_CATEGORIES, 'cPath=' . $cPath . '&pID=' . $products['products_id']) . '">' . $products['products_name'];  ?></a> </td>
                 <td class="dataTableContent" align="center">
 
 <?php
