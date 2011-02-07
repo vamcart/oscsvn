@@ -860,8 +860,8 @@
       // Copy all Manufacturers to Filters
       case 'import_manufacturers':
         $manufacturer_query_raw = "select manufacturers_name
-                                   from " . TABLE_MANUFACTURERS . " 
-                                   order by manufacturers_name
+                                   from " . TABLE_MANUFACTURERS_INFO . " 
+                                   where languages_id = '" . (int)$languages_id . "' order by manufacturers_name
                                   ";
         // print $manufacturer_query_raw . "<br>\n";
         $manufacturer_query = tep_db_query ($manufacturer_query_raw);
