@@ -903,8 +903,8 @@
         $sort_order = $check_data['count'] + 1;
 
         $manufacturer_query_raw = "SELECT manufacturers_name
-                                   FROM " . TABLE_MANUFACTURERS . " 
-                                   WHERE manufacturers_name NOT IN (
+                                   FROM " . TABLE_MANUFACTURERS_INFO . " 
+                                   WHERE languages_id = '" . (int)$languages_id . "' and manufacturers_name NOT IN (
                                      SELECT filter
                                      FROM " . TABLE_SPECIFICATIONS_FILTERS_DESCRIPTION . "
                                    )
