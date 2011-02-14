@@ -369,7 +369,7 @@ define ('EP_UNLIMITED_IMAGES', false);  // default is false
 define ('EP_MVS_SUPPORT', false);  // default is false
 
 // Extra Fields Contribution 
-define ('EP_EXTRA_FIELDS_SUPPORT', false);  // default is false
+define ('EP_EXTRA_FIELDS_SUPPORT', true);  // default is false
 
 // UltraPics 2.05 LightBox Contrib (***FUNCTIONAL***)
 define ('EP_ULTRPICS_SUPPORT', true);  // default is false
@@ -2423,10 +2423,10 @@ function process_row( $item1, $filelayout, $filelayout_count, $default_these, $e
 
 		if (tep_db_num_rows(tep_db_query($sql_exist)) > 0) {
 			$sql_extra_field	=	"UPDATE ".TABLE_PRODUCTS_TO_PRODUCTS_EXTRA_FIELDS." SET products_extra_fields_value='".$v_products_extra_fields_value."' WHERE (products_id ='". $row['v_products_id'] . "') AND (products_extra_fields_id ='".$v_products_extra_fields_id ."')";
-			$str_err_report= " $v_products_extra_fields_id | $v_products_id  | $v_products_model | $v_products_extra_fields_value | <b><font color=black>Product Extra Fields Updated</font></b><br />";
+			$str_err_report= " $v_products_extra_fields_id | $v_products_id  | $v_products_model | $v_products_extra_fields_value | <b><font color=black>".EASY_EXTRA_FIELD_UPDATED."</font></b><br />";
 		} else {
 			$sql_extra_field	=	"INSERT INTO ".TABLE_PRODUCTS_TO_PRODUCTS_EXTRA_FIELDS."(products_id,products_extra_fields_id,products_extra_fields_value) VALUES ('". $row['v_products_id'] ."','".$v_products_extra_fields_id."','".$v_products_extra_fields_value."')";
-			$str_err_report= " $v_products_extra_fields_id | $v_products_id | $v_products_model | $v_products_extra_fields_value | <b><font color=green>Product Extra Fields Inserted</font></b><br />";
+			$str_err_report= " $v_products_extra_fields_id | $v_products_id | $v_products_model | $v_products_extra_fields_value | <b><font color=green>".EASY_EXTRA_FIELD_ADDED."</font></b><br />";
 		}
 
         $result = tep_db_query($sql_extra_field);

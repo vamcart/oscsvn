@@ -86,7 +86,7 @@ define('TEXT_EASYPOPULATE_QUICK_LINKS_3','Скачать <b>Полный');
 define('TEXT_EASYPOPULATE_QUICK_LINKS_4',' с модулем SPPC');
 define('TEXT_EASYPOPULATE_QUICK_LINKS_5','файл для редактирования');
 define('TEXT_EASYPOPULATE_QUICK_LINKS_6','файл в директории');
-define('TEXT_EASYPOPULATE_QUICK_LINKS_7','Скачать <b>дополнительные поля</b>');
+define('TEXT_EASYPOPULATE_QUICK_LINKS_7','Скачать <b>Дополнительные поля</b>');
 define('TEXT_EASYPOPULATE_QUICK_LINKS_8','Скачать <b>Артикул/Цена/Количество');
 define('TEXT_EASYPOPULATE_QUICK_LINKS_9','Скачать <b>Артикул/Категория');
 define('TEXT_EASYPOPULATE_QUICK_LINKS_10','Скачать <b>Фругл');
@@ -161,5 +161,8 @@ define('EASY_LABEL_DELETE_STATUS_1', '<font color=red>Товар</font><font col
 define('EASY_LABEL_DELETE_STATUS_2', ' </font><font color=red> удалён!</font>');
 
 define('EASY_LABEL_TEXT_NO_MODEL', 'Не найден артикул товара. Данная строка не импортирована: ');
+
+define('EASY_EXTRA_FIELD_UPDATED', 'Дополнительные поля обновлены');
+define('EASY_EXTRA_FIELD_ADDED', 'Дополнительные поля добавлены');
 
 ?>

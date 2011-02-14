@@ -162,4 +162,7 @@ define('EASY_LABEL_DELETE_STATUS_2', " from the database !!</font><br>");
 
 define('EASY_LABEL_TEXT_NO_MODEL', 'No products_model field in record. This line was not imported: ');
 
+define('EASY_EXTRA_FIELD_UPDATED', 'Product Extra Fields Updated');
+define('EASY_EXTRA_FIELD_ADDED', 'Product Extra Fields Inserted');
+
 ?>
