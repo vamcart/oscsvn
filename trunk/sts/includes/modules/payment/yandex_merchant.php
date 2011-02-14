@@ -466,6 +466,7 @@
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш SCID', 'MODULE_PAYMENT_YANDEX_MERCHANT_SCID', '', 'Номер витрины магазина в ЦПП. Выдается ЦПП.', '6', '5', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_YANDEX_MERCHANT_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '6', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_YANDEX_MERCHANT_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '7', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+    }
     
     function remove() {
       tep_db_query("delete from " . TABLE_CONFIGURATION . " where configuration_key in ('" . implode("', '", $this->keys()) . "')");
@@ -475,19 +476,5 @@
       return array('MODULE_PAYMENT_YANDEX_MERCHANT_STATUS', 'MODULE_PAYMENT_YANDEX_MERCHANT_SHOP_ID', 'MODULE_PAYMENT_YANDEX_MERCHANT_SCID', 'MODULE_PAYMENT_YANDEX_MERCHANT_SORT_ORDER', 'MODULE_PAYMENT_YANDEX_MERCHANT_ZONE');
     }
 
-// format prices without currency formatting
-    function format_raw($number, $currency_code = '', $currency_value = '') {
-      global $currencies, $currency;
-
-      if (empty($currency_code) || !$this->is_set($currency_code)) {
-        $currency_code = $currency;
-      }
-
-      if (empty($currency_value) || !is_numeric($currency_value)) {
-        $currency_value = $currencies->currencies[$currency_code]['value'];
-      }
-
-      return number_format(tep_round($number * $currency_value, $currencies->currencies[$currency_code]['decimal_places']), $currencies->currencies[$currency_code]['decimal_places'], '.', '');
-    }
   }
 ?>
