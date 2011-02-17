@@ -70,6 +70,10 @@ define('TEXT_EASYPOPULATE_LABEL_SPECIALS','specials');
 define('TEXT_EASYPOPULATE_LABEL_ADD_IMAGES','add images');
 define('TEXT_EASYPOPULATE_LABEL_VENDOR','vendor');
 define('TEXT_EASYPOPULATE_LABEL_XSELL','xsell');
+define('TEXT_EASYPOPULATE_LABEL_QUANTITY_MIN','min quantity');
+define('TEXT_EASYPOPULATE_LABEL_QUANTITY_UNITS','order units');
+define('TEXT_EASYPOPULATE_LABEL_SORT','sort order');
+define('TEXT_EASYPOPULATE_LABEL_SHORT_DESCRIPTION','short description');
 
 define('TEXT_EASYPOPULATE_FILTER_BY','Filter by: ');
 define('TEXT_EASYPOPULATE_FILTER_CATEGORY','- Category -');
