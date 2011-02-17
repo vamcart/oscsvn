@@ -297,8 +297,8 @@ $custom_fields = array();
 // may need to incorporate custom code to correctly import your data.
 //
 
-$custom_fields[TABLE_PRODUCTS] = array('products_quantity_order_min' => 'quantity_order_min','products_quantity_order_units' => 'quantity_order_units','products_sort_order' => 'sort_order'); // this line is used if you have no custom fields to import/export
-$custom_fields[TABLE_PRODUCTS_DESCRIPTION] = array('products_info' => 'info'); // this line is used if you have no custom fields to import/export
+$custom_fields[TABLE_PRODUCTS] = array('products_quantity_order_min' => TEXT_EASYPOPULATE_LABEL_QUANTITY_MIN,'products_quantity_order_units' => TEXT_EASYPOPULATE_LABEL_QUANTITY_UNITS,'products_sort_order' => TEXT_EASYPOPULATE_LABEL_SORT); // this line is used if you have no custom fields to import/export
+$custom_fields[TABLE_PRODUCTS_DESCRIPTION] = array('products_info' => TEXT_EASYPOPULATE_LABEL_SHORT_DESCRIPTION); // this line is used if you have no custom fields to import/export
 
 //
 // FINAL NOTE: this currently only works with the "products" & "products_description" table.
