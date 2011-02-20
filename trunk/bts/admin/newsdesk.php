@@ -428,15 +428,13 @@ tinyMCE.init({
 	mode : "textareas",
 	editor_deselector : "notinymce",
 	theme : "advanced",
-	width : 650,
-	height : 300,
 	language : "<?php echo DEFAULT_LANGUAGE; ?>",
 	paste_create_paragraphs : false,
 	paste_create_linebreaks : false,
 	paste_use_dialog : true,
 	convert_urls : false,
 
-	plugins : "safari,typograf,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,imagemanager,filemanager",
+	plugins : "safari,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,fullscreen,noneditable,visualchars,nonbreaking,typograf",
 
 	file_browser_callback : "tinyBrowser",
 
@@ -454,6 +452,13 @@ tinyMCE.init({
 	theme_advanced_resizing : true
 
 });
+
+function toggleHTMLEditor(id) {
+	if (!tinyMCE.get(id))
+		tinyMCE.execCommand("mceAddControl", false, id);
+	else
+		tinyMCE.execCommand("mceRemoveControl", false, id);
+}
 </script>
 <?php } ?>
 <script language="javascript" src="includes/menu.js"></script>
