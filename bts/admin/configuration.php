@@ -101,7 +101,16 @@ $text = constant('CONFIGURATION_GROUP_' . $cfg_group['configuration_group_id']);
 <?php
   $configuration_query = tep_db_query("select configuration_key,configuration_title,configuration_description,configuration_id, configuration_value, use_function,set_function from " . TABLE_CONFIGURATION . " where configuration_group_id = '" . (int)$_GET['gID'] . "' order by sort_order");
 
+	$rows = 0;
   while ($configuration = tep_db_fetch_array($configuration_query)) {
+	$rows++;
+
+        if (($rows/2) == floor($rows/2)) {
+          $class = "even";
+        } else {
+          $class = "odd";
+        }	
+        
  /*   if ($_GET['gID'] == 6) {
       switch ($configuration['configuration_key']) {
         case 'MODULE_PAYMENT_INSTALLED':
@@ -178,11 +187,11 @@ $conf_desc = constant($configuration['configuration_key'].'_DESC');
 
    echo '
   <tr>
-    <td width="300" valign="top" align="right" class="dataTableContent"><b>'.$conf_title.'</b></td>
+    <td width="300" valign="top" align="right" class="dataTableContent-'.$class.'">'.$conf_title.'</td>
     <td valign="top" class="dataTableContent">
     <table width="100%"  border="0" cellspacing="0" cellpadding="2">
       <tr>
-        <td style="background-color:#DFDFDF ; border: 1px solid; border-color: #CCCCCC;" class="dataTableContent">'.$value_field.'</td>
+        <td style="background-color:#DFDFDF ; border: 1px solid; border-color: #CCCCCC;" class="dataTableContent-'.$class.'">'.$value_field.'</td>
       </tr>
     </table>
     '.$conf_desc.'<br /></td>
