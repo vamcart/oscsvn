@@ -21,12 +21,41 @@
   $specification_box_heading = array();
   $specification_box_heading[] = array ('text' => SPECIFICATION_TITLE_PRODUCTS);
   
+  
+  $categories_query_raw = "select  sg.specification_group_id, 
+                                   sg.specification_group_name, 
+                                   sg.show_products
+                             from " . TABLE_SPECIFICATION_GROUPS . " sg,
+                                  " . TABLE_SPECIFICATIONS_TO_CATEGORIES . " sg2c
+                             where sg.show_products = 'True'
+                               and sg.specification_group_id = sg2c.specification_group_id
+                               and sg2c.categories_id = '" . (int) $current_category_id . "'
+                            ";
+  $categories_query = tep_db_query ($categories_query_raw);
+  $count_categories = tep_db_num_rows ($categories_query);
+  $specification_text  = '<table class="specification_box" border="0" cellpadding="0" cellspacing="0" width="100%">';
+  if ($count_categories > 0) {
+  //print $count_categories . "<br>\n";
+  
+  $specifications_box_contents = array();
+
+  
+  while ($categories_data = tep_db_fetch_array ($categories_query) ) {    
+    
+
+ // print $categories_data['specification_group_id'] . "<br>\n";
+ //   print $categories_data['specification_group_name'] . "<br>\n";
+ //   print $categories_data['show_products'] . "<br>\n";
+  
+   
   $specifications_query_raw = "select ps.specification, 
                                       s.filter_display,
                                       s.enter_values,
                                       sd.specification_name, 
                                       sd.specification_prefix, 
-                                      sd.specification_suffix                                      
+                                      sd.specification_suffix,
+                                      s.specification_group_id,
+                                      sg.specification_group_name                                      
                                from " . TABLE_PRODUCTS_SPECIFICATIONS . " ps, 
                                     " . TABLE_SPECIFICATION . " s, 
                                     " . TABLE_SPECIFICATION_DESCRIPTION . " sd, 
@@ -35,7 +64,8 @@
                                where sg.show_products = 'True'
                                  and s.show_products = 'True'
                                  and s.specification_group_id = sg.specification_group_id 
-                                 and sg.specification_group_id = sg2c.specification_group_id 
+                                 and sg.specification_group_id = sg2c.specification_group_id
+                                 and sg.specification_group_id = '" . (int) $categories_data['specification_group_id'] . "' 
                                  and sd.specifications_id = s.specifications_id
                                  and ps.specifications_id = sd.specifications_id
                                  and sg2c.categories_id = '" . (int) $current_category_id . "' 
@@ -45,22 +75,38 @@
                                order by s.specification_sort_order, 
                                         sd.specification_name
                              ";
-  // print $specifications_query_raw . "<br>\n";
+   
   $specifications_query = tep_db_query ($specifications_query_raw);
+    //   print $specifications_query_raw . "<br>\n"; 
 
+  
   $count_specificatons = tep_db_num_rows ($specifications_query);
-  if ($count_specificatons >= SPECIFICATIONS_MINIMUM_PRODUCTS || SPECIFICATIONS_BOX_FRAME_STYLE == 'Tabs') {
-    $specifications_box_contents = array();
-    $specification_text = '<ul class=specification_box>' . "\n";
 
+  //print $count_specificatons . "<br>\n";
+   if ($count_specificatons > 0) {
+   
+    $specification_text .= '<tr ><td class="specification_box_head">';
+    $specification_text .= '<p>' . $categories_data['specification_group_name'] . '</p>';
+    $specification_text .= '</td></tr><tr><td><table class="specification_box_cont"  border="0" cellpadding="0" cellspacing="0" width="100%">';
+
+    
+   $row = 0;
+   
     while ($specifications = tep_db_fetch_array ($specifications_query) ) {
       if ($specifications['specification'] != '') {
-        $specification_text .= '<li>';
+        if($row==0){
+           $specification_text .= '<tr class="specification_box_cont_tr2"><td width="50%">';
+        }else{
+           $specification_text .= '<tr><td width="50%">';
+        }
+        
       
         if (SPECIFICATIONS_SHOW_NAME_PRODUCTS == 'True') {
-          $specification_text .= $specifications['specification_name'] . ': ';
+          $specification_text .= $specifications['specification_name'] . ' ';
         }
       
+        $specification_text .= '</td><td width="50%">';
+        
         $specification_text .= $specifications['specification_prefix'] . ' ';
                       
         if ($specifications['display'] == 'image' || $specifications['display'] == 'multiimage' || $specifications['enter'] == 'image' || $specifications['enter'] == 'multiimage') { 
@@ -70,20 +116,34 @@
         }
 
         $specification_text .= $specifications['specification_suffix'];
-        $specification_text .= '</li>' . "\n";
+       // $specification_text .= $specifications['specification_group_id'];
+       // $specification_text .= $specifications['specification_group_name'];
+        $specification_text .= '</td></tr>';
+        $row++;
+        if($row>1){$row=0;}
+        
       } // if ($specifications['specification']
     } // while ($specifications
-    $specification_text .= '</ul>' . "\n";
+    $specification_text .= '</table></td></tr>';
+    }
+   }
+   
     
+    
+   } 
+    $specification_text .= '</table>';
     $specifications_box_contents[0] = array ('align' => 'left',
-                                             'params' => 'class="main" valign="middle"',
+                                             'params' => 'valign="middle"',
                                              'text' => $specification_text
                                             );
+
+
+
     
 ?>
-<table border="0" width="100%" cellspacing="2" cellpadding="3" class="specs_box">
+<table border="0" width="100%" cellspacing="2" cellpadding="3">
   <tr>
-    <td class="main" valign="top">
+    <td valign="top">
 <!-- products_specifications_box //-->
 <?php
     // Show the heading if selected
@@ -117,5 +177,5 @@
   </tr>
 </table>
 <?php
-  } //if ($count_specificatons
+
 ?>
