@@ -84,7 +84,7 @@ new Rico.Accordion( $('accordionDiv'), {panelHeight:210, collapsedBg:'#B3BAC5', 
     							   from " . TABLE_CUSTOMERS . " c left join " . TABLE_ADDRESS_BOOK . " a on c.customers_id = a.customers_id and c.customers_default_address_id = a.address_book_id
     							   left join " . TABLE_COUNTRIES . " co on co.countries_id = a.entry_country_id
     							   order by c.customers_id";
-    $customers_split = new splitPageResults($HTTP_GET_VARS['page'], MAX_DISPLAY_SEARCH_RESULTS * 4, $customers_query_raw, $customers_query_numrows);
+    $customers_split = new splitPageResults($_GET['page'], MAX_DISPLAY_SEARCH_RESULTS * 4, $customers_query_raw, $customers_query_numrows);
     $customers_query = tep_db_query($customers_query_raw);
     while ($customers = tep_db_fetch_array($customers_query)) {
 
@@ -123,8 +123,8 @@ new Rico.Accordion( $('accordionDiv'), {panelHeight:210, collapsedBg:'#B3BAC5', 
               <tr>
                 <td colspan="4"><table border="0" width="100%" cellspacing="0" cellpadding="2">
                   <tr>
-                    <td class="smallText" valign="top"><?php echo $customers_split->display_count($customers_query_numrows, MAX_DISPLAY_SEARCH_RESULTS * 4, $HTTP_GET_VARS['page'], TEXT_DISPLAY_NUMBER_OF_CUSTOMERS); ?></td>
-                    <td class="smallText" align="right"><?php echo $customers_split->display_links($customers_query_numrows, MAX_DISPLAY_SEARCH_RESULTS * 4, MAX_DISPLAY_PAGE_LINKS, $HTTP_GET_VARS['page'], tep_get_all_get_params(array('page', 'info', 'x', 'y', 'cID'))); ?></td>
+                    <td class="smallText" valign="top"><?php echo $customers_split->display_count($customers_query_numrows, MAX_DISPLAY_SEARCH_RESULTS * 4, $_GET['page'], TEXT_DISPLAY_NUMBER_OF_CUSTOMERS); ?></td>
+                    <td class="smallText" align="right"><?php echo $customers_split->display_links($customers_query_numrows, MAX_DISPLAY_SEARCH_RESULTS * 4, MAX_DISPLAY_PAGE_LINKS, $_GET['page'], tep_get_all_get_params(array('page', 'info', 'x', 'y', 'cID'))); ?></td>
                   </tr>
                  </td>
                </tr>
@@ -154,7 +154,7 @@ new Rico.Accordion( $('accordionDiv'), {panelHeight:210, collapsedBg:'#B3BAC5', 
 else
 {
 
-	if($HTTP_POST_VARS['separator']!="") $sep=stripcslashes($HTTP_POST_VARS['separator']); else $sep="\t";
+	if($_POST['separator']!="") $sep=stripcslashes($_POST['separator']); else $sep="\t";
 	$sep= str_replace('\t', "\011", $sep);
 
 	$contents="customers_id".$sep."customers_lastname".$sep."customers_firstname".$sep."customers_email_address".$sep."customers_gender".$sep."customers_dob".$sep."entry_company".$sep."entry_street_address".$sep."entry_postcode".$sep."entry_city".$sep."entry_state".$sep."entry_suburb".$sep."countries_name".$sep."customers_telephone".$sep."customers_fax\n";
