@@ -70,8 +70,6 @@
   $auth = new Auth();
 // BOF zen-cart integration
 
-$_SESSION['customers_status_id'] = 1;
-
   if (isset($_GET['sid']) && isset($_GET['vam'])) {
     $dir_ws_admin = preg_replace('/[^a-zA-Z0-9\-_]/', '', $_GET['vam']) . '/';
     $dir_fs_admin = str_replace('\\', '/', __FILE__);
@@ -121,24 +119,25 @@ $_SESSION['customers_status_id'] = 1;
         $suhosinExtension = extension_loaded('suhosin');
         $suhosinSetting = strtoupper(@ini_get('suhosin.session.encrypt'));
 
-        if (!$suhosinExtension) {
-          if (strpos($session_data, 'customers_status_id') == 0) $session_data = base64_decode($session_data);
-          if (strpos($session_data, 'customers_status_id') == 0) $session_data = '';
-        }
+    //    if (!$suhosinExtension) {
+          if (strpos($session_data, 'login_groups_id|s') == 1) $session_data = base64_decode($session_data);
+          if (strpos($session_data, 'login_groups_id|s') == 1) $session_data = '';
+    //    }
+    
         // uncomment the following line if you have suhosin enabled and see errors on the cart-contents sidebar
         //$hardenedStatus = ($suhosinExtension == TRUE || $suhosinSetting == 'On' || $suhosinSetting == 1) ? TRUE : FALSE;
         if ($session_data != '' && $hardenedStatus == TRUE) $session_data = '';
 
-        if ($length = strlen($session_data) && strpos($session_data, 'customers_status_id') !== false) {
-          $start_id = (int)strpos($session_data, 'customers_status_id');
-          $session_data_id = substr($session_data, $start_id, (strpos($session_data, ';', $start_id) - $start_id + 7));
-          $session_data_id = str_replace('customers_status_id";s:1:"0','customers_status_id|0',$session_data_id);
+        if ($length = strlen($session_data) && strpos($session_data, 'login_groups_id|s') !== false) {
+          $start_id = (int)strpos($session_data, 'login_groups_id|s');
+
+          $session_data_id = substr($session_data, $start_id, (strpos($session_data, ';', $start_id) - $start_id + 1));
 
     //      session_decode($session_data_id);
           $session_data_id = explode('|', $session_data_id);
 
           if (isset($session_data_id[1])) {
-            $_SESSION[$session_data_id[0]] = $session_data_id[1];
+            $_SESSION[$session_data_id[0]] = unserialize($session_data_id[1]);
           }
 
         }
@@ -165,7 +164,7 @@ $_SESSION['customers_status_id'] = 1;
     chdir($cwd);
   }
 
-  if ($_SESSION['customers_status_id'] == 0) {
+  if ($_SESSION['login_groups_id'] == 1) {
     $_SESSION[$auth->__loginIndexInSession] = true;
   } else {
 //    header('HTTP/1.1 406 Not Acceptable');
