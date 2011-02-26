@@ -173,4 +173,7 @@ define('FILENAME_EMAIL_QUEUE','email_queue.php');
 
 define('FILENAME_YML_IMPORT','yml_import.php');
 
+  define('FILENAME_EXPORTORDERS', 'exportorders.php');
+  define('FILENAME_CUSTOMERS_EXPORT', 'customer_export.php');
+
 ?>

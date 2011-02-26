@@ -572,5 +572,8 @@ define('BOX_EMAIL_QUEUE', 'Email Queue');
 define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'Displaying <b>%d</b> to <b>%d</b> (of <b>%d</b> entries)');         
         
 define('BOX_YML_IMPORT', 'YML import/export');
+
+define('BOX_CUSTOMERS_EXPORTORDERS', 'Orders export');
+define('BOX_CUSTOMERS_EXPORT', 'Customers export'); 
  
 ?>

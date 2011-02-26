@@ -18,10 +18,20 @@
         'title' => BOX_CUSTOMERS_CUSTOMERS,
         'link' => tep_href_link(FILENAME_CUSTOMERS)
       ),
+	  array(
+        'code' => FILENAME_CUSTOMERS_EXPORT,
+        'title' => BOX_CUSTOMERS_EXPORT,
+        'link' => tep_href_link(FILENAME_CUSTOMERS_EXPORT)
+      ),
       array(
         'code' => FILENAME_ORDERS,
         'title' => BOX_CUSTOMERS_ORDERS,
         'link' => tep_href_link(FILENAME_ORDERS)
+      ),
+      array(
+        'code' => FILENAME_EXPORTORDERS,
+        'title' => BOX_CUSTOMERS_EXPORTORDERS,
+        'link' => tep_href_link(FILENAME_EXPORTORDERS)
       ),
       array(
         'code' => FILENAME_GROUPS,
