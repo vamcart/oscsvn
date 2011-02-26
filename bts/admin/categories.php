@@ -1214,7 +1214,8 @@ tinyMCE.init({
 
 	plugins : "safari,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,fullscreen,noneditable,visualchars,nonbreaking,typograf",
 
-	file_browser_callback : "tinyBrowser",
+	file_browser_callback : "ajaxfilemanager",
+	elements : "ajaxfilemanager",
 
 	spellchecker_languages : "+Russian=ru,English=en",
 	spellchecker_rpc_url : "<?php echo HTTP_SERVER . DIR_WS_CATALOG; ?>admin/includes/javascript/tiny_mce/plugins/spellchecker/rpc_proxy.php",
@@ -1231,12 +1232,39 @@ tinyMCE.init({
 
 });
 
+  function ajaxfilemanager(field_name, url, type, win) {
+    var ajaxfilemanagerurl = "<?php echo HTTP_SERVER . DIR_WS_CATALOG.'admin/includes/javascript/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php?language=' . strtolower($lang) . '&vam=' . trim(DIR_WS_ADMIN, '/') . '&sid=' . session_id(); ?>";
+    switch (type) {
+      case "image":
+        break;
+      case "media":
+        break;
+      case "flash":
+        break;
+      case "file":
+        break;
+      default:
+        return false;
+    }
+    tinyMCE.activeEditor.windowManager.open({
+      url: ajaxfilemanagerurl,
+      width: 782,
+      height: 440,
+      inline : "yes",
+      close_previous : "no"
+    },{
+      window : win,
+      input : field_name
+    });
+  }
+  
 function toggleHTMLEditor(id) {
 	if (!tinyMCE.get(id))
 		tinyMCE.execCommand("mceAddControl", false, id);
 	else
 		tinyMCE.execCommand("mceRemoveControl", false, id);
 }
+
 </script>
 <?php } ?>
 <script language="javascript" src="includes/menu.js"></script>
