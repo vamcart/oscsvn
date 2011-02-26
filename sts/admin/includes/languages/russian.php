@@ -577,5 +577,8 @@ define('BOX_EMAIL_QUEUE', 'Очередь email');
 define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> записей)');
          
 define('BOX_YML_IMPORT', 'Я-маркет импорт/экспорт');
+
+define('BOX_CUSTOMERS_EXPORTORDERS', 'Экспорт заказов');
+define('BOX_CUSTOMERS_EXPORT', 'Экспорт клиентов'); 
          
 ?>

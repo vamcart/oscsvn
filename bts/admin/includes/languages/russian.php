@@ -576,4 +576,7 @@ define('TEXT_DISPLAY_NUMBER_OF_ENTRIES', 'Показано <b>%d</b> - <b>%d</b>
 
 define('BOX_YML_IMPORT', 'Я-маркет импорт/экспорт');
          
+define('BOX_CUSTOMERS_EXPORTORDERS', 'Экспорт заказов');
+define('BOX_CUSTOMERS_EXPORT', 'Экспорт клиентов'); 
+         
 ?>
