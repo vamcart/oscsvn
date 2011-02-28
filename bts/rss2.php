@@ -164,7 +164,7 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$language
 
 		case "specials_random":
 			$random = true;
-			$limit = " limit " . MAX_RANDOM_SELECT_SPECIALS;
+			$limit = " limit " . (int)MAX_RANDOM_SELECT_SPECIALS;
 		case "specials":
 			$specials_product_query = "select p.products_id, pd.products_name, pd.products_description, p.products_image, p.products_date_added, p.products_last_modified, p.products_price, p.products_tax_class_id, s.specials_new_products_price
 														 from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, "
@@ -173,13 +173,13 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$language
 														 and p.products_id = s.products_id
 														 and pd.products_id = s.products_id
 														 and pd.language_id = '" . (int)$languages_id . "'
-														 and s.status = '1'" . (int)$limit;
+														 and s.status = '1'" . $limit;
 			tep_rss_products($specials_product_query);
 			break;
 
 		case "featured_random":
 			$random = true;
-			$limit = " limit " . MAX_DISPLAY_FEATURED_PRODUCTS_LISTING;
+			$limit = " limit " . (int)MAX_DISPLAY_FEATURED_PRODUCTS_LISTING;
 		case "featured":
 			$featured_products_query = "select p.products_id, pd.products_name, pd.products_description, p.products_image, p.products_date_added, p.products_last_modified
 													 from " . TABLE_PRODUCTS . " p
@@ -190,13 +190,13 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$language
 														and p.products_status = '1'
 														and f.status = '1'
 														and pd.language_id = '" . (int)$languages_id . "'
-													 order by pd.products_name desc" . (int)$limit;
+													 order by pd.products_name desc" . $limit;
 			tep_rss_products($featured_products_query);
 			break;
 
 		case "best_sellers_random":
 			$random = true;
-			$limit = " limit " . MAX_DISPLAY_BESTSELLERS;
+			$limit = " limit " . (int)MAX_DISPLAY_BESTSELLERS;
 		case "best_sellers":
 			$cat_where = $cat_from = "";
 			if (isset($current_category_id) && ($current_category_id > 0)) {
@@ -211,20 +211,20 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$language
 														 and p.products_ordered > 0
 														 and p.products_id = pd.products_id
 														 and pd.language_id = '" . (int)$languages_id . "'" . $cat_where ."
-														 order by p.products_ordered desc, pd.products_name" . (int)$limit;
+														 order by p.products_ordered desc, pd.products_name" . $limit;
 			tep_rss_products($best_sellers_query);
 			break;
 
 		case "upcoming_random":
 			$random = true;
-			$limit = " limit " . MAX_DISPLAY_UPCOMING_PRODUCTS;
+			$limit = " limit " . (int)MAX_DISPLAY_UPCOMING_PRODUCTS;
 		case "upcoming":
 			$cat_where = $cat_from = "";
 			if (isset($current_category_id) && ($current_category_id > 0)) {
 				$cat_from = ", " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c ";
 				$cat_where = "and p.products_id = p2c.products_id
-											and c.categories_id = '" . $current_category_id . "'
-											and p2c.categories_id = '" . $current_category_id . "' ";
+											and c.categories_id = '" . (int)$current_category_id . "'
+											and p2c.categories_id = '" . (int)$current_category_id . "' ";
 			}
 			$expected_query = "select p.products_id, pd.products_name, pd.products_description, p.products_image, products_date_added, p.products_last_modified, products_date_available as date_expected
 												 from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd" . $cat_from . "
@@ -233,13 +233,13 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$language
 												 and p.products_id = pd.products_id
 												 and pd.language_id = '" . (int)$languages_id .
 												$cat_where . "'
-												 order by " . EXPECTED_PRODUCTS_FIELD . " " . EXPECTED_PRODUCTS_SORT . (int)$limit;
+												 order by " . EXPECTED_PRODUCTS_FIELD . " " . EXPECTED_PRODUCTS_SORT . $limit;
 			tep_rss_products($expected_query);
 			break;
 
 		case "new_products_random":
 			$random = true;
-			$limit = " limit " . MAX_RANDOM_SELECT_NEW;
+			$limit = " limit " . (int)MAX_RANDOM_SELECT_NEW;
 		case "new_products":
 			switch (true) {
 				case (SHOW_NEW_PRODUCTS_LIMIT == '0'):
@@ -269,12 +269,12 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$language
 			$sql_products .= "where p.products_id = pd.products_id ";
 			if (isset($current_category_id) && ($current_category_id > 0)) {
 				$sql_products .= "and p.products_id = p2c.products_id
-													and c.categories_id = '" . (int)$current_category_id . "'
-													and p2c.categories_id = '" . (int)$current_category_id . "' ";
+													and c.categories_id = '" . $current_category_id . "'
+													and p2c.categories_id = '" . $current_category_id . "' ";
 			}
-			$sql_products .= "and pd.language_id = " . (int)$languages_id . "
+			$sql_products .= "and pd.language_id = " . $languages_id . "
 												and p.products_status = '1'" . $days_limit . "
-												order by p.products_last_modified desc" . (int)$limit;
+												order by p.products_last_modified desc" . $limit;
 
 			tep_rss_products($sql_products);
 			break;
