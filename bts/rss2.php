@@ -95,7 +95,7 @@ define('RSS_CONTENT_COPYRIGHT', 'Copyright &copy; ' . date('Y') . ' ' . STORE_OW
 	$rss->rss_feed_image(RSS_IMAGE_NAME, HTTP_SERVER . DIR_WS_CATALOG, HTTP_SERVER . DIR_WS_CATALOG . RSS_IMAGE);
 
 // get the language code...
-$lang_code_query = tep_db_query("select code from " . TABLE_LANGUAGES . " where languages_id = " . $languages_id);
+$lang_code_query = tep_db_query("select code from " . TABLE_LANGUAGES . " where languages_id = " . (int)$languages_id);
    if($lang_code = tep_db_fetch_array($lang_code_query))
       $lang_code = $lang_code['code'];
    else
@@ -149,7 +149,7 @@ $lang_code_query = tep_db_query("select code from " . TABLE_LANGUAGES . " where 
       select p.newsdesk_id, pd.language_id, pd.newsdesk_article_name, pd.newsdesk_article_description, pd.newsdesk_article_shorttext, pd.newsdesk_article_url, 
 p.newsdesk_image, p.newsdesk_image_two, p.newsdesk_image_three, p.newsdesk_date_added, p.newsdesk_last_modified, pd.newsdesk_article_viewed, 
 p.newsdesk_date_available, p.newsdesk_status  from " . TABLE_NEWSDESK . " p, " . TABLE_NEWSDESK_DESCRIPTION . " 
-pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id . "' and newsdesk_status = 1 and p.newsdesk_sticky = 0 ORDER BY newsdesk_date_added DESC
+pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . (int)$languages_id . "' and newsdesk_status = 1 and p.newsdesk_sticky = 0 ORDER BY newsdesk_date_added DESC
       ";
 			tep_rss_news($news_query);
 			break;
@@ -157,7 +157,7 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 		case "articles":
 			$articles_query = "SELECT ad.articles_id, ad.articles_name, ad.articles_description, a.articles_date_added 
 			                                            FROM " . TABLE_ARTICLES . " a, " . TABLE_ARTICLES_DESCRIPTION . " ad
-			                                            WHERE ad.articles_id = a.articles_id and ad.language_id='" . $languages_id . "'";
+			                                            WHERE ad.articles_id = a.articles_id and ad.language_id='" . (int)$languages_id . "'";
 			                                            
 			tep_rss_articles($articles_query);
 			break;
@@ -172,8 +172,8 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 														 where p.products_status = '1'
 														 and p.products_id = s.products_id
 														 and pd.products_id = s.products_id
-														 and pd.language_id = '" . $languages_id . "'
-														 and s.status = '1'" . $limit;
+														 and pd.language_id = '" . (int)$languages_id . "'
+														 and s.status = '1'" . (int)$limit;
 			tep_rss_products($specials_product_query);
 			break;
 
@@ -189,8 +189,8 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 														and p.products_id = pd.products_id
 														and p.products_status = '1'
 														and f.status = '1'
-														and pd.language_id = '" . $languages_id . "'
-													 order by pd.products_name desc" . $limit;
+														and pd.language_id = '" . (int)$languages_id . "'
+													 order by pd.products_name desc" . (int)$limit;
 			tep_rss_products($featured_products_query);
 			break;
 
@@ -210,8 +210,8 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 														 where p.products_status = '1'
 														 and p.products_ordered > 0
 														 and p.products_id = pd.products_id
-														 and pd.language_id = '" . $languages_id . "'" . $cat_where ."
-														 order by p.products_ordered desc, pd.products_name" . $limit;
+														 and pd.language_id = '" . (int)$languages_id . "'" . $cat_where ."
+														 order by p.products_ordered desc, pd.products_name" . (int)$limit;
 			tep_rss_products($best_sellers_query);
 			break;
 
@@ -231,9 +231,9 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 												 where to_days(products_date_available) >= to_days(now())
 												 and p.products_status = '1'
 												 and p.products_id = pd.products_id
-												 and pd.language_id = '" . $languages_id .
+												 and pd.language_id = '" . (int)$languages_id .
 												$cat_where . "'
-												 order by " . EXPECTED_PRODUCTS_FIELD . " " . EXPECTED_PRODUCTS_SORT . $limit;
+												 order by " . EXPECTED_PRODUCTS_FIELD . " " . EXPECTED_PRODUCTS_SORT . (int)$limit;
 			tep_rss_products($expected_query);
 			break;
 
@@ -269,12 +269,12 @@ pd WHERE pd.newsdesk_id = p.newsdesk_id and pd.language_id = '" . $languages_id 
 			$sql_products .= "where p.products_id = pd.products_id ";
 			if (isset($current_category_id) && ($current_category_id > 0)) {
 				$sql_products .= "and p.products_id = p2c.products_id
-													and c.categories_id = '" . $current_category_id . "'
-													and p2c.categories_id = '" . $current_category_id . "' ";
+													and c.categories_id = '" . (int)$current_category_id . "'
+													and p2c.categories_id = '" . (int)$current_category_id . "' ";
 			}
-			$sql_products .= "and pd.language_id = " . $languages_id . "
+			$sql_products .= "and pd.language_id = " . (int)$languages_id . "
 												and p.products_status = '1'" . $days_limit . "
-												order by p.products_last_modified desc" . $limit;
+												order by p.products_last_modified desc" . (int)$limit;
 
 			tep_rss_products($sql_products);
 			break;
