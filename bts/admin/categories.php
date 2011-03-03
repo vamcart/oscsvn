@@ -930,7 +930,7 @@ $products_price_list = tep_xppp_getpricelist("");
                                          language_id, 
                                          specification) values (
                                          '" . (int) $dup_products_id . "', 
-                                         '" . (int) $specifications['specification_description_id'] . "', 
+                                         '" . (int) $specifications['specifications_id'] . "', 
                                          '" . (int)$specifications['language_id'] . "', 
                                          '" . tep_db_input ($specifications['specification']) . "')
                            ");
