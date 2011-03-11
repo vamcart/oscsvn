@@ -29,7 +29,12 @@
     $info_box_contents[] = array('text'  => BOX_HEADING_MANUFACTURER_INFO);
   new infoBoxHeading($info_box_contents, false, false);
 
+if (isset($manufacturer['manufacturers_image'])){
      $manufacturer_info_string = '<div align="center">' . tep_image(DIR_WS_IMAGES . $manufacturer['manufacturers_image'], $manufacturer['manufacturers_name']) . '</div><table border="0" width="80%" cellspacing="0" cellpadding="0">';
+}else{
+$manufacturer_info_string = '<div align="center"></div><table border="0" width="80%" cellspacing="0" cellpadding="0">';
+}
+     
     if ($has_manufacturer_url == 'true')
  $manufacturer_info_string .= '<tr><td valign="top" class="smalltext">-&nbsp;</td><td valign="top" class="smalltext"><a href="' . tep_href_link(FILENAME_REDIRECT, 'action=manufacturer&manufacturers_id=' . $manufacturer['manufacturers_id'], 'NONSSL') . '" target="_blank">' . sprintf(BOX_MANUFACTURER_INFO_HOMEPAGE, $manufacturer['manufacturers_name']) . '</a></td></tr>';
 
