@@ -2559,6 +2559,7 @@ create table ship2pay (
 DROP TABLE IF EXISTS companies;
 CREATE TABLE companies (
   orders_id int(11) NOT NULL default '0',
+  customers_id int(11) NOT NULL default '0',
   name varchar(255) default NULL,
   inn varchar(255) default NULL,
   kpp varchar(255) default NULL,
@@ -2582,6 +2583,7 @@ CREATE TABLE companies (
 DROP TABLE IF EXISTS persons;
 CREATE TABLE persons (
   orders_id int(11) NOT NULL default '0',
+  customers_id int(11) NOT NULL default '0',
   name varchar(255) default NULL,
   address varchar(255) default NULL,
   KEY orders_id(orders_id)
