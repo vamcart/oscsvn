@@ -34,6 +34,8 @@ $xml_decoded=base64_decode($_POST['operation_xml']);
 
 $xml = simplexml_load_string($xml_decoded);
 
+$order = new order($xml->order_id);
+
 // checking and handling
 if ($xml->status == 'success') {
 if (number_format($xml->amount,0) == number_format($order->info['total'],0)) {
