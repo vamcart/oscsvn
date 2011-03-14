@@ -1200,7 +1200,6 @@ $go_back_to=$REQUEST_URI;
   if (HTML_AREA_WYSIWYG_DISABLE == 'Enable') { 
 ?>
 <script language="javascript" type="text/javascript" src="includes/javascript/tiny_mce/tiny_mce.js"></script>
-<script language="javascript" type="text/javascript" src="includes/javascript/tiny_mce/plugins/tinybrowser/tb_tinymce.js.php"></script>
 <script language="javascript" type="text/javascript">
 tinyMCE.init({
 	mode : "textareas",
