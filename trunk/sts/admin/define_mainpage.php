@@ -84,20 +84,18 @@
   if (HTML_AREA_WYSIWYG_DISABLE_DEFINE == 'Enable') { 
 ?>
 <script language="javascript" type="text/javascript" src="includes/javascript/tiny_mce/tiny_mce.js"></script>
-<script language="javascript" type="text/javascript">
+<script type="text/javascript">
 tinyMCE.init({
 	mode : "textareas",
 	editor_deselector : "notinymce",
 	theme : "advanced",
-	width : 650,
-	height : 300,
 	language : "<?php echo DEFAULT_LANGUAGE; ?>",
 	paste_create_paragraphs : false,
 	paste_create_linebreaks : false,
 	paste_use_dialog : true,
 	convert_urls : false,
 
-	plugins : "safari,typograf,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,imagemanager,filemanager",
+	plugins : "safari,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,fullscreen,noneditable,visualchars,nonbreaking,typograf",
 
 	file_browser_callback : "ajaxfilemanager",
 	elements : "ajaxfilemanager",
@@ -118,7 +116,7 @@ tinyMCE.init({
 });
 
   function ajaxfilemanager(field_name, url, type, win) {
-    var ajaxfilemanagerurl = "<?php echo HTTP_SERVER . DIR_WS_CATALOG.'admin/includes/javascript/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php?language=' . strtolower($lang) . '&vam=' . trim(DIR_WS_ADMIN, '/') . '&sid=' . session_id(); ?>";
+    var ajaxfilemanagerurl = "<?php echo HTTP_SERVER . DIR_WS_CATALOG; ?>admin/includes/javascript/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php?language=' . strtolower(<?php echo DEFAULT_LANGUAGE; ?>) . '&vam=' . trim(<?php echo DIR_WS_ADMIN; ?>, '/') . '&sid=' . session_id() .'";
     switch (type) {
       case "image":
         break;
@@ -149,7 +147,6 @@ function toggleHTMLEditor(id) {
 	else
 		tinyMCE.execCommand("mceRemoveControl", false, id);
 }
-
 </script>
 <?php } ?>
 <script language="javascript" src="includes/menu.js"></script>
