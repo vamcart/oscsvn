@@ -1200,7 +1200,7 @@ $go_back_to=$REQUEST_URI;
   if (HTML_AREA_WYSIWYG_DISABLE == 'Enable') { 
 ?>
 <script language="javascript" type="text/javascript" src="includes/javascript/tiny_mce/tiny_mce.js"></script>
-<script language="javascript" type="text/javascript">
+<script type="text/javascript">
 tinyMCE.init({
 	mode : "textareas",
 	editor_deselector : "notinymce",
@@ -1232,7 +1232,7 @@ tinyMCE.init({
 });
 
   function ajaxfilemanager(field_name, url, type, win) {
-    var ajaxfilemanagerurl = "<?php echo HTTP_SERVER . DIR_WS_CATALOG.'admin/includes/javascript/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php?language=' . strtolower($lang) . '&vam=' . trim(DIR_WS_ADMIN, '/') . '&sid=' . session_id(); ?>";
+    var ajaxfilemanagerurl = "<?php echo HTTP_SERVER . DIR_WS_CATALOG; ?>admin/includes/javascript/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php?language=' . strtolower(<?php echo DEFAULT_LANGUAGE; ?>) . '&vam=' . trim(<?php echo DIR_WS_ADMIN; ?>, '/') . '&sid=' . session_id() .'";
     switch (type) {
       case "image":
         break;
@@ -1263,7 +1263,6 @@ function toggleHTMLEditor(id) {
 	else
 		tinyMCE.execCommand("mceRemoveControl", false, id);
 }
-
 </script>
 <?php } ?>
 <script language="javascript" src="includes/menu.js"></script>
