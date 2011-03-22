@@ -202,6 +202,8 @@
                      '  define(\'OSC_COOKIE_DOMAIN\', \'' . $http_cookie_domain . '\');' . "\n" .
                      '  define(\'OSC_COOKIE_PATH\', \'/\');' . "\n" .
                      '' . "\n" .
+                     '  define(\'SESSION_WRITE_DIRECTORY\', DIR_FS_CATALOG . \'temp/\');' . "\n" .
+                     '' . "\n" .
                      '// define our database connection' . "\n" .
                      '  define(\'DB_SERVER\', \'' . $_POST['DB_SERVER'] . '\'); // eg, localhost - should not be empty for productive servers' . "\n" .
                      '  define(\'DB_SERVER_USERNAME\', \'' . $_POST['DB_SERVER_USERNAME'] . '\');' . "\n" .
