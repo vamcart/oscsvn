@@ -381,7 +381,7 @@ define('STORE_LOGO_DESC', 'Укажите логотип Вашего магаз
 define('STORE_OWNER_EMAIL_ADDRESS_DESC', 'E-Mail адрес владельца магазина');
 define('STORE_OWNER_ICQ_NUMBER_DESC', 'ICQ номер, который будет выведен в боксе Консультант в магазине.');
 define('EMAIL_FROM_DESC', 'E-Mail адрес в отправляемых письмах');
-define('STORE_COUNTRY_DESC', 'Страна находения магазина.<br><br><b>Замечание: Не забудьте также указать Зону.</b>');
+define('STORE_COUNTRY_DESC', 'Страна нахождения магазина.<br><br><b>Замечание: Не забудьте также указать Зону.</b>');
 define('STORE_ZONE_DESC', 'Регион нахождения магазина');
 define('EXPECTED_PRODUCTS_SORT_DESC', 'Укажите порядок сортировки для ожидаемых товаров, по возрастанию - asc или по убыванию - desc.');
 define('EXPECTED_PRODUCTS_FIELD_DESC', 'По какому значению будут сортироваться ожидаемые товары.');
