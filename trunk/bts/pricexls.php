@@ -121,7 +121,7 @@ categories.sort_order");
 }
 
   $workbook = new Workbook(FILE_NAME_PRICE.".xls");
-  $worksheet1 =&$workbook->add_worksheet('Прайс-лист');
+  $worksheet1 =&$workbook->add_worksheet(tep_iconv('Прайс-лист'));
       
   $formatot =& $workbook->add_format();
   $formatot->set_size(10);
