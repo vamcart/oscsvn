@@ -64,7 +64,7 @@
           $$var = tep_decode_recursive ($_GET[$var]);
       
           // Sanitize variables to prevent hacking
-          $$var = tep_clean_get__recursive($_GET['f' . $var]);
+          $$var = tep_clean_get__recursive($$var);
 
           // Set the cporrect variable type (All _GET variables are strings by default)
           $$var = tep_set_type($$var);
@@ -82,14 +82,13 @@
     function getFilterCount($specification, $specifications_id, $filter_class, $products_column_name) {
       $raw_query_start = "select count(p.products_id) as count ";
 
-      $raw_query_from = " from (" . TABLE_PRODUCTS . " p) 
-                            join (" . TABLE_PRODUCTS_TO_CATEGORIES . " p2c) 
-                              on (p.products_id = p2c.products_id)
-                            left join (" . TABLE_SPECIALS . " s)
-                              on (p.products_id = s.products_id)
-                        ";
+      $raw_query_from = " FROM (" . TABLE_PRODUCTS . " p)
+INNER JOIN (" . TABLE_PRODUCTS_TO_CATEGORIES . " p2c)
+ON (p.products_id = p2c.products_id)
+INNER JOIN " . TABLE_CATEGORIES . " cat
+ON (cat.categories_id = p2c.categories_id)";
 
-      $raw_query_where = " where p.products_status = '1' ";
+      $raw_query_where = " WHERE p.products_status = '1' AND cat.categories_status = '1'";
 
       if ($this->current_category_id != 0) { // Restrict query to the appropriate category/categories
         $subcategories_array = array();
