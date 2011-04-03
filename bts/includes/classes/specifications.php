@@ -80,7 +80,7 @@
     }
 
     function getFilterCount($specification, $specifications_id, $filter_class, $products_column_name) {
-      $raw_query_start = "select count(p.products_id) as count ";
+      $raw_query_start = "select count(distinct p.products_id) as count ";
 
       $raw_query_from = " FROM (" . TABLE_PRODUCTS . " p)
 INNER JOIN (" . TABLE_PRODUCTS_TO_CATEGORIES . " p2c)

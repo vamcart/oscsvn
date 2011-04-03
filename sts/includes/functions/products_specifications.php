@@ -18,7 +18,7 @@
   //    SecurityPro installed *****
   function tep_clean_get__recursive ($get_var) {
     if (!is_array($get_var)) {
-      return preg_replace("/[^ {}a-zA-Zа-яА-Я0-9_.-]/ui", "", urldecode($get_var));
+      return preg_replace("/[^ (){}a-zA-Zа-яА-Я0-9_.-]/ui", "", urldecode($get_var));
     }
 
     // Add the preg_replace to every element.
@@ -322,7 +322,7 @@
 
   /////
   // Get the manufacturers_id when given the manufacturers_name
-  function tep_get_manufacturer_id ($filter_array, $products_column_name) {
+  function tep_get_manufacturer_id ($filter_array, $products_column_name, $languages_id) {
     if (is_array($filter_array) && $products_column_name != '') {
       $new_filter_array = array ();
       foreach ($filter_array as $filter) {
@@ -377,7 +377,7 @@
 
       // The Manufacturer's column contains an ID and not the name, so we have to change it
       if ($products_column_name == 'manufacturers_id') {
-        $filter_array = tep_get_manufacturer_id($filter_array, $products_column_name);
+        $filter_array = tep_get_manufacturer_id($filter_array, $products_column_name,$languages_id);
         $products_column_name = 'p.' . $products_column_name;
       } // if ($products_column_name == 'manufacturers_id')
 
