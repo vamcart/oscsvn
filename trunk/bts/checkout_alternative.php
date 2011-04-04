@@ -310,7 +310,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
       }
 
 // Guest Account Start
-      if ($guest_account == true) {        tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));      } else {      $email_text .= EMAIL_WELCOME . EMAIL_TEXT . EMAIL_CONTACT . EMAIL_WARNING;      }// Guest Account End
+      if ($guest_account == true) {        tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));      } else {      $email_text .= EMAIL_WELCOME . EMAIL_TEXT . ENTRY_EMAIL_ADDRESS . ' ' . $email_address . ENTRY_PASSWORD . ' ' . $password . EMAIL_CONTACT . EMAIL_WARNING;      }// Guest Account End
 // ICW - CREDIT CLASS CODE BLOCK ADDED  ******************************************************* BEGIN
   if (NEW_SIGNUP_GIFT_VOUCHER_AMOUNT > 0) {
     $coupon_code = create_coupon_code();
