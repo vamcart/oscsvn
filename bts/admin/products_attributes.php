@@ -77,11 +77,11 @@
           $products_attributes_maxcount = tep_db_prepare_input($_POST['products_attributes_maxcount']);
 
  //PIN add
-		  $products_attributes_is_pin = isset($HTTP_POST_VARS['products_attributes_is_pin'])?1:0;
+		  $products_attributes_is_pin = isset($_POST['products_attributes_is_pin'])?1:0;
 //PIN end
 
   	  //PIN change
-          if (tep_not_null($products_attributes_filename) || $products_attributes_is_pin) {
+          if (tep_not_null($products_attributes_filename)) {
             tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values (" . (int)$products_attributes_id . ", '" . tep_db_input($products_attributes_filename) . "', '" . tep_db_input($products_attributes_maxdays) . "', '" . tep_db_input($products_attributes_maxcount) . "', '".$products_attributes_is_pin."')");
           }
         }
@@ -135,7 +135,8 @@
           tep_db_query("update " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . "
                         set products_attributes_filename='" . $_POST['products_attributes_filename'] . "',
                             products_attributes_maxdays='" . $_POST['products_attributes_maxdays'] . "',
-                            products_attributes_maxcount='" . $_POST['products_attributes_maxcount'] . "'
+                            products_attributes_maxcount='" . $_POST['products_attributes_maxcount'] . "',
+                            products_attributes_is_pin='" . $_POST['products_attributes_is_pin'] . "'
                         where products_attributes_id = '" . $_POST['attribute_id'] . "'");
         }
         tep_redirect(tep_href_link(FILENAME_PRODUCTS_ATTRIBUTES, $page_info));
@@ -840,7 +841,7 @@ function go_option() {
             <td align="center" class="attributeBoxContent">&nbsp;<?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?>&nbsp;<?php echo '<a href="' . tep_href_link(FILENAME_PRODUCTS_ATTRIBUTES, '&attribute_page=' . $attribute_page, 'NONSSL') . '">'; ?><?php echo tep_image_button('button_cancel.gif', IMAGE_CANCEL); ?></a>&nbsp;</td>
 <?php
       if (DOWNLOAD_ENABLED == 'true') {
-        $download_query_raw ="select products_attributes_filename, products_attributes_maxdays, products_attributes_maxcount
+        $download_query_raw ="select products_attributes_filename, products_attributes_maxdays, products_attributes_maxcount, products_attributes_is_pin
                               from " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . "
                               where products_attributes_id='" . $attributes_values['products_attributes_id'] . "'";
         $download_query = tep_db_query($download_query_raw);
@@ -940,7 +941,7 @@ function go_option() {
 ?>
 <?php
 // BOF: WebMakers.com Added: FREE-CALL FOR PRICE-COMING SOON ETC.
-        $the_download_query_raw ="select products_attributes_filename, products_attributes_maxdays, products_attributes_maxcount from " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " where products_attributes_id='" . $attributes_values['products_attributes_id'] . "'";
+        $the_download_query_raw ="select products_attributes_filename, products_attributes_maxdays, products_attributes_maxcount, products_attributes_is_pin from " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " where products_attributes_id='" . $attributes_values['products_attributes_id'] . "'";
         $the_download_query = tep_db_query($the_download_query_raw);
         $the_download= tep_db_fetch_array($the_download_query);
 
