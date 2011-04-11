@@ -1014,8 +1014,6 @@ insert into configuration (configuration_title, configuration_key, configuration
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('SMTP сервер: Имя пользователя', 'EMAIL_SMTP_USERNAME', 'username', 'Установите имя пользователя для подключения к серверу.', '12', '9', NULL, '2003-07-17 10:29:22', NULL, '');
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('SMTP сервер: Пароль', 'EMAIL_SMTP_PASSWORD', 'password', 'Установите пароль для подключения к серверу.', '12', '10', NULL, '2003-07-17 10:29:22', NULL, '');
 
-insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('PIN Show status', 'DOWNLOADS_AVAILABLE_STATUS', '2', 'Order must have this or better status', '13', '4', NULL, '2003-07-17 10:29:22', NULL, '');
-
 drop table if exists configuration_group;
 create table configuration_group (
   configuration_group_id int(11) not null auto_increment,
