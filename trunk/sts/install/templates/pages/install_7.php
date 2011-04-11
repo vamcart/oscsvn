@@ -262,7 +262,8 @@
                      '  define(\'OSC_COOKIE_DOMAIN\', \'' . $http_cookie_domain . '\');' . "\n" .
                      '  define(\'OSC_COOKIE_PATH\', \'/\');' . "\n" .
                      '' . "\n" .
-
+                     '  define(\'SESSION_WRITE_DIRECTORY\', DIR_FS_CATALOG . \'temp/\');' . "\n" .
+                     '' . "\n" .
                      '// Added for Templating' . "\n" .
   		     '	define(\'DIR_FS_CATALOG_MAINPAGE_MODULES\', DIR_FS_CATALOG_MODULES . \'mainpage_modules/\');' . "\n" .
   		     '	define(\'DIR_WS_TEMPLATES\', DIR_WS_CATALOG . \'templates/\');' . "\n" .
