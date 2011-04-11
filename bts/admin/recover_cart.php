@@ -347,7 +347,8 @@ $tdate = $_POST['tdate'];
   $sentdate = "";
   $customer = "";
   $donequery =
-      tep_db_query("select * from ". TABLE_SCART ." where customers_id = '".$curcus."'");
+      $donequery =
+tep_db_query("select * from ". TABLE_SCART ." where customers_id = '".$curcus."' ORDER BY dateadded DESC");
   $emailttl = seadate($EMAIL_TTL);
   if (mysql_num_rows($donequery) > 0) {
     $ttl = tep_db_fetch_array($donequery);
