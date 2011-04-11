@@ -76,8 +76,13 @@
           $products_attributes_maxdays = tep_db_prepare_input($_POST['products_attributes_maxdays']);
           $products_attributes_maxcount = tep_db_prepare_input($_POST['products_attributes_maxcount']);
 
-          if (tep_not_null($products_attributes_filename)) {
-            tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values (" . (int)$products_attributes_id . ", '" . tep_db_input($products_attributes_filename) . "', '" . tep_db_input($products_attributes_maxdays) . "', '" . tep_db_input($products_attributes_maxcount) . "')");
+ //PIN add
+		  $products_attributes_is_pin = isset($HTTP_POST_VARS['products_attributes_is_pin'])?1:0;
+//PIN end
+
+  	  //PIN change
+          if (tep_not_null($products_attributes_filename) || $products_attributes_is_pin) {
+            tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values (" . (int)$products_attributes_id . ", '" . tep_db_input($products_attributes_filename) . "', '" . tep_db_input($products_attributes_maxdays) . "', '" . tep_db_input($products_attributes_maxcount) . "', '".$products_attributes_is_pin."')");
           }
         }
 
@@ -844,6 +849,7 @@ function go_option() {
           $products_attributes_filename = $download['products_attributes_filename'];
           $products_attributes_maxdays  = $download['products_attributes_maxdays'];
           $products_attributes_maxcount = $download['products_attributes_maxcount'];
+          $products_attributes_is_pin   = $download['products_attributes_is_pin'];
         }
 ?>
           <tr class="attributeBoxContent">
@@ -858,6 +864,10 @@ function go_option() {
                   <td align="right" class="attributeBoxContent"><?php echo tep_draw_input_field('products_attributes_maxdays', $products_attributes_maxdays, 'size="5"'); ?>&nbsp;</td>
                   <td align="right" class="attributeBoxContent"><?php echo TABLE_TEXT_MAX_COUNT; ?></td>
                   <td align="right" class="attributeBoxContent"><?php echo tep_draw_input_field('products_attributes_maxcount', $products_attributes_maxcount, 'size="5"'); ?>&nbsp;</td>
+                  <!-- //PIN add -->
+<td class="smallText"><?php echo TABLE_TEXT_IS_PIN; ?></td>
+<td class="smallText"><?php echo tep_draw_checkbox_field('products_attributes_is_pin', '', $products_attributes_is_pin,1); ?>&nbsp;</td>
+<!-- //PIN end -->
                 </tr>
               </table>
             </td>
@@ -1045,6 +1055,10 @@ if ( $the_download['products_attributes_filename'] ) {
                   <td class="smallText"><?php echo tep_draw_input_field('products_attributes_maxdays', $products_attributes_maxdays, 'size="5"'); ?>&nbsp;</td>
                   <td class="smallText"><?php echo TABLE_TEXT_MAX_COUNT; ?></td>
                   <td class="smallText"><?php echo tep_draw_input_field('products_attributes_maxcount', $products_attributes_maxcount, 'size="5"'); ?>&nbsp;</td>
+                   <!-- //PIN add -->
+                  <td class="smallText"><?php echo TABLE_TEXT_IS_PIN; ?></td>
+                  <td class="smallText"><?php echo tep_draw_checkbox_field('products_attributes_is_pin', '',  $products_attributes_is_pin,1); ?>&nbsp;</td>
+                  <!-- //PIN end -->
                 </tr>
               </table>
             </td>
