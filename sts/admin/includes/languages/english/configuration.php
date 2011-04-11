@@ -1035,4 +1035,7 @@ define('HOLD_EMAIL_QUEUE_DESC','Hold all emails in the Email Queue');
 define('SITE_TIME_ZONE_TITLE', 'Site Time Zone');
 define('SITE_TIME_ZONE_DESC', 'Site time zone');
 
+define('DOWNLOADS_AVAILABLE_STATUS_TITLE', 'PIN Show status');
+define('DOWNLOADS_AVAILABLE_STATUS_DESC', 'Order must have this or better status');
+
 ?>
