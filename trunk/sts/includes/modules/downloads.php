@@ -26,7 +26,7 @@
 // DEFINE WHICH ORDERS_STATUS TO USE IN downloads_controller.php
 // USE last_modified instead of date_purchased
 // original  $downloads_query = tep_db_query("select                 date_format(o.date_purchased, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays from " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd where o.customers_id = '" . (int)$customer_id . "' and o.orders_id = '" . (int)$last_order . "' and o.orders_id = op.orders_id and op.orders_products_id = opd.orders_products_id and opd.orders_products_filename != ''");
-             $downloads_query = tep_db_query("select date_format(o.last_modified, '%Y-%m-%d') as date_modified_day,o.orders_status, date_format(o.date_purchased, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays from " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd where o.customers_id = '" . (int)$customer_id . "' and o.orders_status >= '" . DOWNLOADS_CONTROLLER_ORDERS_STATUS . "' and o.orders_status != '99999' and o.orders_id = '" . (int)$last_order . "' and o.orders_id = op.orders_id and op.orders_products_id = opd.orders_products_id and opd.orders_products_filename != ''");
+             $downloads_query = tep_db_query("select date_format(o.last_modified, '%Y-%m-%d') as date_modified_day,o.orders_status, date_format(o.date_purchased, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays, opd.download_pin_code,opd.download_is_pin from " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd where o.customers_id = '" . (int)$customer_id . "' and o.orders_status >= '" . DOWNLOADS_CONTROLLER_ORDERS_STATUS . "' and o.orders_status != '99999' and o.orders_id = '" . (int)$last_order . "' and o.orders_id = op.orders_id and op.orders_products_id = opd.orders_products_id and (opd.orders_products_filename != '' or opd.download_is_pin='1')");
              
   if (tep_db_num_rows($downloads_query) > 0) {
 ?>
@@ -57,6 +57,12 @@ list($dt_year, $dt_month, $dt_day) = explode('-', $downloads['date_purchased_day
           <tr class="infoBoxContents">
 <!-- left box -->
 <?php
+//PIN add
+if ($downloads['download_is_pin']==1) { //PIN processing
+	$pinstring=$downloads['download_pin_code'];
+	echo '<td class="main">'.$downloads['products_name'].'</td><td class="main">'.$pinstring.'</td><td class="main">&nbsp;</td>';
+} else { //usual stuff
+
 // The link will appear only if:
 // - Download remaining count is > 0, AND
 // - The file is present in the DOWNLOAD directory, AND EITHER
@@ -78,6 +84,7 @@ list($dt_year, $dt_month, $dt_day) = explode('-', $downloads['date_purchased_day
            '          </tr>' . "\n";
 // EOF: WebMakers.com Added: Downloads Controller
     }
+   }
 ?>
           </tr>
         </table></td>
