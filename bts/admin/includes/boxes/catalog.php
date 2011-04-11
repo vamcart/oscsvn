@@ -94,6 +94,11 @@
         'link' => tep_href_link(FILENAME_PRODUCTS_SPECIFICATIONS)
       ),
       array(
+        'code' => FILENAME_PIN_LOADER,
+        'title' => BOX_CATALOG_PIN_LOADER,
+        'link' => tep_href_link(FILENAME_PIN_LOADER)
+      ),
+      array(
         'code' => FILENAME_PRODUCTS_EXPECTED,
         'title' => BOX_CATALOG_PRODUCTS_EXPECTED,
         'link' => tep_href_link(FILENAME_PRODUCTS_EXPECTED)

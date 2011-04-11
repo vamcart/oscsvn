@@ -163,6 +163,9 @@
 define('TABLE_EMAIL_BATCH', 'email_batch');      // the email queue
 define('TABLE_EMAIL_BATCH_A', 'email_batch_a');  // the email queue archive
 
-define('TABLE_SPSR_ZONES', 'spsr_zones');
+ define('TABLE_SPSR_ZONES', 'spsr_zones');
+
+ define('TABLE_PRODUCTS_PINS', 'products_pins');
+
 
 ?>

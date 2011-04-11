@@ -580,5 +580,8 @@ define('BOX_YML_IMPORT', 'Я-маркет импорт/экспорт');
 
 define('BOX_CUSTOMERS_EXPORTORDERS', 'Экспорт заказов');
 define('BOX_CUSTOMERS_EXPORT', 'Экспорт клиентов'); 
+
+define('TABLE_TEXT_IS_PIN','Товар имеет PIN код');
+define('BOX_CATALOG_PIN_LOADER','PIN коды');
          
 ?>
