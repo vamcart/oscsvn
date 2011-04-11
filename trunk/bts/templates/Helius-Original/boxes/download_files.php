@@ -23,14 +23,14 @@
   }
 
 // Now get all downloadable products in that order
-  $downloads_query_raw = "SELECT DATE_FORMAT(date_purchased, '%Y-%m-%d') as date_purchased_day, opd.download_maxdays, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays
+  $downloads_query_raw = "SELECT DATE_FORMAT(date_purchased, '%Y-%m-%d') as date_purchased_day, op.products_name, opd.orders_products_download_id, opd.orders_products_filename, opd.download_count, opd.download_maxdays, opd.download_pin_code,opd.download_is_pin
                           FROM " . TABLE_ORDERS . " o, " . TABLE_ORDERS_PRODUCTS . " op, " . TABLE_ORDERS_PRODUCTS_DOWNLOAD . " opd
                           WHERE customers_id = '" . $customer_id . "'
                           AND o.orders_id = '" . $last_order . "'
                           AND o.orders_status >= " . DOWNLOADS_CONTROLLER_ORDERS_STATUS . "
                           AND op.orders_id = '" . $last_order . "'
                           AND opd.orders_products_id=op.orders_products_id
-                          AND opd.orders_products_filename<>''";
+                          AND (opd.orders_products_filename != '' or opd.download_is_pin='1')";
   $downloads_query = tep_db_query($downloads_query_raw);
 
 // Don't display if there is no downloadable product
@@ -54,6 +54,12 @@
     	list($dt_year, $dt_month, $dt_day) = explode('-', $downloads_values['date_purchased_day']);
     	$download_timestamp = mktime(23, 59, 59, $dt_month, $dt_day + $downloads_values['download_maxdays'], $dt_year);
   	    $download_expiry = date('Y-m-d H:i:s', $download_timestamp);
+
+//PIN add
+if ($downloads_values['download_is_pin']==1) { //PIN processing
+	$pinstring=$downloads_values['download_pin_code'];
+	echo '<td class="main">'.$downloads_values['products_name'].': </td><td class="main">'.$pinstring.'</td><td class="main">&nbsp;</td>';
+} else { //usual stuff
 
 // The link will appear only if:
 // - Download remaining count is > 0, AND
@@ -92,6 +98,7 @@
 	                           'text'  => $downloads_values['download_count'] . '  ' .  TABLE_HEADING_DOWNLOAD_COUNT
 	                                      );
   new infoBox($info_box_contents);
+ }
  }
 
 if (!strstr($PHP_SELF, FILENAME_ACCOUNT_HISTORY_INFO)) {

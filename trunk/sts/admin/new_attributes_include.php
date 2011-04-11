@@ -142,7 +142,8 @@ if ($matches) {
 	                $query4 = "SELECT pa.products_attributes_id, 
 	                pad.products_attributes_filename, 
 	                pad.products_attributes_maxdays,
-	                pad.products_attributes_maxcount 
+	                pad.products_attributes_maxcount,
+	                pad.products_attributes_is_pin 
 	                FROM products_attributes pa,products_attributes_download pad 
 	                WHERE pa.products_id='$current_product_id' AND pa.options_id='$current_product_option_id' AND pa.options_values_id = '$current_value_id' AND pad.products_attributes_id=pa.products_attributes_id";
 	                $result4 = mysql_query($query4) or die(mysql_error());                   
@@ -159,7 +160,12 @@ if ($matches) {
 
 	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" id=\"" . $current_value_id . "_dlfile\"  name=\"" . $current_value_id . "_dlfile\" value=\"" . $dl_line['products_attributes_filename'] . "\" size=\"10\"></TD>";
 	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" name=\"" . $current_value_id . "_dldays\" value=\"" . $dl_line['products_attributes_maxdays'] . "\" size=\"10\"></TD>";
-	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" name=\"" . $current_value_id . "_dlcount\" value=\"" . $dl_line['products_attributes_maxcount'] . "\" size=\"10\"></TD>";
+	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" name=\"" . $current_value_id . "_dlcount\" value=\"" . $dl_line['products_attributes_maxcount'] . "\" size=\"10\">";
+	                ?>
+	                                   <!-- //PIN add -->
+                  <?php echo TABLE_TEXT_IS_PIN; ?> <?php echo tep_draw_checkbox_field($current_value_id . '_ispin', '',  $dl_line['products_attributes_is_pin'],1); ?>&nbsp;</td>
+                  <!-- //PIN end -->
+<?php
 //                }
 /*
                 else
