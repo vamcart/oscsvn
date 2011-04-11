@@ -829,7 +829,7 @@ if (ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE == 'true') {
               $attributes_query = tep_db_query("select products_attributes_id, options_values_price, price_prefix, products_attributes_weight, products_attributes_weight_prefix, products_options_sort_order from " . TABLE_PRODUCTS_ATTRIBUTES . " where products_id = '" . $products_id . "' and options_id = '" . $options['products_options_id'] . "' and options_values_id = '" . $values['products_options_values_id'] . "'");
               if (tep_db_num_rows($attributes_query) > 0) {
                 $attributes = tep_db_fetch_array($attributes_query);
-                $attributes_query_download = tep_db_query("select pad.products_attributes_id, pad.products_attributes_filename, pad.products_attributes_maxdays, pad.products_attributes_maxcount from " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " pad where pad.products_attributes_id = '" . $attributes['products_attributes_id'] . "'");
+                $attributes_query_download = tep_db_query("select pad.products_attributes_id, pad.products_attributes_filename, pad.products_attributes_maxdays, pad.products_attributes_maxcount, products_attributes_is_pin from " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " pad where pad.products_attributes_id = '" . $attributes['products_attributes_id'] . "'");
                 $attributes_download = tep_db_fetch_array($attributes_query_download);
                 if ($_POST['option'][$rows]) {
 
@@ -838,11 +838,13 @@ if (ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE == 'true') {
                     tep_db_query("update " . TABLE_PRODUCTS_ATTRIBUTES . " set options_values_price = '" . $_POST['price'][$rows] . "', price_prefix = '" . $_POST['prefix'][$rows] . "', products_options_sort_order = '" . $_POST['products_options_sort_order'][$rows] . "', product_attributes_one_time = '" . $_POST['product_attributes_one_time'][$rows] . "', products_attributes_weight = '" . $_POST['products_attributes_weight'][$rows] . "', products_attributes_weight_prefix = '" . $_POST['products_attributes_weight_prefix'][$rows] . "', products_attributes_units = '" . $_POST['products_attributes_units'][$rows] . "', products_attributes_units_price = '" . $_POST['products_attributes_units_price'][$rows] . "' where products_attributes_id = '" . $attributes['products_attributes_id'] . "'");
                   }
 
+      $_POST['ispin'][$rows] = isset($_POST['ispin'][$rows])?1:0;
+      
                   if (trim($_POST['filename'][$rows].$_POST['maxdays'][$rows].$_POST['maxcount'][$rows]) != ""){
                   	if (tep_db_num_rows($attributes_query_download) > 0) {
-                    	tep_db_query("update " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " set products_attributes_filename = '" . $_POST['filename'][$rows] . "', products_attributes_maxdays = '" . $_POST['maxdays'][$rows] . "', products_attributes_maxcount = '" . $_POST['maxcount'][$rows] . "' where products_attributes_id = '" . $attributes['products_attributes_id'] . "'");
+                    	tep_db_query("update " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " set products_attributes_filename = '" . $_POST['filename'][$rows] . "', products_attributes_maxdays = '" . $_POST['maxdays'][$rows] . "', products_attributes_maxcount = '" . $_POST['maxcount'][$rows] . "', products_attributes_is_pin = '" . $_POST['ispin'][$rows] . "' where products_attributes_id = '" . $attributes['products_attributes_id'] . "'");
                   	} else {
-                  		tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values ('" . $attributes['products_attributes_id'] ."', '" . $_POST['filename'][$rows] . "', '" . $_POST['maxdays'][$rows] . "', '" . $_POST['maxcount'][$rows] . "')");
+                  		tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values ('" . $attributes['products_attributes_id'] ."', '" . $_POST['filename'][$rows] . "', '" . $_POST['maxdays'][$rows] . "', '" . $_POST['maxcount'][$rows] . "', '" . $_POST['ispin'][$rows] . "')");
                   	}
                   } elseif (tep_db_num_rows($attributes_query_download) > 0) {
                     tep_db_query("delete from " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " where products_attributes_id = '" . $attributes['products_attributes_id'] . "'");
@@ -855,7 +857,7 @@ if (ALLOW_ATTRIBUTES_IN_PRODUCT_EDIT_PAGE == 'true') {
               } elseif ($_POST['option'][$rows]) {
                 tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES . " values ('', '" . $products_id . "', '" . $options['products_options_id'] . "', '" . $values['products_options_values_id'] . "', '" . $_POST['price'][$rows] . "', '" . $_POST['prefix'][$rows] . "', '" . $_POST['products_options_sort_order'][$rows] . "', '" . $_POST['product_attributes_one_time'][$rows] . "', '" . $_POST['products_attributes_weight'][$rows] . "', '" . $_POST['products_attributes_weight_prefix'][$rows] . "', '" . $_POST['products_attributes_units'][$rows] . "', '" . $_POST['products_attributes_units_price'][$rows] . "' )");
                 if (trim($_POST['filename'][$rows].$_POST['maxdays'][$rows].$_POST['maxcount'][$rows]) != ""){
-               		tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values (last_insert_id(), '" . $_POST['filename'][$rows] . "', '" . $_POST['maxdays'][$rows] . "', '" . $_POST['maxcount'][$rows] . "')");
+               		tep_db_query("insert into " . TABLE_PRODUCTS_ATTRIBUTES_DOWNLOAD . " values (last_insert_id(), '" . $_POST['filename'][$rows] . "', '" . $_POST['maxdays'][$rows] . "', '" . $_POST['maxcount'][$rows] . "', '" . $_POST['ispin'][$rows] . "')");
                	}
 
               }
@@ -2374,6 +2376,7 @@ updateGross('products_price');
                 <td class="attributeBoxContent" align="center"><?php echo TABLE_HEADING_ATTRIBUTE_5 ?></td>
                 <td class="attributeBoxContent" align="center"><?php echo TABLE_HEADING_ATTRIBUTE_6 ?></td>
                 <td class="attributeBoxContent" align="center"><?php echo TABLE_HEADING_ATTRIBUTE_7 ?></td>
+                <td class="attributeBoxContent" align="center">&nbsp;</td>
 <?php } ?>
               </tr>
 <?php
@@ -2404,10 +2407,11 @@ updateGross('products_price');
                                 'products_attributes_filename' => $_POST['filename'][$rows],
                                 'products_attributes_maxdays' => $_POST['maxdays'][$rows],
                                 'products_attributes_maxcount' => $_POST['maxcount'][$rows],
+                                'products_attributes_is_pin' => $_POST['ispin'][$rows],
                                     );
           }
         } else {
-          $attributes_query_download = tep_db_query("select pad.products_attributes_id, pa.products_attributes_id, pad.products_attributes_filename, pad.products_attributes_maxdays, pad.products_attributes_maxcount from products_attributes pa,products_attributes_download pad where pa.products_id = '" . $pInfo->products_id . "' and pa.options_id = '" . $options['products_options_id'] . "' and pa.options_values_id = '" . $values['products_options_values_id'] . "' and pad.products_attributes_id = pa.products_attributes_id");
+          $attributes_query_download = tep_db_query("select pad.products_attributes_id, pa.products_attributes_id, pad.products_attributes_filename, pad.products_attributes_maxdays, pad.products_attributes_maxcount, products_attributes_is_pin from products_attributes pa,products_attributes_download pad where pa.products_id = '" . $pInfo->products_id . "' and pa.options_id = '" . $options['products_options_id'] . "' and pa.options_values_id = '" . $values['products_options_values_id'] . "' and pad.products_attributes_id = pa.products_attributes_id");
 
           if (tep_db_num_rows($attributes_query_download) > 0) {
             $attributes_download = tep_db_fetch_array($attributes_query_download);
@@ -2441,6 +2445,7 @@ updateGross('products_price');
                 <td class="dataTableContent" align="center"><?php echo tep_draw_input_field('filename[' . $rows . ']', $attributes_download['products_attributes_filename'], 'size="12" id=filename[' . $rows . ']'); ?></td>
                 <td class="dataTableContent" align="center"><?php echo tep_draw_input_field('maxdays[' . $rows . ']', $attributes_download['products_attributes_maxdays'], 'size="2"'); ?></td>
                 <td class="dataTableContent" align="center"><?php echo tep_draw_input_field('maxcount[' . $rows . ']', $attributes_download['products_attributes_maxcount'], 'size="2"'); ?></td>
+                <td class="dataTableContent" align="center"><?php echo TABLE_TEXT_IS_PIN; ?> <?php echo tep_draw_checkbox_field('ispin[' . $rows . ']', '',  $attributes_download['products_attributes_is_pin'],1); ?>&nbsp;</td>
 <?php } ?>
                              </tr>
 <?php
