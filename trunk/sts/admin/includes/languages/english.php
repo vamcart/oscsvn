@@ -577,5 +577,8 @@ define('BOX_YML_IMPORT', 'YML import/export');
 
 define('BOX_CUSTOMERS_EXPORTORDERS', 'Orders export');
 define('BOX_CUSTOMERS_EXPORT', 'Customers export'); 
+
+define('TABLE_TEXT_IS_PIN','Is PIN code');
+define('BOX_CATALOG_PIN_LOADER','PIN loader');
          
 ?>
