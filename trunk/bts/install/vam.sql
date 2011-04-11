@@ -223,6 +223,7 @@ insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes,
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('189', 'yml_import.php', '0', '9', '1');
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('190', 'customer_export.php', '0', '5', '1');
 insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('191', 'exportorders.php', '0', '5', '1');
+insert into admin_files (admin_files_id, admin_files_name, admin_files_is_boxes, admin_files_to_boxes, admin_groups_id) values ('192', 'pin_loader.php', '0', '3', '1');
 
 drop table if exists admin_groups;
 create table admin_groups (
@@ -1012,6 +1013,8 @@ insert into configuration (configuration_title, configuration_key, configuration
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('SMTP авторизация', 'EMAIL_SMTP_AUTH', 'false', 'SMTP авторизация.', '12', '8', '2004-02-16 11:51:56', '2003-07-17 10:29:22', NULL, 'tep_cfg_select_option(array(\'true\', \'false\'),');
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('SMTP сервер: Имя пользователя', 'EMAIL_SMTP_USERNAME', 'username', 'Установите имя пользователя для подключения к серверу.', '12', '9', NULL, '2003-07-17 10:29:22', NULL, '');
 insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('SMTP сервер: Пароль', 'EMAIL_SMTP_PASSWORD', 'password', 'Установите пароль для подключения к серверу.', '12', '10', NULL, '2003-07-17 10:29:22', NULL, '');
+
+insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) values ('PIN Show status', 'DOWNLOADS_AVAILABLE_STATUS', '2', 'Order must have this or better status', '13', '4', NULL, '2003-07-17 10:29:22', NULL, '');
 
 drop table if exists configuration_group;
 create table configuration_group (
@@ -2064,6 +2067,8 @@ create table orders_products_download (
   orders_products_filename varchar(255) not null ,
   download_maxdays int(2) default '0' not null ,
   download_count int(2) default '0' not null ,
+  download_is_pin tinyint(1) default '0' not null ,
+  download_pin_code varchar(255) not null ,
   PRIMARY KEY (orders_products_download_id),
   KEY idx_orders_products_download_orders_id (orders_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci;
@@ -2396,6 +2401,7 @@ create table products_attributes_download (
   products_attributes_filename varchar(255) not null ,
   products_attributes_maxdays int(2) default '0' ,
   products_attributes_maxcount int(2) default '0' ,
+  products_attributes_is_pin tinyint(1) null default '0' ,
   PRIMARY KEY (products_attributes_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci;
 
@@ -2426,6 +2432,14 @@ insert into products_description (products_id, language_id, products_name, produ
 insert into products_description (products_id, language_id, products_name, products_description, products_tab_1, products_tab_2, products_tab_3, products_tab_4, products_tab_5, products_tab_6, products_url, products_viewed, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info) values ('2', '1', 'Рога лося', 'Описание', '', '', '', '', '', '', '', '5', '', '', '', 'Дешевле не найдёте, лосиные рога всего за 20$.');
 insert into products_description (products_id, language_id, products_name, products_description, products_tab_1, products_tab_2, products_tab_3, products_tab_4, products_tab_5, products_tab_6, products_url, products_viewed, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info) values ('1', '2', 'Sample product 2', 'Description 2', '', '', '', '', '', '', '', '0', '', '', '', 'Short description 2');
 insert into products_description (products_id, language_id, products_name, products_description, products_tab_1, products_tab_2, products_tab_3, products_tab_4, products_tab_5, products_tab_6, products_url, products_viewed, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info) values ('2', '2', 'Sample product', 'Description', '', '', '', '', '', '', '', '0', '', '', '', 'Short description');
+
+CREATE TABLE products_pins (
+  products_pin_id int(11) NOT NULL auto_increment,
+  products_id int(11) NOT NULL,
+  products_pin_code char(250) NOT NULL,
+  products_pin_used tinyint(4) NOT NULL default '0',
+  PRIMARY KEY  (products_pin_id)
+)
 
 drop table if exists products_extra_fields;
 create table products_extra_fields (
