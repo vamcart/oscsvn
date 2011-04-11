@@ -62,6 +62,7 @@ if ($matches) {
 						        echo "<TD class=\"dataTableHeadingContent\"><B>". TEXT_NEW_ATTRIBUTE_FILE . "</B></TD>";
 						        echo "<TD class=\"dataTableHeadingContent\"><B>". TEXT_NEW_ATTRIBUTE_MAX_COUNT . "</B></TD>";
 						        echo "<TD class=\"dataTableHeadingContent\"><B>". TEXT_NEW_ATTRIBUTE_MAX_DOWNLOAD . "</B></TD>";
+						        echo "<TD class=\"dataTableHeadingContent\">&nbsp;</TD>";
 //                }
         }
 // ############################# end added for download
@@ -160,10 +161,10 @@ if ($matches) {
 
 	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" id=\"" . $current_value_id . "_dlfile\"  name=\"" . $current_value_id . "_dlfile\" value=\"" . $dl_line['products_attributes_filename'] . "\" size=\"10\"></TD>";
 	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" name=\"" . $current_value_id . "_dldays\" value=\"" . $dl_line['products_attributes_maxdays'] . "\" size=\"10\"></TD>";
-	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" name=\"" . $current_value_id . "_dlcount\" value=\"" . $dl_line['products_attributes_maxcount'] . "\" size=\"10\">";
+	                echo "<TD class=\"main\" align=\"left\"><input type=\"text\" name=\"" . $current_value_id . "_dlcount\" value=\"" . $dl_line['products_attributes_maxcount'] . "\" size=\"10\"></TD/";
 	                ?>
 	                                   <!-- //PIN add -->
-                  <?php echo TABLE_TEXT_IS_PIN; ?> <?php echo tep_draw_checkbox_field($current_value_id . '_ispin', '',  $dl_line['products_attributes_is_pin'],1); ?>&nbsp;</td>
+                  <TD class="main" align="left"><?php echo TABLE_TEXT_IS_PIN; ?> <?php echo tep_draw_checkbox_field($current_value_id . '_ispin', '',  $dl_line['products_attributes_is_pin'],1); ?>&nbsp;</td>
                   <!-- //PIN end -->
 <?php
 //                }
