@@ -581,4 +581,6 @@ define('TEXT_NOT_AVAILABLE', 'нет данных');
 define('TEXT_DISPLAY_ALL_PRODUCTS', 'Показать на одной странице');
 define('TEXT_DISPLAY_BY_PAGES', 'Разбить на страницы');
 
+define('PIN_NOT_AVAILABLE', 'Товар закончился на складе. Отправлено уведомление на почту.');
+
 ?>
