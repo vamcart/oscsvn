@@ -16,7 +16,7 @@
 // on RedHat try 'en_US'
 // on FreeBSD try 'en_US.ISO_8859-1'
 // on Windows try 'en', or 'English'
-@setlocale(LC_TIME, 'en_US.ISO_8859-1');
+@setlocale(LC_TIME, 'en_US.UTF-8');
 
 define('DATE_FORMAT_SHORT', '%m/%d/%Y');  // this is used for strftime()
 //define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
@@ -547,5 +547,7 @@ define('TEXT_NOT_AVAILABLE', 'N/A');
 
 define('TEXT_DISPLAY_ALL_PRODUCTS', 'Show all');
 define('TEXT_DISPLAY_BY_PAGES', 'Split page');
+
+define('PIN_NOT_AVAILABLE', 'Products out of stock during checkout. Personnel notified.');
 
 ?>
