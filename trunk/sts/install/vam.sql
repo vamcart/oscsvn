@@ -2341,13 +2341,14 @@ insert into products_description (products_id, language_id, products_name, produ
 insert into products_description (products_id, language_id, products_name, products_description, products_tab_1, products_tab_2, products_tab_3, products_tab_4, products_tab_5, products_tab_6, products_url, products_viewed, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info) values ('1', '2', 'Sample product 2', 'Description 2', '', '', '', '', '', '', '', '0', '', '', '', 'Short description 2');
 insert into products_description (products_id, language_id, products_name, products_description, products_tab_1, products_tab_2, products_tab_3, products_tab_4, products_tab_5, products_tab_6, products_url, products_viewed, products_head_title_tag, products_head_desc_tag, products_head_keywords_tag, products_info) values ('2', '2', 'Sample product', 'Description', '', '', '', '', '', '', '', '0', '', '', '', 'Short description');
 
+DROP TABLE IF EXISTS products_pins;
 CREATE TABLE products_pins (
   products_pin_id int(11) NOT NULL auto_increment,
   products_id int(11) NOT NULL,
   products_pin_code char(250) NOT NULL,
   products_pin_used tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (products_pin_id)
-)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci;
 
 drop table if exists products_extra_fields;
 create table products_extra_fields (
