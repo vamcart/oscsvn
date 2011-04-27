@@ -12,7 +12,7 @@ print($s);
 Алексей Буш conweb@mail.ru
 */ 
 $iw=new inwords;
-$i=$order->info['total'];
+$i=$order->info['value'];
 $s=$iw->get($i); 
 print($s); 
 
