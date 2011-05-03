@@ -404,7 +404,7 @@ define('TEXT_NO_GUESTBOOK_ENTRY', 'Пока нет ни одной записи 
 
 define('DISCOUNT_HEADING', 'Скидки');
 
-define('HELP', '<a href="http://web.icq.com/whitepages/message_me/1,,,00.icq?uin=' . STORE_OWNER_ICQ_NUMBER . '&action=message" target="_blank"><img src="http://status.icq.com/online.gif?icq=' . STORE_OWNER_ICQ_NUMBER . '&img=26" title="Статус ICQ" align="absmiddle" border="0">' . STORE_OWNER_ICQ_NUMBER . '</a>
+define('HELP', '<a href="http://www.icq.com/whitepages/cmd.php?uin=' . STORE_OWNER_ICQ_NUMBER . '&action=message" target="_blank"><img src="http://status.icq.com/online.gif?icq=' . STORE_OWNER_ICQ_NUMBER . '&img=26" title="Статус ICQ" align="absmiddle" border="0">' . STORE_OWNER_ICQ_NUMBER . '</a>
 <br>
 ');
 

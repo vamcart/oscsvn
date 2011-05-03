@@ -376,7 +376,7 @@ define('LOGIN_BOX_LOGOFF','Log off');
 
 define('DISCOUNT_HEADING', 'Discounts');
 
-define('HELP', '<a href="http://web.icq.com/whitepages/message_me/1,,,00.icq?uin=' . STORE_OWNER_ICQ_NUMBER . '&action=message" target="_blank"><img src="http://status.icq.com/online.gif?icq=' . STORE_OWNER_ICQ_NUMBER . '&img=26" title="ICQ Status" align="absmiddle" border="0">' . STORE_OWNER_ICQ_NUMBER . '</a>
+define('HELP', '<a href="http://www.icq.com/whitepages/cmd.php?uin=' . STORE_OWNER_ICQ_NUMBER . '&action=message" target="_blank"><img src="http://status.icq.com/online.gif?icq=' . STORE_OWNER_ICQ_NUMBER . '&img=26" title="ICQ Status" align="absmiddle" border="0">' . STORE_OWNER_ICQ_NUMBER . '</a>
 <br>
 ');
 
