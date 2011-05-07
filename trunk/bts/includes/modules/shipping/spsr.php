@@ -104,11 +104,11 @@
 		//составление запроса стоимости доставки
 		if(isset($_POST['error_tocity']))
 			{
-			$request='http://cpcr.ru/cgi-bin/postxml.pl?TariffCompute&FromRegion='.$own_cpcr_id.'|0&FromCityName='.MODULE_SHIPPING_SPSR_FROM_CITY.'&Weight='. $shipping_weight .'&Nature='.MODULE_SHIPPING_SPSR_NATURE.'&Amount=0&Country=209|0&ToCity='.$_POST['error_tocity'];
+			$request='http://cpcr.ru/cgi-bin/postxml.pl?TariffCompute&FromRegion='.$own_cpcr_id.'|0&FromCityName='.iconv('UTF-8', 'WINDOWS-1251', MODULE_SHIPPING_SPSR_FROM_CITY).'&Weight='. $shipping_weight .'&Nature='.MODULE_SHIPPING_SPSR_NATURE.'&Amount=0&Country=209|0&ToCity='.$_POST['error_tocity'];
 			}
 		else
 			{
-			$request='http://cpcr.ru/cgi-bin/postxml.pl?TariffCompute&FromRegion='.$own_cpcr_id.'|0&FromCityName='.MODULE_SHIPPING_SPSR_FROM_CITY.'&Weight='. $shipping_weight .'&Nature='.MODULE_SHIPPING_SPSR_NATURE.'&Amount=0&Country=209|0&ToRegion='.$region_id.'|0&ToCityName='.$order->delivery['city'];
+			$request='http://cpcr.ru/cgi-bin/postxml.pl?TariffCompute&FromRegion='.$own_cpcr_id.'|0&FromCityName='.iconv('UTF-8', 'WINDOWS-1251',MODULE_SHIPPING_SPSR_FROM_CITY).'&Weight='. $shipping_weight .'&Nature='.MODULE_SHIPPING_SPSR_NATURE.'&Amount=0&Country=209|0&ToRegion='.$region_id.'|0&ToCityName='.iconv('UTF-8', 'WINDOWS-1251',$order->delivery['city']);
 			}
 		
 		//проверки связи с сервером
@@ -135,6 +135,9 @@
 			$title .= 'Доставка в '.$order->delivery['city'].', '.$order->delivery['state'];
 			if ($cost>0) {$title .= '<input type="hidden" name="cost" value="'.$cost.'">';}			
 			}
+			
+echo 'tets'. $request;			
+			
 	//если $cost уже был определен
 	}else{
 		$cost = $_POST['cost'];
