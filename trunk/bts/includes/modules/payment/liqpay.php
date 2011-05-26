@@ -292,7 +292,7 @@
                     <currency>'.$curr['currency'].'</currency>
                     <description>'.$order_id.'</description>
                     <default_phone></default_phone>
-                    <pay_way>card</pay_way>
+                    <pay_way>card,liqpay</pay_way>
                 </request>';
                 
 $merchant_pass = MODULE_PAYMENT_LIQPAY_SECRET_KEY; 
