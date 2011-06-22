@@ -51,7 +51,15 @@
     }
 
     function javascript_validation() {
-      return false;
+      $js = '  if (payment_value == "' . $this->code . '") {' . "\n" .
+            '    var qiwi_telephone = document.checkout_payment.qiwi_telephone.value;' . "\n" .
+            '    if (qiwi_telephone == "" || qiwi_telephone.length < 10) {' . "\n" .
+            '      error_message = error_message + "Укажите номер Вашего мобильного телефона в киви кошельке, на который будет выписан счёт.";' . "\n" .
+            '      error = 1;' . "\n" .
+            '    }' . "\n" .
+            '  }' . "\n";
+
+      return $js;
     }
 
     function selection() {
