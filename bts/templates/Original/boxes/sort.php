@@ -24,7 +24,7 @@ else {
  //echo '<a href="index.php?manufacturers_id='. $manufacturers['manufacturers_id']   .'"target="_self">' . $manufacturers['manufacturers_name'] .'</a>';
 //echo $options[$c]['text']. ' ' . $manufacturers['manufacturers_name'] .'<br>';
 if ($options[$c]['text']== $manufacturers['manufacturers_name']){
-   $new[$c-1]='<a href="index.php?'.  tep_get_path((array)$current_category_id)  .'&filter_id='. $manufacturers['manufacturers_id']   .' "target="_self">' . $manufacturers['manufacturers_name'] .'</a>';
+   $new[$c-1]='<a href="index.php?'.  tep_get_path($current_category_id)  .'&filter_id='. $manufacturers['manufacturers_id']   .' "target="_self">' . $manufacturers['manufacturers_name'] .'</a>';
                 $c++;     } else {}
 
 
@@ -56,7 +56,7 @@ for ($col=0, $n=sizeof($new); $col<$n; $col++) {
 ?>  
 
 <?php
-echo '<a href="href="index.php?'. tep_get_path((array)$current_category_id) .' "target="_self">'.TEXT_ALL.'</a>';
+echo '<a href="href="index.php?'. tep_get_path($current_category_id) .' "target="_self">'.TEXT_ALL.'</a>';
 ?>
 <br>
 <br>
