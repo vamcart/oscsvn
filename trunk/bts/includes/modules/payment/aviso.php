@@ -1,29 +1,29 @@
 <?php
 /*
-  $Id: qiwi.php 106 2010-04-14 13:37:44Z oleg_vamsoft $
+  $Id: aviso.php 1778 2011-08-05 17:37:44Z VaM $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2010 VaMSoft Ltd. http://kypi.ru
+  Copyright (c) 2011 osCommerce
 
   Released under the GNU General Public License
 */
 
-  class qiwi {
+  class aviso {
     var $code, $title, $description, $enabled;
 
 // class constructor
-    function qiwi() {
+    function aviso() {
       global $order;
 
-      $this->code = 'qiwi';
-      $this->title = MODULE_PAYMENT_QIWI_TEXT_TITLE;
-      $this->public_title = MODULE_PAYMENT_QIWI_TEXT_PUBLIC_TITLE;
-      $this->description = MODULE_PAYMENT_QIWI_TEXT_ADMIN_DESCRIPTION;
-      $this->icon = DIR_WS_ICONS . 'qiwi.png';
-      $this->sort_order = MODULE_PAYMENT_QIWI_SORT_ORDER;
-      $this->enabled = ((MODULE_PAYMENT_QIWI_STATUS == 'True') ? true : false);
+      $this->code = 'aviso';
+      $this->title = MODULE_PAYMENT_AVISO_TEXT_TITLE;
+      $this->public_title = MODULE_PAYMENT_AVISO_TEXT_PUBLIC_TITLE;
+      $this->description = MODULE_PAYMENT_AVISO_TEXT_ADMIN_DESCRIPTION;
+      $this->icon = DIR_WS_ICONS . 'aviso.png';
+      $this->sort_order = MODULE_PAYMENT_AVISO_SORT_ORDER;
+      $this->enabled = ((MODULE_PAYMENT_AVISO_STATUS == 'True') ? true : false);
 
     }
 
@@ -31,9 +31,9 @@
     function update_status() {
       global $order;
 
-      if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_QIWI_ZONE > 0) ) {
+      if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_AVISO_ZONE > 0) ) {
         $check_flag = false;
-        $check_query = tep_db_query("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_QIWI_ZONE . "' and zone_country_id = '" . $order->billing['country']['id'] . "' order by zone_id");
+        $check_query = tep_db_query("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_AVISO_ZONE . "' and zone_country_id = '" . $order->billing['country']['id'] . "' order by zone_id");
         while ($check = tep_db_fetch_array($check_query)) {
           if ($check['zone_id'] < 1) {
             $check_flag = true;
@@ -52,9 +52,9 @@
 
     function javascript_validation() {
       $js = '  if (payment_value == "' . $this->code . '") {' . "\n" .
-            '    var qiwi_telephone = document.checkout_payment.qiwi_telephone.value;' . "\n" .
-            '    if (qiwi_telephone == "" || qiwi_telephone.length < 10) {' . "\n" .
-            '      error_message = error_message + "Укажите номер Вашего мобильного телефона в киви кошельке, на который будет выписан счёт.";' . "\n" .
+            '    var aviso_telephone = document.checkout_payment.aviso_telephone.value;' . "\n" .
+            '    if (aviso_telephone == "" || aviso_telephone.length < 10) {' . "\n" .
+            '      error_message = error_message + "Укажите номер Вашего мобильного телефона.";' . "\n" .
             '      error = 1;' . "\n" .
             '    }' . "\n" .
             '  }' . "\n";
@@ -63,10 +63,10 @@
     }
 
     function selection() {
-      global $cart_qiwi_id;
+      global $cart_aviso_id;
 
-      if (tep_session_is_registered('cart_qiwi_id')) {
-        $order_id = substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1);
+      if (tep_session_is_registered('cart_aviso_id')) {
+        $order_id = substr($cart_aviso_id, strpos($cart_aviso_id, '-')+1);
 
         $check_query = tep_db_query('select orders_id from ' . TABLE_ORDERS_STATUS_HISTORY . ' where orders_id = "' . (int)$order_id . '" limit 1');
 
@@ -78,7 +78,7 @@
           tep_db_query('delete from ' . TABLE_ORDERS_PRODUCTS_ATTRIBUTES . ' where orders_id = "' . (int)$order_id . '"');
           tep_db_query('delete from ' . TABLE_ORDERS_PRODUCTS_DOWNLOAD . ' where orders_id = "' . (int)$order_id . '"');
 
-          tep_session_unregister('cart_qiwi_id');
+          tep_session_unregister('cart_aviso_id');
         }
       }
 
@@ -88,10 +88,10 @@
       				'module' => $this->public_title,
       				'icon' => $icon,
                          'description'=>$this->info,
-      	                 'fields' => array(array('title' => MODULE_PAYMENT_QIWI_NAME_TITLE,
-      	                                         'field' => MODULE_PAYMENT_QIWI_NAME_DESC),
-      	                                   array('title' => MODULE_PAYMENT_QIWI_TELEPHONE,
-      	                                         'field' => tep_draw_input_field('qiwi_telephone',$order->customer['telephone']) . MODULE_PAYMENT_QIWI_TELEPHONE_HELP,
+      	                 'fields' => array(array('title' => MODULE_PAYMENT_AVISO_NAME_TITLE,
+      	                                         'field' => MODULE_PAYMENT_AVISO_NAME_DESC),
+      	                                   array('title' => MODULE_PAYMENT_AVISO_TELEPHONE,
+      	                                         'field' => tep_draw_input_field('aviso_telephone',$order->customer['telephone']) . MODULE_PAYMENT_AVISO_TELEPHONE_HELP,
       	                                   )));
 
     }
@@ -109,18 +109,18 @@
     }
 
     function confirmation() {
-      global $cartID, $cart_qiwi_id, $customer_id, $languages_id, $order, $order_total_modules;
+      global $cartID, $cart_aviso_id, $customer_id, $languages_id, $order, $order_total_modules;
 
       if (tep_session_is_registered('cartID')) {
         $insert_order = false;
 
-        if (tep_session_is_registered('cart_qiwi_id')) {
-          $order_id = substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1);
+        if (tep_session_is_registered('cart_aviso_id')) {
+          $order_id = substr($cart_aviso_id, strpos($cart_aviso_id, '-')+1);
 
           $curr_check = tep_db_query("select currency from " . TABLE_ORDERS . " where orders_id = '" . (int)$order_id . "'");
           $curr = tep_db_fetch_array($curr_check);
 
-          if ( ($curr['currency'] != $order->info['currency']) || ($cartID != substr($cart_qiwi_id, 0, strlen($cartID))) ) {
+          if ( ($curr['currency'] != $order->info['currency']) || ($cartID != substr($cart_aviso_id, 0, strlen($cartID))) ) {
             $check_query = tep_db_query('select orders_id from ' . TABLE_ORDERS_STATUS_HISTORY . ' where orders_id = "' . (int)$order_id . '" limit 1');
 
             if (tep_db_num_rows($check_query) < 1) {
@@ -271,73 +271,61 @@
             }
           }
 
-          $cart_qiwi_id = $cartID . '-' . $insert_id;
-          tep_session_register('cart_qiwi_id');
+          $cart_aviso_id = $cartID . '-' . $insert_id;
+          tep_session_register('cart_aviso_id');
         }
 
-// Выписываем qiwi счёт для покупателя
+// Выписываем aviso счёт для покупателя
 
         if ($insert_order == true) {
         	
-        require_once(DIR_WS_CLASSES . 'nusoap/nusoap.php');
+        require_once(DIR_WS_CLASSES . 'avisosmsmc.class.php');
 
-			$client = new nusoap_client("https://mobw.ru/services/ishop", false); // создаем клиента для отправки запроса на QIWI
-			$error = $client->getError();
-			
-			//if ( !empty($error) ) {
-			// обрабатываем возможные ошибки и в случае их возникновения откатываем транзакцию в своей системе
-			//echo -1;
-			//exit();
-			//}
-			
-			$client->useHTTPPersistentConnection();
-			
-			// Параметры для передачи данных о платеже:
-			// login - Ваш ID в системе QIWI
-			// password - Ваш пароль
-			// user - Телефон покупателя (10 символов, например 916820XXXX)
-			// amount - Сумма платежа в рублях
-			// comment - Комментарий, который пользователь увидит в своем личном кабинете или платежном автомате
-			// txn - Наш внутренний уникальный номер транзакции
-			// lifetime - Время жизни платежа до его автоматической отмены
-			// alarm - Оповещать ли клиента через СМС или звонком о выписанном счете
-			// create - 0 - только для зарегистрированных пользователей QIWI, 1 - для всех
-			$params = array(
-			'login' => MODULE_PAYMENT_QIWI_ID,
-			'password' => MODULE_PAYMENT_QIWI_SECRET_KEY,
-			'user' => ($_SESSION['qiwi_telephone'] == '' ? $_POST['qiwi_telephone'] : $_SESSION['qiwi_telephone']),
-			'amount' => number_format($order->info['total'],0,'',''),
-			'comment' => substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1),
-			'txn' => substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1),
-			'lifetime' => date("d.m.Y H:i:s", strtotime("+2 weeks")),
-			'alarm' => 1,
-			'create' => 1
-			);
-			
-			// собственно запрос:
-			$result = $client->call('createBill', $params, "http://server.ishop.mw.ru/");
-			
-			//if ($client->fault) {
-			//echo -1;
-			//exit();
-			//} else {
-			//$err = $client->getError();
-			//if ($err) {
-			//echo -1;
-			//exit();
-			//} else {
-			//echo $result;
-			//exit();
-			//}
-			//}
+/*
+ * Инициализация
+ */
 
-	      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_prepare_input((int)substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1)) . "', '" . tep_db_prepare_input($_SESSION['kvit_name']) . "', '" . tep_db_prepare_input($_SESSION['qiwi_telephone']) ."')");
+$username = MODULE_PAYMENT_AVISO_ID;
+$access_key = MODULE_PAYMENT_AVISO_ACCESS_KEY;
+$service_id = MODULE_PAYMENT_AVISO_SERVICE_ID;
+
+// Создаем новый объект для работы с avisosms m_commerce
+$m_commerce = new AvisosmsMCommerce($username, $access_key, $service_id);
+// Включаем тестовый режим
+$m_commerce->test = FALSE;
+
+//------------------------------------------------------------------------------
+
+/*
+ * Создание нового заказа
+ */
+$description = tep_create_random_value(12);
+$price = number_format($order->info['total'],2,'.','');
+$success_message = 'ok!';
+$phone = ($_SESSION['aviso_telephone'] == '' ? $_POST['aviso_telephone'] : $_SESSION['aviso_telephone']);
+$merchant_order_id = substr($_SESSION['cart_aviso_id'], strpos($_SESSION['cart_aviso_id'], '-')+1);
+
+if ($m_commerce->createOrder($description, $price, $success_message, $phone, $merchant_order_id))
+{
+// Заказ создан успешно (status = 0)
+// Ответ ввиде массива
+    //$response = $m_commerce->response();
+    //var_dump($response);
+}
+else
+{
+// Ошибка создания заказа (status > 0)
+    echo 'Ошибка: '.$m_commerce->error_message();
+    //var_dump($m_commerce->response());
+}
+
+	      tep_db_query("INSERT INTO ".TABLE_PERSONS." (orders_id, name, address) VALUES ('" . tep_db_prepare_input((int)substr($cart_aviso_id, strpos($cart_aviso_id, '-')+1)) . "', '" . tep_db_prepare_input($_SESSION['kvit_name']) . "', '" . tep_db_prepare_input($_SESSION['aviso_telephone']) ."')");
 
         }
 
       }
 
-      return array('title' => MODULE_PAYMENT_QIWI_TEXT_DESCRIPTION);
+      return array('title' => MODULE_PAYMENT_AVISO_TEXT_DESCRIPTION);
     }
 
 	function process_button() {
@@ -345,10 +333,10 @@
 	}
 
     function before_process() {
-      global $customer_id, $order, $order_totals, $sendto, $billto, $languages_id, $payment, $currencies, $cart, $cart_qiwi_id;
+      global $customer_id, $order, $order_totals, $sendto, $billto, $languages_id, $payment, $currencies, $cart, $cart_aviso_id;
       global $$payment;
 
-      $order_id = substr($cart_qiwi_id, strpos($cart_qiwi_id, '-')+1);
+      $order_id = substr($cart_aviso_id, strpos($cart_aviso_id, '-')+1);
 
 // initialized for the email confirmation
       $products_ordered = '';
@@ -486,7 +474,7 @@
       tep_session_unregister('payment');
       tep_session_unregister('comments');
 
-      tep_session_unregister('cart_qiwi_id');
+      tep_session_unregister('cart_aviso_id');
 
       tep_redirect(tep_href_link(FILENAME_CHECKOUT_SUCCESS, '', 'SSL'));
     }
@@ -501,7 +489,7 @@
 
     function check() {
       if (!isset($this->_check)) {
-        $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'MODULE_PAYMENT_QIWI_STATUS'");
+        $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'MODULE_PAYMENT_AVISO_STATUS'");
         $this->_check = tep_db_num_rows($check_query);
       }
       return $this->_check;
@@ -509,12 +497,13 @@
 
     function install() {
 
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты Киви', 'MODULE_PAYMENT_QIWI_STATUS', 'True', 'Разрешить модуль оплаты Киви?', '6', '1', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID номер магазина', 'MODULE_PAYMENT_QIWI_ID', '', 'Укажите ID номер Вашего магазина.', '6', '2', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_QIWI_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '3', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_QIWI_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '4', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Пароль', 'MODULE_PAYMENT_QIWI_SECRET_KEY', '0', 'В данной опции укажите пароль Вашего магазина на http://ishop.qiwi.ru.', '6', '5', now())");
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_QIWI_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '6', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Разрешить модуль оплаты AvisoSMS', 'MODULE_PAYMENT_AVISO_STATUS', 'True', 'Разрешить модуль оплаты AvisoSMS?', '6', '1', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ваш логин в AvisoSMS', 'MODULE_PAYMENT_AVISO_ID', '', 'Укажите Ваше имя пользователя в системе AvisoSMS Мобильная коммерция.', '6', '2', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Ключ доступа', 'MODULE_PAYMENT_AVISO_ACCESS_KEY', '', 'Укажите ключ доступа (В личном кабинете AvisoSMS указывается, в разделе Настройки - Настройки удалённого доступа)', '6', '3', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID номер магазина', 'MODULE_PAYMENT_AVISO_SERVICE_ID', '', 'Укажите ID номер Вашего магазина (ID номер виден в личном кабинете AvisoSMS, в разделе Биллинг - Мобильная коммерция, в списке магазинов виден ID номер)', '6', '4', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_AVISO_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '5', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_AVISO_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '6', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_AVISO_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '7', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
 
     function remove() {
@@ -522,7 +511,7 @@
     }
 
     function keys() {
-      return array('MODULE_PAYMENT_QIWI_STATUS', 'MODULE_PAYMENT_QIWI_ID', 'MODULE_PAYMENT_QIWI_SORT_ORDER', 'MODULE_PAYMENT_QIWI_ZONE', 'MODULE_PAYMENT_QIWI_SECRET_KEY', 'MODULE_PAYMENT_QIWI_ORDER_STATUS_ID');
+      return array('MODULE_PAYMENT_AVISO_STATUS', 'MODULE_PAYMENT_AVISO_ID', 'MODULE_PAYMENT_AVISO_ID', 'MODULE_PAYMENT_AVISO_ACCESS_KEY', 'MODULE_PAYMENT_AVISO_SERVICE_ID', 'MODULE_PAYMENT_AVISO_SORT_ORDER', 'MODULE_PAYMENT_AVISO_ZONE', 'MODULE_PAYMENT_AVISO_ORDER_STATUS_ID');
     }
 
 // format prices without currency formatting
