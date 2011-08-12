@@ -82,7 +82,7 @@
     }
 
     $free_shipping = false;
-    if (($order->info['total'] >= MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_OVER) ) {
+    if (($order->info['total'] >= MODULE_ORDER_TOTAL_SHIPPING_FREE_SHIPPING_OVER)&&($pass)) {
       $free_shipping = true;
 
       include(DIR_WS_LANGUAGES . $language . '/modules/order_total/ot_shipping.php');
@@ -102,7 +102,6 @@ if (!isset($_SESSION['kvit_name'])) $_SESSION['kvit_name'] = $_POST['kvit_name']
 if (!isset($_SESSION['kvit_address'])) $_SESSION['kvit_address'] = $_POST['kvit_address'];
 
 if (!isset($_SESSION['qiwi_telephone'])) $_SESSION['qiwi_telephone'] = $_POST['qiwi_telephone'];
-if (!isset($_SESSION['aviso_telephone'])) $_SESSION['aviso_telephone'] = $_POST['aviso_telephone'];
 
 if (!isset($_SESSION['s_name'])) $_SESSION['s_name'] = $_POST['s_name'];
 if (!isset($_SESSION['s_inn'])) $_SESSION['s_inn'] = $_POST['s_inn'];
