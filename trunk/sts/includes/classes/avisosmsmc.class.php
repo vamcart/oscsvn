@@ -130,7 +130,7 @@ class AvisosmsMCommerce {
      *
      * @return  boolean Возвращает TRUE, если status = 0, иначе FALSE
      */
-    function createOrder($hash, $description, $price, $success_message, $phone, $merchant_order_id = '')
+    function createOrder($description, $price, $success_message, $phone, $merchant_order_id = '')
     {
         $data = array(
             'username'          => $this->username,
