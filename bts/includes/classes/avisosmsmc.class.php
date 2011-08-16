@@ -92,6 +92,7 @@ class AvisosmsMCommerce {
      *      $m_commerce->debug = TRUE;
      *
      * @param   string  Имя пользователя в системе AvisoSMS.
+     * @param   string  Подпись
      * @param   string  Ключ доступа. Указывается в настройках платформы.
      * @param   string  ID сервиса. Указывается в личном кабинете.
      *
