@@ -63,7 +63,7 @@ $listing_split = new splitPageResults($listing_sql, MAX_ARTICLES_PER_PAGE);
       if (DISPLAY_ABSTRACT_ARTICLE_LISTING == 'true') {
 ?>
           <tr>
-            <td class="main" style="padding-left:15px"><?php echo clean_html_comments(substr($articles_listing['articles_head_desc_tag'],0, MAX_ARTICLE_ABSTRACT_LENGTH)) . ((strlen($articles_listing['articles_head_desc_tag']) >= MAX_ARTICLE_ABSTRACT_LENGTH) ? '...' : ''); ?></td>
+            <td class="main" style="padding-left:15px"><?php echo clean_html_comments(utf8_substr($articles_listing['articles_head_desc_tag'],0, MAX_ARTICLE_ABSTRACT_LENGTH)) . ((utf8_strlen($articles_listing['articles_head_desc_tag']) >= MAX_ARTICLE_ABSTRACT_LENGTH) ? '...' : ''); ?></td>
           </tr>
 <?php
       }
