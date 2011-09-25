@@ -176,6 +176,30 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
       }
     }
 
+    if (ACCOUNT_STATE == 'true') {
+      $zone_id = 0;
+      $check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
+      $check = tep_db_fetch_array($check_query);
+      $entry_state_has_zones = ($check['total'] > 0);
+      if ($entry_state_has_zones == true) {
+        $zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' and zone_name = '" . tep_db_input($state) . "'");
+        if (tep_db_num_rows($zone_query) == 1) {
+          $zone = tep_db_fetch_array($zone_query);
+          $zone_id = $zone['zone_id'];
+        } else {
+          $error = true;
+
+          $messageStack->add('checkout_address', ENTRY_STATE_ERROR_SELECT);
+        }
+      } else {
+        if (strlen($state) < ENTRY_STATE_MIN_LENGTH) {
+          $error = true;
+
+          $messageStack->add('checkout_address', ENTRY_STATE_ERROR);
+        }
+      }
+    }
+    
         $extra_fields_query = tep_db_query("select ce.fields_id, ce.fields_input_type, ce.fields_required_status, cei.fields_name, ce.fields_status, ce.fields_input_type, ce.fields_size from " . TABLE_EXTRA_FIELDS . " ce, " . TABLE_EXTRA_FIELDS_INFO . " cei where ce.fields_status=1 and ce.fields_required_status=1 and cei.fields_id=ce.fields_id and cei.languages_id =" . $languages_id);
    while($extra_fields = tep_db_fetch_array($extra_fields_query)){
     if(strlen($_POST['fields_' . $extra_fields['fields_id']])<$extra_fields['fields_size']){
@@ -250,7 +274,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
       if (ACCOUNT_STATE == 'true') {
         if ($zone_id > 0) {
           $sql_data_array['entry_zone_id'] = $zone_id;
-          $sql_data_array['entry_state'] = '';
+          $sql_data_array['entry_state'] = $state;
         } else {
           $sql_data_array['entry_zone_id'] = '0';
           $sql_data_array['entry_state'] = $state;

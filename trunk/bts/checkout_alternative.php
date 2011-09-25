@@ -134,11 +134,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
     if (ACCOUNT_POSTCODE == 'true') $postcode = tep_db_prepare_input($_POST['postcode']);
     if (ACCOUNT_CITY == 'true') $city = tep_db_prepare_input($_POST['city']);
       if (ACCOUNT_STATE == 'true') {
-        if (isset($_POST['zone_id'])) {
           $zone_id = tep_db_prepare_input($_POST['zone_id']);
-        } else {
-          $zone_id = false;
-        }
         $state = tep_db_prepare_input($_POST['state']);
       }
     if (ACCOUNT_COUNTRY == 'true') { $country = tep_db_prepare_input($_POST['country']);
@@ -174,6 +170,30 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
       if ($check_email['total'] > 0) {
         $error = true;
         $messageStack->add('create_account', ENTRY_EMAIL_ADDRESS_ERROR_EXISTS);
+      }
+    }
+
+    if (ACCOUNT_STATE == 'true') {
+      $zone_id = 0;
+      $check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
+      $check = tep_db_fetch_array($check_query);
+      $entry_state_has_zones = ($check['total'] > 0);
+      if ($entry_state_has_zones == true) {
+        $zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' and zone_name = '" . tep_db_input($state) . "'");
+        if (tep_db_num_rows($zone_query) == 1) {
+          $zone = tep_db_fetch_array($zone_query);
+          $zone_id = $zone['zone_id'];
+        } else {
+          $error = true;
+
+          $messageStack->add('checkout_address', ENTRY_STATE_ERROR_SELECT);
+        }
+      } else {
+        if (strlen($state) < ENTRY_STATE_MIN_LENGTH) {
+          $error = true;
+
+          $messageStack->add('checkout_address', ENTRY_STATE_ERROR);
+        }
       }
     }
 
@@ -251,7 +271,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
       if (ACCOUNT_STATE == 'true') {
         if ($zone_id > 0) {
           $sql_data_array['entry_zone_id'] = $zone_id;
-          $sql_data_array['entry_state'] = '';
+          $sql_data_array['entry_state'] = $state;
         } else {
           $sql_data_array['entry_zone_id'] = '0';
           $sql_data_array['entry_state'] = $state;
@@ -361,11 +381,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
       $country = STORE_COUNTRY;
       }
       if (ACCOUNT_STATE == 'true') {
-        if (isset($_POST['zone_id'])) {
           $zone_id = tep_db_prepare_input($_POST['zone_id']);
-        } else {
-          $zone_id = false;
-        }
         $state = tep_db_prepare_input($_POST['shipstate']);
       }
 
