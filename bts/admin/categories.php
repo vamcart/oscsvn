@@ -33,7 +33,7 @@ if (isset($_POST['upd'])) {$_GET['action']='update_category';}
 	$admin_cat_access_array_cats = explode(",",$admin_cat_access);
 	$admin_right_access = $admin_access_array['admin_right_access'];
 // EOF: KategorienAdmin / OLISWISS
-echo ''.$_SESSION['login_id'].$admin_cat_access;
+
   if (tep_not_null($action)) {
     switch ($action) {
       case 'setflag':
