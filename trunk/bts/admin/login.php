@@ -31,6 +31,7 @@
         }
 
         $login_id = $check_admin['login_id'];
+        $_SESSION['login_id'] = $check_admin['login_id'];
         $login_groups_id = $check_admin[login_groups_id];
         $login_firstname = $check_admin['login_firstname'];
         $login_email_address = $check_admin['login_email_address'];
