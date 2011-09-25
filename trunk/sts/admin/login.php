@@ -92,12 +92,7 @@ a:hover.headerLink { font-family: Verdana, Arial, sans-serif; font-size: 10px; c
         <td><table border="0" width="755" cellspacing="0" cellpadding="0">
            <tr>    <td bgcolor="#ffffff">
     	<?php 
-        	// #CP - point logos to come from selected template's images directory
-		    $template_query = tep_db_query("select configuration_id, configuration_title, configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'DEFAULT_TEMPLATE'");
-  			$template = tep_db_fetch_array($template_query);
-  			$CURR_TEMPLATE = $template['configuration_value'] . '/';
-            
-        	echo tep_image(DIR_WS_TEMPLATES . $CURR_TEMPLATE . DIR_WS_IMAGES . 'oscommerce.gif'); 
+        	echo tep_image(DIR_WS_IMAGES . 'oscommerce.gif');
         ?>
     </td>
     </tr>
