@@ -211,7 +211,7 @@ $extra_fields['value'];
 }
 
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
-                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
                 ' . tep_get_products_info($listing['products_id']) . $extra_fields_text;
               } else {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . $listing['products_name'] . '</a><br>
@@ -259,7 +259,7 @@ $extra_fields['value'];
 
 if (tep_has_product_attributes($listing['products_id'])) {
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
-                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . TEXT_MORE_INFO . '</a>';
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $listing['products_id']) . '">' . TEXT_MORE_INFO . '</a>';
               } else {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . TEXT_MORE_INFO . '</a>';
               }
@@ -276,7 +276,7 @@ if (tep_has_product_attributes($listing['products_id'])) {
             case 'PRODUCT_LIST_IMAGE':
               $lc_align = 'center';
               if (isset($_GET['manufacturers_id']) && tep_not_null($_GET['manufacturers_id'])) {
-                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $_GET['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+                $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
               } else {
                 $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
               }
