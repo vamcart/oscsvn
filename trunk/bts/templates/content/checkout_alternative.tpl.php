@@ -591,7 +591,7 @@ function changeselect(reg) {
     var j=0;
     for (var i=0;i<zones.length;i++) {
       if (zones[i][0]==document.checkout.country.value) {
-   document.checkout.state.options[j]=new Option(zones[i][1],zones[i][1]);
+   document.checkout.state.options[j]=new Option(zones[i][1],zones[i][1], zones[i][2]);
    j++;
    }
       }
@@ -602,10 +602,11 @@ function changeselect(reg) {
 }
    var zones = new Array(
    <?php
-       $zones_query = tep_db_query("select zone_country_id,zone_name from " . TABLE_ZONES . " order by zone_name asc");
+       $zones_query = tep_db_query("select zone_country_id,zone_id,zone_name from " . TABLE_ZONES . " order by zone_name asc");
        $mas=array();
        while ($zones_values = tep_db_fetch_array($zones_query)) {
-         $zones[] = 'new Array('.$zones_values['zone_country_id'].',"'.$zones_values['zone_name'].'")';
+       	($zones_values['zone_id'] == STORE_ZONE) ? $selected = 'true' : $selected = 'false';
+         $zones[] = 'new Array('.$zones_values['zone_country_id'].',"'.$zones_values['zone_name'].'",'.$selected.')';
        }
        echo implode(',',$zones);
        ?>
@@ -744,7 +745,7 @@ function changeselectt(reg) {
     var j=0;
     for (var i=0;i<zones.length;i++) {
       if (zones[i][0]==document.checkout.shipcountry.value) {
-   document.checkout.shipstate.options[j]=new Option(zones[i][1],zones[i][1]);
+   document.checkout.shipstate.options[j]=new Option(zones[i][1],zones[i][1], zones[i][2]);
    j++;
    }
       }
@@ -755,10 +756,11 @@ function changeselectt(reg) {
 }
    var zones = new Array(
    <?php
-       $zones_query = tep_db_query("select zone_country_id,zone_name from " . TABLE_ZONES . " order by zone_name asc");
+       $zones_query = tep_db_query("select zone_country_id,zone_id,zone_name from " . TABLE_ZONES . " order by zone_name asc");
        $mas=array();
        while ($zones_values = tep_db_fetch_array($zones_query)) {
-         $zones[] = 'new Array('.$zones_values['zone_country_id'].',"'.$zones_values['zone_name'].'")';
+       	($zones_values['zone_id'] == STORE_ZONE) ? $selected = 'true' : $selected = 'false';
+         $zones[] = 'new Array('.$zones_values['zone_country_id'].',"'.$zones_values['zone_name'].'",'.$selected.')';
        }
        echo implode(',',$zones);
        ?>
