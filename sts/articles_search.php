@@ -54,8 +54,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <!-- left_navigation_eof //-->
     </table></td>
 <!-- body_text //-->
-      <tr>
-        <td>
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 <?php
   if ($akeywords == ""){
 ?>  
@@ -119,6 +118,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <?php
   }
 ?>
+    </table></td>
 <!-- body_text_eof //-->
     <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- right_navigation //-->
