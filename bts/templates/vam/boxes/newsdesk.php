@@ -86,44 +86,44 @@ return $products_newsdesk_count;
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
-function newsedsk_show_category($counter) {
+function newsedsk_show_category($counterr) {
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 global $foo_newdesk, $categories_newsdesk_string, $id_news;
 
-for ($a=0; $a<$foo_newdesk[$counter]['level']; $a++) {
+for ($a=0; $a<$foo_newdesk[$counterr]['level']; $a++) {
 	$categories_newsdesk_string .= "&nbsp;&nbsp;";
 }
 
 $categories_newsdesk_string .= '<a href="';
 
-if ($foo_newdesk[$counter]['parent'] == 0) {
-	$newsPath_new = 'newsPath=' . $counter;
+if ($foo_newdesk[$counterr]['parent'] == 0) {
+	$newsPath_new = 'newsPath=' . $counterr;
 } else {
-	$newsPath_new = 'newsPath=' . $foo_newdesk[$counter]['path'];
+	$newsPath_new = 'newsPath=' . $foo_newdesk[$counterr]['path'];
 }
 
 $categories_newsdesk_string .= tep_href_link(FILENAME_NEWSDESK_INDEX, $newsPath_new);
 $categories_newsdesk_string .= '">';
 
-if ( ($id_news) && (in_array($counter, $id_news)) ) {
+if ( ($id_news) && (in_array($counterr, $id_news)) ) {
 	$categories_newsdesk_string .= '<b>';
 }
 
 // display category name
-$categories_newsdesk_string .= $foo_newdesk[$counter]['name'];
+$categories_newsdesk_string .= $foo_newdesk[$counterr]['name'];
 
-if ( ($id_news) && (in_array($counter, $id_news)) ) {
+if ( ($id_news) && (in_array($counterr, $id_news)) ) {
 	$categories_newsdesk_string .= '</b>';
 }
 
-if (newsedsk_box_has_category_subcategories($counter)) {
+if (newsedsk_box_has_category_subcategories($counterr)) {
 	$categories_newsdesk_string .= '-&gt;';
 }
 
 $categories_newsdesk_string .= '</a>';
 
 if (SHOW_COUNTS == 'true') {
-	$products_newsdesk_in_category = newsedsk_box_count_products_in_category($counter);
+	$products_newsdesk_in_category = newsedsk_box_count_products_in_category($counterr);
 	if ($products_newsdesk_in_category > 0) {
 		$categories_newsdesk_string .= '&nbsp;(' . $products_newsdesk_in_category . ')';
 	}
@@ -131,8 +131,8 @@ if (SHOW_COUNTS == 'true') {
 
 $categories_newsdesk_string .= '<br>';
 
-if ($foo_newdesk[$counter]['next_id']) {
-	newsedsk_show_category($foo_newdesk[$counter]['next_id']);
+if ($foo_newdesk[$counterr]['next_id']) {
+	newsedsk_show_category($foo_newdesk[$counterr]['next_id']);
 }
 
 }
@@ -176,8 +176,8 @@ while ($categories_newsdesk = tep_db_fetch_array($categories_newsdesk_query))  {
 
 	$prev_id = $categories_newsdesk['categories_id'];
 
-	if (!isset($counter)) {
-		$counter = $categories_newsdesk['categories_id'];
+	if (!isset($counterr)) {
+		$counterr = $categories_newsdesk['categories_id'];
 	}
 }
 
@@ -227,7 +227,7 @@ if ($newsPath) {
 	}
 }
 
-newsedsk_show_category($counter);
+newsedsk_show_category($counterr);
 
 echo $categories_newsdesk_string;
 
