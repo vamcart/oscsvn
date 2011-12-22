@@ -686,7 +686,7 @@
           $checkbox_id++;
         }
         $box_text .= $additional_variables . tep_hide_session_id();
-        $box_text .= tep_image_submit('icon_next.gif', TEXT_FIND_PRODUCTS);
+        $box_text .= tep_image_submit('small_view.gif', TEXT_FIND_PRODUCTS);
         $box_text .= '</form>';
         break;
 
