@@ -1608,7 +1608,7 @@ function popupPropertiesWindow(url) {
       reset($_POST);
       while (list($key, $value) = each($_POST)) {
         if (!is_array($_POST[$key])) {
-          echo tep_draw_hidden_field($key, htmlspecialchars(stripslashes($value)));
+          echo tep_draw_hidden_field($key, htmlspecialchars(stripslashes((string)$value)));
         }
       }
       $languages = tep_get_languages();
@@ -2778,10 +2778,10 @@ updateGross('products_price');
       while (list($key, $value) = each($_POST)) {
         if (is_array($value)) {
           while (list($k, $v) = each($value)) {
-            echo tep_draw_hidden_field($key . '[' . $k . ']', htmlspecialchars(stripslashes($v)));
+            echo tep_draw_hidden_field($key . '[' . $k . ']', htmlspecialchars(stripslashes((string)$v)));
           }
         } else {
-          echo tep_draw_hidden_field($key, htmlspecialchars(stripslashes($value)));
+          echo tep_draw_hidden_field($key, htmlspecialchars(stripslashes((string)$value)));
         }
       }
       $languages = tep_get_languages();
