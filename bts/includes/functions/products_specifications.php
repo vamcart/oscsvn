@@ -187,13 +187,13 @@
         
         case ($link_data['count'] != '' && $link_data['count'] < 1 && SPECIFICATIONS_FILTER_NO_RESULT == 'grey'):
           $field .= '<span class="no_results">';
-          $field .= tep_image (DIR_WS_IMAGES . trim($link_data['text']), $link_data['text'], SPECIFICATIONS_FILTER_IMAGE_WIDTH, SPECIFICATION_FILTER_IMAGE_HEIGHT, ' class="image_filter"');
+          $field .= tep_image (DIR_WS_IMAGES . trim ($link_data['text']), $link_data['text'], SPECIFICATIONS_FILTER_IMAGE_WIDTH, SPECIFICATION_FILTER_IMAGE_HEIGHT, ' class="image_filter"');
           $field .= '</span>';
           break;
         
         default:
           $field .= '<a href="' . tep_href_link ($target, tep_get_array_get_params (array ( $name, 'page') ) . ($link_data['id'] == '0' ? '' : $name . '=' . tep_output_string ($link_data['id']) ) ) . '">';
-          $field .= tep_image (DIR_WS_IMAGES . trim($link_data['text']), $link_data['text'], SPECIFICATIONS_FILTER_IMAGE_WIDTH, SPECIFICATION_FILTER_IMAGE_HEIGHT, ' class="image_filter"');
+          $field .= tep_image (DIR_WS_IMAGES . trim ($link_data['text']), $link_data['text'], SPECIFICATIONS_FILTER_IMAGE_WIDTH, SPECIFICATION_FILTER_IMAGE_HEIGHT, ' class="image_filter"');
           $field .= '</a>';
           break;
       } // switch (true)
@@ -686,7 +686,7 @@
           $checkbox_id++;
         }
         $box_text .= $additional_variables . tep_hide_session_id();
-        $box_text .= tep_image_submit('icon_next.gif', TEXT_FIND_PRODUCTS);
+        $box_text .= tep_template_image_submit('small_view.gif', TEXT_FIND_PRODUCTS);
         $box_text .= '</form>';
         break;
 
@@ -700,7 +700,7 @@
         foreach ($filters_select_array as $filter) {
           $checked = ($filter['id'] == $filter_value) ? true : false;
           $box_text .= tep_draw_checkbox_field($filter_name, $filter['id'], $checked);
-          $box_text .= '&nbsp;&nbsp;' . tep_image(DIR_WS_IMAGES . trim($filter['text']), $filter['text'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '<br>' . "\n";
+          $box_text .= '&nbsp;&nbsp;' . tep_image(DIR_WS_IMAGES . $filter['text'], $filter['text'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '<br>' . "\n";
           $box_text .= '<br>' . "\n";
         }
         $box_text .= $additional_variables . tep_hide_session_id();
