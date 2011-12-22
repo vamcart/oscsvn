@@ -317,10 +317,15 @@ function tep_redirect($url) {
     if ($exclude_array == '') $exclude_array = array();
 
     $get_url = '';
-
-    reset($_GET);
-    while (list($key, $value) = each($_GET)) {
-      if (($key != tep_session_name()) && ($key != 'error') && (!in_array($key, $exclude_array))) $get_url .= $key . '=' . $value . '&';
+    if (is_array($_GET) && (sizeof($_GET) > 0)) {
+      reset($_GET);
+      while (list($key, $value) = each($_GET)) {
+        if ( (strlen((string)$value) > 0) && ($key != tep_session_name()) && ($key != 'error') && ($key != 'cPath') && (!in_array($key, $exclude_array)) && ($key != 'x') && ($key != 'y') ) {
+          $key =rawurlencode(stripslashes((string)$key));
+          $value=rawurlencode(stripslashes((string)$value));          
+          $get_url .= $key . '=' . $value . '&';
+        }
+      }
     }
 
     return $get_url;
