@@ -700,7 +700,7 @@
         foreach ($filters_select_array as $filter) {
           $checked = ($filter['id'] == $filter_value) ? true : false;
           $box_text .= tep_draw_checkbox_field($filter_name, $filter['id'], $checked);
-          $box_text .= '&nbsp;&nbsp;' . tep_image(DIR_WS_IMAGES . $filter['text'], $filter['text'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '<br>' . "\n";
+          $box_text .= '&nbsp;&nbsp;' . tep_image(DIR_WS_IMAGES . trim($filter['text']), $filter['text'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '<br>' . "\n";
           $box_text .= '<br>' . "\n";
         }
         $box_text .= $additional_variables . tep_hide_session_id();
