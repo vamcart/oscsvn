@@ -247,21 +247,30 @@ function tep_redirect($url) {
   function tep_get_all_get_params($exclude_array = '') {
     global $_GET;
 
-    if (!is_array($exclude_array)) $exclude_array = array();
-
+    if (!is_array($exclude_array))
+      $exclude_array = array ();
     $get_url = '';
+
     if (is_array($_GET) && (sizeof($_GET) > 0)) {
       reset($_GET);
-      while (list($key, $value) = each($_GET)) {
-        if ( (strlen((string)$value) > 0) && ($key != tep_session_name()) && ($key != 'error') && (!in_array($key, $exclude_array)) && ($key != 'x') && ($key != 'y') ) {
-          $get_url .= $key . '=' . rawurlencode(stripslashes((string)$value)) . '&';
+
+      foreach ($_GET as $key => $value) {
+        if (is_array($value)) {
+          foreach ($value as $new_key => $new_value) {
+            if (!in_array($key, $exclude_array)) {
+              $get_url .= $key . '[' . $new_key . ']' . '=' . rawurlencode(stripslashes($new_value)) . '&';
+            }
+          }
+        }
+        elseif ((strlen($value) > 0) && ($key != tep_session_name()) && ($key != 'error') && (!in_array($key, $exclude_array)) && ($key != 'x') && ($key != 'y')) {
+          $get_url .= $key . '=' . rawurlencode(stripslashes($value)) . '&';
         }
       }
     }
 
     return $get_url;
   }
-
+  
 ////
 // Returns an array with countries
 // TABLES: countries
@@ -1802,7 +1811,7 @@ function tep_get_spsr_zone_id($zone_id) {
 		return $alias;
 	}
 	
-     function vam_RandomString($length) {
+     function tep_RandomString($length) {
        $chars = array( 'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J',  'k', 'K', 'l', 'L', 'm', 'M', 'n','N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T',  'u', 'U', 'v','V', 'w', 'W', 'x', 'X', 'y', 'Y', 'z', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
 
        $max_chars = count($chars) - 1;
