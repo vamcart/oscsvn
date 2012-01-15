@@ -151,7 +151,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
     } else {
       $newsletter = false;
     }
-    $password = vam_RandomString(8);
+    $password = tep_RandomString(8);
     $confirmation = tep_db_prepare_input($_POST['confirmation']);
 
    // +Country-State Selector
