@@ -151,7 +151,7 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
     } else {
       $newsletter = false;
     }
-    $password = tep_RandomString(8);
+    $password = vam_RandomString(8);
     $confirmation = tep_db_prepare_input($_POST['confirmation']);
 
    // +Country-State Selector
@@ -314,9 +314,9 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
               $$key =$val;
                 }
     tep_session_register('billto');
-    tep_session_register('sendto');
+    //tep_session_register('sendto');
      $billto = $shipping_address['address_book_id'];
-     $sendto = $shipping_address['address_book_id'];
+     //$sendto = $shipping_address['address_book_id'];
       // restore cart contents
       $cart->restore_contents();
 
@@ -488,10 +488,10 @@ if (!isset($_SESSION['s_accountant'])) $_SESSION['s_accountant'] = $_POST['s_acc
         tep_db_perform(TABLE_ADDRESS_BOOK, $sql_data_array);
           tep_session_unregister('sendto');
           tep_session_unregister('billto');
-          tep_session_register('sendto');
-          tep_session_register('billto');
-        $sendto = tep_db_insert_id();
-        $billto = $sendto -1;
+          //tep_session_register('sendto');
+          //tep_session_register('billto');
+        //$sendto = tep_db_insert_id();
+        //$billto = $sendto -1;
     }
   }
    //END DIFFERENT SHIPPING CODE
