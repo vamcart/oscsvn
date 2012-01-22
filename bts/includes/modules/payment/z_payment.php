@@ -484,6 +484,7 @@
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('ID номер магазина в Z-Payment', 'MODULE_PAYMENT_Z_PAYMENT_ID', '', 'Укажите id номер Вашего магазина.', '6', '4', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Порядок сортировки.', 'MODULE_PAYMENT_Z_PAYMENT_SORT_ORDER', '0', 'Порядок сортировки модуля.', '6', '7', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Зона оплаты', 'MODULE_PAYMENT_Z_PAYMENT_ZONE', '0', 'Если выбрана зона, данный модуль оплаты будет доступен только покупателям из указанной зоны.', '6', '8', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Секретный ключ', 'MODULE_PAYMENT_Z_PAYMENT_SECRET_KEY', '0', 'В данной опции укажите Ваш ключ, указанный в опции Secret Key на сайте Z-Payment.', '6', '8', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите статус заказа, ожидающий оплаты', 'MODULE_PAYMENT_Z_PAYMENT_PREPARE_ORDER_STATUS_ID', '0', 'Укажите статус заказа, ожидающий оплаты', '6', '9', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
       tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Укажите оплаченный статус заказа', 'MODULE_PAYMENT_Z_PAYMENT_ORDER_STATUS_ID', '0', 'Укажите оплаченный статус заказа', '6', '10', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
     }
@@ -493,7 +494,7 @@
     }
 
     function keys() {
-      return array('MODULE_PAYMENT_Z_PAYMENT_STATUS', 'MODULE_PAYMENT_Z_PAYMENT_ID', 'MODULE_PAYMENT_Z_PAYMENT_SORT_ORDER', 'MODULE_PAYMENT_Z_PAYMENT_ZONE', 'MODULE_PAYMENT_Z_PAYMENT_PREPARE_ORDER_STATUS_ID', 'MODULE_PAYMENT_Z_PAYMENT_ORDER_STATUS_ID');
+      return array('MODULE_PAYMENT_Z_PAYMENT_STATUS', 'MODULE_PAYMENT_Z_PAYMENT_ID', 'MODULE_PAYMENT_Z_PAYMENT_SORT_ORDER', 'MODULE_PAYMENT_Z_PAYMENT_ZONE', 'MODULE_PAYMENT_Z_PAYMENT_SECRET_KEY', 'MODULE_PAYMENT_Z_PAYMENT_PREPARE_ORDER_STATUS_ID', 'MODULE_PAYMENT_Z_PAYMENT_ORDER_STATUS_ID');
     }
 
 // format prices without currency formatting
