@@ -280,6 +280,7 @@
                                           );
 
                   tep_db_perform(TABLE_ORDERS_PRODUCTS_DOWNLOAD, $sql_data_array);
+                  }
                 }
               }
             }
