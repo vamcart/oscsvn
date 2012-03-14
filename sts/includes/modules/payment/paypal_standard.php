@@ -305,7 +305,7 @@
       $process_button_string = '';
       $my_currency = 'USD';
       $parameters = array('cmd' => '_xclick',
-                          'item_name' => STORE_NAME . ' - ' . $order_num,
+                          'item_name' => $order_num,
                           'shipping' => $this->format_raw($order->info['shipping_cost']),
                           'tax' => $this->format_raw($order->info['tax']),
                           'business' => MODULE_PAYMENT_PAYPAL_STANDARD_ID,
