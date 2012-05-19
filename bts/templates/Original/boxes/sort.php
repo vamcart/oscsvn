@@ -56,7 +56,7 @@ for ($col=0, $n=sizeof($new); $col<$n; $col++) {
 ?>  
 
 <?php
-echo '<a href="href="index.php?'. tep_get_path($current_category_id) .' "target="_self">'.TEXT_ALL.'</a>';
+echo '<a href="index.php?'. tep_get_path($current_category_id) .' "target="_self">'.TEXT_ALL.'</a>';
 ?>
 <br>
 <br>
