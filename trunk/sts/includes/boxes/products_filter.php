@@ -11,6 +11,7 @@
   Released under the GNU General Public License
 */
 
+if ((isset($_GET['cPath']) && isset($current_category_id)) or FILTERS_MAIN_PAGE == 'True') {
 
   require_once (DIR_WS_FUNCTIONS . 'products_specifications.php');
     
@@ -19,6 +20,8 @@
     
   if (SPECIFICATIONS_FILTERS_BOX == 'True') {
     $box_text =  ''; //HTML string goes into the text part of the box
+
+    if ((isset($_GET['cPath']) && isset($current_category_id)) or FILTERS_MAIN_PAGE == 'False') $get_category = "and s2c.categories_id = '" . $current_category_id . "'";
      
     $specs_query_raw = "select s.specifications_id,
                                s.products_column_name,
@@ -35,7 +38,7 @@
                         where s.specification_group_id = sg.specification_group_id
                           and sg.specification_group_id = s2c.specification_group_id
                           and sd.specifications_id = s.specifications_id
-                          and s2c.categories_id = '" . $current_category_id . "'
+                          ".$get_category."
                           and s.show_filter = 'True'
                           and sg.show_filter = 'True'
                           and sd.language_id = '" . $languages_id . "'
@@ -176,4 +179,5 @@ if (tep_db_num_rows ($specs_query) > 0) {
 <?php
   }
  }
+}
 ?>
