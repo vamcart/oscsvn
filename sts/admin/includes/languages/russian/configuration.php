@@ -1040,4 +1040,7 @@ define('SITE_TIME_ZONE_DESC', 'Временная зона');
 define('DOWNLOADS_AVAILABLE_STATUS_TITLE', 'Показывать PIN код для заказов с id статусом');
 define('DOWNLOADS_AVAILABLE_STATUS_DESC', 'Заказ должен иметь указанный статус или выше, что б можно было видеть заказанный PIN код.');
 
+define('FILTERS_MAIN_PAGE_TITLE', 'Показывать фильтры на главной странице');
+define('FILTERS_MAIN_PAGE_DESC', 'Показывать настроенные фильтры на главной странице магазина.');
+
 ?>

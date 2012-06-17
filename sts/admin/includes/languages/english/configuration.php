@@ -1038,4 +1038,7 @@ define('SITE_TIME_ZONE_DESC', 'Site time zone');
 define('DOWNLOADS_AVAILABLE_STATUS_TITLE', 'PIN Show status');
 define('DOWNLOADS_AVAILABLE_STATUS_DESC', 'Order must have this or better status');
 
+define('FILTERS_MAIN_PAGE_TITLE', 'Show Filters on the Main Page');
+define('FILTERS_MAIN_PAGE_DESC', '');
+
 ?>
