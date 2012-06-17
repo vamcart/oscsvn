@@ -3359,7 +3359,8 @@ INSERT INTO `configuration` (`configuration_title`, `configuration_key`, `config
 ('Filter No Result', 'SPECIFICATIONS_FILTER_NO_RESULT', 'grey', 'What to show for a filter that would return no result.', 1610, 115, '2009-08-23 22:00:43', '2009-07-15 19:15:14', NULL, 'tep_cfg_select_option(array(''none'', ''grey'', ''normal''), '),
 ('Filter Show Breadcrumb', 'SPECIFICATIONS_FILTER_BREADCRUMB', 'True', 'Show currently applied filters in the Breadcrumb trail with option to remove', 1610, 120, '2009-07-15 19:15:07', '2009-07-15 19:15:14', NULL, 'tep_cfg_select_option(array(''True'', ''False''), '),
 ('Filter Image Width', 'SPECIFICATIONS_FILTER_IMAGE_WIDTH', '20', 'Set the width of the images displayed as filters in the filter box.', 1610, 125, '2009-07-15 18:46:21', '2009-07-15 18:46:30', NULL, NULL),
-('Filter Image Height', 'SPECIFICATIONS_FILTER_IMAGE_HEIGHT', '20', 'Set the height of the images displayed as filters in the filter box.', 1610, 130, '2009-07-15 18:46:37', '2009-07-15 18:46:45', NULL, NULL);
+('Filter Image Height', 'SPECIFICATIONS_FILTER_IMAGE_HEIGHT', '20', 'Set the height of the images displayed as filters in the filter box.', 1610, 130, '2009-07-15 18:46:37', '2009-07-15 18:46:45', NULL, NULL),
+('Show Filters on the Main Page', 'FILTERS_MAIN_PAGE', 'False', '', 1610, 135, '2009-07-15 19:15:07', '2009-07-15 19:15:14', NULL, 'tep_cfg_select_option(array(''True'', ''False''), ');
 
 DROP TABLE IF EXISTS email_batch;
 CREATE TABLE email_batch (
