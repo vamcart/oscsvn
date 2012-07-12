@@ -14,6 +14,8 @@
    Released under the GNU General Public License 
    ---------------------------------------------------------------------------------------*/
 
+require ('includes/application_top.php');
+
 require ('includes/configure.php'); 
 require_once (DIR_WS_CLASSES.'kcaptcha.php');
 
