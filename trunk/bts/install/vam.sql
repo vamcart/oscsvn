@@ -1718,7 +1718,7 @@ create table links (
   KEY idx_links_date_added (links_date_added)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci;
 
-insert into links (links_id, links_url, links_reciprocal_url, links_image_url, links_contact_name, links_contact_email, links_date_added, links_last_modified, links_status, links_clicked, links_rating) values ('1', 'http://forum.oscommerce.ru', 'http://test.loc', '', 'Александр Меновщиков', 'orders@kypi.ru', '2004-11-02 12:45:04', NULL, '2', '1', '0');
+insert into links (links_id, links_url, links_reciprocal_url, links_image_url, links_contact_name, links_contact_email, links_date_added, links_last_modified, links_status, links_clicked, links_rating) values ('1', 'http://oscomm.biz', 'http://test.loc', '', 'Александр Меновщиков', 'orders@kypi.ru', '2004-11-02 12:45:04', NULL, '2', '1', '0');
 drop table if exists links_description;
 create table links_description (
   links_id int(11) not null auto_increment,
