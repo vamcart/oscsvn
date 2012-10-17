@@ -86,13 +86,13 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 
 <?php		
     while($results = tep_db_fetch_array($search_query)){
-	  $article_ex = substr($results['articles_description'], 0, 300);
+	  $article_ex = utf8_substr(strip_tags($results['articles_description']), 0, 777);
 	  
 ?>
 	               <tr>
 	                 <td valign="middle" align="center" valign="top" width="33%"class="main"><a href="<?php echo FILENAME_ARTICLE_INFO; ?>?articles_id=<?php echo $results['articles_id'] ?>"><?php echo $results['articles_name'] ?></a></td>
 	                 <td valign="middle" align="center" valign="top" class="main"><?php echo $article_ex; ?> ...</td>
-	                 <td valign="middle" align="center" valign="top" class="main"><a href="<?php echo FILENAME_ARTICLE_INFO; ?>?articles_id=<?php echo $results['articles_id'] ?>">Перейти к данной статье</a></td>
+	                 <td valign="middle" align="center" valign="top" class="main"><a href="<?php echo FILENAME_ARTICLE_INFO; ?>?articles_id=<?php echo $results['articles_id'] ?>"><?php echo ICON_ARROW_RIGHT; ?></a></td>
 		           </tr>
 
 		  
