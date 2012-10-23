@@ -297,14 +297,36 @@
 
       $process_button_string = '';
 
-                               $purse = MODULE_PAYMENT_EASYPAY_WMR;
-                               $order_sum = $order->info['total'];
+			#номер заказа
+			$order_no = substr($_SESSION['cart_easypay_id'], strpos($_SESSION['cart_easypay_id'], '-')+1);
 
-      $process_button_string = tep_draw_hidden_field('LMI_PAYMENT_NO', substr($cart_easypay_id, strpos($cart_easypay_id, '-')+1)) .
-                               tep_draw_hidden_field('LMI_PAYEE_PURSE', $purse) .
-                               tep_draw_hidden_field('LMI_PAYMENT_DESC', substr($cart_easypay_id, strpos($cart_easypay_id, '-')+1)) .
-                               tep_draw_hidden_field('LMI_PAYMENT_AMOUNT', $order_sum) .
-                               tep_draw_hidden_field('LMI_SIM_MODE', '0');
+			#получаем стоимость заказа в белорусских рублях
+			$sum = ceil($order->info["total"]);
+
+			#сбор параметров
+			$ep["merno"]		= MODULE_PAYMENT_EASYPAY_MERCHNO;
+			$ep["oderno"]		= $order_no;
+			$ep["sum"]			= $sum;
+			$ep["expiries"]		= 5;
+			$ep["comment"]		= $order_no;
+			$ep["orderinfo"]	= $order_no;
+			$ep["hash"]			= md5(MODULE_PAYMENT_EASYPAY_MERCHNO.MODULE_PAYMENT_EASYPAY_WEBKEY.$order_no.$sum);
+			$ep["success"]		= tep_href_link(FILENAME_CHECKOUT_PROCESS);
+			$ep["cancel"]		= tep_href_link(FILENAME_CHECKOUT_CONFIRMATION);
+			$ep["debug"]		= MODULE_PAYMENT_EASYPAY_DEBUG;
+
+			#подготовка формы для оплаты
+			$process_button_string =
+			tep_draw_hidden_field("EP_MerNo",			$ep["merno"]).
+			tep_draw_hidden_field("EP_OrderNo",			$ep["oderno"]).
+			tep_draw_hidden_field("EP_Sum",				$ep["sum"]).
+			tep_draw_hidden_field("EP_Expires",			$ep["expiries"]).
+			tep_draw_hidden_field("EP_Comment",			$ep["comment"]).
+			tep_draw_hidden_field("EP_OrderInfo",		$ep["orderinfo"]).
+			tep_draw_hidden_field("EP_Hash",			$ep["hash"]).
+			tep_draw_hidden_field("EP_Success_URL",		$ep["success"]).
+			tep_draw_hidden_field("EP_Cancel_URL",		$ep["cancel"]).
+			tep_draw_hidden_field("EP_Debug",			$ep["debug"]);
 
       return $process_button_string;
     }
