@@ -4,6 +4,6 @@
   metashop@metashop.ru
 */
 
-  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_TITLE', 'RoboKassa');
-  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_DESCRIPTION', 'RoboKassa');
+  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_TITLE', 'Roboxchange (карточки Visa, MasterCard, WebMoney, Яндекс.Деньги)');
+  define('MODULE_PAYMENT_ROBOXCHANGE_TEXT_DESCRIPTION', 'Roboxchange (карточки Visa, MasterCard, WebMoney, Яндекс.Деньги)');
 ?>
