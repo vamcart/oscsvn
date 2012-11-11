@@ -488,7 +488,7 @@ define('BOX_HEADING_REVIEWS', 'Отзывы');
 define('BOX_HEADING_CUSTOMER_ORDERS', 'История заказов');
 define('BOX_HEADING_AFFILIATE', 'Заработай с нами');
 define('BOX_HEADING_MANUFACTURER_INFO', 'Производитель');
-define('BOX_HEADING_BESTSELLERS', 'Лучшие товары');
+define('BOX_HEADING_BESTSELLERS', 'Лидеры продаж');
 define('BOX_HEADING_TELL_A_FRIEND', 'Рассказать другу');
 define('BOX_HEADING_NOTIFICATIONS', 'Уведомления');
 define('BOX_HEADING_CURRENCIES', 'Валюта');
