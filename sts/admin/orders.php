@@ -343,7 +343,7 @@ tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a> &nbsp; ';
               <tr>
                 <td colspan="2"><?php echo tep_draw_separator('pixel_trans.gif', '1', '5'); ?></td>
               </tr>
-              <?echo tep_get_extra_fields_order($the_customers_id,$languages_id)?>
+              <?php echo tep_get_extra_fields_order($the_customers_id,$languages_id); ?>
               <tr>
                 <td class="main"><b><?php echo ENTRY_TELEPHONE_NUMBER; ?></b></td>
                 <td class="main"><?php echo $order->customer['telephone']; ?></td>
