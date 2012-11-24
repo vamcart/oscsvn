@@ -74,39 +74,39 @@
     session_set_save_handler('_sess_open', '_sess_close', '_sess_read', '_sess_write', '_sess_destroy', '_sess_gc');
   }
 
-function tep_session_start() {
-  global $_GET, $_POST, $_COOKIE;
+  function tep_session_start() {
+    global $_GET, $_POST, $_COOKIE;
 
-  $sane_session_id = true;
+    $sane_session_id = true;
 
-  if (isset($_GET[tep_session_name()])) {
-    if (preg_match('/^[a-zA-Z0-9]+$/', $_GET[tep_session_name()]) == false) {
-      unset($_GET[tep_session_name()]);
+    if (isset($_GET[tep_session_name()])) {
+      if (preg_match('/^[a-zA-Z0-9]+$/', $_GET[tep_session_name()]) == false) {
+        unset($_GET[tep_session_name()]);
 
-      $sane_session_id = false;
+        $sane_session_id = false;
+      }
+    } elseif (isset($_POST[tep_session_name()])) {
+      if (preg_match('/^[a-zA-Z0-9]+$/', $_POST[tep_session_name()]) == false) {
+        unset($_POST[tep_session_name()]);
+
+        $sane_session_id = false;
+      }
+    } elseif (isset($_COOKIE[tep_session_name()])) {
+      if (preg_match('/^[a-zA-Z0-9]+$/', $_COOKIE[tep_session_name()]) == false) {
+        $session_data = session_get_cookie_params();
+
+        setcookie(tep_session_name(), '', time()-42000, $session_data['path'], $session_data['domain']);
+
+        $sane_session_id = false;
+      }
     }
-  } elseif (isset($_POST[tep_session_name()])) {
-    if (preg_match('/^[a-zA-Z0-9]+$/', $_POST[tep_session_name()]) == false) {
-      unset($_POST[tep_session_name()]);
 
-      $sane_session_id = false;
+    if ($sane_session_id == false) {
+      tep_redirect(tep_href_link(FILENAME_DEFAULT, '', 'NONSSL', false));
     }
-  } elseif (isset($_COOKIE[tep_session_name()])) {
-    if (preg_match('/^[a-zA-Z0-9]+$/', $_COOKIE[tep_session_name()]) == false) {
-      $session_data = session_get_cookie_params();
 
-      setcookie(tep_session_name(), '', time()-42000, $session_data['path'], $session_data['domain']);
-
-      $sane_session_id = false;
-    }
+    return session_start();
   }
-
-  if ($sane_session_id == false) {
-    tep_redirect(tep_href_link(FILENAME_DEFAULT, '', 'NONSSL', false));
-  }
-
-  return session_start();
-}
 
   function tep_session_register($variable) {
     global $session_started;
@@ -115,11 +115,11 @@ function tep_session_start() {
       if (PHP_VERSION < 4.3) {
         return session_register($variable);
       } else {
-        if (isset($GLOBALS[$variable])) {
-          $_SESSION[$variable] =& $GLOBALS[$variable];
-        } else {
-          $_SESSION[$variable] = null;
+        if (!isset($GLOBALS[$variable])) {
+          $GLOBALS[$variable] = null;
         }
+
+        $_SESSION[$variable] =& $GLOBALS[$variable];
       }
     }
 
@@ -130,7 +130,7 @@ function tep_session_start() {
     if (PHP_VERSION < 4.3) {
       return session_is_registered($variable);
     } else {
-      return isset($_SESSION[$variable]);
+      return isset($_SESSION) && array_key_exists($variable, $_SESSION);
     }
   }
 
@@ -172,28 +172,21 @@ function tep_session_start() {
 
   function tep_session_save_path($path = '') {
     if (!empty($path)) {
-      return ini_set("session_save_path",$path);
+      return session_save_path($path);
     } else {
       return session_save_path();
     }
   }
 
   function tep_session_recreate() {
-    if (PHP_VERSION >= 4.1) {
-      $session_backup = $_SESSION;
+    global $SID;
 
-      unset($_COOKIE[tep_session_name()]);
+    if (PHP_VERSION >= 5.1) {
+      session_regenerate_id(true);
 
-      tep_session_destroy();
-
-      if (STORE_SESSIONS == 'mysql') {
-        session_set_save_handler('_sess_open', '_sess_close', '_sess_read', '_sess_write', '_sess_destroy', '_sess_gc');
+      if (!empty($SID)) {
+        $SID = tep_session_name() . '=' . tep_session_id();
       }
-
-      tep_session_start();
-
-      $_SESSION = $session_backup;
-      unset($session_backup);
     }
   }
 ?>
