@@ -159,7 +159,20 @@
 
         if (tep_session_is_registered('payment')) tep_session_unregister('payment');
 
-        tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+//SMART CHECKOUT BOF
+		if (SMART_CHECKOUT == 'true') {
+			tep_session_register('changed_adress'); //bug added
+		}
+		//SMART CHECKOUT EOF
+		
+//SMART CHECKOUT BOF
+	  if (SMART_CHECKOUT == 'true') {
+      	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+	  } else {
+	  	tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+		}
+	  //SMART CHECKOUT EOF
+	  
       }
 // process the selected billing destination
     } elseif (isset($_POST['address'])) {
@@ -181,7 +194,14 @@
 
       if ($check_address['total'] == '1') {
         if ($reset_payment == true) tep_session_unregister('payment');
-        tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+//SMART CHECKOUT BOF
+	  if (SMART_CHECKOUT == 'true') {
+      	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+	  } else {
+	  	tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+		}
+	  //SMART CHECKOUT EOF
+	  
       } else {
         tep_session_unregister('billto');
       }
@@ -190,7 +210,14 @@
       if (!tep_session_is_registered('billto')) tep_session_register('billto');
       $billto = $customer_default_address_id;
 
-      tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+//SMART CHECKOUT BOF
+	  if (SMART_CHECKOUT == 'true') {
+      	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+	  } else {
+	  	tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+		}
+	  //SMART CHECKOUT EOF
+	  
     }
   }
 

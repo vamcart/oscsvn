@@ -19,18 +19,13 @@ if (tep_get_configuration_key_value('MODULE_SHIPPING_FREESHIPPER_STATUS') and $c
   tep_session_unregister('shipping');
 }
 // EOF: WebMakers.com Added: Downloads Controller - Free Shipping
+
 // if the customer is not logged on, redirect them to the login page
-  if (!tep_session_is_registered('customer_id')) {
-    $navigation->set_snapshot();
-// guest account start
-if (GUEST_ON == 'false') { 
-      tep_redirect(tep_href_link(FILENAME_LOGIN, 'origin=' . FILENAME_CHECKOUT_SHIPPING, 'SSL'));
-//    tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
-} else {
-   tep_redirect(tep_href_link(FILENAME_CHECKOUT_ALTERNATIVE, '', 'SSL'));
+if (!tep_session_is_registered('customer_id') && SMART_CHECKOUT == 'false') {
+		vam_redirect(vam_href_link(FILENAME_LOGIN, '', 'SSL'));
+} elseif (SMART_CHECKOUT == 'true') {
+		vam_redirect(vam_href_link(FILENAME_CHECKOUT, '', 'SSL'));
 }
-// guest account end
-  }
 
 // if there is nothing in the customers cart, redirect them to the shopping cart page
   if ($cart->count_contents() < 1) {

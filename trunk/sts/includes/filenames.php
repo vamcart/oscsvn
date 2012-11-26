@@ -194,4 +194,7 @@ define('FILENAME_ARTICLES_PXSELL', 'articles_pxsell.php');
   define('FILENAME_ASK_A_QUESTION', 'ask_a_question.php');
 // End Product Specifications
 
+define('FILENAME_CHECKOUT', 'checkout.php'); //SMART CHECKOUT added
+define('FILENAME_SC_CHECKOUT_CONFIRMATION', 'sc_checkout_confirmation.php'); //SMART CHECKOUT added
+
 ?>

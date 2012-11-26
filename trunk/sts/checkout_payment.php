@@ -12,6 +12,12 @@
 
   require('includes/application_top.php');
 
+// SMART CHECKOUT BOF
+if (SMART_CHECKOUT == 'true') {
+	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+}
+// SMART CHECKOUT EOF
+
 // if the customer is not logged on, redirect them to the login page
   if (!tep_session_is_registered('customer_id')) {
     $navigation->set_snapshot();

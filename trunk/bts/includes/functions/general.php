@@ -1824,5 +1824,40 @@ function tep_get_spsr_zone_id($zone_id) {
 
          return $rand_str;
        }	   
+	
+// SMART CHECKOUT BOF 
+  // Return a formatted address for noaccount
+  function tep_address_label_noaccount($sc_ship_case, $html = false, $boln = '', $eoln = "\n") {
+  	if ($sc_ship_case == 0) {
+		$address = array('company' => $_SESSION['sc_customers_company'],
+						 'firstname' => $_SESSION['sc_customers_firstname'],
+						 'lastname' => $_SESSION['sc_customers_lastname'],
+						 'street_address' => $_SESSION['sc_customers_street_address'],
+						 'suburb' => $_SESSION['sc_customers_suburb'],
+						 'city' => $_SESSION['sc_customers_city'],
+						 'state' => $_SESSION['sc_customers_state'],
+						 'country_id' => $_SESSION['sc_customers_country'],
+						 'zone_id' => $_SESSION['sc_customers_zone_id'],
+						 'postcode' => $_SESSION['sc_customers_postcode']);
+					 
+	} elseif ($sc_ship_case == 1) { //payment address id different form shipping
+		$address = array('company' => $_SESSION['sc_payment_company'],
+						 'firstname' => $_SESSION['sc_payment_firstname'],
+						 'lastname' => $_SESSION['sc_payment_lastname'],
+						 'street_address' => $_SESSION['sc_payment_street_address'],
+						 'suburb' => $_SESSION['sc_payment_suburb'],
+						 'city' => $_SESSION['sc_payment_city'],
+						 'state' => $_SESSION['sc_payment_state'],
+						 'country_id' => $_SESSION['sc_payment_country'],
+						 'zone_id' => $_SESSION['sc_payment_zone_id'],
+						 'postcode' => $_SESSION['sc_payment_postcode']);
+	}			 
+					 
+
+    $format_id = tep_get_address_format_id($address['country_id']);
+
+    return tep_address_format($format_id, $address, $html, $boln, $eoln);
+  }
+// SMART CHECKOUT EOF 
 	    
 ?>

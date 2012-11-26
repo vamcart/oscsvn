@@ -12,11 +12,21 @@
 
   include('includes/application_top.php');
 
+// SMART CHECKOUT BOF
+if (SMART_CHECKOUT == 'true') {
+  // if the customer is not logged on, redirect them to the login page 
+  if ((!tep_session_is_registered('customer_id')) && (!tep_session_is_registered('noaccount'))) {
+    $navigation->set_snapshot(array('mode' => 'SSL', 'page' => FILENAME_CHECKOUT_PAYMENT));
+    tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
+  }
+} else {
 // if the customer is not logged on, redirect them to the login page
   if (!tep_session_is_registered('customer_id')) {
     $navigation->set_snapshot(array('mode' => 'SSL', 'page' => FILENAME_CHECKOUT_PAYMENT));
     tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
   }
+}
+//SMART CHECKOUT EOF
   
 // if there is nothing in the customers cart, redirect them to the shopping cart page
   if ($cart->count_contents() < 1) {
@@ -74,9 +84,13 @@
 
   $payment_modules->update_status();
 
-  if ( ( is_array($payment_modules->modules) && (sizeof($payment_modules->modules) > 1) && !is_object($$payment) ) || (is_object($$payment) && ($$payment->enabled == false)) ) {
+// SMART CHECKOUT BOF
+if (!tep_session_is_registered('free_payment')) { //hack for free payment
+  if ( ($payment_modules->selected_module != $payment) || ( is_array($payment_modules->modules) && (sizeof($payment_modules->modules) > 1) && !is_object($$payment) ) || (is_object($$payment) && ($$payment->enabled == false)) ) {
     tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, 'error_message=' . urlencode(ERROR_NO_PAYMENT_MODULE_SELECTED), 'SSL'));
   }
+}
+// SMART CHECKOUT EOF
 
   require(DIR_WS_CLASSES . 'order_total.php');
   $order_total_modules = new order_total;
@@ -331,16 +345,61 @@ $order_total_modules->apply_credit();//ICW ADDED FOR CREDIT CLASS SYSTEM
     $email_order .= strip_tags($order_totals[$i]['title']) . ' ' . strip_tags($order_totals[$i]['text']) . "\n";
   }
 
-  if ($order->content_type != 'virtual') {
-    $email_order .= "\n" . EMAIL_TEXT_DELIVERY_ADDRESS . "\n" . 
-                    EMAIL_SEPARATOR . "\n" .
-                    tep_address_label($customer_id, $sendto, 0, '', "\n") . "\n";
-  }
-
-  $email_order .= //"\n" . EMAIL_TEXT_BILLING_ADDRESS . "\n" .
-//                  EMAIL_SEPARATOR . "\n" .
-//                  tep_address_label($customer_id, $billto, 0, '', "\n") . "\n\n";
-"\n";
+// SMART CHECKOUT BOF
+  if (SMART_CHECKOUT == 'true') {
+  	if (tep_session_is_registered('noaccount')) {
+		if (tep_session_is_registered('hide_shipping_data')) {
+			//hide shipping address
+		} else {
+			$email_order .= "\n" . EMAIL_TEXT_DELIVERY_ADDRESS . "\n" . 
+							EMAIL_SEPARATOR . "\n" .
+							tep_address_label_noaccount(0, 0, '', "\n") . "\n";
+		}
+		
+		if (tep_session_is_registered('hide_payment_data')) {
+			//hide payment address
+		} else {
+			if ($_SESSION['sc_payment_address_selected'] != '1') { //is unchecked - so payment address is different
+				$email_order .= "\n" . EMAIL_TEXT_BILLING_ADDRESS . "\n" .
+						  EMAIL_SEPARATOR . "\n" .
+						  tep_address_label_noaccount(1, 0, '', "\n") . "\n\n";
+			} else {
+				$email_order .= "\n" . EMAIL_TEXT_BILLING_ADDRESS . "\n" .
+							  EMAIL_SEPARATOR . "\n" .
+							  tep_address_label_noaccount(0, 0, '', "\n") . "\n\n";
+			}
+		}
+				  
+	} else { //logged on 
+		if (tep_session_is_registered('hide_shipping_data')) {
+			//hide shipping address
+		} else {
+			$email_order .= "\n" . EMAIL_TEXT_DELIVERY_ADDRESS . "\n" . 
+							EMAIL_SEPARATOR . "\n" .
+							tep_address_label($customer_id, $sendto, 0, '', "\n") . "\n";
+		}				
+		
+		if (tep_session_is_registered('hide_payment_data')) {
+			//hide payment address
+		} else {			
+			$email_order .= "\n" . EMAIL_TEXT_BILLING_ADDRESS . "\n" .
+					  EMAIL_SEPARATOR . "\n" .
+					  tep_address_label($customer_id, $billto, 0, '', "\n") . "\n\n";
+		}
+	}
+ } else { //no smart checkout
+	 if ($order->content_type != 'virtual') {
+		$email_order .= "\n" . EMAIL_TEXT_DELIVERY_ADDRESS . "\n" . 
+						EMAIL_SEPARATOR . "\n" .
+						tep_address_label($customer_id, $sendto, 0, '', "\n") . "\n";
+	  }
+	
+	  $email_order .= "\n" . EMAIL_TEXT_BILLING_ADDRESS . "\n" .
+					  EMAIL_SEPARATOR . "\n" .
+					  tep_address_label($customer_id, $billto, 0, '', "\n") . "\n\n";
+ } 
+ // SMART CHECKOUT EOF 
+ 
   if (is_object($$payment)) {
 
 // START extra fields in email

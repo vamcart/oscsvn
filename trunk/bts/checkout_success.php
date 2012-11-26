@@ -17,6 +17,21 @@
     tep_redirect(tep_href_link(FILENAME_SHOPPING_CART));
   }
 
+// SMART CHECKOUT BOF
+if (SMART_CHECKOUT == 'true') {
+  // if the customer is not logged on, redirect them to the shopping cart page
+  if ((!tep_session_is_registered('customer_id')) && (!tep_session_is_registered('noaccount')) && (!isset($_POST['action']))) {
+  	tep_redirect(tep_href_link(FILENAME_SHOPPING_CART));
+  }	
+
+} else {
+  // if the customer is not logged on, redirect them to the shopping cart page
+  if ((!tep_session_is_registered('customer_id')) && (!isset($_POST['action']))) {
+     tep_redirect(tep_href_link(FILENAME_SHOPPING_CART));
+  }
+}
+//SMART CHECKOUT EOF
+
   if (isset($_GET['action']) && ($_GET['action'] == 'update')) {
     $notify_string = '';
 
