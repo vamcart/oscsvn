@@ -310,4 +310,9 @@ define('FILENAME_ARTICLES_PXSELL', 'articles_pxsell.php');
   define('CONTENT_COMPARISON', 'comparison');  
   define('CONTENT_PRODUCTS_FILTERS', 'products_filter');  
 
+define('FILENAME_CHECKOUT', 'checkout.php'); //SMART CHECKOUT added
+define('CONTENT_CHECKOUT', 'checkout'); //SMART CHECKOUT added
+define('FILENAME_SC_CHECKOUT_CONFIRMATION', 'sc_checkout_confirmation.php'); //SMART CHECKOUT added
+define('CONTENT_SC_CHECKOUT_CONFIRMATION', 'sc_checkout_confirmation'); //SMART CHECKOUT added
+
 ?>

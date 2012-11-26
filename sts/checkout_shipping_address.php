@@ -172,7 +172,14 @@
 
         if (tep_session_is_registered('shipping')) tep_session_unregister('shipping');
 
-        tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
+//SMART CHECKOUT BOF
+	  if (SMART_CHECKOUT == 'true') {
+      	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+	  } else {
+	  	tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
+		}
+	  //SMART CHECKOUT EOF
+	  
       }
 // process the selected shipping destination
     } elseif (isset($_POST['address'])) {
@@ -194,7 +201,14 @@
 
       if ($check_address['total'] == '1') {
         if ($reset_shipping == true) tep_session_unregister('shipping');
-        tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
+//SMART CHECKOUT BOF
+	  if (SMART_CHECKOUT == 'true') {
+      	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+	  } else {
+	  	tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
+		}
+	  //SMART CHECKOUT EOF
+	  
       } else {
         tep_session_unregister('sendto');
       }
@@ -202,7 +216,14 @@
       if (!tep_session_is_registered('sendto')) tep_session_register('sendto');
       $sendto = $customer_default_address_id;
 
-      tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
+//SMART CHECKOUT BOF
+	  if (SMART_CHECKOUT == 'true') {
+      	tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+	  } else {
+	  	tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
+		}
+	  //SMART CHECKOUT EOF
+	  
     }
   }
 
