@@ -583,5 +583,7 @@ define('BOX_CUSTOMERS_EXPORT', 'Экспорт клиентов');
 
 define('TABLE_TEXT_IS_PIN','Товар имеет PIN код');
 define('BOX_CATALOG_PIN_LOADER','PIN коды');
+
+define('CONFIGURATION_GROUP_80', 'Оформление заказов');
          
 ?>

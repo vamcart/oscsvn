@@ -1041,4 +1041,21 @@ define('DOWNLOADS_AVAILABLE_STATUS_DESC', 'Order must have this or better status
 define('FILTERS_MAIN_PAGE_TITLE', 'Show Filters on the Main Page');
 define('FILTERS_MAIN_PAGE_DESC', '');
 
+define('SMART_CHECKOUT_TITLE', 'Enable Smart Checkout');
+define('SMART_CHECKOUT_DESC', 'Do you want to enable Smart Checkout');
+define('SC_CREATE_ACCOUNT_REQUIRED_TITLE', 'Create Account required');
+define('SC_CREATE_ACCOUNT_REQUIRED_DESC', 'If enabled, customers need to create an account to process an order');
+define('SC_CREATE_ACCOUNT_CHECKOUT_PAGE_TITLE', 'Create Account option at checkout page');
+define('SC_CREATE_ACCOUNT_CHECKOUT_PAGE_DESC', 'If enabled, customers have always the option to create an account at the checkout page');
+define('SC_HIDE_SHIPPING_TITLE', 'Hide Shipping');
+define('SC_HIDE_SHIPPING_DESC', 'If you have only one shipping method, there is no need to show the shipping part. If enabled and only one shipping method is active it hides the shipping part. Recommended as checkout gets even simpler.');
+define('SC_HIDE_COMMENT_TITLE', 'Hide Comment');
+define('SC_HIDE_COMMENT_DESC', 'Do you want to hide the comment box');
+define('SC_COUNTER_ENABLED_TITLE', 'Counter Enabled');
+define('SC_COUNTER_ENABLED_DESC', 'If enabled it will show the steps in numbers to proceed an order');
+define('SC_EMAIL_LOGIN_DATA_TITLE', 'Send login data');
+define('SC_EMAIL_LOGIN_DATA_DESC', 'If enabled it includes the username and password to the welcome email.');
+define('SC_CONFIRMATION_PAGE_TITLE', 'Confirmation Page');
+define('SC_CONFIRMATION_PAGE_DESC', 'Do you want to show extra confirmation page?');
+
 ?>
