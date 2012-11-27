@@ -3365,3 +3365,16 @@ insert into spsr_zones (id, zone_id, spsr_zone_id) values ('84', '269', '90');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('85', '270', '95');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('86', '271', '97');
 insert into spsr_zones (id, zone_id, spsr_zone_id) values ('87', '272', '99');
+
+INSERT INTO `configuration_group` (`configuration_group_id`, `configuration_group_title`, `configuration_group_description`, `sort_order`, `visible`) VALUES
+('80', 'Smart Checkout', 'Smart Checkout Options', 2540, 1);
+
+INSERT INTO `configuration` (`configuration_title`, `configuration_key`, `configuration_value`, `configuration_description`, `configuration_group_id`, `sort_order`, `last_modified`, `date_added`, `use_function`, `set_function`) VALUES
+('Enable Smart Checkout', 'SMART_CHECKOUT', 'false', 'Do you want to enable Smart Checkout', 80, 1, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Create Account required', 'SC_CREATE_ACCOUNT_REQUIRED', 'false', 'If enabled, customers need to create an account to process an order', 80, 2, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Create Account option at checkout page', 'SC_CREATE_ACCOUNT_CHECKOUT_PAGE', 'false', 'If enabled, customers have always the option to create an account at the checkout page', 80, 3, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Hide Shipping', 'SC_HIDE_SHIPPING', 'false', 'If you have only one shipping method, there is no need to show the shipping part. If enabled and only one shipping method is active it hides the shipping part. Recommended as checkout gets even simpler.', 80, 7, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Hide Comment', 'SC_HIDE_COMMENT', 'false', 'Do you want to hide the comment box', 80, 8, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Counter Enabled', 'SC_COUNTER_ENABLED', 'false', 'If enabled it will show the steps in numbers to proceed an order', 80, 9, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Send login data', 'SC_EMAIL_LOGIN_DATA', 'true', 'If enabled it includes the username and password to the welcome email.', 80, 10, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),'),
+('Confirmation Page', 'SC_CONFIRMATION_PAGE', 'false', 'Do you want to show extra confirmation page?', 80, 11, '2012-02-13 06:37:14', '2012-03-13 06:37:14', NULL, 'tep_cfg_select_option(array(''true'', ''false''),');
