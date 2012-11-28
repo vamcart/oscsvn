@@ -1420,14 +1420,15 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
     $form_action_url = $$payment->form_action_url;
 	echo tep_draw_form('checkoutUrl', $form_action_url, 'post');
   } 
-  
-  
     
   if (is_array($payment_modules->modules)) {
 	$payment_modules->pre_confirmation_check();
   }
   
-  
+  if (is_array($payment_modules->modules)) {
+	$payment_modules->confirmation();
+  }  
+    
   if (is_array($payment_modules->modules)) {
   echo $payment_modules->process_button();
   }
@@ -1524,8 +1525,6 @@ $('#box')
 
 .on('refresh', '#shipping_modules_box', function(){$('#order_total_modules').load(url +' #order_total_modules > *', {'shipping': $('input[name=shipping]:checked').val()});})	
 
-
-
 .on('change', 'input[name=shipping]', function(){$('#shipping_options').load(url +' #shipping_options > *', {'shipping': $('input[name=shipping]:checked').val()}, function(){$('#shipping_modules_box').trigger('refresh');});})
 
 ;}
@@ -1533,69 +1532,7 @@ $('#box')
    
 <?php } else { //not logged in javascript ?>
 
-
-
 <script type="text/javascript">
-
-//not yet finished
-/*$(hideFirm);		
-	function hideFirm()	{
-		
-		//Hide div w/id extra
-	$("#extra").css("display","none");
-	$("#checkme1").click(function(){
-
-// If checked
-        
-        if ($("#checkme1").is(":checked"))
-		{
-            //show the hidden div
-            $("#extra").show("fast");
-        }
-	});
-	
-
-		// Add onclick handler to checkbox w/id checkme
-	   $("#checkme").click(function(){
-
-// If checked
-        if ($("#checkme").is(":checked"))
-        {
-            //show the hidden div
-            $("#extra").hide("fast");
-        }
-		        
-	});
-	
-	$("#checkme2").click(function(){
-
-// If checked
-        if ($("#checkme2").is(":checked"))
-        {
-            //show the hidden div
-            $("#extra").hide("fast");
-        }
-		        
-	});
-;}*/
-
-
-
-
-
-
-/*$(document).ready(function(){
-window.alert($('input[name=checkout_possible]').val());
-
-//$('#order_total_modules').load(url +' #order_total_modules > *', {'shipping': $('input[name=shipping]:checked').val() });
-
-});*/
-
-
-
-
-
-
 
 $(hidePay);		
 	function hidePay()	{
@@ -1631,18 +1568,19 @@ function init()
 
 var url='checkout.php';          
 
-	
 $('#box')
-.on('refresh', '#shipping_modules_box', function(){$('#shipping_options').load(url +' #shipping_options > *', {'country': $('select[name=country]').val()});})	
-.on('refresh', '#shipping_modules_box', function(){$('#payment_options').load(url +' #payment_options > *', {'country': $('select[name=country]').val()});})	
+.on('refresh', '#shipping_modules_box', function(){$('#shipping_options').load(url +' #shipping_options > *', {'country': $('select[name=country]').val(),'state': $('select[name=state]').val(),'postcode': $('input[name=postcode]').val(),'city': $('input[name=city]').val()});})	
+.on('refresh', '#shipping_modules_box', function(){$('#payment_options').load(url +' #payment_options > *', {'country': $('select[name=country]').val(),'state': $('select[name=state]').val(),'postcode': $('input[name=postcode]').val(),'city': $('input[name=city]').val()});})	
 .on('refresh', '#shipping_modules_box', function(){$('#order_total_modules').load(url +' #order_total_modules > *', {'shipping': $('input[name=shipping]:checked').val()});})	
 
 
 //.on('refresh', '#shipping_modules_box', function(('input[name=checkout_possible]').val());})	
 //.on$('input[name=checkout_possible]').val()
 
-.on('change', 'input[name=shipping], select[name=country]', function(){$('#shipping_country_box').load(url +' #shipping_country', {'shipping': $('input[name=shipping]:checked').val(), 'country': $('select[name=country]').val()}, function(){$('#shipping_modules_box').trigger('refresh');});})
+.on('change', 'input[name=shipping], select[name=country], select[name=state], input[name=postcode], input[name=city]', function(){$('#shipping_country_box').load(url +' #shipping_country', {'shipping': $('input[name=shipping]:checked').val(), 'country': $('select[name=country]').val(),'state': $('select[name=state]').val(),'city': $('input[name=city]').val(),'postcode': $('input[name=postcode]').val()}, function(){$('#shipping_modules_box').trigger('refresh');});})
+//.on('change', 'input[name=shipping], select[name=state]', function(){$('#shipping_state_box').load(url +' #shipping_state', {'shipping': $('input[name=shipping]:checked').val(), 'state': $('select[name=state]').val()}, function(){$('#shipping_state_box').trigger('refresh');});})
 ;}
+
 </script>
 
 
