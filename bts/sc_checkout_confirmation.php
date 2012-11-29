@@ -24,6 +24,9 @@ tep_session_is_registered('no_pay_no_ship') = is used to hide all data (shipping
 
   require('includes/application_top.php');
 
+//load languages files
+require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_CHECKOUT);
+
 $hide_shipping_data = false;
 $hide_payment_data = false;
 $show_account_data = false; //account data will only be shown if in checkout.php the account heading is shown. This happens by free virtual products
@@ -336,9 +339,34 @@ if ((!tep_session_is_registered('create_account')) && (isset($_POST['action']) &
 		echo $payment_modules->process_button();
 	}
 
+?>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<?php
+// BOF: WebMakers.com Changed: Header Tag Controller v1.0
+// Replaced by header_tags.php
+if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
+  require(DIR_WS_INCLUDES . 'header_tags.php');
+} else {
+?>
+  <title><?php echo TITLE ?></title>
+<?php
+}
+// EOF: WebMakers.com Changed: Header Tag Controller v1.0
+?>
+<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<?php require('includes/form_check.js.php'); ?>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
-	require(DIR_WS_INCLUDES . 'template_top.php');
-
+<!-- body //-->
+<?php
 	if (is_array($payment_modules->modules)) {
 		if ($confirmation = $payment_modules->confirmation()) {
 	
@@ -385,9 +413,17 @@ if ((!tep_session_is_registered('create_account')) && (isset($_POST['action']) &
 
 
     </form>
-    <?php 
-    require(DIR_WS_INCLUDES . 'template_bottom.php');
-    require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+
+<!-- body_eof //-->
+
+<!-- footer //-->
+<?php include(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+
     <script type="text/javascript">
         document.checkoutUrl.submit();
     </script>
@@ -403,9 +439,34 @@ if ((!tep_session_is_registered('create_account')) && (isset($_POST['action']) &
   $breadcrumb->add(NAVBAR_TITLE_1, tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
   $breadcrumb->add(NAVBAR_TITLE_2);
 
-  require(DIR_WS_INCLUDES . 'template_top.php');
-  
 ?>
+
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<?php
+// BOF: WebMakers.com Changed: Header Tag Controller v1.0
+// Replaced by header_tags.php
+if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
+  require(DIR_WS_INCLUDES . 'header_tags.php');
+} else {
+?>
+  <title><?php echo TITLE ?></title>
+<?php
+}
+// EOF: WebMakers.com Changed: Header Tag Controller v1.0
+?>
+<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<?php require('includes/form_check.js.php'); ?>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
+
+<!-- body //-->
 
 <script type="text/javascript">
 /*$(hidePage);		
@@ -631,7 +692,8 @@ echo tep_draw_form('checkout_confirmation', $form_action_url, 'post');
   }
 
 ?>
-<?php echo tep_draw_button(IMAGE_BUTTON_CONFIRM_ORDER, 'check', null, 'primary'); ?>
+<?php echo tep_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER); ?>
+<br /><br />
     </div>
   </div>
 
@@ -688,10 +750,15 @@ $('#coProgressBar').progressbar({
 
 </form>
 
-<?php
-  require(DIR_WS_INCLUDES . 'template_bottom.php');
-  require(DIR_WS_INCLUDES . 'application_bottom.php');
-?>
+<!-- body_eof //-->
+
+<!-- footer //-->
+<?php include(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
 
 <?php  if (SC_CONFIRMATION_PAGE == 'fffff') { ?>
   	<script type="text/javascript">
