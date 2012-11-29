@@ -190,133 +190,125 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
     $error = false;
 	
 		
-    if (ACCOUNT_GENDER == 'true') {
-      if ( ($gender != 'm') && ($gender != 'f') ) {
-        $error = true;
+    //if (ACCOUNT_GENDER == 'true') {
+      //if ( ($gender != 'm') && ($gender != 'f') ) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_GENDER_ERROR);
-      }
-    }
+        //$messageStack->add('smart_checkout', ENTRY_GENDER_ERROR);
+      //}
+    //}
 
-    if (strlen($firstname) < ENTRY_FIRST_NAME_MIN_LENGTH) {
-      $error = true;
+    //if (strlen($firstname) < ENTRY_FIRST_NAME_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_FIRST_NAME_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_FIRST_NAME_ERROR);
+    //}
 
-    if (strlen($lastname) < ENTRY_LAST_NAME_MIN_LENGTH) {
-      $error = true;
+    //if (strlen($lastname) < ENTRY_LAST_NAME_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_LAST_NAME_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_LAST_NAME_ERROR);
+    //}
 
-    if (ACCOUNT_DOB == 'true') {
-      if ((is_numeric(tep_date_raw($dob)) == false) || (@checkdate(substr(tep_date_raw($dob), 4, 2), substr(tep_date_raw($dob), 6, 2), substr(tep_date_raw($dob), 0, 4)) == false)) {
-        $error = true;
+    //if (ACCOUNT_DOB == 'true') {
+      //if ((is_numeric(tep_date_raw($dob)) == false) || (@checkdate(substr(tep_date_raw($dob), 4, 2), substr(tep_date_raw($dob), 6, 2), substr(tep_date_raw($dob), 0, 4)) == false)) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_DATE_OF_BIRTH_ERROR);
-      }
-    }
+        //$messageStack->add('smart_checkout', ENTRY_DATE_OF_BIRTH_ERROR);
+      //}
+    //}
 
 
-	if (strlen($email_address) < ENTRY_EMAIL_ADDRESS_MIN_LENGTH) {
-      $error = true;
+	//if (strlen($email_address) < ENTRY_EMAIL_ADDRESS_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR);
-    } elseif (tep_validate_email($email_address) == false) {
-      $error = true;
+      //$messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR);
+    //} elseif (tep_validate_email($email_address) == false) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_CHECK_ERROR);
-    } else {
-      //org
-	  $check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "'");
+      //$messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_CHECK_ERROR);
+    //} else {
+	  //$check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "'");
 	  
-	  //new
-      //$check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "' and guest_account != '1'");
-     
-	  
-	 
-
-  
-      $check_email = tep_db_fetch_array($check_email_query);
-      if ($check_email['total'] > 0) {
-        $error = true;
+      //$check_email = tep_db_fetch_array($check_email_query);
+      //if ($check_email['total'] > 0) {
+        //$error = true;
 		
 
-        $messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR_EXISTS);
-      }
-    }
+        //$messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR_EXISTS);
+      //}
+    //}
     
-    if (strlen($street_address) < ENTRY_STREET_ADDRESS_MIN_LENGTH) {
-      $error = true;
+    //if (strlen($street_address) < ENTRY_STREET_ADDRESS_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_STREET_ADDRESS_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_STREET_ADDRESS_ERROR);
+    //}
 
-    if (strlen($postcode) < ENTRY_POSTCODE_MIN_LENGTH) {
-      $error = true;
+    //if (strlen($postcode) < ENTRY_POSTCODE_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_POST_CODE_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_POST_CODE_ERROR);
+    //}
 
-    if (strlen($city) < ENTRY_CITY_MIN_LENGTH) {
-      $error = true;
+    //if (strlen($city) < ENTRY_CITY_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_CITY_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_CITY_ERROR);
+    //}
 
-    if (is_numeric($country) == false) {
-      $error = true;
+    //if (is_numeric($country) == false) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_COUNTRY_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_COUNTRY_ERROR);
+    //}
 
-    if (ACCOUNT_STATE == 'true') {
-      $zone_id = 0;
-      $check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
-      $check = tep_db_fetch_array($check_query);
-      $entry_state_has_zones = ($check['total'] > 0);
-      if ($entry_state_has_zones == true) {
-        $zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' and (zone_name = '" . tep_db_input($state) . "' or zone_code = '" . tep_db_input($state) . "')");
-        if (tep_db_num_rows($zone_query) == 1) {
-          $zone = tep_db_fetch_array($zone_query);
-          $zone_id = $zone['zone_id'];
-        } else {
-          $error = true;
+    //if (ACCOUNT_STATE == 'true') {
+      //$zone_id = 0;
+      //$check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
+      //$check = tep_db_fetch_array($check_query);
+      //$entry_state_has_zones = ($check['total'] > 0);
+      //if ($entry_state_has_zones == true) {
+        //$zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' and (zone_name = '" . tep_db_input($state) . "' or zone_code = '" . tep_db_input($state) . "')");
+        //if (tep_db_num_rows($zone_query) == 1) {
+          //$zone = tep_db_fetch_array($zone_query);
+          //$zone_id = $zone['zone_id'];
+        //} else {
+          //$error = true;
 
-          $messageStack->add('smart_checkout', ENTRY_STATE_ERROR_SELECT);
-        }
-      } else {
-        if (strlen($state) < ENTRY_STATE_MIN_LENGTH) {
-          $error = true;
+          //$messageStack->add('smart_checkout', ENTRY_STATE_ERROR_SELECT);
+        //}
+      //} else {
+        //if (strlen($state) < ENTRY_STATE_MIN_LENGTH) {
+          //$error = true;
 
-          $messageStack->add('smart_checkout', ENTRY_STATE_ERROR);
-        }
-      }
-    }
+          //$messageStack->add('smart_checkout', ENTRY_STATE_ERROR);
+        //}
+      //}
+    //}
 
-    if (strlen($telephone) < ENTRY_TELEPHONE_MIN_LENGTH) {
-      $error = true;
+    //if (strlen($telephone) < ENTRY_TELEPHONE_MIN_LENGTH) {
+      //$error = true;
 
-      $messageStack->add('smart_checkout', ENTRY_TELEPHONE_NUMBER_ERROR);
-    }
+      //$messageStack->add('smart_checkout', ENTRY_TELEPHONE_NUMBER_ERROR);
+    //}
 	
 	//password validation
-	$password = tep_db_prepare_input($_POST['password']);
-    $confirmation = tep_db_prepare_input($_POST['confirmation']);
-	if ($create_account == true) {
-		if (!tep_session_is_registered('customer_id')) { //validate only for unregistered user
-		 if (strlen($password) < ENTRY_PASSWORD_MIN_LENGTH) {
-			  $error = true;
+	//$password = tep_db_prepare_input($_POST['password']);
+    //$confirmation = tep_db_prepare_input($_POST['confirmation']);
+	//if ($create_account == true) {
+		//if (!tep_session_is_registered('customer_id')) { //validate only for unregistered user
+		 //if (strlen($password) < ENTRY_PASSWORD_MIN_LENGTH) {
+			  //$error = true;
 	
-			  $messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR);
-			} elseif ($password != $confirmation) {
-			  $error = true;
+			  //$messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR);
+			//} elseif ($password != $confirmation) {
+			  //$error = true;
 	
-			  $messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR_NOT_MATCHING);
-			}
-		}
-	}	
+			  //$messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR_NOT_MATCHING);
+			//}
+		//}
+	//}	
 	
 	//shipping validation
 	$shipping_validation = $_POST['shipping'];
@@ -346,11 +338,11 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
 	}
 
 	//conditions validation
-	$conditions_validation = $_POST['TermsAgree'];
-	if (($conditions_validation == '') && (SC_CONDITIONS == 'true')) {
-		$error = true;
-		$messageStack->add('smart_checkout', CONDITIONS_ERROR);
-    }
+	//$conditions_validation = $_POST['TermsAgree'];
+	//if (($conditions_validation == '') && (SC_CONDITIONS == 'true')) {
+		//$error = true;
+		//$messageStack->add('smart_checkout', CONDITIONS_ERROR);
+    //}
 	
 	
 	//End with input validation for shipping address /////////	
@@ -380,76 +372,74 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
         $state_payment = tep_db_prepare_input($_POST['state_payment']);
       }
 
-      if (ACCOUNT_GENDER == 'true') {
-        if ( ($gender_payment != 'm') && ($gender_payment != 'f') ) {
-          $error = true;
+      //if (ACCOUNT_GENDER == 'true') {
+        //if ( ($gender_payment != 'm') && ($gender_payment != 'f') ) {
+          //$error = true;
 
-          $messageStack->add('smart_checkout', ENTRY_GENDER_ERROR);
-        }
-      }
-
+          //$messageStack->add('smart_checkout', ENTRY_GENDER_ERROR);
+        //}
+      //}
 
 		
-		
-      if (strlen($firstname_payment) < ENTRY_FIRST_NAME_MIN_LENGTH) {
-        $error = true;
+      //if (strlen($firstname_payment) < ENTRY_FIRST_NAME_MIN_LENGTH) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_FIRST_NAME_ERROR);
-      }
+        //$messageStack->add('smart_checkout', ENTRY_FIRST_NAME_ERROR);
+      //}
 
-      if (strlen($lastname_payment) < ENTRY_LAST_NAME_MIN_LENGTH) {
-        $error = true;
+      //if (strlen($lastname_payment) < ENTRY_LAST_NAME_MIN_LENGTH) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_LAST_NAME_ERROR);
-      }
+        //$messageStack->add('smart_checkout', ENTRY_LAST_NAME_ERROR);
+      //}
 
-      if (strlen($street_address_payment) < ENTRY_STREET_ADDRESS_MIN_LENGTH) {
-        $error = true;
+      //if (strlen($street_address_payment) < ENTRY_STREET_ADDRESS_MIN_LENGTH) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_STREET_ADDRESS_ERROR);
-      }
+        //$messageStack->add('smart_checkout', ENTRY_STREET_ADDRESS_ERROR);
+      //}
 
-      if (strlen($postcode_payment) < ENTRY_POSTCODE_MIN_LENGTH) {
-        $error = true;
+      //if (strlen($postcode_payment) < ENTRY_POSTCODE_MIN_LENGTH) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_POST_CODE_ERROR);
-      }
+        //$messageStack->add('smart_checkout', ENTRY_POST_CODE_ERROR);
+      //}
 
-      if (strlen($city_payment) < ENTRY_CITY_MIN_LENGTH) {
-        $error = true;
+      //if (strlen($city_payment) < ENTRY_CITY_MIN_LENGTH) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_CITY_ERROR);
-      }
+        //$messageStack->add('smart_checkout', ENTRY_CITY_ERROR);
+      //}
 
-      if (ACCOUNT_STATE == 'true') {
-        $zone_id_payment = 0;
-        $check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country_payment . "'");
-        $check = tep_db_fetch_array($check_query);
-        $entry_state_has_zones = ($check['total'] > 0);
-        if ($entry_state_has_zones == true) {
-          $zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country_payment . "' and (zone_name = '" . tep_db_input($state_payment) . "' or zone_code = '" . tep_db_input($state_payment) . "')");
-          if (tep_db_num_rows($zone_query) == 1) {
-            $zone_payment = tep_db_fetch_array($zone_query);
-            $zone_id_payment = $zone_payment['zone_id'];
-          } else {
-            $error = true;
+      //if (ACCOUNT_STATE == 'true') {
+        //$zone_id_payment = 0;
+        //$check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country_payment . "'");
+        //$check = tep_db_fetch_array($check_query);
+        //$entry_state_has_zones = ($check['total'] > 0);
+        //if ($entry_state_has_zones == true) {
+          //$zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country_payment . "' and (zone_name = '" . tep_db_input($state_payment) . "' or zone_code = '" . tep_db_input($state_payment) . "')");
+          //if (tep_db_num_rows($zone_query) == 1) {
+            //$zone_payment = tep_db_fetch_array($zone_query);
+            //$zone_id_payment = $zone_payment['zone_id'];
+          //} else {
+            //$error = true;
 
-            $messageStack->add('smart_checkout', ENTRY_STATE_ERROR_SELECT);
-          }
-        } else {
-          if (strlen($state_payment) < ENTRY_STATE_MIN_LENGTH) {
-            $error = true;
+            //$messageStack->add('smart_checkout', ENTRY_STATE_ERROR_SELECT);
+          //}
+        //} else {
+          //if (strlen($state_payment) < ENTRY_STATE_MIN_LENGTH) {
+            //$error = true;
 
-            $messageStack->add('smart_checkout', ENTRY_STATE_ERROR);
-          }
-        }
-      }
+            //$messageStack->add('smart_checkout', ENTRY_STATE_ERROR);
+          //}
+        //}
+      //}
 
-      if ( (is_numeric($country_payment) == false) || ($country_payment < 1) ) {
-        $error = true;
+      //if ( (is_numeric($country_payment) == false) || ($country_payment < 1) ) {
+        //$error = true;
 
-        $messageStack->add('smart_checkout', ENTRY_COUNTRY_ERROR);
-      }
+        //$messageStack->add('smart_checkout', ENTRY_COUNTRY_ERROR);
+      //}
 	 }
 	} //END validate only if not free payment 
 	 // End new payment address input validation /////
@@ -1456,6 +1446,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 ?>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script type="text/javascript" src="jscript/jquery/jquery.js"></script>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
 <!-- header //-->
@@ -1553,7 +1544,8 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 ?>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<?php require('includes/form_check.js.php'); ?>
+<?php //require('includes/form_check.js.php'); ?>
+<script type="text/javascript" src="jscript/jquery/jquery.js"></script>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
 <!-- header //-->
@@ -1829,30 +1821,13 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <tr>
         <td class="fieldKey"><?php echo ENTRY_FIRST_NAME; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('firstname', $sc_guest_firstname, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('firstname', $sc_guest_firstname, 'class="text" id="ent_first_name"') . '&nbsp;' . (tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		  var ent_first_name = new LiveValidation('ent_first_name');
-		  ent_first_name.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
-        
         </td>
       </tr>
       <tr> 
         <td class="fieldKey"><?php echo ENTRY_LAST_NAME; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('lastname', $sc_guest_lastname, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('lastname', $sc_guest_lastname, 'class="text" id="ent_last_name"') . '&nbsp;' . (tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		  var ent_last_name = new LiveValidation('ent_last_name');
-		  ent_last_name.add(Validate.Length, { minimum: 4 } );
-		</script>
-        <?php } ?>
         </td>
       </tr>
 
@@ -1882,15 +1857,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <tr>
         <td class="fieldKey"><?php echo ENTRY_STREET_ADDRESS; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('street_address', $sc_guest_street_address, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('street_address', $sc_guest_street_address, 'class="text" id="ent_street_address"') . '&nbsp;' . (tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_street_address = new LiveValidation('ent_street_address');
-		    ent_street_address.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
         </td>
       </tr>
 
@@ -1910,30 +1877,13 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <tr>
         <td class="fieldKey"><?php echo ENTRY_POST_CODE; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('postcode', $sc_guest_postcode, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('postcode', $sc_guest_postcode, 'class="text" id="ent_postcode"') . '&nbsp;' . (tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_postcode = new LiveValidation('ent_postcode');
-		    ent_postcode.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
-            
         </td>
       </tr>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_CITY; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('city', $sc_guest_city, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('city', $sc_guest_city, 'class="text" id="ent_city"') . '&nbsp;' . (tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_city = new LiveValidation('ent_city');
-		    ent_city.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
         </td>
       </tr>
 </table>
@@ -1975,16 +1925,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 	<tr>
         <td class="fieldKey"><?php echo ENTRY_COUNTRY; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_get_country_list('country', $selected_country_id, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_get_country_list('country', $selected_country_id, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?>
-        <?php //echo tep_get_country_list('country', '', 'class="text" id="ent_country"') . '&nbsp;' . (tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?>
-        <!--<script type="text/javascript">
-		    var ent_country = new LiveValidation('ent_country');
-		    ent_country.add( Validate.Acceptance );
-		</script>-->
-		<?php } ?>
         </td>
       </tr>
       
@@ -2087,44 +2028,21 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
       <td class="fieldKey"><?php echo ENTRY_FIRST_NAME; ?></td>
       <td class="fieldValue">
-	  <?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('firstname_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('firstname_payment', '', 'class="text" id="pay_first_name"') . '&nbsp;' . (tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		  var ent_first_name = new LiveValidation('pay_first_name');
-		  ent_first_name.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
 	  </td>
     </tr>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_LAST_NAME; ?></td>
       <td class="fieldValue">
-	  <?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('lastname_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('lastname_payment', '', 'class="text" id="pay_last_name"') . '&nbsp;' . (tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		  var ent_last_name = new LiveValidation('pay_last_name');
-		  ent_last_name.add(Validate.Length, { minimum: 4 } );
-		</script>
-        <?php } ?>
 		</td>
     </tr>
 
 
     <tr>
       <td class="fieldKey"><?php echo ENTRY_STREET_ADDRESS; ?></td>
-      <td class="fieldValue"><?php if (SC_LIVE_VALIDATION == 'false') { ?>
+      <td class="fieldValue">
 		<?php echo tep_draw_input_field('street_address_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('street_address_payment', '', 'class="text" id="pay_street_address"') . '&nbsp;' . (tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_street_address = new LiveValidation('pay_street_address');
-		    ent_street_address.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
 		</td>
     </tr>
 
@@ -2144,29 +2062,13 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
       <td class="fieldKey"><?php echo ENTRY_POST_CODE; ?></td>
       <td class="fieldValue">
-	  <?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('postcode_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('postcode_payment', '', 'class="text" id="pay_postcode"') . '&nbsp;' . (tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_postcode = new LiveValidation('pay_postcode');
-		    ent_postcode.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
 		</td>
     </tr>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_CITY; ?></td>
       <td class="fieldValue">
-	  <?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('city_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('city_payment', '', 'class="text" id="pay_city"') . '&nbsp;' . (tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_city = new LiveValidation('pay_city');
-		    ent_city.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
 	</td>
     </tr>
 
@@ -2230,30 +2132,14 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
         <td class="fieldKey"><?php echo ENTRY_EMAIL_ADDRESS; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('email_address', $sc_guest_email_address, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_EMAIL_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('email_address', $sc_guest_email_address, 'class="text" id="ent_email_address"') . '&nbsp;' . (tep_not_null(ENTRY_EMAIL_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		  var ent_email_address = new LiveValidation('ent_email_address');
-		  ent_email_address.add(Validate.Email );
-		</script>
-        <?php } ?>
         </td>
       </tr>
       
       <tr>
         <td class="fieldKey"><?php echo ENTRY_TELEPHONE_NUMBER; ?></td>
         <td class="fieldValue">
-		<?php if (SC_LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_input_field('telephone', $sc_guest_telephone, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_TELEPHONE_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_TELEPHONE_NUMBER_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_input_field('telephone', $sc_guest_telephone, 'class="text" id="ent_telephone"') . '&nbsp;' . (tep_not_null(ENTRY_TELEPHONE_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_TELEPHONE_NUMBER_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_telephone = new LiveValidation('ent_telephone');
-		    ent_telephone.add(Validate.Length, { minimum: 4 } );
-		</script>
-		<?php } ?>
         </td>
       </tr>
       <tr>
@@ -2330,25 +2216,13 @@ if (SC_CREATE_ACCOUNT_REQUIRED == 'true') {
       <tr>
         <td class="fieldKey"><?php echo ENTRY_PASSWORD; ?></td>
         <td class="fieldValue">
-		<?php if (LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_password_field('password', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_PASSWORD_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_password_field('password', '', 'class="text" id="ent_password"') . '&nbsp;' . (tep_not_null(ENTRY_PASSWORD_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_TEXT . '</span>': ''); ?>
-        <?php } ?>        
         </td>
       </tr>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_PASSWORD_CONFIRMATION; ?></td>
         <td class="fieldValue">
-		<?php if (LIVE_VALIDATION == 'false') { ?>
 		<?php echo tep_draw_password_field('confirmation', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_PASSWORD_CONFIRMATION_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_CONFIRMATION_TEXT . '</span>': ''); ?>
-        <?php } else { ?>
-        <?php echo tep_draw_password_field('confirmation', '', 'class="text" id="ent_confirmation"') . '&nbsp;' . (tep_not_null(ENTRY_PASSWORD_CONFIRMATION_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_CONFIRMATION_TEXT . '</span>': ''); ?>
-        <script type="text/javascript">
-		    var ent_confirmation = new LiveValidation('ent_confirmation');
-		    ent_confirmation.add( Validate.Confirmation, { match: 'ent_password' } );
-		</script>
-        <?php } ?>
         </td>
       </tr>
    </table>
@@ -2701,15 +2575,7 @@ if ($sc_payment_modules_process == true) {
 	<a id="agreement" href="<?php echo DIR_WS_HTTP_CATALOG . DIR_WS_LANGUAGES . $language . '/conditions.html'; ?>"><?php echo SC_HEADING_CONDITIONS; ?></a>
 	<?php echo SC_CONDITION_END; ?>
 	
-    <?php if (SC_LIVE_VALIDATION == 'false') { ?>
     	<?php echo tep_draw_checkbox_field('TermsAgree','1', false, 'id="t18"'); ?>
-    <?php } else { ?>
-		<?php echo tep_draw_checkbox_field('TermsAgree','1', false, 'id="t18"'); ?>
-        <script type="text/javascript">
-            var t18 = new LiveValidation('t18');
-            t18.add(Validate.Acceptance );
-        </script>
-    <?php } ?>
 	
  
 </div><!--div end conditions --> 
