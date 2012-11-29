@@ -1437,9 +1437,33 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 <?php
 //////////  START  redirection page for payment modules such as paypal if no confirmation page ////////////
 if ((isset($$payment->form_action_url)) && ($sc_payment_url == true)) { 
+?>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<?php
+// BOF: WebMakers.com Changed: Header Tag Controller v1.0
+// Replaced by header_tags.php
+if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
+  require(DIR_WS_INCLUDES . 'header_tags.php');
+} else {
+?>
+  <title><?php echo TITLE ?></title>
+<?php
+}
+// EOF: WebMakers.com Changed: Header Tag Controller v1.0
+?>
+<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
-require(DIR_WS_INCLUDES . 'template_top.php');
-
+<!-- body //-->
+<?php
 if (is_array($payment_modules->modules)) {
     if ($confirmation = $payment_modules->confirmation()) {
 	
@@ -1486,9 +1510,17 @@ if (is_array($payment_modules->modules)) {
 
 
 </form>
-<?php 
-require(DIR_WS_INCLUDES . 'template_bottom.php');
-require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+
+<!-- body_eof //-->
+
+<!-- footer //-->
+<?php include(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+
 <script type="text/javascript">
     document.checkoutUrl.submit();
 </script>
@@ -1501,14 +1533,34 @@ require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
 
 
   $breadcrumb->add(NAVBAR_TITLE_1, tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
-  $breadcrumb->add(NAVBAR_TITLE_2, tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
 
-
-  require(DIR_WS_INCLUDES . 'template_top.php');
-  require('includes/form_check.js.php');  
-  
 ?>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<?php
+// BOF: WebMakers.com Changed: Header Tag Controller v1.0
+// Replaced by header_tags.php
+if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
+  require(DIR_WS_INCLUDES . 'header_tags.php');
+} else {
+?>
+  <title><?php echo TITLE ?></title>
+<?php
+}
+// EOF: WebMakers.com Changed: Header Tag Controller v1.0
+?>
+<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<?php require('includes/form_check.js.php'); ?>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
+<!-- body //-->
 <?php
 // if the customer is logged on - show this javascript
 if (tep_session_is_registered('customer_id')) { ?>
@@ -1728,7 +1780,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 <?php if (tep_session_is_registered('customer_id')) { ?>
     	<div>
           <p><?php echo tep_address_label($customer_id, $sendto, true, ' ', '<br />'); ?></p>
-          <p><?php echo tep_draw_button(IMAGE_BUTTON_CHANGE_ADDRESS, 'home', tep_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL')); ?></p>
+          <p><?php echo '<a href="' . tep_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') . '">' . tep_image_button('button_change_address.gif', IMAGE_BUTTON_CHANGE_ADDRESS) . '</a>'; ?></p>
         </div>
 <?php } else { //no account ?>
 <?php ################ END Shipping Information - LOGGED ON ######################################## ?> 
@@ -1960,7 +2012,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 <?php if (tep_session_is_registered('customer_id')) { ?>
     	<div>
            <p><?php echo tep_address_label($customer_id, $billto, true, ' ', '<br />'); ?></p>
-           <p><?php echo tep_draw_button(IMAGE_BUTTON_CHANGE_ADDRESS, 'home', tep_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL')); ?></p>
+           <p><?php echo '<a href="' . tep_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL') . '">' . tep_image_button('button_change_address.gif', IMAGE_BUTTON_CHANGE_ADDRESS) . '</a>'; ?></p>
         </div>
 <?php } else { //no account ?>
 <?php ################ END Payment Information - LOGGED ON ######################################## ?> 
@@ -2682,10 +2734,11 @@ if ($sc_payment_modules_process == true) {
     <div class="buttonAction">
 		<?php 
 		if (SC_CONFIRMATION_PAGE == 'true') { //got to confimration page
-			echo tep_draw_button(IMAGE_BUTTON_CONFIRMATION_PAGE, 'triangle-1-e', null, 'primary');
+			echo tep_image_submit('button_continue.gif', IMAGE_BUTTON_CONTINUE);
 		} else { //order now
-			echo tep_draw_button(IMAGE_BUTTON_CONFIRM_ORDER, 'check', null, 'primary');
+			echo tep_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER);
 		}  ?>
+		<br /><br />
     </div>
   </div>
 </div>
@@ -2694,7 +2747,12 @@ if ($sc_payment_modules_process == true) {
 </div><!-- Div end checkout -->
 </div><!-- Div end checkout_container -->
 
-<?php
-  require(DIR_WS_INCLUDES . 'template_bottom.php');
-  require(DIR_WS_INCLUDES . 'application_bottom.php');
-?>
+<!-- body_eof //-->
+
+<!-- footer //-->
+<?php include(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
