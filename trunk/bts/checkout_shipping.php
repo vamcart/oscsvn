@@ -22,9 +22,9 @@ if (tep_get_configuration_key_value('MODULE_SHIPPING_FREESHIPPER_STATUS') and $c
 
 // if the customer is not logged on, redirect them to the login page
 if (!tep_session_is_registered('customer_id') && SMART_CHECKOUT == 'false') {
-		tep_redirect(vam_href_link(FILENAME_LOGIN, '', 'SSL'));
+		tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
 } elseif (SMART_CHECKOUT == 'true') {
-		tep_redirect(vam_href_link(FILENAME_CHECKOUT, '', 'SSL'));
+		tep_redirect(tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
 }
 
 // if there is nothing in the customers cart, redirect them to the shopping cart page
