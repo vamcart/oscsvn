@@ -1797,9 +1797,9 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
         <td class="fieldValue">
 		<?php 
 		//not yet finished
-		 //echo tep_draw_radio_field('gender', 'm', '', 'id="checkme"') . '&nbsp;&nbsp;' . MALE . '&nbsp;&nbsp;' . tep_draw_radio_field('gender', 'f', '', 'id="checkme2"') . '&nbsp;&nbsp;' . FEMALE . '&nbsp;&nbsp;'. tep_draw_radio_field('gender', 'a', '', 'id="checkme1"') . '&nbsp;&nbsp;' . FIRMA . '&nbsp;' . (tep_not_null(ENTRY_GENDER_TEXT) ? '<span class="inputRequirement">' . ENTRY_GENDER_TEXT . '</span>': ''); 
+		 //echo tep_draw_radio_field('gender', 'm', '', 'id="checkme"') . '&nbsp;&nbsp;' . MALE . '&nbsp;&nbsp;' . tep_draw_radio_field('gender', 'f', '', 'id="checkme2"') . '&nbsp;&nbsp;' . FEMALE . '&nbsp;&nbsp;'. tep_draw_radio_field('gender', 'a', '', 'id="checkme1"') . '&nbsp;&nbsp;' . FIRMA . '&nbsp;' . (!tep_not_null(ENTRY_GENDER_TEXT) ? '<span class="inputRequirement">' . ENTRY_GENDER_TEXT . '</span>': ''); 
         
-		echo tep_draw_radio_field('gender', 'm') . '&nbsp;&nbsp;' . MALE . '&nbsp;&nbsp;' . tep_draw_radio_field('gender', 'f') . '&nbsp;&nbsp;' . FEMALE . '&nbsp;' . (tep_not_null(ENTRY_GENDER_TEXT) ? '<span class="inputRequirement">' . ENTRY_GENDER_TEXT . '</span>': ''); ?></td>
+		echo tep_draw_radio_field('gender', 'm') . '&nbsp;&nbsp;' . MALE . '&nbsp;&nbsp;' . tep_draw_radio_field('gender', 'f') . '&nbsp;&nbsp;' . FEMALE . '&nbsp;' . (!tep_not_null(ENTRY_GENDER_TEXT) ? '<span class="inputRequirement">' . ENTRY_GENDER_TEXT . '</span>': ''); ?></td>
       </tr>
 </table>
 <?php
@@ -1815,7 +1815,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
      <table border="0" cellspacing="2" cellpadding="2" width="100%">
       <tr>
         <td class="fieldKey"><?php echo ENTRY_COMPANY; ?></td>
-        <td class="fieldValue"><?php echo tep_draw_input_field('company', $sc_guest_company, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_COMPANY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COMPANY_TEXT . '</span>': ''); ?></td>
+        <td class="fieldValue"><?php echo tep_draw_input_field('company', $sc_guest_company, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_COMPANY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COMPANY_TEXT . '</span>': ''); ?></td>
       </tr>
     </table>
 </div>  
@@ -1827,13 +1827,13 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <tr>
         <td class="fieldKey"><?php echo ENTRY_FIRST_NAME; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('firstname', $sc_guest_firstname, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('firstname', $sc_guest_firstname, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
         </td>
       </tr>
       <tr> 
         <td class="fieldKey"><?php echo ENTRY_LAST_NAME; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('lastname', $sc_guest_lastname, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('lastname', $sc_guest_lastname, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
         </td>
       </tr>
 
@@ -1843,7 +1843,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 
       <tr>
         <td class="fieldKey"><?php echo ENTRY_DATE_OF_BIRTH; ?></td>
-        <td class="fieldValue"><?php echo tep_draw_input_field('dob', $sc_guest_dob, 'class="text" id="dob"') . '&nbsp;' . (tep_not_null(ENTRY_DATE_OF_BIRTH_TEXT) ? '<span class="inputRequirement">' . ENTRY_DATE_OF_BIRTH_TEXT . '</span>': ''); ?><script type="text/javascript">$('#dob').datepicker({dateFormat: '<?php echo JQUERY_DATEPICKER_FORMAT; ?>', changeMonth: true, changeYear: true, yearRange: '-100:+0'});</script></td>
+        <td class="fieldValue"><?php echo tep_draw_input_field('dob', $sc_guest_dob, 'class="text" id="dob"') . '&nbsp;' . (!tep_not_null(ENTRY_DATE_OF_BIRTH_TEXT) ? '<span class="inputRequirement">' . ENTRY_DATE_OF_BIRTH_TEXT . '</span>': ''); ?><script type="text/javascript">$('#dob').datepicker({dateFormat: '<?php echo JQUERY_DATEPICKER_FORMAT; ?>', changeMonth: true, changeYear: true, yearRange: '-100:+0'});</script></td>
       </tr>
 
 <?php
@@ -1863,7 +1863,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <tr>
         <td class="fieldKey"><?php echo ENTRY_STREET_ADDRESS; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('street_address', $sc_guest_street_address, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('street_address', $sc_guest_street_address, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
         </td>
       </tr>
 
@@ -1873,7 +1873,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 
       <tr>
         <td class="fieldKey"><?php echo ENTRY_SUBURB; ?></td>
-        <td class="fieldValue"><?php echo tep_draw_input_field('suburb', $sc_guest_suburb, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_SUBURB_TEXT) ? '<span class="inputRequirement">' . ENTRY_SUBURB_TEXT . '</span>': ''); ?></td>
+        <td class="fieldValue"><?php echo tep_draw_input_field('suburb', $sc_guest_suburb, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_SUBURB_TEXT) ? '<span class="inputRequirement">' . ENTRY_SUBURB_TEXT . '</span>': ''); ?></td>
       </tr>
 
 <?php
@@ -1883,47 +1883,16 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <tr>
         <td class="fieldKey"><?php echo ENTRY_POST_CODE; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('postcode', $sc_guest_postcode, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('postcode', $sc_guest_postcode, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
         </td>
       </tr>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_CITY; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('city', $sc_guest_city, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('city', $sc_guest_city, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
         </td>
       </tr>
 </table>
-<?php
-  if (ACCOUNT_STATE == 'true') {
-?>
-<table border="0" cellspacing="2" cellpadding="2" width="100%">
-      <tr>
-        <td class="fieldKey"><?php echo ENTRY_STATE; ?></td>
-        <td class="fieldValue">
-<?php
-    if ($process == true) {
-      if ($entry_state_has_zones == true) {
-        $zones_array = array();
-        $zones_query = tep_db_query("select zone_name from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' order by zone_name");
-        while ($zones_values = tep_db_fetch_array($zones_query)) {
-          $zones_array[] = array('id' => $zones_values['zone_name'], 'text' => $zones_values['zone_name']);
-        }
-        echo tep_draw_pull_down_menu('state', $zones_array, '', 'class="text"');
-      } else {
-        echo tep_draw_input_field('state', '', 'class="text"');
-      }
-    } else {
-      echo tep_draw_input_field('state', '', 'class="text"');
-    }
-
-    if (tep_not_null(ENTRY_STATE_TEXT)) echo '&nbsp;<span class="inputRequirement">' . ENTRY_STATE_TEXT . '</span>';
-?>
-        </td>
-      </tr>
-</table>
-<?php
-  }
-?>
 <div id="shipping_country_box">
 <div id="shipping_country">
 
@@ -1931,7 +1900,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 	<tr>
         <td class="fieldKey"><?php echo ENTRY_COUNTRY; ?></td>
         <td class="fieldValue">
-		<?php echo tep_get_country_list('country', $selected_country_id, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?>
+		<?php echo tep_get_country_list('country',$selected_country_id, 'onChange="changeselect();"') . '&nbsp;' . (!tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?>
         </td>
       </tr>
       
@@ -1940,6 +1909,52 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     </table>
   </div><!--div end shipping_country -->
   </div><!--div end shipping_country_box -->
+<?php
+  if (ACCOUNT_STATE == 'true') {
+?>
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+      <tr>
+        <td class="fieldKey"><?php echo ENTRY_STATE; ?></td>
+        <td class="fieldValue">
+<script language="javascript">
+<!--
+function changeselect(reg) {
+//clear select
+    document.smart_checkout.state.length=0;
+    var j=0;
+    for (var i=0;i<zones.length;i++) {
+      if (zones[i][0]==document.smart_checkout.country.value) {
+   document.smart_checkout.state.options[j]=new Option(zones[i][1],zones[i][1], zones[i][2]);
+   j++;
+   }
+      }
+    if (j==0) {
+      document.smart_checkout.state.options[0]=new Option('-','-');
+      }
+    if (reg) { document.smart_checkout.state.value = reg; }
+}
+   var zones = new Array(
+   <?php
+       $zones_query = tep_db_query("select zone_country_id,zone_id,zone_name from " . TABLE_ZONES . " order by zone_name asc");
+       $mas=array();
+       while ($zones_values = tep_db_fetch_array($zones_query)) {
+       	($zones_values['zone_id'] == STORE_ZONE) ? $selected = 'true' : $selected = 'false';
+         $zones[] = 'new Array('.$zones_values['zone_country_id'].',"'.$zones_values['zone_name'].'",'.$selected.')';
+       }
+       echo implode(',',$zones);
+       ?>
+       );
+document.write('<SELECT NAME="state">');
+document.write('</SELECT>');
+changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
+-->
+</script>
+        </td>
+      </tr>
+</table>
+<?php
+  }
+?>
 </div> <!--div end shipping_address -->
 <?php } //end no account ?>
 <?php ################ END Shipping Information - NO ACCOUNT ######################################## ?> 
@@ -1973,11 +1988,11 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
         
    <?php if (($error == '1') && ($payment_address_selected != '1')) { //is not selected - otherwise payment address is same as shipping address ?>
         
-        <td><?php echo tep_draw_checkbox_field('payment_adress', '1', false, 'id="pay_show"') . '&nbsp;' . (tep_not_null(ENTRY_NEWSLETTER_TEXT) ? '<span class="inputRequirement">' . ENTRY_NEWSLETTER_TEXT . '</span>': ''). '&nbsp;&nbsp;' . TEXT_SHIPPING_SAME_AS_PAYMENT; ?></td>
+        <td><?php echo tep_draw_checkbox_field('payment_adress', '1', false, 'id="pay_show"') . '&nbsp;' . (!tep_not_null(ENTRY_NEWSLETTER_TEXT) ? '<span class="inputRequirement">' . ENTRY_NEWSLETTER_TEXT . '</span>': ''). '&nbsp;&nbsp;' . TEXT_SHIPPING_SAME_AS_PAYMENT; ?></td>
         
         <?php } else { //is selected ?>
         
-        <td><?php echo tep_draw_checkbox_field('payment_adress', '1', true, 'id="pay_show"') . '&nbsp;' . (tep_not_null(ENTRY_NEWSLETTER_TEXT) ? '<span class="inputRequirement">' . ENTRY_NEWSLETTER_TEXT . '</span>': ''). '&nbsp;&nbsp;' . TEXT_SHIPPING_SAME_AS_PAYMENT; ?></td>
+        <td><?php echo tep_draw_checkbox_field('payment_adress', '1', true, 'id="pay_show"') . '&nbsp;' . (!tep_not_null(ENTRY_NEWSLETTER_TEXT) ? '<span class="inputRequirement">' . ENTRY_NEWSLETTER_TEXT . '</span>': ''). '&nbsp;&nbsp;' . TEXT_SHIPPING_SAME_AS_PAYMENT; ?></td>
         
         <?php } ?>
         
@@ -2008,7 +2023,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <td class="fieldKey"><?php echo ENTRY_GENDER; ?></td>
       <td class="fieldValue">
 	  
-	  <?php echo tep_draw_radio_field('gender_payment', 'm', $male) . '&nbsp;&nbsp;' . MALE . '&nbsp;&nbsp;' . tep_draw_radio_field('gender_payment', 'f', $female) . '&nbsp;&nbsp;' . FEMALE . '&nbsp;' . (tep_not_null(ENTRY_GENDER_TEXT) ? '<span class="inputRequirement">' . ENTRY_GENDER_TEXT . '</span>': ''); ?>
+	  <?php echo tep_draw_radio_field('gender_payment', 'm', $male) . '&nbsp;&nbsp;' . MALE . '&nbsp;&nbsp;' . tep_draw_radio_field('gender_payment', 'f', $female) . '&nbsp;&nbsp;' . FEMALE . '&nbsp;' . (!tep_not_null(ENTRY_GENDER_TEXT) ? '<span class="inputRequirement">' . ENTRY_GENDER_TEXT . '</span>': ''); ?>
       
       </td>
     </tr>
@@ -2023,7 +2038,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 
     <tr>
       <td class="fieldKey"><?php echo ENTRY_COMPANY; ?></td>
-      <td class="fieldValue"><?php echo tep_draw_input_field('company_payment', '',  'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_COMPANY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COMPANY_TEXT . '</span>': ''); ?></td>
+      <td class="fieldValue"><?php echo tep_draw_input_field('company_payment', '',  'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_COMPANY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COMPANY_TEXT . '</span>': ''); ?></td>
     </tr>
 
 <?php
@@ -2034,13 +2049,13 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
       <td class="fieldKey"><?php echo ENTRY_FIRST_NAME; ?></td>
       <td class="fieldValue">
-		<?php echo tep_draw_input_field('firstname_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('firstname_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_FIRST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_FIRST_NAME_TEXT . '</span>': ''); ?>
 	  </td>
     </tr>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_LAST_NAME; ?></td>
       <td class="fieldValue">
-		<?php echo tep_draw_input_field('lastname_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('lastname_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_LAST_NAME_TEXT) ? '<span class="inputRequirement">' . ENTRY_LAST_NAME_TEXT . '</span>': ''); ?>
 		</td>
     </tr>
 
@@ -2048,7 +2063,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
       <td class="fieldKey"><?php echo ENTRY_STREET_ADDRESS; ?></td>
       <td class="fieldValue">
-		<?php echo tep_draw_input_field('street_address_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('street_address_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
 		</td>
     </tr>
 
@@ -2058,7 +2073,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 
     <tr>
       <td class="fieldKey"><?php echo ENTRY_SUBURB; ?></td>
-      <td class="fieldValue"><?php echo tep_draw_input_field('suburb_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_SUBURB_TEXT) ? '<span class="inputRequirement">' . ENTRY_SUBURB_TEXT . '</span>': ''); ?></td>
+      <td class="fieldValue"><?php echo tep_draw_input_field('suburb_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_SUBURB_TEXT) ? '<span class="inputRequirement">' . ENTRY_SUBURB_TEXT . '</span>': ''); ?></td>
     </tr>
 
 <?php
@@ -2068,14 +2083,19 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
       <td class="fieldKey"><?php echo ENTRY_POST_CODE; ?></td>
       <td class="fieldValue">
-		<?php echo tep_draw_input_field('postcode_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('postcode_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
 		</td>
     </tr>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_CITY; ?></td>
       <td class="fieldValue">
-		<?php echo tep_draw_input_field('city_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('city_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
 	</td>
+    </tr>
+
+    <tr>
+      <td class="fieldKey"><?php echo ENTRY_COUNTRY; ?></td>
+      <td class="fieldValue"><?php echo tep_get_country_list('country_payment',$selected_country_id, 'onChange="changeselectt();"') . '&nbsp;' . (!tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?></td>
     </tr>
 
 <?php
@@ -2086,24 +2106,39 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
       <td class="fieldKey"><?php echo ENTRY_STATE; ?></td>
       <td class="fieldValue">
 
-<?php
-    if ($process == true) {
-      if ($entry_state_has_zones == true) {
-        $zones_array = array();
-        $zones_query = tep_db_query("select zone_name from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' order by zone_name");
-        while ($zones_values = tep_db_fetch_array($zones_query)) {
-          $zones_array[] = array('id' => $zones_values['zone_name'], 'text' => $zones_values['zone_name']);
-        }
-        echo tep_draw_pull_down_menu('state_payment', $zones_array, '', 'class="text"');
-      } else {
-        echo tep_draw_input_field('state_payment', '', 'class="text"');
+<script language="javascript">
+<!--
+function changeselectt(reg) {
+//clear select
+    document.smart_checkout.state_payment.length=0;
+    var j=0;
+    for (var i=0;i<zones.length;i++) {
+      if (zones[i][0]==document.smart_checkout.country_payment.value) {
+   document.smart_checkout.state_payment.options[j]=new Option(zones[i][1],zones[i][1], zones[i][2]);
+   j++;
+   }
       }
-    } else {
-      echo tep_draw_input_field('state_payment', '', 'class="text"');
-    }
-
-    if (tep_not_null(ENTRY_STATE_TEXT)) echo '&nbsp;<span class="inputRequirement">' . ENTRY_STATE_TEXT . '</span>';
-?>
+    if (j==0) {
+      document.smart_checkout.state_payment.options[0]=new Option('-','-');
+      }
+    if (reg) { document.smart_checkout.state_payment.value = reg; }
+}
+   var zones = new Array(
+   <?php
+       $zones_query = tep_db_query("select zone_country_id,zone_id,zone_name from " . TABLE_ZONES . " order by zone_name asc");
+       $mas=array();
+       while ($zones_values = tep_db_fetch_array($zones_query)) {
+       	($zones_values['zone_id'] == STORE_ZONE) ? $selected = 'true' : $selected = 'false';
+         $zones[] = 'new Array('.$zones_values['zone_country_id'].',"'.$zones_values['zone_name'].'",'.$selected.')';
+       }
+       echo implode(',',$zones);
+       ?>
+       );
+document.write('<SELECT NAME="state_payment">');
+document.write('</SELECT>');
+changeselectt("<?php echo tep_db_prepare_input($_POST['state_payment']); ?>");
+-->
+</script>
 
       </td>
     </tr>
@@ -2111,11 +2146,6 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 <?php
   }
 ?>
-
-    <tr>
-      <td class="fieldKey"><?php echo ENTRY_COUNTRY; ?></td>
-      <td class="fieldValue"><?php echo tep_get_country_list('country_payment', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?></td>
-    </tr>
   </table>
 
  </div><!--div end payment_address-->
@@ -2138,19 +2168,19 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
     <tr>
         <td class="fieldKey"><?php echo ENTRY_EMAIL_ADDRESS; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('email_address', $sc_guest_email_address, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_EMAIL_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('email_address', $sc_guest_email_address, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_EMAIL_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?>
         </td>
       </tr>
       
       <tr>
         <td class="fieldKey"><?php echo ENTRY_TELEPHONE_NUMBER; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_input_field('telephone', $sc_guest_telephone, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_TELEPHONE_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_TELEPHONE_NUMBER_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_input_field('telephone', $sc_guest_telephone, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_TELEPHONE_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_TELEPHONE_NUMBER_TEXT . '</span>': ''); ?>
         </td>
       </tr>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_FAX_NUMBER; ?></td>
-        <td class="fieldValue"><?php echo tep_draw_input_field('fax', $sc_guest_fax, 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_FAX_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_FAX_NUMBER_TEXT . '</span>': ''); ?></td>
+        <td class="fieldValue"><?php echo tep_draw_input_field('fax', $sc_guest_fax, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_FAX_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_FAX_NUMBER_TEXT . '</span>': ''); ?></td>
       </tr>
       
 
@@ -2222,13 +2252,13 @@ if (SC_CREATE_ACCOUNT_REQUIRED == 'true') {
       <tr>
         <td class="fieldKey"><?php echo ENTRY_PASSWORD; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_password_field('password', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_PASSWORD_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_password_field('password', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_PASSWORD_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_TEXT . '</span>': ''); ?>
         </td>
       </tr>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_PASSWORD_CONFIRMATION; ?></td>
         <td class="fieldValue">
-		<?php echo tep_draw_password_field('confirmation', '', 'class="text"') . '&nbsp;' . (tep_not_null(ENTRY_PASSWORD_CONFIRMATION_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_CONFIRMATION_TEXT . '</span>': ''); ?>
+		<?php echo tep_draw_password_field('confirmation', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_PASSWORD_CONFIRMATION_TEXT) ? '<span class="inputRequirement">' . ENTRY_PASSWORD_CONFIRMATION_TEXT . '</span>': ''); ?>
         </td>
       </tr>
    </table>
