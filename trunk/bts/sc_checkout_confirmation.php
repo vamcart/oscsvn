@@ -145,8 +145,6 @@ if (!tep_session_is_registered('free_payment')) { //hack for free payment
   }
 
 
-require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_SC_CHECKOUT_CONFIRMATION);
-
 ///////////// START create account //////////////////////////////////////////////////
 //if no errors
 if ((tep_session_is_registered('create_account')) && (isset($_POST['action']) && ($_POST['action'] == 'process'))) {
@@ -475,21 +473,6 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 	;}*/
 </script>  
 
-
-<h1><?php echo HEADING_TITLE; ?></h1>
-
-<?php
-//show progress bar only if confirmation page is true
-if (SC_CONFIRMATION_PAGE == 'true') { ?>
-<div class="top_space">
-    <ul id="myProgressBar">
-        <li class="done">1. <?php echo SC_PROGRESS_CHECKOUT_PAGE; ?></li>
-        <li class="current">2. <?php echo SC_PROGRESS_CONFIRMATION_PAGE; ?></li>
-    </ul>
-</div><!-- dive end myProgressBar -->
-<?php } ?>
-
-
 <?php
 
 
@@ -516,17 +499,6 @@ echo tep_draw_form('checkout_confirmation', $form_action_url, 'post');
 <?php
  /////////////  START Shipping address //////////////////////////// ?>
 <div id="conf_shipping_box">
-  <?php
-	  if ($show_account_data == true) {
-	  	echo '<h2>' . SC_HEADING_CREATE_ACCOUNT_INFORMATION . '</h2>'; 
-		echo '<p>' . tep_address_format($order->delivery['format_id'], $order->delivery, 1, ' ', '<br /></p>'); 
-	  } else {
-	  	echo '<h2>' . HEADING_SHIPPING_INFORMATION . '</h2>';
-	  }
-  ?>
-
-  
-
 
 	<?php 
 	if ($hide_shipping_data == true) {
@@ -679,6 +651,7 @@ echo tep_draw_form('checkout_confirmation', $form_action_url, 'post');
 	  }
 	?>
 	</table>
+
 </div>
  <?php ///////////// END Total //////////////////////////// ?> 
  
@@ -692,16 +665,11 @@ echo tep_draw_form('checkout_confirmation', $form_action_url, 'post');
   }
 
 ?>
-<?php echo tep_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER); ?>
-<br /><br />
+
     </div>
   </div>
 
  
- 
- 
- 
-  
 <div class="line_space"></div>  
   
 <?php
@@ -740,8 +708,13 @@ echo tep_draw_form('checkout_confirmation', $form_action_url, 'post');
   }  
  ?> 
   
+<br /><br />
+<?php echo tep_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER); ?> 
 
 </div>
+
+
+
 <script type="text/javascript">
 $('#coProgressBar').progressbar({
   value: 100

@@ -1164,4 +1164,8 @@ div.CheckoutError
 		margin-top: 0.5em;
 		padding: 0.5em;
 	}
-	
+
+#sc_content
+	{
+		padding: .5em;
+	}		
