@@ -475,11 +475,11 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 	}
 	
 	//conditions validation
-	$conditions_validation = $_POST['TermsAgree'];
-	if (($conditions_validation == '') && (SC_CONDITIONS == 'true')) {
-		$error = true;
-		$messageStack->add('smart_checkout', CONDITIONS_ERROR);
-    }
+	//$conditions_validation = $_POST['TermsAgree'];
+	//if (($conditions_validation == '') && (SC_CONDITIONS == 'true')) {
+		//$error = true;
+		//$messageStack->add('smart_checkout', CONDITIONS_ERROR);
+    //}
 	
 }	
 
@@ -1097,8 +1097,18 @@ if (isset($_POST['action']) && (($_POST['action'] == 'not_logged_on') && ($creat
 ///////////////////  START PROCESS Button pressed for ACCOUNT CREATION - only onepage ////////////////////////////////////////////
 if (isset($_POST['action']) && (($_POST['action'] == 'not_logged_on') && ($create_account == true)) && isset($_POST['formid']) && ($_POST['formid'] == $sessiontoken)) {
 //if no errors
+
+        $extra_fields_query = tep_db_query("select ce.fields_id, ce.fields_input_type, ce.fields_required_status, cei.fields_name, ce.fields_status, ce.fields_input_type, ce.fields_size from " . TABLE_EXTRA_FIELDS . " ce, " . TABLE_EXTRA_FIELDS_INFO . " cei where ce.fields_status=1 and ce.fields_required_status=1 and cei.fields_id=ce.fields_id and cei.languages_id =" . $languages_id);
+   while($extra_fields = tep_db_fetch_array($extra_fields_query)){
+    if(strlen($_POST['fields_' . $extra_fields['fields_id']])<$extra_fields['fields_size']){
+      $error = true;
+      $string_error=sprintf(ENTRY_EXTRA_FIELDS_ERROR,$extra_fields['fields_name'],$extra_fields['fields_size']);
+      $messageStack->add('create_account', $string_error);
+    }
+  }
+
     if ($error == false) {
-		
+
 	  $dbPass = tep_encrypt_password($password);
 
       $sql_data_array = array('customers_firstname' => $firstname,
@@ -1116,6 +1126,40 @@ if (isset($_POST['action']) && (($_POST['action'] == 'not_logged_on') && ($creat
       tep_db_perform(TABLE_CUSTOMERS, $sql_data_array);
 
       $customer_id = tep_db_insert_id();
+
+   	  	$extra_fields_query = tep_db_query("select ce.fields_id from " . TABLE_EXTRA_FIELDS . " ce where ce.fields_status=1 ");
+    	  while($extra_fields = tep_db_fetch_array($extra_fields_query))
+				{
+				  if(isset($_POST['fields_' . $extra_fields['fields_id']])){
+            $sql_data_array = array('customers_id' => (int)$customer_id,
+                              'fields_id' => $extra_fields['fields_id'],
+                              'value' => $_POST['fields_' . $extra_fields['fields_id']]);
+       		}
+       		else
+					{
+					  $sql_data_array = array('customers_id' => (int)$customer_id,
+                              'fields_id' => $extra_fields['fields_id'],
+                              'value' => '');
+						$is_add = false;
+						for($i = 1; $i <= $_POST['fields_' . $extra_fields['fields_id'] . '_total']; $i++)
+						{
+							if(isset($_POST['fields_' . $extra_fields['fields_id'] . '_' . $i]))
+							{
+							  if($is_add)
+							  {
+                  $sql_data_array['value'] .= "\n";
+								}
+								else
+								{
+                  $is_add = true;
+								}
+              	$sql_data_array['value'] .= $_POST['fields_' . $extra_fields['fields_id'] . '_' . $i];
+							}
+						}
+					}
+
+					tep_db_perform(TABLE_CUSTOMERS_TO_EXTRA_FIELDS, $sql_data_array);
+      	}
 
       $sql_data_array = array('customers_id' => $customer_id,
                               'entry_firstname' => $firstname,
@@ -1860,13 +1904,18 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 
  <div id="shipping_address">
     <table border="0" cellspacing="2" cellpadding="2" width="100%">
+<?php
+if (ACCOUNT_STREET_ADDRESS == 'true') {
+?>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_STREET_ADDRESS; ?></td>
         <td class="fieldValue">
 		<?php echo tep_draw_input_field('street_address', $sc_guest_street_address, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
         </td>
       </tr>
-
+<?php
+}
+?>
 <?php
   if (ACCOUNT_SUBURB == 'true') {
 ?>
@@ -1879,6 +1928,9 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 <?php
   }
 ?>
+<?php
+  if (ACCOUNT_POSTCODE == 'true') {
+?>
 
       <tr>
         <td class="fieldKey"><?php echo ENTRY_POST_CODE; ?></td>
@@ -1886,25 +1938,38 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 		<?php echo tep_draw_input_field('postcode', $sc_guest_postcode, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
         </td>
       </tr>
+<?php
+  }
+?>
+<?php
+  if (ACCOUNT_CITY == 'true') {
+?>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_CITY; ?></td>
         <td class="fieldValue">
 		<?php echo tep_draw_input_field('city', $sc_guest_city, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
         </td>
       </tr>
+<?php
+  }
+?>
 </table>
 <div id="shipping_country_box">
 <div id="shipping_country">
 
 <table border="0" cellspacing="2" cellpadding="2" width="100%">
+<?php
+  if (ACCOUNT_COUNTRY == 'true') {
+?>
 	<tr>
         <td class="fieldKey"><?php echo ENTRY_COUNTRY; ?></td>
         <td class="fieldValue">
 		<?php echo tep_get_country_list('country',$selected_country_id, 'onChange="changeselect();"') . '&nbsp;' . (!tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?>
         </td>
       </tr>
-      
-      
+<?php
+  }
+?>
       
     </table>
   </div><!--div end shipping_country -->
@@ -2059,6 +2124,9 @@ changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
 		</td>
     </tr>
 
+<?php
+if (ACCOUNT_STREET_ADDRESS == 'true') {
+?>
 
     <tr>
       <td class="fieldKey"><?php echo ENTRY_STREET_ADDRESS; ?></td>
@@ -2066,7 +2134,9 @@ changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
 		<?php echo tep_draw_input_field('street_address_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_STREET_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_STREET_ADDRESS_TEXT . '</span>': ''); ?>
 		</td>
     </tr>
-
+<?php
+  }
+?>
 <?php
   if (ACCOUNT_SUBURB == 'true') {
 ?>
@@ -2079,25 +2149,40 @@ changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
 <?php
   }
 ?>
-
+<?php
+  if (ACCOUNT_POSTCODE == 'true') {
+?>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_POST_CODE; ?></td>
       <td class="fieldValue">
 		<?php echo tep_draw_input_field('postcode_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_POST_CODE_TEXT) ? '<span class="inputRequirement">' . ENTRY_POST_CODE_TEXT . '</span>': ''); ?>
 		</td>
     </tr>
+<?php
+  }
+?>
+<?php
+  if (ACCOUNT_CITY == 'true') {
+?>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_CITY; ?></td>
       <td class="fieldValue">
 		<?php echo tep_draw_input_field('city_payment', '', 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_CITY_TEXT) ? '<span class="inputRequirement">' . ENTRY_CITY_TEXT . '</span>': ''); ?>
 	</td>
     </tr>
-
+<?php
+  }
+?>
+<?php
+  if (ACCOUNT_COUNTRY == 'true') {
+?>
     <tr>
       <td class="fieldKey"><?php echo ENTRY_COUNTRY; ?></td>
       <td class="fieldValue"><?php echo tep_get_country_list('country_payment',$selected_country_id, 'onChange="changeselectt();"') . '&nbsp;' . (!tep_not_null(ENTRY_COUNTRY_TEXT) ? '<span class="inputRequirement">' . ENTRY_COUNTRY_TEXT . '</span>': ''); ?></td>
     </tr>
-
+<?php
+  }
+?>
 <?php
   if (ACCOUNT_STATE == 'true') {
 ?>
@@ -2171,20 +2256,26 @@ changeselectt("<?php echo tep_db_prepare_input($_POST['state_payment']); ?>");
 		<?php echo tep_draw_input_field('email_address', $sc_guest_email_address, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_EMAIL_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?>
         </td>
       </tr>
-      
+<?php
+  if (ACCOUNT_TELE == 'true') {
+?>      
       <tr>
         <td class="fieldKey"><?php echo ENTRY_TELEPHONE_NUMBER; ?></td>
         <td class="fieldValue">
 		<?php echo tep_draw_input_field('telephone', $sc_guest_telephone, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_TELEPHONE_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_TELEPHONE_NUMBER_TEXT . '</span>': ''); ?>
         </td>
       </tr>
+<?php
+  }
+?>
       <tr>
         <td class="fieldKey"><?php echo ENTRY_FAX_NUMBER; ?></td>
         <td class="fieldValue"><?php echo tep_draw_input_field('fax', $sc_guest_fax, 'class="text"') . '&nbsp;' . (!tep_not_null(ENTRY_FAX_NUMBER_TEXT) ? '<span class="inputRequirement">' . ENTRY_FAX_NUMBER_TEXT . '</span>': ''); ?></td>
       </tr>
       
-
-      
+<!--- extra fields start -->
+       <?php echo tep_get_extra_fields($customer_id,$languages_id);?>  
+<!--- extra fields end -->
  
      <tr>
        <td><?php echo tep_draw_hidden_field('guest', 'guest'); //do we need this??? ?></td>
