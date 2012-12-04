@@ -288,9 +288,6 @@
 
   define('FILENAME_ORDERS_PRINTABLE', 'printorder.php');
 
-  define('CONTENT_CHECKOUT_ALTERNATIVE','checkout_alternative');
-  define('FILENAME_CHECKOUT_ALTERNATIVE', CONTENT_CHECKOUT_ALTERNATIVE . '.php');
-
   define('FILENAME_DISPLAY_CAPTCHA','captcha.php');
 
 //Options as Images Mod
