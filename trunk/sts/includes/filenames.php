@@ -176,8 +176,6 @@ define('DIR_WS_RSS', DIR_WS_INCLUDES . 'modules/newsdesk/rss/');
 
   define('FILENAME_ORDERS_PRINTABLE', 'printorder.php');
 
-  define('FILENAME_CHECKOUT_ALTERNATIVE','checkout_alternative.php');
-
   define('FILENAME_DISPLAY_CAPTCHA','captcha.php');
 
 //Options as Images
