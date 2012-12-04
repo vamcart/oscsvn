@@ -25,6 +25,8 @@
       $this->sort_order = MODULE_PAYMENT_QIWI_SORT_ORDER;
       $this->enabled = ((MODULE_PAYMENT_QIWI_STATUS == 'True') ? true : false);
 
+		$this->form_action_url = tep_href_link(FILENAME_CHECKOUT_PROCESS, '', 'SSL');
+		
     }
 
 // class methods
