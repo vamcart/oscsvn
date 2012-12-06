@@ -1459,30 +1459,6 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 //////////  START  redirection page for payment modules such as paypal if no confirmation page ////////////
 if ((isset($$payment->form_action_url)) && ($sc_payment_url == true)) { 
 ?>
-<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html <?php echo HTML_PARAMS; ?>>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<?php
-// BOF: WebMakers.com Changed: Header Tag Controller v1.0
-// Replaced by header_tags.php
-if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
-  require(DIR_WS_INCLUDES . 'header_tags.php');
-} else {
-?>
-  <title><?php echo TITLE ?></title>
-<?php
-}
-// EOF: WebMakers.com Changed: Header Tag Controller v1.0
-?>
-<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script type="text/javascript" src="jscript/jquery/jquery.js"></script>
-</head>
-<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
-<!-- header //-->
-<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
-<!-- header_eof //-->
 
 <!-- body //-->
 <?php
@@ -1535,14 +1511,6 @@ if (is_array($payment_modules->modules)) {
 
 <!-- body_eof //-->
 
-<!-- footer //-->
-<?php include(DIR_WS_INCLUDES . 'footer.php'); ?>
-<!-- footer_eof //-->
-<br>
-</body>
-</html>
-<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
-
 <script type="text/javascript">
     document.checkoutUrl.submit();
 </script>
@@ -1557,189 +1525,13 @@ if (is_array($payment_modules->modules)) {
   $breadcrumb->add(NAVBAR_TITLE_1, tep_href_link(FILENAME_CHECKOUT, '', 'SSL'));
 
 ?>
-<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html <?php echo HTML_PARAMS; ?>>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<?php
-// BOF: WebMakers.com Changed: Header Tag Controller v1.0
-// Replaced by header_tags.php
-if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
-  require(DIR_WS_INCLUDES . 'header_tags.php');
-} else {
-?>
-  <title><?php echo TITLE ?></title>
-<?php
-}
-// EOF: WebMakers.com Changed: Header Tag Controller v1.0
-?>
-<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<?php //require('includes/form_check.js.php'); ?>
-<script type="text/javascript" src="jscript/jquery/jquery.js"></script>
-</head>
-<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
-<!-- header //-->
-<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
-<!-- header_eof //-->
 
 <!-- body //-->
-<?php
-// if the customer is logged on - show this javascript
-if (tep_session_is_registered('customer_id')) { ?>
-<script type="text/javascript">
 
-$(init);
-function init()
-	{
-
-var url='checkout.php';          
-
-	
-$('#box')
-
-.on('refresh', '#shipping_modules_box', function(){$('#order_total_modules').load(url +' #order_total_modules > *', {'shipping': $('input[name=shipping]:checked').val()});})	
-
-.on('change', 'input[name=shipping]', function(){$('#shipping_options').load(url +' #shipping_options > *', {'shipping': $('input[name=shipping]:checked').val()}, function(){$('#shipping_modules_box').trigger('refresh');});})
-
-;}
-</script>  
-   
-<?php } else { //not logged in javascript ?>
-
-<script type="text/javascript">
-
-$(hidePay);		
-	function hidePay()	{
-	if ($("#pay_show").is(":checked") == '1')
-		{
-	$("#pay_show").attr('checked', true);
-	$("#payment_address").css("display","none");
-	}
-	else
-	{
-	$("#pay_show").attr('checked', false);
-	}
-	
-
-	$("#pay_show").click(function(){
-// If checked
-        if ($("#pay_show").is(":checked"))
-		{
-            //show the hidden div
-            $("#payment_address").hide("fast");
-        }
-		else
-		{
-		$("#payment_address").show("fast");
-		}
-	});
-	;}
-
-
-$(init);
-function init()
-	{
-
-var url='checkout.php';          
-
-$('#box')
-.on('refresh', '#shipping_modules_box', function(){$('#shipping_options').load(url +' #shipping_options > *', {'country': $('select[name=country]').val(),'state': $('select[name=state]').val(),'postcode': $('input[name=postcode]').val(),'city': $('input[name=city]').val()});})	
-.on('refresh', '#shipping_modules_box', function(){$('#payment_options').load(url +' #payment_options > *', {'country': $('select[name=country]').val(),'state': $('select[name=state]').val(),'postcode': $('input[name=postcode]').val(),'city': $('input[name=city]').val()});})	
-.on('refresh', '#shipping_modules_box', function(){$('#order_total_modules').load(url +' #order_total_modules > *', {'shipping': $('input[name=shipping]:checked').val()});})	
-
-
-//.on('refresh', '#shipping_modules_box', function(('input[name=checkout_possible]').val());})	
-//.on$('input[name=checkout_possible]').val()
-
-.on('change', 'input[name=shipping], select[name=country], select[name=state], input[name=postcode], input[name=city]', function(){$('#shipping_country_box').load(url +' #shipping_country', {'shipping': $('input[name=shipping]:checked').val(), 'country': $('select[name=country]').val(),'state': $('select[name=state]').val(),'city': $('input[name=city]').val(),'postcode': $('input[name=postcode]').val()}, function(){$('#shipping_modules_box').trigger('refresh');});})
-//.on('change', 'input[name=shipping], select[name=state]', function(){$('#shipping_state_box').load(url +' #shipping_state', {'shipping': $('input[name=shipping]:checked').val(), 'state': $('select[name=state]').val()}, function(){$('#shipping_state_box').trigger('refresh');});})
-;}
-
-</script>
-
-
-<?php if ((SC_CREATE_ACCOUNT_CHECKOUT_PAGE == 'true') && (($sc_is_virtual_product != true) || ($sc_is_mixed_product != true))) { ?>  
-<script type="text/javascript">
-$(hidePw);		
-	function hidePw()	{
-	if ($("#pw_show").is(":checked") == '1')
-		{
-	$("#pw_show").attr('checked', true);
-	$("#password_fields").css("display","none");
-	}
-	else
-	{
-	$("#pw_show").attr('checked', false);
-	}
-	
-
-	$("#pw_show").click(function(){
-// If checked
-        if ($("#pw_show").is(":checked"))
-		{
-            //show the hidden div
-            $("#password_fields").hide("fast");
-        }
-		else
-		{
-		$("#password_fields").show("fast");
-		}
-	});
-	;}
-</script>    
-<?php 
-	} // END password optional
-} //END not logged in javascript ?>
-
-<script type="text/javascript"><!--
-var selected;
-
-function selectRowEffect(object, buttonSelect) {
-  if (!selected) {
-    if (document.getElementById) {
-      selected = document.getElementById('defaultSelected');
-    } else {
-      selected = document.all['defaultSelected'];
-    }
-  }
-
-  if (selected) selected.className = 'moduleRow';
-  object.className = 'moduleRowSelected';
-  selected = object;
-
-// one button is not an array
-  if (document.checkout_payment.payment[0]) {
-    document.checkout_payment.payment[buttonSelect].checked=true;
-  } else {
-    document.checkout_payment.payment.checked=true;
-  }
-}
-
-function rowOverEffect(object) {
-  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
-}
-
-function rowOutEffect(object) {
-  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
-}
-//--></script>
 <?php echo $payment_modules->javascript_validation(); ?>
 
 
 <h1><?php echo HEADING_TITLE; ?></h1>
-
-<?php
-//show progress bar only if confirmation page is true
-if (SC_CONFIRMATION_PAGE == 'true') { ?>
-<div class="top_space">
-    <ul id="myProgressBar">
-        <li class="current">1. <?php echo SC_PROGRESS_CHECKOUT_PAGE; ?></li>
-        <li>2. <?php echo SC_PROGRESS_CONFIRMATION_PAGE; ?></li>
-    </ul>
-</div><!-- dive end myProgressBar -->
-<?php } ?>
-
 
 <div id="box">
 <div id="checkout">
@@ -1779,13 +1571,6 @@ echo tep_draw_hidden_field('sc_shipping_address_show', $sc_shipping_address_show
 echo tep_draw_hidden_field('checkout_possible', $checkout_possible); //need to post it for validation
 ?>
 
-   
-
-  <div class="contentText">
-    <span class="inputRequirement" style="float: right;"><?php echo FORM_REQUIRED_INFORMATION; ?></span>
-  </div>
-
-
 <?php if ($sc_shipping_address_show == true) { //show shipping otpions ?>
 <div id="shipping_box" class="sm_layout_box">
 
@@ -1803,7 +1588,7 @@ echo tep_get_sc_titles_number() . TABLE_HEADING_SHIPPING_ADDRESS;
 <?php if (tep_session_is_registered('customer_id')) { ?>
     	<div>
           <p><?php echo tep_address_label($customer_id, $sendto, true, ' ', '<br />'); ?></p>
-          <p><?php echo '<a href="' . tep_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') . '">' . tep_image_button('button_change_address.gif', IMAGE_BUTTON_CHANGE_ADDRESS) . '</a>'; ?></p>
+          <p><?php echo '<a href="' . tep_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') . '">' . tep_template_image_button('button_change_address.gif', IMAGE_BUTTON_CHANGE_ADDRESS) . '</a>'; ?></p>
         </div>
 <?php } else { //no account ?>
 <?php ################ END Shipping Information - LOGGED ON ######################################## ?> 
@@ -2020,7 +1805,7 @@ changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
 <?php if (tep_session_is_registered('customer_id')) { ?>
     	<div>
            <p><?php echo tep_address_label($customer_id, $billto, true, ' ', '<br />'); ?></p>
-           <p><?php echo '<a href="' . tep_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL') . '">' . tep_image_button('button_change_address.gif', IMAGE_BUTTON_CHANGE_ADDRESS) . '</a>'; ?></p>
+           <p><?php echo '<a href="' . tep_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL') . '">' . tep_template_image_button('button_change_address.gif', IMAGE_BUTTON_CHANGE_ADDRESS) . '</a>'; ?></p>
         </div>
 <?php } else { //no account ?>
 <?php ################ END Payment Information - LOGGED ON ######################################## ?> 
@@ -2662,37 +2447,6 @@ if ($sc_payment_modules_process == true) {
 
 <div class="line_space"></div>
 
-<?php ################ START Conditions of Use ######################################## ?> 
-<?php if (SC_CONDITIONS == 'true') { // customers must check checkbox to proceed ?>
-<div id="conditions" class="sm_layout_box">
-
-
-<script type="text/javascript">
-    $(document).ready(function() {
-
-    $("#agreement").fancybox({
-            'titlePosition'     : 'inside',
-            'transitionIn'      : 'none',
-            'transitionOut'     : 'none'
-        });
-    });
-    </script>
-
-
-	<?php echo SC_CONDITION; ?>
-	<a id="agreement" href="<?php echo DIR_WS_HTTP_CATALOG . DIR_WS_LANGUAGES . $language . '/conditions.html'; ?>"><?php echo SC_HEADING_CONDITIONS; ?></a>
-	<?php echo SC_CONDITION_END; ?>
-	
-    	<?php echo tep_draw_checkbox_field('TermsAgree','1', false, 'id="t18"'); ?>
-	
- 
-</div><!--div end conditions --> 
-<?php } ?>
-<?php ################ END Conditions of Use ######################################## ?> 
-
-
-
-
 <?php
   if (is_array($payment_modules->modules)) {
   //  echo $payment_modules->process_button();
@@ -2708,9 +2462,9 @@ if ($sc_payment_modules_process == true) {
     <div class="buttonAction">
 		<?php 
 		if (SC_CONFIRMATION_PAGE == 'true') { //got to confimration page
-			echo tep_image_submit('button_continue.gif', IMAGE_BUTTON_CONTINUE);
+			echo tep_template_image_submit('button_continue.gif', IMAGE_BUTTON_CONTINUE);
 		} else { //order now
-			echo tep_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER);
+			echo tep_template_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER);
 		}  ?>
 		<br /><br />
     </div>
@@ -2722,11 +2476,3 @@ if ($sc_payment_modules_process == true) {
 </div><!-- Div end checkout_container -->
 
 <!-- body_eof //-->
-
-<!-- footer //-->
-<?php include(DIR_WS_INCLUDES . 'footer.php'); ?>
-<!-- footer_eof //-->
-<br>
-</body>
-</html>
-<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
