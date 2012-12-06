@@ -142,10 +142,10 @@ function selectRowEffect(object, buttonSelect) {
   selected = object;
 
 // one button is not an array
-  if (document.checkout_payment.payment[0]) {
-    document.checkout_payment.payment[buttonSelect].checked=true;
+  if (document.smart_checkout.payment[0]) {
+    document.smart_checkout.payment[buttonSelect].checked=true;
   } else {
-    document.checkout_payment.payment.checked=true;
+    document.smart_checkout.payment.checked=true;
   }
 }
 
