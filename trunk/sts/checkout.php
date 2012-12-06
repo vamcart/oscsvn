@@ -1748,18 +1748,6 @@ function rowOutEffect(object) {
 
 <h1><?php echo HEADING_TITLE; ?></h1>
 
-<?php
-//show progress bar only if confirmation page is true
-if (SC_CONFIRMATION_PAGE == 'true') { ?>
-<div class="top_space">
-    <ul id="myProgressBar">
-        <li class="current">1. <?php echo SC_PROGRESS_CHECKOUT_PAGE; ?></li>
-        <li>2. <?php echo SC_PROGRESS_CONFIRMATION_PAGE; ?></li>
-    </ul>
-</div><!-- dive end myProgressBar -->
-<?php } ?>
-
-
 <div id="box">
 <div id="checkout">
             
@@ -1797,13 +1785,6 @@ echo tep_draw_hidden_field('sc_shipping_modules_show', $sc_shipping_modules_show
 echo tep_draw_hidden_field('sc_shipping_address_show', $sc_shipping_address_show); //need to post it for validation
 echo tep_draw_hidden_field('checkout_possible', $checkout_possible); //need to post it for validation
 ?>
-
-   
-
-  <div class="contentText">
-    <span class="inputRequirement" style="float: right;"><?php echo FORM_REQUIRED_INFORMATION; ?></span>
-  </div>
-
 
 <?php if ($sc_shipping_address_show == true) { //show shipping otpions ?>
 <div id="shipping_box" class="sm_layout_box">
