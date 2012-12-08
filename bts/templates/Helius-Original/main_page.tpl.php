@@ -91,14 +91,12 @@ if (DOWN_FOR_MAINTENANCE =='false') {
 <td class="headerNavigation" height="25" align="center" colspan="2">
 | <?php echo '<a class="headernavigation1" href="' . tep_href_link(FILENAME_DEFAULT) . '">' . HEADER_LINKS_DEFAULT . '</a>'; ?>  
 | <?php echo '<a class="HeaderPageLinks" href="' . tep_href_link(FILENAME_PRODUCTS_NEW) . '">' . HEADER_LINKS_WHATS_NEW . '</a>'; ?> | 
-<?php if ($guest_account == false) { // Not a Guest Account ?>
-        <?php if (tep_session_is_registered('customer_id')) { ?>
+<?php if (tep_session_is_registered('customer_id')) { ?>
 <?php echo '<a class="HeaderPageLinks" href="' . tep_href_link(FILENAME_CHECKOUT_SHIPPING) . '">' . HEADER_LINKS_CHECKOUT . '</a>'; ?> |
 <?php echo '<a class="HeaderPageLinks" href="' . tep_href_link(FILENAME_LOGOFF) . '">' . HEADER_LINKS_LOGOFF . '</a>'; ?> |
-<?php } } else { // Its a guest account ?>
+<?php } else { ?>
 <?php echo '<a class="HeaderPageLinks" href="' . tep_href_link(FILENAME_LOGIN) . '">' . HEADER_LINKS_LOGIN . '</a>'; ?> |
-
-<?php } // Guest account end ?>
+<?php } ?>
 <?php echo '<a class="HeaderPageLinks" href="' . tep_href_link(FILENAME_SHOPPING_CART) . '">' . HEADER_LINKS_CART . '</a>'; ?> |
 
 </td>

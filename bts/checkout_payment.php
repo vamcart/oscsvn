@@ -21,10 +21,7 @@ if (SMART_CHECKOUT == 'true') {
 // if the customer is not logged on, redirect them to the login page
   if (!tep_session_is_registered('customer_id')) {
     $navigation->set_snapshot();
-// guest account start
-      tep_redirect(tep_href_link(FILENAME_LOGIN, 'origin=' . FILENAME_CHECKOUT_PAYMENT, 'SSL'));
-//    tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
-// guest account end
+    tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
   }
 
 // if there is nothing in the customers cart, redirect them to the shopping cart page
