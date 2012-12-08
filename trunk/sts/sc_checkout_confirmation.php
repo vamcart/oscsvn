@@ -322,21 +322,6 @@ if ((!tep_session_is_registered('create_account')) && (isset($_POST['action']) &
 //if payment method such as paypal is choosen,  repost process_button data
   if ((isset($$payment->form_action_url)) && ($sc_payment_url == true)) {
 		
-	$form_action_url = $$payment->form_action_url;
-	echo tep_draw_form('checkoutUrl', $form_action_url, 'post');
-	   
-  
-  
-    
-	if (is_array($payment_modules->modules)) {
-		$payment_modules->pre_confirmation_check();
-	}
-  
-  
-	if (is_array($payment_modules->modules)) {
-		echo $payment_modules->process_button();
-	}
-
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
@@ -371,8 +356,24 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <!-- left_navigation_eof //-->
     </table></td>
 <!-- body_text //-->
-    <td width="100%" valign="top">
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
 <?php
+
+	$form_action_url = $$payment->form_action_url;
+
+	echo tep_draw_form('checkoutUrl', $form_action_url, 'post');
+    
+	if (is_array($payment_modules->modules)) {
+		$payment_modules->pre_confirmation_check();
+	}
+  
+  
+	if (is_array($payment_modules->modules)) {
+		echo $payment_modules->process_button();
+	}
+
 	if (is_array($payment_modules->modules)) {
 		if ($confirmation = $payment_modules->confirmation()) {
 	
@@ -420,7 +421,13 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 
     </form>
 
+    <script type="text/javascript">
+        document.checkoutUrl.submit();
+    </script>
+    <noscript><input type="submit" value="verify submit"></noscript>
+
 </td>
+</tr></table></td>
 <!-- body_text_eof //-->
     <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- right_navigation //-->
@@ -438,13 +445,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 </body>
 </html>
 <?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
-
-    <script type="text/javascript">
-        document.checkoutUrl.submit();
-    </script>
-    <noscript><input type="submit" value="verify submit"></noscript>
-
-   
+  
 <?php 
 }
 //////////  END  redirection page for payment modules such as paypal if no confirmation page ////////////
@@ -490,7 +491,9 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <!-- left_navigation_eof //-->
     </table></td>
 <!-- body_text //-->
-    <td width="100%" valign="top">
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
 
 <script type="text/javascript">
 /*$(hidePage);		
@@ -750,6 +753,7 @@ $('#coProgressBar').progressbar({
 </form>
 
 </td>
+</tr></table></td>
 <!-- body_text_eof //-->
     <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- right_navigation //-->

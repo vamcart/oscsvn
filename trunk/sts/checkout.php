@@ -1457,21 +1457,6 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 //if payment method such as paypal is choosen,  repost process_button data
   if ((isset($$payment->form_action_url)) && ($sc_payment_url == true)) {
 		
-    $form_action_url = $$payment->form_action_url;
-	echo tep_draw_form('checkoutUrl', $form_action_url, 'post');
-  } 
-    
-  if (is_array($payment_modules->modules)) {
-	$payment_modules->pre_confirmation_check();
-  }
-  
-  if (is_array($payment_modules->modules)) {
-	$payment_modules->confirmation();
-  }  
-    
-  if (is_array($payment_modules->modules)) {
-  echo $payment_modules->process_button();
-  }
 ?>
 
 <?php
@@ -1496,7 +1481,6 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 ?>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script type="text/javascript" src="jscript/jquery/jquery.js"></script>
 </head>
 <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
 <!-- header //-->
@@ -1512,8 +1496,28 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <!-- left_navigation_eof //-->
     </table></td>
 <!-- body_text //-->
-    <td width="100%" valign="top">
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
 <?php
+
+    $form_action_url = $$payment->form_action_url;
+	echo tep_draw_form('checkoutUrl', $form_action_url, 'post');
+  } 
+    
+  if (is_array($payment_modules->modules)) {
+	$payment_modules->pre_confirmation_check();
+  }
+  
+  if (is_array($payment_modules->modules)) {
+	$payment_modules->confirmation();
+  }  
+    
+  if (is_array($payment_modules->modules)) {
+  echo $payment_modules->process_button();
+  }
+
+
 if (is_array($payment_modules->modules)) {
     if ($confirmation = $payment_modules->confirmation()) {
 	
@@ -1561,7 +1565,13 @@ if (is_array($payment_modules->modules)) {
 
 </form>
 
+<script type="text/javascript">
+    document.checkoutUrl.submit();
+</script>
+<noscript><input type="submit" value="verify submit"></noscript>
+
 </td>
+</tr></table></td>
 <!-- body_text_eof //-->
     <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- right_navigation //-->
@@ -1579,12 +1589,6 @@ if (is_array($payment_modules->modules)) {
 </body>
 </html>
 <?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
-
-<script type="text/javascript">
-    document.checkoutUrl.submit();
-</script>
-<noscript><input type="submit" value="verify submit"></noscript>
-
    
 <?php 
 }
@@ -1629,7 +1633,9 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
 <!-- left_navigation_eof //-->
     </table></td>
 <!-- body_text //-->
-    <td width="100%" valign="top">
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
 
 <?php echo $payment_modules->javascript_validation(); ?>
 
@@ -2610,6 +2616,7 @@ if ($sc_payment_modules_process == true) {
 </div><!-- Div end checkout_container -->
 
 </td>
+</tr></table></td>
 <!-- body_text_eof //-->
     <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
 <!-- right_navigation //-->
