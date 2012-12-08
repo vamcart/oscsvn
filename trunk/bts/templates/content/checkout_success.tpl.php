@@ -6,12 +6,7 @@
             <td valign="top" class="main"><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?><div align="center" class="pageHeading"><?php echo $HEADING_TITLE; ?></div><br><?php echo TEXT_SUCCESS; ?><br><br>
 
 <?php
-  if ($guest_account == false) { // not a guest Account
       echo TEXT_SEE_ORDERS . '<br><br>' . TEXT_CONTACT_STORE_OWNER;
-    }
-   else { // guest accounts action
-    echo TEXT_GUEST_ORDERS . '<br><br>' . TEXT_CONTACT_STORE_OWNER;
-  } // guest account end
 ?>                   
             <h3><?php echo TEXT_THANKS_FOR_SHOPPING; ?></h3></td>
           </tr>

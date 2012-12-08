@@ -15,17 +15,6 @@
 // needs to be included earlier to set the success message in the messageStack
   require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_CREATE_ACCOUNT);
 
-// guest account
-  if (isset($_GET['guest_account'])) $guest_account = true;
-// guest account end
-// Guest account start
-    if (isset($_POST['guest_account']) && ($_POST['guest_account'] == true)) {
-      tep_session_register('guest_account');
-      global $guest_account;
-      $guest_account = true;
-    }
-// Guest account end
-
   $process = false;
 // +Country-State Selector
   if (isset($_POST['action']) && (($_POST['action'] == 'process') || ($_POST['action'] == 'refresh'))) {
@@ -75,15 +64,6 @@
 	// -Country-State Selector
     $error = false;
     
-// Guest Account Start
-     if ($guest_account) {
-       $guest_pass = tep_create_random_value(ENTRY_PASSWORD_MIN_LENGTH, 'mixed');
-       $password = tep_db_prepare_input($guest_pass);
-     }
-// Guest Account End
-
-
-
     if (ACCOUNT_GENDER == 'true') {
       if ( ($gender != 'm') && ($gender != 'f') ) {
         $error = true;
@@ -121,8 +101,7 @@
 
       $messageStack->add('create_account', ENTRY_EMAIL_ADDRESS_CHECK_ERROR);
     } else {
-      // Guest Account added guest_flag
-      $check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "' and guest_flag != '1'");
+      $check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "'");
       $check_email = tep_db_fetch_array($check_email_query);
       if ($check_email['total'] > 0) {
         $error = true;
@@ -195,8 +174,6 @@
     }
 }
 
-    // Guest Account Start
-    if (guest_account == false) {
       if (strlen($password) < ENTRY_PASSWORD_MIN_LENGTH) {
         $error = true;
 
@@ -206,7 +183,6 @@
 
         $messageStack->add('create_account', ENTRY_PASSWORD_ERROR_NOT_MATCHING);
       }
-    } // guest account end
 
         $extra_fields_query = tep_db_query("select ce.fields_id, ce.fields_input_type, ce.fields_required_status, cei.fields_name, ce.fields_status, ce.fields_input_type, ce.fields_size from " . TABLE_EXTRA_FIELDS . " ce, " . TABLE_EXTRA_FIELDS_INFO . " cei where ce.fields_status=1 and ce.fields_required_status=1 and cei.fields_id=ce.fields_id and cei.languages_id =" . $languages_id);
    while($extra_fields = tep_db_fetch_array($extra_fields_query)){
@@ -228,12 +204,6 @@
 
       if (ACCOUNT_GENDER == 'true') $sql_data_array['customers_gender'] = $gender;
       if (ACCOUNT_DOB == 'true') $sql_data_array['customers_dob'] = tep_date_raw($dob);
-
-// Guest Account Start
-    if ($guest_account) $sql_data_array['guest_flag'] = '1';	
-    tep_db_query("update " . TABLE_CUSTOMERS . " set customers_email_address = '@_" . $email_address . "' where customers_email_address = '" . $email_address . "' and guest_flag = '1'");
-    tep_db_query("update " . TABLE_CUSTOMERS . " set customers_lastname = '@_" . $lastname . "' where customers_email_address = '@_" . $email_address . "'");
-// Guest Account End
 
       tep_db_perform(TABLE_CUSTOMERS, $sql_data_array);
 
@@ -301,13 +271,7 @@
 
       tep_db_query("update " . TABLE_CUSTOMERS . " set customers_default_address_id = '" . (int)$address_id . "' where customers_id = '" . (int)$customer_id . "'");
 
-// Guest Account Start
-      if (!$guest_account) {
         tep_db_query("insert into " . TABLE_CUSTOMERS_INFO . " (customers_info_id, customers_info_number_of_logons, customers_info_date_account_created) values ('" . tep_db_input($customer_id) . "', '0', now())");
-      } else {
-        tep_db_query("insert into " . TABLE_CUSTOMERS_INFO . " (customers_info_id, customers_info_number_of_logons, customers_info_date_account_created) values ('" . tep_db_input($customer_id) . "', '-1', now())");
-      }
-// Guest Account End
 
       if (SESSION_RECREATE == 'True') {
         tep_session_recreate();
@@ -342,8 +306,7 @@
         $email_text = sprintf(EMAIL_GREET_NONE, $firstname);
       }
 
-// Guest Account Start
-      if ($guest_account == true) {        tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));      } else {      $email_text .= EMAIL_WELCOME . EMAIL_TEXT . EMAIL_CONTACT . EMAIL_WARNING;      }// Guest Account End
+      $email_text .= EMAIL_WELCOME . EMAIL_TEXT . EMAIL_CONTACT . EMAIL_WARNING;
 // ICW - CREDIT CLASS CODE BLOCK ADDED  ******************************************************* BEGIN
   if (NEW_SIGNUP_GIFT_VOUCHER_AMOUNT > 0) {
     $coupon_code = create_coupon_code();
@@ -422,13 +385,7 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
       <tr>
         <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="pageHeading"><?php // Added Guest Account
-			if ($guest_account) {
-                          echo HEADING_TITLE_GUEST;
-			} else {
-			  echo HEADING_TITLE;
-			}
-			?></td>
+            <td class="pageHeading"><?php echo HEADING_TITLE; ?></td>
             <td class="pageHeading" align="right"><?php echo tep_image(DIR_WS_IMAGES . 'table_background_account.gif', HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
           </tr>
         </table></td>
@@ -685,9 +642,6 @@ changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
       </tr>
        <?php echo tep_get_extra_fields($customer_id,$languages_id);?>
 <?php
-  if ($guest_account == false) { // Not a Guest Account
-?>
-<?php
   if (ACCOUNT_NEWS == 'true') {
 ?>
       <tr>
@@ -739,8 +693,6 @@ changeselect("<?php echo tep_db_prepare_input($_POST['state']); ?>");
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
       </tr>
-<?php
-  } // Guest Account end?>
       <tr>
         <td><table border="0" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
           <tr class="infoBoxContents">
