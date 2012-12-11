@@ -200,11 +200,11 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
       //}
     //}
 
-    //if (strlen($firstname) < ENTRY_FIRST_NAME_MIN_LENGTH) {
-      //$error = true;
+    if (strlen($firstname) < ENTRY_FIRST_NAME_MIN_LENGTH) {
+      $error = true;
 
-      //$messageStack->add('smart_checkout', ENTRY_FIRST_NAME_ERROR);
-    //}
+      $messageStack->add('smart_checkout', ENTRY_FIRST_NAME_ERROR);
+    }
 
     //if (strlen($lastname) < ENTRY_LAST_NAME_MIN_LENGTH) {
       //$error = true;
@@ -221,25 +221,25 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
     //}
 
 
-	//if (strlen($email_address) < ENTRY_EMAIL_ADDRESS_MIN_LENGTH) {
-      //$error = true;
+	if (strlen($email_address) < ENTRY_EMAIL_ADDRESS_MIN_LENGTH) {
+      $error = true;
 
-      //$messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR);
-    //} elseif (tep_validate_email($email_address) == false) {
-      //$error = true;
+      $messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR);
+    } elseif (tep_validate_email($email_address) == false) {
+      $error = true;
 
-      //$messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_CHECK_ERROR);
-    //} else {
-	  //$check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "'");
+      $messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_CHECK_ERROR);
+    } else {
+	  $check_email_query = tep_db_query("select count(*) as total from " . TABLE_CUSTOMERS . " where customers_email_address = '" . tep_db_input($email_address) . "'");
 	  
-      //$check_email = tep_db_fetch_array($check_email_query);
-      //if ($check_email['total'] > 0) {
-        //$error = true;
+      $check_email = tep_db_fetch_array($check_email_query);
+      if ($check_email['total'] > 0) {
+        $error = true;
 		
 
-        //$messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR_EXISTS);
-      //}
-    //}
+        $messageStack->add('smart_checkout', ENTRY_EMAIL_ADDRESS_ERROR_EXISTS);
+      }
+    }
     
     //if (strlen($street_address) < ENTRY_STREET_ADDRESS_MIN_LENGTH) {
       //$error = true;
@@ -296,30 +296,30 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
     //}
 	
 	//password validation
-	//$password = tep_db_prepare_input($_POST['password']);
-    //$confirmation = tep_db_prepare_input($_POST['confirmation']);
-	//if ($create_account == true) {
-		//if (!tep_session_is_registered('customer_id')) { //validate only for unregistered user
-		 //if (strlen($password) < ENTRY_PASSWORD_MIN_LENGTH) {
-			  //$error = true;
+	$password = tep_db_prepare_input($_POST['password']);
+    $confirmation = tep_db_prepare_input($_POST['confirmation']);
+	if ($create_account == true) {
+		if (!tep_session_is_registered('customer_id')) { //validate only for unregistered user
+		 if (strlen($password) < ENTRY_PASSWORD_MIN_LENGTH) {
+			  $error = true;
 	
-			  //$messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR);
-			//} elseif ($password != $confirmation) {
-			  //$error = true;
+			  $messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR);
+			} elseif ($password != $confirmation) {
+			  $error = true;
 	
-			  //$messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR_NOT_MATCHING);
-			//}
-		//}
-	//}	
+			  $messageStack->add('smart_checkout', ENTRY_PASSWORD_ERROR_NOT_MATCHING);
+			}
+		}
+	}	
 	
 	//shipping validation
-	$shipping_validation = $_POST['shipping'];
-	if ($sc_shipping_modules_show == true) {
-		if (($shipping_validation == '') && ($shipping_count_modules > 1)) {
-			$error = true;
-			$messageStack->add('smart_checkout', SHIPPING_ERROR);
-		}
-	}
+	//$shipping_validation = $_POST['shipping'];
+	//if ($sc_shipping_modules_show == true) {
+		//if (($shipping_validation == '') && ($shipping_count_modules > 1)) {
+			//$error = true;
+			//$messageStack->add('smart_checkout', SHIPPING_ERROR);
+		//}
+	//}
 	
 	
 		
@@ -454,7 +454,11 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
 /////////////////// Validation for LOGGED ON ////////////////////////////////////////////
 if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST['formid']) && ($_POST['formid'] == $sessiontoken)) {
 
-
+		if (!tep_session_is_registered('comments')) tep_session_register('comments');
+		if (tep_not_null($_POST['comments'])) {
+		  $comments = tep_db_prepare_input($_POST['comments']);
+		}
+		
 	// start with input validation /////////
     $error = false;
 	
@@ -536,7 +540,7 @@ if (isset($_POST['country'])) {
 
 // country is selected
         $country_info = tep_get_countries($selected_country_id,true);
-        $cache_state_prov_values = tep_db_fetch_array(tep_db_query("select zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$selected_country_id . "' and zone_name = '" . tep_db_input($_POST['state']) . "'"));
+        $cache_state_prov_values = tep_db_fetch_array(tep_db_query("select zone_code from " . TABLE_ZONES . " where zone_country_id = '" . (int)$selected_country_id . "' and zone_id = '" . tep_db_input($_POST['state']) . "'"));
         $cache_state_prov_code = $cache_state_prov_values['zone_code'];
         if (!tep_session_is_registered('customer_id')) {
         $order->delivery = array('postcode' => tep_db_prepare_input($_POST['postcode']),
@@ -545,7 +549,7 @@ if (isset($_POST['country'])) {
                                  'country' => array('id' => $selected_country_id, 'title' => $country_info['countries_name'], 'iso_code_2' => $country_info['countries_iso_code_2'], 'iso_code_3' =>  $country_info['countries_iso_code_3']),
                                  'country_id' => $selected_country_id,
 //add state zone_id
-                                 'zone_id' => $cache_state_prov_values['zone_id'],
+                                 'zone_id' => tep_db_prepare_input($_POST['state']),
                                  'format_id' => tep_get_address_format_id($selected_country_id));
 // country is selected End					
         }							 	  
@@ -660,7 +664,7 @@ if (tep_count_shipping_modules() == 0) {
 			
 			// country info for country change
 					$country_info = tep_get_countries($selected_country_id,true);
-					$cache_state_prov_values = tep_db_fetch_array(tep_db_query("select zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$selected_country_id . "' and zone_name = '" . tep_db_input($_POST['state']) . "'"));
+					$cache_state_prov_values = tep_db_fetch_array(tep_db_query("select zone_code from " . TABLE_ZONES . " where zone_country_id = '" . (int)$selected_country_id . "' and zone_id = '" . tep_db_input($_POST['state']) . "'"));
 					$cache_state_prov_code = $cache_state_prov_values['zone_code'];
 					if (!tep_session_is_registered('customer_id')) {
 					$order->delivery = array('postcode' => tep_db_prepare_input($_POST['postcode']),
@@ -669,7 +673,7 @@ if (tep_count_shipping_modules() == 0) {
 											 'country' => array('id' => $selected_country_id, 'title' => $country_info['countries_name'], 'iso_code_2' => $country_info['countries_iso_code_2'], 'iso_code_3' =>  $country_info['countries_iso_code_3']),
 											 'country_id' => $selected_country_id,
 			//add state zone_id
-											 'zone_id' => $cache_state_prov_values['zone_id'],
+											 'zone_id' => tep_db_prepare_input($_POST['state']),
 											 'format_id' => tep_get_address_format_id($selected_country_id));
 			// end country info for country change			
 					}								 	  
@@ -1019,7 +1023,7 @@ if (isset($_POST['action']) && (($_POST['action'] == 'not_logged_on') && ($creat
 		############################# process the selected shipping method ######################################
 		if (!tep_session_is_registered('comments')) tep_session_register('comments');
 		if (tep_not_null($_POST['comments'])) {
-		  //$comments = tep_db_prepare_input($_POST['comments']);
+		  $comments = tep_db_prepare_input($_POST['comments']);
 		}
 
 
