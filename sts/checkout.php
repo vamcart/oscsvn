@@ -452,6 +452,10 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
 /////////////////// Validation for LOGGED ON ////////////////////////////////////////////
 if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST['formid']) && ($_POST['formid'] == $sessiontoken)) {
 
+		if (!tep_session_is_registered('comments')) tep_session_register('comments');
+		if (tep_not_null($_POST['comments'])) {
+		  $comments = tep_db_prepare_input($_POST['comments']);
+		}
 
 	// start with input validation /////////
     $error = false;
@@ -1017,7 +1021,7 @@ if (isset($_POST['action']) && (($_POST['action'] == 'not_logged_on') && ($creat
 		############################# process the selected shipping method ######################################
 		if (!tep_session_is_registered('comments')) tep_session_register('comments');
 		if (tep_not_null($_POST['comments'])) {
-		  //$comments = tep_db_prepare_input($_POST['comments']);
+		  $comments = tep_db_prepare_input($_POST['comments']);
 		}
 
 
