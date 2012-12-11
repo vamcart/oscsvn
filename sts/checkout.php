@@ -456,7 +456,7 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 		if (tep_not_null($_POST['comments'])) {
 		  $comments = tep_db_prepare_input($_POST['comments']);
 		}
-
+		
 	// start with input validation /////////
     $error = false;
 	
