@@ -524,6 +524,7 @@ function tep_redirect($url) {
 // Return a formatted address
 // TABLES: address_format
   function tep_address_format($address_format_id, $address, $html, $boln, $eoln) {
+    $address_format_id = ($address_format_id ? $address_format_id : 1); 
     $address_format_query = tep_db_query("select address_format as format from " . TABLE_ADDRESS_FORMAT . " where address_format_id = '" . (int)$address_format_id . "'");
     $address_format = tep_db_fetch_array($address_format_query);
 
