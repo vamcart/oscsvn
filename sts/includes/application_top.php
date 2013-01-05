@@ -18,6 +18,8 @@
   $query_counts = 0;
   $query_total_time = 0;
 
+  define('CFG_TIME_ZONE', 'Europe/Moscow');
+  
 while (list($key, $value) = each($_GET)){
     $_GET[$key] = preg_replace('/[<>]/', '', $value);
     unset($GLOBALS[$key]);
