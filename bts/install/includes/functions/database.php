@@ -20,48 +20,48 @@
       return false;
     }
 
-    $$link = @mysql_connect($server, $username, $password) or $db_error = mysql_error();
+    $$link = mysqli_connect($server, $username, $password, $database) or $db_error = mysqli_error($$link);
 
-      @mysql_query("SET SQL_MODE= ''");
-      @mysql_query("SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
-
+      @mysqli_query($$link, "SET SQL_MODE= ''");
+      @mysqli_query($$link, "SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
+      
     return $$link;
   }
 
   function osc_db_select_db($database) {
-    return mysql_select_db($database);
+    return mysqli_select_db($database);
   }
 
   function osc_db_close($link = 'db_link') {
     global $$link;
 
-    return mysql_close($$link);
+    return mysqli_close($$link);
   }
 
   function osc_db_query($query, $link = 'db_link') {
     global $$link;
 
-    return mysql_query($query, $$link);
+    return mysqli_query($$link, $query);
   }
 
   function osc_db_fetch_array($db_query) {
-    return mysql_fetch_array($db_query);
+    return mysqli_fetch_array($db_query);
   }
 
   function osc_db_num_rows($db_query) {
-    return mysql_num_rows($db_query);
+    return mysqli_num_rows($db_query);
   }
 
   function osc_db_data_seek($db_query, $row_number) {
-    return mysql_data_seek($db_query, $row_number);
+    return mysqli_data_seek($db_query, $row_number);
   }
 
   function osc_db_insert_id() {
-    return mysql_insert_id();
+    return mysqli_insert_id();
   }
 
   function osc_db_free_result($db_query) {
-    return mysql_free_result($db_query);
+    return mysqli_free_result($db_query);
   }
 
   function osc_db_test_create_db_permission($database) {
@@ -79,10 +79,10 @@
       if (!@osc_db_select_db($database)) {
         $db_created = true;
         if (!@osc_db_query('create database ' . $database)) {
-          $db_error = mysql_error();
+          $db_error = mysqli_error($$link);
         }
       } else {
-        $db_error = mysql_error();
+        $db_error = mysqli_error($$link);
       }
       if (!$db_error) {
         if (@osc_db_select_db($database)) {
@@ -91,17 +91,17 @@
               if ($db_created) {
                 if (@osc_db_query('drop database ' . $database)) {
                 } else {
-                  $db_error = mysql_error();
+                  $db_error = mysqli_error($$link);
                 }
               }
             } else {
-              $db_error = mysql_error();
+              $db_error = mysqli_error($$link);
             }
           } else {
-            $db_error = mysql_error();
+            $db_error = mysqli_error($$link);
           }
         } else {
-          $db_error = mysql_error();
+          $db_error = mysqli_error($$link);
         }
       }
     }
@@ -120,10 +120,10 @@
 
     if (!$db_error) {
       if (!@osc_db_select_db($database)) {
-        $db_error = mysql_error();
+        $db_error = mysqli_error($$link);
       } else {
         if (!@osc_db_query('select count(*) from configuration')) {
-          $db_error = mysql_error();
+          $db_error = mysqli_error($$link);
         }
       }
     }
@@ -144,7 +144,7 @@
       if (@osc_db_query('create database ' . $database)) {
         osc_db_select_db($database);
       } else {
-        $db_error = mysql_error();
+        $db_error = mysqli_error($$link);
       }
     }
 
