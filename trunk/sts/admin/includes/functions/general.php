@@ -231,12 +231,12 @@ function tep_redirect($url) {
 
   header('Location: ' . $url);
 
-  if (STORE_PAGE_PARSE_TIME == 'true') {
-    if (!is_object($logger)) $logger = new logger;
-    $logger->timer_stop();
-  }
-
-  exit;
+    if (STORE_PAGE_PARSE_TIME == 'true') {
+      if (!is_object($logger)) $logger = new logger;
+      $logger->timer_stop();
+    }
+    tep_session_close();
+    exit;
 }
 
 ////
@@ -585,7 +585,6 @@ function tep_redirect($url) {
   }
 
   function tep_address_format($address_format_id, $address, $html, $boln, $eoln) {
-    $address_format_id = ($address_format_id ? $address_format_id : 1); 
     $address_format_query = tep_db_query("select address_format as format from " . TABLE_ADDRESS_FORMAT . " where address_format_id = '" . (int)$address_format_id . "'");
     $address_format = tep_db_fetch_array($address_format_query);
 
@@ -1076,15 +1075,15 @@ function tep_try_upload($file = '', $destination = '', $permissions = '777', $ex
 ////
 // Retreive server information
   function tep_get_system_information() {
-    global $_SERVER;
+    global $db_link, $_SERVER;
 
     $db_query = tep_db_query("select now() as datetime");
     $db = tep_db_fetch_array($db_query);
 
     list($system, $host, $kernel) = preg_split('/[\s,]+/', @exec('uname -a'), 5);
 
-    return array('date' => tep_datetime_short(date('Y-m-d H:i:s')),
-                 'system' => $system,
+    return array('version' => (function_exists('mysqli_get_server_info') ? mysqli_get_server_info($db_link) : ''),
+                 'date' => tep_datetime_short(date('Y-m-d H:i:s')),
                  'kernel' => $kernel,
                  'host' => $host,
                  'ip' => gethostbyname($host),
