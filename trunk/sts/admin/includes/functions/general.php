@@ -1718,16 +1718,18 @@ function tep_try_upload($file = '', $destination = '', $permissions = '777', $ex
   }
 
   function tep_update_prices($price) {
+  	$link = 'db_link';
+    global $$link;  	
     $do_drop = true;
 	$prices_num = tep_xppp_getpricesnum();
 	for ($i=2; $i<=$prices_num; $i++)
-	  if (!mysql_query("select products_price_" . $i . " from " . TABLE_PRODUCTS)) {
+	  if (!mysqli_query($$link,"select products_price_" . $i . " from " . TABLE_PRODUCTS)) {
 	    $do_drop = false;
 	    tep_db_query("alter table " . TABLE_PRODUCTS . " add products_price_" . $i . " decimal(15,4) null");
 	  }
 	if ($do_drop) {
 	  for ($i=tep_xppp_getmaxprices(); $i>$prices_num; $i--)
-		if (mysql_query("select products_price_" . $i . " from " . TABLE_PRODUCTS)) {
+		if (mysqli_query($$link,"select products_price_" . $i . " from " . TABLE_PRODUCTS)) {
 		   tep_db_query("alter table " . TABLE_PRODUCTS . " drop products_price_" . $i);
 		   $customers_groups_update_query = tep_db_query("select customers_groups_id, customers_groups_price from " . TABLE_CUSTOMERS_GROUPS . " where customers_groups_price = '" . $i . "'");
 	       while ($customers_groups = tep_db_fetch_array($customers_groups_update_query)) {
