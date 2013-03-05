@@ -104,7 +104,13 @@ if (is_array($payment_modules->modules)) {
 ?>
 
 
+<?php
+	if (!tep_session_is_registered('customer_id')) {
+?>
 <p><?php echo sprintf(TEXT_ORIGIN_LOGIN, tep_href_link(FILENAME_LOGIN, tep_get_all_get_params(), 'SSL')); ?></p>
+<?php
+	}
+?>
 
 
 <?php 

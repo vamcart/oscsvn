@@ -1656,9 +1656,13 @@ if ( file_exists(DIR_WS_INCLUDES . 'header_tags.php') ) {
   }
 ?>
 
-
+<?php
+	if (!tep_session_is_registered('customer_id')) {
+?>
 <p><?php echo sprintf(TEXT_ORIGIN_LOGIN, tep_href_link(FILENAME_LOGIN, tep_get_all_get_params(), 'SSL')); ?></p>
-
+<?php
+	}
+?>
 
 <?php 
 //Draw form for pressing button "confirm order"
