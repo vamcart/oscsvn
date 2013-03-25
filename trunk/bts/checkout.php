@@ -266,15 +266,15 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
     //}
 
     //if (ACCOUNT_STATE == 'true') {
-      //$zone_id = 0;
-      //$check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
-      //$check = tep_db_fetch_array($check_query);
-      //$entry_state_has_zones = ($check['total'] > 0);
-      //if ($entry_state_has_zones == true) {
-        //$zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' and (zone_name = '" . tep_db_input($state) . "' or zone_code = '" . tep_db_input($state) . "')");
+      $zone_id = 0;
+      $check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
+      $check = tep_db_fetch_array($check_query);
+      $entry_state_has_zones = ($check['total'] > 0);
+      if ($entry_state_has_zones == true) {
+        $zone_query = tep_db_query("select distinct zone_id from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "' and (zone_name = '" . tep_db_input($state) . "' or zone_code = '" . tep_db_input($state) . "')");
         //if (tep_db_num_rows($zone_query) == 1) {
-          //$zone = tep_db_fetch_array($zone_query);
-          //$zone_id = $zone['zone_id'];
+          $zone = tep_db_fetch_array($zone_query);
+          $zone_id = $zone['zone_id'];
         //} else {
           //$error = true;
 
@@ -287,7 +287,7 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
           //$messageStack->add('smart_checkout', ENTRY_STATE_ERROR);
         //}
       //}
-    //}
+    }
 
     //if (strlen($telephone) < ENTRY_TELEPHONE_MIN_LENGTH) {
       //$error = true;
@@ -446,6 +446,27 @@ if (!tep_session_is_registered('customer_id')) { //only for not logged in user
 	} //END validate only if not free payment 
 	 // End new payment address input validation /////
 
+	$_SESSION['kvit_name'] = vam_db_prepare_input($_POST['kvit_name']);
+	$_SESSION['kvit_address'] = vam_db_prepare_input($_POST['kvit_address']);
+
+	$_SESSION['s_name'] = vam_db_prepare_input($_POST['s_name']);
+	$_SESSION['s_inn'] = vam_db_prepare_input($_POST['s_inn']);
+	$_SESSION['s_kpp'] = vam_db_prepare_input($_POST['s_kpp']);
+	$_SESSION['s_ogrn'] = vam_db_prepare_input($_POST['s_ogrn']);
+	$_SESSION['s_okpo'] = vam_db_prepare_input($_POST['s_okpo']);
+	$_SESSION['s_rs'] = vam_db_prepare_input($_POST['s_rs']);
+	$_SESSION['s_bank_name'] = vam_db_prepare_input($_POST['s_bank_name']);
+	$_SESSION['s_bik'] = vam_db_prepare_input($_POST['s_bik']);
+	$_SESSION['s_ks'] = vam_db_prepare_input($_POST['s_ks']);
+	$_SESSION['s_address'] = vam_db_prepare_input($_POST['s_address']);
+	$_SESSION['s_yur_address'] = vam_db_prepare_input($_POST['s_yur_address']);
+	$_SESSION['s_fakt_address'] = vam_db_prepare_input($_POST['s_fakt_address']);
+	$_SESSION['s_telephone'] = vam_db_prepare_input($_POST['s_telephone']);
+	$_SESSION['s_fax'] = vam_db_prepare_input($_POST['s_fax']);
+	$_SESSION['s_email'] = vam_db_prepare_input($_POST['s_email']);
+	$_SESSION['s_director'] = vam_db_prepare_input($_POST['s_director']);
+	$_SESSION['s_accountant'] = vam_db_prepare_input($_POST['s_accountant']);
+	
 }
 //////////////////////////  Validation END - NOT LOGGED ON//////////////////////////////////
 
@@ -459,6 +480,27 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 		  $comments = tep_db_prepare_input($_POST['comments']);
 		}
 
+	$_SESSION['kvit_name'] = vam_db_prepare_input($_POST['kvit_name']);
+	$_SESSION['kvit_address'] = vam_db_prepare_input($_POST['kvit_address']);
+
+	$_SESSION['s_name'] = vam_db_prepare_input($_POST['s_name']);
+	$_SESSION['s_inn'] = vam_db_prepare_input($_POST['s_inn']);
+	$_SESSION['s_kpp'] = vam_db_prepare_input($_POST['s_kpp']);
+	$_SESSION['s_ogrn'] = vam_db_prepare_input($_POST['s_ogrn']);
+	$_SESSION['s_okpo'] = vam_db_prepare_input($_POST['s_okpo']);
+	$_SESSION['s_rs'] = vam_db_prepare_input($_POST['s_rs']);
+	$_SESSION['s_bank_name'] = vam_db_prepare_input($_POST['s_bank_name']);
+	$_SESSION['s_bik'] = vam_db_prepare_input($_POST['s_bik']);
+	$_SESSION['s_ks'] = vam_db_prepare_input($_POST['s_ks']);
+	$_SESSION['s_address'] = vam_db_prepare_input($_POST['s_address']);
+	$_SESSION['s_yur_address'] = vam_db_prepare_input($_POST['s_yur_address']);
+	$_SESSION['s_fakt_address'] = vam_db_prepare_input($_POST['s_fakt_address']);
+	$_SESSION['s_telephone'] = vam_db_prepare_input($_POST['s_telephone']);
+	$_SESSION['s_fax'] = vam_db_prepare_input($_POST['s_fax']);
+	$_SESSION['s_email'] = vam_db_prepare_input($_POST['s_email']);
+	$_SESSION['s_director'] = vam_db_prepare_input($_POST['s_director']);
+	$_SESSION['s_accountant'] = vam_db_prepare_input($_POST['s_accountant']);
+	
 	// start with input validation /////////
     $error = false;
 	
