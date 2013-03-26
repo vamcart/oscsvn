@@ -11,7 +11,7 @@ require(DIR_WS_FUNCTIONS . 'general.php');
 //require(DIR_WS_CLASSES . 'email.php');
 require(DIR_WS_CLASSES . 'class.phpmailer.php');
 $email_query = tep_db_query("select * from email_batch where (send is null or send = '') and (hold is null or hold = '')");
-while ($email = mysql_fetch_array($email_query)) {
+while ($email = tep_db_fetch_array($email_query)) {
 if (!defined('CHARSET')) define('CHARSET', $email['charset']);
 $email['text'] = str_replace("\n", '
 ', $email['text']);
@@ -25,6 +25,6 @@ $email['from_name'],
 $email['from_address']);
 tep_db_query("update email_batch set send = 'on', last_updated = now() where id = '" . $email['id']. "'");
 }
-mysql_free_result($email_query);
+mysqli_free_result($email_query);
 }
 ?>

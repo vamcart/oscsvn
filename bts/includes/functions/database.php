@@ -315,4 +315,11 @@ function zen_trace_back($backtrace=false, $from=0, $to=0, $get_call=true) {
       return addslashes($string);
     }
   }
+  
+function mysqli_result($res, $row, $field=0) { 
+    $res->data_seek($row); 
+    $datarow = $res->fetch_array(); 
+    return $datarow[$field]; 
+} 
+  
 ?>

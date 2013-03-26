@@ -59,7 +59,7 @@
         break;
       case 'archive':
         $email_query = tep_db_query("select * from email_batch where send = 'on'");
-        while ($email = mysql_fetch_array($email_query)) {
+        while ($email = tep_db_fetch_array($email_query)) {
           $sql_data_array = array('id'           => $email['id'],
                                   'charset'      => $email['charset'],
                                   'ip'           => $email['ip'],
@@ -102,7 +102,7 @@
         break;
       case 'send':
         $this_email_query = tep_db_query("select * from " . $table_in_use . " where id = '" . $_GET['eID'] . "'");
-        $this_email = mysql_fetch_array($this_email_query);
+        $this_email = tep_db_fetch_array($this_email_query);
         define('CHARSET', $this_email['charset']);
         $this_email['text'] = str_replace("\n", '<br>', $this_email['text']);
         tep_mail($this_email['to_name'], $this_email['to_address'], $this_email['subject'], $this_email['text'], $this_email['from_name'], $this_email['from_address']);
