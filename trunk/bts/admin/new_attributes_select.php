@@ -17,13 +17,13 @@ echo "<TD class=\"main\"><SELECT NAME=\"current_product_id\">";
 
 $query = "SELECT * FROM products_description where products_id LIKE '%' AND language_id = '$languageFilter' ORDER BY products_name ASC";
 
-$result = mysql_query($query) or die(mysql_error());
+$result = tep_db_query($query) or die(mysqli_error());
 
-$matches = mysql_num_rows($result);
+$matches = tep_db_num_rows($result);
 
 if ($matches) {
 
-   while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+   while ($line = tep_db_fetch_array($result, MYSQLI_ASSOC)) {
                                                            	
         $title = $line['products_name'];
         $current_product_id = $line['products_id'];

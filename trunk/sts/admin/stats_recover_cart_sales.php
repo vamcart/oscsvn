@@ -101,7 +101,7 @@ return $ndate;
   $ndate = seadate($tdate);
 //  echo $ndate; // debug line, shows the date we are seeking
   $conquery = tep_db_query("select * from ". TABLE_SCART ." where dateadded >= '".$ndate."'" );
-  $knt = mysql_num_rows($conquery);
+  $knt = tep_db_num_rows($conquery);
   for ($i = 0; $i < $knt; $i++) {
      $inrec = tep_db_fetch_array($conquery);
 // echo $inrec['dateadded']."<br>"; '' debug line
@@ -109,7 +109,7 @@ return $ndate;
      $query1 = tep_db_query("select cus.customers_firstname as fname, cus.customers_lastname as lname from customers as cus where cus.customers_id ='".$cid."'");
      $crec = tep_db_fetch_array($query1);
      $cquery = tep_db_query("select * from orders where customers_id = '".$cid."'" );
-     $iknt = mysql_num_rows($cquery);
+     $iknt = tep_db_num_rows($cquery);
      for ($j = 0; $j < $iknt; $j++) {
        $orec = tep_db_fetch_array($cquery);
 // split the date_purchased on the space

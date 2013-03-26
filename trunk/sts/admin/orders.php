@@ -167,19 +167,19 @@ if (isset($_POST['submit'])){
 
               // looking for current accumulated limit & discount
               $acc_query = tep_db_query("select cg.customers_groups_accumulated_limit, cg.customers_groups_name, cg.customers_groups_discount from customers_groups as cg, customers as c where cg.customers_groups_id = c.customers_groups_id and c.customers_id = " . $customer_id);
-              $current_limit = @mysql_result($acc_query, 0, "customers_groups_accumulated_limit");
-              $current_discount = @mysql_result($acc_query, 0, "customers_groups_discount");
-              $current_group = @mysql_result($acc_query, "customers_groups_name");
+              $current_limit = @mysqli_result($acc_query, 0, "customers_groups_accumulated_limit");
+              $current_discount = @mysqli_result($acc_query, 0, "customers_groups_discount");
+              $current_group = @mysqli_result($acc_query, "customers_groups_name");
                                                                                                                                                                                                  
               // ok, looking for available group
               $groups_query = tep_db_query("select customers_groups_discount, customers_groups_id, customers_groups_name, customers_groups_accumulated_limit from customers_groups where customers_groups_accumulated_limit < " . $customers_total . " and customers_groups_discount < " . $current_discount . " and customers_groups_accumulated_limit > " . $current_limit . " and customers_groups_id = " . $groups['customers_groups_id'] . " order by customers_groups_accumulated_limit DESC");
 
               if (tep_db_num_rows($groups_query)) {
                  // new group found
-                 $customers_groups_id = @mysql_result($groups_query, 0, "customers_groups_id");
-                 $customers_groups_name = @mysql_result($groups_query, 0, "customers_groups_name");
-                 $limit = @mysql_result($groups_query, 0, "customers_groups_accumulated_limit");
-                 $current_discount = @mysql_result($groups_query, 0, "customers_groups_discount");
+                 $customers_groups_id = @mysqli_result($groups_query, 0, "customers_groups_id");
+                 $customers_groups_name = @mysqli_result($groups_query, 0, "customers_groups_name");
+                 $limit = @mysqli_result($groups_query, 0, "customers_groups_accumulated_limit");
+                 $current_discount = @mysqli_result($groups_query, 0, "customers_groups_discount");
     
                  // updating customers group
                  tep_db_query("update customers set customers_groups_id = " . $customers_groups_id . " where customers_id = " . $customer_id);
@@ -187,10 +187,10 @@ if (isset($_POST['submit'])){
              }
            }
            $groups_query = tep_db_query("select cg.* from customers_groups as cg, customers as c where c.customers_groups_id = cg.customers_groups_id and c.customers_id = " . $customer_id);
-           $customers_groups_id = @mysql_result($groups_query, 0, "customers_groups_id");
-           $customers_groups_name = @mysql_result($groups_query, 0, "customers_groups_name");
-           $limit = @mysql_result($groups_query, 0, "customers_groups_accumulated_limit");
-           $current_discount = @mysql_result($groups_query, 0, "customers_groups_discount");
+           $customers_groups_id = @mysqli_result($groups_query, 0, "customers_groups_id");
+           $customers_groups_name = @mysqli_result($groups_query, 0, "customers_groups_name");
+           $limit = @mysqli_result($groups_query, 0, "customers_groups_accumulated_limit");
+           $current_discount = @mysqli_result($groups_query, 0, "customers_groups_discount");
            if ($changed) {
              // send emails
              $text =     EMAIL_TEXT_LIMIT . $currencies->display_price($limit, 0) . "\n" .

@@ -59,8 +59,8 @@ BODY { margin-bottom: 10px; margin-left: 10px; margin-right: 10px; margin-top: 1
 
   $cat_ids = preg_split("/[,]/", $get_result['restrict_to_categories']);
   for ($i = 0; $i < count($cat_ids); $i++) {
-    $result = mysql_query("SELECT * FROM categories, categories_description WHERE categories.categories_id = categories_description.categories_id and categories_description.language_id = '" . $languages_id . "' and categories.categories_id='" . $cat_ids[$i] . "'");
-    if ($row = mysql_fetch_array($result)) {
+    $result = tep_db_query("SELECT * FROM categories, categories_description WHERE categories.categories_id = categories_description.categories_id and categories_description.language_id = '" . $languages_id . "' and categories.categories_id='" . $cat_ids[$i] . "'");
+    if ($row = tep_db_fetch_array($result)) {
     $cats .= '<br>' . $row["categories_name"];
     } 
   }
@@ -72,8 +72,8 @@ BODY { margin-bottom: 10px; margin-left: 10px; margin-right: 10px; margin-top: 1
 
   $pr_ids = preg_split("/[,]/", $get_result['restrict_to_products']);
   for ($i = 0; $i < count($pr_ids); $i++) {
-    $result = mysql_query("SELECT * FROM products, products_description WHERE products.products_id = products_description.products_id and products_description.language_id = '" . $languages_id . "'and products.products_id = '" . $pr_ids[$i] . "'");
-    if ($row = mysql_fetch_array($result)) {
+    $result = tep_db_query("SELECT * FROM products, products_description WHERE products.products_id = products_description.products_id and products_description.language_id = '" . $languages_id . "'and products.products_id = '" . $pr_ids[$i] . "'");
+    if ($row = tep_db_fetch_array($result)) {
       $prods .= '<br>' . $row["products_name"];
     }
   }

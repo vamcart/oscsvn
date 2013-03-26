@@ -76,7 +76,7 @@ function manufacturers_list(){
 			 if (trim($_POST['product_new_model'][$id]) != trim($_POST['product_old_model'][$id])) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_model='" . $new_model . "' WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_model='" . $new_model . "' WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -85,7 +85,7 @@ function manufacturers_list(){
 			 if (trim($_POST['product_new_name'][$id]) != trim($_POST['product_old_name'][$id])) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS_DESCRIPTION . " SET products_name='" . $new_name . "' WHERE products_id=$id and language_id=" . $languages_id);
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS_DESCRIPTION . " SET products_name='" . $new_name . "' WHERE products_id=$id and language_id=" . $languages_id);
 			 }
 		   }
 		}
@@ -94,7 +94,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_price'][$id] != $_POST['product_old_price'][$id] && $_POST['update_price'][$id] == 'yes') {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_price=$new_price WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_price=$new_price WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -103,7 +103,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_weight'][$id] != $_POST['product_old_weight'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_weight=$new_weight WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_weight=$new_weight WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -112,7 +112,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_quantity'][$id] != $_POST['product_old_quantity'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_quantity=$new_quantity WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_quantity=$new_quantity WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -121,7 +121,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_sort_order'][$id] != $_POST['product_old_sort_order'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_sort_order=$new_sort_order WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_sort_order=$new_sort_order WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -130,7 +130,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_quantity_order_min'][$id] != $_POST['product_old_quantity_order_min'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_quantity_order_min=$new_quantity_order_min WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_quantity_order_min=$new_quantity_order_min WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -139,7 +139,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_quantity_order_units'][$id] != $_POST['product_old_quantity_order_units'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_quantity_order_units=$new_quantity_order_units WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_quantity_order_units=$new_quantity_order_units WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -148,7 +148,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_to_xml'][$id] != $_POST['product_old_to_xml'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_to_xml=$new_to_xml WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_to_xml=$new_to_xml WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -157,7 +157,7 @@ function manufacturers_list(){
 			 if ($_POST['product_new_manufacturer'][$id] != $_POST['product_old_manufacturer'][$id]) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET manufacturers_id=$new_manufacturer WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET manufacturers_id=$new_manufacturer WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -166,7 +166,7 @@ function manufacturers_list(){
 			 if (trim($_POST['product_new_image'][$id]) != trim($_POST['product_old_image'][$id])) {
 			   $count_update++;
 			   $item_updated[$id] = 'updated';
-			   mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_image='" . $new_image . "' WHERE products_id=$id");
+			   tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_image='" . $new_image . "' WHERE products_id=$id");
 			 }
 		   }
 		}
@@ -184,7 +184,7 @@ function manufacturers_list(){
 			 	if ($_POST['product_new_tax'][$id] != $_POST['product_old_tax'][$id]) {
 			   	$count_update++;
 			   	$item_updated[$id] = 'updated';
-			   	mysql_query("UPDATE " . TABLE_PRODUCTS . " SET products_tax_class_id=$new_tax_id WHERE products_id=$id");
+			   	tep_db_query("UPDATE " . TABLE_PRODUCTS . " SET products_tax_class_id=$new_tax_id WHERE products_id=$id");
 			 	}
 		   	}
 		}

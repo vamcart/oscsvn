@@ -36,16 +36,16 @@ td {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small}
 <h4><?php echo TEXT_VALID_CATEGORIES_LIST; ?></h4>
 </td>
 </tr>
-<?
+<?php
     echo "<tr><th>" . TEXT_VALID_CATEGORIES_ID . "</th><th>" . TEXT_VALID_CATEGORIES_NAME . "</th></tr><tr>";
-    $result = mysql_query("SELECT * FROM categories, categories_description WHERE categories.categories_id = categories_description.categories_id and categories_description.language_id = '" . $languages_id . "' ORDER BY categories.categories_id");
-    if ($row = mysql_fetch_array($result)) {
+    $result = tep_db_query("SELECT * FROM categories, categories_description WHERE categories.categories_id = categories_description.categories_id and categories_description.language_id = '" . $languages_id . "' ORDER BY categories.categories_id");
+    if ($row = tep_db_fetch_array($result)) {
         do {
             echo "<td>".$row["categories_id"]."</td>\n";
             echo "<td>".$row["categories_name"]."</td>\n";
             echo "</tr>\n";
         }
-        while($row = mysql_fetch_array($result));
+        while($row = tep_db_fetch_array($result));
     }
     echo "</table>\n";
 ?>

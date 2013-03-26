@@ -11,13 +11,13 @@ function checkAttribute( $current_value_id, $current_product_id, $current_produc
 
  $query = "SELECT * FROM products_attributes where options_values_id = '$current_value_id' AND products_id = '$current_product_id' AND options_id = '$current_product_option_id'";
 
- $result = mysql_query($query) or die(mysql_error());
+ $result = tep_db_query($query) or die(mysqli_error());
 
- $isFound = mysql_num_rows($result);
+ $isFound = tep_db_num_rows($result);
  
  if ($isFound) {
 
-    while($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    while($line = tep_db_fetch_array($result, MYSQLI_ASSOC)) {
         
         $attribute_value_price = $line['options_values_price'];
         $attribute_value_prefix = $line['price_prefix'];
@@ -77,9 +77,9 @@ function extraValues( $current_value_id, $current_product_id )
                     	
         $query = "SELECT * FROM products_attributes where options_values_id = '$current_value_id' AND products_id = '$current_product_id'";
 
-        $result = mysql_query($query) or die(mysql_error());
+        $result = tep_db_query($query) or die(mysqli_error());
 
-        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        while ($line = tep_db_fetch_array($result, MYSQLI_ASSOC)) {
                                                                 	
                 $attribute_qty = $line['options_values_qty'];
                 $attribute_order = $line['attribute_order'];
@@ -127,9 +127,9 @@ function getSortCopyValues( $current_value_id, $current_product_id )
                     	
         $query = "SELECT * FROM products_attributes where options_values_id = '$current_value_id' AND products_id = '$current_product_id'";
 
-        $result = mysql_query($query) or die(mysql_error());
+        $result = tep_db_query($query) or die(mysqli_error());
 
-        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        while ($line = tep_db_fetch_array($result, MYSQLI_ASSOC)) {
                                                                 	
                 $attribute_sort = $line['products_options_sort_order'];
                 $attribute_weight = $line['products_attributes_weight'];

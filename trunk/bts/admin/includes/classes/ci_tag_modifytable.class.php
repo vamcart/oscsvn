@@ -56,7 +56,7 @@ class Tc_modifytable extends ContribInstallerBaseTag {
     				$sqlq = "alter table `" . DB_PREFIX . $this->data['tablename'] . "` add `".$this->data['colname']."` ".$this->data['data'].($this->data['after']!=""?" AFTER ".$this->data['after']:"");
     			}
     			if(cip_db_query($sqlq)=== false){
-					$this->error('SQL error :<b>'.mysql_errno().' - '.mysql_error().'<br>'.$this->data['tablename']);
+					$this->error('SQL error :<b>'.mysqli_errno($$link).' - '.mysqli_error($$link).'<br>'.$this->data['tablename']);
 					return $this->error;
     			}
     		break;
@@ -79,7 +79,7 @@ class Tc_modifytable extends ContribInstallerBaseTag {
     			if($iscol){
 	   				$sqlq = "alter table `" . DB_PREFIX . $this->data['tablename'] . "` drop `".$this->data['colname']."`";
     				if(cip_db_query($sqlq)=== false){
-						$this->error('SQL error :<b>'.mysql_errno().' - '.mysql_error().'<br>'.$this->data['tablename']);
+						$this->error('SQL error :<b>'.mysqli_errno($$link).' - '.mysqli_error($$link).'<br>'.$this->data['tablename']);
 						return $this->error;
     				}
     			}

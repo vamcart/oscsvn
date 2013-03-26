@@ -21,15 +21,15 @@ $tempTextID= "1999043";
 
 $query = "SELECT * FROM products_options where products_options_id LIKE '%' AND language_id = '$languageFilter'";
 
-$result = mysql_query($query) or die(mysql_error());
+$result = tep_db_query($query) or die(mysqli_error());
 
-$matches = mysql_num_rows($result);
+$matches = tep_db_num_rows($result);
 // ########################## added for download
 //        echo "<p class=\"smallText\">(Download-Dateien nur in Optionen, die im Namen 'download' enthalten!)</p>";
 // ########################## added for download
 if ($matches) {
 
-   while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+   while ($line = tep_db_fetch_array($result, MYSQLI_ASSOC)) {
                                                            	
         $current_product_option_name = $line['products_options_name'];
         $current_product_option_id = $line['products_options_id'];
@@ -72,15 +72,15 @@ if ($matches) {
 // Find all of the Current Option's Available Values
         $query2 = "SELECT * FROM products_options_values_to_products_options WHERE products_options_id = '$current_product_option_id' ORDER BY products_options_values_id DESC";
 
-        $result2 = mysql_query($query2) or die(mysql_error());
+        $result2 = tep_db_query($query2) or die(mysqli_error());
         
-        $matches2 = mysql_num_rows($result2);
+        $matches2 = tep_db_num_rows($result2);
 
         if ($matches2) {
 
            $i = "0";
 
-           while ($line = mysql_fetch_array($result2, MYSQL_ASSOC)) {
+           while ($line = tep_db_fetch_array($result2, MYSQLI_ASSOC)) {
 
                 $i++;
                 
@@ -94,9 +94,9 @@ if ($matches) {
                 
                 $query3 = "SELECT * FROM products_options_values WHERE products_options_values_id = '$current_value_id' AND language_id = '$languageFilter'";
                 
-                $result3 = mysql_query($query3) or die(mysql_error());
+                $result3 = tep_db_query($query3) or die(mysqli_error());
 
-                while($line = mysql_fetch_array($result3, MYSQL_ASSOC)) {
+                while($line = tep_db_fetch_array($result3, MYSQLI_ASSOC)) {
 
                         $current_value_name = $line['products_options_values_name'];
 
@@ -147,11 +147,11 @@ if ($matches) {
 	                pad.products_attributes_is_pin 
 	                FROM products_attributes pa,products_attributes_download pad 
 	                WHERE pa.products_id='$current_product_id' AND pa.options_id='$current_product_option_id' AND pa.options_values_id = '$current_value_id' AND pad.products_attributes_id=pa.products_attributes_id";
-	                $result4 = mysql_query($query4) or die(mysql_error());                   
+	                $result4 = tep_db_query($query4) or die(mysqli_error());                   
 	    
 	                $current_products_attributes_id=$dl_line['products_attributes_id'];
 
-	                $dl_line = mysql_fetch_array($result4, MYSQL_ASSOC);
+	                $dl_line = tep_db_fetch_array($result4, MYSQLI_ASSOC);
                   
 	                if($dl_line['products_attributes_filename']=='')
 	                {

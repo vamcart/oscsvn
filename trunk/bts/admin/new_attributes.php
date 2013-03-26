@@ -62,13 +62,13 @@ function findTitle( $current_product_id, $languageFilter )
 {
   $query = "SELECT * FROM products_description where language_id = '$languageFilter' AND products_id = '$current_product_id'";
 
-  $result = mysql_query($query) or die(mysql_error());
+  $result = tep_db_query($query) or die(mysqli_error());
 
-  $matches = mysql_num_rows($result);
+  $matches = tep_db_num_rows($result);
 
   if ($matches) {
 
-  while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  while ($line = tep_db_fetch_array($result, MYSQLI_ASSOC)) {
                                                           	
         $productName = $line['products_name'];
         
