@@ -15,7 +15,7 @@
     @ini_set('session.bug_compat_warn', 0);
   }
 
-  if (STORE_SESSIONS == 'mysql') {
+  if (STORE_SESSIONS == 'mysqli') {
     if (defined('DIR_WS_ADMIN')) {
       if (!$SESS_LIFE = (SESSION_TIMEOUT_ADMIN + 900)) {
         $SESS_LIFE = (SESSION_TIMEOUT_ADMIN + 900);
