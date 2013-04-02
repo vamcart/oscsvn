@@ -26,7 +26,7 @@
     $db['DB_SERVER_PASSWORD'] = trim(stripslashes($_POST['DB_SERVER_PASSWORD']));
     $db['DB_DATABASE'] = trim(stripslashes($_POST['DB_DATABASE']));
 
-    osc_db_connect($db['DB_SERVER'], $db['DB_SERVER_USERNAME'], $db['DB_SERVER_PASSWORD']);
+    osc_db_connect($db['DB_SERVER'], $db['DB_SERVER_USERNAME'], $db['DB_SERVER_PASSWORD'], $db['DB_DATABASE']);
 
     if ($db_error == false) {
       osc_db_test_create_db_permission($db['DB_DATABASE']);

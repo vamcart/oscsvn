@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-  function osc_db_connect($server, $username, $password, $link = 'db_link') {
+  function osc_db_connect($server, $username, $password, $database, $link = 'db_link') {
     global $$link, $db_error;
 
     $db_error = false;
@@ -29,7 +29,8 @@
   }
 
   function osc_db_select_db($database) {
-    return mysqli_select_db($database);
+  	global $$link;
+    return mysqli_select_db($$link, $database);
   }
 
   function osc_db_close($link = 'db_link') {
@@ -65,7 +66,7 @@
   }
 
   function osc_db_test_create_db_permission($database) {
-    global $db_error;
+    global $db_error, $$link;
 
     $db_created = false;
     $db_error = false;
@@ -75,36 +76,36 @@
       return false;
     }
 
-    if (!$db_error) {
-      if (!@osc_db_select_db($database)) {
-        $db_created = true;
-        if (!@osc_db_query('create database ' . $database)) {
-          $db_error = mysqli_error($$link);
-        }
-      } else {
-        $db_error = mysqli_error($$link);
-      }
-      if (!$db_error) {
-        if (@osc_db_select_db($database)) {
-          if (@osc_db_query('create table temp ( temp_id int(5) )')) {
-            if (@osc_db_query('drop table temp')) {
-              if ($db_created) {
-                if (@osc_db_query('drop database ' . $database)) {
-                } else {
-                  $db_error = mysqli_error($$link);
-                }
-              }
-            } else {
-              $db_error = mysqli_error($$link);
-            }
-          } else {
-            $db_error = mysqli_error($$link);
-          }
-        } else {
-          $db_error = mysqli_error($$link);
-        }
-      }
-    }
+    //if (!$db_error) {
+      //if (!@osc_db_select_db($database)) {
+        //$db_created = true;
+        //if (!@osc_db_query('create database ' . $database)) {
+          //$db_error = mysqli_error($$link);
+        //}
+      //} else {
+        //$db_error = mysqli_error($$link);
+      //}
+      //if (!$db_error) {
+        //if (@osc_db_select_db($database)) {
+          //if (@osc_db_query('create table temp ( temp_id int(5) )')) {
+            //if (@osc_db_query('drop table temp')) {
+              //if ($db_created) {
+                //if (@osc_db_query('drop database ' . $database)) {
+                //} else {
+                  //$db_error = mysqli_error($$link);
+                //}
+              //}
+            //} else {
+              //$db_error = mysqli_error($$link);
+            //}
+          //} else {
+            //$db_error = mysqli_error($$link);
+          //}
+        //} else {
+          //$db_error = mysqli_error($$link);
+        //}
+      //}
+    //}
 
     if ($db_error) {
       return false;
@@ -114,19 +115,19 @@
   }
 
   function osc_db_test_connection($database) {
-    global $db_error;
+    global $db_error, $$link;
 
     $db_error = false;
 
-    if (!$db_error) {
-      if (!@osc_db_select_db($database)) {
-        $db_error = mysqli_error($$link);
-      } else {
-        if (!@osc_db_query('select count(*) from configuration')) {
-          $db_error = mysqli_error($$link);
-        }
-      }
-    }
+    //if (!$db_error) {
+      //if (!@osc_db_select_db($database)) {
+        //$db_error = mysqli_error($$link);
+      //} else {
+        //if (!@osc_db_query('select count(*) from configuration')) {
+          //$db_error = mysqli_error($$link);
+        //}
+      //}
+    //}
 
     if ($db_error) {
       return false;
@@ -136,17 +137,17 @@
   }
 
   function osc_db_install($database, $sql_file) {
-    global $db_error;
+    global $db_error, $$link;
 
     $db_error = false;
 
-    if (!@osc_db_select_db($database)) {
-      if (@osc_db_query('create database ' . $database)) {
-        osc_db_select_db($database);
-      } else {
-        $db_error = mysqli_error($$link);
-      }
-    }
+    //if (!@osc_db_select_db($database)) {
+      //if (@osc_db_query('create database ' . $database)) {
+        //osc_db_select_db($database);
+      //} else {
+        //$db_error = mysqli_error($$link);
+      //}
+    //}
 
     if (!$db_error) {
       if (file_exists($sql_file)) {

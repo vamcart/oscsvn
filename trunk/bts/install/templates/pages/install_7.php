@@ -33,7 +33,7 @@
   $db['DB_DATABASE'] = trim(stripslashes($_POST['DB_DATABASE']));
 
   $db_error = false;
-  osc_db_connect($db['DB_SERVER'], $db['DB_SERVER_USERNAME'], $db['DB_SERVER_PASSWORD']);
+  osc_db_connect($db['DB_SERVER'], $db['DB_SERVER_USERNAME'], $db['DB_SERVER_PASSWORD'], $db['DB_DATABASE']);
 
   if ($db_error == false) {
     osc_db_test_connection($db['DB_DATABASE']);
@@ -210,7 +210,7 @@
                      '  define(\'DB_SERVER_PASSWORD\', \'' . $_POST['DB_SERVER_PASSWORD']. '\');' . "\n" .
                      '  define(\'DB_DATABASE\', \'' . $_POST['DB_DATABASE']. '\');' . "\n" .
                      '  define(\'USE_PCONNECT\', \'' . (($_POST['USE_PCONNECT'] == 'true') ? 'true' : 'false') . '\'); // use persistent connections?' . "\n" .
-                     '  define(\'DB_CHARACTER_SET\', \'cp1251\');' . "\n" .
+                     '  define(\'DB_CHARACTER_SET\', \'utf8\');' . "\n" .
                      '  define(\'STORE_SESSIONS\', \'' . (($_POST['STORE_SESSIONS'] == 'files') ? '' : 'mysql') . '\'); // leave empty \'\' for default handler or set to \'mysql\'' . "\n" .
                      '?>';
 
@@ -264,7 +264,6 @@
                      '' . "\n" .
                      '  define(\'SESSION_WRITE_DIRECTORY\', DIR_FS_CATALOG . \'temp/\');' . "\n" .
                      '' . "\n" .
-
                      '// Added for Templating' . "\n" .
   		     '	define(\'DIR_FS_CATALOG_MAINPAGE_MODULES\', DIR_FS_CATALOG_MODULES . \'mainpage_modules/\');' . "\n" .
   		     '	define(\'DIR_WS_TEMPLATES\', DIR_WS_CATALOG . \'templates/\');' . "\n" .
@@ -278,7 +277,7 @@
                      '  define(\'DB_SERVER_PASSWORD\', \'' . $_POST['DB_SERVER_PASSWORD']. '\');' . "\n" .
                      '  define(\'DB_DATABASE\', \'' . $_POST['DB_DATABASE']. '\');' . "\n" .
                      '  define(\'USE_PCONNECT\', \'' . (($_POST['USE_PCONNECT'] == 'true') ? 'true' : 'false') . '\'); // use persisstent connections?' . "\n" .
-                     '  define(\'DB_CHARACTER_SET\', \'cp1251\');' . "\n" .
+                     '  define(\'DB_CHARACTER_SET\', \'utf8\');' . "\n" .
                      '  define(\'STORE_SESSIONS\', \'' . (($_POST['STORE_SESSIONS'] == 'files') ? '' : 'mysql') . '\'); // leave empty \'\' for default handler or set to \'mysql\'' . "\n" .
                      '?>';
 
