@@ -19,6 +19,7 @@ function get_var($name, $default = 'none') {
 }
 
 require('includes/application_top.php');
+require (DIR_WS_CLASSES.'order.php');
 
 // logging
 //$fp = fopen('prochange.log', 'a+');
@@ -34,10 +35,14 @@ $crc = get_var('PRO_SECRET_KEY');
 
 $inv_id = get_var('PRO_FIELD_1');
 
+$order = new order($inv_id);
+$order_sum = $order->info['total'];
+
 $hash = MODULE_PAYMENT_PROCHANGE_MERCHANT_SECRET_KEY; 
 
 // checking and handling
 if ($hash == $crc) {
+if (number_format($_POST['PRO_SUMMA'],0) == number_format($order->info['total'],0)) {	
   $sql_data_array = array('orders_status' => MODULE_PAYMENT_PROCHANGE_MERCHANT_ORDER_STATUS_ID);
   tep_db_perform('orders', $sql_data_array, 'update', "orders_id='".$inv_id."'");
 
@@ -49,6 +54,7 @@ if ($hash == $crc) {
   tep_db_perform('orders_status_history', $sql_data_arrax);
 
   echo 'OK'.$inv_id;
+}
 }
 
 ?>
