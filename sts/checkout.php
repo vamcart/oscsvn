@@ -2485,7 +2485,7 @@ if ($sc_payment_modules_process == true) {
     }
 ?>
 
-        <td><h5><?php echo $selection[$i]['module']; ?></h5></td>
+        <td><h5><?php echo $selection[$i]['icon']; ?> <?php echo $selection[$i]['module']; ?></h5></td>
         <td align="right">
 
 <?php
