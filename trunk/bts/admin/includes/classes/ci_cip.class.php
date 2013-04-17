@@ -69,7 +69,7 @@ class CIP {
         if (!$this->cip_id) {
             //Register CIP in database:
                 $this->register();
-                $this->cip_id=mysqli_insert_id($$link;);
+                $this->cip_id=mysqli_insert_id($$link);
                 $this->cip_installed=0;
         }
     }
