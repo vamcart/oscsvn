@@ -65,12 +65,12 @@ if (!tep_db_num_rows($latest_news_var_query)) { // there is no news
 $latest_news_string = '';
 
 $row = 0;
-while ($latest_news = tep_db_fetch_array($latest_news_var_query))  {
+while ($latest_news = tep_db_fetch_array($latest_news_var_query)) {
 $latest_news['faqdesk'] = array(
-		'name' => $latest_news['faqdesk_question'],
-		'id' => $latest_news['faqdesk_id'],
-		'date' => $latest_news['faqdesk_date_added'],
-	);
+'name' => $latest_news['faqdesk_question'],
+'id' => $latest_news['faqdesk_id'],
+'date' => $latest_news['faqdesk_date_added'],
+);
 
 $latest_news_string .= '<a class="smallText" href="';
 $latest_news_string .= tep_href_link(FILENAME_FAQDESK_INFO, 'faqdesk_id=' . $latest_news['faqdesk_id']);
@@ -78,11 +78,10 @@ $latest_news_string .= '">';
 $latest_news_string .= $latest_news['faqdesk_question'];
 $latest_news_string .= '</a>';
 $latest_news_string .= '<br>';
-
+}
 echo $latest_news_string;
 
-	$row++;
-}
+$row++;
 
 }
 ?>
