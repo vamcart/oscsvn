@@ -336,7 +336,7 @@ define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'Первые цифры Вашей кр
 */
 define('FOOTER_TEXT_BODY', '<center>
 <span class="smallText">
-<a href="http://kypi.ru" target="_blank">Скрипты интернет-магазина</a> <a href="http://kypi.ru" target="_blank">osCommerce VaM Edition версия ' . implode('', file(DIR_FS_CATALOG .'VERSION.txt')) . '</a><br>
+<a href="http://oscommerce.su" target="_blank">Скрипты интернет-магазина</a> <a href="http://oscommerce.su" target="_blank">osCommerce VaM Edition версия ' . implode('', file(DIR_FS_CATALOG .'VERSION.txt')) . '</a><br>
 <a href="rss2_info.php"><img src="images/rss.png" width="36" height="14" alt="RSS каналы" border="0"></a><br>
 </span>
 </center>');
