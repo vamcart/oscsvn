@@ -303,14 +303,14 @@
   $order_num = $order_id['orders_id'] + 1; 
   
       $process_button_string = '';
-      $my_currency = 'USD';
+      $my_currency = 'RUB';
       $parameters = array('cmd' => '_xclick',
                           'item_name' => $order_num,
                           'shipping' => $this->format_raw($order->info['shipping_cost']),
                           'tax' => $this->format_raw($order->info['tax']),
                           'business' => MODULE_PAYMENT_PAYPAL_STANDARD_ID,
                           'amount' => number_format(($order->info['total'] - $order->info['shipping_cost']) * $currencies->get_value($my_currency), $currencies->get_decimal_places($my_currency)),
-                          'currency_code' => 'USD',
+                          'currency_code' => 'RUB',
                           'invoice' => substr($cart_PayPal_Standard_ID, strpos($cart_PayPal_Standard_ID, '-')+1),
                           'custom' => $customer_id,
                           'no_note' => '1',
