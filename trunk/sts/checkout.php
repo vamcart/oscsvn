@@ -737,7 +737,6 @@ if ((!isset($_POST['payment'])) || ($error == true)) {
 
 
 $order_total_modules = new order_total;
-$order_total_modules->process();
 
 //Classes init end ##########################################
 
@@ -1487,6 +1486,7 @@ if (isset($_POST['action']) && ($_POST['action'] == 'logged_on') && isset($_POST
 // get all available shipping quotes
   $quotes = $shipping_modules->quote();
 
+  $order_total_modules->process();
 
 // if no shipping method has been selected, automatically select the cheapest method.
 // if the modules status was changed when none were available, to save on implementing
